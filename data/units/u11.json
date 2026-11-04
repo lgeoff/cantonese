@@ -1,0 +1,105 @@
+{
+  "id": "u11",
+  "level": 2,
+  "title": "My Day",
+  "emoji": "⏰",
+  "desc": "Describe your daily routine and put actions in order: first, then, after that",
+  "words": [
+    {"hk": "起身", "jp": "hei2 san1", "en": "to get up", "fr": "se lever", "note": "Also 'to wake up' in everyday speech. Alarm clock = 鬧鐘 naau6 zung1.",
+     "ex": {"en": "What time do you get up?", "parts": [["你","nei5"],["幾點","gei2 dim2"],["起身","hei2 san1"],["啊","aa3"],["？"]]}},
+    {"hk": "刷牙", "jp": "caat3 ngaa4", "en": "to brush your teeth", "fr": "se brosser les dents", "note": "刷 is caat3 here, not 'saat3'.",
+     "ex": {"en": "Go brush your teeth!", "parts": [["去","heoi3"],["刷牙","caat3 ngaa4"],["啦","laa1"],["！"]]}},
+    {"hk": "沖涼", "jp": "cung1 loeng4", "en": "to shower / take a bath", "fr": "se doucher", "note": "Literally 'rinse cool'. Hongkongers usually shower at night.",
+     "ex": {"en": "I'm showering, wait a moment.", "parts": [["我","ngo5"],["沖緊涼","cung1 gan2 loeng4"],["，"],["等陣","dang2 zan6"],["。"]]}},
+    {"hk": "食早餐", "jp": "sik6 zou2 caan1", "en": "to have breakfast", "fr": "prendre le petit-déjeuner",
+     "ex": {"en": "I usually have breakfast at a cha chaan teng.", "parts": [["我","ngo5"],["通常","tung1 soeng4"],["喺","hai2"],["茶餐廳","caa4 caan1 teng1"],["食早餐","sik6 zou2 caan1"],["。"]]}},
+    {"hk": "返工", "jp": "faan1 gung1", "en": "to go to work", "fr": "aller au travail", "note": "返 again: work is a place you 'return' to every day.",
+     "ex": {"en": "I take the MTR to work.", "parts": [["我","ngo5"],["搭","daap3"],["地鐵","dei6 tit3"],["返工","faan1 gung1"],["。"]]}},
+    {"hk": "放工", "jp": "fong3 gung1", "en": "to finish work", "fr": "finir le travail", "note": "收工 sau1 gung1 is also common, and is used as a cheerful 'done for the day!'",
+     "ex": {"en": "What time do you finish work?", "parts": [["你","nei5"],["幾點","gei2 dim2"],["放工","fong3 gung1"],["啊","aa3"],["？"]]}},
+    {"hk": "返學", "jp": "faan1 hok6", "en": "to go to school", "fr": "aller à l'école", "note": "Finish school = 放學 fong3 hok6.",
+     "ex": {"en": "My son goes to school at eight.", "parts": [["我","ngo5"],["個","go3"],["仔","zai2"],["八點","baat3 dim2"],["返學","faan1 hok6"],["。"]]}},
+    {"hk": "食晏", "jp": "sik6 aan3", "en": "to have lunch", "fr": "déjeuner", "note": "Very HK. 晏 = midday (晏晝).",
+     "ex": {"en": "Shall we have lunch together?", "parts": [["一齊","jat1 cai4"],["食晏","sik6 aan3"],["好唔好","hou2 m4 hou2"],["啊","aa3"],["？"]]}},
+    {"hk": "食晚飯", "jp": "sik6 maan5 faan6", "en": "to have dinner", "fr": "dîner",
+     "ex": {"en": "Come to my place for dinner tonight.", "parts": [["今晚","gam1 maan5"],["嚟","lai4"],["我","ngo5"],["屋企","uk1 kei2"],["食晚飯","sik6 maan5 faan6"],["啦","laa1"],["。"]]}},
+    {"hk": "煮飯", "jp": "zyu2 faan6", "en": "to cook (a meal)", "fr": "cuisiner / faire à manger", "note": "Literally 'cook rice', but means cooking any meal.",
+     "ex": {"en": "Who cooks at your home?", "parts": [["你","nei5"],["屋企","uk1 kei2"],["邊個","bin1 go3"],["煮飯","zyu2 faan6"],["啊","aa3"],["？"]]}},
+    {"hk": "洗碗", "jp": "sai2 wun2", "en": "to wash the dishes", "fr": "faire la vaisselle",
+     "ex": {"en": "I cook, you wash the dishes.", "parts": [["我","ngo5"],["煮飯","zyu2 faan6"],["，"],["你","nei5"],["洗碗","sai2 wun2"],["。"]]}},
+    {"hk": "洗衫", "jp": "sai2 saam1", "en": "to do the laundry", "fr": "faire la lessive",
+     "ex": {"en": "I do the laundry on Sundays.", "parts": [["我","ngo5"],["星期日","sing1 kei4 jat6"],["洗衫","sai2 saam1"],["。"]]}},
+    {"hk": "執屋", "jp": "zap1 uk1", "en": "to tidy up the home", "fr": "ranger la maison", "note": "執 = pick up / tidy. 執嘢 = pack your things.",
+     "ex": {"en": "My room is so messy, I need to tidy up.", "parts": [["我","ngo5"],["間","gaan1"],["房","fong2"],["好","hou2"],["亂","lyun6"],["，"],["要","jiu3"],["執屋","zap1 uk1"],["喇","laa3"],["。"]]}},
+    {"hk": "完", "jp": "jyun4", "en": "(after a verb) to finish doing", "fr": "(après un verbe) finir de", "note": "食完 finish eating, 做完 finish doing, 洗完 finish washing.",
+     "ex": {"en": "Have you finished eating?", "parts": [["你","nei5"],["食完","sik6 jyun4"],["未","mei6"],["啊","aa3"],["？"]]}},
+    {"hk": "每日", "jp": "mui5 jat6", "en": "every day", "fr": "tous les jours", "note": "日日 jat6 jat6 means the same and is very colloquial.",
+     "ex": {"en": "I go running every day.", "parts": [["我","ngo5"],["每日","mui5 jat6"],["都","dou1"],["去","heoi3"],["跑步","paau2 bou6"],["。"]]}},
+    {"hk": "通常", "jp": "tung1 soeng4", "en": "usually", "fr": "d'habitude", "note": "平時 ping4 si4 'normally' is used the same way.",
+     "ex": {"en": "I usually get up at seven.", "parts": [["我","ngo5"],["通常","tung1 soeng4"],["七點","cat1 dim2"],["起身","hei2 san1"],["。"]]}},
+    {"hk": "先……再……", "jp": "sin1 zoi3", "en": "first … then …", "fr": "d'abord … ensuite …", "note": "先 goes before the first verb, 再 before the second.",
+     "ex": {"en": "First take a shower, then eat.", "parts": [["你","nei5"],["先","sin1"],["沖涼","cung1 loeng4"],["，"],["再","zoi3"],["食飯","sik6 faan6"],["。"]]}},
+    {"hk": "然後", "jp": "jin4 hau6", "en": "then / and then", "fr": "puis / ensuite",
+     "ex": {"en": "I brush my teeth, then I shower.", "parts": [["我","ngo5"],["刷牙","caat3 ngaa4"],["，"],["然後","jin4 hau6"],["沖涼","cung1 loeng4"],["。"]]}},
+    {"hk": "之後", "jp": "zi1 hau6", "en": "after; afterwards", "fr": "après", "note": "Verb + 完 + 之後 = after doing: 食完飯之後.",
+     "ex": {"en": "After work I go to the gym.", "parts": [["放工","fong3 gung1"],["之後","zi1 hau6"],["我","ngo5"],["去","heoi3"],["健身","gin6 san1"],["。"]]}},
+    {"hk": "鐘頭", "jp": "zung1 tau4", "en": "hour (duration)", "fr": "heure (durée)", "note": "一個鐘頭 = one hour; often shortened to 一個鐘.",
+     "ex": {"en": "I work nine hours a day.", "parts": [["我","ngo5"],["每日","mui5 jat6"],["做","zou6"],["九個","gau2 go3"],["鐘頭","zung1 tau4"],["。"]]}},
+    {"hk": "出門", "jp": "ceot1 mun4", "en": "to leave the house, go out", "fr": "sortir de chez soi", "note": "Late = 遲到 ci4 dou3.",
+     "ex": {"en": "I leave the house at eight every day.", "parts": [["我","ngo5"],["每日","mui5 jat6"],["八點","baat3 dim2"],["出門","ceot1 mun4"],["。"]]}}
+  ],
+  "sentences": [
+    {"en": "I get up at seven every day.", "parts": [["我","ngo5"],["每日","mui5 jat6"],["七點","cat1 dim2"],["起身","hei2 san1"],["。"]]},
+    {"en": "First brush your teeth, then have breakfast.", "parts": [["先","sin1"],["刷牙","caat3 ngaa4"],["，"],["再","zoi3"],["食早餐","sik6 zou2 caan1"],["。"]]},
+    {"en": "I usually have lunch at one.", "parts": [["我","ngo5"],["通常","tung1 soeng4"],["一點","jat1 dim2"],["食晏","sik6 aan3"],["。"]]},
+    {"en": "After work I go to the supermarket, then I go home and cook.", "parts": [["放工","fong3 gung1"],["之後","zi1 hau6"],["我","ngo5"],["去","heoi3"],["超市","ciu1 si5"],["，"],["然後","jin4 hau6"],["返屋企","faan1 uk1 kei2"],["煮飯","zyu2 faan6"],["。"]]},
+    {"en": "It takes me an hour to get to work.", "parts": [["我","ngo5"],["返工","faan1 gung1"],["要","jiu3"],["一個鐘頭","jat1 go3 zung1 tau4"],["。"]]},
+    {"en": "I don't go to work on Saturdays.", "parts": [["我","ngo5"],["星期六","sing1 kei4 luk6"],["唔使","m4 sai2"],["返工","faan1 gung1"],["。"]]},
+    {"en": "Do you shower in the morning or at night?", "parts": [["你","nei5"],["朝早","ziu1 zou2"],["定係","ding6 hai6"],["夜晚","je6 maan5"],["沖涼","cung1 loeng4"],["啊","aa3"],["？"]]},
+    {"en": "My husband washes the dishes after dinner.", "parts": [["食完","sik6 jyun4"],["晚飯","maan5 faan6"],["之後","zi1 hau6"],["，"],["我","ngo5"],["老公","lou5 gung1"],["洗碗","sai2 wun2"],["。"]]},
+    {"en": "I'm rarely late for work.", "parts": [["我","ngo5"],["返工","faan1 gung1"],["好少","hou2 siu2"],["遲到","ci4 dou3"],["。"]]},
+    {"en": "On Sundays I tidy up and do the laundry.", "parts": [["星期日","sing1 kei4 jat6"],["我","ngo5"],["執屋","zap1 uk1"],["同埋","tung4 maai4"],["洗衫","sai2 saam1"],["。"]]},
+    {"en": "The kids finish school at three-thirty.", "parts": [["啲","di1"],["小朋友","siu2 pang4 jau5"],["三點半","saam1 dim2 bun3"],["放學","fong3 hok6"],["。"]]},
+    {"en": "I have to get up very early tomorrow, so I want to go to bed early tonight.", "parts": [["聽日","ting1 jat6"],["要","jiu3"],["好早","hou2 zou2"],["起身","hei2 san1"],["，"],["今晚","gam1 maan5"],["想","soeng2"],["早啲","zou2 di1"],["瞓覺","fan3 gaau3"],["。"]]}
+  ],
+  "grammar": [
+    {"title": "Time goes before the verb",
+     "explain": "When something happens (每日, 七點, 星期六) comes before the verb, either right after the subject or at the very start.",
+     "examples": [
+       {"en": "I get up at seven.", "parts": [["我","ngo5"],["七點","cat1 dim2"],["起身","hei2 san1"],["。"]]},
+       {"en": "Every day I go to work by bus.", "parts": [["每日","mui5 jat6"],["我","ngo5"],["搭","daap3"],["巴士","baa1 si2"],["返工","faan1 gung1"],["。"]]}
+     ]},
+    {"title": "Ordering actions: 先…再…, 然後, 之後",
+     "explain": "先 A 再 B = first A, then B (often an instruction). 然後 links a list of steps. X 之後 = after X; use Verb + 完 + 之後 for 'after finishing'.",
+     "examples": [
+       {"en": "Wash your hands first, then eat.", "parts": [["你","nei5"],["先","sin1"],["洗手","sai2 sau2"],["，"],["再","zoi3"],["食飯","sik6 faan6"],["。"]]},
+       {"en": "I get up, then brush my teeth, then shower.", "parts": [["我","ngo5"],["起身","hei2 san1"],["，"],["刷牙","caat3 ngaa4"],["，"],["然後","jin4 hau6"],["沖涼","cung1 loeng4"],["。"]]},
+       {"en": "After eating I watch TV.", "parts": [["食完飯","sik6 jyun4 faan6"],["之後","zi1 hau6"],["我","ngo5"],["睇電視","tai2 din6 si6"],["。"]]}
+     ]},
+    {"title": "Duration goes after the verb",
+     "explain": "'For how long' comes after the verb: 瞓咗八個鐘 (slept for eight hours). Compare with clock time, which comes before.",
+     "examples": [
+       {"en": "I slept for eight hours.", "parts": [["我","ngo5"],["瞓咗","fan3 zo2"],["八個鐘","baat3 go3 zung1"],["。"]]},
+       {"en": "He works ten hours a day.", "parts": [["佢","keoi5"],["每日","mui5 jat6"],["做","zou6"],["十個","sap6 go3"],["鐘頭","zung1 tau4"],["。"]]}
+     ]}
+  ],
+  "dialogue": {
+    "title": "The alarm didn't ring",
+    "lines": [
+      {"spk": "A", "en": "Hey! It's already eight-thirty, aren't you getting up?", "parts": [["喂","wai3"],["！"],["已經","ji5 ging1"],["八點半","baat3 dim2 bun3"],["喇","laa3"],["，"],["你","nei5"],["仲","zung6"],["唔","m4"],["起身","hei2 san1"],["？"]]},
+      {"spk": "B", "en": "What?! My alarm didn't ring!", "parts": [["吓","haa2"],["？"],["我","ngo5"],["個","go3"],["鬧鐘","naau6 zung1"],["冇","mou5"],["響","hoeng2"],["㗎","gaa3"],["！"]]},
+      {"spk": "A", "en": "Don't you start work at nine?", "parts": [["你","nei5"],["唔係","m4 hai6"],["九點","gau2 dim2"],["返工","faan1 gung1"],["咩","me1"],["？"]]},
+      {"spk": "B", "en": "Yes! It takes me forty minutes to get there. I'm going to be late!", "parts": [["係","hai6"],["啊","aa3"],["！"],["我","ngo5"],["返工","faan1 gung1"],["要","jiu3"],["四十分鐘","sei3 sap6 fan1 zung1"],["，"],["死","sei2"],["喇","laa3"],["，"],["遲到","ci4 dou3"],["喇","laa3"],["！"]]},
+      {"spk": "A", "en": "Brush your teeth first, then leave. Skip the shower.", "parts": [["你","nei5"],["先","sin1"],["刷牙","caat3 ngaa4"],["再","zoi3"],["走","zau2"],["啦","laa1"],["，"],["唔好","m4 hou2"],["沖涼","cung1 loeng4"],["喇","laa3"],["。"]]},
+      {"spk": "B", "en": "What about breakfast?", "parts": [["噉","gam2"],["早餐","zou2 caan1"],["呢","ne1"],["？"]]},
+      {"spk": "A", "en": "Here's a pineapple bun, eat it on the MTR.", "parts": [["呢度","ni1 dou6"],["有","jau5"],["個","go3"],["菠蘿包","bo1 lo4 baau1"],["，"],["喺","hai2"],["地鐵","dei6 tit3"],["食","sik6"],["啦","laa1"],["。"]]},
+      {"spk": "B", "en": "Thanks! I'll cook dinner tonight!", "parts": [["多謝","do1 ze6"],["！"],["今晚","gam1 maan5"],["我","ngo5"],["煮飯","zyu2 faan6"],["！"]]}
+    ],
+    "questions": [
+      {"q": "What time is it when A wakes B?", "options": ["8:30", "9:00", "7:30", "8:00"], "answer": 0},
+      {"q": "Why did B oversleep?", "options": ["The alarm didn't ring", "B went to bed late", "B is sick", "It's Saturday"], "answer": 0},
+      {"q": "What does A tell B to skip?", "options": ["The shower", "Brushing teeth", "Breakfast", "The MTR"], "answer": 0},
+      {"q": "What will B do to say thanks?", "options": ["Cook dinner tonight", "Buy breakfast", "Wash the dishes", "Do the laundry"], "answer": 0}
+    ]
+  }
+}

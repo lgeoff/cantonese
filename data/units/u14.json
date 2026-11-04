@@ -1,0 +1,108 @@
+{
+  "id": "u14",
+  "level": 2,
+  "title": "Grammar Power-ups",
+  "emoji": "⚡",
+  "desc": "The small words that make Cantonese sound natural: aspect markers, particles and linkers",
+  "words": [
+    {"hk": "咗", "jp": "zo2", "en": "(after verb) completed action: did / has done", "fr": "(après un verbe) action accomplie", "note": "Goes right after the verb: 食咗 ate, 買咗 bought. Negative: 冇 + verb (no 咗).",
+     "ex": {"en": "I've eaten already.", "parts": [["我","ngo5"],["食咗","sik6 zo2"],["飯","faan6"],["喇","laa3"],["。"]]}},
+    {"hk": "緊", "jp": "gan2", "en": "(after verb) in progress: -ing", "fr": "(après un verbe) en train de", "note": "睇緊 watching, 做緊 doing. With verb-object words it splits them: 沖緊涼, 瞓緊覺.",
+     "ex": {"en": "I'm cooking, I can't talk right now.", "parts": [["我","ngo5"],["煮緊飯","zyu2 gan2 faan6"],["，"],["而家","ji4 gaa1"],["唔得閒","m4 dak1 haan4"],["。"]]}},
+    {"hk": "過", "jp": "gwo3", "en": "(after verb) experience: have ever done", "fr": "(après un verbe) avoir déjà fait (expérience)", "note": "去過 = have been to. Negative: 未 + verb + 過 = have never (yet) done.",
+     "ex": {"en": "Have you ever been to Japan?", "parts": [["你","nei5"],["有冇","jau5 mou5"],["去過","heoi3 gwo3"],["日本","jat6 bun2"],["啊","aa3"],["？"]]}},
+    {"hk": "未", "jp": "mei6", "en": "not yet; (at end of question) …yet?", "fr": "pas encore ; (en fin de question) … déjà ?", "note": "Question: 你食咗飯未啊？ Answer: 食咗 (yes) or 未啊 / 仲未 (not yet).",
+     "ex": {"en": "Have you had lunch yet?", "parts": [["你","nei5"],["食咗","sik6 zo2"],["晏","aan3"],["未","mei6"],["啊","aa3"],["？"]]}},
+    {"hk": "喇", "jp": "laa3", "en": "(end of sentence) new situation: now / already", "fr": "(fin de phrase) nouvelle situation : ça y est", "note": "Marks a change: 落雨喇 'it's (started) raining now'. Often with 咗: 到咗喇.",
+     "ex": {"en": "It's ten o'clock already, I'm going.", "parts": [["十點","sap6 dim2"],["喇","laa3"],["，"],["我","ngo5"],["走","zau2"],["喇","laa3"],["。"]]}},
+    {"hk": "啦", "jp": "laa1", "en": "(end of sentence) suggestion / request: let's, come on", "fr": "(fin de phrase) suggestion : allez, on…", "note": "Softens orders and makes suggestions: 食啦 'go on, eat'. Don't confuse with 喇 laa3 (change).",
+     "ex": {"en": "Let's go together!", "parts": [["一齊","jat1 cai4"],["去","heoi3"],["啦","laa1"],["！"]]}},
+    {"hk": "啊", "jp": "aa3", "en": "(end of sentence) softener; makes questions friendly", "fr": "(fin de phrase) adoucit la phrase", "note": "Without it many questions sound blunt. Also written 呀, but 啊 is the standard here.",
+     "ex": {"en": "Where are you going?", "parts": [["你","nei5"],["去","heoi3"],["邊","bin1"],["啊","aa3"],["？"]]}},
+    {"hk": "㗎", "jp": "gaa3", "en": "(end of sentence) that's how it is (explaining / emphasising)", "fr": "(fin de phrase) c'est comme ça (explication)", "note": "嘅 + 啊 merged. Gives a reason or a fact: 好貴㗎! In questions it shows surprise: 係你㗎？",
+     "ex": {"en": "Taxis in Hong Kong are cheap, you know.", "parts": [["香港","hoeng1 gong2"],["啲","di1"],["的士","dik1 si2"],["好","hou2"],["平","peng4"],["㗎","gaa3"],["。"]]}},
+    {"hk": "喎", "jp": "wo3", "en": "(end of sentence) passing on news / 'oh, by the way'", "fr": "(fin de phrase) info rapportée / « tiens »", "note": "Used for something you just noticed or heard: 佢話唔嚟喎 'he says he's not coming'.",
+     "ex": {"en": "Hey, it's raining!", "parts": [["咦","ji2"],["，"],["落雨","lok6 jyu5"],["喎","wo3"],["！"]]}},
+    {"hk": "嘅", "jp": "ge3", "en": "'s / of (possessive); that (describing)", "fr": "de (possession) ; qui (description)", "note": "我嘅 = mine. 紅色嘅 = the red one. With family and close things it's often dropped: 我媽媽.",
+     "ex": {"en": "Whose phone is this? — It's mine.", "parts": [["呢部","ni1 bou6"],["手機","sau2 gei1"],["係","hai6"],["邊個","bin1 go3"],["嘅","ge3"],["？"],["我","ngo5"],["嘅","ge3"],["。"]]}},
+    {"hk": "啲", "jp": "di1", "en": "some; the (plural); (after adj) a bit more", "fr": "quelques ; les (pluriel) ; (après adj.) un peu plus", "note": "Three uses: 啲菜 'the vegetables', 飲啲水 'drink some water', 快啲 'faster'.",
+     "ex": {"en": "Have some more!", "parts": [["食多啲","sik6 do1 di1"],["啦","laa1"],["！"]]}},
+    {"hk": "都", "jp": "dou1", "en": "also, too; (with plural) all, both", "fr": "aussi ; (au pluriel) tous", "note": "Always before the verb: 我都係 'me too'. 我哋都 = we all.",
+     "ex": {"en": "I like milk tea too.", "parts": [["我","ngo5"],["都","dou1"],["鍾意","zung1 ji3"],["飲","jam2"],["奶茶","naai5 caa4"],["。"]]}},
+    {"hk": "又", "jp": "jau6", "en": "again (already happened); 又…又… both … and …", "fr": "encore (déjà arrivé) ; 又…又… à la fois … et …", "note": "又 = again for something that happened (often with annoyance). 又平又靚 = cheap and pretty.",
+     "ex": {"en": "You're late again!", "parts": [["你","nei5"],["又","jau6"],["遲到","ci4 dou3"],["！"]]}},
+    {"hk": "再", "jp": "zoi3", "en": "again (in the future); then", "fr": "encore (à l'avenir) ; ensuite", "note": "再 = do it again later. 再見 = see you again. Compare 又 for the past.",
+     "ex": {"en": "Could you say that again?", "parts": [["唔該","m4 goi1"],["你","nei5"],["再","zoi3"],["講","gong2"],["一次","jat1 ci3"],["。"]]}},
+    {"hk": "先", "jp": "sin1", "en": "first; (end of sentence) first, before anything else", "fr": "d'abord", "note": "Before the verb: 我先走 'I'll leave first'. Very Cantonese at the end: 食先 'eat first'.",
+     "ex": {"en": "Let's eat first, we'll talk later.", "parts": [["食飯","sik6 faan6"],["先","sin1"],["，"],["遲啲","ci4 di1"],["再","zoi3"],["講","gong2"],["。"]]}},
+    {"hk": "就", "jp": "zau6", "en": "then; right away; just (exactly)", "fr": "alors ; tout de suite ; justement", "note": "就嚟 = coming right now. 噉就 = in that case. 就係 = exactly, that's it.",
+     "ex": {"en": "I'm almost there!", "parts": [["我","ngo5"],["就嚟","zau6 lai4"],["到","dou3"],["！"]]}},
+    {"hk": "仲", "jp": "zung6", "en": "still; even more; also", "fr": "encore / toujours ; encore plus", "note": "仲未 = still not. 仲貴 = even more expensive. 仲有 = and also / there's still.",
+     "ex": {"en": "He still hasn't got up.", "parts": [["佢","keoi5"],["仲","zung6"],["未","mei6"],["起身","hei2 san1"],["。"]]}},
+    {"hk": "好似", "jp": "hou2 ci5", "en": "seems; it looks like; to be like", "fr": "on dirait ; ressembler à",
+     "ex": {"en": "It looks like it's going to rain.", "parts": [["好似","hou2 ci5"],["就嚟","zau6 lai4"],["落雨","lok6 jyu5"],["喎","wo3"],["。"]]}},
+    {"hk": "定係", "jp": "ding6 hai6", "en": "or (in questions: A or B?)", "fr": "ou (dans une question : A ou B ?)", "note": "Only in questions where you choose one. Often shortened to 定.",
+     "ex": {"en": "Coffee or tea?", "parts": [["咖啡","gaa3 fe1"],["定係","ding6 hai6"],["茶","caa4"],["啊","aa3"],["？"]]}},
+    {"hk": "或者", "jp": "waak6 ze2", "en": "or (in statements); maybe", "fr": "ou (dans une affirmation) ; peut-être", "note": "Either is fine: 聽日或者後日 'tomorrow or the day after'. At the start: 'maybe'.",
+     "ex": {"en": "We can take the MTR or the bus.", "parts": [["我哋","ngo5 dei6"],["可以","ho2 ji5"],["搭","daap3"],["地鐵","dei6 tit3"],["或者","waak6 ze2"],["巴士","baa1 si2"],["。"]]}}
+  ],
+  "sentences": [
+    {"en": "I ate dim sum yesterday, and I'm eating dim sum again today!", "parts": [["我","ngo5"],["尋日","cam4 jat6"],["食咗","sik6 zo2"],["點心","dim2 sam1"],["，"],["今日","gam1 jat6"],["又","jau6"],["食","sik6"],["！"]]},
+    {"en": "What are you watching? — I'm watching the news.", "parts": [["你","nei5"],["睇緊","tai2 gan2"],["咩","me1"],["啊","aa3"],["？"],["睇緊","tai2 gan2"],["新聞","san1 man4"],["。"]]},
+    {"en": "I've been to Hong Kong, but I haven't been to Macau yet.", "parts": [["我","ngo5"],["去過","heoi3 gwo3"],["香港","hoeng1 gong2"],["，"],["但係","daan6 hai6"],["未","mei6"],["去過","heoi3 gwo3"],["澳門","ou3 mun2"],["。"]]},
+    {"en": "Have you eaten? — Not yet.", "parts": [["你","nei5"],["食咗飯","sik6 zo2 faan6"],["未","mei6"],["啊","aa3"],["？"],["仲未","zung6 mei6"],["啊","aa3"],["。"]]},
+    {"en": "Did you go to work yesterday? — No, I didn't.", "parts": [["你","nei5"],["尋日","cam4 jat6"],["有冇","jau5 mou5"],["返工","faan1 gung1"],["啊","aa3"],["？"],["冇","mou5"],["啊","aa3"],["。"]]},
+    {"en": "The rain has stopped, let's go out!", "parts": [["停咗","ting4 zo2"],["雨","jyu5"],["喇","laa3"],["，"],["出去","ceot1 heoi3"],["啦","laa1"],["！"]]},
+    {"en": "Do you want this one or that one?", "parts": [["你","nei5"],["要","jiu3"],["呢個","ni1 go3"],["定係","ding6 hai6"],["嗰個","go2 go3"],["啊","aa3"],["？"]]},
+    {"en": "This one or that one, either is fine.", "parts": [["呢個","ni1 go3"],["或者","waak6 ze2"],["嗰個","go2 go3"],["都","dou1"],["得","dak1"],["。"]]},
+    {"en": "That restaurant is both cheap and tasty.", "parts": [["嗰間","go2 gaan1"],["餐廳","caan1 teng1"],["又","jau6"],["平","peng4"],["又","jau6"],["好食","hou2 sik6"],["。"]]},
+    {"en": "Is it still raining? — It's raining even harder!", "parts": [["仲","zung6"],["落緊雨","lok6 gan2 jyu5"],["？"],["仲","zung6"],["大","daai6"],["咗","zo2"],["添","tim1"],["！"]]},
+    {"en": "You seem a bit tired.", "parts": [["你","nei5"],["好似","hou2 ci5"],["有啲","jau5 di1"],["攰","gui6"],["喎","wo3"],["。"]]},
+    {"en": "I'll go first, see you tomorrow!", "parts": [["我","ngo5"],["走","zau2"],["先","sin1"],["喇","laa3"],["，"],["聽日","ting1 jat6"],["見","gin3"],["！"]]},
+    {"en": "As soon as I get home I'll take a shower.", "parts": [["我","ngo5"],["返到","faan1 dou3"],["屋企","uk1 kei2"],["就","zau6"],["沖涼","cung1 loeng4"],["。"]]},
+    {"en": "These clothes are my sister's.", "parts": [["呢啲","ni1 di1"],["衫","saam1"],["係","hai6"],["我","ngo5"],["家姐","gaa1 ze1"],["嘅","ge3"],["。"]]}
+  ],
+  "grammar": [
+    {"title": "Aspect markers: 咗 done, 緊 -ing, 過 ever",
+     "explain": "Cantonese verbs don't change for tense. Instead, a marker straight after the verb says how the action stands: 咗 = finished, 緊 = in progress, 過 = has been experienced at some time. The negatives are 冇 + verb (didn't), and 未 + verb + 過 (never yet).",
+     "examples": [
+       {"en": "I ate / I'm eating / I've eaten it before.", "parts": [["我","ngo5"],["食咗","sik6 zo2"],["，"],["食緊","sik6 gan2"],["，"],["食過","sik6 gwo3"],["。"]]},
+       {"en": "I've been to Japan, but I haven't been to Korea.", "parts": [["我","ngo5"],["去過","heoi3 gwo3"],["日本","jat6 bun2"],["，"],["未","mei6"],["去過","heoi3 gwo3"],["韓國","hon4 gwok3"],["。"]]},
+       {"en": "She didn't come yesterday.", "parts": [["佢","keoi5"],["尋日","cam4 jat6"],["冇","mou5"],["嚟","lai4"],["。"]]}
+     ]},
+    {"title": "Sentence particles: 啊, 啦, 喇, 㗎, 喎",
+     "explain": "The last syllable sets the mood. 啊 softens; 啦 suggests or urges ('come on'); 喇 announces a change ('now, already'); 㗎 explains a fact; 喎 passes on news or something you just noticed. 啦 laa1 and 喇 laa3 differ only in tone!",
+     "examples": [
+       {"en": "Let's eat! (suggestion)", "parts": [["食飯","sik6 faan6"],["啦","laa1"],["！"]]},
+       {"en": "Dinner's ready! (change: it's time now)", "parts": [["食飯","sik6 faan6"],["喇","laa3"],["！"]]},
+       {"en": "The boss says there's no meeting today, apparently.", "parts": [["老闆","lou5 baan2"],["話","waa6"],["今日","gam1 jat6"],["唔使","m4 sai2"],["開會","hoi1 wui2"],["喎","wo3"],["。"]]}
+     ]},
+    {"title": "定係 vs 或者: two kinds of 'or'",
+     "explain": "定係 asks the listener to choose: 'A or B?' It only appears in questions. 或者 offers options in a statement: 'A or B, either is fine.'",
+     "examples": [
+       {"en": "Are you going on Saturday or Sunday?", "parts": [["你","nei5"],["星期六","sing1 kei4 luk6"],["定係","ding6 hai6"],["星期日","sing1 kei4 jat6"],["去","heoi3"],["啊","aa3"],["？"]]},
+       {"en": "I'll go on Saturday or Sunday.", "parts": [["我","ngo5"],["星期六","sing1 kei4 luk6"],["或者","waak6 ze2"],["星期日","sing1 kei4 jat6"],["去","heoi3"],["。"]]},
+       {"en": "Hot or iced? — Either is fine.", "parts": [["熱","jit6"],["定","ding6"],["凍","dung3"],["啊","aa3"],["？"],["熱","jit6"],["或者","waak6 ze2"],["凍","dung3"],["都","dou1"],["得","dak1"],["。"]]}
+     ]}
+  ],
+  "dialogue": {
+    "title": "Lunch with a hungry colleague",
+    "lines": [
+      {"spk": "A", "en": "Have you had lunch yet?", "parts": [["你","nei5"],["食咗","sik6 zo2"],["晏","aan3"],["未","mei6"],["啊","aa3"],["？"]]},
+      {"spk": "B", "en": "Not yet, I'm still writing an email.", "parts": [["仲未","zung6 mei6"],["啊","aa3"],["，"],["我","ngo5"],["仲","zung6"],["寫緊","se2 gan2"],["電郵","din6 jau4"],["。"]]},
+      {"spk": "A", "en": "It's already one-thirty! Eat first, come on!", "parts": [["已經","ji5 ging1"],["一點半","jat1 dim2 bun3"],["喇","laa3"],["！"],["食飯","sik6 faan6"],["先","sin1"],["啦","laa1"],["！"]]},
+      {"spk": "B", "en": "OK. Do you want noodles or rice?", "parts": [["好啦","hou2 laa1"],["。"],["你","nei5"],["想","soeng2"],["食","sik6"],["麵","min6"],["定係","ding6 hai6"],["飯","faan6"],["啊","aa3"],["？"]]},
+      {"spk": "A", "en": "Either is fine. Have you been to the new cha chaan teng downstairs?", "parts": [["麵","min6"],["或者","waak6 ze2"],["飯","faan6"],["都","dou1"],["得","dak1"],["。"],["你","nei5"],["去過","heoi3 gwo3"],["樓下","lau4 haa6"],["間","gaan1"],["新","san1"],["茶餐廳","caa4 caan1 teng1"],["未","mei6"],["啊","aa3"],["？"]]},
+      {"spk": "B", "en": "I went yesterday. It's cheap and good.", "parts": [["我","ngo5"],["尋日","cam4 jat6"],["去咗","heoi3 zo2"],["，"],["又","jau6"],["平","peng4"],["又","jau6"],["好食","hou2 sik6"],["㗎","gaa3"],["。"]]},
+      {"spk": "A", "en": "Then let's go there again today!", "parts": [["噉","gam2"],["今日","gam1 jat6"],["再","zoi3"],["去","heoi3"],["啦","laa1"],["！"]]},
+      {"spk": "B", "en": "Huh, seems like the boss is coming over…", "parts": [["咦","ji2"],["，"],["老闆","lou5 baan2"],["好似","hou2 ci5"],["行緊","haang4 gan2"],["過嚟","gwo3 lai4"],["喎","wo3"],["！"]]},
+      {"spk": "A", "en": "Quick, let's go, right now!", "parts": [["快啲","faai3 di1"],["走","zau2"],["啦","laa1"],["，"],["而家","ji4 gaa1"],["就","zau6"],["走","zau2"],["！"]]}
+    ],
+    "questions": [
+      {"q": "Why hasn't B had lunch yet?", "options": ["B is still writing an email", "B isn't hungry", "B is in a meeting", "B already ate breakfast late"], "answer": 0},
+      {"q": "What time is it?", "options": ["1:30", "12:30", "1:00", "2:30"], "answer": 0},
+      {"q": "What does B say about the new cha chaan teng?", "options": ["It's cheap and tasty", "It's expensive", "B has never been", "It's closed today"], "answer": 0},
+      {"q": "Why do they hurry off at the end?", "options": ["The boss is coming over", "The restaurant is closing", "It's starting to rain", "Their friend is waiting"], "answer": 0}
+    ]
+  }
+}

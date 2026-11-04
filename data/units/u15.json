@@ -1,0 +1,113 @@
+{
+  "id": "u15",
+  "level": 3,
+  "title": "Free Time & Sports",
+  "emoji": "⛰️",
+  "desc": "Talk about your hobbies, how often you do things, and plan a weekend outing",
+  "words": [
+    {"hk": "得閒", "jp": "dak1 haan4", "en": "free (not busy)", "fr": "libre (pas occupé)", "note": "Question form: 得唔得閒 dak1 m4 dak1 haan4? 'Are you free?'",
+     "ex": {"en": "Are you free this Saturday?", "parts": [["你","nei5"],["今個","gam1 go3"],["星期六","sing1 kei4 luk6"],["得唔得閒","dak1 m4 dak1 haan4"],["啊","aa3"],["？"]]}},
+    {"hk": "興趣", "jp": "hing3 ceoi3", "en": "hobby / interest", "fr": "loisir / centre d'intérêt",
+     "ex": {"en": "What are your hobbies?", "parts": [["你","nei5"],["有","jau5"],["咩","me1"],["興趣","hing3 ceoi3"],["啊","aa3"],["？"]]}},
+    {"hk": "睇戲", "jp": "tai2 hei3", "en": "to watch a movie", "fr": "aller au cinéma / voir un film", "note": "戲 = film. Classifier is 套 tou3: 呢套戲 'this film'.",
+     "ex": {"en": "Shall we go to the cinema tonight?", "parts": [["我哋","ngo5 dei6"],["今晚","gam1 maan5"],["去","heoi3"],["睇戲","tai2 hei3"],["好唔好","hou2 m4 hou2"],["啊","aa3"],["？"]]}},
+    {"hk": "行山", "jp": "haang4 saan1", "en": "to go hiking", "fr": "faire de la randonnée", "note": "Literally 'walk mountain' — Hong Kong's favourite weekend sport.",
+     "ex": {"en": "Hong Kong has lots of places to go hiking.", "parts": [["香港","hoeng1 gong2"],["有","jau5"],["好多","hou2 do1"],["地方","dei6 fong1"],["可以","ho2 ji5"],["行山","haang4 saan1"],["。"]]}},
+    {"hk": "游水", "jp": "jau4 seoi2", "en": "to swim", "fr": "nager",
+     "ex": {"en": "In summer I often go swimming at the beach.", "parts": [["夏天","haa6 tin1"],["我","ngo5"],["成日","seng4 jat6"],["去","heoi3"],["沙灘","saa1 taan1"],["游水","jau4 seoi2"],["。"]]}},
+    {"hk": "打波", "jp": "daa2 bo1", "en": "to play ball (basketball, volleyball…)", "fr": "jouer au ballon (basket, volley…)", "note": "打 for ball games played with the hands; for a specific sport say 打籃球 'play basketball'.",
+     "ex": {"en": "After school he plays basketball with his classmates.", "parts": [["佢","keoi5"],["放學","fong3 hok6"],["之後","zi1 hau6"],["同","tung4"],["同學","tung4 hok6"],["打波","daa2 bo1"],["。"]]}},
+    {"hk": "踢波", "jp": "tek3 bo1", "en": "to play football (soccer)", "fr": "jouer au foot", "note": "踢 = to kick.",
+     "ex": {"en": "My little brother plays football every Sunday.", "parts": [["我","ngo5"],["細佬","sai3 lou2"],["逢","fung4"],["星期日","sing1 kei4 jat6"],["都","dou1"],["去","heoi3"],["踢波","tek3 bo1"],["。"]]}},
+    {"hk": "唱歌", "jp": "coeng3 go1", "en": "to sing; to go to karaoke", "fr": "chanter ; aller au karaoké", "note": "Going to karaoke is usually called 唱K (coeng3 kei1) — the K is the English letter.",
+     "ex": {"en": "She sings really well.", "parts": [["佢","keoi5"],["唱歌","coeng3 go1"],["好","hou2"],["好聽","hou2 teng1"],["。"]]}},
+    {"hk": "旅行", "jp": "leoi5 hang4", "en": "to travel; a trip", "fr": "voyager ; voyage", "note": "去旅行 = go on a trip. Note hang4, not haang4 as in 行山.",
+     "ex": {"en": "Have you ever been to Japan on a trip?", "parts": [["你","nei5"],["去過","heoi3 gwo3"],["日本","jat6 bun2"],["旅行","leoi5 hang4"],["未","mei6"],["啊","aa3"],["？"]]}},
+    {"hk": "影相", "jp": "jing2 soeng2", "en": "to take photos", "fr": "prendre des photos", "note": "One photo = 一張相. 'Take a photo of us' = 幫我哋影張相.",
+     "ex": {"en": "Could you take a photo of us, please?", "parts": [["唔該","m4 goi1"],["幫","bong1"],["我哋","ngo5 dei6"],["影","jing2"],["張","zoeng1"],["相","soeng2"],["吖","aa1"],["。"]]}},
+    {"hk": "聽歌", "jp": "teng1 go1", "en": "to listen to music", "fr": "écouter de la musique",
+     "ex": {"en": "I like listening to music when I take the MTR.", "parts": [["我","ngo5"],["坐","co5"],["地鐵","dei6 tit3"],["嘅時候","ge3 si4 hau6"],["鍾意","zung1 ji3"],["聽歌","teng1 go1"],["。"]]}},
+    {"hk": "打機", "jp": "daa2 gei1", "en": "to play video games", "fr": "jouer aux jeux vidéo",
+     "ex": {"en": "My little brother plays video games all night.", "parts": [["我","ngo5"],["細佬","sai3 lou2"],["成晚","seng4 maan5"],["喺度","hai2 dou6"],["打機","daa2 gei1"],["。"]]}},
+    {"hk": "睇書", "jp": "tai2 syu1", "en": "to read (a book)", "fr": "lire (un livre)", "note": "Everyday word for reading. 讀書 duk6 syu1 means 'to study'.",
+     "ex": {"en": "I usually read before going to sleep.", "parts": [["我","ngo5"],["瞓覺","fan3 gaau3"],["之前","zi1 cin4"],["通常","tung1 soeng4"],["會","wui5"],["睇書","tai2 syu1"],["。"]]}},
+    {"hk": "煮嘢食", "jp": "zyu2 je5 sik6", "en": "to cook (food)", "fr": "cuisiner", "note": "Literally 'cook things to eat'. 煮飯 also means 'to cook a meal'.",
+     "ex": {"en": "At weekends I like cooking at home.", "parts": [["我","ngo5"],["週末","zau1 mut6"],["鍾意","zung1 ji3"],["喺","hai2"],["屋企","uk1 kei2"],["煮嘢食","zyu2 je5 sik6"],["。"]]}},
+    {"hk": "週末", "jp": "zau1 mut6", "en": "weekend", "fr": "week-end", "note": "Also written 周末.",
+     "ex": {"en": "What do you usually do at the weekend?", "parts": [["你","nei5"],["週末","zau1 mut6"],["通常","tung1 soeng4"],["做","zou6"],["咩","me1"],["啊","aa3"],["？"]]}},
+    {"hk": "成日", "jp": "seng4 jat6", "en": "often, all the time; all day", "fr": "souvent, tout le temps ; toute la journée", "note": "The most common spoken word for 'often'. Context tells you if it means 'all day'.",
+     "ex": {"en": "She's always on her phone.", "parts": [["佢","keoi5"],["成日","seng4 jat6"],["睇","tai2"],["手機","sau2 gei1"],["。"]]}},
+    {"hk": "經常", "jp": "ging1 soeng4", "en": "often, frequently", "fr": "souvent, fréquemment", "note": "Same meaning as 成日 but a bit more formal.",
+     "ex": {"en": "We often go hiking together.", "parts": [["我哋","ngo5 dei6"],["經常","ging1 soeng4"],["一齊","jat1 cai4"],["去","heoi3"],["行山","haang4 saan1"],["。"]]}},
+    {"hk": "有時", "jp": "jau5 si4", "en": "sometimes", "fr": "parfois",
+     "ex": {"en": "Sometimes I go to the cinema alone.", "parts": [["我","ngo5"],["有時","jau5 si4"],["會","wui5"],["一個人","jat1 go3 jan4"],["去","heoi3"],["睇戲","tai2 hei3"],["。"]]}},
+    {"hk": "間中", "jp": "gaan3 zung1", "en": "occasionally, now and then", "fr": "de temps en temps", "note": "Less often than 有時. Often followed by 都: 間中都會…",
+     "ex": {"en": "I do play video games now and then.", "parts": [["我","ngo5"],["間中","gaan3 zung1"],["都","dou1"],["會","wui5"],["打機","daa2 gei1"],["。"]]}},
+    {"hk": "從來唔", "jp": "cung4 loi4 m4", "en": "never (as a habit)", "fr": "ne… jamais (par habitude)", "note": "從來唔 + verb = never do. 從來冇 + verb + 過 = have never (once) done.",
+     "ex": {"en": "I never eat spicy food.", "parts": [["我","ngo5"],["從來唔","cung4 loi4 m4"],["食","sik6"],["辣","laat6"],["。"]]}},
+    {"hk": "運動", "jp": "wan6 dung6", "en": "sport, exercise", "fr": "sport, exercice", "note": "To exercise = 做運動.",
+     "ex": {"en": "Do you usually do any exercise?", "parts": [["你","nei5"],["平時","ping4 si4"],["有冇","jau5 mou5"],["做","zou6"],["運動","wan6 dung6"],["啊","aa3"],["？"]]}},
+    {"hk": "好玩", "jp": "hou2 waan2", "en": "fun", "fr": "amusant", "note": "玩 here is waan2 (rising tone).",
+     "ex": {"en": "Hiking is great fun!", "parts": [["行山","haang4 saan1"],["好","hou2"],["好玩","hou2 waan2"],["！"]]}},
+    {"hk": "去街", "jp": "heoi3 gaai1", "en": "to go out", "fr": "sortir", "note": "Literally 'go to the street' — any going out of the house.",
+     "ex": {"en": "It's raining, I don't want to go out.", "parts": [["落緊雨","lok6 gan2 jyu5"],["，"],["我","ngo5"],["唔想","m4 soeng2"],["去街","heoi3 gaai1"],["。"]]}}
+  ],
+  "sentences": [
+    {"en": "At weekends I usually go hiking with friends.", "parts": [["我","ngo5"],["週末","zau1 mut6"],["通常","tung1 soeng4"],["同","tung4"],["朋友","pang4 jau5"],["去","heoi3"],["行山","haang4 saan1"],["。"]]},
+    {"en": "What do you like doing in your free time?", "parts": [["你","nei5"],["得閒","dak1 haan4"],["嘅時候","ge3 si4 hau6"],["鍾意","zung1 ji3"],["做","zou6"],["啲","di1"],["咩","me1"],["啊","aa3"],["？"]]},
+    {"en": "I never play video games, but my little brother plays all the time.", "parts": [["我","ngo5"],["從來唔","cung4 loi4 m4"],["打機","daa2 gei1"],["，"],["但係","daan6 hai6"],["我","ngo5"],["細佬","sai3 lou2"],["成日","seng4 jat6"],["打","daa2"],["。"]]},
+    {"en": "It rained yesterday, so we didn't go hiking — we played games at home.", "parts": [["尋日","cam4 jat6"],["落雨","lok6 jyu5"],["，"],["我哋","ngo5 dei6"],["冇","mou5"],["去","heoi3"],["行山","haang4 saan1"],["，"],["喺","hai2"],["屋企","uk1 kei2"],["打機","daa2 gei1"],["。"]]},
+    {"en": "We occasionally go to karaoke after work.", "parts": [["我哋","ngo5 dei6"],["間中","gaan3 zung1"],["放工","fong3 gung1"],["之後","zi1 hau6"],["去","heoi3"],["唱歌","coeng3 go1"],["。"]]},
+    {"en": "Summer is too hot — I just want to go swimming at the beach.", "parts": [["夏天","haa6 tin1"],["太","taai3"],["熱","jit6"],["，"],["我","ngo5"],["淨係","zing6 hai6"],["想","soeng2"],["去","heoi3"],["沙灘","saa1 taan1"],["游水","jau4 seoi2"],["。"]]},
+    {"en": "Do you prefer playing football or basketball?", "parts": [["你","nei5"],["鍾意","zung1 ji3"],["踢波","tek3 bo1"],["定係","ding6 hai6"],["打籃球","daa2 laam4 kau4"],["啊","aa3"],["？"]]},
+    {"en": "Sometimes I listen to music before going to sleep.", "parts": [["我","ngo5"],["有時","jau5 si4"],["瞓覺","fan3 gaau3"],["之前","zi1 cin4"],["會","wui5"],["聽歌","teng1 go1"],["。"]]},
+    {"en": "It's so beautiful here — take a photo of me!", "parts": [["呢度","ni1 dou6"],["好","hou2"],["靚","leng3"],["，"],["幫","bong1"],["我","ngo5"],["影","jing2"],["張","zoeng1"],["相","soeng2"],["吖","aa1"],["！"]]},
+    {"en": "He says he has no time to exercise, but he plays games all night.", "parts": [["佢","keoi5"],["話","waa6"],["冇","mou5"],["時間","si4 gaan3"],["做","zou6"],["運動","wan6 dung6"],["，"],["但係","daan6 hai6"],["成晚","seng4 maan5"],["打機","daa2 gei1"],["。"]]},
+    {"en": "Cooking is fun, but washing the dishes is boring.", "parts": [["煮嘢食","zyu2 je5 sik6"],["好","hou2"],["好玩","hou2 waan2"],["，"],["但係","daan6 hai6"],["洗碗","sai2 wun2"],["好","hou2"],["悶","mun6"],["。"]]},
+    {"en": "I haven't read a book in ages.", "parts": [["我","ngo5"],["好耐","hou2 noi6"],["冇","mou5"],["睇書","tai2 syu1"],["喇","laa3"],["。"]]},
+    {"en": "This film is really good — have you seen it yet?", "parts": [["呢套","ni1 tou3"],["戲","hei3"],["好","hou2"],["好睇","hou2 tai2"],["，"],["你","nei5"],["睇咗","tai2 zo2"],["未","mei6"],["啊","aa3"],["？"]]},
+    {"en": "I've never been to Japan, but I really want to go.", "parts": [["我","ngo5"],["從來冇","cung4 loi4 mou5"],["去過","heoi3 gwo3"],["日本","jat6 bun2"],["，"],["好","hou2"],["想","soeng2"],["去","heoi3"],["啊","aa3"],["！"]]}
+  ],
+  "grammar": [
+    {"title": "How often: 成日 · 有時 · 間中 · 從來唔",
+     "explain": "Frequency words go after the subject (and after any time word), right before the verb. 會 'would, tend to' often follows them.",
+     "examples": [
+       {"en": "At weekends I often go swimming.", "parts": [["我","ngo5"],["週末","zau1 mut6"],["成日","seng4 jat6"],["去","heoi3"],["游水","jau4 seoi2"],["。"]]},
+       {"en": "Sometimes I go to karaoke.", "parts": [["我","ngo5"],["有時","jau5 si4"],["會","wui5"],["去","heoi3"],["唱歌","coeng3 go1"],["。"]]},
+       {"en": "I never watch horror films.", "parts": [["我","ngo5"],["從來唔","cung4 loi4 m4"],["睇","tai2"],["恐怖片","hung2 bou3 pin2"],["。"]]}
+     ]},
+    {"title": "去 + activity",
+     "explain": "To 'go and do' something, put 去 straight before the activity — no extra word for 'to'. Ask with 去唔去.",
+     "examples": [
+       {"en": "Let's go swimming!", "parts": [["我哋","ngo5 dei6"],["去","heoi3"],["游水","jau4 seoi2"],["啦","laa1"],["！"]]},
+       {"en": "Are you going hiking tomorrow?", "parts": [["你","nei5"],["聽日","ting1 jat6"],["去唔去","heoi3 m4 heoi3"],["行山","haang4 saan1"],["啊","aa3"],["？"]]}
+     ]},
+    {"title": "…嘅時候 = when…",
+     "explain": "Put 嘅時候 after a phrase to say 'when / while…'. It comes first, then the main sentence.",
+     "examples": [
+       {"en": "When I'm free I like to cook.", "parts": [["我","ngo5"],["得閒","dak1 haan4"],["嘅時候","ge3 si4 hau6"],["鍾意","zung1 ji3"],["煮嘢食","zyu2 je5 sik6"],["。"]]},
+       {"en": "When I was little I played football all the time.", "parts": [["我","ngo5"],["細個","sai3 go3"],["嘅時候","ge3 si4 hau6"],["成日","seng4 jat6"],["踢波","tek3 bo1"],["。"]]}
+     ]}
+  ],
+  "dialogue": {
+    "title": "Hiking the Dragon's Back",
+    "lines": [
+      {"spk": "A", "en": "Hey, are you free this Saturday?", "parts": [["喂","wai3"],["，"],["你","nei5"],["今個","gam1 go3"],["星期六","sing1 kei4 luk6"],["得唔得閒","dak1 m4 dak1 haan4"],["啊","aa3"],["？"]]},
+      {"spk": "B", "en": "I'm free. What's the plan?", "parts": [["得閒","dak1 haan4"],["啊","aa3"],["，"],["有","jau5"],["咩","me1"],["搞","gaau2"],["啊","aa3"],["？"]]},
+      {"spk": "A", "en": "How about we go hiking on the Dragon's Back?", "parts": [["我哋","ngo5 dei6"],["去","heoi3"],["龍脊","lung4 zek3"],["行山","haang4 saan1"],["好唔好","hou2 m4 hou2"],["啊","aa3"],["？"]]},
+      {"spk": "B", "en": "Sure! I've never been. Is it a hard walk?", "parts": [["好","hou2"],["啊","aa3"],["！"],["我","ngo5"],["從來冇","cung4 loi4 mou5"],["去過","heoi3 gwo3"],["，"],["難唔難行","naan4 m4 naan4 haang4"],["㗎","gaa3"],["？"]]},
+      {"spk": "A", "en": "Not hard, it's only about two hours of walking.", "parts": [["唔難","m4 naan4"],["，"],["大概","daai6 koi3"],["行","haang4"],["兩個","loeng5 go3"],["鐘頭","zung1 tau4"],["咋","zaa3"],["。"]]},
+      {"spk": "B", "en": "So what time do we set off?", "parts": [["噉","gam2"],["我哋","ngo5 dei6"],["幾點","gei2 dim2"],["出發","ceot1 faat3"],["啊","aa3"],["？"]]},
+      {"spk": "A", "en": "Let's meet at Shau Kei Wan station at nine.", "parts": [["九點","gau2 dim2"],["喺","hai2"],["筲箕灣","saau1 gei1 waan1"],["站","zaam6"],["等","dang2"],["啦","laa1"],["。"]]},
+      {"spk": "B", "en": "Nine?! So early! At weekends I usually don't get up till eleven!", "parts": [["九點","gau2 dim2"],["？"],["咁","gam3"],["早","zou2"],["！"],["我","ngo5"],["週末","zau1 mut6"],["通常","tung1 soeng4"],["十一點","sap6 jat1 dim2"],["先","sin1"],["起身","hei2 san1"],["㗎","gaa3"],["！"]]},
+      {"spk": "A", "en": "If we go early the sun isn't as strong, and the photos are nicer too.", "parts": [["早啲","zou2 di1"],["去","heoi3"],["冇","mou5"],["咁","gam3"],["曬","saai3"],["嘛","maa3"],["，"],["影相","jing2 soeng2"],["都","dou1"],["靚","leng3"],["啲","di1"],["。"]]},
+      {"spk": "B", "en": "Fine, fine. I'll bring my camera!", "parts": [["好啦","hou2 laa1"],["好啦","hou2 laa1"],["，"],["我","ngo5"],["帶","daai3"],["相機","soeng2 gei1"],["！"]]}
+    ],
+    "questions": [
+      {"q": "Where do they plan to go hiking?", "options": ["The Dragon's Back", "The Peak", "Lantau Island", "Lion Rock"], "answer": 0},
+      {"q": "How long is the walk, according to A?", "options": ["About two hours", "About half an hour", "The whole day", "About five hours"], "answer": 0},
+      {"q": "What time does B usually get up at weekends?", "options": ["Eleven", "Nine", "Seven", "Noon"], "answer": 0},
+      {"q": "Why does A want to start early?", "options": ["The sun is less strong and photos are nicer", "The trail closes at noon", "A has to work in the afternoon", "To avoid the rain"], "answer": 0}
+    ]
+  }
+}

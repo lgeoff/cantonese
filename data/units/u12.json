@@ -1,0 +1,109 @@
+{
+  "id": "u12",
+  "level": 2,
+  "title": "Home & Gadgets",
+  "emoji": "🏠",
+  "desc": "Talk about your flat, switch things on and off, and get broken things fixed",
+  "words": [
+    {"hk": "房", "jp": "fong2", "en": "room; bedroom", "fr": "chambre / pièce", "note": "Said fong2 on its own. Classifier 間: 一間房. Bedroom = 睡房.",
+     "ex": {"en": "My room is very small.", "parts": [["我","ngo5"],["間","gaan1"],["房","fong2"],["好","hou2"],["細","sai3"],["。"]]}},
+    {"hk": "廳", "jp": "teng1", "en": "living room", "fr": "salon", "note": "Flats are described as 兩房一廳 'two bedrooms, one living room'.",
+     "ex": {"en": "The kids are watching TV in the living room.", "parts": [["啲","di1"],["小朋友","siu2 pang4 jau5"],["喺","hai2"],["廳","teng1"],["睇電視","tai2 din6 si6"],["。"]]}},
+    {"hk": "廚房", "jp": "cyu4 fong2", "en": "kitchen", "fr": "cuisine", "note": "Many people say ceoi4 fong2.",
+     "ex": {"en": "Mum is cooking in the kitchen.", "parts": [["媽媽","maa4 maa1"],["喺","hai2"],["廚房","cyu4 fong2"],["煮飯","zyu2 faan6"],["。"]]}},
+    {"hk": "廁所", "jp": "ci3 so2", "en": "toilet / bathroom", "fr": "toilettes / salle de bain", "note": "In HK flats the toilet and shower are usually in one room, all called 廁所.",
+     "ex": {"en": "Excuse me, where's the toilet?", "parts": [["請問","ceng2 man6"],["廁所","ci3 so2"],["喺","hai2"],["邊度","bin1 dou6"],["啊","aa3"],["？"]]}},
+    {"hk": "窗", "jp": "coeng1", "en": "window", "fr": "fenêtre",
+     "ex": {"en": "Can I open the window? It's so stuffy.", "parts": [["可唔可以","ho2 m4 ho2 ji5"],["開窗","hoi1 coeng1"],["啊","aa3"],["？"],["好","hou2"],["焗","guk6"],["啊","aa3"],["。"]]}},
+    {"hk": "門", "jp": "mun4", "en": "door", "fr": "porte",
+     "ex": {"en": "Remember to shut the door when you go out.", "parts": [["出去","ceot1 heoi3"],["記得","gei3 dak1"],["閂門","saan1 mun4"],["啊","aa3"],["。"]]}},
+    {"hk": "開", "jp": "hoi1", "en": "to open; to switch on", "fr": "ouvrir ; allumer", "note": "開門 open the door, 開燈 turn on the light, 開冷氣 turn on the air-con.",
+     "ex": {"en": "It's so hot, turn on the air-con!", "parts": [["好","hou2"],["熱","jit6"],["啊","aa3"],["，"],["開冷氣","hoi1 laang5 hei3"],["啦","laa1"],["！"]]}},
+    {"hk": "閂", "jp": "saan1", "en": "to close / shut; to switch off", "fr": "fermer ; éteindre", "note": "A very Cantonese character: a bar across a door. 閂燈 = turn off the light.",
+     "ex": {"en": "Turn off the light before you sleep.", "parts": [["瞓覺","fan3 gaau3"],["之前","zi1 cin4"],["閂燈","saan1 dang1"],["。"]]}},
+    {"hk": "燈", "jp": "dang1", "en": "light / lamp", "fr": "lumière / lampe",
+     "ex": {"en": "It's too dark, please turn on the light.", "parts": [["好","hou2"],["黑","hak1"],["啊","aa3"],["，"],["唔該","m4 goi1"],["開燈","hoi1 dang1"],["。"]]}},
+    {"hk": "冷氣", "jp": "laang5 hei3", "en": "air-conditioning", "fr": "climatisation", "note": "The machine is 冷氣機, but people just say 部冷氣.",
+     "ex": {"en": "The air-con in the office is too strong.", "parts": [["公司","gung1 si1"],["啲","di1"],["冷氣","laang5 hei3"],["太","taai3"],["大","daai6"],["。"]]}},
+    {"hk": "雪櫃", "jp": "syut3 gwai6", "en": "fridge", "fr": "frigo", "note": "Literally 'snow cupboard'.",
+     "ex": {"en": "Is there any beer in the fridge?", "parts": [["雪櫃","syut3 gwai6"],["有冇","jau5 mou5"],["啤酒","be1 zau2"],["啊","aa3"],["？"]]}},
+    {"hk": "洗衣機", "jp": "sai2 ji1 gei1", "en": "washing machine", "fr": "machine à laver",
+     "ex": {"en": "The washing machine is so noisy.", "parts": [["部","bou6"],["洗衣機","sai2 ji1 gei1"],["好","hou2"],["嘈","cou4"],["。"]]}},
+    {"hk": "手機", "jp": "sau2 gei1", "en": "mobile phone", "fr": "téléphone portable",
+     "ex": {"en": "My phone's battery is dead.", "parts": [["我","ngo5"],["部","bou6"],["手機","sau2 gei1"],["冇電","mou5 din6"],["喇","laa3"],["。"]]}},
+    {"hk": "叉電", "jp": "caa1 din6", "en": "to charge (a battery)", "fr": "recharger", "note": "Everyday word. 充電 cung1 din6 is the written/formal one.",
+     "ex": {"en": "Can I charge my phone here?", "parts": [["我","ngo5"],["可唔可以","ho2 m4 ho2 ji5"],["喺度","hai2 dou6"],["叉電","caa1 din6"],["啊","aa3"],["？"]]}},
+    {"hk": "壞咗", "jp": "waai6 zo2", "en": "broken; out of order", "fr": "cassé ; en panne", "note": "壞 = bad/broken, 咗 = it has happened.",
+     "ex": {"en": "My computer is broken.", "parts": [["我","ngo5"],["部","bou6"],["電腦","din6 nou5"],["壞咗","waai6 zo2"],["。"]]}},
+    {"hk": "整", "jp": "zing2", "en": "to fix; to make", "fr": "réparer ; fabriquer", "note": "整返好 = fix it back to working. Also 'make': 整嘢食 = make food.",
+     "ex": {"en": "Do you know how to fix it?", "parts": [["你","nei5"],["識唔識","sik1 m4 sik1"],["整","zing2"],["啊","aa3"],["？"]]}},
+    {"hk": "師傅", "jp": "si1 fu2", "en": "repairman; (polite address to a tradesman or driver)", "fr": "réparateur ; (appellation polie pour un artisan)", "note": "Call taxi drivers, chefs and repairmen 師傅.",
+     "ex": {"en": "Sir, when can you come and fix it?", "parts": [["師傅","si1 fu2"],["，"],["你","nei5"],["幾時","gei2 si4"],["可以","ho2 ji5"],["嚟","lai4"],["整","zing2"],["啊","aa3"],["？"]]}},
+    {"hk": "鎖匙", "jp": "so2 si4", "en": "key", "fr": "clé", "note": "Classifier 條: 一條鎖匙.",
+     "ex": {"en": "I can't find my key!", "parts": [["我","ngo5"],["搵唔到","wan2 m4 dou2"],["條","tiu4"],["鎖匙","so2 si4"],["啊","aa3"],["！"]]}},
+    {"hk": "張", "jp": "zoeng1", "en": "classifier: flat things (tables, beds, paper, tickets)", "fr": "classificateur : objets plats (table, lit, papier)",
+     "ex": {"en": "This table is very heavy.", "parts": [["呢張","ni1 zoeng1"],["枱","toi2"],["好","hou2"],["重","cung5"],["。"]]}},
+    {"hk": "部", "jp": "bou6", "en": "classifier: machines (phones, computers, air-cons)", "fr": "classificateur : machines",
+     "ex": {"en": "I want to buy a new phone.", "parts": [["我","ngo5"],["想","soeng2"],["買","maai5"],["部","bou6"],["新","san1"],["手機","sau2 gei1"],["。"]]}},
+    {"hk": "架", "jp": "gaa3", "en": "classifier: vehicles (cars, bikes, planes)", "fr": "classificateur : véhicules",
+     "ex": {"en": "He bought a new car.", "parts": [["佢","keoi5"],["買咗","maai5 zo2"],["架","gaa3"],["新","san1"],["車","ce1"],["。"]]}},
+    {"hk": "間", "jp": "gaan1", "en": "classifier: rooms, flats, shops, restaurants", "fr": "classificateur : pièces, logements, magasins",
+     "ex": {"en": "That restaurant is really good.", "parts": [["嗰間","go2 gaan1"],["餐廳","caan1 teng1"],["好","hou2"],["好食","hou2 sik6"],["。"]]}}
+  ],
+  "sentences": [
+    {"en": "My flat has two bedrooms and a living room.", "parts": [["我","ngo5"],["屋企","uk1 kei2"],["有","jau5"],["兩間","loeng5 gaan1"],["房","fong2"],["同","tung4"],["一個","jat1 go3"],["廳","teng1"],["。"]]},
+    {"en": "The toilet is next to the kitchen.", "parts": [["廁所","ci3 so2"],["喺","hai2"],["廚房","cyu4 fong2"],["隔籬","gaak3 lei4"],["。"]]},
+    {"en": "The air-con is broken!", "parts": [["部","bou6"],["冷氣","laang5 hei3"],["壞咗","waai6 zo2"],["啊","aa3"],["！"]]},
+    {"en": "Remember to turn off the lights when you go out.", "parts": [["出去","ceot1 heoi3"],["記得","gei3 dak1"],["閂燈","saan1 dang1"],["啊","aa3"],["。"]]},
+    {"en": "My phone is dead, I need to charge it.", "parts": [["我","ngo5"],["部","bou6"],["手機","sau2 gei1"],["冇電","mou5 din6"],["，"],["要","jiu3"],["叉電","caa1 din6"],["。"]]},
+    {"en": "Can you fix computers?", "parts": [["你","nei5"],["識唔識","sik1 m4 sik1"],["整","zing2"],["電腦","din6 nou5"],["啊","aa3"],["？"]]},
+    {"en": "There are three phones on the table.", "parts": [["張","zoeng1"],["枱","toi2"],["上面","soeng6 min6"],["有","jau5"],["三部","saam1 bou6"],["手機","sau2 gei1"],["。"]]},
+    {"en": "Don't open the window, it's raining.", "parts": [["唔好","m4 hou2"],["開窗","hoi1 coeng1"],["，"],["落緊雨","lok6 gan2 jyu5"],["啊","aa3"],["。"]]},
+    {"en": "The key is in the kitchen.", "parts": [["條","tiu4"],["鎖匙","so2 si4"],["喺","hai2"],["廚房","cyu4 fong2"],["。"]]},
+    {"en": "There's nothing in the fridge.", "parts": [["雪櫃","syut3 gwai6"],["乜嘢","mat1 je5"],["都","dou1"],["冇","mou5"],["。"]]},
+    {"en": "When will the repairman come?", "parts": [["師傅","si1 fu2"],["幾時","gei2 si4"],["嚟","lai4"],["啊","aa3"],["？"]]},
+    {"en": "Which room is yours?", "parts": [["邊間","bin1 gaan1"],["房","fong2"],["係","hai6"],["你","nei5"],["嘅","ge3"],["啊","aa3"],["？"]]}
+  ],
+  "grammar": [
+    {"title": "Classifier + noun = 'the'",
+     "explain": "Drop 呢/嗰 and a classifier alone in front of a noun means 'the (one we both know)': 部冷氣 = the air-con, 條鎖匙 = the key. English needs 'the' or 'my'; Cantonese just uses the classifier.",
+     "examples": [
+       {"en": "The washing machine is broken.", "parts": [["部","bou6"],["洗衣機","sai2 ji1 gei1"],["壞咗","waai6 zo2"],["。"]]},
+       {"en": "Where's the key?", "parts": [["條","tiu4"],["鎖匙","so2 si4"],["喺","hai2"],["邊度","bin1 dou6"],["啊","aa3"],["？"]]},
+       {"en": "My room is very messy.", "parts": [["我","ngo5"],["間","gaan1"],["房","fong2"],["好","hou2"],["亂","lyun6"],["。"]]}
+     ]},
+    {"title": "Choosing the classifier",
+     "explain": "部 for machines, 張 for flat things, 架 for vehicles, 間 for rooms and buildings, 條 for long thin things (keys, trousers, fish). If you're unsure, 個 is the safe default.",
+     "examples": [
+       {"en": "I have a computer and a bike.", "parts": [["我","ngo5"],["有","jau5"],["部","bou6"],["電腦","din6 nou5"],["同","tung4"],["架","gaa3"],["單車","daan1 ce1"],["。"]]},
+       {"en": "There are two beds in this room.", "parts": [["呢間","ni1 gaan1"],["房","fong2"],["有","jau5"],["兩張","loeng5 zoeng1"],["床","cong4"],["。"]]}
+     ]},
+    {"title": "開 and 閂: open/close, on/off",
+     "explain": "The same verbs work for doors, windows and devices: 開 = open / switch on, 閂 = close / switch off.",
+     "examples": [
+       {"en": "Turn off the TV.", "parts": [["閂","saan1"],["咗","zo2"],["部","bou6"],["電視","din6 si6"],["啦","laa1"],["。"]]},
+       {"en": "Open the door, please.", "parts": [["唔該","m4 goi1"],["開門","hoi1 mun4"],["。"]]}
+     ]}
+  ],
+  "dialogue": {
+    "title": "The air-con breaks in August",
+    "lines": [
+      {"spk": "A", "en": "Oh no, the air-con is broken!", "parts": [["弊","bai6"],["喇","laa3"],["，"],["部","bou6"],["冷氣","laang5 hei3"],["壞咗","waai6 zo2"],["！"]]},
+      {"spk": "B", "en": "What? It's thirty-four degrees today!", "parts": [["吓","haa2"],["？"],["今日","gam1 jat6"],["三十四度","saam1 sap6 sei3 dou6"],["㗎","gaa3"],["！"]]},
+      {"spk": "A", "en": "It's on, but it's not cold at all.", "parts": [["開咗","hoi1 zo2"],["，"],["但係","daan6 hai6"],["一啲","jat1 di1"],["都","dou1"],["唔","m4"],["凍","dung3"],["。"]]},
+      {"spk": "B", "en": "Have you tried turning it off and on again?", "parts": [["你","nei5"],["有冇","jau5 mou5"],["試過","si3 gwo3"],["閂咗","saan1 zo2"],["佢","keoi5"],["再","zoi3"],["開","hoi1"],["啊","aa3"],["？"]]},
+      {"spk": "A", "en": "I tried, it still doesn't work.", "parts": [["試過","si3 gwo3"],["喇","laa3"],["，"],["都係","dou1 hai6"],["唔得","m4 dak1"],["。"]]},
+      {"spk": "B", "en": "Then call the repairman to come and fix it.", "parts": [["噉","gam2"],["打電話","daa2 din6 waa2"],["叫","giu3"],["師傅","si1 fu2"],["嚟","lai4"],["整","zing2"],["啦","laa1"],["。"]]},
+      {"spk": "A", "en": "The repairman says he can't come until tomorrow.", "parts": [["師傅","si1 fu2"],["話","waa6"],["聽日","ting1 jat6"],["先","sin1"],["嚟得","lai4 dak1"],["。"]]},
+      {"spk": "B", "en": "Ugh, how are we going to sleep tonight?", "parts": [["唉","aai1"],["，"],["今晚","gam1 maan5"],["點","dim2"],["瞓","fan3"],["啊","aa3"],["？"]]},
+      {"spk": "A", "en": "Open the windows and turn on the fan!", "parts": [["開窗","hoi1 coeng1"],["，"],["開","hoi1"],["風扇","fung1 sin3"],["囉","lo1"],["！"]]},
+      {"spk": "B", "en": "Forget it, I'm sleeping at my friend's place!", "parts": [["算","syun3"],["啦","laa1"],["，"],["我","ngo5"],["去","heoi3"],["朋友","pang4 jau5"],["屋企","uk1 kei2"],["瞓","fan3"],["！"]]}
+    ],
+    "questions": [
+      {"q": "What's wrong with the air-con?", "options": ["It's on but not cold", "It won't switch on", "It's too noisy", "It's leaking water"], "answer": 0},
+      {"q": "How hot is it today?", "options": ["34 degrees", "30 degrees", "24 degrees", "38 degrees"], "answer": 0},
+      {"q": "When can the repairman come?", "options": ["Tomorrow", "Tonight", "In an hour", "Next week"], "answer": 0},
+      {"q": "What does B decide to do?", "options": ["Sleep at a friend's place", "Sleep with the fan on", "Buy a new air-con", "Fix it himself"], "answer": 0}
+    ]
+  }
+}

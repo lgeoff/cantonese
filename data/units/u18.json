@@ -1,0 +1,109 @@
+{
+  "id": "u18",
+  "level": 3,
+  "title": "Making Plans",
+  "emoji": "📅",
+  "desc": "Suggest plans, fix a time and place, reschedule, and explain why you're running late",
+  "words": [
+    {"hk": "約", "jp": "joek3", "en": "to arrange to meet; an appointment", "fr": "donner rendez-vous ; rendez-vous", "note": "我約咗人 = I'm meeting someone. 有約 = I have plans.",
+     "ex": {"en": "I've arranged to meet a friend for dinner on Friday.", "parts": [["我","ngo5"],["星期五","sing1 kei4 ng5"],["約","joek3"],["咗","zo2"],["朋友","pang4 jau5"],["食飯","sik6 faan6"],["。"]]}},
+    {"hk": "見面", "jp": "gin3 min6", "en": "to meet (up)", "fr": "se voir, se rencontrer", "note": "Split it to add a time: 見過面, 見一次面.",
+     "ex": {"en": "We haven't met up in ages!", "parts": [["我哋","ngo5 dei6"],["好耐","hou2 noi6"],["冇","mou5"],["見面","gin3 min6"],["喇","laa3"],["！"]]}},
+    {"hk": "不如", "jp": "bat1 jyu4", "en": "how about…, why don't we…", "fr": "et si…, pourquoi ne pas…", "note": "不如 … 啦 is the standard way to suggest something.",
+     "ex": {"en": "How about we go and eat hotpot?", "parts": [["不如","bat1 jyu4"],["我哋","ngo5 dei6"],["去","heoi3"],["打邊爐","daa2 bin1 lou4"],["啦","laa1"],["。"]]}},
+    {"hk": "好主意", "jp": "hou2 zyu2 ji3", "en": "good idea", "fr": "bonne idée",
+     "ex": {"en": "Good idea! I haven't had hotpot in ages.", "parts": [["好主意","hou2 zyu2 ji3"],["！"],["我","ngo5"],["好耐","hou2 noi6"],["冇","mou5"],["打邊爐","daa2 bin1 lou4"],["喇","laa3"],["。"]]}},
+    {"hk": "得唔得", "jp": "dak1 m4 dak1", "en": "is that OK? / does that work?", "fr": "ça te va ? / c'est possible ?", "note": "Answer 得 (OK) or 唔得 (no, can't).",
+     "ex": {"en": "Seven-thirty, does that work for you?", "parts": [["七點半","cat1 dim2 bun3"],["，"],["得唔得","dak1 m4 dak1"],["啊","aa3"],["？"]]}},
+    {"hk": "有空", "jp": "jau5 hung1", "en": "free, available", "fr": "disponible", "note": "Same as 得閒; 有空 sounds slightly more polite.",
+     "ex": {"en": "When are you free next week?", "parts": [["你","nei5"],["下個","haa6 go3"],["禮拜","lai5 baai3"],["幾時","gei2 si4"],["有空","jau5 hung1"],["啊","aa3"],["？"]]}},
+    {"hk": "等", "jp": "dang2", "en": "to wait (for)", "fr": "attendre", "note": "Also used for meeting points: 喺門口等 'meet (wait) at the entrance'.",
+     "ex": {"en": "Where shall we meet?", "parts": [["我哋","ngo5 dei6"],["喺","hai2"],["邊度","bin1 dou6"],["等","dang2"],["啊","aa3"],["？"]]}},
+    {"hk": "遲到", "jp": "ci4 dou3", "en": "to be late", "fr": "être en retard",
+     "ex": {"en": "Sorry, I'm going to be late by ten minutes.", "parts": [["對唔住","deoi3 m4 zyu6"],["，"],["我","ngo5"],["會","wui5"],["遲到","ci4 dou3"],["十分鐘","sap6 fan1 zung1"],["。"]]}},
+    {"hk": "準時", "jp": "zeon2 si4", "en": "on time", "fr": "à l'heure",
+     "ex": {"en": "He's never on time.", "parts": [["佢","keoi5"],["從來","cung4 loi4"],["都","dou1"],["唔","m4"],["準時","zeon2 si4"],["。"]]}},
+    {"hk": "早啲", "jp": "zou2 di1", "en": "a bit earlier", "fr": "un peu plus tôt",
+     "ex": {"en": "Can we make it a bit earlier?", "parts": [["可唔可以","ho2 m4 ho2 ji5"],["早啲","zou2 di1"],["啊","aa3"],["？"]]}},
+    {"hk": "遲啲", "jp": "ci4 di1", "en": "later; some other time", "fr": "plus tard ; une autre fois",
+     "ex": {"en": "I'm busy now, let's talk later.", "parts": [["我","ngo5"],["而家","ji4 gaa1"],["好","hou2"],["忙","mong4"],["，"],["遲啲","ci4 di1"],["再","zoi3"],["傾","king1"],["啦","laa1"],["。"]]}},
+    {"hk": "一陣", "jp": "jat1 zan6", "en": "in a moment; a little while", "fr": "dans un instant ; un moment", "note": "一陣見 = see you in a bit. 等一陣 = wait a moment.",
+     "ex": {"en": "OK, see you in a bit!", "parts": [["好","hou2"],["啊","aa3"],["，"],["一陣","jat1 zan6"],["見","gin3"],["！"]]}},
+    {"hk": "取消", "jp": "ceoi2 siu1", "en": "to cancel", "fr": "annuler",
+     "ex": {"en": "There's a typhoon, the event's been cancelled.", "parts": [["打風","daa2 fung1"],["，"],["個","go3"],["活動","wut6 dung6"],["取消","ceoi2 siu1"],["咗","zo2"],["。"]]}},
+    {"hk": "改期", "jp": "goi2 kei4", "en": "to reschedule", "fr": "reporter, changer la date",
+     "ex": {"en": "Can we reschedule to next week?", "parts": [["我哋","ngo5 dei6"],["可唔可以","ho2 m4 ho2 ji5"],["改期","goi2 kei4"],["去","heoi3"],["下個","haa6 go3"],["禮拜","lai5 baai3"],["啊","aa3"],["？"]]}},
+    {"hk": "臨時", "jp": "lam4 si4", "en": "at the last minute", "fr": "à la dernière minute",
+     "ex": {"en": "Sorry, something came up at the last minute, I can't come.", "parts": [["唔好意思","m4 hou2 ji3 si1"],["，"],["我","ngo5"],["臨時","lam4 si4"],["有","jau5"],["事","si6"],["，"],["嚟","lai4"],["唔到","m4 dou2"],["。"]]}},
+    {"hk": "記得", "jp": "gei3 dak1", "en": "to remember", "fr": "se souvenir", "note": "記得 + verb = remember to do.",
+     "ex": {"en": "Remember to bring an umbrella.", "parts": [["記得","gei3 dak1"],["帶","daai3"],["遮","ze1"],["啊","aa3"],["！"]]}},
+    {"hk": "唔記得", "jp": "m4 gei3 dak1", "en": "to forget", "fr": "oublier", "note": "唔記得咗 = have forgotten.",
+     "ex": {"en": "Oops, I forgot we had plans today!", "parts": [["弊","bai6"],["！"],["我","ngo5"],["唔記得","m4 gei3 dak1"],["咗","zo2"],["今日","gam1 jat6"],["約","joek3"],["咗","zo2"],["你","nei5"],["！"]]}},
+    {"hk": "打電話", "jp": "daa2 din6 waa2", "en": "to make a phone call", "fr": "téléphoner", "note": "打電話畀我 = call me.",
+     "ex": {"en": "Call me when you get there.", "parts": [["你","nei5"],["到","dou3"],["咗","zo2"],["就","zau6"],["打電話","daa2 din6 waa2"],["畀","bei2"],["我","ngo5"],["啦","laa1"],["。"]]}},
+    {"hk": "訊息", "jp": "seon3 sik1", "en": "(text) message", "fr": "message", "note": "傳訊息 / 發訊息 = send a message. In real life most people just say the English 'WhatsApp'.",
+     "ex": {"en": "I sent you a message, did you get it?", "parts": [["我","ngo5"],["傳","cyun4"],["咗","zo2"],["個","go3"],["訊息","seon3 sik1"],["畀","bei2"],["你","nei5"],["，"],["收到","sau1 dou2"],["未","mei6"],["啊","aa3"],["？"]]}},
+    {"hk": "覆", "jp": "fuk1", "en": "to reply", "fr": "répondre",
+     "ex": {"en": "Why haven't you replied to me?", "parts": [["你","nei5"],["點解","dim2 gaai2"],["唔","m4"],["覆","fuk1"],["我","ngo5"],["啊","aa3"],["？"]]}},
+    {"hk": "就嚟", "jp": "zau6 lai4", "en": "almost; about to (arrive)", "fr": "bientôt ; sur le point de", "note": "我就嚟到 = I'm almost there. 就嚟 + verb = about to.",
+     "ex": {"en": "Don't worry, I'm almost there!", "parts": [["唔使","m4 sai2"],["擔心","daam1 sam1"],["，"],["我","ngo5"],["就嚟","zau6 lai4"],["到","dou3"],["喇","laa3"],["！"]]}},
+    {"hk": "門口", "jp": "mun4 hau2", "en": "entrance, doorway", "fr": "entrée, devant la porte",
+     "ex": {"en": "Let's meet at the cinema entrance.", "parts": [["我哋","ngo5 dei6"],["喺","hai2"],["戲院","hei3 jyun2"],["門口","mun4 hau2"],["等","dang2"],["啦","laa1"],["。"]]}}
+  ],
+  "sentences": [
+    {"en": "Are you free tomorrow night? How about we go to the movies?", "parts": [["你","nei5"],["聽晚","ting1 maan5"],["得唔得閒","dak1 m4 dak1 haan4"],["啊","aa3"],["？"],["不如","bat1 jyu4"],["去","heoi3"],["睇戲","tai2 hei3"],["啦","laa1"],["。"]]},
+    {"en": "What time shall we meet, and where?", "parts": [["我哋","ngo5 dei6"],["幾點","gei2 dim2"],["喺","hai2"],["邊度","bin1 dou6"],["等","dang2"],["啊","aa3"],["？"]]},
+    {"en": "The film starts at eight, let's meet at seven-thirty.", "parts": [["套","tou3"],["戲","hei3"],["八點","baat3 dim2"],["開場","hoi1 coeng4"],["，"],["我哋","ngo5 dei6"],["七點半","cat1 dim2 bun3"],["等","dang2"],["啦","laa1"],["。"]]},
+    {"en": "Sorry, I have to work overtime tonight — can we reschedule?", "parts": [["唔好意思","m4 hou2 ji3 si1"],["，"],["我","ngo5"],["今晚","gam1 maan5"],["要","jiu3"],["加班","gaa1 baan1"],["，"],["可唔可以","ho2 m4 ho2 ji5"],["改期","goi2 kei4"],["啊","aa3"],["？"]]},
+    {"en": "It's a typhoon tomorrow, the hike will probably be cancelled.", "parts": [["聽日","ting1 jat6"],["打風","daa2 fung1"],["，"],["行山","haang4 saan1"],["應該","jing1 goi1"],["要","jiu3"],["取消","ceoi2 siu1"],["喇","laa3"],["。"]]},
+    {"en": "He's late again — we've been waiting for half an hour!", "parts": [["佢","keoi5"],["又","jau6"],["遲到","ci4 dou3"],["，"],["我哋","ngo5 dei6"],["等","dang2"],["咗","zo2"],["佢","keoi5"],["半個鐘","bun3 go3 zung1"],["喇","laa3"],["！"]]},
+    {"en": "Remember to send me a message when you leave.", "parts": [["你","nei5"],["出門","ceot1 mun4"],["嘅時候","ge3 si4 hau6"],["記得","gei3 dak1"],["傳","cyun4"],["訊息","seon3 sik1"],["畀","bei2"],["我","ngo5"],["。"]]},
+    {"en": "I forgot to bring my phone, so I couldn't call you.", "parts": [["我","ngo5"],["唔記得","m4 gei3 dak1"],["帶","daai3"],["手機","sau2 gei1"],["，"],["所以","so2 ji5"],["打唔到","daa2 m4 dou2"],["電話","din6 waa2"],["畀","bei2"],["你","nei5"],["。"]]},
+    {"en": "Is Saturday afternoon OK? — No, I already have plans.", "parts": [["星期六","sing1 kei4 luk6"],["晏晝","aan3 zau3"],["得唔得","dak1 m4 dak1"],["啊","aa3"],["？"],["唔得","m4 dak1"],["啊","aa3"],["，"],["我","ngo5"],["約","joek3"],["咗","zo2"],["人","jan4"],["。"]]},
+    {"en": "Let's meet up for a meal again some other time.", "parts": [["遲啲","ci4 di1"],["再","zoi3"],["約","joek3"],["出嚟","ceot1 lai4"],["食飯","sik6 faan6"],["啦","laa1"],["。"]]},
+    {"en": "Wait for me a moment, I'm just coming down.", "parts": [["等","dang2"],["我","ngo5"],["一陣","jat1 zan6"],["，"],["我","ngo5"],["而家","ji4 gaa1"],["落","lok6"],["嚟","lai4"],["。"]]},
+    {"en": "Why don't we go a bit earlier, there are fewer people.", "parts": [["不如","bat1 jyu4"],["早啲","zou2 di1"],["去","heoi3"],["啦","laa1"],["，"],["冇","mou5"],["咁","gam3"],["多","do1"],["人","jan4"],["。"]]},
+    {"en": "Did he reply to you? — Not yet.", "parts": [["佢","keoi5"],["覆","fuk1"],["咗","zo2"],["你","nei5"],["未","mei6"],["啊","aa3"],["？"],["未","mei6"],["啊","aa3"],["。"]]}
+  ],
+  "grammar": [
+    {"title": "不如…啦 = how about…",
+     "explain": "Start with 不如 and end with 啦 to make a friendly suggestion. To accept: 好啊 / 好主意; to decline politely: 唔得啊，我約咗人.",
+     "examples": [
+       {"en": "How about meeting at the MTR station?", "parts": [["不如","bat1 jyu4"],["喺","hai2"],["地鐵站","dei6 tit3 zaam6"],["等","dang2"],["啦","laa1"],["。"]]},
+       {"en": "How about we reschedule to Sunday?", "parts": [["不如","bat1 jyu4"],["改期","goi2 kei4"],["去","heoi3"],["星期日","sing1 kei4 jat6"],["啦","laa1"],["。"]]}
+     ]},
+    {"title": "Time + place + verb",
+     "explain": "Cantonese order is fixed: who → when → where → what. 我哋 + 七點 + 喺門口 + 等.",
+     "examples": [
+       {"en": "We'll meet at seven at the entrance.", "parts": [["我哋","ngo5 dei6"],["七點","cat1 dim2"],["喺","hai2"],["門口","mun4 hau2"],["等","dang2"],["。"]]},
+       {"en": "Tomorrow I'm having lunch with a colleague in Central.", "parts": [["我","ngo5"],["聽日","ting1 jat6"],["喺","hai2"],["中環","zung1 waan4"],["同","tung4"],["同事","tung4 si6"],["食晏","sik6 aan3"],["。"]]}
+     ]},
+    {"title": "Verb + 唔到 = can't manage to",
+     "explain": "唔到 after a verb means you tried or wanted to but couldn't: 嚟唔到 'can't make it', 搵唔到 'can't find'.",
+     "examples": [
+       {"en": "Sorry, I can't make it tonight.", "parts": [["唔好意思","m4 hou2 ji3 si1"],["，"],["我","ngo5"],["今晚","gam1 maan5"],["嚟","lai4"],["唔到","m4 dou2"],["。"]]},
+       {"en": "I can't find you — where are you?", "parts": [["我","ngo5"],["搵","wan2"],["唔到","m4 dou2"],["你","nei5"],["，"],["你","nei5"],["喺","hai2"],["邊度","bin1 dou6"],["啊","aa3"],["？"]]}
+     ]}
+  ],
+  "dialogue": {
+    "title": "Hotpot plans (and a late friend)",
+    "lines": [
+      {"spk": "A", "en": "We haven't met up in ages! How about hotpot this Friday?", "parts": [["我哋","ngo5 dei6"],["好耐","hou2 noi6"],["冇","mou5"],["見面","gin3 min6"],["喇","laa3"],["！"],["不如","bat1 jyu4"],["星期五","sing1 kei4 ng5"],["去","heoi3"],["打邊爐","daa2 bin1 lou4"],["啦","laa1"],["。"]]},
+      {"spk": "B", "en": "Good idea! But I might have to work overtime on Friday...", "parts": [["好主意","hou2 zyu2 ji3"],["！"],["不過","bat1 gwo3"],["我","ngo5"],["星期五","sing1 kei4 ng5"],["可能","ho2 nang4"],["要","jiu3"],["加班","gaa1 baan1"],["喎","wo3"],["……"]]},
+      {"spk": "A", "en": "Then let's make it Saturday night. Does eight o'clock work?", "parts": [["噉","gam2"],["改","goi2"],["星期六","sing1 kei4 luk6"],["晚","maan5"],["啦","laa1"],["，"],["八點","baat3 dim2"],["得唔得","dak1 m4 dak1"],["啊","aa3"],["？"]]},
+      {"spk": "B", "en": "Works for me. Where shall we meet?", "parts": [["得","dak1"],["啊","aa3"],["。"],["喺","hai2"],["邊度","bin1 dou6"],["等","dang2"],["啊","aa3"],["？"]]},
+      {"spk": "A", "en": "Outside Langham Place in Mong Kok. Don't be late this time!", "parts": [["旺角","wong6 gok3"],["朗豪坊","long5 hou4 fong1"],["門口","mun4 hau2"],["。"],["今次","gam1 ci3"],["唔好","m4 hou2"],["遲到","ci4 dou3"],["啊","aa3"],["！"]]},
+      {"spk": "B", "en": "Relax, I'll definitely be on time!", "parts": [["放心","fong3 sam1"],["啦","laa1"],["，"],["我","ngo5"],["一定","jat1 ding6"],["準時","zeon2 si4"],["！"]]},
+      {"spk": "A", "en": "(Saturday, 8:20) Hey, where are you? I've been waiting twenty minutes!", "parts": [["喂","wai3"],["，"],["你","nei5"],["喺","hai2"],["邊度","bin1 dou6"],["啊","aa3"],["？"],["我","ngo5"],["等","dang2"],["咗","zo2"],["你","nei5"],["廿分鐘","jaa6 fan1 zung1"],["喇","laa3"],["！"]]},
+      {"spk": "B", "en": "Sorry, sorry! I forgot to bring my Octopus card and had to go home to get it...", "parts": [["對唔住","deoi3 m4 zyu6"],["，"],["對唔住","deoi3 m4 zyu6"],["！"],["我","ngo5"],["唔記得","m4 gei3 dak1"],["帶","daai3"],["八達通","baat3 daat6 tung1"],["，"],["要","jiu3"],["返","faan1"],["屋企","uk1 kei2"],["攞","lo2"],["……"]]},
+      {"spk": "A", "en": "You said you'd definitely be on time!", "parts": [["你","nei5"],["話","waa6"],["一定","jat1 ding6"],["準時","zeon2 si4"],["㗎","gaa3"],["！"]]},
+      {"spk": "B", "en": "I'm almost there, five more minutes! Dinner's on me tonight, OK?", "parts": [["我","ngo5"],["就嚟","zau6 lai4"],["到","dou3"],["，"],["五分鐘","ng5 fan1 zung1"],["！"],["今晚","gam1 maan5"],["我","ngo5"],["請","ceng2"],["，"],["得唔得","dak1 m4 dak1"],["啊","aa3"],["？"]]}
+    ],
+    "questions": [
+      {"q": "Why can't B do Friday?", "options": ["B might have to work overtime", "B has a doctor's appointment", "B is going hiking", "B forgot"], "answer": 0},
+      {"q": "Where and when do they agree to meet?", "options": ["Langham Place in Mong Kok, Saturday at 8", "Central, Friday at 7:30", "The cinema entrance, Sunday at 8", "Langham Place in Mong Kok, Friday at 8"], "answer": 0},
+      {"q": "Why is B late?", "options": ["B forgot the Octopus card and went home to get it", "B had to work overtime", "B got lost", "B overslept"], "answer": 0},
+      {"q": "How does B try to make up for being late?", "options": ["By paying for dinner", "By buying movie tickets", "By bringing a gift", "By choosing the restaurant"], "answer": 0}
+    ]
+  }
+}

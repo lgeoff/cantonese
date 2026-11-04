@@ -1,0 +1,110 @@
+{
+  "id": "u09",
+  "level": 2,
+  "title": "Getting Around",
+  "emoji": "🚇",
+  "desc": "Take the MTR, bus, minibus or taxi, ask the way and say where you are",
+  "words": [
+    {"hk": "去", "jp": "heoi3", "en": "to go (to)", "fr": "aller (à)", "note": "No word for 'to' is needed: 去中環 = go to Central.",
+     "ex": {"en": "Where are you going?", "parts": [["你","nei5"],["去","heoi3"],["邊度","bin1 dou6"],["啊","aa3"],["？"]]}},
+    {"hk": "嚟", "jp": "lai4", "en": "to come", "fr": "venir", "note": "Also heard as lei4. The opposite of 去.",
+     "ex": {"en": "My friend is coming to Hong Kong tomorrow.", "parts": [["我","ngo5"],["朋友","pang4 jau5"],["聽日","ting1 jat6"],["嚟","lai4"],["香港","hoeng1 gong2"],["。"]]}},
+    {"hk": "喺", "jp": "hai2", "en": "to be at / in; at", "fr": "être à ; à", "note": "Don't confuse with 係 hai6 'to be'. Only the tone differs.",
+     "ex": {"en": "I'm at the airport.", "parts": [["我","ngo5"],["喺","hai2"],["機場","gei1 coeng4"],["。"]]}},
+    {"hk": "返", "jp": "faan1", "en": "to go back / return (to a usual place)", "fr": "retourner, rentrer", "note": "Used for places you belong to: 返屋企 go home, 返香港 go back to HK.",
+     "ex": {"en": "She's gone back to Hong Kong.", "parts": [["佢","keoi5"],["返咗","faan1 zo2"],["香港","hoeng1 gong2"],["。"]]}},
+    {"hk": "搭", "jp": "daap3", "en": "to take (transport)", "fr": "prendre (un transport)", "note": "坐 co5 also works: 坐巴士. 坐 alone = to sit.",
+     "ex": {"en": "I take the MTR home.", "parts": [["我","ngo5"],["搭","daap3"],["地鐵","dei6 tit3"],["返","faan1"],["屋企","uk1 kei2"],["。"]]}},
+    {"hk": "地鐵", "jp": "dei6 tit3", "en": "the MTR / metro", "fr": "le métro", "note": "Official name 港鐵 gong2 tit3 (MTR). People say both 搭地鐵 and 搭港鐵.",
+     "ex": {"en": "Where is the MTR station?", "parts": [["地鐵站","dei6 tit3 zaam6"],["喺","hai2"],["邊度","bin1 dou6"],["啊","aa3"],["？"]]}},
+    {"hk": "巴士", "jp": "baa1 si2", "en": "bus", "fr": "bus", "note": "From English 'bus'. Bus stop = 巴士站.",
+     "ex": {"en": "The bus stop is on the left.", "parts": [["巴士站","baa1 si2 zaam6"],["喺","hai2"],["左邊","zo2 bin1"],["。"]]}},
+    {"hk": "的士", "jp": "dik1 si2", "en": "taxi", "fr": "taxi",
+     "ex": {"en": "Taking a taxi is expensive.", "parts": [["搭","daap3"],["的士","dik1 si2"],["好","hou2"],["貴","gwai3"],["。"]]}},
+    {"hk": "小巴", "jp": "siu2 baa1", "en": "minibus", "fr": "minibus", "note": "The 16-seat red or green minibuses. You shout your stop to the driver!",
+     "ex": {"en": "Is there a minibus to the airport?", "parts": [["有冇","jau5 mou5"],["小巴","siu2 baa1"],["去","heoi3"],["機場","gei1 coeng4"],["啊","aa3"],["？"]]}},
+    {"hk": "機場", "jp": "gei1 coeng4", "en": "airport", "fr": "aéroport", "note": "Plane = 飛機 fei1 gei1.",
+     "ex": {"en": "How long does it take to get to the airport?", "parts": [["去","heoi3"],["機場","gei1 coeng4"],["要","jiu3"],["幾耐","gei2 noi6"],["啊","aa3"],["？"]]}},
+    {"hk": "站", "jp": "zaam6", "en": "station / stop", "fr": "station / arrêt", "note": "地鐵站 MTR station, 巴士站 bus stop, 下個站 next stop.",
+     "ex": {"en": "I'm getting off at the next stop.", "parts": [["我","ngo5"],["下個","haa6 go3"],["站","zaam6"],["落車","lok6 ce1"],["。"]]}},
+    {"hk": "出口", "jp": "ceot1 hau2", "en": "exit", "fr": "sortie",
+     "ex": {"en": "Which exit should I take?", "parts": [["我","ngo5"],["要","jiu3"],["行","haang4"],["邊個","bin1 go3"],["出口","ceot1 hau2"],["啊","aa3"],["？"]]}},
+    {"hk": "左邊", "jp": "zo2 bin1", "en": "left (side)", "fr": "à gauche", "note": "Turn left = 轉左 zyun3 zo2.",
+     "ex": {"en": "The toilet is on the left.", "parts": [["廁所","ci3 so2"],["喺","hai2"],["左邊","zo2 bin1"],["。"]]}},
+    {"hk": "右邊", "jp": "jau6 bin1", "en": "right (side)", "fr": "à droite", "note": "Turn right = 轉右 zyun3 jau6.",
+     "ex": {"en": "The bank is on the right.", "parts": [["銀行","ngan4 hong4"],["喺","hai2"],["右邊","jau6 bin1"],["。"]]}},
+    {"hk": "轉", "jp": "zyun3", "en": "to turn; to change (lines)", "fr": "tourner ; changer (de ligne)", "note": "轉左 turn left, 轉右 turn right, 轉車 change trains/buses.",
+     "ex": {"en": "Turn right at the second junction.", "parts": [["第二個","dai6 ji6 go3"],["路口","lou6 hau2"],["轉","zyun3"],["右","jau6"],["。"]]}},
+    {"hk": "一直行", "jp": "jat1 zik6 haang4", "en": "go straight ahead", "fr": "aller tout droit",
+     "ex": {"en": "Go straight, then turn left.", "parts": [["一直行","jat1 zik6 haang4"],["，"],["然後","jin4 hau6"],["轉","zyun3"],["左","zo2"],["。"]]}},
+    {"hk": "近", "jp": "kan5", "en": "near / close", "fr": "proche", "note": "Many people say 'gan6'. 好近 = very close.",
+     "ex": {"en": "The MTR station is very close.", "parts": [["地鐵站","dei6 tit3 zaam6"],["好","hou2"],["近","kan5"],["。"]]}},
+    {"hk": "遠", "jp": "jyun5", "en": "far", "fr": "loin",
+     "ex": {"en": "Is it far?", "parts": [["遠唔遠","jyun5 m4 jyun5"],["啊","aa3"],["？"]]}},
+    {"hk": "幾耐", "jp": "gei2 noi6", "en": "how long (time)", "fr": "combien de temps", "note": "Answer with a duration: 十分鐘, 一個鐘.",
+     "ex": {"en": "How long will you wait?", "parts": [["你","nei5"],["要","jiu3"],["等","dang2"],["幾耐","gei2 noi6"],["啊","aa3"],["？"]]}},
+    {"hk": "到", "jp": "dou3", "en": "to arrive; to reach", "fr": "arriver", "note": "到咗 = has arrived. 就到 = almost there.",
+     "ex": {"en": "I've arrived!", "parts": [["我","ngo5"],["到咗","dou3 zo2"],["喇","laa3"],["！"]]}},
+    {"hk": "落車", "jp": "lok6 ce1", "en": "to get off (a vehicle)", "fr": "descendre (d'un véhicule)", "note": "Get on = 上車 soeng5 ce1.",
+     "ex": {"en": "Where do we get off?", "parts": [["我哋","ngo5 dei6"],["喺","hai2"],["邊度","bin1 dou6"],["落車","lok6 ce1"],["啊","aa3"],["？"]]}},
+    {"hk": "有落", "jp": "jau5 lok6", "en": "\"getting off!\" (said to a minibus driver)", "fr": "« je descends ! » (en minibus)", "note": "Shout it loudly before your stop. Add the place: 前面有落 = stop up ahead.",
+     "ex": {"en": "Stop up ahead, please!", "parts": [["前面","cin4 min6"],["有落","jau5 lok6"],["，"],["唔該","m4 goi1"],["！"]]}}
+  ],
+  "sentences": [
+    {"en": "Excuse me, how do I get to Central?", "parts": [["請問","ceng2 man6"],["中環","zung1 waan4"],["點","dim2"],["去","heoi3"],["啊","aa3"],["？"]]},
+    {"en": "Go straight, and turn left at the second junction.", "parts": [["一直行","jat1 zik6 haang4"],["，"],["第二個","dai6 ji6 go3"],["路口","lou6 hau2"],["轉","zyun3"],["左","zo2"],["。"]]},
+    {"en": "The MTR station is close, it's only a five-minute walk.", "parts": [["地鐵站","dei6 tit3 zaam6"],["好","hou2"],["近","kan5"],["，"],["行","haang4"],["五分鐘","ng5 fan1 zung1"],["咋","zaa3"],["。"]]},
+    {"en": "It takes about forty minutes by bus.", "parts": [["搭","daap3"],["巴士","baa1 si2"],["大概","daai6 koi3"],["要","jiu3"],["四十分鐘","sei3 sap6 fan1 zung1"],["。"]]},
+    {"en": "Is Tsim Sha Tsui far from here?", "parts": [["呢度","ni1 dou6"],["去","heoi3"],["尖沙咀","zim1 saa1 zeoi2"],["遠唔遠","jyun5 m4 jyun5"],["啊","aa3"],["？"]]},
+    {"en": "Where are you? I'm at the bus stop.", "parts": [["你","nei5"],["喺","hai2"],["邊度","bin1 dou6"],["啊","aa3"],["？"],["我","ngo5"],["喺","hai2"],["巴士站","baa1 si2 zaam6"],["。"]]},
+    {"en": "To the airport, please. (to a taxi driver)", "parts": [["唔該","m4 goi1"],["，"],["去","heoi3"],["機場","gei1 coeng4"],["。"]]},
+    {"en": "I walk home every day.", "parts": [["我","ngo5"],["每日","mui5 jat6"],["行路","haang4 lou6"],["返","faan1"],["屋企","uk1 kei2"],["。"]]},
+    {"en": "Do I need to change trains?", "parts": [["使唔使","sai2 m4 sai2"],["轉車","zyun3 ce1"],["啊","aa3"],["？"]]},
+    {"en": "The airport isn't far, it's about half an hour.", "parts": [["機場","gei1 coeng4"],["唔係","m4 hai6"],["好","hou2"],["遠","jyun5"],["，"],["半個鐘","bun3 go3 zung1"],["左右","zo2 jau2"],["。"]]},
+    {"en": "When does your plane arrive?", "parts": [["你","nei5"],["班","baan1"],["飛機","fei1 gei1"],["幾點","gei2 dim2"],["到","dou3"],["啊","aa3"],["？"]]},
+    {"en": "We take the minibus to go up the hill.", "parts": [["我哋","ngo5 dei6"],["搭","daap3"],["小巴","siu2 baa1"],["上山","soeng5 saan1"],["。"]]},
+    {"en": "Come to my place on Saturday!", "parts": [["星期六","sing1 kei4 luk6"],["嚟","lai4"],["我","ngo5"],["屋企","uk1 kei2"],["啦","laa1"],["！"]]}
+  ],
+  "grammar": [
+    {"title": "No 'to': just verb + place",
+     "explain": "去, 嚟 and 返 take the place directly, with no word for 'to'. To say how you travel, put 搭 + transport before it.",
+     "examples": [
+       {"en": "I'm going to Central.", "parts": [["我","ngo5"],["去","heoi3"],["中環","zung1 waan4"],["。"]]},
+       {"en": "I take the MTR to the airport.", "parts": [["我","ngo5"],["搭","daap3"],["地鐵","dei6 tit3"],["去","heoi3"],["機場","gei1 coeng4"],["。"]]},
+       {"en": "He takes a taxi home.", "parts": [["佢","keoi5"],["搭","daap3"],["的士","dik1 si2"],["返","faan1"],["屋企","uk1 kei2"],["。"]]}
+     ]},
+    {"title": "喺 + place comes before the action",
+     "explain": "'Where' something happens goes before the verb, not at the end like in English: 'I at Central work', not 'I work at Central'.",
+     "examples": [
+       {"en": "I work in Central.", "parts": [["我","ngo5"],["喺","hai2"],["中環","zung1 waan4"],["做嘢","zou6 je5"],["。"]]},
+       {"en": "Let's wait at the exit.", "parts": [["我哋","ngo5 dei6"],["喺","hai2"],["出口","ceot1 hau2"],["等","dang2"],["啦","laa1"],["。"]]}
+     ]},
+    {"title": "How long? 要幾耐",
+     "explain": "Ask 'how long does it take' with 要幾耐. Answer with 要 + duration; add 左右 or 大概 for 'about'.",
+     "examples": [
+       {"en": "How long does it take to walk there?", "parts": [["行路","haang4 lou6"],["去","heoi3"],["要","jiu3"],["幾耐","gei2 noi6"],["啊","aa3"],["？"]]},
+       {"en": "About ten minutes.", "parts": [["大概","daai6 koi3"],["十分鐘","sap6 fan1 zung1"],["。"]]}
+     ]}
+  ],
+  "dialogue": {
+    "title": "Asking the way to the MTR",
+    "lines": [
+      {"spk": "A", "en": "Excuse me, how do I get to the MTR station?", "parts": [["唔好意思","m4 hou2 ji3 si1"],["，"],["請問","ceng2 man6"],["地鐵站","dei6 tit3 zaam6"],["點","dim2"],["去","heoi3"],["啊","aa3"],["？"]]},
+      {"spk": "B", "en": "Go straight, and turn right at the second junction.", "parts": [["一直行","jat1 zik6 haang4"],["，"],["第二個","dai6 ji6 go3"],["路口","lou6 hau2"],["轉","zyun3"],["右","jau6"],["。"]]},
+      {"spk": "A", "en": "Is it far?", "parts": [["遠唔遠","jyun5 m4 jyun5"],["啊","aa3"],["？"]]},
+      {"spk": "B", "en": "Not far, about five minutes on foot.", "parts": [["唔遠","m4 jyun5"],["，"],["行","haang4"],["五分鐘","ng5 fan1 zung1"],["左右","zo2 jau2"],["。"]]},
+      {"spk": "A", "en": "Actually I'm going to the airport. What should I take?", "parts": [["其實","kei4 sat6"],["我","ngo5"],["要","jiu3"],["去","heoi3"],["機場","gei1 coeng4"],["，"],["搭","daap3"],["咩","me1"],["車","ce1"],["好","hou2"],["啊","aa3"],["？"]]},
+      {"spk": "B", "en": "Take the airport bus, it's very convenient. The stop is just over there on the left.", "parts": [["搭","daap3"],["機場","gei1 coeng4"],["巴士","baa1 si2"],["啦","laa1"],["，"],["好","hou2"],["方便","fong1 bin6"],["，"],["個","go3"],["站","zaam6"],["喺","hai2"],["左邊","zo2 bin1"],["。"]]},
+      {"spk": "A", "en": "How long does it take?", "parts": [["要","jiu3"],["幾耐","gei2 noi6"],["啊","aa3"],["？"]]},
+      {"spk": "B", "en": "About an hour.", "parts": [["大概","daai6 koi3"],["一個鐘","jat1 go3 zung1"],["。"]]},
+      {"spk": "A", "en": "Thanks so much!", "parts": [["唔該晒","m4 goi1 saai3"],["！"]]},
+      {"spk": "B", "en": "No problem.", "parts": [["唔使","m4 sai2"],["唔該","m4 goi1"],["。"]]}
+    ],
+    "questions": [
+      {"q": "Where should A turn to reach the MTR station?", "options": ["Right at the second junction", "Left at the second junction", "Right at the first junction", "Nowhere, it's straight ahead"], "answer": 0},
+      {"q": "How far is the MTR station on foot?", "options": ["About five minutes", "About an hour", "About half an hour", "Two minutes"], "answer": 0},
+      {"q": "What does B suggest for getting to the airport?", "options": ["The airport bus", "A taxi", "The MTR", "A minibus"], "answer": 0},
+      {"q": "Where is the bus stop?", "options": ["On the left", "On the right", "At the second junction", "Inside the MTR station"], "answer": 0}
+    ]
+  }
+}
