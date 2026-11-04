@@ -437,7 +437,7 @@ export function renderMe() {
   const voiceSel = h('select', { 'aria-label': 'Voice' }, h('option', { value: '' }, 'Best available'), ...cantoVoices().map((vv) => h('option', { value: vv.voiceURI, selected: setting('voice') === vv.voiceURI }, `${vv.name} (${vv.lang})`)));
   voiceSel.onchange = () => { setting('voice', voiceSel.value); speak('你好'); };
   const tog = (k, label, on = (x) => x, off) => h('label', { class: 'switch' }, h('input', { type: 'checkbox', checked: on(setting(k)), onchange: (e) => setting(k, off ? (e.target.checked ? off[0] : off[1]) : e.target.checked) }), h('span', {}, label));
-  set.append(
+  set.append(...[
     field('Daily goal', goalSel),
     field('Speech speed', h('div', { class: 'row' }, rate, rateVal)),
     field('Voice', voiceSel),
@@ -445,7 +445,7 @@ export function renderMe() {
     tog('showFr', 'Show French meanings'),
     tog('autoplay', 'Play audio automatically'),
     tog('sfx', 'Sound effects'),
-    setting('speakOffUntil') > Date.now() ? h('button', { class: 'link', type: 'button', onclick: () => { setting('speakOffUntil', 0); renderMe(); } }, 'Turn speaking exercises back on') : null);
+    setting('speakOffUntil') > Date.now() ? h('button', { class: 'link', type: 'button', onclick: () => { setting('speakOffUntil', 0); renderMe(); } }, 'Turn speaking exercises back on') : null].filter(Boolean));
   v.append(set);
 
   const backup = h('section', { class: 'settings' }, h('h2', { class: 'sec' }, 'Backup'),

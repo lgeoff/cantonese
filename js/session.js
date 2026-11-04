@@ -99,7 +99,7 @@ export function runSession({ title, steps, lessonId = null, onExit, kind = 'less
     const streak = streakAlive();
     const goal = S().goal, today = todayXP();
     body.innerHTML = '';
-    body.append(h('div', { class: 'done' },
+    body.append(h('div', { class: 'finish' },
       h('div', { class: 'stamp', lang: 'zh-HK' }, acc >= 0.9 ? '正' : acc >= 0.7 ? '好' : '得'),
       h('h2', {}, acc >= 0.9 ? 'Excellent session!' : acc >= 0.7 ? 'Nice work!' : 'Done — mistakes will come back for review.'),
       h('div', { class: 'done-stats' },
