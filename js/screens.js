@@ -6,6 +6,8 @@ import { runSession } from './session.js';
 import { canto, speakerBtn, toneChartSVG, recorderWidget, ICON } from './exercises.js';
 import { speak, speakSlow, hasVoice, cantoVoices, supported as ttsSupported, whenReady } from './tts.js';
 import * as SP from './speak.js';
+import { convoSection, setAiSetupOpener } from './convo.js';
+import { PROVIDERS, aiConfig, setAiConfig, testKey, modelOf } from './llm.js';
 
 export const UNIT_ZH = {
   u01: ['我嘅生字', 'ngo5 ge3 saang1 zi6'], u02: ['聲調入門', 'sing1 diu6 jap6 mun4'], u25: ['我嘅日常', 'ngo5 ge3 jat6 soeng4'], u03: ['打招呼', 'daa2 ziu1 fu1'], u04: ['自我介紹', 'zi6 ngo5 gaai3 siu6'],
@@ -66,7 +68,7 @@ export function sheet(content, { title } = {}) {
 
 function startLesson(l, replay) {
   const u = UNIT.get(l.unit);
-  const onNext = () => { const n = nextLesson(); if (n) setTimeout(() => startLesson(n, !!lessonState(n.id)), 50); };
+  const onNext = () => { const n = nextLesson(); if (n) startLesson(n, !!lessonState(n.id)); };
   runSession({ title: u.title, steps: buildLesson(l, { replay }), lessonId: l.id, onExit: refresh, onNext: replay ? null : onNext });
 }
 export function startReview(mode = 'mixed', n = 12, onlyKeys = null) {
@@ -243,6 +245,7 @@ export function renderPractice() {
   }
   v.append(grid);
   v.append(h('h2', { class: 'sec' }, 'Conversations'));
+  v.append(h('a', { class: 'dlg-item talk-link', href: '#/speak' }, h('span', {}, '💬'), h('span', {}, h('b', {}, 'Talk with an AI partner'), h('small', {}, 'Answer by voice or typing; loose spelling is fine'))));
   const dl = h('div', { class: 'dlg-list' });
   const started = (u) => u.lessons.some((x) => lessonState(x.id));
   const dUnits = UNITS.filter((u) => u.dialogue && (practiceState.allDlg || started(u)));
@@ -403,20 +406,22 @@ function flashcards(items) {
 }
 
 // ------------------------------------------------------------------ SPEAK LAB
+const speakState = { allScenes: false };
 export function renderSpeak() {
   const v = view(); v.innerHTML = '';
-  v.append(h('header', { class: 'page-head' }, h('h1', {}, 'Speak lab'), h('p', {}, 'Three ways to check your pronunciation: copy a native voice, see your pitch, and test whether your phone understands you.')));
+  v.append(h('header', { class: 'page-head' }, h('h1', {}, 'Speak'), h('p', {}, 'Hold a conversation, then fine-tune your pronunciation: copy a native voice, see your pitch, and test whether your phone understands you.')));
+  v.append(convoSection({ refresh, showAll: speakState.allScenes, onToggleAll: () => { speakState.allScenes = !speakState.allScenes; renderSpeak(); } }));
   const caps = h('ul', { class: 'caps' },
     h('li', { class: hasVoice() ? 'yes' : 'no' }, hasVoice() ? `Cantonese voice: ${cantoVoices()[0]?.name}` : 'No Cantonese voice installed'),
     h('li', { class: SP.recogSupported() ? 'yes' : 'no' }, SP.recogSupported() ? 'Speech recognition available' : 'Speech recognition not available in this browser'),
     h('li', { class: SP.micSupported() ? 'yes' : 'no' }, SP.micSupported() ? 'Microphone recording available' : 'No microphone access'));
   v.append(caps);
 
-  v.append(h('section', { class: 'lab' }, h('h2', {}, '1 · Shadowing'), h('p', {}, 'Listen, repeat immediately with the same melody, then record and compare back-to-back. This is the most reliable way to improve.'),
+  v.append(h('section', { class: 'lab' }, h('h2', {}, 'Shadowing'), h('p', {}, 'Listen, repeat immediately with the same melody, then record and compare back-to-back. This is the most reliable way to improve.'),
     h('button', { class: 'btn primary', type: 'button', disabled: learnedSentences().length + learnedWords().length < 2, onclick: () => runSession({ title: 'Shadowing', steps: buildDrill('speak', 8), onExit: refresh }) }, 'Start shadowing (8 items)')));
 
   // tone mirror
-  const lab = h('section', { class: 'lab' }, h('h2', {}, '2 · Tone mirror'), h('p', {}, 'Say one syllable and see your pitch drawn over the six tone shapes. Calibrate once so the chart knows your voice range.'));
+  const lab = h('section', { class: 'lab' }, h('h2', {}, 'Tone mirror'), h('p', {}, 'Say one syllable and see your pitch drawn over the six tone shapes. Calibrate once so the chart knows your voice range.'));
   const words = [...[...ITEMS.values()].filter((x) => x.kind === 't' && x.hk.length === 1 && /^[a-z]+[1-6]$/.test(x.jp)), ...learnedWords().filter((w) => w.hk.length === 1)].filter((w, i, a) => a.findIndex((x) => x.hk === w.hk) === i);
   let target = words[0];
   const sel = h('select', { 'aria-label': 'Syllable to practise' }, ...words.map((w, i) => h('option', { value: i }, `${w.hk} ${w.jp} — ${w.en}`)));
@@ -444,7 +449,7 @@ export function renderSpeak() {
   v.append(lab);
 
   // free speech
-  const free = h('section', { class: 'lab' }, h('h2', {}, '3 · Free talk check'), h('p', {}, 'Say any sentence. If your phone’s Cantonese dictation writes the words you meant, a native listener would very likely understand you too.'));
+  const free = h('section', { class: 'lab' }, h('h2', {}, 'Free talk check'), h('p', {}, 'Say any sentence. If your phone’s Cantonese dictation writes the words you meant, a native listener would very likely understand you too.'));
   const out = h('div', { class: 'heard-big', lang: 'zh-HK' });
   const fb = h('button', { class: 'big-mic', type: 'button', disabled: !SP.recogSupported(), html: ICON.mic + '<span>Tap and speak</span>' });
   fb.onclick = async () => {
@@ -570,6 +575,8 @@ export function settingsSheet() {
     setting('speakOffUntil') > Date.now() ? h('button', { class: 'link', type: 'button', onclick: () => { setting('speakOffUntil', 0); close(); refresh(); } }, 'Turn speaking exercises back on') : null].filter(Boolean));
   c.append(set);
 
+  c.append(aiSettings());
+
   const backup = h('section', { class: 'settings' }, h('h2', { class: 'sec' }, 'Backup'),
     h('p', { class: 'hint' }, 'Progress lives only in this browser. Add the app to your home screen so it is kept safely, and export a backup now and then.'),
     h('div', { class: 'row wrap' },
@@ -632,3 +639,55 @@ function downloadICS(hhmm) {
   const a = h('a', { href: URL.createObjectURL(new Blob([ics], { type: 'text/calendar' })), download: 'cantonese-reminder.ics' });
   document.body.append(a); a.click(); a.remove();
 }
+
+// ---------- AI conversation partner settings ----------
+function aiSettings({ onSaved } = {}) {
+  const sec = h('section', { class: 'settings ai-set' }, h('h2', { class: 'sec' }, 'AI conversation partner'));
+  const body = h('div', { class: 'ai-body' });
+  sec.append(body);
+  draw();
+  return sec;
+  function draw() {
+    const c = aiConfig();
+    const P = PROVIDERS[c.provider];
+    body.innerHTML = '';
+    const prov = h('div', { class: 'tabs small seg', role: 'radiogroup', 'aria-label': 'AI service' }, ...Object.entries(PROVIDERS).map(([k, p]) =>
+      h('button', { type: 'button', role: 'radio', 'aria-checked': String(c.provider === k), class: c.provider === k ? 'on' : '', onclick: () => { setAiConfig({ provider: k, model: '', key: k === c.provider ? c.key : (c.keys || {})[k] || '', keys: { ...(c.keys || {}), [c.provider]: c.key } }); draw(); } }, k === 'gemini' ? 'Gemini · free' : 'Claude · paid')));
+    const key = h('input', { type: 'password', value: c.key, placeholder: c.provider === 'gemini' ? 'Paste your Gemini API key' : 'Paste your Anthropic API key', autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false', 'aria-label': 'API key' });
+    const model = h('select', { 'aria-label': 'Model' }, ...P.models.map(([id, l]) => h('option', { value: id, selected: modelOf(c) === id }, l)));
+    const status = h('p', { class: 'hint', role: 'status' }, c.key ? 'Key saved on this device.' : '');
+    const saveKey = () => { setAiConfig({ key: key.value.trim(), model: model.value }); };
+    key.onchange = saveKey; model.onchange = saveKey;
+    const test = h('button', { class: 'btn sm', type: 'button', onclick: async () => {
+      saveKey();
+      if (!aiConfig().key) { status.textContent = 'Paste a key first.'; return; }
+      status.textContent = 'Testing…'; test.disabled = true;
+      try { await testKey(); status.textContent = '✓ Connected. Open Speak → Conversation to start.'; onSaved && onSaved(); }
+      catch (e) { status.textContent = '✕ ' + e.message; }
+      test.disabled = false;
+    } }, 'Save & test');
+    const steps = c.provider === 'gemini'
+      ? h('ol', { class: 'ai-steps' },
+        h('li', {}, 'Open ', h('a', { href: 'https://aistudio.google.com/apikey', target: '_blank', rel: 'noopener' }, 'aistudio.google.com/apikey'), ' and sign in with a Google account.'),
+        h('li', {}, 'Tap “Create API key” and copy it.'),
+        h('li', {}, 'Paste it here and tap Save & test.'))
+      : h('ol', { class: 'ai-steps' },
+        h('li', {}, 'Open ', h('a', { href: 'https://console.anthropic.com/settings/keys', target: '_blank', rel: 'noopener' }, 'console.anthropic.com'), ', add credit and create an API key.'),
+        h('li', {}, 'Paste it here and tap Save & test. Each conversation costs a few cents.'));
+    body.append(prov, steps,
+      field('API key', key), field('Model', model),
+      c.provider === 'gemini' ? h('label', { class: 'switch' }, h('input', { type: 'checkbox', checked: c.listen !== false, onchange: (e) => setAiConfig({ listen: e.target.checked }) }), h('span', {}, 'Let the AI hear my voice (it can then comment on tones)')) : null,
+      h('div', { class: 'row wrap' }, test, c.key ? h('button', { class: 'btn sm danger', type: 'button', onclick: () => { setAiConfig({ key: '', keys: { ...(c.keys || {}), [c.provider]: '' } }); draw(); } }, 'Remove key') : null),
+      status,
+      h('p', { class: 'hint' }, c.provider === 'gemini'
+        ? 'The key stays in this browser only and is never part of your backup. Your messages go straight from this device to Google. Free-tier limits are generous for practice; if you hit one, switch to Flash-Lite. In the EEA, Switzerland and the UK, Google doesn’t use free-tier conversations to train its models; elsewhere it may.'
+        : 'The key stays in this browser only and is never part of your backup. Your messages go straight from this device to Anthropic. Voice is sent as phone dictation text, since Claude doesn’t take audio here.'));
+  }
+}
+function aiSetupSheet() {
+  const c = h('div', {}, h('p', {}, 'Your AI partner plays a role (a waiter, a neighbour, your auntie…) using the words you’ve learnt, and gently corrects what you say. You need your own free key from Google.'));
+  let close = null;
+  c.append(aiSettings({ onSaved: () => { setTimeout(() => close && close(false, () => refresh()), 900); } }));
+  close = sheet(c, { title: 'Set up your AI partner' });
+}
+setAiSetupOpener(aiSetupSheet);

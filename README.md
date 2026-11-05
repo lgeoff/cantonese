@@ -21,6 +21,15 @@ Each unit has vocabulary, sentences, grammar patterns and a dialogue or story wi
 All Jyutping is checked against the [rime-cantonese](https://github.com/rime/rime-cantonese) lexicon
 (CanCLID, CC BY 4.0) with `tools/verify.py`.
 
+## Conversation practice
+
+Speak → Conversation opens a chat with an AI partner who plays a role (neighbour, waiter, auntie…) using the words you have learnt. You answer by voice or by typing in characters, Jyutping or any loose spelling; the partner says what it understood, suggests a more natural version and keeps the conversation going.
+
+- Needs your own API key, kept only in this browser (never in backups): a free Google Gemini key from aistudio.google.com/apikey, or a paid Anthropic key. Requests go straight from the browser to the provider.
+- With Gemini, your voice can be sent as audio so the partner can comment on tones.
+- Jyutping from the AI is checked against the course and the rime-cantonese readings (`data/jyutping.json`, CC BY 4.0) and corrected where needed.
+- Offline alternative: role-play a course conversation; your line is checked by sound, so homophones, missing tones and informal spellings are forgiven.
+
 ## Audio
 The app uses your device's Cantonese text-to-speech voice:
 - **iPhone/iPad:** Settings → Accessibility → Spoken Content → Voices → Chinese → *Chinese (Hong Kong)*, download a voice.

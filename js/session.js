@@ -1,5 +1,5 @@
 // Runs a list of exercise steps full-screen: progress, feedback, re-queueing mistakes, XP.
-import { h, R, jpNode, pick, vibrate } from './util.js';
+import { backThen, h, R, jpNode, pick, vibrate } from './util.js';
 import { EX, canto, speakerBtn } from './exercises.js';
 import { grade, addXP, logAnswer, logTime, lessonDone, setting, introduce, streakAlive, todayXP, S, card, toggleStar } from './store.js';
 import { speak, stop, sfx } from './tts.js';
@@ -167,7 +167,7 @@ export function runSession({ title, steps, lessonId = null, onExit, onNext = nul
       extraMsg ? h('p', { class: 'note' }, extraMsg) : null,
       bestCombo >= 5 ? h('p', { class: 'hint' }, `Best combo: ${bestCombo} in a row`) : null));
     if (onNext) {
-      setFooter('Next lesson', () => { exit(); onNext(); });
+      setFooter('Next lesson', () => exit(false, onNext));
       foot.append(h('button', { class: 'btn wide btn2', type: 'button', onclick: () => exit() }, 'Done for now'));
     } else setFooter('Continue', () => exit());
   }
@@ -179,13 +179,13 @@ export function runSession({ title, steps, lessonId = null, onExit, onNext = nul
     exit();
   }
   let exited = false;
-  function exit(fromPop = false) {
+  function exit(fromPop = false, then = null) {
     if (exited) return; exited = true;
     leaveHooks.splice(0).forEach((f) => f());
     stop(); root.remove(); document.body.classList.remove('in-session');
     window.removeEventListener('keydown', onKey);
     window.removeEventListener('popstate', onPop);
-    if (!fromPop && history.state && history.state.session) history.back();
+    if (!fromPop && history.state && history.state.session) backThen(then); else if (then) then();
     onExit && onExit();
   }
   function onKey(e) {

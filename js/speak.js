@@ -116,7 +116,7 @@ export async function startRecording({ onPitch, maxMs = 6000 } = {}) {
     const finish = () => {
       ac.close().catch(() => {});
       const blob = chunks.length ? new Blob(chunks, { type: chunks[0].type || 'audio/webm' }) : null;
-      resolveStop({ url: blob ? URL.createObjectURL(blob) : null, track });
+      resolveStop({ url: blob ? URL.createObjectURL(blob) : null, blob, track });
     };
     if (rec && rec.state !== 'inactive') { rec.onstop = finish; rec.stop(); } else finish();
     return done;

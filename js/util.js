@@ -106,3 +106,13 @@ export function richHTML(text) {
 }
 export function richNode(tag, cls, text) { const e = h(tag, { class: cls }); e.innerHTML = richHTML(text); return e; }
 export function R(text) { const s = document.createElement('span'); s.innerHTML = richHTML(text); return s; }
+
+// Leave the current history entry, then run fn once the browser has actually moved back
+// (otherwise a dialog opened right away would be closed by the late popstate).
+export function backThen(fn) {
+  let ran = false;
+  const go = () => { if (ran) return; ran = true; window.removeEventListener('popstate', go); fn && fn(); };
+  window.addEventListener('popstate', go);
+  history.back();
+  setTimeout(go, 500);
+}
