@@ -249,6 +249,12 @@ export async function startConvo(scene, { onExit } = {}) {
 
   function pending() {
     const p = h('div', { class: 'cb them typing', 'aria-label': 'Partner is typing' }, h('i'), h('i'), h('i'));
+    const note = h('small', { class: 'wait-note' });
+    p.append(note);
+    const t1 = setTimeout(() => { note.textContent = 'Still thinking…'; }, 8000);
+    const t2 = setTimeout(() => { note.textContent = 'The AI is slow right now; trying another model…'; }, 20000);
+    const rm = p.remove.bind(p);
+    p.remove = () => { clearTimeout(t1); clearTimeout(t2); rm(); };
     S.log.append(p); S.scroll();
     return p;
   }

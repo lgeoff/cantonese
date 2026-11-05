@@ -61,32 +61,50 @@ export async function chatTurn({ system, history, audio = null, signal }) {
 }
 
 const noThinkCfg = new Set();
+// If the chosen model is overloaded (503) or out of quota (429), retry, then fall back to the next one.
+const GEMINI_CHAIN = ['gemini-3.8-flash', 'gemini-3.5-flash-lite', 'gemini-3.6-flash', 'gemini-3.1-flash-lite', 'gemini-2.5-flash'];
+let sticky = null; // a model that worked after the chosen one failed, kept for this visit
+export let lastModel = '';
+const wait = (ms, signal) => new Promise((res, rej) => { const t = setTimeout(res, ms); signal && signal.addEventListener('abort', () => { clearTimeout(t); rej(new AIError('abort', 'Cancelled.')); }, { once: true }); });
+
 async function callGemini(c, system, history, audio, signal) {
   const contents = history.map((m, i) => {
     const parts = [{ text: m.text }];
     if (audio && i === history.length - 1) parts.unshift({ inline_data: { mime_type: audio.mime, data: audio.b64 } });
     return { role: m.role === 'model' ? 'model' : 'user', parts };
   });
-  const body = {
-    systemInstruction: { parts: [{ text: system }] },
-    contents,
-    generationConfig: { temperature: 0.8, responseMimeType: 'application/json', responseSchema: SCHEMA, maxOutputTokens: 4096 },
-  };
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(modelOf(c))}:generateContent`;
-  // keep the model's thinking short so replies come quickly; older models reject the option
-  if (!noThinkCfg.has(modelOf(c))) body.generationConfig.thinkingConfig = { thinkingLevel: 'low' };
-  let r;
-  try { r = await post(url, { 'Content-Type': 'application/json', 'x-goog-api-key': c.key }, body, signal); }
-  catch (e) {
-    if (e.kind !== 'other' || !/think/i.test(e.message) || !body.generationConfig.thinkingConfig) throw e;
-    noThinkCfg.add(modelOf(c)); delete body.generationConfig.thinkingConfig;
-    r = await post(url, { 'Content-Type': 'application/json', 'x-goog-api-key': c.key }, body, signal);
+  const chosen = modelOf(c);
+  const chain = [...new Set([sticky && sticky.from === chosen ? sticky.to : null, chosen, ...GEMINI_CHAIN].filter(Boolean))];
+  let lastErr = null;
+  for (const model of chain) {
+    for (let attempt = 0; attempt < (model === chain[0] ? 2 : 1); attempt++) {
+      const body = {
+        systemInstruction: { parts: [{ text: system }] },
+        contents,
+        generationConfig: { temperature: 0.8, responseMimeType: 'application/json', responseSchema: SCHEMA, maxOutputTokens: 4096 },
+      };
+      // keep the model's thinking short so replies come quickly; older models reject the option
+      if (!noThinkCfg.has(model)) body.generationConfig.thinkingConfig = { thinkingLevel: 'low' };
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`;
+      try {
+        const r = await post(url, { 'Content-Type': 'application/json', 'x-goog-api-key': c.key }, body, signal);
+        const j = await r.json();
+        const cand = j.candidates && j.candidates[0];
+        const text = cand && cand.content && cand.content.parts && cand.content.parts.filter((p) => !p.thought).map((p) => p.text || '').join('');
+        if (!text) throw new AIError('empty', cand && cand.finishReason === 'SAFETY' ? 'The model declined to answer that one. Try saying it another way.' : 'The model sent an empty answer. Try again.');
+        lastModel = model;
+        if (model !== chosen) sticky = { from: chosen, to: model };
+        return text;
+      } catch (e) {
+        lastErr = e;
+        if (e.kind === 'other' && /think/i.test(e.message) && !noThinkCfg.has(model)) { noThinkCfg.add(model); attempt--; continue; }
+        if (e.kind === 'busy' && attempt === 0 && !/too long/.test(e.message)) { await wait(1500, signal); continue; }
+        if (['busy', 'limit', 'model', 'empty'].includes(e.kind)) break; // try the next model
+        throw e; // bad key, network, cancelled…
+      }
+    }
   }
-  const j = await r.json();
-  const cand = j.candidates && j.candidates[0];
-  const text = cand && cand.content && cand.content.parts && cand.content.parts.map((p) => p.text || '').join('');
-  if (!text) throw new AIError('empty', cand && cand.finishReason === 'SAFETY' ? 'The model declined to answer that one. Try saying it another way.' : 'The model sent an empty answer. Try again.');
-  return text;
+  throw lastErr || new AIError('busy', 'The AI service is busy. Try again in a moment.');
 }
 
 async function callClaude(c, system, history, signal) {
@@ -106,21 +124,31 @@ async function callClaude(c, system, history, signal) {
   return (j.content || []).map((b) => b.text || '').join('');
 }
 
-async function post(url, headers, body, signal) {
+// Each request gets its own time limit so a stuck model never leaves the chat waiting forever.
+async function post(url, headers, body, signal, timeoutMs = 20000) {
+  const ctl = new AbortController();
+  let timedOut = false;
+  const timer = setTimeout(() => { timedOut = true; ctl.abort(); }, timeoutMs);
+  const onAbort = () => ctl.abort();
+  if (signal) signal.addEventListener('abort', onAbort, { once: true });
   let r;
-  try { r = await fetch(url, { method: 'POST', headers, body: JSON.stringify(body), signal }); }
+  try { r = await fetch(url, { method: 'POST', headers, body: JSON.stringify(body), signal: ctl.signal }); }
   catch (e) {
+    if (timedOut) throw new AIError('busy', `The AI service took too long to answer (over ${Math.round(timeoutMs / 1000)} s).`);
     if (e.name === 'AbortError') throw new AIError('abort', 'Cancelled.');
     throw new AIError('network', 'No connection to the AI service. Check your internet connection.');
+  } finally {
+    clearTimeout(timer);
+    if (signal) signal.removeEventListener('abort', onAbort);
   }
   if (r.ok) return r;
   let msg = '';
   try { const j = await r.json(); msg = (j.error && (j.error.message || j.error.type)) || ''; } catch (e) { /* ignore */ }
   if (r.status === 400 && /api key|API_KEY/i.test(msg)) throw new AIError('badkey', 'The API key was not accepted. Check it in Settings.');
   if (r.status === 401 || r.status === 403) throw new AIError('badkey', 'The API key was not accepted. Check it in Settings.');
-  if (r.status === 429) throw new AIError('limit', 'Usage limit reached for now. Wait a minute, or switch to the faster model in Settings (it has a higher free limit).');
-  if (r.status === 404) throw new AIError('model', `This model isn’t available for your key. Pick another model in Settings. (${msg})`);
-  if (r.status >= 500 || r.status === 529) throw new AIError('busy', 'The AI service is busy. Try again in a moment.');
+  if (r.status === 429) throw new AIError('limit', `Usage limit reached for now (429). Wait a minute and try again. ${msg}`);
+  if (r.status === 404) throw new AIError('model', `This model isn’t available for your key (404). Pick another model in Settings. ${msg}`);
+  if (r.status >= 500 || r.status === 529) throw new AIError('busy', `The AI service is overloaded right now (${r.status}), even after retrying other models. Try again in a minute. ${msg}`);
   throw new AIError('other', `The AI service returned an error (${r.status}). ${msg}`);
 }
 

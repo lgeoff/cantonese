@@ -584,3 +584,4 @@ a.review-card { text-decoration: none; }
 .lab select { min-width: 0; width: 100%; text-overflow: ellipsis; }
 .lab .row { min-width: 0; flex-wrap: nowrap; }
 .say-text { min-width: 0; }
+.cb.typing { align-items: center; flex-wrap: wrap; } .wait-note { color: var(--ink-3); font-size: 12px; margin-left: 6px; } .wait-note:empty { display: none; }

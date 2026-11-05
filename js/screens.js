@@ -8,6 +8,7 @@ import { speak, speakSlow, hasVoice, cantoVoices, supported as ttsSupported, whe
 import * as SP from './speak.js';
 import { convoSection, setAiSetupOpener } from './convo.js';
 import { PROVIDERS, aiConfig, setAiConfig, testKey, modelOf } from './llm.js';
+import * as LLM from './llm.js';
 
 export const UNIT_ZH = {
   u01: ['我嘅生字', 'ngo5 ge3 saang1 zi6'], u02: ['聲調入門', 'sing1 diu6 jap6 mun4'], u25: ['我嘅日常', 'ngo5 ge3 jat6 soeng4'], u03: ['打招呼', 'daa2 ziu1 fu1'], u04: ['自我介紹', 'zi6 ngo5 gaai3 siu6'],
@@ -662,7 +663,7 @@ function aiSettings({ onSaved } = {}) {
       saveKey();
       if (!aiConfig().key) { status.textContent = 'Paste a key first.'; return; }
       status.textContent = 'Testing…'; test.disabled = true;
-      try { await testKey(); status.textContent = '✓ Connected. Open Speak → Conversation to start.'; onSaved && onSaved(); }
+      try { await testKey(); const used = LLM.lastModel && LLM.lastModel !== modelOf() && aiConfig().provider === 'gemini' ? ` (your chosen model was busy, so ${LLM.lastModel} answered)` : ''; status.textContent = `✓ Connected${used}. Open Speak → Conversation to start.`; onSaved && onSaved(); }
       catch (e) { status.textContent = '✕ ' + e.message; }
       test.disabled = false;
     } }, 'Save & test');

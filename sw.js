@@ -1,5 +1,5 @@
 // Offline cache: app shell + course data cached on install, fonts cached at runtime.
-const VERSION = 'ca5c4557d2';
+const VERSION = 'a2002ef4b8';
 const CACHE = 'sikgong-' + VERSION;
 const SHELL = ['./', 'index.html', 'css/app.css', 'js/app.js', 'js/util.js', 'js/store.js', 'js/tts.js', 'js/course.js', 'js/exercises.js', 'js/session.js', 'js/screens.js', 'js/speak.js', 'js/jyut.js', 'js/llm.js', 'js/convo.js', 'data/course.json', 'data/jyutping.json', 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-180.png'];
 
