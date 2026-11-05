@@ -3,120 +3,2230 @@
   "level": 1,
   "title": "Family & People",
   "emoji": "👨‍👩‍👧",
-  "desc": "Talk about your family, ask who's who in a photo, and say what you have (or don't)",
+  "desc": "Talk about your family, greet relatives the HK way, and say what you have (or don't)",
   "words": [
-    {"hk": "爸爸", "jp": "baa4 baa1", "en": "dad", "fr": "papa",
-     "note": "Adults often say 阿爸 aa3 baa4 or the casual 老豆 lou5 dau6.",
-     "ex": {"en": "My dad lives in Hong Kong.", "parts": [["我","ngo5"],["爸爸","baa4 baa1"],["住","zyu6"],["喺","hai2"],["香港","hoeng1 gong2"],["。"]]}},
-    {"hk": "媽媽", "jp": "maa4 maa1", "en": "mum", "fr": "maman",
-     "note": "Also 阿媽 aa3 maa1.",
-     "ex": {"en": "Mum, I'm home!", "parts": [["媽媽","maa4 maa1"],["，"],["我","ngo5"],["返","faan1"],["嚟","lai4"],["喇","laa3"],["！"]]}},
-    {"hk": "老公", "jp": "lou5 gung1", "en": "husband", "fr": "mari",
-     "note": "The everyday word — not slangy at all.",
-     "ex": {"en": "My husband doesn't eat lamb.", "parts": [["我","ngo5"],["老公","lou5 gung1"],["唔","m4"],["食","sik6"],["羊肉","joeng4 juk6"],["。"]]}},
-    {"hk": "老婆", "jp": "lou5 po4", "en": "wife", "fr": "femme (épouse)",
-     "ex": {"en": "Is your wife Swiss?", "parts": [["你","nei5"],["老婆","lou5 po4"],["係唔係","hai6 m4 hai6"],["瑞士人","seoi6 si6 jan4"],["啊","aa3"],["？"]]}},
-    {"hk": "仔", "jp": "zai2", "en": "son", "fr": "fils",
-     "note": "Usually with 個: 我個仔 = my son. Also a 'little' suffix: 男仔 boy.",
-     "ex": {"en": "My son is eight.", "parts": [["我","ngo5"],["個","go3"],["仔","zai2"],["八歲","baat3 seoi3"],["。"]]}},
-    {"hk": "女", "jp": "neoi2", "en": "daughter", "fr": "fille (enfant)",
-     "note": "'Daughter' is neoi2 (tone change): 我個女. 女 neoi5 on its own means 'female'.",
-     "ex": {"en": "Does your daughter speak French?", "parts": [["你","nei5"],["個","go3"],["女","neoi2"],["識唔識","sik1 m4 sik1"],["講","gong2"],["法文","faat3 man2"],["啊","aa3"],["？"]]}},
-    {"hk": "爺爺", "jp": "je4 je2", "en": "grandpa (dad's dad)", "fr": "grand-père (paternel)",
-     "note": "Chinese has different words for each side of the family.",
-     "ex": {"en": "Grandpa is ninety this year.", "parts": [["爺爺","je4 je2"],["今年","gam1 nin4"],["九十歲","gau2 sap6 seoi3"],["。"]]}},
-    {"hk": "嫲嫲", "jp": "maa4 maa4", "en": "grandma (dad's mum)", "fr": "grand-mère (paternelle)",
-     "ex": {"en": "Grandma loves watching TV.", "parts": [["嫲嫲","maa4 maa4"],["好","hou2"],["鍾意","zung1 ji3"],["睇","tai2"],["電視","din6 si6"],["。"]]}},
-    {"hk": "公公", "jp": "gung4 gung1", "en": "grandpa (mum's dad)", "fr": "grand-père (maternel)",
-     "ex": {"en": "My grandpa doesn't speak English.", "parts": [["我","ngo5"],["公公","gung4 gung1"],["唔識","m4 sik1"],["講","gong2"],["英文","jing1 man2"],["。"]]}},
-    {"hk": "婆婆", "jp": "po4 po2", "en": "grandma (mum's mum); old lady", "fr": "grand-mère (maternelle) ; vieille dame",
-     "note": "Also a polite way to address any elderly woman.",
-     "ex": {"en": "Where does your grandma live?", "parts": [["你","nei5"],["婆婆","po4 po2"],["住","zyu6"],["喺","hai2"],["邊度","bin1 dou6"],["啊","aa3"],["？"]]}},
-    {"hk": "朋友", "jp": "pang4 jau5", "en": "friend", "fr": "ami(e)",
-     "ex": {"en": "He's my good friend.", "parts": [["佢","keoi5"],["係","hai6"],["我","ngo5"],["好朋友","hou2 pang4 jau5"],["。"]]}},
-    {"hk": "男朋友", "jp": "naam4 pang4 jau5", "en": "boyfriend", "fr": "petit ami / copain",
-     "ex": {"en": "Does she have a boyfriend?", "parts": [["佢","keoi5"],["有冇","jau5 mou5"],["男朋友","naam4 pang4 jau5"],["啊","aa3"],["？"]]}},
-    {"hk": "女朋友", "jp": "neoi5 pang4 jau5", "en": "girlfriend", "fr": "petite amie / copine",
-     "note": "Only for a romantic partner. A female friend is just 朋友.",
-     "ex": {"en": "My little brother's girlfriend is French.", "parts": [["我","ngo5"],["細佬","sai3 lou2"],["個","go3"],["女朋友","neoi5 pang4 jau5"],["係","hai6"],["法國人","faat3 gwok3 jan4"],["。"]]}},
-    {"hk": "人", "jp": "jan4", "en": "person / people", "fr": "personne / gens",
-     "ex": {"en": "There are lots of people in Hong Kong.", "parts": [["香港","hoeng1 gong2"],["好多","hou2 do1"],["人","jan4"],["。"]]}},
-    {"hk": "男仔", "jp": "naam4 zai2", "en": "boy; young man", "fr": "garçon",
-     "ex": {"en": "Who's that boy?", "parts": [["嗰個","go2 go3"],["男仔","naam4 zai2"],["係","hai6"],["邊個","bin1 go3"],["啊","aa3"],["？"]]}},
-    {"hk": "女仔", "jp": "neoi5 zai2", "en": "girl; young woman", "fr": "fille / jeune femme",
-     "ex": {"en": "Is that kid a boy or a girl?", "parts": [["嗰個","go2 go3"],["小朋友","siu2 pang4 jau5"],["係","hai6"],["男仔","naam4 zai2"],["定係","ding6 hai6"],["女仔","neoi5 zai2"],["啊","aa3"],["？"]]}},
-    {"hk": "屋企人", "jp": "uk1 kei2 jan4", "en": "family (members)", "fr": "famille (les proches)",
-     "note": "The everyday word. 家庭 (u01) is more formal: 'the family unit'.",
-     "ex": {"en": "My family are all in Hong Kong.", "parts": [["我","ngo5"],["屋企人","uk1 kei2 jan4"],["全部","cyun4 bou6"],["喺","hai2"],["香港","hoeng1 gong2"],["。"]]}},
-    {"hk": "小朋友", "jp": "siu2 pang4 jau5", "en": "child / kid", "fr": "enfant",
-     "note": "Polite and kind. A more casual word is 細路 sai3 lou6.",
-     "ex": {"en": "The kids are sleeping.", "parts": [["啲","di1"],["小朋友","siu2 pang4 jau5"],["瞓緊覺","fan3 gan2 gaau3"],["。"]]}},
-    {"hk": "大佬", "jp": "daai6 lou2", "en": "big brother (colloquial)", "fr": "grand frère (familier)",
-     "note": "Same as 哥哥 but more casual. Also 'boss / dude' in slang.",
-     "ex": {"en": "My big brother is married.", "parts": [["我","ngo5"],["大佬","daai6 lou2"],["結咗婚","git3 zo2 fan1"],["。"]]}},
-    {"hk": "有", "jp": "jau5", "en": "to have; there is", "fr": "avoir ; il y a",
-     "ex": {"en": "I have two little sisters.", "parts": [["我","ngo5"],["有","jau5"],["兩個","loeng5 go3"],["細妹","sai3 mui2"],["。"]]}},
-    {"hk": "冇", "jp": "mou5", "en": "not have; there isn't", "fr": "ne pas avoir ; il n'y a pas",
-     "note": "冇 replaces 唔有, which doesn't exist. 有冇…？ = Do you have…?",
-     "ex": {"en": "I don't have any brothers or sisters.", "parts": [["我","ngo5"],["冇","mou5"],["兄弟姊妹","hing1 dai6 zi2 mui6"],["。"]]}},
-    {"hk": "幾個", "jp": "gei2 go3", "en": "how many; a few", "fr": "combien ; quelques",
-     "note": "In a question: how many? In a statement: a few (我有幾個朋友 = I have a few friends).",
-     "ex": {"en": "How many kids do you have?", "parts": [["你","nei5"],["有","jau5"],["幾個","gei2 go3"],["小朋友","siu2 pang4 jau5"],["啊","aa3"],["？"]]}}
+    {
+      "hk": "爸爸",
+      "jp": "baa4 baa1",
+      "en": "dad",
+      "fr": "papa",
+      "note": "Adults often say 阿爸 (aa3 baa4) or the casual 老豆 (lou5 dau6).",
+      "ex": {
+        "en": "My dad lives in Hong Kong.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "爸爸",
+            "baa4 baa1"
+          ],
+          [
+            "住",
+            "zyu6"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "香港",
+            "hoeng1 gong2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "媽媽",
+      "jp": "maa4 maa1",
+      "en": "mum",
+      "fr": "maman",
+      "note": "Also 阿媽 (aa3 maa1).",
+      "ex": {
+        "en": "My mum was born in Hong Kong.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "媽媽",
+            "maa4 maa1"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "香港",
+            "hoeng1 gong2"
+          ],
+          [
+            "出世",
+            "ceot1 sai3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "老公",
+      "jp": "lou5 gung1",
+      "en": "husband",
+      "fr": "mari",
+      "note": "The everyday word — not slangy at all.",
+      "ex": {
+        "en": "My husband doesn't eat lamb.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "老公",
+            "lou5 gung1"
+          ],
+          [
+            "唔",
+            "m4"
+          ],
+          [
+            "食",
+            "sik6"
+          ],
+          [
+            "羊肉",
+            "joeng4 juk6"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "老婆",
+      "jp": "lou5 po4",
+      "en": "wife",
+      "fr": "femme (épouse)",
+      "ex": {
+        "en": "Is your wife Swiss?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "老婆",
+            "lou5 po4"
+          ],
+          [
+            "係唔係",
+            "hai6 m4 hai6"
+          ],
+          [
+            "瑞士人",
+            "seoi6 si6 jan4"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "仔",
+      "jp": "zai2",
+      "en": "son",
+      "fr": "fils",
+      "note": "Usually with 個 (go3): 我個仔 (ngo5 go3 zai2) = my son. Also a 'little' suffix: 男仔 (naam4 zai2) boy.",
+      "ex": {
+        "en": "My son is eight.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "個",
+            "go3"
+          ],
+          [
+            "仔",
+            "zai2"
+          ],
+          [
+            "八歲",
+            "baat3 seoi3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "女",
+      "jp": "neoi2",
+      "en": "daughter",
+      "fr": "fille (enfant)",
+      "note": "'Daughter' is neoi2 (tone change): 我個女 (ngo5 go3 neoi2). 女 (neoi5) on its own means 'female'.",
+      "ex": {
+        "en": "Does your daughter speak French?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "個",
+            "go3"
+          ],
+          [
+            "女",
+            "neoi2"
+          ],
+          [
+            "識唔識",
+            "sik1 m4 sik1"
+          ],
+          [
+            "講",
+            "gong2"
+          ],
+          [
+            "法文",
+            "faat3 man2"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "歲",
+      "jp": "seoi3",
+      "en": "years old",
+      "fr": "ans (âge)",
+      "note": "幾多歲 (gei2 do1 seoi3) = how old? No verb needed: 佢八歲 (keoi5 baat3 seoi3) = he is eight.",
+      "ex": {
+        "en": "How old is your daughter?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "個",
+            "go3"
+          ],
+          [
+            "女",
+            "neoi2"
+          ],
+          [
+            "幾多歲",
+            "gei2 do1 seoi3"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "爺爺",
+      "jp": "je4 je2",
+      "en": "grandpa (dad's dad)",
+      "fr": "grand-père (paternel)",
+      "note": "Chinese has different words for each side of the family.",
+      "ex": {
+        "en": "Grandpa is ninety.",
+        "parts": [
+          [
+            "爺爺",
+            "je4 je2"
+          ],
+          [
+            "九十歲",
+            "gau2 sap6 seoi3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "嫲嫲",
+      "jp": "maa4 maa4",
+      "en": "grandma (dad's mum)",
+      "fr": "grand-mère (paternelle)",
+      "ex": {
+        "en": "Grandma loves watching TV.",
+        "parts": [
+          [
+            "嫲嫲",
+            "maa4 maa4"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "鍾意",
+            "zung1 ji3"
+          ],
+          [
+            "睇",
+            "tai2"
+          ],
+          [
+            "電視",
+            "din6 si6"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "公公",
+      "jp": "gung4 gung1",
+      "en": "grandpa (mum's dad)",
+      "fr": "grand-père (maternel)",
+      "ex": {
+        "en": "My grandpa doesn't speak English.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "公公",
+            "gung4 gung1"
+          ],
+          [
+            "唔識",
+            "m4 sik1"
+          ],
+          [
+            "講",
+            "gong2"
+          ],
+          [
+            "英文",
+            "jing1 man2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "婆婆",
+      "jp": "po4 po2",
+      "en": "grandma (mum's mum); old lady",
+      "fr": "grand-mère (maternelle) ; vieille dame",
+      "note": "Also a polite way to address any elderly woman.",
+      "ex": {
+        "en": "Where does your grandma live?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "婆婆",
+            "po4 po2"
+          ],
+          [
+            "住",
+            "zyu6"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "邊度",
+            "bin1 dou6"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "大佬",
+      "jp": "daai6 lou2",
+      "en": "big brother (colloquial)",
+      "fr": "grand frère (familier)",
+      "note": "Same as 哥哥 (go4 go1) but more casual. Also 'boss / dude' in slang.",
+      "ex": {
+        "en": "My big brother is married.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "大佬",
+            "daai6 lou2"
+          ],
+          [
+            "結咗婚",
+            "git3 zo2 fan1"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "叔叔",
+      "jp": "suk1 suk1",
+      "en": "uncle (dad's younger brother)",
+      "fr": "oncle (frère cadet du père)",
+      "note": "Kids also call any man of their parents' age 叔叔 (suk1 suk1). An adult calls an older man 阿叔 (aa3 suk1).",
+      "ex": {
+        "en": "My uncle lives in London.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "叔叔",
+            "suk1 suk1"
+          ],
+          [
+            "住",
+            "zyu6"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "倫敦",
+            "leon4 deon1"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "姑媽",
+      "jp": "gu1 maa1",
+      "en": "aunt (dad's older sister)",
+      "fr": "tante (sœur aînée du père)",
+      "note": "Dad's younger sister is 姑姐 (gu1 ze1).",
+      "ex": {
+        "en": "Auntie loves fish.",
+        "parts": [
+          [
+            "姑媽",
+            "gu1 maa1"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "鍾意",
+            "zung1 ji3"
+          ],
+          [
+            "食",
+            "sik6"
+          ],
+          [
+            "魚",
+            "jyu2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "舅父",
+      "jp": "kau5 fu2",
+      "en": "uncle (mum's brother)",
+      "fr": "oncle (frère de la mère)",
+      "note": "Mum's side has its own words: 舅父 (kau5 fu2) uncle, 姨媽 (ji4 maa1) aunt.",
+      "ex": {
+        "en": "My uncle speaks French.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "舅父",
+            "kau5 fu2"
+          ],
+          [
+            "識",
+            "sik1"
+          ],
+          [
+            "講",
+            "gong2"
+          ],
+          [
+            "法文",
+            "faat3 man2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "姨媽",
+      "jp": "ji4 maa1",
+      "en": "aunt (mum's older sister)",
+      "fr": "tante (sœur aînée de la mère)",
+      "note": "Mum's younger sister is 阿姨 (aa3 ji1).",
+      "ex": {
+        "en": "Auntie, long time no see!",
+        "parts": [
+          [
+            "姨媽",
+            "ji4 maa1"
+          ],
+          [
+            "，"
+          ],
+          [
+            "好耐冇見",
+            "hou2 noi6 mou5 gin3"
+          ],
+          [
+            "！"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "阿姨",
+      "jp": "aa3 ji1",
+      "en": "auntie (mum's younger sister; any older woman)",
+      "fr": "tata (sœur cadette de la mère ; dame plus âgée)",
+      "note": "The polite, friendly way to address a woman of your parents' age — a shop assistant, a neighbour, a friend's mum.",
+      "ex": {
+        "en": "Thank you, auntie!",
+        "parts": [
+          [
+            "阿姨",
+            "aa3 ji1"
+          ],
+          [
+            "，"
+          ],
+          [
+            "唔該",
+            "m4 goi1"
+          ],
+          [
+            "！"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "表哥",
+      "jp": "biu2 go1",
+      "en": "older male cousin (on mum's side or via an aunt)",
+      "fr": "cousin (plus âgé)",
+      "note": "表 (biu2) cousins: 表哥 (biu2 go1), 表姐 (biu2 ze2) older female cousin. Cousins through dad's brothers are 堂 (tong4): 堂哥 (tong4 go1).",
+      "ex": {
+        "en": "My cousin is in Hong Kong.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "表哥",
+            "biu2 go1"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "香港",
+            "hoeng1 gong2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "朋友",
+      "jp": "pang4 jau5",
+      "en": "friend",
+      "fr": "ami(e)",
+      "ex": {
+        "en": "He's my good friend.",
+        "parts": [
+          [
+            "佢",
+            "keoi5"
+          ],
+          [
+            "係",
+            "hai6"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "好朋友",
+            "hou2 pang4 jau5"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "男朋友",
+      "jp": "naam4 pang4 jau5",
+      "en": "boyfriend",
+      "fr": "petit ami / copain",
+      "ex": {
+        "en": "Does she have a boyfriend?",
+        "parts": [
+          [
+            "佢",
+            "keoi5"
+          ],
+          [
+            "有冇",
+            "jau5 mou5"
+          ],
+          [
+            "男朋友",
+            "naam4 pang4 jau5"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "女朋友",
+      "jp": "neoi5 pang4 jau5",
+      "en": "girlfriend",
+      "fr": "petite amie / copine",
+      "note": "Only for a romantic partner. A female friend is just 朋友 (pang4 jau5).",
+      "ex": {
+        "en": "My little brother's girlfriend is French.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "細佬",
+            "sai3 lou2"
+          ],
+          [
+            "個",
+            "go3"
+          ],
+          [
+            "女朋友",
+            "neoi5 pang4 jau5"
+          ],
+          [
+            "係",
+            "hai6"
+          ],
+          [
+            "法國人",
+            "faat3 gwok3 jan4"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "屋企人",
+      "jp": "uk1 kei2 jan4",
+      "en": "family (members)",
+      "fr": "famille (les proches)",
+      "note": "The everyday word. 家庭 (gaa1 ting4) is more formal: 'the family unit'.",
+      "ex": {
+        "en": "My family are all in Hong Kong.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "屋企人",
+            "uk1 kei2 jan4"
+          ],
+          [
+            "都",
+            "dou1"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "香港",
+            "hoeng1 gong2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "小朋友",
+      "jp": "siu2 pang4 jau5",
+      "en": "child / kid",
+      "fr": "enfant",
+      "note": "Polite and kind. A more casual word is 細路 (sai3 lou6).",
+      "ex": {
+        "en": "Do you have kids?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "有冇",
+            "jau5 mou5"
+          ],
+          [
+            "小朋友",
+            "siu2 pang4 jau5"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "好多",
+      "jp": "hou2 do1",
+      "en": "a lot / many / much",
+      "fr": "beaucoup",
+      "note": "Goes before the noun: 好多人 (hou2 do1 jan4) = lots of people. 好多嘢 (hou2 do1 je5) = lots of things.",
+      "ex": {
+        "en": "There are lots of people in Hong Kong.",
+        "parts": [
+          [
+            "香港",
+            "hoeng1 gong2"
+          ],
+          [
+            "好多",
+            "hou2 do1"
+          ],
+          [
+            "人",
+            "jan4"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "好耐冇見",
+      "jp": "hou2 noi6 mou5 gin3",
+      "en": "long time no see",
+      "fr": "ça fait longtemps !",
+      "note": "Literally 'very long, not seen'. The classic greeting when you visit family in Hong Kong.",
+      "ex": {
+        "en": "Wow, long time no see! How have you been?",
+        "parts": [
+          [
+            "嘩",
+            "waa1"
+          ],
+          [
+            "，"
+          ],
+          [
+            "好耐冇見",
+            "hou2 noi6 mou5 gin3"
+          ],
+          [
+            "！"
+          ],
+          [
+            "最近點啊",
+            "zeoi3 gan6 dim2 aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "食咗飯未",
+      "jp": "sik6 zo2 faan6 mei6",
+      "en": "have you eaten? (greeting)",
+      "fr": "tu as mangé ? (salutation)",
+      "note": "Literally 'eaten rice yet?'. It's a warm 'how are you', not an invitation. Answer 食咗喇 (sik6 zo2 laa3) 'yes, I have' even if you haven't!",
+      "ex": {
+        "en": "Auntie, have you eaten?",
+        "parts": [
+          [
+            "阿姨",
+            "aa3 ji1"
+          ],
+          [
+            "，"
+          ],
+          [
+            "食咗飯未",
+            "sik6 zo2 faan6 mei6"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    }
   ],
   "sentences": [
-    {"en": "How many people are there in your family?", "parts": [["你","nei5"],["屋企","uk1 kei2"],["有","jau5"],["幾多個","gei2 do1 go3"],["人","jan4"],["啊","aa3"],["？"]]},
-    {"en": "Four: Dad, Mum, my big brother and me.", "parts": [["四個","sei3 go3"],["，"],["爸爸","baa4 baa1"],["媽媽","maa4 maa1"],["，"],["大佬","daai6 lou2"],["同","tung4"],["我","ngo5"],["。"]]},
-    {"en": "Do you have a girlfriend?", "parts": [["你","nei5"],["有冇","jau5 mou5"],["女朋友","neoi5 pang4 jau5"],["啊","aa3"],["？"]]},
-    {"en": "No, I don't.", "parts": [["冇","mou5"],["啊","aa3"],["。"]]},
-    {"en": "I have a son and a daughter.", "parts": [["我","ngo5"],["有","jau5"],["一個","jat1 go3"],["仔","zai2"],["，"],["一個","jat1 go3"],["女","neoi2"],["。"]]},
-    {"en": "My wife and I live in Geneva.", "parts": [["我","ngo5"],["同","tung4"],["老婆","lou5 po4"],["住","zyu6"],["喺","hai2"],["日內瓦","jat6 noi6 ngaa5"],["。"]]},
-    {"en": "My grandma is ninety and still very sprightly!", "parts": [["我","ngo5"],["婆婆","po4 po2"],["九十歲","gau2 sap6 seoi3"],["，"],["仲","zung6"],["好","hou2"],["精神","zing1 san4"],["！"]]},
-    {"en": "Is that your boyfriend?", "parts": [["嗰個","go2 go3"],["係唔係","hai6 m4 hai6"],["你","nei5"],["男朋友","naam4 pang4 jau5"],["啊","aa3"],["？"]]},
-    {"en": "No, he's my husband!", "parts": [["唔係","m4 hai6"],["，"],["佢","keoi5"],["係","hai6"],["我","ngo5"],["老公","lou5 gung1"],["嚟","lai4"],["㗎","gaa3"],["！"]]},
-    {"en": "Dad doesn't have a car; he rides a bike.", "parts": [["爸爸","baa4 baa1"],["冇","mou5"],["車","ce1"],["，"],["佢","keoi5"],["踩","caai2"],["單車","daan1 ce1"],["。"]]},
-    {"en": "My son likes playing video games, my daughter likes running.", "parts": [["我","ngo5"],["個","go3"],["仔","zai2"],["鍾意","zung1 ji3"],["打機","daa2 gei1"],["，"],["個","go3"],["女","neoi2"],["鍾意","zung1 ji3"],["跑步","paau2 bou6"],["。"]]},
-    {"en": "Is there anyone at home?", "parts": [["屋企","uk1 kei2"],["有冇","jau5 mou5"],["人","jan4"],["啊","aa3"],["？"]]},
-    {"en": "I have a few Swiss friends.", "parts": [["我","ngo5"],["有","jau5"],["幾個","gei2 go3"],["瑞士","seoi6 si6"],["朋友","pang4 jau5"],["。"]]}
+    {
+      "en": "How many people are there in your family?",
+      "parts": [
+        [
+          "你",
+          "nei5"
+        ],
+        [
+          "屋企",
+          "uk1 kei2"
+        ],
+        [
+          "有",
+          "jau5"
+        ],
+        [
+          "幾多個",
+          "gei2 do1 go3"
+        ],
+        [
+          "人",
+          "jan4"
+        ],
+        [
+          "啊",
+          "aa3"
+        ],
+        [
+          "？"
+        ]
+      ]
+    },
+    {
+      "en": "Four: Dad, Mum, my big brother and me.",
+      "parts": [
+        [
+          "四個",
+          "sei3 go3"
+        ],
+        [
+          "，"
+        ],
+        [
+          "爸爸",
+          "baa4 baa1"
+        ],
+        [
+          "、"
+        ],
+        [
+          "媽媽",
+          "maa4 maa1"
+        ],
+        [
+          "、"
+        ],
+        [
+          "大佬",
+          "daai6 lou2"
+        ],
+        [
+          "同",
+          "tung4"
+        ],
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "Do you have a girlfriend?",
+      "parts": [
+        [
+          "你",
+          "nei5"
+        ],
+        [
+          "有冇",
+          "jau5 mou5"
+        ],
+        [
+          "女朋友",
+          "neoi5 pang4 jau5"
+        ],
+        [
+          "啊",
+          "aa3"
+        ],
+        [
+          "？"
+        ]
+      ]
+    },
+    {
+      "en": "I have a son and a daughter.",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "有",
+          "jau5"
+        ],
+        [
+          "一個",
+          "jat1 go3"
+        ],
+        [
+          "仔",
+          "zai2"
+        ],
+        [
+          "，"
+        ],
+        [
+          "一個",
+          "jat1 go3"
+        ],
+        [
+          "女",
+          "neoi2"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "My wife and I live in London.",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "同",
+          "tung4"
+        ],
+        [
+          "老婆",
+          "lou5 po4"
+        ],
+        [
+          "住",
+          "zyu6"
+        ],
+        [
+          "喺",
+          "hai2"
+        ],
+        [
+          "倫敦",
+          "leon4 deon1"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "My grandma is ninety and still loves shopping!",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "婆婆",
+          "po4 po2"
+        ],
+        [
+          "九十歲",
+          "gau2 sap6 seoi3"
+        ],
+        [
+          "，"
+        ],
+        [
+          "仲",
+          "zung6"
+        ],
+        [
+          "好",
+          "hou2"
+        ],
+        [
+          "鍾意",
+          "zung1 ji3"
+        ],
+        [
+          "買嘢",
+          "maai5 je5"
+        ],
+        [
+          "！"
+        ]
+      ]
+    },
+    {
+      "en": "Is he your boyfriend?",
+      "parts": [
+        [
+          "佢",
+          "keoi5"
+        ],
+        [
+          "係唔係",
+          "hai6 m4 hai6"
+        ],
+        [
+          "你",
+          "nei5"
+        ],
+        [
+          "男朋友",
+          "naam4 pang4 jau5"
+        ],
+        [
+          "啊",
+          "aa3"
+        ],
+        [
+          "？"
+        ]
+      ]
+    },
+    {
+      "en": "No, he's my husband!",
+      "parts": [
+        [
+          "唔係",
+          "m4 hai6"
+        ],
+        [
+          "，"
+        ],
+        [
+          "佢",
+          "keoi5"
+        ],
+        [
+          "係",
+          "hai6"
+        ],
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "老公",
+          "lou5 gung1"
+        ],
+        [
+          "嚟",
+          "lai4"
+        ],
+        [
+          "㗎",
+          "gaa3"
+        ],
+        [
+          "！"
+        ]
+      ]
+    },
+    {
+      "en": "Dad doesn't have a car; he rides a bike.",
+      "parts": [
+        [
+          "爸爸",
+          "baa4 baa1"
+        ],
+        [
+          "冇",
+          "mou5"
+        ],
+        [
+          "車",
+          "ce1"
+        ],
+        [
+          "，"
+        ],
+        [
+          "佢",
+          "keoi5"
+        ],
+        [
+          "踩",
+          "caai2"
+        ],
+        [
+          "單車",
+          "daan1 ce1"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "My son likes playing video games, my daughter likes running.",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "個",
+          "go3"
+        ],
+        [
+          "仔",
+          "zai2"
+        ],
+        [
+          "鍾意",
+          "zung1 ji3"
+        ],
+        [
+          "打機",
+          "daa2 gei1"
+        ],
+        [
+          "，"
+        ],
+        [
+          "個",
+          "go3"
+        ],
+        [
+          "女",
+          "neoi2"
+        ],
+        [
+          "鍾意",
+          "zung1 ji3"
+        ],
+        [
+          "跑步",
+          "paau2 bou6"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "My uncle and aunt both live in Hong Kong.",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "舅父",
+          "kau5 fu2"
+        ],
+        [
+          "同",
+          "tung4"
+        ],
+        [
+          "姨媽",
+          "ji4 maa1"
+        ],
+        [
+          "都",
+          "dou1"
+        ],
+        [
+          "住",
+          "zyu6"
+        ],
+        [
+          "喺",
+          "hai2"
+        ],
+        [
+          "香港",
+          "hoeng1 gong2"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "I have lots of Swiss friends.",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "有",
+          "jau5"
+        ],
+        [
+          "好多",
+          "hou2 do1"
+        ],
+        [
+          "瑞士",
+          "seoi6 si6"
+        ],
+        [
+          "朋友",
+          "pang4 jau5"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "Grandpa, Grandma, have you eaten?",
+      "parts": [
+        [
+          "公公",
+          "gung4 gung1"
+        ],
+        [
+          "婆婆",
+          "po4 po2"
+        ],
+        [
+          "，"
+        ],
+        [
+          "食咗飯未",
+          "sik6 zo2 faan6 mei6"
+        ],
+        [
+          "啊",
+          "aa3"
+        ],
+        [
+          "？"
+        ]
+      ]
+    }
   ],
   "grammar": [
-    {"title": "有 / 冇 / 有冇",
-     "explain": "有 = have / there is. The negative is 冇 (never 唔有). To ask, use 有冇: 你有冇車？ Answer 有 or 冇.",
-     "examples": [
-       {"en": "Do you have any brothers or sisters?", "parts": [["你","nei5"],["有冇","jau5 mou5"],["兄弟姊妹","hing1 dai6 zi2 mui6"],["啊","aa3"],["？"]]},
-       {"en": "Yes, I have a big sister.", "parts": [["有","jau5"],["，"],["我","ngo5"],["有","jau5"],["一個","jat1 go3"],["家姐","gaa1 ze1"],["。"]]},
-       {"en": "There's no one at home.", "parts": [["屋企","uk1 kei2"],["冇","mou5"],["人","jan4"],["。"]]}
-     ]},
-    {"title": "'My' without 嘅",
-     "explain": "For family and close people, just put the pronoun in front: 我媽媽 (my mum), 你老公 (your husband). For 仔 and 女, add the measure word 個: 我個仔, 佢個女.",
-     "examples": [
-       {"en": "My mum", "parts": [["我","ngo5"],["媽媽","maa4 maa1"]]},
-       {"en": "Her daughter", "parts": [["佢","keoi5"],["個","go3"],["女","neoi2"]]}
-     ]},
-    {"title": "…嚟㗎 to identify someone",
-     "explain": "係 + noun + 嚟㗎 means 'is (actually) a…', used when explaining or correcting who/what something is. Very common in speech.",
-     "examples": [
-       {"en": "She's my grandma.", "parts": [["佢","keoi5"],["係","hai6"],["我","ngo5"],["嫲嫲","maa4 maa4"],["嚟","lai4"],["㗎","gaa3"],["。"]]},
-       {"en": "Who's this?", "parts": [["呢個","ni1 go3"],["係","hai6"],["邊個","bin1 go3"],["嚟","lai4"],["㗎","gaa3"],["？"]]}
-     ]}
+    {
+      "title": "Dad's side or Mum's side?",
+      "explain": "Chinese has a different word for each relative. Dad's side: 爺爺 (je4 je2), 嫲嫲 (maa4 maa4), 叔叔 (suk1 suk1), 姑媽 (gu1 maa1). Mum's side: 公公 (gung4 gung1), 婆婆 (po4 po2), 舅父 (kau5 fu2), 姨媽 (ji4 maa1).",
+      "examples": [
+        {
+          "en": "She's my dad's big sister, so she's my aunt.",
+          "parts": [
+            [
+              "佢",
+              "keoi5"
+            ],
+            [
+              "係",
+              "hai6"
+            ],
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "爸爸",
+              "baa4 baa1"
+            ],
+            [
+              "嘅",
+              "ge3"
+            ],
+            [
+              "家姐",
+              "gaa1 ze1"
+            ],
+            [
+              "，"
+            ],
+            [
+              "即係",
+              "zik1 hai6"
+            ],
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "姑媽",
+              "gu1 maa1"
+            ],
+            [
+              "。"
+            ]
+          ]
+        },
+        {
+          "en": "He's my mum's little brother, so he's my uncle.",
+          "parts": [
+            [
+              "佢",
+              "keoi5"
+            ],
+            [
+              "係",
+              "hai6"
+            ],
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "媽媽",
+              "maa4 maa1"
+            ],
+            [
+              "嘅",
+              "ge3"
+            ],
+            [
+              "細佬",
+              "sai3 lou2"
+            ],
+            [
+              "，"
+            ],
+            [
+              "即係",
+              "zik1 hai6"
+            ],
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "舅父",
+              "kau5 fu2"
+            ],
+            [
+              "。"
+            ]
+          ]
+        }
+      ],
+      "after": "舅父"
+    },
+    {
+      "title": "'My' without 嘅 (ge3)",
+      "explain": "For family and close people, just put the pronoun in front: 我媽媽 (ngo5 maa4 maa1) (my mum), 你老公 (nei5 lou5 gung1) (your husband). For 仔 (zai2) and 女 (neoi2), add the measure word 個 (go3): 我個仔 (ngo5 go3 zai2), 佢個女 (keoi5 go3 neoi2).",
+      "examples": [
+        {
+          "en": "My mum loves watching TV.",
+          "parts": [
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "媽媽",
+              "maa4 maa1"
+            ],
+            [
+              "好",
+              "hou2"
+            ],
+            [
+              "鍾意",
+              "zung1 ji3"
+            ],
+            [
+              "睇",
+              "tai2"
+            ],
+            [
+              "電視",
+              "din6 si6"
+            ],
+            [
+              "。"
+            ]
+          ]
+        },
+        {
+          "en": "Her daughter is three.",
+          "parts": [
+            [
+              "佢",
+              "keoi5"
+            ],
+            [
+              "個",
+              "go3"
+            ],
+            [
+              "女",
+              "neoi2"
+            ],
+            [
+              "三歲",
+              "saam1 seoi3"
+            ],
+            [
+              "。"
+            ]
+          ]
+        }
+      ],
+      "after": "女"
+    },
+    {
+      "title": "…嚟㗎 (lai4 gaa3) to say who someone is",
+      "explain": "係 (hai6) + noun + 嚟㗎 (lai4 gaa3) means 'is (actually) a…' — used when explaining or correcting who someone is.",
+      "examples": [
+        {
+          "en": "She's my grandma.",
+          "parts": [
+            [
+              "佢",
+              "keoi5"
+            ],
+            [
+              "係",
+              "hai6"
+            ],
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "嫲嫲",
+              "maa4 maa4"
+            ],
+            [
+              "嚟",
+              "lai4"
+            ],
+            [
+              "㗎",
+              "gaa3"
+            ],
+            [
+              "。"
+            ]
+          ]
+        },
+        {
+          "en": "Who's that?",
+          "parts": [
+            [
+              "佢",
+              "keoi5"
+            ],
+            [
+              "係",
+              "hai6"
+            ],
+            [
+              "邊個",
+              "bin1 go3"
+            ],
+            [
+              "嚟",
+              "lai4"
+            ],
+            [
+              "㗎",
+              "gaa3"
+            ],
+            [
+              "？"
+            ]
+          ]
+        }
+      ],
+      "after": "大佬"
+    },
+    {
+      "title": "Greeting family the HK way",
+      "explain": "Older relatives rarely say 你好 (nei5 hou2). Call them by their title first — 婆婆 (po4 po2)！ 姨媽 (ji4 maa1)！ — then use a warm set phrase like 好耐冇見 (hou2 noi6 mou5 gin3) or 食咗飯未啊 (sik6 zo2 faan6 mei6 aa3)？",
+      "examples": [
+        {
+          "en": "Grandma! Long time no see!",
+          "parts": [
+            [
+              "婆婆",
+              "po4 po2"
+            ],
+            [
+              "！"
+            ],
+            [
+              "好耐冇見",
+              "hou2 noi6 mou5 gin3"
+            ],
+            [
+              "！"
+            ]
+          ]
+        },
+        {
+          "en": "Uncle, have you eaten?",
+          "parts": [
+            [
+              "舅父",
+              "kau5 fu2"
+            ],
+            [
+              "，"
+            ],
+            [
+              "食咗飯未",
+              "sik6 zo2 faan6 mei6"
+            ],
+            [
+              "啊",
+              "aa3"
+            ],
+            [
+              "？"
+            ]
+          ]
+        }
+      ],
+      "after": "食咗飯未"
+    }
   ],
   "dialogue": {
-    "title": "Looking at a family photo",
+    "title": "Visiting auntie in Hong Kong",
     "lines": [
-      {"spk": "A", "en": "Wow, so many people! Is this your family?", "parts": [["嘩","waa1"],["，"],["咁多","gam3 do1"],["人","jan4"],["！"],["係唔係","hai6 m4 hai6"],["你","nei5"],["屋企人","uk1 kei2 jan4"],["啊","aa3"],["？"]]},
-      {"spk": "B", "en": "Yes. These two are my grandpa and grandma.", "parts": [["係","hai6"],["啊","aa3"],["。"],["呢兩個","ni1 loeng5 go3"],["係","hai6"],["我","ngo5"],["爺爺","je4 je2"],["同","tung4"],["嫲嫲","maa4 maa4"],["。"]]},
-      {"spk": "A", "en": "And who's this handsome guy? Your boyfriend?", "parts": [["噉","gam2"],["呢個","ni1 go3"],["靚仔","leng3 zai2"],["呢","ne1"],["？"],["你","nei5"],["男朋友","naam4 pang4 jau5"],["？"]]},
-      {"spk": "B", "en": "No! That's my big brother!", "parts": [["唔係","m4 hai6"],["啊","aa3"],["！"],["佢","keoi5"],["係","hai6"],["我","ngo5"],["大佬","daai6 lou2"],["嚟","lai4"],["㗎","gaa3"],["！"]]},
-      {"spk": "A", "en": "Is he married?", "parts": [["佢","keoi5"],["結咗婚","git3 zo2 fan1"],["未","mei6"],["啊","aa3"],["？"]]},
-      {"spk": "B", "en": "Yes. That's his wife, and the two kids are theirs.", "parts": [["結咗","git3 zo2"],["喇","laa3"],["。"],["嗰個","go2 go3"],["係","hai6"],["佢","keoi5"],["老婆","lou5 po4"],["，"],["兩個","loeng5 go3"],["小朋友","siu2 pang4 jau5"],["係","hai6"],["佢哋","keoi5 dei6"],["嘅","ge3"],["。"]]},
-      {"spk": "A", "en": "So cute! Boys or girls?", "parts": [["好","hou2"],["得意","dak1 ji3"],["啊","aa3"],["！"],["男仔","naam4 zai2"],["定係","ding6 hai6"],["女仔","neoi5 zai2"],["啊","aa3"],["？"]]},
-      {"spk": "B", "en": "One boy, one girl. And do you have any brothers or sisters?", "parts": [["一個","jat1 go3"],["仔","zai2"],["，"],["一個","jat1 go3"],["女","neoi2"],["。"],["你","nei5"],["呢","ne1"],["？"],["有冇","jau5 mou5"],["兄弟姊妹","hing1 dai6 zi2 mui6"],["啊","aa3"],["？"]]},
-      {"spk": "A", "en": "No, it's just me.", "parts": [["冇","mou5"],["啊","aa3"],["，"],["得","dak1"],["我","ngo5"],["一個","jat1 go3"],["。"]]}
+      {
+        "spk": "A",
+        "en": "Wow, Ming! Long time no see! Have you eaten?",
+        "parts": [
+          [
+            "嘩",
+            "waa1"
+          ],
+          [
+            "，"
+          ],
+          [
+            "阿明",
+            "aa3 ming4"
+          ],
+          [
+            "！"
+          ],
+          [
+            "好耐冇見",
+            "hou2 noi6 mou5 gin3"
+          ],
+          [
+            "！"
+          ],
+          [
+            "食咗飯未",
+            "sik6 zo2 faan6 mei6"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      },
+      {
+        "spk": "B",
+        "en": "Auntie, long time no see! Yes, I have, thanks.",
+        "parts": [
+          [
+            "姨媽",
+            "ji4 maa1"
+          ],
+          [
+            "，"
+          ],
+          [
+            "好耐冇見",
+            "hou2 noi6 mou5 gin3"
+          ],
+          [
+            "！"
+          ],
+          [
+            "食咗",
+            "sik6 zo2"
+          ],
+          [
+            "喇",
+            "laa3"
+          ],
+          [
+            "，"
+          ],
+          [
+            "多謝",
+            "do1 ze6"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "A",
+        "en": "How have you been? Busy?",
+        "parts": [
+          [
+            "最近點啊",
+            "zeoi3 gan6 dim2 aa3"
+          ],
+          [
+            "？"
+          ],
+          [
+            "忙唔忙",
+            "mong4 m4 mong4"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      },
+      {
+        "spk": "B",
+        "en": "Pretty good. This is my wife — she's Swiss.",
+        "parts": [
+          [
+            "幾好",
+            "gei2 hou2"
+          ],
+          [
+            "。"
+          ],
+          [
+            "呢個",
+            "ni1 go3"
+          ],
+          [
+            "係",
+            "hai6"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "老婆",
+            "lou5 po4"
+          ],
+          [
+            "，"
+          ],
+          [
+            "佢",
+            "keoi5"
+          ],
+          [
+            "係",
+            "hai6"
+          ],
+          [
+            "瑞士",
+            "seoi6 si6"
+          ],
+          [
+            "人",
+            "jan4"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "A",
+        "en": "Hello! Do you speak Cantonese?",
+        "parts": [
+          [
+            "你好",
+            "nei5 hou2"
+          ],
+          [
+            "！"
+          ],
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "識唔識",
+            "sik1 m4 sik1"
+          ],
+          [
+            "講",
+            "gong2"
+          ],
+          [
+            "廣東話",
+            "gwong2 dung1 waa2"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      },
+      {
+        "spk": "C",
+        "en": "Just a little. Hello, auntie!",
+        "parts": [
+          [
+            "識",
+            "sik1"
+          ],
+          [
+            "少少",
+            "siu2 siu2"
+          ],
+          [
+            "咋",
+            "zaa3"
+          ],
+          [
+            "。"
+          ],
+          [
+            "姨媽",
+            "ji4 maa1"
+          ],
+          [
+            "，"
+          ],
+          [
+            "你好",
+            "nei5 hou2"
+          ],
+          [
+            "！"
+          ]
+        ]
+      },
+      {
+        "spk": "A",
+        "en": "Well done! Do you have any kids?",
+        "parts": [
+          [
+            "好叻",
+            "hou2 lek1"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "！"
+          ],
+          [
+            "你哋",
+            "nei5 dei6"
+          ],
+          [
+            "有冇",
+            "jau5 mou5"
+          ],
+          [
+            "小朋友",
+            "siu2 pang4 jau5"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      },
+      {
+        "spk": "B",
+        "en": "Yes, a son and a daughter. Our son is eight, our daughter five.",
+        "parts": [
+          [
+            "有",
+            "jau5"
+          ],
+          [
+            "，"
+          ],
+          [
+            "一個",
+            "jat1 go3"
+          ],
+          [
+            "仔",
+            "zai2"
+          ],
+          [
+            "，"
+          ],
+          [
+            "一個",
+            "jat1 go3"
+          ],
+          [
+            "女",
+            "neoi2"
+          ],
+          [
+            "。"
+          ],
+          [
+            "個",
+            "go3"
+          ],
+          [
+            "仔",
+            "zai2"
+          ],
+          [
+            "八歲",
+            "baat3 seoi3"
+          ],
+          [
+            "，"
+          ],
+          [
+            "個",
+            "go3"
+          ],
+          [
+            "女",
+            "neoi2"
+          ],
+          [
+            "五歲",
+            "ng5 seoi3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "A",
+        "en": "How lovely! Your cousin has two kids too.",
+        "parts": [
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "得意",
+            "dak1 ji3"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "！"
+          ],
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "表哥",
+            "biu2 go1"
+          ],
+          [
+            "都",
+            "dou1"
+          ],
+          [
+            "有",
+            "jau5"
+          ],
+          [
+            "兩個",
+            "loeng5 go3"
+          ],
+          [
+            "小朋友",
+            "siu2 pang4 jau5"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "B",
+        "en": "Really? Where is he now?",
+        "parts": [
+          [
+            "係",
+            "hai6"
+          ],
+          [
+            "咩",
+            "me1"
+          ],
+          [
+            "？"
+          ],
+          [
+            "佢",
+            "keoi5"
+          ],
+          [
+            "而家",
+            "ji4 gaa1"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "邊度",
+            "bin1 dou6"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      },
+      {
+        "spk": "A",
+        "en": "His whole family lives in France.",
+        "parts": [
+          [
+            "佢",
+            "keoi5"
+          ],
+          [
+            "一家",
+            "jat1 gaa1"
+          ],
+          [
+            "人",
+            "jan4"
+          ],
+          [
+            "都",
+            "dou1"
+          ],
+          [
+            "住",
+            "zyu6"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "法國",
+            "faat3 gwok3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
     ],
     "questions": [
-      {"q": "Who is the handsome man in the photo?", "options": ["B's big brother", "B's boyfriend", "B's dad", "B's husband"], "answer": 0},
-      {"q": "Is the big brother married?", "options": ["Yes", "No", "Not yet, but soon", "B doesn't know"], "answer": 0},
-      {"q": "What children does the big brother have?", "options": ["A son and a daughter", "Two sons", "Two daughters", "No children"], "answer": 0},
-      {"q": "How many brothers and sisters does A have?", "options": ["None", "One", "Two", "Four"], "answer": 0}
+      {
+        "q": "How does the aunt greet Ming?",
+        "options": [
+          "Long time no see, have you eaten?",
+          "Good morning, how much is it?",
+          "Bye, see you later!",
+          "Sorry, I don't understand."
+        ],
+        "answer": 0
+      },
+      {
+        "q": "Where is Ming's wife from?",
+        "options": [
+          "Switzerland",
+          "Hong Kong",
+          "France",
+          "Canada"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "How old is Ming's son?",
+        "options": [
+          "Eight",
+          "Five",
+          "Two",
+          "Ten"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "Where does Ming's cousin live?",
+        "options": [
+          "In France",
+          "In Hong Kong",
+          "In London",
+          "Next door"
+        ],
+        "answer": 0
+      }
+    ],
+    "gloss": [
+      [
+        "食咗",
+        "sik6 zo2",
+        "have eaten"
+      ],
+      [
+        "忙唔忙",
+        "mong4 m4 mong4",
+        "busy or not?"
+      ],
+      [
+        "好叻",
+        "hou2 lek1",
+        "very clever / well done"
+      ],
+      [
+        "得意",
+        "dak1 ji3",
+        "cute / lovely"
+      ],
+      [
+        "一家",
+        "jat1 gaa1",
+        "the whole family"
+      ]
     ]
-  }
+  },
+  "toneLesson": {
+    "title": "Low tones: 4, 5 and 6",
+    "card": {
+      "title": "The bottom of your voice",
+      "explain": "Three tones live low: tone 4 falls to the very bottom, tone 5 rises a little, tone 6 stays flat just under your normal pitch. 嫲嫲 (maa4 maa4) and 爺爺 (je4 je2) start on tone 4.",
+      "examples": [
+        {
+          "en": "symbol, woman, father",
+          "parts": [
+            [
+              "符",
+              "fu4"
+            ],
+            [
+              "婦",
+              "fu5"
+            ],
+            [
+              "父",
+              "fu6"
+            ]
+          ]
+        },
+        {
+          "en": "numb, horse, scold",
+          "parts": [
+            [
+              "麻",
+              "maa4"
+            ],
+            [
+              "馬",
+              "maa5"
+            ],
+            [
+              "罵",
+              "maa6"
+            ]
+          ]
+        }
+      ]
+    },
+    "items": [
+      {
+        "hk": "符",
+        "jp": "fu4",
+        "en": "symbol / charm",
+        "note": "Tone 4 · low and falling."
+      },
+      {
+        "hk": "婦",
+        "jp": "fu5",
+        "en": "woman (formal)",
+        "note": "Tone 5 · low with a small rise."
+      },
+      {
+        "hk": "父",
+        "jp": "fu6",
+        "en": "father (formal)",
+        "note": "Tone 6 · low and flat."
+      },
+      {
+        "hk": "麻",
+        "jp": "maa4",
+        "en": "numb; sesame",
+        "note": "Tone 4 — the same sound as 嫲 (maa4) in 嫲嫲 (maa4 maa4)."
+      },
+      {
+        "hk": "馬",
+        "jp": "maa5",
+        "en": "horse",
+        "note": "Tone 5 · small rise."
+      },
+      {
+        "hk": "罵",
+        "jp": "maa6",
+        "en": "to scold",
+        "note": "Tone 6 · low and flat."
+      },
+      {
+        "hk": "爺",
+        "jp": "je4",
+        "en": "grandpa (as in 爺爺 (je4 je2))",
+        "note": "Tone 4 · low and falling."
+      },
+      {
+        "hk": "夜",
+        "jp": "je6",
+        "en": "night",
+        "note": "Tone 6 · low and flat, as in 夜晚 (je6 maan5)."
+      }
+    ],
+    "pairs": [
+      [
+        "符",
+        "婦"
+      ],
+      [
+        "婦",
+        "父"
+      ],
+      [
+        "麻",
+        "馬"
+      ],
+      [
+        "馬",
+        "罵"
+      ],
+      [
+        "爺",
+        "夜"
+      ],
+      [
+        "時",
+        "事"
+      ]
+    ]
+  },
+  "names": [
+    "阿明"
+  ]
 }

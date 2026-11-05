@@ -4,110 +4,2225 @@
   "title": "Work & Study",
   "emoji": "💼",
   "desc": "Talk about your job, colleagues, school and exams — and survive a job interview",
+  "names": [
+    "阿詠"
+  ],
   "words": [
-    {"hk": "公司", "jp": "gung1 si1", "en": "company; the office", "fr": "entreprise ; le bureau", "note": "返公司 = go to the office.",
-     "ex": {"en": "Which company do you work for?", "parts": [["你","nei5"],["喺","hai2"],["邊間","bin1 gaan1"],["公司","gung1 si1"],["做嘢","zou6 je5"],["啊","aa3"],["？"]]}},
-    {"hk": "老闆", "jp": "lou5 baan2", "en": "boss", "fr": "patron", "note": "Very colloquial alternative: 老細 lou5 sai3.",
-     "ex": {"en": "My boss is very nice.", "parts": [["我","ngo5"],["老闆","lou5 baan2"],["人","jan4"],["好","hou2"],["好","hou2"],["。"]]}},
-    {"hk": "同事", "jp": "tung4 si6", "en": "colleague", "fr": "collègue",
-     "ex": {"en": "I have lunch with my colleagues every day.", "parts": [["我","ngo5"],["每日","mui5 jat6"],["同","tung4"],["同事","tung4 si6"],["一齊","jat1 cai4"],["食晏","sik6 aan3"],["。"]]}},
-    {"hk": "份工", "jp": "fan6 gung1", "en": "job", "fr": "emploi, boulot", "note": "份 is the classifier for jobs. 工作 gung1 zok3 is the more formal word.",
-     "ex": {"en": "Do you like your job?", "parts": [["你","nei5"],["鍾唔鍾意","zung1 m4 zung1 ji3"],["你","nei5"],["份工","fan6 gung1"],["啊","aa3"],["？"]]}},
-    {"hk": "工作", "jp": "gung1 zok3", "en": "work (formal)", "fr": "travail (formel)", "note": "Used in more formal speech or writing, e.g. 工作經驗 'work experience'. Day to day, people say 做嘢 or 返工.",
-     "ex": {"en": "Do you have any work experience?", "parts": [["你","nei5"],["有冇","jau5 mou5"],["工作","gung1 zok3"],["經驗","ging1 jim6"],["啊","aa3"],["？"]]}},
-    {"hk": "經驗", "jp": "ging1 jim6", "en": "experience", "fr": "expérience"},
-    {"hk": "開會", "jp": "hoi1 wui2", "en": "to have a meeting", "fr": "être en réunion", "note": "會 is wui2 here (rising tone).",
-     "ex": {"en": "Sorry, I'm in a meeting, I'll call you back later.", "parts": [["唔好意思","m4 hou2 ji3 si1"],["，"],["我","ngo5"],["開緊會","hoi1 gan2 wui2"],["，"],["遲啲","ci4 di1"],["打返","daa2 faan1"],["畀","bei2"],["你","nei5"],["。"]]}},
-    {"hk": "加班", "jp": "gaa1 baan1", "en": "to work overtime", "fr": "faire des heures sup",
-     "ex": {"en": "I have to work overtime again tonight.", "parts": [["我","ngo5"],["今晚","gam1 maan5"],["又","jau6"],["要","jiu3"],["加班","gaa1 baan1"],["喇","laa3"],["。"]]}},
-    {"hk": "電郵", "jp": "din6 jau4", "en": "email", "fr": "e-mail", "note": "Send an email = 寄電郵 / 發電郵.",
-     "ex": {"en": "Have you read the email I sent you?", "parts": [["你","nei5"],["睇","tai2"],["咗","zo2"],["我","ngo5"],["寄","gei3"],["畀","bei2"],["你","nei5"],["嘅","ge3"],["電郵","din6 jau4"],["未","mei6"],["啊","aa3"],["？"]]}},
-    {"hk": "搵工", "jp": "wan2 gung1", "en": "to look for a job", "fr": "chercher un emploi",
-     "ex": {"en": "She's been looking for a job for three months.", "parts": [["佢","keoi5"],["搵","wan2"],["咗","zo2"],["三個月","saam1 go3 jyut6"],["工","gung1"],["喇","laa3"],["。"]]}},
-    {"hk": "面試", "jp": "min6 si3", "en": "(job) interview; to interview", "fr": "entretien d'embauche",
-     "ex": {"en": "I have an interview tomorrow morning, I'm so nervous.", "parts": [["我","ngo5"],["聽朝","ting1 ziu1"],["要","jiu3"],["面試","min6 si3"],["，"],["好","hou2"],["緊張","gan2 zoeng1"],["啊","aa3"],["。"]]}},
-    {"hk": "人工", "jp": "jan4 gung1", "en": "salary, pay", "fr": "salaire", "note": "加人工 = get a raise.",
-     "ex": {"en": "The pay at this job isn't bad.", "parts": [["呢份工","ni1 fan6 gung1"],["人工","jan4 gung1"],["唔錯","m4 co3"],["。"]]}},
-    {"hk": "辭職", "jp": "ci4 zik1", "en": "to resign, quit", "fr": "démissionner",
-     "ex": {"en": "He quit because he was too busy.", "parts": [["佢","keoi5"],["因為","jan1 wai6"],["太","taai3"],["忙","mong4"],["，"],["所以","so2 ji5"],["辭","ci4"],["咗","zo2"],["職","zik1"],["。"]]}},
-    {"hk": "放假", "jp": "fong3 gaa3", "en": "to be on holiday / day off", "fr": "être en congé / vacances",
-     "ex": {"en": "When are you on holiday?", "parts": [["你","nei5"],["幾時","gei2 si4"],["放假","fong3 gaa3"],["啊","aa3"],["？"]]}},
-    {"hk": "忙", "jp": "mong4", "en": "busy", "fr": "occupé",
-     "ex": {"en": "I've been really busy lately, no time to go hiking.", "parts": [["我","ngo5"],["呢排","ni1 paai2"],["好","hou2"],["忙","mong4"],["，"],["冇","mou5"],["時間","si4 gaan3"],["去","heoi3"],["行山","haang4 saan1"],["。"]]}},
-    {"hk": "讀書", "jp": "duk6 syu1", "en": "to study; to go to school", "fr": "étudier ; aller à l'école", "note": "你讀緊書？ = Are you still a student?",
-     "ex": {"en": "Are you working or still studying?", "parts": [["你","nei5"],["做緊嘢","zou6 gan2 je5"],["定係","ding6 hai6"],["讀緊書","duk6 gan2 syu1"],["啊","aa3"],["？"]]}},
-    {"hk": "學", "jp": "hok6", "en": "to learn", "fr": "apprendre",
-     "ex": {"en": "I've been learning Cantonese for a year.", "parts": [["我","ngo5"],["學","hok6"],["咗","zo2"],["廣東話","gwong2 dung1 waa2"],["一年","jat1 nin4"],["。"]]}},
-    {"hk": "學生", "jp": "hok6 saang1", "en": "student", "fr": "étudiant / élève",
-     "ex": {"en": "There are lots of students in the library.", "parts": [["圖書館","tou4 syu1 gun2"],["有","jau5"],["好多","hou2 do1"],["學生","hok6 saang1"],["。"]]}},
-    {"hk": "老師", "jp": "lou5 si1", "en": "teacher", "fr": "professeur", "note": "Address a teacher as surname + 老師, e.g. 陳老師.",
-     "ex": {"en": "Our teacher speaks very fast.", "parts": [["我哋","ngo5 dei6"],["老師","lou5 si1"],["講","gong2"],["嘢","je5"],["好","hou2"],["快","faai3"],["。"]]}},
-    {"hk": "考試", "jp": "haau2 si3", "en": "exam; to take an exam", "fr": "examen ; passer un examen",
-     "ex": {"en": "I have an exam next week, I need to revise.", "parts": [["我","ngo5"],["下個","haa6 go3"],["禮拜","lai5 baai3"],["考試","haau2 si3"],["，"],["要","jiu3"],["溫書","wan1 syu1"],["。"]]}},
-    {"hk": "溫書", "jp": "wan1 syu1", "en": "to revise, study for an exam", "fr": "réviser"},
-    {"hk": "功課", "jp": "gung1 fo3", "en": "homework", "fr": "devoirs",
-     "ex": {"en": "Have you finished your homework?", "parts": [["你","nei5"],["做","zou6"],["完","jyun4"],["功課","gung1 fo3"],["未","mei6"],["啊","aa3"],["？"]]}},
-    {"hk": "明白", "jp": "ming4 baak6", "en": "to understand", "fr": "comprendre", "note": "Question: 明唔明白? Short reply: 明白 / 明.",
-     "ex": {"en": "Do you understand what I mean?", "parts": [["你","nei5"],["明唔明白","ming4 m4 ming4 baak6"],["我","ngo5"],["講","gong2"],["咩","me1"],["啊","aa3"],["？"]]}},
-    {"hk": "唔明", "jp": "m4 ming4", "en": "don't understand", "fr": "ne pas comprendre",
-     "ex": {"en": "Sorry, I don't understand. Could you say it again?", "parts": [["唔好意思","m4 hou2 ji3 si1"],["，"],["我","ngo5"],["唔明","m4 ming4"],["，"],["可唔可以","ho2 m4 ho2 ji5"],["講多次","gong2 do1 ci3"],["啊","aa3"],["？"]]}},
-    {"hk": "問題", "jp": "man6 tai4", "en": "question; problem", "fr": "question ; problème",
-     "ex": {"en": "Teacher, I have a question.", "parts": [["老師","lou5 si1"],["，"],["我","ngo5"],["有","jau5"],["個","go3"],["問題","man6 tai4"],["。"]]}}
+    {
+      "hk": "公司",
+      "jp": "gung1 si1",
+      "en": "company; the office",
+      "fr": "entreprise ; le bureau",
+      "note": "返公司 (faan1 gung1 si1) = go to the office.",
+      "ex": {
+        "en": "Which company do you work for?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "邊間",
+            "bin1 gaan1"
+          ],
+          [
+            "公司",
+            "gung1 si1"
+          ],
+          [
+            "做嘢",
+            "zou6 je5"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "同事",
+      "jp": "tung4 si6",
+      "en": "colleague",
+      "fr": "collègue",
+      "ex": {
+        "en": "I have lunch with my colleagues every day.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "每日",
+            "mui5 jat6"
+          ],
+          [
+            "同",
+            "tung4"
+          ],
+          [
+            "同事",
+            "tung4 si6"
+          ],
+          [
+            "一齊",
+            "jat1 cai4"
+          ],
+          [
+            "食晏",
+            "sik6 aan3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "份工",
+      "jp": "fan6 gung1",
+      "en": "job",
+      "fr": "emploi, boulot",
+      "note": "份 (fan6) is the classifier for jobs. 工作 gung1 zok3 is the more formal word.",
+      "ex": {
+        "en": "Do you like your job?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "鍾唔鍾意",
+            "zung1 m4 zung1 ji3"
+          ],
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "份工",
+            "fan6 gung1"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "工作經驗",
+      "jp": "gung1 zok3 ging1 jim6",
+      "en": "work experience",
+      "fr": "expérience professionnelle",
+      "note": "工作 (gung1 zok3) = work (formal); 經驗 (ging1 jim6) = experience. Day to day, people say 做嘢 (zou6 je5) or 返工 (faan1 gung1) for \"work\".",
+      "ex": {
+        "en": "Do you have any work experience?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "有冇",
+            "jau5 mou5"
+          ],
+          [
+            "工作經驗",
+            "gung1 zok3 ging1 jim6"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "開會",
+      "jp": "hoi1 wui2",
+      "en": "to have a meeting",
+      "fr": "être en réunion",
+      "note": "In 開會 (hoi1 wui2) the 'meeting' syllable rises (wui2) — don't confuse it with 會 (wui5) 'will'.",
+      "ex": {
+        "en": "Sorry, I'm in a meeting, I'll call you back later.",
+        "parts": [
+          [
+            "唔好意思",
+            "m4 hou2 ji3 si1"
+          ],
+          [
+            "，"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "開緊會",
+            "hoi1 gan2 wui2"
+          ],
+          [
+            "，"
+          ],
+          [
+            "遲啲",
+            "ci4 di1"
+          ],
+          [
+            "打返",
+            "daa2 faan1"
+          ],
+          [
+            "畀",
+            "bei2"
+          ],
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "加班",
+      "jp": "gaa1 baan1",
+      "en": "to work overtime",
+      "fr": "faire des heures sup",
+      "ex": {
+        "en": "I have to work overtime again tonight.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "今晚",
+            "gam1 maan5"
+          ],
+          [
+            "又",
+            "jau6"
+          ],
+          [
+            "要",
+            "jiu3"
+          ],
+          [
+            "加班",
+            "gaa1 baan1"
+          ],
+          [
+            "喇",
+            "laa3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "電郵",
+      "jp": "din6 jau4",
+      "en": "email",
+      "fr": "e-mail",
+      "note": "Send an email = 寄電郵 (gei3 din6 jau4) / 發電郵 (faat3 din6 jau4).",
+      "ex": {
+        "en": "Have you read the email I sent you?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "睇",
+            "tai2"
+          ],
+          [
+            "咗",
+            "zo2"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "寄",
+            "gei3"
+          ],
+          [
+            "畀",
+            "bei2"
+          ],
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "嘅",
+            "ge3"
+          ],
+          [
+            "電郵",
+            "din6 jau4"
+          ],
+          [
+            "未",
+            "mei6"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "搵工",
+      "jp": "wan2 gung1",
+      "en": "to look for a job",
+      "fr": "chercher un emploi",
+      "ex": {
+        "en": "She's been looking for a job for three months.",
+        "parts": [
+          [
+            "佢",
+            "keoi5"
+          ],
+          [
+            "搵",
+            "wan2"
+          ],
+          [
+            "咗",
+            "zo2"
+          ],
+          [
+            "三個月",
+            "saam1 go3 jyut6"
+          ],
+          [
+            "工",
+            "gung1"
+          ],
+          [
+            "喇",
+            "laa3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "面試",
+      "jp": "min6 si3",
+      "en": "(job) interview; to interview",
+      "fr": "entretien d'embauche",
+      "ex": {
+        "en": "I have an interview tomorrow morning, I'm so nervous.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "聽朝",
+            "ting1 ziu1"
+          ],
+          [
+            "要",
+            "jiu3"
+          ],
+          [
+            "面試",
+            "min6 si3"
+          ],
+          [
+            "，"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "緊張",
+            "gan2 zoeng1"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "人工",
+      "jp": "jan4 gung1",
+      "en": "salary, pay",
+      "fr": "salaire",
+      "note": "加人工 (gaa1 jan4 gung1) = get a raise.",
+      "ex": {
+        "en": "The pay at this job isn't bad.",
+        "parts": [
+          [
+            "呢份工",
+            "ni1 fan6 gung1"
+          ],
+          [
+            "人工",
+            "jan4 gung1"
+          ],
+          [
+            "唔錯",
+            "m4 co3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "辭職",
+      "jp": "ci4 zik1",
+      "en": "to resign, quit",
+      "fr": "démissionner",
+      "ex": {
+        "en": "I'm so busy I want to quit!",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "忙",
+            "mong4"
+          ],
+          [
+            "到",
+            "dou3"
+          ],
+          [
+            "想",
+            "soeng2"
+          ],
+          [
+            "辭職",
+            "ci4 zik1"
+          ],
+          [
+            "！"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "因為",
+      "jp": "jan1 wai6",
+      "en": "because",
+      "fr": "parce que",
+      "ex": {
+        "en": "Why are you studying Cantonese? — Because I like Hong Kong.",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "點解",
+            "dim2 gaai2"
+          ],
+          [
+            "學",
+            "hok6"
+          ],
+          [
+            "廣東話",
+            "gwong2 dung1 waa2"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ],
+          [
+            "因為",
+            "jan1 wai6"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "鍾意",
+            "zung1 ji3"
+          ],
+          [
+            "香港",
+            "hoeng1 gong2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "所以",
+      "jp": "so2 ji5",
+      "en": "so, therefore",
+      "fr": "donc, c'est pourquoi",
+      "note": "Cantonese often uses 因為 (jan1 wai6) … 所以 (so2 ji5) … together, unlike English.",
+      "ex": {
+        "en": "I'm busy today, so I can't go.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "今日",
+            "gam1 jat6"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "忙",
+            "mong4"
+          ],
+          [
+            "，"
+          ],
+          [
+            "所以",
+            "so2 ji5"
+          ],
+          [
+            "去",
+            "heoi3"
+          ],
+          [
+            "唔到",
+            "m4 dou2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "放假",
+      "jp": "fong3 gaa3",
+      "en": "to be on holiday / day off",
+      "fr": "être en congé / vacances",
+      "ex": {
+        "en": "When are you on holiday?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "幾時",
+            "gei2 si4"
+          ],
+          [
+            "放假",
+            "fong3 gaa3"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "忙",
+      "jp": "mong4",
+      "en": "busy",
+      "fr": "occupé",
+      "ex": {
+        "en": "I've been really busy lately, no time to go hiking.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "呢排",
+            "ni1 paai2"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "忙",
+            "mong4"
+          ],
+          [
+            "，"
+          ],
+          [
+            "冇",
+            "mou5"
+          ],
+          [
+            "時間",
+            "si4 gaan3"
+          ],
+          [
+            "去",
+            "heoi3"
+          ],
+          [
+            "行山",
+            "haang4 saan1"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "讀書",
+      "jp": "duk6 syu1",
+      "en": "to study; to go to school",
+      "fr": "étudier ; aller à l'école",
+      "note": "你讀緊書 (nei5 duk6 gan2 syu1)？ = Are you still a student?",
+      "ex": {
+        "en": "Are you working or still studying?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "做緊嘢",
+            "zou6 gan2 je5"
+          ],
+          [
+            "定係",
+            "ding6 hai6"
+          ],
+          [
+            "讀緊書",
+            "duk6 gan2 syu1"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "學",
+      "jp": "hok6",
+      "en": "to learn",
+      "fr": "apprendre",
+      "ex": {
+        "en": "I've been learning Cantonese for a year.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "學",
+            "hok6"
+          ],
+          [
+            "咗",
+            "zo2"
+          ],
+          [
+            "一年",
+            "jat1 nin4"
+          ],
+          [
+            "廣東話",
+            "gwong2 dung1 waa2"
+          ],
+          [
+            "喇",
+            "laa3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "學生",
+      "jp": "hok6 saang1",
+      "en": "student",
+      "fr": "étudiant / élève",
+      "ex": {
+        "en": "There are lots of students in the library.",
+        "parts": [
+          [
+            "圖書館",
+            "tou4 syu1 gun2"
+          ],
+          [
+            "有",
+            "jau5"
+          ],
+          [
+            "好多",
+            "hou2 do1"
+          ],
+          [
+            "學生",
+            "hok6 saang1"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "老師",
+      "jp": "lou5 si1",
+      "en": "teacher",
+      "fr": "professeur",
+      "note": "Address a teacher as surname + 老師 (lou5 si1), e.g. 陳老師 (can4 lou5 si1).",
+      "ex": {
+        "en": "Our teacher speaks very fast.",
+        "parts": [
+          [
+            "我哋",
+            "ngo5 dei6"
+          ],
+          [
+            "老師",
+            "lou5 si1"
+          ],
+          [
+            "講",
+            "gong2"
+          ],
+          [
+            "嘢",
+            "je5"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "快",
+            "faai3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "考試",
+      "jp": "haau2 si3",
+      "en": "exam; to take an exam",
+      "fr": "examen ; passer un examen",
+      "note": "Often said haau2 si5 (rising tone) in casual speech.",
+      "ex": {
+        "en": "I have an exam next week, I need to revise.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "下個",
+            "haa6 go3"
+          ],
+          [
+            "禮拜",
+            "lai5 baai3"
+          ],
+          [
+            "考試",
+            "haau2 si3"
+          ],
+          [
+            "，"
+          ],
+          [
+            "要",
+            "jiu3"
+          ],
+          [
+            "溫書",
+            "wan1 syu1"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "溫書",
+      "jp": "wan1 syu1",
+      "en": "to revise, study for an exam",
+      "fr": "réviser"
+    },
+    {
+      "hk": "功課",
+      "jp": "gung1 fo3",
+      "en": "homework",
+      "fr": "devoirs",
+      "ex": {
+        "en": "Have you finished your homework?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "做",
+            "zou6"
+          ],
+          [
+            "完",
+            "jyun4"
+          ],
+          [
+            "功課",
+            "gung1 fo3"
+          ],
+          [
+            "未",
+            "mei6"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "明白",
+      "jp": "ming4 baak6",
+      "en": "to understand",
+      "fr": "comprendre",
+      "note": "Question: 明唔明白 (ming4 m4 ming4 baak6)? Short reply: 明白 (ming4 baak6) / 明 (ming4).",
+      "ex": {
+        "en": "Do you understand what I mean?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "明唔明白",
+            "ming4 m4 ming4 baak6"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "講",
+            "gong2"
+          ],
+          [
+            "咩",
+            "me1"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "唔明",
+      "jp": "m4 ming4",
+      "en": "don't understand",
+      "fr": "ne pas comprendre",
+      "ex": {
+        "en": "Sorry, I don't understand. Could you say it again?",
+        "parts": [
+          [
+            "唔好意思",
+            "m4 hou2 ji3 si1"
+          ],
+          [
+            "，"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "唔明",
+            "m4 ming4"
+          ],
+          [
+            "，"
+          ],
+          [
+            "可唔可以",
+            "ho2 m4 ho2 ji5"
+          ],
+          [
+            "講多次",
+            "gong2 do1 ci3"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "問題",
+      "jp": "man6 tai4",
+      "en": "question; problem",
+      "fr": "question ; problème",
+      "ex": {
+        "en": "Teacher, I have a question.",
+        "parts": [
+          [
+            "老師",
+            "lou5 si1"
+          ],
+          [
+            "，"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "有",
+            "jau5"
+          ],
+          [
+            "個",
+            "go3"
+          ],
+          [
+            "問題",
+            "man6 tai4"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    }
   ],
   "sentences": [
-    {"en": "I'm so busy at work that I don't even have time for lunch.", "parts": [["我","ngo5"],["返工","faan1 gung1"],["忙","mong4"],["到","dou3"],["連","lin4"],["食晏","sik6 aan3"],["都","dou1"],["冇","mou5"],["時間","si4 gaan3"],["。"]]},
-    {"en": "The boss is in a meeting, come back in an hour.", "parts": [["老闆","lou5 baan2"],["開緊會","hoi1 gan2 wui2"],["，"],["你","nei5"],["一個","jat1 go3"],["鐘頭","zung1 tau4"],["之後","zi1 hau6"],["再","zoi3"],["嚟","lai4"],["啦","laa1"],["。"]]},
-    {"en": "Have you replied to that email yet?", "parts": [["嗰封","go2 fung1"],["電郵","din6 jau4"],["你","nei5"],["覆","fuk1"],["咗","zo2"],["未","mei6"],["啊","aa3"],["？"]]},
-    {"en": "I worked overtime until eleven last night, I'm exhausted.", "parts": [["我","ngo5"],["尋晚","cam4 maan5"],["加班","gaa1 baan1"],["加","gaa1"],["到","dou3"],["十一點","sap6 jat1 dim2"],["，"],["好","hou2"],["攰","gui6"],["。"]]},
-    {"en": "My colleague quit, so I have to do her work.", "parts": [["我","ngo5"],["同事","tung4 si6"],["辭","ci4"],["咗","zo2"],["職","zik1"],["，"],["所以","so2 ji5"],["我","ngo5"],["要","jiu3"],["做","zou6"],["埋","maai4"],["佢","keoi5"],["啲","di1"],["嘢","je5"],["。"]]},
-    {"en": "When I'm on holiday I don't want to read any work emails.", "parts": [["放假","fong3 gaa3"],["嘅時候","ge3 si4 hau6"],["我","ngo5"],["唔想","m4 soeng2"],["睇","tai2"],["公司","gung1 si1"],["啲","di1"],["電郵","din6 jau4"],["。"]]},
-    {"en": "I don't understand this question, can you teach me?", "parts": [["呢條","ni1 tiu4"],["問題","man6 tai4"],["我","ngo5"],["唔明","m4 ming4"],["，"],["你","nei5"],["可唔可以","ho2 m4 ho2 ji5"],["教","gaau3"],["我","ngo5"],["啊","aa3"],["？"]]},
-    {"en": "The teacher gave us lots of homework again today.", "parts": [["老師","lou5 si1"],["今日","gam1 jat6"],["又","jau6"],["畀","bei2"],["咗","zo2"],["好多","hou2 do1"],["功課","gung1 fo3"],["我哋","ngo5 dei6"],["。"]]},
-    {"en": "Did the exam go well? — Not bad, I think I'll pass.", "parts": [["考試","haau2 si3"],["點","dim2"],["啊","aa3"],["？"],["唔錯","m4 co3"],["，"],["應該","jing1 goi1"],["合格","hap6 gaak3"],["。"]]},
-    {"en": "She studied in England, so her English is very good.", "parts": [["佢","keoi5"],["喺","hai2"],["英國","jing1 gwok3"],["讀","duk6"],["過","gwo3"],["書","syu1"],["，"],["所以","so2 ji5"],["英文","jing1 man2"],["好","hou2"],["好","hou2"],["。"]]},
-    {"en": "The pay is good, but I have to work overtime every day.", "parts": [["人工","jan4 gung1"],["係","hai6"],["高","gou1"],["，"],["但係","daan6 hai6"],["日日","jat6 jat6"],["都","dou1"],["要","jiu3"],["加班","gaa1 baan1"],["。"]]},
-    {"en": "Since I came to Geneva, I've been learning French.", "parts": [["我","ngo5"],["嚟","lai4"],["咗","zo2"],["日內瓦","jat6 noi6 ngaa5"],["之後","zi1 hau6"],["，"],["一直","jat1 zik6"],["學緊","hok6 gan2"],["法文","faat3 man2"],["。"]]},
-    {"en": "Is your company big?", "parts": [["你","nei5"],["間","gaan1"],["公司","gung1 si1"],["大唔大","daai6 m4 daai6"],["啊","aa3"],["？"]]}
+    {
+      "en": "I'm so busy at work that I don't even have time for lunch.",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "返工",
+          "faan1 gung1"
+        ],
+        [
+          "忙",
+          "mong4"
+        ],
+        [
+          "到",
+          "dou3"
+        ],
+        [
+          "連",
+          "lin4"
+        ],
+        [
+          "食晏",
+          "sik6 aan3"
+        ],
+        [
+          "都",
+          "dou1"
+        ],
+        [
+          "冇",
+          "mou5"
+        ],
+        [
+          "時間",
+          "si4 gaan3"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "The boss is in a meeting, come back in an hour.",
+      "parts": [
+        [
+          "老闆",
+          "lou5 baan2"
+        ],
+        [
+          "開緊會",
+          "hoi1 gan2 wui2"
+        ],
+        [
+          "，"
+        ],
+        [
+          "你",
+          "nei5"
+        ],
+        [
+          "一個",
+          "jat1 go3"
+        ],
+        [
+          "鐘頭",
+          "zung1 tau4"
+        ],
+        [
+          "之後",
+          "zi1 hau6"
+        ],
+        [
+          "再",
+          "zoi3"
+        ],
+        [
+          "嚟",
+          "lai4"
+        ],
+        [
+          "啦",
+          "laa1"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "Have you replied to that email yet?",
+      "parts": [
+        [
+          "嗰封",
+          "go2 fung1"
+        ],
+        [
+          "電郵",
+          "din6 jau4"
+        ],
+        [
+          "你",
+          "nei5"
+        ],
+        [
+          "覆",
+          "fuk1"
+        ],
+        [
+          "咗",
+          "zo2"
+        ],
+        [
+          "未",
+          "mei6"
+        ],
+        [
+          "啊",
+          "aa3"
+        ],
+        [
+          "？"
+        ]
+      ]
+    },
+    {
+      "en": "I worked overtime until eleven last night, I'm exhausted.",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "尋晚",
+          "cam4 maan5"
+        ],
+        [
+          "加班",
+          "gaa1 baan1"
+        ],
+        [
+          "加",
+          "gaa1"
+        ],
+        [
+          "到",
+          "dou3"
+        ],
+        [
+          "十一點",
+          "sap6 jat1 dim2"
+        ],
+        [
+          "，"
+        ],
+        [
+          "好",
+          "hou2"
+        ],
+        [
+          "攰",
+          "gui6"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "My colleague is quitting, so the boss wants me to do her work too.",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "同事",
+          "tung4 si6"
+        ],
+        [
+          "要",
+          "jiu3"
+        ],
+        [
+          "辭職",
+          "ci4 zik1"
+        ],
+        [
+          "，"
+        ],
+        [
+          "所以",
+          "so2 ji5"
+        ],
+        [
+          "老闆",
+          "lou5 baan2"
+        ],
+        [
+          "要",
+          "jiu3"
+        ],
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "做埋",
+          "zou6 maai4"
+        ],
+        [
+          "佢",
+          "keoi5"
+        ],
+        [
+          "啲",
+          "di1"
+        ],
+        [
+          "嘢",
+          "je5"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "When I'm on holiday I don't want to read any work emails.",
+      "parts": [
+        [
+          "放假",
+          "fong3 gaa3"
+        ],
+        [
+          "嘅時候",
+          "ge3 si4 hau6"
+        ],
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "唔想",
+          "m4 soeng2"
+        ],
+        [
+          "睇",
+          "tai2"
+        ],
+        [
+          "公司",
+          "gung1 si1"
+        ],
+        [
+          "啲",
+          "di1"
+        ],
+        [
+          "電郵",
+          "din6 jau4"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "I don't understand this question, can you teach me?",
+      "parts": [
+        [
+          "呢條",
+          "ni1 tiu4"
+        ],
+        [
+          "問題",
+          "man6 tai4"
+        ],
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "唔明",
+          "m4 ming4"
+        ],
+        [
+          "，"
+        ],
+        [
+          "你",
+          "nei5"
+        ],
+        [
+          "可唔可以",
+          "ho2 m4 ho2 ji5"
+        ],
+        [
+          "教",
+          "gaau3"
+        ],
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "啊",
+          "aa3"
+        ],
+        [
+          "？"
+        ]
+      ]
+    },
+    {
+      "en": "The teacher gave us lots of homework again today.",
+      "parts": [
+        [
+          "老師",
+          "lou5 si1"
+        ],
+        [
+          "今日",
+          "gam1 jat6"
+        ],
+        [
+          "又",
+          "jau6"
+        ],
+        [
+          "畀",
+          "bei2"
+        ],
+        [
+          "咗",
+          "zo2"
+        ],
+        [
+          "好多",
+          "hou2 do1"
+        ],
+        [
+          "功課",
+          "gung1 fo3"
+        ],
+        [
+          "我哋",
+          "ngo5 dei6"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "Was the exam hard? — Not too hard, no problem.",
+      "parts": [
+        [
+          "考試",
+          "haau2 si3"
+        ],
+        [
+          "難唔難",
+          "naan4 m4 naan4"
+        ],
+        [
+          "啊",
+          "aa3"
+        ],
+        [
+          "？"
+        ],
+        [
+          "唔係",
+          "m4 hai6"
+        ],
+        [
+          "好",
+          "hou2"
+        ],
+        [
+          "難",
+          "naan4"
+        ],
+        [
+          "，"
+        ],
+        [
+          "冇問題",
+          "mou5 man6 tai4"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "She's studying in England, so her English is really good.",
+      "parts": [
+        [
+          "佢",
+          "keoi5"
+        ],
+        [
+          "喺",
+          "hai2"
+        ],
+        [
+          "英國",
+          "jing1 gwok3"
+        ],
+        [
+          "讀書",
+          "duk6 syu1"
+        ],
+        [
+          "，"
+        ],
+        [
+          "所以",
+          "so2 ji5"
+        ],
+        [
+          "英文",
+          "jing1 man2"
+        ],
+        [
+          "好",
+          "hou2"
+        ],
+        [
+          "好",
+          "hou2"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "The pay is good, but I have to work overtime every day.",
+      "parts": [
+        [
+          "人工",
+          "jan4 gung1"
+        ],
+        [
+          "係",
+          "hai6"
+        ],
+        [
+          "高",
+          "gou1"
+        ],
+        [
+          "，"
+        ],
+        [
+          "但係",
+          "daan6 hai6"
+        ],
+        [
+          "日日",
+          "jat6 jat6"
+        ],
+        [
+          "都",
+          "dou1"
+        ],
+        [
+          "要",
+          "jiu3"
+        ],
+        [
+          "加班",
+          "gaa1 baan1"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "Since I came to London, I've been learning English.",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "嚟",
+          "lai4"
+        ],
+        [
+          "咗",
+          "zo2"
+        ],
+        [
+          "倫敦",
+          "leon4 deon1"
+        ],
+        [
+          "之後",
+          "zi1 hau6"
+        ],
+        [
+          "，"
+        ],
+        [
+          "一直",
+          "jat1 zik6"
+        ],
+        [
+          "學緊",
+          "hok6 gan2"
+        ],
+        [
+          "英文",
+          "jing1 man2"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "Is your company big?",
+      "parts": [
+        [
+          "你",
+          "nei5"
+        ],
+        [
+          "間",
+          "gaan1"
+        ],
+        [
+          "公司",
+          "gung1 si1"
+        ],
+        [
+          "大唔大",
+          "daai6 m4 daai6"
+        ],
+        [
+          "啊",
+          "aa3"
+        ],
+        [
+          "？"
+        ]
+      ]
+    }
   ],
   "grammar": [
-    {"title": "Verb + 到 + result = so … that",
-     "explain": "Put 到 after an adjective or verb, then say the result: 忙到冇時間食飯 'so busy I have no time to eat'.",
-     "examples": [
-       {"en": "I'm so tired I can't open my eyes.", "parts": [["我","ngo5"],["攰","gui6"],["到","dou3"],["擘唔開","maak3 m4 hoi1"],["眼","ngaan5"],["。"]]},
-       {"en": "He was so happy he jumped up.", "parts": [["佢","keoi5"],["開心","hoi1 sam1"],["到","dou3"],["跳","tiu3"],["起","hei2"],["嚟","lai4"],["。"]]}
-     ]},
-    {"title": "Splitting verb + object: 辭咗職, 讀過書",
-     "explain": "Many two-character verbs are really verb + object (辭職, 讀書, 開會, 搵工). Aspect markers and durations go in the middle: 開緊會, 辭咗職, 搵咗三個月工.",
-     "examples": [
-       {"en": "She's in a meeting.", "parts": [["佢","keoi5"],["開緊會","hoi1 gan2 wui2"],["。"]]},
-       {"en": "I studied for four years at university.", "parts": [["我","ngo5"],["讀","duk6"],["咗","zo2"],["四年","sei3 nin4"],["大學","daai6 hok6"],["。"]]}
-     ]},
-    {"title": "因為…所以… = because … so …",
-     "explain": "Unlike English, Cantonese happily uses both halves together. You can also drop either one.",
-     "examples": [
-       {"en": "Because I have an exam, I'm not going out tonight.", "parts": [["因為","jan1 wai6"],["要","jiu3"],["考試","haau2 si3"],["，"],["所以","so2 ji5"],["我","ngo5"],["今晚","gam1 maan5"],["唔","m4"],["出去","ceot1 heoi3"],["。"]]},
-       {"en": "Why did you quit? — Because the pay was too low.", "parts": [["點解","dim2 gaai2"],["辭職","ci4 zik1"],["啊","aa3"],["？"],["因為","jan1 wai6"],["人工","jan4 gung1"],["太","taai3"],["低","dai1"],["。"]]}
-     ]}
+    {
+      "title": "Verb + 到 (dou3) + result = so … that",
+      "explain": "Put 到 (dou3) after an adjective or verb, then say the result: 忙到冇時間食飯 (mong4 dou3 mou5 si4 gaan3 sik6 faan6) 'so busy I have no time to eat'.",
+      "examples": [
+        {
+          "en": "I'm so tired I can't open my eyes.",
+          "parts": [
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "攰",
+              "gui6"
+            ],
+            [
+              "到",
+              "dou3"
+            ],
+            [
+              "擘唔開",
+              "maak3 m4 hoi1"
+            ],
+            [
+              "眼",
+              "ngaan5"
+            ],
+            [
+              "。"
+            ]
+          ]
+        },
+        {
+          "en": "He was so happy he jumped up.",
+          "parts": [
+            [
+              "佢",
+              "keoi5"
+            ],
+            [
+              "開心",
+              "hoi1 sam1"
+            ],
+            [
+              "到",
+              "dou3"
+            ],
+            [
+              "跳",
+              "tiu3"
+            ],
+            [
+              "起",
+              "hei2"
+            ],
+            [
+              "嚟",
+              "lai4"
+            ],
+            [
+              "。"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Splitting verb + object: 辭咗職 (ci4 zo2 zik1), 讀過書 (duk6 gwo3 syu1)",
+      "explain": "Many two-character verbs are really verb + object (辭職 (ci4 zik1), 讀書 (duk6 syu1), 開會 (hoi1 wui2), 搵工 (wan2 gung1)). Aspect markers and durations go in the middle: 開緊會 (hoi1 gan2 wui2), 辭咗職 (ci4 zo2 zik1), 搵咗三個月工 (wan2 zo2 saam1 go3 jyut6 gung1).",
+      "examples": [
+        {
+          "en": "She's in a meeting.",
+          "parts": [
+            [
+              "佢",
+              "keoi5"
+            ],
+            [
+              "開緊會",
+              "hoi1 gan2 wui2"
+            ],
+            [
+              "。"
+            ]
+          ]
+        },
+        {
+          "en": "I studied for four years at university.",
+          "parts": [
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "讀",
+              "duk6"
+            ],
+            [
+              "咗",
+              "zo2"
+            ],
+            [
+              "四年",
+              "sei3 nin4"
+            ],
+            [
+              "大學",
+              "daai6 hok6"
+            ],
+            [
+              "。"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "因為 (jan1 wai6)…所以 (so2 ji5)… = because … so …",
+      "explain": "Unlike English, Cantonese happily uses both halves together. You can also drop either one.",
+      "examples": [
+        {
+          "en": "Because I have an exam, I'm not going out tonight.",
+          "parts": [
+            [
+              "因為",
+              "jan1 wai6"
+            ],
+            [
+              "要",
+              "jiu3"
+            ],
+            [
+              "考試",
+              "haau2 si3"
+            ],
+            [
+              "，"
+            ],
+            [
+              "所以",
+              "so2 ji5"
+            ],
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "今晚",
+              "gam1 maan5"
+            ],
+            [
+              "唔",
+              "m4"
+            ],
+            [
+              "出去",
+              "ceot1 heoi3"
+            ],
+            [
+              "。"
+            ]
+          ]
+        },
+        {
+          "en": "Why did you quit? — Because the pay was too low.",
+          "parts": [
+            [
+              "點解",
+              "dim2 gaai2"
+            ],
+            [
+              "辭職",
+              "ci4 zik1"
+            ],
+            [
+              "啊",
+              "aa3"
+            ],
+            [
+              "？"
+            ],
+            [
+              "因為",
+              "jan1 wai6"
+            ],
+            [
+              "人工",
+              "jan4 gung1"
+            ],
+            [
+              "太",
+              "taai3"
+            ],
+            [
+              "低",
+              "dai1"
+            ],
+            [
+              "。"
+            ]
+          ]
+        }
+      ],
+      "after": "所以"
+    }
   ],
   "dialogue": {
     "title": "The job interview",
     "lines": [
-      {"spk": "A", "en": "Please have a seat. Could you introduce yourself first?", "parts": [["請坐","ceng2 co5"],["。"],["你","nei5"],["可唔可以","ho2 m4 ho2 ji5"],["先","sin1"],["介紹","gaai3 siu6"],["下","haa5"],["自己","zi6 gei2"],["啊","aa3"],["？"]]},
-      {"spk": "B", "en": "Sure. I'm Wing, I studied design at university.", "parts": [["好","hou2"],["。"],["我","ngo5"],["叫","giu3"],["阿詠","aa3 wing6"],["，"],["大學","daai6 hok6"],["讀","duk6"],["設計","cit3 gai3"],["。"]]},
-      {"spk": "A", "en": "Do you have any work experience?", "parts": [["你","nei5"],["有冇","jau5 mou5"],["工作","gung1 zok3"],["經驗","ging1 jim6"],["啊","aa3"],["？"]]},
-      {"spk": "B", "en": "I worked at an advertising company for three years.", "parts": [["我","ngo5"],["喺","hai2"],["一間","jat1 gaan1"],["廣告","gwong2 gou3"],["公司","gung1 si1"],["做","zou6"],["咗","zo2"],["三年","saam1 nin4"],["。"]]},
-      {"spk": "A", "en": "Then why do you want to change jobs?", "parts": [["噉","gam2"],["點解","dim2 gaai2"],["想","soeng2"],["轉工","zyun3 gung1"],["呢","ne1"],["？"]]},
-      {"spk": "B", "en": "Over there I had to work overtime every day, till midnight — I want to learn new things.", "parts": [["嗰度","go2 dou6"],["日日","jat6 jat6"],["加班","gaa1 baan1"],["加","gaa1"],["到","dou3"],["半夜","bun3 je2"],["，"],["我","ngo5"],["想","soeng2"],["學","hok6"],["啲","di1"],["新","san1"],["嘢","je5"],["。"]]},
-      {"spk": "A", "en": "Ha, we're not that busy here. Do you have any questions?", "parts": [["哈哈","haa1 haa1"],["，"],["我哋","ngo5 dei6"],["呢度","ni1 dou6"],["冇","mou5"],["咁","gam3"],["忙","mong4"],["。"],["你","nei5"],["有冇","jau5 mou5"],["問題","man6 tai4"],["想","soeng2"],["問","man6"],["啊","aa3"],["？"]]},
-      {"spk": "B", "en": "Um... about how much is the pay?", "parts": [["嗯","ng6"],["……"],["人工","jan4 gung1"],["大概","daai6 koi3"],["有","jau5"],["幾多","gei2 do1"],["呢","ne1"],["？"]]},
-      {"spk": "A", "en": "Let's talk about pay in the second interview. We'll email you next week.", "parts": [["人工","jan4 gung1"],["我哋","ngo5 dei6"],["第二輪","dai6 ji6 leon4"],["面試","min6 si3"],["再","zoi3"],["傾","king1"],["啦","laa1"],["。"],["我哋","ngo5 dei6"],["下個","haa6 go3"],["禮拜","lai5 baai3"],["會","wui5"],["電郵","din6 jau4"],["通知","tung1 zi1"],["你","nei5"],["。"]]},
-      {"spk": "B", "en": "Great, thank you very much!", "parts": [["好","hou2"],["啊","aa3"],["，"],["唔該晒","m4 goi1 saai3"],["！"]]}
+      {
+        "spk": "A",
+        "en": "Please have a seat. Could you introduce yourself first?",
+        "parts": [
+          [
+            "請坐",
+            "ceng2 co5"
+          ],
+          [
+            "。"
+          ],
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "可唔可以",
+            "ho2 m4 ho2 ji5"
+          ],
+          [
+            "先",
+            "sin1"
+          ],
+          [
+            "介紹下",
+            "gaai3 siu6 haa6"
+          ],
+          [
+            "自己",
+            "zi6 gei2"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      },
+      {
+        "spk": "B",
+        "en": "Sure. I'm Wing, I studied design at university.",
+        "parts": [
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "。"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "叫",
+            "giu3"
+          ],
+          [
+            "阿詠",
+            "aa3 wing6"
+          ],
+          [
+            "，"
+          ],
+          [
+            "大學",
+            "daai6 hok6"
+          ],
+          [
+            "讀",
+            "duk6"
+          ],
+          [
+            "設計",
+            "cit3 gai3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "A",
+        "en": "Do you have any work experience?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "有冇",
+            "jau5 mou5"
+          ],
+          [
+            "工作經驗",
+            "gung1 zok3 ging1 jim6"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      },
+      {
+        "spk": "B",
+        "en": "I worked at an advertising company for three years.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "一間",
+            "jat1 gaan1"
+          ],
+          [
+            "廣告",
+            "gwong2 gou3"
+          ],
+          [
+            "公司",
+            "gung1 si1"
+          ],
+          [
+            "做",
+            "zou6"
+          ],
+          [
+            "咗",
+            "zo2"
+          ],
+          [
+            "三年",
+            "saam1 nin4"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "A",
+        "en": "Then why do you want to change jobs?",
+        "parts": [
+          [
+            "噉",
+            "gam2"
+          ],
+          [
+            "點解",
+            "dim2 gaai2"
+          ],
+          [
+            "想",
+            "soeng2"
+          ],
+          [
+            "轉工",
+            "zyun3 gung1"
+          ],
+          [
+            "呢",
+            "ne1"
+          ],
+          [
+            "？"
+          ]
+        ]
+      },
+      {
+        "spk": "B",
+        "en": "Over there I had to work overtime till midnight every day — I want to learn new things.",
+        "parts": [
+          [
+            "嗰度",
+            "go2 dou6"
+          ],
+          [
+            "每日",
+            "mui5 jat6"
+          ],
+          [
+            "都",
+            "dou1"
+          ],
+          [
+            "要",
+            "jiu3"
+          ],
+          [
+            "加班",
+            "gaa1 baan1"
+          ],
+          [
+            "到",
+            "dou3"
+          ],
+          [
+            "十二點",
+            "sap6 ji6 dim2"
+          ],
+          [
+            "，"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "想",
+            "soeng2"
+          ],
+          [
+            "學",
+            "hok6"
+          ],
+          [
+            "啲",
+            "di1"
+          ],
+          [
+            "新",
+            "san1"
+          ],
+          [
+            "嘢",
+            "je5"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "A",
+        "en": "Ha, we're not that busy here. Do you have any questions for us?",
+        "parts": [
+          [
+            "我哋",
+            "ngo5 dei6"
+          ],
+          [
+            "呢度",
+            "ni1 dou6"
+          ],
+          [
+            "冇",
+            "mou5"
+          ],
+          [
+            "咁",
+            "gam3"
+          ],
+          [
+            "忙",
+            "mong4"
+          ],
+          [
+            "。"
+          ],
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "有冇",
+            "jau5 mou5"
+          ],
+          [
+            "咩",
+            "me1"
+          ],
+          [
+            "問題",
+            "man6 tai4"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      },
+      {
+        "spk": "B",
+        "en": "Um... may I ask, how much is the pay?",
+        "parts": [
+          [
+            "請問",
+            "ceng2 man6"
+          ],
+          [
+            "……"
+          ],
+          [
+            "人工",
+            "jan4 gung1"
+          ],
+          [
+            "有",
+            "jau5"
+          ],
+          [
+            "幾多",
+            "gei2 do1"
+          ],
+          [
+            "呢",
+            "ne1"
+          ],
+          [
+            "？"
+          ]
+        ]
+      },
+      {
+        "spk": "A",
+        "en": "Let's talk about pay later. We'll let you know by email next week.",
+        "parts": [
+          [
+            "人工",
+            "jan4 gung1"
+          ],
+          [
+            "我哋",
+            "ngo5 dei6"
+          ],
+          [
+            "遲啲",
+            "ci4 di1"
+          ],
+          [
+            "再",
+            "zoi3"
+          ],
+          [
+            "傾",
+            "king1"
+          ],
+          [
+            "啦",
+            "laa1"
+          ],
+          [
+            "。"
+          ],
+          [
+            "我哋",
+            "ngo5 dei6"
+          ],
+          [
+            "下個",
+            "haa6 go3"
+          ],
+          [
+            "禮拜",
+            "lai5 baai3"
+          ],
+          [
+            "會",
+            "wui5"
+          ],
+          [
+            "電郵",
+            "din6 jau4"
+          ],
+          [
+            "通知",
+            "tung1 zi1"
+          ],
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "B",
+        "en": "Great, thank you very much!",
+        "parts": [
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "，"
+          ],
+          [
+            "唔該晒",
+            "m4 goi1 saai3"
+          ],
+          [
+            "！"
+          ]
+        ]
+      }
     ],
     "questions": [
-      {"q": "What did Wing study at university?", "options": ["Design", "Accounting", "English", "Marketing"], "answer": 0},
-      {"q": "How long did Wing work at the advertising company?", "options": ["Three years", "One year", "Six months", "Five years"], "answer": 0},
-      {"q": "Why does Wing want to change jobs?", "options": ["Too much overtime; wants to learn new things", "The pay was too low", "The boss was unpleasant", "The office was too far"], "answer": 0},
-      {"q": "How will Wing hear back?", "options": ["By email next week", "By phone tomorrow", "By letter next month", "They'll tell Wing right away"], "answer": 0}
+      {
+        "q": "What did Wing study at university?",
+        "options": [
+          "Design",
+          "Accounting",
+          "English",
+          "Marketing"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "How long did Wing work at the advertising company?",
+        "options": [
+          "Three years",
+          "One year",
+          "Six months",
+          "Five years"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "Why does Wing want to change jobs?",
+        "options": [
+          "Too much overtime; wants to learn new things",
+          "The pay was too low",
+          "The boss was unpleasant",
+          "The office was too far"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "How will Wing hear back?",
+        "options": [
+          "By email next week",
+          "By phone tomorrow",
+          "By letter next month",
+          "They'll tell Wing right away"
+        ],
+        "answer": 0
+      }
+    ],
+    "gloss": [
+      [
+        "請坐",
+        "ceng2 co5",
+        "please sit down"
+      ],
+      [
+        "介紹下",
+        "gaai3 siu6 haa5",
+        "to introduce (briefly)"
+      ],
+      [
+        "設計",
+        "cit3 gai3",
+        "design"
+      ],
+      [
+        "廣告",
+        "gwong2 gou3",
+        "advertising"
+      ],
+      [
+        "轉工",
+        "zyun3 gung1",
+        "to change jobs"
+      ],
+      [
+        "通知",
+        "tung1 zi1",
+        "to notify, let (someone) know"
+      ]
     ]
   }
 }

@@ -1,104 +1,2062 @@
 {
-  "id": "u13",
-  "level": 2,
-  "title": "Weather & Feelings",
-  "emoji": "🌀",
-  "desc": "Talk about the weather, typhoons and rain, and say how you feel",
-  "words": [
-    {"hk": "天氣", "jp": "tin1 hei3", "en": "weather", "fr": "temps / météo",
-     "ex": {"en": "How's the weather today?", "parts": [["今日","gam1 jat6"],["天氣","tin1 hei3"],["點","dim2"],["啊","aa3"],["？"]]}},
-    {"hk": "熱", "jp": "jit6", "en": "hot", "fr": "chaud",
-     "ex": {"en": "Hong Kong's summer is really hot.", "parts": [["香港","hoeng1 gong2"],["嘅","ge3"],["夏天","haa6 tin1"],["好","hou2"],["熱","jit6"],["。"]]}},
-    {"hk": "凍", "jp": "dung3", "en": "cold", "fr": "froid", "note": "Used for weather, food and drinks: 凍檸茶 = iced lemon tea. 凍親 = catch a chill.",
-     "ex": {"en": "Is it cold in Switzerland?", "parts": [["瑞士","seoi6 si6"],["凍唔凍","dung3 m4 dung3"],["啊","aa3"],["？"]]}},
-    {"hk": "涼", "jp": "loeng4", "en": "cool (pleasantly)", "fr": "frais (agréable)", "note": "Nice and cool. Compare 凍 = cold.",
-     "ex": {"en": "It's lovely and cool in autumn.", "parts": [["秋天","cau1 tin1"],["好","hou2"],["涼","loeng4"],["，"],["好","hou2"],["舒服","syu1 fuk6"],["。"]]}},
-    {"hk": "翳焗", "jp": "ngai3 guk6", "en": "hot and stuffy, muggy", "fr": "lourd, étouffant", "note": "The classic HK summer feeling. 好焗 means the same.",
-     "ex": {"en": "It's so muggy today, it's probably going to rain.", "parts": [["今日","gam1 jat6"],["好","hou2"],["翳焗","ngai3 guk6"],["，"],["可能","ho2 nang4"],["會","wui5"],["落雨","lok6 jyu5"],["。"]]}},
-    {"hk": "出太陽", "jp": "ceot1 taai3 joeng4", "en": "to be sunny (the sun comes out)", "fr": "faire soleil",
-     "ex": {"en": "The sun's out, let's go to the beach!", "parts": [["出太陽","ceot1 taai3 joeng4"],["喇","laa3"],["，"],["去","heoi3"],["海灘","hoi2 taan1"],["啦","laa1"],["！"]]}},
-    {"hk": "落雪", "jp": "lok6 syut3", "en": "to snow", "fr": "neiger", "note": "Like 落雨 'to rain': things 'fall'. It never snows in Hong Kong!",
-     "ex": {"en": "It's snowing in Geneva!", "parts": [["日內瓦","jat6 noi6 ngaa5"],["落緊雪","lok6 gan2 syut3"],["！"]]}},
-    {"hk": "打風", "jp": "daa2 fung1", "en": "there's a typhoon", "fr": "il y a un typhon", "note": "Literally 'wind strikes'. Typhoon signal = 風球; No. 8 = 八號風球, schools and offices close.",
-     "ex": {"en": "There's a typhoon tomorrow, we don't have to go to work.", "parts": [["聽日","ting1 jat6"],["打風","daa2 fung1"],["，"],["唔使","m4 sai2"],["返工","faan1 gung1"],["。"]]}},
-    {"hk": "遮", "jp": "ze1", "en": "umbrella", "fr": "parapluie", "note": "Classifier 把 baa2. 帶遮 = take an umbrella.",
-     "ex": {"en": "Remember to take an umbrella.", "parts": [["記得","gei3 dak1"],["帶","daai3"],["遮","ze1"],["啊","aa3"],["。"]]}},
-    {"hk": "覺得", "jp": "gok3 dak1", "en": "to feel; to think (opinion)", "fr": "trouver / se sentir", "note": "覺得 + adjective = to feel …; also 'I think that …'.",
-     "ex": {"en": "I feel a bit cold.", "parts": [["我","ngo5"],["覺得","gok3 dak1"],["有啲","jau5 di1"],["凍","dung3"],["。"]]}},
-    {"hk": "開心", "jp": "hoi1 sam1", "en": "happy", "fr": "content / heureux", "note": "唔開心 = unhappy, upset.",
-     "ex": {"en": "Why are you so happy today?", "parts": [["你","nei5"],["今日","gam1 jat6"],["點解","dim2 gaai2"],["咁","gam3"],["開心","hoi1 sam1"],["啊","aa3"],["？"]]}},
-    {"hk": "攰", "jp": "gui6", "en": "tired", "fr": "fatigué", "note": "A very Cantonese character. 好攰 = so tired.",
-     "ex": {"en": "I worked ten hours today, I'm so tired.", "parts": [["我","ngo5"],["今日","gam1 jat6"],["做咗","zou6 zo2"],["十個鐘","sap6 go3 zung1"],["，"],["好","hou2"],["攰","gui6"],["。"]]}},
-    {"hk": "頸渴", "jp": "geng2 hot3", "en": "thirsty", "fr": "avoir soif", "note": "Literally 'neck thirsty'.",
-     "ex": {"en": "I'm thirsty, I want an iced lemon tea.", "parts": [["我","ngo5"],["好","hou2"],["頸渴","geng2 hot3"],["，"],["想","soeng2"],["飲","jam2"],["凍","dung3"],["檸茶","ning2 caa4"],["。"]]}},
-    {"hk": "驚", "jp": "geng1", "en": "scared; to be afraid of", "fr": "avoir peur", "note": "Colloquial reading geng1. 唔使驚 = don't be afraid.",
-     "ex": {"en": "My daughter is scared of thunder.", "parts": [["我","ngo5"],["個","go3"],["女","neoi2"],["好","hou2"],["驚","geng1"],["行雷","haang4 leoi4"],["。"]]}},
-    {"hk": "嬲", "jp": "nau1", "en": "angry", "fr": "fâché", "note": "嬲咗 = has got angry. 唔好嬲 = don't be angry.",
-     "ex": {"en": "Is your wife angry?", "parts": [["你","nei5"],["老婆","lou5 po4"],["係唔係","hai6 m4 hai6"],["嬲咗","nau1 zo2"],["啊","aa3"],["？"]]}},
-    {"hk": "悶", "jp": "mun6", "en": "bored; boring", "fr": "s'ennuyer ; ennuyeux", "note": "好悶 = so boring / I'm so bored.",
-     "ex": {"en": "Staying home all day is so boring.", "parts": [["成日","seng4 jat6"],["喺","hai2"],["屋企","uk1 kei2"],["好","hou2"],["悶","mun6"],["。"]]}},
-    {"hk": "緊張", "jp": "gan2 zoeng1", "en": "nervous", "fr": "nerveux / stressé",
-     "ex": {"en": "I have an exam tomorrow, I'm so nervous.", "parts": [["我","ngo5"],["聽日","ting1 jat6"],["考試","haau2 si3"],["，"],["好","hou2"],["緊張","gan2 zoeng1"],["。"]]}},
-    {"hk": "擔心", "jp": "daam1 sam1", "en": "to worry; worried", "fr": "s'inquiéter",
-     "ex": {"en": "Don't worry, I'm fine.", "parts": [["唔使","m4 sai2"],["擔心","daam1 sam1"],["，"],["我","ngo5"],["冇事","mou5 si6"],["。"]]}},
-    {"hk": "舒服", "jp": "syu1 fuk6", "en": "comfortable; feeling well", "fr": "confortable ; se sentir bien", "note": "唔舒服 = unwell, not feeling good.",
-     "ex": {"en": "I'm not feeling well, I want to go home.", "parts": [["我","ngo5"],["唔舒服","m4 syu1 fuk6"],["，"],["想","soeng2"],["返屋企","faan1 uk1 kei2"],["。"]]}},
-    {"hk": "風球", "jp": "fung1 kau4", "en": "typhoon signal", "fr": "signal de typhon", "note": "Signals 1, 3, 8, 9, 10. 掛八號風球 = hoist signal No. 8: offices and schools close. Luckily = 好彩 hou2 coi2.",
-     "ex": {"en": "Will they hoist the No. 8 signal tonight?", "parts": [["今晚","gam1 maan5"],["會唔會","wui6 m4 wui5"],["掛","gwaa3"],["八號風球","baat3 hou6 fung1 kau4"],["啊","aa3"],["？"]]}}
-  ],
-  "sentences": [
-    {"en": "It's very hot today, thirty-three degrees.", "parts": [["今日","gam1 jat6"],["好","hou2"],["熱","jit6"],["，"],["三十三度","saam1 sap6 saam1 dou6"],["。"]]},
-    {"en": "It's raining, did you bring an umbrella?", "parts": [["落緊雨","lok6 gan2 jyu5"],["，"],["你","nei5"],["有冇","jau5 mou5"],["帶","daai3"],["遮","ze1"],["啊","aa3"],["？"]]},
-    {"en": "Is there going to be a typhoon tomorrow?", "parts": [["聽日","ting1 jat6"],["會唔會","wui6 m4 wui5"],["打風","daa2 fung1"],["啊","aa3"],["？"]]},
-    {"en": "The Observatory has hoisted the No. 8 signal.", "parts": [["天文台","tin1 man4 toi4"],["掛咗","gwaa3 zo2"],["八號風球","baat3 hou6 fung1 kau4"],["。"]]},
-    {"en": "I think Hong Kong's winter isn't cold at all.", "parts": [["我","ngo5"],["覺得","gok3 dak1"],["香港","hoeng1 gong2"],["嘅","ge3"],["冬天","dung1 tin1"],["一啲","jat1 di1"],["都","dou1"],["唔","m4"],["凍","dung3"],["。"]]},
-    {"en": "Are you tired? Do you want to rest for a bit?", "parts": [["你","nei5"],["攰唔攰","gui6 m4 gui6"],["啊","aa3"],["？"],["使唔使","sai2 m4 sai2"],["休息","jau1 sik1"],["下","haa5"],["？"]]},
-    {"en": "He's not happy because he lost his phone.", "parts": [["佢","keoi5"],["唔見咗","m4 gin3 zo2"],["部","bou6"],["手機","sau2 gei1"],["，"],["好","hou2"],["唔開心","m4 hoi1 sam1"],["。"]]},
-    {"en": "Don't be angry, it's my fault.", "parts": [["唔好","m4 hou2"],["嬲","nau1"],["啦","laa1"],["，"],["係","hai6"],["我","ngo5"],["唔啱","m4 ngaam1"],["。"]]},
-    {"en": "It's snowing in Switzerland now, and the sun's out in Hong Kong.", "parts": [["瑞士","seoi6 si6"],["而家","ji4 gaa1"],["落緊雪","lok6 gan2 syut3"],["，"],["香港","hoeng1 gong2"],["就","zau6"],["出緊太陽","ceot1 gan2 taai3 joeng4"],["。"]]},
-    {"en": "This sofa is really comfortable.", "parts": [["張","zoeng1"],["梳化","so1 faa2"],["好","hou2"],["舒服","syu1 fuk6"],["。"]]},
-    {"en": "Luckily it didn't rain today.", "parts": [["好彩","hou2 coi2"],["今日","gam1 jat6"],["冇","mou5"],["落雨","lok6 jyu5"],["。"]]},
-    {"en": "Are you scared? — No, I'm not scared.", "parts": [["你","nei5"],["驚唔驚","geng1 m4 geng1"],["啊","aa3"],["？"],["唔驚","m4 geng1"],["。"]]}
-  ],
-  "grammar": [
-    {"title": "Adjectives are verbs: no 'to be'",
-     "explain": "Never put 係 before an adjective. Use 好 (very / just linking) instead: 我好攰 = I'm tired. Without 好 it sounds like a contrast.",
-     "examples": [
-       {"en": "I'm (very) tired.", "parts": [["我","ngo5"],["好","hou2"],["攰","gui6"],["。"]]},
-       {"en": "The weather is nice today.", "parts": [["今日","gam1 jat6"],["天氣","tin1 hei3"],["好","hou2"],["好","hou2"],["。"]]}
-     ]},
-    {"title": "有啲 = a bit (for feelings)",
-     "explain": "有啲 + adjective = 'a bit / rather', usually for something negative: 有啲凍, 有啲攰. 一啲都唔 + adjective = 'not at all'.",
-     "examples": [
-       {"en": "I'm a bit nervous.", "parts": [["我","ngo5"],["有啲","jau5 di1"],["緊張","gan2 zoeng1"],["。"]]},
-       {"en": "This film isn't boring at all.", "parts": [["套","tou3"],["戲","hei3"],["一啲","jat1 di1"],["都","dou1"],["唔","m4"],["悶","mun6"],["。"]]}
-     ]},
-    {"title": "會 = will / likely to",
-     "explain": "會 wui5 before a verb is used for predictions, especially about the weather: 會落雨 = it's going to rain. Ask with 會唔會 (often said wui6 m4 wui5).",
-     "examples": [
-       {"en": "It's going to rain tonight.", "parts": [["今晚","gam1 maan5"],["會","wui5"],["落雨","lok6 jyu5"],["。"]]},
-       {"en": "Will it be cold tomorrow?", "parts": [["聽日","ting1 jat6"],["會唔會","wui6 m4 wui5"],["凍","dung3"],["啊","aa3"],["？"]]}
-     ]}
-  ],
-  "dialogue": {
-    "title": "Typhoon day!",
-    "lines": [
-      {"spk": "A", "en": "Hey, the No. 8 signal is up! No work today!", "parts": [["喂","wai3"],["，"],["掛咗","gwaa3 zo2"],["八號風球","baat3 hou6 fung1 kau4"],["喇","laa3"],["！"],["今日","gam1 jat6"],["唔使","m4 sai2"],["返工","faan1 gung1"],["！"]]},
-      {"spk": "B", "en": "Yay! I'm so happy!", "parts": [["好嘢","hou2 je5"],["！"],["好","hou2"],["開心","hoi1 sam1"],["啊","aa3"],["！"]]},
-      {"spk": "A", "en": "But the wind is really strong outside. Are you scared?", "parts": [["但係","daan6 hai6"],["出面","ceot1 min6"],["好","hou2"],["大風","daai6 fung1"],["，"],["你","nei5"],["驚唔驚","geng1 m4 geng1"],["啊","aa3"],["？"]]},
-      {"spk": "B", "en": "A little. Have you closed the windows?", "parts": [["有少少","jau5 siu2 siu2"],["。"],["你","nei5"],["閂咗","saan1 zo2"],["啲","di1"],["窗","coeng1"],["未","mei6"],["啊","aa3"],["？"]]},
-      {"spk": "A", "en": "All closed. Is there any food in the fridge?", "parts": [["閂晒","saan1 saai3"],["喇","laa3"],["。"],["雪櫃","syut3 gwai6"],["有冇","jau5 mou5"],["嘢食","je5 sik6"],["啊","aa3"],["？"]]},
-      {"spk": "B", "en": "Only instant noodles… and two beers.", "parts": [["淨係","zing6 hai6"],["得","dak1"],["公仔麵","gung1 zai2 min6"],["，"],["同埋","tung4 maai4"],["兩罐","loeng5 gun3"],["啤酒","be1 zau2"],["。"]]},
-      {"spk": "A", "en": "Good enough! Let's watch TV at home.", "parts": [["夠","gau3"],["喇","laa3"],["！"],["我哋","ngo5 dei6"],["喺","hai2"],["屋企","uk1 kei2"],["睇電視","tai2 din6 si6"],["啦","laa1"],["。"]]},
-      {"spk": "B", "en": "Wait… the Observatory says it'll go down to No. 3 at two o'clock.", "parts": [["等等","dang2 dang2"],["，"],["天文台","tin1 man4 toi4"],["話","waa6"],["兩點","loeng5 dim2"],["改","goi2"],["三號","saam1 hou6"],["喎","wo3"],["。"]]},
-      {"spk": "A", "en": "Oh no… so we still have to go to work in the afternoon?", "parts": [["唔係","m4 hai6"],["啩","gwaa3"],["，"],["噉","gam2"],["晏晝","aan3 zau3"],["仲","zung6"],["要","jiu3"],["返工","faan1 gung1"],["？"]]},
-      {"spk": "B", "en": "Yep! How annoying!", "parts": [["係","hai6"],["囉","lo1"],["！"],["好","hou2"],["激氣","gik1 hei3"],["啊","aa3"],["！"]]}
-    ],
-    "questions": [
-      {"q": "Why don't they have to go to work in the morning?", "options": ["The No. 8 typhoon signal is up", "It's a public holiday", "There's a black rainstorm", "Their office is closed for repairs"], "answer": 0},
-      {"q": "What food do they have at home?", "options": ["Instant noodles and two beers", "Nothing at all", "Rice and fish", "Bread and milk"], "answer": 0},
-      {"q": "What happens at two o'clock?", "options": ["The signal goes down to No. 3", "The signal goes up to No. 10", "The rain stops", "The TV breaks"], "answer": 0},
-      {"q": "How do they feel at the end?", "options": ["Annoyed", "Scared", "Happy", "Bored"], "answer": 0}
+ "id": "u13",
+ "level": 2,
+ "title": "Weather & Feelings",
+ "emoji": "🌀",
+ "desc": "Talk about the weather, typhoons and rain, pass on the forecast and say how you feel",
+ "words": [
+  {
+   "hk": "天氣",
+   "jp": "tin1 hei3",
+   "en": "weather",
+   "fr": "temps / météo",
+   "ex": {
+    "en": "How's the weather today?",
+    "parts": [
+     [
+      "今日",
+      "gam1 jat6"
+     ],
+     [
+      "天氣",
+      "tin1 hei3"
+     ],
+     [
+      "點",
+      "dim2"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
     ]
+   }
+  },
+  {
+   "hk": "熱",
+   "jp": "jit6",
+   "en": "hot",
+   "fr": "chaud",
+   "ex": {
+    "en": "Hong Kong is so hot!",
+    "parts": [
+     [
+      "香港",
+      "hoeng1 gong2"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "熱",
+      "jit6"
+     ],
+     [
+      "！"
+     ]
+    ]
+   },
+   "note": "Muggy, stuffy heat = 翳焗 (ngai3 guk6), the classic HK summer feeling."
+  },
+  {
+   "hk": "凍",
+   "jp": "dung3",
+   "en": "cold",
+   "fr": "froid",
+   "note": "Used for weather, food and drinks: 凍檸茶 (dung3 ning2 caa4) = iced lemon tea. Pleasantly cool = 涼 (loeng4).",
+   "ex": {
+    "en": "Is it cold in Switzerland?",
+    "parts": [
+     [
+      "瑞士",
+      "seoi6 si6"
+     ],
+     [
+      "凍唔凍",
+      "dung3 m4 dung3"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "落雨",
+   "jp": "lok6 jyu5",
+   "en": "to rain",
+   "fr": "pleuvoir",
+   "note": "Literally 'rain falls'. 落緊雨 (lok6 gan2 jyu5) it's raining (right now), 落咗雨 (lok6 zo2 jyu5) it rained. Snow: 落雪 (lok6 syut3), which almost never happens in Hong Kong!",
+   "ex": {
+    "en": "It didn't rain today.",
+    "parts": [
+     [
+      "今日",
+      "gam1 jat6"
+     ],
+     [
+      "冇",
+      "mou5"
+     ],
+     [
+      "落雨",
+      "lok6 jyu5"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "出太陽",
+   "jp": "ceot1 taai3 joeng4",
+   "en": "to be sunny (the sun comes out)",
+   "fr": "faire soleil",
+   "ex": {
+    "en": "The sun has come out!",
+    "parts": [
+     [
+      "出太陽",
+      "ceot1 taai3 joeng4"
+     ],
+     [
+      "喇",
+      "laa3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "會",
+   "jp": "wui5",
+   "en": "will; likely to (predictions)",
+   "fr": "va (prédiction) ; risque de",
+   "note": "會 (wui5) + verb for what's going to happen: 會落雨 (wui5 lok6 jyu5) it's going to rain. Ask with 會唔會 (wui6 m4 wui5)？ Many speakers say 會 (wui6) with a low flat tone, especially at the start of 會唔會 (wui6 m4 wui5); both tones are understood.",
+   "ex": {
+    "en": "It's going to be very hot tomorrow.",
+    "parts": [
+     [
+      "聽日",
+      "ting1 jat6"
+     ],
+     [
+      "會",
+      "wui5"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "熱",
+      "jit6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "帶",
+   "jp": "daai3",
+   "en": "to bring, take along",
+   "fr": "apporter, prendre avec soi",
+   "note": "帶遮 (daai3 ze1) take an umbrella, 帶錢 (daai3 cin2) bring money. 唔記得帶 (m4 gei3 dak1 daai3) = forgot to bring.",
+   "ex": {
+    "en": "I forgot to bring my wallet.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "唔記得",
+      "m4 gei3 dak1"
+     ],
+     [
+      "帶",
+      "daai3"
+     ],
+     [
+      "銀包",
+      "ngan4 baau1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "遮",
+   "jp": "ze1",
+   "en": "umbrella",
+   "fr": "parapluie",
+   "note": "Classifier 把 (baa2). 帶遮 (daai3 ze1) = take an umbrella.",
+   "ex": {
+    "en": "Remember to take an umbrella.",
+    "parts": [
+     [
+      "記得",
+      "gei3 dak1"
+     ],
+     [
+      "帶",
+      "daai3"
+     ],
+     [
+      "遮",
+      "ze1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "打風",
+   "jp": "daa2 fung1",
+   "en": "there's a typhoon",
+   "fr": "il y a un typhon",
+   "note": "Literally 'wind strikes'. Typhoon signal = 風球 (fung1 kau4); No. 8 = 八號風球 (baat3 hou6 fung1 kau4), schools and offices close.",
+   "ex": {
+    "en": "There's a typhoon tomorrow, we don't have to go to work.",
+    "parts": [
+     [
+      "聽日",
+      "ting1 jat6"
+     ],
+     [
+      "打風",
+      "daa2 fung1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "唔使",
+      "m4 sai2"
+     ],
+     [
+      "返工",
+      "faan1 gung1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "風球",
+   "jp": "fung1 kau4",
+   "en": "typhoon signal",
+   "fr": "signal de typhon",
+   "note": "Signals 1, 3, 8, 9, 10. At No. 8 (八號風球 (baat3 hou6 fung1 kau4)) offices and schools close. 'Hoist' = 掛 (gwaa3).",
+   "ex": {
+    "en": "Will they hoist the No. 8 signal tonight?",
+    "parts": [
+     [
+      "今晚",
+      "gam1 maan5"
+     ],
+     [
+      "會唔會",
+      "wui6 m4 wui5"
+     ],
+     [
+      "掛",
+      "gwaa3"
+     ],
+     [
+      "八號",
+      "baat3 hou6"
+     ],
+     [
+      "風球",
+      "fung1 kau4"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "天文台",
+   "jp": "tin1 man4 toi4",
+   "en": "the Hong Kong Observatory (weather service)",
+   "fr": "l'Observatoire de Hong Kong (météo)",
+   "note": "The HK weather office that issues typhoon signals and rain warnings. Everyone checks its app.",
+   "ex": {
+    "en": "The Observatory says it's going to rain tomorrow.",
+    "parts": [
+     [
+      "天文台",
+      "tin1 man4 toi4"
+     ],
+     [
+      "話",
+      "waa6"
+     ],
+     [
+      "聽日",
+      "ting1 jat6"
+     ],
+     [
+      "會",
+      "wui5"
+     ],
+     [
+      "落雨",
+      "lok6 jyu5"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "話",
+   "jp": "waa6",
+   "en": "to say; to tell",
+   "fr": "dire",
+   "note": "Person + 話 (waa6) + what they said: 佢話唔嚟 (keoi5 waa6 m4 lai4) he says he's not coming. Not the same as 話 (waa2) in 電話 (din6 waa2) or 咩話 (me1 waa2).",
+   "ex": {
+    "en": "Mum says it's cold tonight.",
+    "parts": [
+     [
+      "媽媽",
+      "maa4 maa1"
+     ],
+     [
+      "話",
+      "waa6"
+     ],
+     [
+      "今晚",
+      "gam1 maan5"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "凍",
+      "dung3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "喎",
+   "jp": "wo3",
+   "en": "(end of sentence) passing on what someone said; 'oh, I just noticed'",
+   "fr": "(fin de phrase) info rapportée ; « tiens ! »",
+   "note": "Use it for news you heard (天文台話會落雨喎 (tin1 man4 toi4 waa6 wui5 lok6 jyu5 wo3)) or something you just noticed: 落雨喎 (lok6 jyu5 wo3)! 'oh, it's raining!'",
+   "ex": {
+    "en": "Oh, it's raining!",
+    "parts": [
+     [
+      "落雨",
+      "lok6 jyu5"
+     ],
+     [
+      "喎",
+      "wo3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "覺得",
+   "jp": "gok3 dak1",
+   "en": "to feel; to think (opinion)",
+   "fr": "trouver / se sentir",
+   "note": "覺得 (gok3 dak1) + adjective = to feel …; also 'I think that …'.",
+   "ex": {
+    "en": "I feel a bit cold.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "覺得",
+      "gok3 dak1"
+     ],
+     [
+      "有啲",
+      "jau5 di1"
+     ],
+     [
+      "凍",
+      "dung3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "好似",
+   "jp": "hou2 ci5",
+   "en": "it seems; looks like; to be like",
+   "fr": "on dirait ; avoir l'air ; ressembler à",
+   "note": "At the start: 好似會落雨 (hou2 ci5 wui5 lok6 jyu5) it looks like rain. Also 'to look like': 好似 (hou2 ci5) + person, e.g. 好似你 (hou2 ci5 nei5) looks like you.",
+   "ex": {
+    "en": "You look really tired.",
+    "parts": [
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "好似",
+      "hou2 ci5"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "攰",
+      "gui6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "真係",
+   "jp": "zan1 hai6",
+   "en": "really; truly",
+   "fr": "vraiment",
+   "note": "Before an adjective or verb: 真係好熱 (zan1 hai6 hou2 jit6) it's really hot. On its own as a question: 真係 (zan1 hai6)？ 'Really?'",
+   "ex": {
+    "en": "It's really hot today!",
+    "parts": [
+     [
+      "今日",
+      "gam1 jat6"
+     ],
+     [
+      "真係",
+      "zan1 hai6"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "熱",
+      "jit6"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "開心",
+   "jp": "hoi1 sam1",
+   "en": "happy",
+   "fr": "content / heureux",
+   "note": "唔開心 (m4 hoi1 sam1) = unhappy, upset.",
+   "ex": {
+    "en": "Why are you so happy today?",
+    "parts": [
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "今日",
+      "gam1 jat6"
+     ],
+     [
+      "點解",
+      "dim2 gaai2"
+     ],
+     [
+      "咁",
+      "gam3"
+     ],
+     [
+      "開心",
+      "hoi1 sam1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "攰",
+   "jp": "gui6",
+   "en": "tired",
+   "fr": "fatigué",
+   "note": "A very Cantonese character. 好攰 (hou2 gui6) = so tired.",
+   "ex": {
+    "en": "I worked ten hours today, I'm so tired.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "今日",
+      "gam1 jat6"
+     ],
+     [
+      "做咗",
+      "zou6 zo2"
+     ],
+     [
+      "十個鐘",
+      "sap6 go3 zung1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "攰",
+      "gui6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "頸渴",
+   "jp": "geng2 hot3",
+   "en": "thirsty",
+   "fr": "avoir soif",
+   "note": "Literally 'neck thirsty'.",
+   "ex": {
+    "en": "I'm so thirsty, I want some water.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "頸渴",
+      "geng2 hot3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "想",
+      "soeng2"
+     ],
+     [
+      "飲",
+      "jam2"
+     ],
+     [
+      "水",
+      "seoi2"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "驚",
+   "jp": "geng1",
+   "en": "scared; to be afraid of",
+   "fr": "avoir peur",
+   "note": "Colloquial reading geng1. 唔使驚 (m4 sai2 geng1) = don't be afraid.",
+   "ex": {
+    "en": "My daughter is really scared of typhoons.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "個",
+      "go3"
+     ],
+     [
+      "女",
+      "neoi2"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "驚",
+      "geng1"
+     ],
+     [
+      "打風",
+      "daa2 fung1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "嬲",
+   "jp": "nau1",
+   "en": "angry",
+   "fr": "fâché",
+   "note": "嬲咗 (nau1 zo2) = has got angry. 唔好嬲 (m4 hou2 nau1) = don't be angry.",
+   "ex": {
+    "en": "Is your wife angry?",
+    "parts": [
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "老婆",
+      "lou5 po4"
+     ],
+     [
+      "係唔係",
+      "hai6 m4 hai6"
+     ],
+     [
+      "嬲咗",
+      "nau1 zo2"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "悶",
+   "jp": "mun6",
+   "en": "bored; boring",
+   "fr": "s'ennuyer ; ennuyeux",
+   "note": "好悶 (hou2 mun6) = so boring / I'm so bored.",
+   "ex": {
+    "en": "Staying home all the time is so boring.",
+    "parts": [
+     [
+      "成日",
+      "seng4 jat6"
+     ],
+     [
+      "喺",
+      "hai2"
+     ],
+     [
+      "屋企",
+      "uk1 kei2"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "悶",
+      "mun6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "緊張",
+   "jp": "gan2 zoeng1",
+   "en": "nervous",
+   "fr": "nerveux / stressé",
+   "ex": {
+    "en": "I have an exam tomorrow, I'm so nervous.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "聽日",
+      "ting1 jat6"
+     ],
+     [
+      "考試",
+      "haau2 si3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "緊張",
+      "gan2 zoeng1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "擔心",
+   "jp": "daam1 sam1",
+   "en": "to worry; worried",
+   "fr": "s'inquiéter",
+   "ex": {
+    "en": "Don't worry, I'm fine.",
+    "parts": [
+     [
+      "唔使",
+      "m4 sai2"
+     ],
+     [
+      "擔心",
+      "daam1 sam1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "冇事",
+      "mou5 si6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "舒服",
+   "jp": "syu1 fuk6",
+   "en": "comfortable; feeling well",
+   "fr": "confortable ; se sentir bien",
+   "note": "唔舒服 (m4 syu1 fuk6) = unwell, not feeling good.",
+   "ex": {
+    "en": "I'm not feeling well, I want to go home.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "唔舒服",
+      "m4 syu1 fuk6"
+     ],
+     [
+      "，"
+     ],
+     [
+      "想",
+      "soeng2"
+     ],
+     [
+      "返屋企",
+      "faan1 uk1 kei2"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
   }
+ ],
+ "sentences": [
+  {
+   "en": "It's very hot today, thirty-three degrees.",
+   "parts": [
+    [
+     "今日",
+     "gam1 jat6"
+    ],
+    [
+     "好",
+     "hou2"
+    ],
+    [
+     "熱",
+     "jit6"
+    ],
+    [
+     "，"
+    ],
+    [
+     "三十三",
+     "saam1 sap6 saam1"
+    ],
+    [
+     "度",
+     "dou6"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "It's raining, did you bring an umbrella?",
+   "parts": [
+    [
+     "落緊雨",
+     "lok6 gan2 jyu5"
+    ],
+    [
+     "，"
+    ],
+    [
+     "你",
+     "nei5"
+    ],
+    [
+     "有冇",
+     "jau5 mou5"
+    ],
+    [
+     "帶",
+     "daai3"
+    ],
+    [
+     "遮",
+     "ze1"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  },
+  {
+   "en": "Is there going to be a typhoon tomorrow?",
+   "parts": [
+    [
+     "聽日",
+     "ting1 jat6"
+    ],
+    [
+     "會唔會",
+     "wui6 m4 wui5"
+    ],
+    [
+     "打風",
+     "daa2 fung1"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  },
+  {
+   "en": "The Observatory has hoisted the No. 8 signal.",
+   "parts": [
+    [
+     "天文台",
+     "tin1 man4 toi4"
+    ],
+    [
+     "掛",
+     "gwaa3"
+    ],
+    [
+     "咗",
+     "zo2"
+    ],
+    [
+     "八號",
+     "baat3 hou6"
+    ],
+    [
+     "風球",
+     "fung1 kau4"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "I think Hong Kong's winter isn't cold at all.",
+   "parts": [
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "覺得",
+     "gok3 dak1"
+    ],
+    [
+     "香港",
+     "hoeng1 gong2"
+    ],
+    [
+     "嘅",
+     "ge3"
+    ],
+    [
+     "冬天",
+     "dung1 tin1"
+    ],
+    [
+     "一啲",
+     "jat1 di1"
+    ],
+    [
+     "都",
+     "dou1"
+    ],
+    [
+     "唔",
+     "m4"
+    ],
+    [
+     "凍",
+     "dung3"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Are you tired? — Don't worry, I'm fine.",
+   "parts": [
+    [
+     "你",
+     "nei5"
+    ],
+    [
+     "攰唔攰",
+     "gui6 m4 gui6"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ],
+    [
+     "唔使",
+     "m4 sai2"
+    ],
+    [
+     "擔心",
+     "daam1 sam1"
+    ],
+    [
+     "，"
+    ],
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "冇事",
+     "mou5 si6"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "She's lost her phone, she's really upset.",
+   "parts": [
+    [
+     "佢",
+     "keoi5"
+    ],
+    [
+     "唔見咗",
+     "m4 gin3 zo2"
+    ],
+    [
+     "部",
+     "bou6"
+    ],
+    [
+     "手機",
+     "sau2 gei1"
+    ],
+    [
+     "，"
+    ],
+    [
+     "好",
+     "hou2"
+    ],
+    [
+     "唔",
+     "m4"
+    ],
+    [
+     "開心",
+     "hoi1 sam1"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Don't be angry, it's my fault.",
+   "parts": [
+    [
+     "唔好",
+     "m4 hou2"
+    ],
+    [
+     "嬲",
+     "nau1"
+    ],
+    [
+     "啦",
+     "laa1"
+    ],
+    [
+     "，"
+    ],
+    [
+     "係",
+     "hai6"
+    ],
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "唔啱",
+     "m4 ngaam1"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "It's really cold in Switzerland now, but in Hong Kong it's hot.",
+   "parts": [
+    [
+     "瑞士",
+     "seoi6 si6"
+    ],
+    [
+     "而家",
+     "ji4 gaa1"
+    ],
+    [
+     "好",
+     "hou2"
+    ],
+    [
+     "凍",
+     "dung3"
+    ],
+    [
+     "，"
+    ],
+    [
+     "香港",
+     "hoeng1 gong2"
+    ],
+    [
+     "就",
+     "zau6"
+    ],
+    [
+     "好",
+     "hou2"
+    ],
+    [
+     "熱",
+     "jit6"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "The sofa is really comfortable.",
+   "parts": [
+    [
+     "張",
+     "zoeng1"
+    ],
+    [
+     "梳化",
+     "so1 faa2"
+    ],
+    [
+     "好",
+     "hou2"
+    ],
+    [
+     "舒服",
+     "syu1 fuk6"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Luckily it didn't rain today.",
+   "parts": [
+    [
+     "好彩",
+     "hou2 coi2"
+    ],
+    [
+     "今日",
+     "gam1 jat6"
+    ],
+    [
+     "冇",
+     "mou5"
+    ],
+    [
+     "落雨",
+     "lok6 jyu5"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Are you scared? — No, I'm not scared.",
+   "parts": [
+    [
+     "你",
+     "nei5"
+    ],
+    [
+     "驚唔驚",
+     "geng1 m4 geng1"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ],
+    [
+     "唔",
+     "m4"
+    ],
+    [
+     "驚",
+     "geng1"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Looks like rain, take an umbrella.",
+   "parts": [
+    [
+     "好似",
+     "hou2 ci5"
+    ],
+    [
+     "會",
+     "wui5"
+    ],
+    [
+     "落雨",
+     "lok6 jyu5"
+    ],
+    [
+     "喎",
+     "wo3"
+    ],
+    [
+     "，"
+    ],
+    [
+     "帶",
+     "daai3"
+    ],
+    [
+     "遮",
+     "ze1"
+    ],
+    [
+     "啦",
+     "laa1"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "The Observatory says it'll be cold tomorrow.",
+   "parts": [
+    [
+     "天文台",
+     "tin1 man4 toi4"
+    ],
+    [
+     "話",
+     "waa6"
+    ],
+    [
+     "聽日",
+     "ting1 jat6"
+    ],
+    [
+     "會",
+     "wui5"
+    ],
+    [
+     "好",
+     "hou2"
+    ],
+    [
+     "凍",
+     "dung3"
+    ],
+    [
+     "喎",
+     "wo3"
+    ],
+    [
+     "。"
+    ]
+   ]
+  }
+ ],
+ "grammar": [
+  {
+   "title": "Adjectives are verbs: no 'to be'",
+   "explain": "Never put 係 (hai6) before an adjective. Use 好 (hou2) (very / just linking) instead: 我好攰 (ngo5 hou2 gui6) = I'm tired. Without 好 (hou2) it sounds like a contrast.",
+   "after": "熱",
+   "examples": [
+    {
+     "en": "I'm (very) tired.",
+     "parts": [
+      [
+       "我",
+       "ngo5"
+      ],
+      [
+       "好",
+       "hou2"
+      ],
+      [
+       "攰",
+       "gui6"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "The weather is nice today.",
+     "parts": [
+      [
+       "今日",
+       "gam1 jat6"
+      ],
+      [
+       "天氣",
+       "tin1 hei3"
+      ],
+      [
+       "好",
+       "hou2"
+      ],
+      [
+       "好",
+       "hou2"
+      ],
+      [
+       "。"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "會 (wui5) = will / going to",
+   "explain": "會 (wui5) before a verb makes a prediction, especially about the weather. Negative: 唔會 (m4 wui5) won't. Question: 會唔會 (wui6 m4 wui5)…？",
+   "after": "會",
+   "examples": [
+    {
+     "en": "It's going to rain tonight.",
+     "parts": [
+      [
+       "今晚",
+       "gam1 maan5"
+      ],
+      [
+       "會",
+       "wui5"
+      ],
+      [
+       "落雨",
+       "lok6 jyu5"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "Will it be cold tomorrow?",
+     "parts": [
+      [
+       "聽日",
+       "ting1 jat6"
+      ],
+      [
+       "會唔會",
+       "wui6 m4 wui5"
+      ],
+      [
+       "凍",
+       "dung3"
+      ],
+      [
+       "啊",
+       "aa3"
+      ],
+      [
+       "？"
+      ]
+     ]
+    },
+    {
+     "en": "No, it'll be sunny tomorrow.",
+     "parts": [
+      [
+       "唔",
+       "m4"
+      ],
+      [
+       "會",
+       "wui5"
+      ],
+      [
+       "，"
+      ],
+      [
+       "聽日",
+       "ting1 jat6"
+      ],
+      [
+       "出太陽",
+       "ceot1 taai3 joeng4"
+      ],
+      [
+       "。"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "話 (waa6) + 喎 (wo3): passing on news",
+   "explain": "Person + 話 (waa6) + what they said reports speech. End with 喎 (wo3) to show it's news you're passing on: 'apparently'.",
+   "after": "喎",
+   "examples": [
+    {
+     "en": "The Observatory says there's going to be a typhoon.",
+     "parts": [
+      [
+       "天文台",
+       "tin1 man4 toi4"
+      ],
+      [
+       "話",
+       "waa6"
+      ],
+      [
+       "會",
+       "wui5"
+      ],
+      [
+       "打風",
+       "daa2 fung1"
+      ],
+      [
+       "喎",
+       "wo3"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "Mum says she isn't coming tonight.",
+     "parts": [
+      [
+       "媽媽",
+       "maa4 maa1"
+      ],
+      [
+       "話",
+       "waa6"
+      ],
+      [
+       "佢",
+       "keoi5"
+      ],
+      [
+       "今晚",
+       "gam1 maan5"
+      ],
+      [
+       "唔",
+       "m4"
+      ],
+      [
+       "嚟",
+       "lai4"
+      ],
+      [
+       "喎",
+       "wo3"
+      ],
+      [
+       "。"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "有啲 (jau5 di1) = a bit, 一啲都唔 (jat1 di1 dou1 m4) = not at all",
+   "explain": "有啲 (jau5 di1) + adjective = 'a bit / rather', usually for something negative: 有啲凍 (jau5 di1 dung3), 有啲攰 (jau5 di1 gui6). 一啲都唔 (jat1 di1 dou1 m4) + adjective = 'not at all'.",
+   "after": "緊張",
+   "examples": [
+    {
+     "en": "I'm a bit nervous.",
+     "parts": [
+      [
+       "我",
+       "ngo5"
+      ],
+      [
+       "有啲",
+       "jau5 di1"
+      ],
+      [
+       "緊張",
+       "gan2 zoeng1"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "It's not hot at all today.",
+     "parts": [
+      [
+       "今日",
+       "gam1 jat6"
+      ],
+      [
+       "一啲",
+       "jat1 di1"
+      ],
+      [
+       "都",
+       "dou1"
+      ],
+      [
+       "唔",
+       "m4"
+      ],
+      [
+       "熱",
+       "jit6"
+      ],
+      [
+       "。"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "dialogue": {
+  "title": "Typhoon day!",
+  "gloss": [
+   [
+    "掛",
+    "gwaa3",
+    "to hoist (a signal)"
+   ],
+   [
+    "出面",
+    "ceot1 min6",
+    "outside"
+   ],
+   [
+    "大風",
+    "daai6 fung1",
+    "strong wind"
+   ],
+   [
+    "公仔麵",
+    "gung1 zai2 min6",
+    "instant noodles"
+   ],
+   [
+    "啤酒",
+    "be1 zau2",
+    "beer"
+   ],
+   [
+    "改",
+    "goi2",
+    "to change (to)"
+   ]
+  ],
+  "lines": [
+   {
+    "spk": "A",
+    "en": "Hey, the No. 8 signal is up! No work today!",
+    "parts": [
+     [
+      "喂",
+      "wai3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "天文台",
+      "tin1 man4 toi4"
+     ],
+     [
+      "掛",
+      "gwaa3"
+     ],
+     [
+      "咗",
+      "zo2"
+     ],
+     [
+      "八號",
+      "baat3 hou6"
+     ],
+     [
+      "風球",
+      "fung1 kau4"
+     ],
+     [
+      "喇",
+      "laa3"
+     ],
+     [
+      "！"
+     ],
+     [
+      "今日",
+      "gam1 jat6"
+     ],
+     [
+      "唔使",
+      "m4 sai2"
+     ],
+     [
+      "返工",
+      "faan1 gung1"
+     ],
+     [
+      "！"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Yay! I'm so happy!",
+    "parts": [
+     [
+      "好嘢",
+      "hou2 je5"
+     ],
+     [
+      "！"
+     ],
+     [
+      "真係",
+      "zan1 hai6"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "開心",
+      "hoi1 sam1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "But the wind is really strong outside. Are you scared?",
+    "parts": [
+     [
+      "但係",
+      "daan6 hai6"
+     ],
+     [
+      "出面",
+      "ceot1 min6"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "大風",
+      "daai6 fung1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "驚唔驚",
+      "geng1 m4 geng1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "A little. Have you closed the windows?",
+    "parts": [
+     [
+      "有",
+      "jau5"
+     ],
+     [
+      "少少",
+      "siu2 siu2"
+     ],
+     [
+      "。"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "閂",
+      "saan1"
+     ],
+     [
+      "咗",
+      "zo2"
+     ],
+     [
+      "啲",
+      "di1"
+     ],
+     [
+      "窗",
+      "coeng1"
+     ],
+     [
+      "未",
+      "mei6"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "All closed. Is there any food in the fridge?",
+    "parts": [
+     [
+      "閂",
+      "saan1"
+     ],
+     [
+      "咗",
+      "zo2"
+     ],
+     [
+      "喇",
+      "laa3"
+     ],
+     [
+      "。"
+     ],
+     [
+      "雪櫃",
+      "syut3 gwai6"
+     ],
+     [
+      "有冇",
+      "jau5 mou5"
+     ],
+     [
+      "嘢",
+      "je5"
+     ],
+     [
+      "食",
+      "sik6"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Only instant noodles… and two cans of beer.",
+    "parts": [
+     [
+      "淨係",
+      "zing6 hai6"
+     ],
+     [
+      "有",
+      "jau5"
+     ],
+     [
+      "公仔麵",
+      "gung1 zai2 min6"
+     ],
+     [
+      "，"
+     ],
+     [
+      "同埋",
+      "tung4 maai4"
+     ],
+     [
+      "兩",
+      "loeng5"
+     ],
+     [
+      "罐",
+      "gun3"
+     ],
+     [
+      "啤酒",
+      "be1 zau2"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "Good enough! Let's watch TV at home.",
+    "parts": [
+     [
+      "夠",
+      "gau3"
+     ],
+     [
+      "喇",
+      "laa3"
+     ],
+     [
+      "！"
+     ],
+     [
+      "我哋",
+      "ngo5 dei6"
+     ],
+     [
+      "喺",
+      "hai2"
+     ],
+     [
+      "屋企",
+      "uk1 kei2"
+     ],
+     [
+      "睇",
+      "tai2"
+     ],
+     [
+      "電視",
+      "din6 si6"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Wait… the Observatory says it'll go down to No. 3 at two o'clock.",
+    "parts": [
+     [
+      "等等",
+      "dang2 dang2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "天文台",
+      "tin1 man4 toi4"
+     ],
+     [
+      "話",
+      "waa6"
+     ],
+     [
+      "兩點",
+      "loeng5 dim2"
+     ],
+     [
+      "改",
+      "goi2"
+     ],
+     [
+      "三號",
+      "saam1 hou6"
+     ],
+     [
+      "喎",
+      "wo3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "Oh no… so we still have to go to work in the afternoon?",
+    "parts": [
+     [
+      "唔係",
+      "m4 hai6"
+     ],
+     [
+      "啩",
+      "gwaa3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "噉",
+      "gam2"
+     ],
+     [
+      "晏晝",
+      "aan3 zau3"
+     ],
+     [
+      "都",
+      "dou1"
+     ],
+     [
+      "要",
+      "jiu3"
+     ],
+     [
+      "返工",
+      "faan1 gung1"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Yep! I'm so annoyed!",
+    "parts": [
+     [
+      "係",
+      "hai6"
+     ],
+     [
+      "囉",
+      "lo1"
+     ],
+     [
+      "！"
+     ],
+     [
+      "真係",
+      "zan1 hai6"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "嬲",
+      "nau1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why don't they have to go to work in the morning?",
+    "options": [
+     "The No. 8 typhoon signal is up",
+     "It's a public holiday",
+     "There's a black rainstorm",
+     "Their office is closed for repairs"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What food do they have at home?",
+    "options": [
+     "Instant noodles and two cans of beer",
+     "Nothing at all",
+     "Rice and fish",
+     "Bread and milk"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What happens at two o'clock?",
+    "options": [
+     "The signal goes down to No. 3",
+     "The signal goes up to No. 10",
+     "The rain stops",
+     "The TV breaks"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How do they feel at the end?",
+    "options": [
+     "Annoyed",
+     "Scared",
+     "Happy",
+     "Bored"
+    ],
+    "answer": 0
+   }
+  ]
+ }
 }

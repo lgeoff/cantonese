@@ -1,121 +1,1990 @@
 {
-  "id": "u03",
-  "level": 1,
-  "title": "Hello & Thanks",
-  "emoji": "👋",
-  "desc": "Greet people, say thanks and sorry, and answer yes or no",
-  "words": [
-    {"hk": "你好", "jp": "nei5 hou2", "en": "hello", "fr": "bonjour / salut",
-     "note": "Fine with strangers. Friends often just say the person's name, or 早晨 in the morning.",
-     "ex": {"en": "Hello, I'm Ka-ming.", "parts": [["你好","nei5 hou2"],["，"],["我","ngo5"],["叫","giu3"],["家明","gaa1 ming4"],["。"]]}},
-    {"hk": "早晨", "jp": "zou2 san4", "en": "good morning", "fr": "bonjour (le matin)",
-     "note": "Used until about 11 a.m. There is no common 'good afternoon' — just say 你好.",
-     "ex": {"en": "Good morning, Mr Chan!", "parts": [["早晨","zou2 san4"],["，"],["陳生","can4 saang1"],["！"]]}},
-    {"hk": "早唞", "jp": "zou2 tau2", "en": "good night", "fr": "bonne nuit",
-     "note": "Literally 'rest early'. Said when going to bed or leaving late at night — not 'good evening'.",
-     "ex": {"en": "Good night, little sister!", "parts": [["細妹","sai3 mui2"],["，"],["早唞","zou2 tau2"],["！"]]}},
-    {"hk": "拜拜", "jp": "baai1 baai3", "en": "bye-bye", "fr": "salut / bye",
-     "note": "From English 'bye-bye'; the most common goodbye in Hong Kong.",
-     "ex": {"en": "Bye! See you on Monday!", "parts": [["拜拜","baai1 baai3"],["！"],["星期一","sing1 kei4 jat1"],["見","gin3"],["！"]]}},
-    {"hk": "再見", "jp": "zoi3 gin3", "en": "goodbye", "fr": "au revoir",
-     "note": "A bit more formal than 拜拜.",
-     "ex": {"en": "Goodbye, Mr Chan.", "parts": [["陳生","can4 saang1"],["，"],["再見","zoi3 gin3"],["。"]]}},
-    {"hk": "唔該", "jp": "m4 goi1", "en": "thanks (for a service); excuse me", "fr": "merci (pour un service) ; excusez-moi",
-     "note": "Use it when someone does something for you, to call a waiter, or to get past people. 唔該晒 = thanks a lot.",
-     "ex": {"en": "Excuse me, where's the toilet?", "parts": [["唔該","m4 goi1"],["，"],["洗手間","sai2 sau2 gaan1"],["喺","hai2"],["邊度","bin1 dou6"],["啊","aa3"],["？"]]}},
-    {"hk": "多謝", "jp": "do1 ze6", "en": "thank you (for a gift / compliment)", "fr": "merci (pour un cadeau)",
-     "note": "For gifts, compliments and invitations. 多謝晒 = thanks very much.",
-     "ex": {"en": "Thank you for your present!", "parts": [["多謝","do1 ze6"],["你","nei5"],["份","fan6"],["禮物","lai5 mat6"],["啊","aa3"],["！"]]}},
-    {"hk": "唔使唔該", "jp": "m4 sai2 m4 goi1", "en": "you're welcome (reply to 唔該)", "fr": "de rien (réponse à 唔該)",
-     "note": "Literally 'no need to thank'. The reply to 多謝 is 唔使客氣 m4 sai2 haak3 hei3."},
-    {"hk": "對唔住", "jp": "deoi3 m4 zyu6", "en": "sorry", "fr": "pardon / désolé",
-     "note": "A real apology. For small things (interrupting, saying no) use 唔好意思.",
-     "ex": {"en": "Sorry! Are you OK?", "parts": [["對唔住","deoi3 m4 zyu6"],["！"],["你","nei5"],["冇事","mou5 si6"],["吖嘛","aa1 maa3"],["？"]]}},
-    {"hk": "唔好意思", "jp": "m4 hou2 ji3 si1", "en": "excuse me / sorry (light)", "fr": "excusez-moi / désolé (léger)",
-     "ex": {"en": "Sorry, I can't go.", "parts": [["唔好意思","m4 hou2 ji3 si1"],["，"],["我","ngo5"],["唔可以","m4 ho2 ji5"],["去","heoi3"],["。"]]}},
-    {"hk": "唔緊要", "jp": "m4 gan2 jiu3", "en": "never mind / it doesn't matter", "fr": "ce n'est pas grave",
-     "ex": {"en": "Never mind, I'll walk home.", "parts": [["唔緊要","m4 gan2 jiu3"],["，"],["我","ngo5"],["行路","haang4 lou6"],["返","faan1"],["屋企","uk1 kei2"],["。"]]}},
-    {"hk": "冇問題", "jp": "mou5 man6 tai4", "en": "no problem", "fr": "pas de problème",
-     "ex": {"en": "No problem, go ahead and use it.", "parts": [["冇問題","mou5 man6 tai4"],["，"],["你","nei5"],["用","jung6"],["啦","laa1"],["。"]]}},
-    {"hk": "係", "jp": "hai6", "en": "to be; yes", "fr": "être ; oui",
-     "note": "Links two nouns (I am Ka-ming). Alone, 係啊 hai6 aa3 means 'yes, that's right'.",
-     "ex": {"en": "I'm Ka-ming.", "parts": [["我","ngo5"],["係","hai6"],["家明","gaa1 ming4"],["。"]]}},
-    {"hk": "唔係", "jp": "m4 hai6", "en": "is not; no", "fr": "ne pas être ; non",
-     "ex": {"en": "No, I'm not Mr Chan.", "parts": [["唔係","m4 hai6"],["，"],["我","ngo5"],["唔係","m4 hai6"],["陳生","can4 saang1"],["。"]]}},
-    {"hk": "好", "jp": "hou2", "en": "good; OK; very", "fr": "bien ; d'accord ; très",
-     "note": "好 + adjective = very: 好甜 very sweet. 好啊！ = OK, sure!",
-     "ex": {"en": "OK! Let's go!", "parts": [["好","hou2"],["啊","aa3"],["！"],["我哋","ngo5 dei6"],["去","heoi3"],["啦","laa1"],["！"]]}},
-    {"hk": "你好嗎", "jp": "nei5 hou2 maa3", "en": "how are you?", "fr": "comment ça va ?",
-     "note": "Textbook phrase. Hongkongers more often say 最近點啊？ or 你好唔好啊？"},
-    {"hk": "最近點啊", "jp": "zeoi3 gan6 dim2 aa3", "en": "how have you been?", "fr": "comment ça va ces temps-ci ?",
-     "note": "Literally 'lately how?'. The everyday 'how are you'.",
-     "ex": {"en": "Mr Chan, how have you been?", "parts": [["陳生","can4 saang1"],["，"],["最近","zeoi3 gan6"],["點","dim2"],["啊","aa3"],["？"]]}},
-    {"hk": "幾好", "jp": "gei2 hou2", "en": "pretty good / not bad", "fr": "plutôt bien",
-     "note": "幾 before an adjective = 'quite'. 都幾好 = actually quite good.",
-     "ex": {"en": "Not bad. And you?", "parts": [["幾好","gei2 hou2"],["啊","aa3"],["，"],["你","nei5"],["呢","ne1"],["？"]]}},
-    {"hk": "叫", "jp": "giu3", "en": "to be called; to call", "fr": "s'appeler ; appeler",
-     "ex": {"en": "My big brother is called Ka-ming.", "parts": [["我","ngo5"],["哥哥","go4 go1"],["叫","giu3"],["家明","gaa1 ming4"],["。"]]}},
-    {"hk": "請問", "jp": "ceng2 man6", "en": "excuse me, may I ask…", "fr": "excusez-moi, puis-je demander…",
-     "note": "Polite opener before a question to a stranger.",
-     "ex": {"en": "Excuse me, are you Mr Chan?", "parts": [["請問","ceng2 man6"],["你","nei5"],["係唔係","hai6 m4 hai6"],["陳生","can4 saang1"],["啊","aa3"],["？"]]}},
-    {"hk": "得", "jp": "dak1", "en": "OK / that works / can", "fr": "d'accord / ça marche / pouvoir",
-     "note": "得唔得？ = Is that OK? Answer 得 (yes) or 唔得 (no).",
-     "ex": {"en": "Sure, no problem!", "parts": [["得","dak1"],["，"],["冇問題","mou5 man6 tai4"],["！"]]}}
-  ],
-  "sentences": [
-    {"en": "Good morning, Mr Chan! How have you been?", "parts": [["早晨","zou2 san4"],["，"],["陳生","can4 saang1"],["！"],["最近","zeoi3 gan6"],["點","dim2"],["啊","aa3"],["？"]]},
-    {"en": "Pretty good, thanks.", "parts": [["幾好","gei2 hou2"],["啊","aa3"],["，"],["多謝","do1 ze6"],["。"]]},
-    {"en": "Excuse me, are you Ka-ming?", "parts": [["唔好意思","m4 hou2 ji3 si1"],["，"],["你","nei5"],["係唔係","hai6 m4 hai6"],["家明","gaa1 ming4"],["啊","aa3"],["？"]]},
-    {"en": "No, I'm his big brother.", "parts": [["唔係","m4 hai6"],["，"],["我","ngo5"],["係","hai6"],["佢","keoi5"],["哥哥","go4 go1"],["。"]]},
-    {"en": "Sorry, I don't eat beef.", "parts": [["唔好意思","m4 hou2 ji3 si1"],["，"],["我","ngo5"],["唔","m4"],["食","sik6"],["牛肉","ngau4 juk6"],["。"]]},
-    {"en": "Never mind, no problem!", "parts": [["唔緊要","m4 gan2 jiu3"],["，"],["冇問題","mou5 man6 tai4"],["！"]]},
-    {"en": "Is Saturday OK for you?", "parts": [["你","nei5"],["星期六","sing1 kei4 luk6"],["得唔得","dak1 m4 dak1"],["啊","aa3"],["？"]]},
-    {"en": "Good night! I'm going to sleep now.", "parts": [["早唞","zou2 tau2"],["！"],["我","ngo5"],["而家","ji4 gaa1"],["去","heoi3"],["瞓覺","fan3 gaau3"],["。"]]},
-    {"en": "Bye-bye! See you on Sunday!", "parts": [["拜拜","baai1 baai3"],["！"],["星期日","sing1 kei4 jat6"],["見","gin3"],["！"]]},
-    {"en": "Thank you! I really like it!", "parts": [["多謝","do1 ze6"],["！"],["我","ngo5"],["好","hou2"],["鍾意","zung1 ji3"],["啊","aa3"],["！"]]},
-    {"en": "Excuse me, can I use the computer?", "parts": [["唔該","m4 goi1"],["，"],["我","ngo5"],["可唔可以","ho2 m4 ho2 ji5"],["用","jung6"],["部","bou6"],["電腦","din6 nou5"],["啊","aa3"],["？"]]},
-    {"en": "Is your big sister well?", "parts": [["你","nei5"],["家姐","gaa1 ze1"],["好唔好","hou2 m4 hou2"],["啊","aa3"],["？"]]},
-    {"en": "This isn't sweet, it's salty!", "parts": [["呢個","ni1 go3"],["唔係","m4 hai6"],["甜","tim4"],["嘅","ge3"],["，"],["係","hai6"],["鹹","haam4"],["嘅","ge3"],["！"]]}
-  ],
-  "grammar": [
-    {"title": "唔該 or 多謝?",
-     "explain": "唔該 thanks someone for doing something for you (a service, a small favour) and also means 'excuse me'. 多謝 thanks someone for a gift, a compliment or an invitation.",
-     "examples": [
-       {"en": "Excuse me, I'd like a glass of water.", "parts": [["唔該","m4 goi1"],["，"],["我","ngo5"],["想要","soeng2 jiu3"],["杯水","bui1 seoi2"],["。"]]},
-       {"en": "Thanks for the present!", "parts": [["多謝","do1 ze6"],["你","nei5"],["份","fan6"],["禮物","lai5 mat6"],["！"]]}
-     ]},
-    {"title": "Yes/no questions: A-唔-A",
-     "explain": "Repeat the verb with 唔 in the middle: 係唔係, 鍾唔鍾意. There's no single word for 'yes' or 'no' — answer with the verb (係 / 鍾意) or its negative (唔係 / 唔鍾意).",
-     "examples": [
-       {"en": "Are you Ka-ming?", "parts": [["你","nei5"],["係唔係","hai6 m4 hai6"],["家明","gaa1 ming4"],["啊","aa3"],["？"]]},
-       {"en": "Yes, I'm Ka-ming.", "parts": [["係","hai6"],["啊","aa3"],["，"],["我","ngo5"],["係","hai6"],["家明","gaa1 ming4"],["。"]]},
-       {"en": "Do you like fish? — No.", "parts": [["你","nei5"],["鍾唔鍾意","zung1 m4 zung1 ji3"],["食","sik6"],["魚","jyu2"],["啊","aa3"],["？"],["唔鍾意","m4 zung1 ji3"],["。"]]}
-     ]},
-    {"title": "好 = very",
-     "explain": "Before an adjective, 好 means 'very' (好難, 好甜). On its own, 好 means 'good' or 'OK'.",
-     "examples": [
-       {"en": "You're so nice!", "parts": [["你","nei5"],["好","hou2"],["好人","hou2 jan4"],["啊","aa3"],["！"]]},
-       {"en": "OK, no problem!", "parts": [["好","hou2"],["啊","aa3"],["，"],["冇問題","mou5 man6 tai4"],["！"]]}
-     ]}
-  ],
-  "dialogue": {
-    "title": "Bumping into a neighbour",
-    "lines": [
-      {"spk": "A", "en": "Oops, sorry!", "parts": [["哎呀","ai1 jaa4"],["，"],["對唔住","deoi3 m4 zyu6"],["！"]]},
-      {"spk": "B", "en": "It's fine. Oh, Ka-ming, good morning!", "parts": [["唔緊要","m4 gan2 jiu3"],["。"],["咦","ji2"],["，"],["家明","gaa1 ming4"],["，"],["早晨","zou2 san4"],["！"]]},
-      {"spk": "A", "en": "Good morning, Mr Chan! How have you been?", "parts": [["陳生","can4 saang1"],["，"],["早晨","zou2 san4"],["！"],["最近","zeoi3 gan6"],["點","dim2"],["啊","aa3"],["？"]]},
-      {"spk": "B", "en": "Pretty good, thanks. Where are you going?", "parts": [["幾好","gei2 hou2"],["，"],["多謝","do1 ze6"],["。"],["你","nei5"],["去","heoi3"],["邊度","bin1 dou6"],["啊","aa3"],["？"]]},
-      {"spk": "A", "en": "I'm going running.", "parts": [["我","ngo5"],["去","heoi3"],["跑步","paau2 bou6"],["。"]]},
-      {"spk": "B", "en": "But it's raining!", "parts": [["落緊雨","lok6 gan2 jyu5"],["喎","wo3"],["！"]]},
-      {"spk": "A", "en": "No problem! I like running in the rain!", "parts": [["冇問題","mou5 man6 tai4"],["！"],["我","ngo5"],["鍾意","zung1 ji3"],["落雨","lok6 jyu5"],["跑步","paau2 bou6"],["！"]]},
-      {"spk": "B", "en": "Haha, OK then, bye!", "parts": [["哈哈","haa1 haa1"],["，"],["噉","gam2"],["拜拜","baai1 baai3"],["啦","laa1"],["！"]]},
-      {"spk": "A", "en": "Bye!", "parts": [["拜拜","baai1 baai3"],["！"]]}
-    ],
-    "questions": [
-      {"q": "How has Mr Chan been?", "options": ["Pretty good", "Not well", "Very busy", "Tired"], "answer": 0},
-      {"q": "Where is Ka-ming going?", "options": ["Running", "Home", "Shopping", "To bed"], "answer": 0},
-      {"q": "What's the weather like?", "options": ["It's raining", "It's sunny", "It's snowing", "It's windy"], "answer": 0},
-      {"q": "What time of day is it?", "options": ["Morning", "Afternoon", "Evening", "Late at night"], "answer": 0}
+ "id": "u03",
+ "level": 1,
+ "title": "Hello & Thanks",
+ "emoji": "👋",
+ "desc": "Greet people, say thanks and sorry, and get by when you don't understand",
+ "words": [
+  {
+   "hk": "你好",
+   "jp": "nei5 hou2",
+   "en": "hello",
+   "fr": "bonjour / salut",
+   "note": "Fine with strangers. Friends just say the person's name, or 早晨 (zou2 san4) in the morning. The textbook 你好嗎 (nei5 hou2 maa3)？ sounds stiff — see 最近點啊 (zeoi3 gan6 dim2 aa3).",
+   "ex": {
+    "en": "Hello, I'm Ka-ming.",
+    "parts": [
+     [
+      "你好",
+      "nei5 hou2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "係",
+      "hai6"
+     ],
+     [
+      "家明",
+      "gaa1 ming4"
+     ],
+     [
+      "。"
+     ]
     ]
+   }
+  },
+  {
+   "hk": "早晨",
+   "jp": "zou2 san4",
+   "en": "good morning",
+   "fr": "bonjour (le matin)",
+   "note": "Used until about 11 a.m. There is no common 'good afternoon' — just say 你好 (nei5 hou2).",
+   "ex": {
+    "en": "Good morning, Mr Chan!",
+    "parts": [
+     [
+      "早晨",
+      "zou2 san4"
+     ],
+     [
+      "，"
+     ],
+     [
+      "陳生",
+      "can4 saang1"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "早唞",
+   "jp": "zou2 tau2",
+   "en": "good night",
+   "fr": "bonne nuit",
+   "note": "Literally 'rest early'. Said when going to bed or leaving late at night — not 'good evening'.",
+   "ex": {
+    "en": "Good night! I'm off to bed.",
+    "parts": [
+     [
+      "早唞",
+      "zou2 tau2"
+     ],
+     [
+      "！"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "去",
+      "heoi3"
+     ],
+     [
+      "瞓覺",
+      "fan3 gaau3"
+     ],
+     [
+      "喇",
+      "laa3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "拜拜",
+   "jp": "baai1 baai3",
+   "en": "bye-bye",
+   "fr": "salut / bye",
+   "note": "From English 'bye-bye'; the most common goodbye in Hong Kong. 再見 (zoi3 gin3) is more formal.",
+   "ex": {
+    "en": "OK, bye!",
+    "parts": [
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "拜拜",
+      "baai1 baai3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "唔該",
+   "jp": "m4 goi1",
+   "en": "thanks (for a service); excuse me",
+   "fr": "merci (pour un service) ; excusez-moi",
+   "note": "Use it when someone does something for you, to call a waiter, or to get past people. 唔該晒 (m4 goi1 saai3) = thanks a lot. The reply is 唔使唔該 (m4 sai2 m4 goi1) 'no need to thank'.",
+   "ex": {
+    "en": "Excuse me, I'd like some pork.",
+    "parts": [
+     [
+      "唔該",
+      "m4 goi1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "想要",
+      "soeng2 jiu3"
+     ],
+     [
+      "豬肉",
+      "zyu1 juk6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "多謝",
+   "jp": "do1 ze6",
+   "en": "thank you (for a gift / compliment)",
+   "fr": "merci (pour un cadeau)",
+   "note": "For gifts, compliments and invitations. 多謝晒 (do1 ze6 saai3) = thanks very much.",
+   "ex": {
+    "en": "Thank you!",
+    "parts": [
+     [
+      "多謝",
+      "do1 ze6"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "對唔住",
+   "jp": "deoi3 m4 zyu6",
+   "en": "sorry",
+   "fr": "pardon / désolé",
+   "note": "A real apology. For small things (interrupting, saying no) use 唔好意思 (m4 hou2 ji3 si1).",
+   "ex": {
+    "en": "Sorry! Are you OK?",
+    "parts": [
+     [
+      "對唔住",
+      "deoi3 m4 zyu6"
+     ],
+     [
+      "！"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "冇嘢",
+      "mou5 je5"
+     ],
+     [
+      "吖嘛",
+      "aa1 maa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "唔好意思",
+   "jp": "m4 hou2 ji3 si1",
+   "en": "excuse me / sorry (light)",
+   "fr": "excusez-moi / désolé (léger)",
+   "ex": {
+    "en": "Sorry, I can't go.",
+    "parts": [
+     [
+      "唔好意思",
+      "m4 hou2 ji3 si1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "去唔到",
+      "heoi3 m4 dou2"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "唔緊要",
+   "jp": "m4 gan2 jiu3",
+   "en": "never mind / it doesn't matter",
+   "fr": "ce n'est pas grave",
+   "ex": {
+    "en": "Never mind, I'm fine.",
+    "parts": [
+     [
+      "唔緊要",
+      "m4 gan2 jiu3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "冇嘢",
+      "mou5 je5"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "冇問題",
+   "jp": "mou5 man6 tai4",
+   "en": "no problem",
+   "fr": "pas de problème",
+   "ex": {
+    "en": "No problem, go ahead and use it!",
+    "parts": [
+     [
+      "冇問題",
+      "mou5 man6 tai4"
+     ],
+     [
+      "，"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "用",
+      "jung6"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "最近點啊",
+   "jp": "zeoi3 gan6 dim2 aa3",
+   "en": "how have you been?",
+   "fr": "comment ça va ces temps-ci ?",
+   "note": "Literally 'lately how?'. The everyday 'how are you'.",
+   "ex": {
+    "en": "Mr Chan, how have you been?",
+    "parts": [
+     [
+      "陳生",
+      "can4 saang1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "最近點啊",
+      "zeoi3 gan6 dim2 aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "幾好",
+   "jp": "gei2 hou2",
+   "en": "pretty good / not bad",
+   "fr": "plutôt bien",
+   "note": "幾 (gei2) before an adjective = 'quite'. 都幾好 (dou1 gei2 hou2) = actually quite good.",
+   "ex": {
+    "en": "He's pretty good, thanks.",
+    "parts": [
+     [
+      "佢",
+      "keoi5"
+     ],
+     [
+      "幾好",
+      "gei2 hou2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "多謝",
+      "do1 ze6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "啊",
+   "jp": "aa3",
+   "en": "(softens a question or reply)",
+   "fr": "(adoucit une question ou réponse)",
+   "note": "At the end of a sentence it makes you sound friendly instead of blunt: 好啊 (hou2 aa3)！ = Sure!",
+   "ex": {
+    "en": "What are you eating?",
+    "parts": [
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "食",
+      "sik6"
+     ],
+     [
+      "咩",
+      "me1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "呢",
+   "jp": "ne1",
+   "en": "and…? / what about…?",
+   "fr": "et… ? (et toi ?)",
+   "note": "你呢 (nei5 ne1)？ = And you? Not the same as 呢 (ni1) 'this' in 呢個 (ni1 go3).",
+   "ex": {
+    "en": "I don't eat pork — what about you?",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "唔",
+      "m4"
+     ],
+     [
+      "食",
+      "sik6"
+     ],
+     [
+      "豬肉",
+      "zyu1 juk6"
+     ],
+     [
+      "，"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "呢",
+      "ne1"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "啦",
+   "jp": "laa1",
+   "en": "(suggestion: go ahead / let's)",
+   "fr": "(suggestion : vas-y / allons-y)",
+   "note": "Makes an invitation or a friendly push: 去啦 (heoi3 laa1)！ = Come on, let's go!",
+   "ex": {
+    "en": "OK, let's go!",
+    "parts": [
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "去",
+      "heoi3"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "我唔明",
+   "jp": "ngo5 m4 ming4",
+   "en": "I don't understand",
+   "fr": "je ne comprends pas",
+   "note": "Your most useful survival phrase. 明 (ming4) = to understand.",
+   "ex": {
+    "en": "Sorry, I don't understand.",
+    "parts": [
+     [
+      "對唔住",
+      "deoi3 m4 zyu6"
+     ],
+     [
+      "，"
+     ],
+     [
+      "我唔明",
+      "ngo5 m4 ming4"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "講慢啲",
+   "jp": "gong2 maan6 di1",
+   "en": "speak more slowly",
+   "fr": "parler plus lentement",
+   "note": "慢 (maan6) = slow, 啲 (di1) = a bit more. Say it with 唔該 (m4 goi1): 唔該講慢啲 (m4 goi1 gong2 maan6 di1)！",
+   "ex": {
+    "en": "Could you speak more slowly, please?",
+    "parts": [
+     [
+      "唔該",
+      "m4 goi1"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "講慢啲",
+      "gong2 maan6 di1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "再講多次",
+   "jp": "zoi3 gong2 do1 ci3",
+   "en": "say it again",
+   "fr": "répéter (redire une fois)",
+   "note": "Literally 'again say one more time'. 唔該再講多次 (m4 goi1 zoi3 gong2 do1 ci3) = Could you say that again, please?",
+   "ex": {
+    "en": "Pardon? Please say that again.",
+    "parts": [
+     [
+      "咩話",
+      "me1 waa2"
+     ],
+     [
+      "？"
+     ],
+     [
+      "唔該",
+      "m4 goi1"
+     ],
+     [
+      "再講多次",
+      "zoi3 gong2 do1 ci3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "咩話",
+   "jp": "me1 waa2",
+   "en": "pardon? / what (did you say)?",
+   "fr": "pardon ? / quoi ?",
+   "note": "Casual and very common. With strangers, add 唔好意思 (m4 hou2 ji3 si1) first.",
+   "ex": {
+    "en": "What? Where are you going?",
+    "parts": [
+     [
+      "咩話",
+      "me1 waa2"
+     ],
+     [
+      "？"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "去",
+      "heoi3"
+     ],
+     [
+      "邊度",
+      "bin1 dou6"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "點講",
+   "jp": "dim2 gong2",
+   "en": "how do you say (it)?",
+   "fr": "comment on dit ?",
+   "note": "X 廣東話點講 (gwong2 dung1 waa2 dim2 gong2)？ = How do you say X in Cantonese? 廣東話 (gwong2 dung1 waa2) = Cantonese.",
+   "ex": {
+    "en": "How do you say 'thanks' in Cantonese?",
+    "parts": [
+     [
+      "「"
+     ],
+     [
+      "多謝",
+      "do1 ze6"
+     ],
+     [
+      "」"
+     ],
+     [
+      "廣東話",
+      "gwong2 dung1 waa2"
+     ],
+     [
+      "點講",
+      "dim2 gong2"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "洗手間",
+   "jp": "sai2 sau2 gaan1",
+   "en": "toilet / restroom",
+   "fr": "toilettes",
+   "note": "The polite word in restaurants and malls. At home people say 廁所 (ci3 so2).",
+   "ex": {
+    "en": "Excuse me, where's the toilet?",
+    "parts": [
+     [
+      "唔該",
+      "m4 goi1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "洗手間",
+      "sai2 sau2 gaan1"
+     ],
+     [
+      "喺",
+      "hai2"
+     ],
+     [
+      "邊度",
+      "bin1 dou6"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "冇嘢",
+   "jp": "mou5 je5",
+   "en": "I'm fine / it's nothing",
+   "fr": "ça va / ce n'est rien",
+   "note": "Literally 'no thing'. 你冇嘢吖嘛 (nei5 mou5 je5 aa1 maa3)？ = You OK? — 冇嘢 (mou5 je5)！ = I'm fine!",
+   "ex": {
+    "en": "Nothing — I'm just watching TV.",
+    "parts": [
+     [
+      "冇嘢",
+      "mou5 je5"
+     ],
+     [
+      "，"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "睇",
+      "tai2"
+     ],
+     [
+      "電視",
+      "din6 si6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "嘩",
+   "jp": "waa1",
+   "en": "wow!",
+   "fr": "waouh !",
+   "note": "Surprise, good or bad. Said with feeling and often drawn out — many people say it waa3.",
+   "ex": {
+    "en": "Wow, that's salty!",
+    "parts": [
+     [
+      "嘩",
+      "waa1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "鹹",
+      "haam4"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "好嘢",
+   "jp": "hou2 je5",
+   "en": "yay! / great!",
+   "fr": "super ! / génial !",
+   "note": "Shout it when something good happens. The opposite feeling is 唉 (aai1) 'sigh'.",
+   "ex": {
+    "en": "Yay! Let's go shopping!",
+    "parts": [
+     [
+      "好嘢",
+      "hou2 je5"
+     ],
+     [
+      "！"
+     ],
+     [
+      "去",
+      "heoi3"
+     ],
+     [
+      "買嘢",
+      "maai5 je5"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "一陣見",
+   "jp": "jat1 zan6 gin3",
+   "en": "see you in a bit",
+   "fr": "à tout à l'heure",
+   "note": "一陣 (jat1 zan6) = a moment, 見 (gin3) = see. For later the same day.",
+   "ex": {
+    "en": "OK, see you in a bit!",
+    "parts": [
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "一陣見",
+      "jat1 zan6 gin3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "好彩",
+   "jp": "hou2 coi2",
+   "en": "luckily / phew, lucky!",
+   "fr": "heureusement / quelle chance !",
+   "note": "彩 (coi2) means 'luck' here, as in a lucky draw. Said alone, 好彩 (hou2 coi2)！ = Phew, lucky!",
+   "ex": {
+    "en": "Luckily, I'm fine.",
+    "parts": [
+     [
+      "好彩",
+      "hou2 coi2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "冇嘢",
+      "mou5 je5"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
   }
+ ],
+ "sentences": [
+  {
+   "en": "Good morning, Mr Chan! How have you been?",
+   "parts": [
+    [
+     "早晨",
+     "zou2 san4"
+    ],
+    [
+     "，"
+    ],
+    [
+     "陳生",
+     "can4 saang1"
+    ],
+    [
+     "！"
+    ],
+    [
+     "最近點啊",
+     "zeoi3 gan6 dim2 aa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  },
+  {
+   "en": "Pretty good, thanks. And you?",
+   "parts": [
+    [
+     "幾好",
+     "gei2 hou2"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "，"
+    ],
+    [
+     "多謝",
+     "do1 ze6"
+    ],
+    [
+     "。"
+    ],
+    [
+     "你",
+     "nei5"
+    ],
+    [
+     "呢",
+     "ne1"
+    ],
+    [
+     "？"
+    ]
+   ]
+  },
+  {
+   "en": "Excuse me, are you Ka-ming?",
+   "parts": [
+    [
+     "唔好意思",
+     "m4 hou2 ji3 si1"
+    ],
+    [
+     "，"
+    ],
+    [
+     "你",
+     "nei5"
+    ],
+    [
+     "係唔係",
+     "hai6 m4 hai6"
+    ],
+    [
+     "家明",
+     "gaa1 ming4"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  },
+  {
+   "en": "No, I'm his big brother.",
+   "parts": [
+    [
+     "唔係",
+     "m4 hai6"
+    ],
+    [
+     "，"
+    ],
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "係",
+     "hai6"
+    ],
+    [
+     "佢",
+     "keoi5"
+    ],
+    [
+     "哥哥",
+     "go4 go1"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Sorry, I don't eat beef.",
+   "parts": [
+    [
+     "唔好意思",
+     "m4 hou2 ji3 si1"
+    ],
+    [
+     "，"
+    ],
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "唔",
+     "m4"
+    ],
+    [
+     "食",
+     "sik6"
+    ],
+    [
+     "牛肉",
+     "ngau4 juk6"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Please speak more slowly — I don't understand.",
+   "parts": [
+    [
+     "唔該",
+     "m4 goi1"
+    ],
+    [
+     "你",
+     "nei5"
+    ],
+    [
+     "講慢啲",
+     "gong2 maan6 di1"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "，"
+    ],
+    [
+     "我唔明",
+     "ngo5 m4 ming4"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Luckily, he's OK.",
+   "parts": [
+    [
+     "好彩",
+     "hou2 coi2"
+    ],
+    [
+     "，"
+    ],
+    [
+     "佢",
+     "keoi5"
+    ],
+    [
+     "冇嘢",
+     "mou5 je5"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Good night, big sister!",
+   "parts": [
+    [
+     "家姐",
+     "gaa1 ze1"
+    ],
+    [
+     "，"
+    ],
+    [
+     "早唞",
+     "zou2 tau2"
+    ],
+    [
+     "！"
+    ]
+   ]
+  },
+  {
+   "en": "Thank you! I really like it!",
+   "parts": [
+    [
+     "多謝",
+     "do1 ze6"
+    ],
+    [
+     "！"
+    ],
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "好",
+     "hou2"
+    ],
+    [
+     "鍾意",
+     "zung1 ji3"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "！"
+    ]
+   ]
+  },
+  {
+   "en": "Is your big sister well?",
+   "parts": [
+    [
+     "你",
+     "nei5"
+    ],
+    [
+     "家姐",
+     "gaa1 ze1"
+    ],
+    [
+     "好唔好",
+     "hou2 m4 hou2"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  },
+  {
+   "en": "No problem, I'll go with you.",
+   "parts": [
+    [
+     "冇問題",
+     "mou5 man6 tai4"
+    ],
+    [
+     "，"
+    ],
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "同",
+     "tung4"
+    ],
+    [
+     "你",
+     "nei5"
+    ],
+    [
+     "去",
+     "heoi3"
+    ],
+    [
+     "啦",
+     "laa1"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Bye, see you in a bit!",
+   "parts": [
+    [
+     "拜拜",
+     "baai1 baai3"
+    ],
+    [
+     "，"
+    ],
+    [
+     "一陣見",
+     "jat1 zan6 gin3"
+    ],
+    [
+     "！"
+    ]
+   ]
+  },
+  {
+   "en": "Wow, your little brother really loves fish!",
+   "parts": [
+    [
+     "嘩",
+     "waa1"
+    ],
+    [
+     "，"
+    ],
+    [
+     "你",
+     "nei5"
+    ],
+    [
+     "細佬",
+     "sai3 lou2"
+    ],
+    [
+     "好",
+     "hou2"
+    ],
+    [
+     "鍾意",
+     "zung1 ji3"
+    ],
+    [
+     "食",
+     "sik6"
+    ],
+    [
+     "魚",
+     "jyu2"
+    ],
+    [
+     "！"
+    ]
+   ]
+  }
+ ],
+ "grammar": [
+  {
+   "title": "唔該 (m4 goi1) or 多謝 (do1 ze6)?",
+   "explain": "唔該 (m4 goi1) thanks someone for doing something for you (a service, a small favour) and also means 'excuse me'. 多謝 (do1 ze6) thanks someone for a gift, a compliment or an invitation.",
+   "examples": [
+    {
+     "en": "Excuse me, I'd like a napkin.",
+     "parts": [
+      [
+       "唔該",
+       "m4 goi1"
+      ],
+      [
+       "，"
+      ],
+      [
+       "我",
+       "ngo5"
+      ],
+      [
+       "想要",
+       "soeng2 jiu3"
+      ],
+      [
+       "紙巾",
+       "zi2 gan1"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "Thank you, I love it!",
+     "parts": [
+      [
+       "多謝",
+       "do1 ze6"
+      ],
+      [
+       "你",
+       "nei5"
+      ],
+      [
+       "，"
+      ],
+      [
+       "我",
+       "ngo5"
+      ],
+      [
+       "好",
+       "hou2"
+      ],
+      [
+       "鍾意",
+       "zung1 ji3"
+      ],
+      [
+       "！"
+      ]
+     ]
+    }
+   ],
+   "after": "多謝"
+  },
+  {
+   "title": "Yes/no questions: A-唔 (m4)-A",
+   "explain": "Repeat the verb with 唔 (m4) in the middle: 係唔係 (hai6 m4 hai6), 食唔食 (sik6 m4 sik6); with two-syllable verbs only the first syllable repeats: 鍾唔鍾意 (zung1 m4 zung1 ji3). There's no single word for 'yes' or 'no' — answer with the verb (係 (hai6)) or its negative (唔係 (m4 hai6)).",
+   "examples": [
+    {
+     "en": "Are you Ka-ming?",
+     "parts": [
+      [
+       "你",
+       "nei5"
+      ],
+      [
+       "係唔係",
+       "hai6 m4 hai6"
+      ],
+      [
+       "家明",
+       "gaa1 ming4"
+      ],
+      [
+       "啊",
+       "aa3"
+      ],
+      [
+       "？"
+      ]
+     ]
+    },
+    {
+     "en": "Yes, I'm Ka-ming.",
+     "parts": [
+      [
+       "係",
+       "hai6"
+      ],
+      [
+       "啊",
+       "aa3"
+      ],
+      [
+       "，"
+      ],
+      [
+       "我",
+       "ngo5"
+      ],
+      [
+       "係",
+       "hai6"
+      ],
+      [
+       "家明",
+       "gaa1 ming4"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "Do you eat fish? — No.",
+     "parts": [
+      [
+       "你",
+       "nei5"
+      ],
+      [
+       "食唔食",
+       "sik6 m4 sik6"
+      ],
+      [
+       "魚",
+       "jyu2"
+      ],
+      [
+       "啊",
+       "aa3"
+      ],
+      [
+       "？"
+      ],
+      [
+       "唔",
+       "m4"
+      ],
+      [
+       "食",
+       "sik6"
+      ],
+      [
+       "。"
+      ]
+     ]
+    }
+   ],
+   "after": "最近點啊"
+  },
+  {
+   "title": "啊 (aa3) makes you sound friendly",
+   "explain": "A question or answer without a final particle can sound blunt. Add 啊 (aa3) at the end and it sounds warm and natural.",
+   "examples": [
+    {
+     "en": "Where are you going?",
+     "parts": [
+      [
+       "你",
+       "nei5"
+      ],
+      [
+       "去",
+       "heoi3"
+      ],
+      [
+       "邊度",
+       "bin1 dou6"
+      ],
+      [
+       "啊",
+       "aa3"
+      ],
+      [
+       "？"
+      ]
+     ]
+    },
+    {
+     "en": "Sure!",
+     "parts": [
+      [
+       "好",
+       "hou2"
+      ],
+      [
+       "啊",
+       "aa3"
+      ],
+      [
+       "！"
+      ]
+     ]
+    }
+   ],
+   "after": "啊"
+  },
+  {
+   "title": "呢 (ne1) = and…?",
+   "explain": "Put 呢 (ne1) after a person or thing to bounce the question back: 你呢 (nei5 ne1)？ = And you? 你細佬呢 (nei5 sai3 lou2 ne1)？ = And your little brother?",
+   "examples": [
+    {
+     "en": "I'm pretty good. And you?",
+     "parts": [
+      [
+       "我",
+       "ngo5"
+      ],
+      [
+       "幾好",
+       "gei2 hou2"
+      ],
+      [
+       "，"
+      ],
+      [
+       "你",
+       "nei5"
+      ],
+      [
+       "呢",
+       "ne1"
+      ],
+      [
+       "？"
+      ]
+     ]
+    },
+    {
+     "en": "What about your big sister?",
+     "parts": [
+      [
+       "你",
+       "nei5"
+      ],
+      [
+       "家姐",
+       "gaa1 ze1"
+      ],
+      [
+       "呢",
+       "ne1"
+      ],
+      [
+       "？"
+      ]
+     ]
+    }
+   ],
+   "after": "呢"
+  },
+  {
+   "title": "啦 (laa1) = go ahead / let's",
+   "explain": "At the end of a sentence, 啦 (laa1) turns it into a friendly suggestion or invitation.",
+   "examples": [
+    {
+     "en": "Go on, eat!",
+     "parts": [
+      [
+       "你",
+       "nei5"
+      ],
+      [
+       "食",
+       "sik6"
+      ],
+      [
+       "啦",
+       "laa1"
+      ],
+      [
+       "！"
+      ]
+     ]
+    },
+    {
+     "en": "Go ahead, have a look!",
+     "parts": [
+      [
+       "你",
+       "nei5"
+      ],
+      [
+       "睇",
+       "tai2"
+      ],
+      [
+       "啦",
+       "laa1"
+      ],
+      [
+       "！"
+      ]
+     ]
+    }
+   ],
+   "after": "啦"
+  }
+ ],
+ "dialogue": {
+  "title": "Bumping into a neighbour",
+  "lines": [
+   {
+    "spk": "A",
+    "en": "Oops, sorry!",
+    "parts": [
+     [
+      "哎呀",
+      "ai1 jaa4"
+     ],
+     [
+      "，"
+     ],
+     [
+      "對唔住",
+      "deoi3 m4 zyu6"
+     ],
+     [
+      "！"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "I'm fine, never mind. Oh, Ka-ming, good morning!",
+    "parts": [
+     [
+      "冇嘢",
+      "mou5 je5"
+     ],
+     [
+      "，"
+     ],
+     [
+      "唔緊要",
+      "m4 gan2 jiu3"
+     ],
+     [
+      "。"
+     ],
+     [
+      "嘩",
+      "waa1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "家明",
+      "gaa1 ming4"
+     ],
+     [
+      "，"
+     ],
+     [
+      "早晨",
+      "zou2 san4"
+     ],
+     [
+      "！"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "Good morning, Mr Chan! How have you been?",
+    "parts": [
+     [
+      "陳生",
+      "can4 saang1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "早晨",
+      "zou2 san4"
+     ],
+     [
+      "！"
+     ],
+     [
+      "最近點啊",
+      "zeoi3 gan6 dim2 aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Pretty good, thanks. Where are you going?",
+    "parts": [
+     [
+      "幾好",
+      "gei2 hou2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "多謝",
+      "do1 ze6"
+     ],
+     [
+      "。"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "去",
+      "heoi3"
+     ],
+     [
+      "邊度",
+      "bin1 dou6"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "I'm going running.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "去",
+      "heoi3"
+     ],
+     [
+      "跑步",
+      "paau2 bou6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "But it's raining!",
+    "parts": [
+     [
+      "落緊雨",
+      "lok6 gan2 jyu5"
+     ],
+     [
+      "喎",
+      "wo3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "Pardon?",
+    "parts": [
+     [
+      "咩話",
+      "me1 waa2"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "It's RAINING!",
+    "parts": [
+     [
+      "落緊雨",
+      "lok6 gan2 jyu5"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "！"
+     ],
+     [
+      "落緊雨",
+      "lok6 gan2 jyu5"
+     ],
+     [
+      "！"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "No problem! I like running in the rain!",
+    "parts": [
+     [
+      "冇問題",
+      "mou5 man6 tai4"
+     ],
+     [
+      "！"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "鍾意",
+      "zung1 ji3"
+     ],
+     [
+      "落雨",
+      "lok6 jyu5"
+     ],
+     [
+      "跑步",
+      "paau2 bou6"
+     ],
+     [
+      "！"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Haha, OK then, bye!",
+    "parts": [
+     [
+      "哈哈",
+      "haa1 haa1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "噉",
+      "gam2"
+     ],
+     [
+      "拜拜",
+      "baai1 baai3"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "！"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "Bye, see you later!",
+    "parts": [
+     [
+      "拜拜",
+      "baai1 baai3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "一陣見",
+      "jat1 zan6 gin3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "q": "How has Mr Chan been?",
+    "options": [
+     "Pretty good",
+     "Not well",
+     "Very busy",
+     "Tired"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Where is Ka-ming going?",
+    "options": [
+     "Running",
+     "Home",
+     "Shopping",
+     "To bed"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Why does Mr Chan repeat himself?",
+    "options": [
+     "Ka-ming didn't hear him",
+     "Ka-ming is angry",
+     "He forgot",
+     "He's on the phone"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What time of day is it?",
+    "options": [
+     "Morning",
+     "Afternoon",
+     "Evening",
+     "Late at night"
+    ],
+    "answer": 0
+   }
+  ],
+  "gloss": [
+   [
+    "哎呀",
+    "ai1 jaa4",
+    "oops! / oh no!"
+   ],
+   [
+    "落雨",
+    "lok6 jyu5",
+    "to rain"
+   ],
+   [
+    "哈哈",
+    "haa1 haa1",
+    "haha"
+   ],
+   [
+    "噉",
+    "gam2",
+    "so / then"
+   ]
+  ]
+ },
+ "toneLesson": {
+  "title": "Level tones: 1, 3 and 6",
+  "card": {
+   "title": "Three flat tones",
+   "explain": "Tones 1, 3 and 6 don't move: tone 1 is high, tone 3 is your normal mid pitch, tone 6 sits just under it. Hold the pitch steady from start to finish.",
+   "examples": [
+    {
+     "en": "poem, try, matter",
+     "parts": [
+      [
+       "詩",
+       "si1"
+      ],
+      [
+       "試",
+       "si3"
+      ],
+      [
+       "事",
+       "si6"
+      ]
+     ]
+    },
+    {
+     "en": "know (how to), eat",
+     "parts": [
+      [
+       "識",
+       "sik1"
+      ],
+      [
+       "食",
+       "sik6"
+      ]
+     ]
+    }
+   ]
+  },
+  "items": [
+   {
+    "hk": "詩",
+    "jp": "si1",
+    "en": "poem",
+    "note": "Tone 1 · high and flat."
+   },
+   {
+    "hk": "試",
+    "jp": "si3",
+    "en": "to try",
+    "note": "Tone 3 · mid and flat — your normal speaking pitch."
+   },
+   {
+    "hk": "事",
+    "jp": "si6",
+    "en": "matter / thing",
+    "note": "Tone 6 · low and flat, just under tone 3."
+   },
+   {
+    "hk": "識",
+    "jp": "sik1",
+    "en": "to know (how to)",
+    "note": "Tone 1 · high, cut short by the -k."
+   },
+   {
+    "hk": "食",
+    "jp": "sik6",
+    "en": "to eat",
+    "note": "Tone 6 · low, cut short by the -k. Same syllable as 識 (sik1)!"
+   },
+   {
+    "hk": "衣",
+    "jp": "ji1",
+    "en": "clothing",
+    "note": "Tone 1 · high and flat."
+   },
+   {
+    "hk": "意",
+    "jp": "ji3",
+    "en": "meaning / idea",
+    "note": "Tone 3 · mid and flat, as in 鍾意 (zung1 ji3)."
+   },
+   {
+    "hk": "二",
+    "jp": "ji6",
+    "en": "two (counting)",
+    "note": "Tone 6 · low and flat."
+   }
+  ],
+  "pairs": [
+   [
+    "詩",
+    "試"
+   ],
+   [
+    "試",
+    "事"
+   ],
+   [
+    "識",
+    "食"
+   ],
+   [
+    "衣",
+    "意"
+   ],
+   [
+    "意",
+    "二"
+   ]
+  ]
+ }
 }

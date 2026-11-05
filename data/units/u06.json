@@ -1,121 +1,1838 @@
 {
-  "id": "u06",
-  "level": 1,
-  "title": "Days & Time",
-  "emoji": "🕒",
-  "desc": "Tell the time, talk about today, tomorrow and yesterday, and make (or miss!) appointments",
-  "words": [
-    {"hk": "今日", "jp": "gam1 jat6", "en": "today", "fr": "aujourd'hui",
-     "ex": {"en": "It's raining today.", "parts": [["今日","gam1 jat6"],["落緊雨","lok6 gan2 jyu5"],["。"]]}},
-    {"hk": "聽日", "jp": "ting1 jat6", "en": "tomorrow", "fr": "demain",
-     "note": "聽 is ting1 here (as 'listen' it's teng1). In fast speech it often sounds like 'tim1 jat6'.",
-     "ex": {"en": "See you tomorrow!", "parts": [["聽日","ting1 jat6"],["見","gin3"],["！"]]}},
-    {"hk": "尋日", "jp": "cam4 jat6", "en": "yesterday", "fr": "hier",
-     "note": "Also written 琴日 kam4 jat6 — same word, two pronunciations.",
-     "ex": {"en": "Where did you go yesterday?", "parts": [["你","nei5"],["尋日","cam4 jat6"],["去咗","heoi3 zo2"],["邊度","bin1 dou6"],["啊","aa3"],["？"]]}},
-    {"hk": "後日", "jp": "hau6 jat6", "en": "the day after tomorrow", "fr": "après-demain",
-     "note": "And 前日 cin4 jat6 = the day before yesterday.",
-     "ex": {"en": "The day after tomorrow is my birthday.", "parts": [["後日","hau6 jat6"],["係","hai6"],["我","ngo5"],["生日","saang1 jat6"],["。"]]}},
-    {"hk": "禮拜", "jp": "lai5 baai3", "en": "week (colloquial)", "fr": "semaine (familier)",
-     "note": "Same as 星期 but more casual: 禮拜一 = Monday, 禮拜日 = Sunday.",
-     "ex": {"en": "See you next week!", "parts": [["下個","haa6 go3"],["禮拜","lai5 baai3"],["見","gin3"],["！"]]}},
-    {"hk": "幾點", "jp": "gei2 dim2", "en": "what time", "fr": "quelle heure",
-     "ex": {"en": "What time is it now?", "parts": [["而家","ji4 gaa1"],["幾點","gei2 dim2"],["啊","aa3"],["？"]]}},
-    {"hk": "點鐘", "jp": "dim2 zung1", "en": "o'clock", "fr": "heure(s)",
-     "note": "In speech 鐘 is usually dropped: 三點 = three o'clock.",
-     "ex": {"en": "It's three o'clock now.", "parts": [["而家","ji4 gaa1"],["三點鐘","saam1 dim2 zung1"],["。"]]}},
-    {"hk": "半", "jp": "bun3", "en": "half", "fr": "demi(e)",
-     "note": "七點半 = 7:30. 半個鐘 = half an hour.",
-     "ex": {"en": "I get up at half past seven.", "parts": [["我","ngo5"],["七點半","cat1 dim2 bun3"],["起身","hei2 san1"],["。"]]}},
-    {"hk": "個字", "jp": "go3 zi6", "en": "five-minute unit (on the clock)", "fr": "tranche de cinq minutes",
-     "note": "Counts the numbers on a clock face: 三點三個字 = 3:15, 兩個字 = 10 minutes. Often just 三點三.",
-     "ex": {"en": "He's ten minutes late.", "parts": [["佢","keoi5"],["遲咗","ci4 zo2"],["兩個字","loeng5 go3 zi6"],["。"]]}},
-    {"hk": "分鐘", "jp": "fan1 zung1", "en": "minute", "fr": "minute",
-     "ex": {"en": "Wait ten minutes for me, please.", "parts": [["等","dang2"],["我","ngo5"],["十分鐘","sap6 fan1 zung1"],["啦","laa1"],["。"]]}},
-    {"hk": "朝早", "jp": "ziu1 zou2", "en": "morning", "fr": "matin",
-     "ex": {"en": "I drink coffee in the morning.", "parts": [["我","ngo5"],["朝早","ziu1 zou2"],["飲","jam2"],["咖啡","gaa3 fe1"],["。"]]}},
-    {"hk": "晏晝", "jp": "aan3 zau3", "en": "around noon / early afternoon", "fr": "midi / début d'après-midi",
-     "note": "Lunchtime and early afternoon. 下晝 haa6 zau3 = afternoon.",
-     "ex": {"en": "Shall we go shopping this afternoon?", "parts": [["我哋","ngo5 dei6"],["今日","gam1 jat6"],["晏晝","aan3 zau3"],["去","heoi3"],["買嘢","maai5 je5"],["好唔好","hou2 m4 hou2"],["啊","aa3"],["？"]]}},
-    {"hk": "夜晚", "jp": "je6 maan5", "en": "evening / night", "fr": "soir / nuit",
-     "ex": {"en": "Don't drink coffee at night.", "parts": [["夜晚","je6 maan5"],["唔好","m4 hou2"],["飲","jam2"],["咖啡","gaa3 fe1"],["。"]]}},
-    {"hk": "今晚", "jp": "gam1 maan5", "en": "tonight", "fr": "ce soir",
-     "ex": {"en": "What do you want to eat tonight?", "parts": [["今晚","gam1 maan5"],["你","nei5"],["想","soeng2"],["食","sik6"],["咩","me1"],["啊","aa3"],["？"]]}},
-    {"hk": "早", "jp": "zou2", "en": "early", "fr": "tôt",
-     "note": "早啲 = a bit earlier.",
-     "ex": {"en": "You're so early today!", "parts": [["你","nei5"],["今日","gam1 jat6"],["好","hou2"],["早","zou2"],["喎","wo3"],["！"]]}},
-    {"hk": "遲", "jp": "ci4", "en": "late", "fr": "tard / en retard",
-     "note": "遲啲 = later on. 遲咗 = (is) late.",
-     "ex": {"en": "He came home very late today.", "parts": [["佢","keoi5"],["今日","gam1 jat6"],["好","hou2"],["遲","ci4"],["先","sin1"],["返","faan1"],["屋企","uk1 kei2"],["。"]]}},
-    {"hk": "遲到", "jp": "ci4 dou3", "en": "to be late (for something)", "fr": "être en retard",
-     "ex": {"en": "Sorry, I'm late!", "parts": [["對唔住","deoi3 m4 zyu6"],["，"],["我","ngo5"],["遲到","ci4 dou3"],["！"]]}},
-    {"hk": "時間", "jp": "si4 gaan3", "en": "time", "fr": "temps",
-     "ex": {"en": "I don't have time.", "parts": [["我","ngo5"],["冇","mou5"],["時間","si4 gaan3"],["。"]]}},
-    {"hk": "幾時", "jp": "gei2 si4", "en": "when", "fr": "quand",
-     "ex": {"en": "When are you going back to Hong Kong?", "parts": [["你","nei5"],["幾時","gei2 si4"],["返","faan1"],["香港","hoeng1 gong2"],["啊","aa3"],["？"]]}},
-    {"hk": "月", "jp": "jyut6", "en": "month", "fr": "mois",
-     "note": "Months are numbered: 一月 January … 十二月 December. 下個月 = next month.",
-     "ex": {"en": "I'm going to France next month.", "parts": [["我","ngo5"],["下個月","haa6 go3 jyut6"],["去","heoi3"],["法國","faat3 gwok3"],["。"]]}},
-    {"hk": "年", "jp": "nin4", "en": "year", "fr": "an / année",
-     "note": "今年 this year, but 舊年 gau6 nin2 last year and 出年 ceot1 nin2 next year (tone change).",
-     "ex": {"en": "I've lived in Geneva for three years.", "parts": [["我","ngo5"],["喺","hai2"],["日內瓦","jat6 noi6 ngaa5"],["住","zyu6"],["咗","zo2"],["三年","saam1 nin4"],["。"]]}},
-    {"hk": "號", "jp": "hou6", "en": "day of the month (date)", "fr": "jour du mois (date)",
-     "note": "Dates go big → small: 十一月四號 = 4 November.",
-     "ex": {"en": "What's the date today?", "parts": [["今日","gam1 jat6"],["幾號","gei2 hou6"],["啊","aa3"],["？"]]}}
-  ],
-  "sentences": [
-    {"en": "Today is the 4th of November, a Wednesday.", "parts": [["今日","gam1 jat6"],["十一月","sap6 jat1 jyut6"],["四號","sei3 hou6"],["，"],["星期三","sing1 kei4 saam1"],["。"]]},
-    {"en": "What day is it tomorrow?", "parts": [["聽日","ting1 jat6"],["星期幾","sing1 kei4 gei2"],["啊","aa3"],["？"]]},
-    {"en": "It's half past three now.", "parts": [["而家","ji4 gaa1"],["三點半","saam1 dim2 bun3"],["。"]]},
-    {"en": "I'm going running tomorrow morning.", "parts": [["我","ngo5"],["聽日","ting1 jat6"],["朝早","ziu1 zou2"],["去","heoi3"],["跑步","paau2 bou6"],["。"]]},
-    {"en": "Do you have time tonight?", "parts": [["你","nei5"],["今晚","gam1 maan5"],["有冇","jau5 mou5"],["時間","si4 gaan3"],["啊","aa3"],["？"]]},
-    {"en": "Sorry, I'm ten minutes late.", "parts": [["對唔住","deoi3 m4 zyu6"],["，"],["我","ngo5"],["遲到","ci4 dou3"],["咗","zo2"],["十分鐘","sap6 fan1 zung1"],["。"]]},
-    {"en": "It rained all day yesterday.", "parts": [["尋日","cam4 jat6"],["落","lok6"],["咗","zo2"],["成日","seng4 jat6"],["雨","jyu5"],["。"]]},
-    {"en": "We're going to Hong Kong the day after tomorrow!", "parts": [["我哋","ngo5 dei6"],["後日","hau6 jat6"],["去","heoi3"],["香港","hoeng1 gong2"],["！"]]},
-    {"en": "I don't have time to watch TV.", "parts": [["我","ngo5"],["冇","mou5"],["時間","si4 gaan3"],["睇","tai2"],["電視","din6 si6"],["。"]]},
-    {"en": "When is your birthday?", "parts": [["你","nei5"],["生日","saang1 jat6"],["係","hai6"],["幾月","gei2 jyut6"],["幾號","gei2 hou6"],["啊","aa3"],["？"]]},
-    {"en": "I go to bed at eleven at night.", "parts": [["我","ngo5"],["夜晚","je6 maan5"],["十一點","sap6 jat1 dim2"],["瞓覺","fan3 gaau3"],["。"]]},
-    {"en": "I'm not free next Saturday.", "parts": [["我","ngo5"],["下個","haa6 go3"],["禮拜六","lai5 baai3 luk6"],["冇","mou5"],["時間","si4 gaan3"],["。"]]},
-    {"en": "Is it too late? — No, it's still early!", "parts": [["係唔係","hai6 m4 hai6"],["太","taai3"],["遲","ci4"],["啊","aa3"],["？"],["唔係","m4 hai6"],["，"],["仲","zung6"],["早","zou2"],["！"]]}
-  ],
-  "grammar": [
-    {"title": "Time comes before the verb",
-     "explain": "Put 'when' right after the subject (or at the very start), never at the end: 我聽日去 = I'm going tomorrow. Bigger units come first: 聽日朝早七點.",
-     "examples": [
-       {"en": "I'm going to Hong Kong tomorrow.", "parts": [["我","ngo5"],["聽日","ting1 jat6"],["去","heoi3"],["香港","hoeng1 gong2"],["。"]]},
-       {"en": "Tomorrow morning at seven, I go running.", "parts": [["聽日","ting1 jat6"],["朝早","ziu1 zou2"],["七點","cat1 dim2"],["，"],["我","ngo5"],["去","heoi3"],["跑步","paau2 bou6"],["。"]]}
-     ]},
-    {"title": "Telling the time: 點, 半, 個字",
-     "explain": "Hour + 點: 三點. Add 半 for half past: 三點半. Minutes are counted in 個字 (5-minute steps on the clock face): 三點三 = 3:15, 三點九 = 3:45. You can also say exact minutes with 分: 三點十分.",
-     "examples": [
-       {"en": "3:15", "parts": [["三點三","saam1 dim2 saam1"]]},
-       {"en": "3:30", "parts": [["三點半","saam1 dim2 bun3"]]},
-       {"en": "3:45", "parts": [["三點九","saam1 dim2 gau2"]]}
-     ]},
-    {"title": "Days of the week",
-     "explain": "星期 or 禮拜 + number: 一 Monday … 六 Saturday. Sunday is 日 (not 七!): 星期日 / 禮拜日.",
-     "examples": [
-       {"en": "See you on Friday!", "parts": [["星期五","sing1 kei4 ng5"],["見","gin3"],["！"]]},
-       {"en": "Are you free on Sunday?", "parts": [["你","nei5"],["禮拜日","lai5 baai3 jat6"],["有冇","jau5 mou5"],["時間","si4 gaan3"],["啊","aa3"],["？"]]}
-     ]}
-  ],
-  "dialogue": {
-    "title": "Where are you?!",
-    "lines": [
-      {"spk": "A", "en": "Hello? Where are you? It's already half past three!", "parts": [["喂","wai3"],["，"],["你","nei5"],["喺","hai2"],["邊度","bin1 dou6"],["啊","aa3"],["？"],["已經","ji5 ging1"],["三點半","saam1 dim2 bun3"],["喇","laa3"],["！"]]},
-      {"spk": "B", "en": "Sorry! I just got up.", "parts": [["對唔住","deoi3 m4 zyu6"],["！"],["我","ngo5"],["啱啱","ngaam1 ngaam1"],["起身","hei2 san1"],["。"]]},
-      {"spk": "A", "en": "What? It's the afternoon!", "parts": [["吓","haa2"],["？"],["而家","ji4 gaa1"],["晏晝","aan3 zau3"],["喎","wo3"],["！"]]},
-      {"spk": "B", "en": "I only went to bed at two last night…", "parts": [["我","ngo5"],["尋晚","cam4 maan5"],["兩點","loeng5 dim2"],["先","sin1"],["瞓覺","fan3 gaau3"],["。"]]},
-      {"spk": "A", "en": "Sigh. What time will you get here?", "parts": [["唉","aai1"],["，"],["你","nei5"],["幾點","gei2 dim2"],["到","dou3"],["啊","aa3"],["？"]]},
-      {"spk": "B", "en": "Twenty minutes… no, half an hour!", "parts": [["二十分鐘","ji6 sap6 fan1 zung1"],["，"],["唔係","m4 hai6"],["，"],["半個鐘","bun3 go3 zung1"],["！"]]},
-      {"spk": "A", "en": "OK, I'll wait half an hour. See you at four!", "parts": [["噉","gam2"],["我","ngo5"],["等","dang2"],["你","nei5"],["半個鐘","bun3 go3 zung1"],["，"],["四點","sei3 dim2"],["見","gin3"],["！"]]},
-      {"spk": "B", "en": "Thanks so much! Dinner's on me tonight!", "parts": [["唔該晒","m4 goi1 saai3"],["！"],["今晚","gam1 maan5"],["我","ngo5"],["請","ceng2"],["你","nei5"],["食飯","sik6 faan6"],["！"]]}
-    ],
-    "questions": [
-      {"q": "What time is it when A calls?", "options": ["3:30", "2:00", "4:00", "3:00"], "answer": 0},
-      {"q": "Why is B late?", "options": ["B just got up", "It's raining", "B is at work", "B forgot"], "answer": 0},
-      {"q": "When will they meet?", "options": ["At four", "At half past three", "Tonight", "Tomorrow"], "answer": 0},
-      {"q": "How does B make up for it?", "options": ["Treats A to dinner tonight", "Buys A a coffee", "Pays for the taxi", "Brings a present"], "answer": 0}
+ "id": "u06",
+ "level": 1,
+ "title": "Days & Time",
+ "emoji": "🕒",
+ "desc": "Tell the time, talk about today, tomorrow and yesterday, and handle a phone call",
+ "words": [
+  {
+   "hk": "今日",
+   "jp": "gam1 jat6",
+   "en": "today",
+   "fr": "aujourd'hui",
+   "ex": {
+    "en": "What day is it today?",
+    "parts": [
+     [
+      "今日",
+      "gam1 jat6"
+     ],
+     [
+      "星期幾",
+      "sing1 kei4 gei2"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
     ]
+   }
+  },
+  {
+   "hk": "聽日",
+   "jp": "ting1 jat6",
+   "en": "tomorrow",
+   "fr": "demain",
+   "note": "聽 (teng1) is ting1 here (as 'listen' it's teng1). In fast speech it often sounds like 'tim1 jat6'.",
+   "ex": {
+    "en": "OK, see you tomorrow!",
+    "parts": [
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "聽日",
+      "ting1 jat6"
+     ],
+     [
+      "見",
+      "gin3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "尋日",
+   "jp": "cam4 jat6",
+   "en": "yesterday",
+   "fr": "hier",
+   "note": "Also written 琴日 (kam4 jat6) — same word, two pronunciations.",
+   "ex": {
+    "en": "Where did you go yesterday?",
+    "parts": [
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "尋日",
+      "cam4 jat6"
+     ],
+     [
+      "去咗",
+      "heoi3 zo2"
+     ],
+     [
+      "邊度",
+      "bin1 dou6"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "今晚",
+   "jp": "gam1 maan5",
+   "en": "tonight",
+   "fr": "ce soir",
+   "ex": {
+    "en": "What do you want to eat tonight?",
+    "parts": [
+     [
+      "今晚",
+      "gam1 maan5"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "想",
+      "soeng2"
+     ],
+     [
+      "食",
+      "sik6"
+     ],
+     [
+      "咩",
+      "me1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "朝早",
+   "jp": "ziu1 zou2",
+   "en": "morning",
+   "fr": "matin",
+   "ex": {
+    "en": "She watches TV in the morning.",
+    "parts": [
+     [
+      "佢",
+      "keoi5"
+     ],
+     [
+      "朝早",
+      "ziu1 zou2"
+     ],
+     [
+      "睇",
+      "tai2"
+     ],
+     [
+      "電視",
+      "din6 si6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "晏晝",
+   "jp": "aan3 zau3",
+   "en": "around noon / early afternoon",
+   "fr": "midi / début d'après-midi",
+   "note": "Lunchtime and early afternoon. 下晝 (haa6 zau3) = afternoon.",
+   "ex": {
+    "en": "Shall we go shopping this afternoon?",
+    "parts": [
+     [
+      "我哋",
+      "ngo5 dei6"
+     ],
+     [
+      "晏晝",
+      "aan3 zau3"
+     ],
+     [
+      "去",
+      "heoi3"
+     ],
+     [
+      "買嘢",
+      "maai5 je5"
+     ],
+     [
+      "，"
+     ],
+     [
+      "好唔好",
+      "hou2 m4 hou2"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "夜晚",
+   "jp": "je6 maan5",
+   "en": "evening / night",
+   "fr": "soir / nuit",
+   "ex": {
+    "en": "I don't eat at night.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "夜晚",
+      "je6 maan5"
+     ],
+     [
+      "唔",
+      "m4"
+     ],
+     [
+      "食",
+      "sik6"
+     ],
+     [
+      "嘢",
+      "je5"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "禮拜",
+   "jp": "lai5 baai3",
+   "en": "week (colloquial)",
+   "fr": "semaine (familier)",
+   "note": "Same as 星期 (sing1 kei4) but more casual: 禮拜一 (lai5 baai3 jat1) = Monday … 禮拜六 (lai5 baai3 luk6) = Saturday, and Sunday is 禮拜日 (lai5 baai3 jat6) — not 七 (cat1)!",
+   "ex": {
+    "en": "I'm going shopping on Saturday.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "禮拜六",
+      "lai5 baai3 luk6"
+     ],
+     [
+      "去",
+      "heoi3"
+     ],
+     [
+      "買嘢",
+      "maai5 je5"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "下個",
+   "jp": "haa6 go3",
+   "en": "next (week / month)",
+   "fr": "prochain(e)",
+   "note": "下個 (haa6 go3) = next, 上個 (soeng6 go3) = last: 下個月 (haa6 go3 jyut6) next month, 上個禮拜 (soeng6 go3 lai5 baai3) last week.",
+   "ex": {
+    "en": "See you next week!",
+    "parts": [
+     [
+      "下個",
+      "haa6 go3"
+     ],
+     [
+      "禮拜",
+      "lai5 baai3"
+     ],
+     [
+      "見",
+      "gin3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "幾點",
+   "jp": "gei2 dim2",
+   "en": "what time",
+   "fr": "quelle heure",
+   "ex": {
+    "en": "What time is it now?",
+    "parts": [
+     [
+      "而家",
+      "ji4 gaa1"
+     ],
+     [
+      "幾點",
+      "gei2 dim2"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "點",
+   "jp": "dim2",
+   "en": "o'clock",
+   "fr": "heure(s)",
+   "note": "Number + 點 (dim2): 三點 (saam1 dim2) = three o'clock. The full form 點鐘 (dim2 zung1) is less common. Two o'clock is 兩點 (loeng5 dim2).",
+   "ex": {
+    "en": "Let's meet at seven!",
+    "parts": [
+     [
+      "我哋",
+      "ngo5 dei6"
+     ],
+     [
+      "七點",
+      "cat1 dim2"
+     ],
+     [
+      "見",
+      "gin3"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "！"
+     ]
+    ]
+   },
+   "sense": "oclock"
+  },
+  {
+   "hk": "半",
+   "jp": "bun3",
+   "en": "half",
+   "fr": "demi(e)",
+   "note": "七點半 (cat1 dim2 bun3) = 7:30.",
+   "ex": {
+    "en": "It's half past two.",
+    "parts": [
+     [
+      "而家",
+      "ji4 gaa1"
+     ],
+     [
+      "兩點半",
+      "loeng5 dim2 bun3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "半個鐘",
+   "jp": "bun3 go3 zung1",
+   "en": "half an hour",
+   "fr": "une demi-heure",
+   "note": "鐘 (zung1) here means 'hour': 一個鐘 (jat1 go3 zung1) = an hour, 兩個鐘 (loeng5 go3 zung1) = two hours.",
+   "ex": {
+    "en": "Half an hour? That's ages!",
+    "parts": [
+     [
+      "半個鐘",
+      "bun3 go3 zung1"
+     ],
+     [
+      "？"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "耐",
+      "noi6"
+     ],
+     [
+      "喎",
+      "wo3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "分鐘",
+   "jp": "fan1 zung1",
+   "en": "minute",
+   "fr": "minute",
+   "ex": {
+    "en": "Give me five minutes!",
+    "parts": [
+     [
+      "等",
+      "dang2"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "五分鐘",
+      "ng5 fan1 zung1"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "早",
+   "jp": "zou2",
+   "en": "early",
+   "fr": "tôt",
+   "note": "早啲 (zou2 di1) = a bit earlier.",
+   "ex": {
+    "en": "You're so early today!",
+    "parts": [
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "今日",
+      "gam1 jat6"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "早",
+      "zou2"
+     ],
+     [
+      "喎",
+      "wo3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "遲到",
+   "jp": "ci4 dou3",
+   "en": "to be late (for something)",
+   "fr": "être en retard",
+   "ex": {
+    "en": "Sorry, I'm late!",
+    "parts": [
+     [
+      "對唔住",
+      "deoi3 m4 zyu6"
+     ],
+     [
+      "，"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "遲到",
+      "ci4 dou3"
+     ],
+     [
+      "喇",
+      "laa3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   },
+   "note": "遲 (ci4) = late; 遲啲 (ci4 di1) = later on."
+  },
+  {
+   "hk": "幾時",
+   "jp": "gei2 si4",
+   "en": "when",
+   "fr": "quand",
+   "ex": {
+    "en": "When are you going to Hong Kong?",
+    "parts": [
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "幾時",
+      "gei2 si4"
+     ],
+     [
+      "去",
+      "heoi3"
+     ],
+     [
+      "香港",
+      "hoeng1 gong2"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "月",
+   "jp": "jyut6",
+   "en": "month",
+   "fr": "mois",
+   "note": "Months are numbered: 一月 (jat1 jyut6) January … 十二月 (sap6 ji6 jyut6) December. 下個月 (haa6 go3 jyut6) = next month.",
+   "ex": {
+    "en": "I'm going to France next month.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "下個",
+      "haa6 go3"
+     ],
+     [
+      "月",
+      "jyut6"
+     ],
+     [
+      "去",
+      "heoi3"
+     ],
+     [
+      "法國",
+      "faat3 gwok3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "年",
+   "jp": "nin4",
+   "en": "year",
+   "fr": "an / année",
+   "note": "今年 (gam1 nin4) this year, but 舊年 (gau6 nin2) last year and 出年 (ceot1 nin2) next year (tone change).",
+   "ex": {
+    "en": "I've lived in Hong Kong for ten years.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "喺",
+      "hai2"
+     ],
+     [
+      "香港",
+      "hoeng1 gong2"
+     ],
+     [
+      "住咗",
+      "zyu6 zo2"
+     ],
+     [
+      "十年",
+      "sap6 nin4"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "號",
+   "jp": "hou6",
+   "en": "day of the month (date)",
+   "fr": "jour du mois (date)",
+   "note": "Dates go big → small: 十一月四號 (sap6 jat1 jyut6 sei3 hou6) = 4 November.",
+   "ex": {
+    "en": "What's the date today?",
+    "parts": [
+     [
+      "今日",
+      "gam1 jat6"
+     ],
+     [
+      "幾號",
+      "gei2 hou6"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "今年",
+   "jp": "gam1 nin4",
+   "en": "this year",
+   "fr": "cette année",
+   "note": "Like 今日 (gam1 jat6) today and 今晚 (gam1 maan5) tonight: 今 (gam1) = this / now.",
+   "ex": {
+    "en": "My little brother is eight this year.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "細佬",
+      "sai3 lou2"
+     ],
+     [
+      "今年",
+      "gam1 nin4"
+     ],
+     [
+      "八歲",
+      "baat3 seoi3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "咗",
+   "jp": "zo2",
+   "en": "(done: marks a finished action)",
+   "fr": "(marque une action terminée)",
+   "note": "Verb + 咗 (zo2): 食咗 (sik6 zo2) = have eaten, 去咗 (heoi3 zo2) = went / has gone. Don't mix it up with 做 (zou6) 'to do'.",
+   "ex": {
+    "en": "He's gone to France.",
+    "parts": [
+     [
+      "佢",
+      "keoi5"
+     ],
+     [
+      "去咗",
+      "heoi3 zo2"
+     ],
+     [
+      "法國",
+      "faat3 gwok3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "已經",
+   "jp": "ji5 ging1",
+   "en": "already",
+   "fr": "déjà",
+   "note": "Usually ends with 喇 (laa3): 已經三點喇 (ji5 ging1 saam1 dim2 laa3)！ = It's already three!",
+   "ex": {
+    "en": "I've already eaten.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "已經",
+      "ji5 ging1"
+     ],
+     [
+      "食咗",
+      "sik6 zo2"
+     ],
+     [
+      "喇",
+      "laa3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "喂",
+   "jp": "wai2",
+   "en": "hello? (on the phone)",
+   "fr": "allô ?",
+   "note": "On the phone it rises: wai2. Said flat (wai3), it's a blunt 'hey!' to get someone's attention.",
+   "ex": {
+    "en": "Hello? Who's calling?",
+    "parts": [
+     [
+      "喂",
+      "wai2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "邊位",
+      "bin1 wai2"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "等",
+   "jp": "dang2",
+   "en": "to wait (for)",
+   "fr": "attendre",
+   "note": "等我 (dang2 ngo5) = wait for me. 等等 (dang2 dang2) = wait a moment / hold on.",
+   "ex": {
+    "en": "Wait for me!",
+    "parts": [
+     [
+      "等",
+      "dang2"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "見",
+   "jp": "gin3",
+   "en": "to see; to meet",
+   "fr": "voir ; rencontrer",
+   "note": "聽日見 (ting1 jat6 gin3)！ = See you tomorrow! You know it from 一陣見 (jat1 zan6 gin3) and 好耐冇見 (hou2 noi6 mou5 gin3).",
+   "ex": {
+    "en": "I'm seeing him tonight.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "今晚",
+      "gam1 maan5"
+     ],
+     [
+      "見",
+      "gin3"
+     ],
+     [
+      "佢",
+      "keoi5"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
   }
+ ],
+ "sentences": [
+  {
+   "en": "Today is the 4th of November, a Wednesday.",
+   "parts": [
+    [
+     "今日",
+     "gam1 jat6"
+    ],
+    [
+     "十一月",
+     "sap6 jat1 jyut6"
+    ],
+    [
+     "四號",
+     "sei3 hou6"
+    ],
+    [
+     "，"
+    ],
+    [
+     "星期三",
+     "sing1 kei4 saam1"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "What day is it tomorrow?",
+   "parts": [
+    [
+     "聽日",
+     "ting1 jat6"
+    ],
+    [
+     "星期幾",
+     "sing1 kei4 gei2"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  },
+  {
+   "en": "It's half past three now.",
+   "parts": [
+    [
+     "而家",
+     "ji4 gaa1"
+    ],
+    [
+     "三點半",
+     "saam1 dim2 bun3"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "I'm going running tomorrow morning.",
+   "parts": [
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "聽日",
+     "ting1 jat6"
+    ],
+    [
+     "朝早",
+     "ziu1 zou2"
+    ],
+    [
+     "去",
+     "heoi3"
+    ],
+    [
+     "跑步",
+     "paau2 bou6"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Are you home tonight?",
+   "parts": [
+    [
+     "你",
+     "nei5"
+    ],
+    [
+     "今晚",
+     "gam1 maan5"
+    ],
+    [
+     "喺唔喺",
+     "hai2 m4 hai2"
+    ],
+    [
+     "屋企",
+     "uk1 kei2"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  },
+  {
+   "en": "Sorry, I'm ten minutes late.",
+   "parts": [
+    [
+     "對唔住",
+     "deoi3 m4 zyu6"
+    ],
+    [
+     "，"
+    ],
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "遲到",
+     "ci4 dou3"
+    ],
+    [
+     "咗",
+     "zo2"
+    ],
+    [
+     "十分鐘",
+     "sap6 fan1 zung1"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "It was raining yesterday morning, so I didn't go running.",
+   "parts": [
+    [
+     "尋日",
+     "cam4 jat6"
+    ],
+    [
+     "朝早",
+     "ziu1 zou2"
+    ],
+    [
+     "落緊雨",
+     "lok6 gan2 jyu5"
+    ],
+    [
+     "，"
+    ],
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "冇",
+     "mou5"
+    ],
+    [
+     "去",
+     "heoi3"
+    ],
+    [
+     "跑步",
+     "paau2 bou6"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "We're going to Hong Kong next week!",
+   "parts": [
+    [
+     "我哋",
+     "ngo5 dei6"
+    ],
+    [
+     "下個",
+     "haa6 go3"
+    ],
+    [
+     "禮拜",
+     "lai5 baai3"
+    ],
+    [
+     "去",
+     "heoi3"
+    ],
+    [
+     "香港",
+     "hoeng1 gong2"
+    ],
+    [
+     "！"
+    ]
+   ]
+  },
+  {
+   "en": "I'm waiting for you!",
+   "parts": [
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "等緊",
+     "dang2 gan2"
+    ],
+    [
+     "你",
+     "nei5"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "！"
+    ]
+   ]
+  },
+  {
+   "en": "When is your birthday?",
+   "parts": [
+    [
+     "你",
+     "nei5"
+    ],
+    [
+     "生日",
+     "saang1 jat6"
+    ],
+    [
+     "係",
+     "hai6"
+    ],
+    [
+     "幾時",
+     "gei2 si4"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  },
+  {
+   "en": "I go to bed at eleven at night.",
+   "parts": [
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "夜晚",
+     "je6 maan5"
+    ],
+    [
+     "十一點",
+     "sap6 jat1 dim2"
+    ],
+    [
+     "瞓覺",
+     "fan3 gaau3"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "It's already twelve o'clock!",
+   "parts": [
+    [
+     "已經",
+     "ji5 ging1"
+    ],
+    [
+     "十二點",
+     "sap6 ji6 dim2"
+    ],
+    [
+     "喇",
+     "laa3"
+    ],
+    [
+     "！"
+    ]
+   ]
+  },
+  {
+   "en": "When shall we meet?",
+   "parts": [
+    [
+     "我哋",
+     "ngo5 dei6"
+    ],
+    [
+     "幾時",
+     "gei2 si4"
+    ],
+    [
+     "見",
+     "gin3"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  },
+  {
+   "en": "Where did you go yesterday?",
+   "parts": [
+    [
+     "你",
+     "nei5"
+    ],
+    [
+     "尋日",
+     "cam4 jat6"
+    ],
+    [
+     "去咗",
+     "heoi3 zo2"
+    ],
+    [
+     "邊度",
+     "bin1 dou6"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  }
+ ],
+ "grammar": [
+  {
+   "title": "Time comes before the verb",
+   "explain": "Put 'when' right after the subject (or at the very start), never at the end: 我聽日去 (ngo5 ting1 jat6 heoi3) = I'm going tomorrow. Bigger units come first: 聽日朝早七點 (ting1 jat6 ziu1 zou2 cat1 dim2).",
+   "examples": [
+    {
+     "en": "I'm going to Hong Kong tomorrow.",
+     "parts": [
+      [
+       "我",
+       "ngo5"
+      ],
+      [
+       "聽日",
+       "ting1 jat6"
+      ],
+      [
+       "去",
+       "heoi3"
+      ],
+      [
+       "香港",
+       "hoeng1 gong2"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "Tomorrow morning at seven, I go running.",
+     "parts": [
+      [
+       "聽日",
+       "ting1 jat6"
+      ],
+      [
+       "朝早",
+       "ziu1 zou2"
+      ],
+      [
+       "七點",
+       "cat1 dim2"
+      ],
+      [
+       "，"
+      ],
+      [
+       "我",
+       "ngo5"
+      ],
+      [
+       "去",
+       "heoi3"
+      ],
+      [
+       "跑步",
+       "paau2 bou6"
+      ],
+      [
+       "。"
+      ]
+     ]
+    }
+   ],
+   "after": "聽日"
+  },
+  {
+   "title": "Telling the time: 點 (dim2), 半 (bun3), 個字 (go3 zi6)",
+   "explain": "Hour + 點 (dim2): 三點 (saam1 dim2). Add 半 (bun3) for half past: 三點半 (saam1 dim2 bun3). For other times, say the number the minute hand points at; each number is 一個字 (jat1 go3 zi6), five minutes: 三點三 (saam1 dim2 saam1) = 3:15, 三點九 (saam1 dim2 gau2) = 3:45. Exact minutes use 分 (fan1): 三點十分 (saam1 dim2 sap6 fan1).",
+   "examples": [
+    {
+     "en": "3:15",
+     "parts": [
+      [
+       "三點三",
+       "saam1 dim2 saam1"
+      ]
+     ]
+    },
+    {
+     "en": "3:30",
+     "parts": [
+      [
+       "三點半",
+       "saam1 dim2 bun3"
+      ]
+     ]
+    },
+    {
+     "en": "3:45",
+     "parts": [
+      [
+       "三點九",
+       "saam1 dim2 gau2"
+      ]
+     ]
+    }
+   ],
+   "after": "點"
+  },
+  {
+   "title": "咗 (zo2) done, 緊 (gan2) going on",
+   "explain": "Right after the verb, 緊 (gan2) means it's happening now and 咗 (zo2) means it's done. No change to the verb itself.",
+   "examples": [
+    {
+     "en": "I'm watching TV.",
+     "parts": [
+      [
+       "我",
+       "ngo5"
+      ],
+      [
+       "睇緊",
+       "tai2 gan2"
+      ],
+      [
+       "電視",
+       "din6 si6"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "He's eaten.",
+     "parts": [
+      [
+       "佢",
+       "keoi5"
+      ],
+      [
+       "食咗",
+       "sik6 zo2"
+      ],
+      [
+       "喇",
+       "laa3"
+      ],
+      [
+       "。"
+      ]
+     ]
+    }
+   ],
+   "after": "咗"
+  },
+  {
+   "title": "喇 (laa3): something has changed",
+   "explain": "At the end of a sentence, 喇 (laa3) says the situation is new: it's now late, you've now decided, it's now done.",
+   "examples": [
+    {
+     "en": "It's three o'clock already!",
+     "parts": [
+      [
+       "三點",
+       "saam1 dim2"
+      ],
+      [
+       "喇",
+       "laa3"
+      ],
+      [
+       "！"
+      ]
+     ]
+    },
+    {
+     "en": "I'm not going any more.",
+     "parts": [
+      [
+       "我",
+       "ngo5"
+      ],
+      [
+       "唔",
+       "m4"
+      ],
+      [
+       "去",
+       "heoi3"
+      ],
+      [
+       "喇",
+       "laa3"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "I'm late!",
+     "parts": [
+      [
+       "我",
+       "ngo5"
+      ],
+      [
+       "遲到",
+       "ci4 dou3"
+      ],
+      [
+       "喇",
+       "laa3"
+      ],
+      [
+       "！"
+      ]
+     ]
+    }
+   ],
+   "after": "已經"
+  },
+  {
+   "title": "On the phone",
+   "explain": "Pick up with 喂 (wai2)？ A caller asks for someone with 搵 (wan2) 'look for'. Hold on = 等等 (dang2 dang2). Wrong number = 打錯 (daa2 co3). Can't hear = 聽唔到 (teng1 m4 dou2).",
+   "examples": [
+    {
+     "en": "Hello, who would you like to speak to?",
+     "parts": [
+      [
+       "喂",
+       "wai2"
+      ],
+      [
+       "，"
+      ],
+      [
+       "請問",
+       "ceng2 man6"
+      ],
+      [
+       "搵",
+       "wan2"
+      ],
+      [
+       "邊位",
+       "bin1 wai2"
+      ],
+      [
+       "啊",
+       "aa3"
+      ],
+      [
+       "？"
+      ]
+     ]
+    },
+    {
+     "en": "Hold on.",
+     "parts": [
+      [
+       "等等",
+       "dang2 dang2"
+      ],
+      [
+       "啊",
+       "aa3"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "Sorry, you've got the wrong number.",
+     "parts": [
+      [
+       "唔好意思",
+       "m4 hou2 ji3 si1"
+      ],
+      [
+       "，"
+      ],
+      [
+       "你",
+       "nei5"
+      ],
+      [
+       "打錯",
+       "daa2 co3"
+      ],
+      [
+       "喇",
+       "laa3"
+      ],
+      [
+       "。"
+      ]
+     ]
+    }
+   ],
+   "after": "喂"
+  }
+ ],
+ "dialogue": {
+  "title": "Where are you?!",
+  "lines": [
+   {
+    "spk": "A",
+    "en": "Hello? Where are you? It's already half past three!",
+    "parts": [
+     [
+      "喂",
+      "wai2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "喺",
+      "hai2"
+     ],
+     [
+      "邊度",
+      "bin1 dou6"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ],
+     [
+      "已經",
+      "ji5 ging1"
+     ],
+     [
+      "三點半",
+      "saam1 dim2 bun3"
+     ],
+     [
+      "喇",
+      "laa3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Sorry! I just got up.",
+    "parts": [
+     [
+      "對唔住",
+      "deoi3 m4 zyu6"
+     ],
+     [
+      "！"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "啱啱",
+      "ngaam1 ngaam1"
+     ],
+     [
+      "起身",
+      "hei2 san1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "What? It's the afternoon!",
+    "parts": [
+     [
+      "吓",
+      "haa2"
+     ],
+     [
+      "？"
+     ],
+     [
+      "而家",
+      "ji4 gaa1"
+     ],
+     [
+      "晏晝",
+      "aan3 zau3"
+     ],
+     [
+      "喎",
+      "wo3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "I only went to bed at two last night…",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "尋晚",
+      "cam4 maan5"
+     ],
+     [
+      "兩點",
+      "loeng5 dim2"
+     ],
+     [
+      "先",
+      "sin1"
+     ],
+     [
+      "瞓覺",
+      "fan3 gaau3"
+     ],
+     [
+      "…"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "So what time will you get here?",
+    "parts": [
+     [
+      "噉",
+      "gam2"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "幾點",
+      "gei2 dim2"
+     ],
+     [
+      "到",
+      "dou3"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Twenty minutes… no, half an hour!",
+    "parts": [
+     [
+      "二十分鐘",
+      "ji6 sap6 fan1 zung1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "唔係",
+      "m4 hai6"
+     ],
+     [
+      "，"
+     ],
+     [
+      "半個鐘",
+      "bun3 go3 zung1"
+     ],
+     [
+      "！"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "Fine, I'll wait half an hour. See you at four!",
+    "parts": [
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "等",
+      "dang2"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "半個鐘",
+      "bun3 go3 zung1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "四點",
+      "sei3 dim2"
+     ],
+     [
+      "見",
+      "gin3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Thanks! Dinner's on me tonight!",
+    "parts": [
+     [
+      "多謝",
+      "do1 ze6"
+     ],
+     [
+      "！"
+     ],
+     [
+      "今晚",
+      "gam1 maan5"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "請",
+      "ceng2"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "食飯",
+      "sik6 faan6"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "q": "What time is it when A calls?",
+    "options": [
+     "3:30",
+     "2:00",
+     "4:00",
+     "3:00"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Why is B late?",
+    "options": [
+     "B just got up",
+     "It's raining",
+     "B is at work",
+     "B forgot"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "When will they meet?",
+    "options": [
+     "At four",
+     "At half past three",
+     "Tonight",
+     "Tomorrow"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How does B make up for it?",
+    "options": [
+     "Treats A to dinner tonight",
+     "Buys A a coffee",
+     "Pays for the taxi",
+     "Brings a present"
+    ],
+    "answer": 0
+   }
+  ],
+  "gloss": [
+   [
+    "啱啱",
+    "ngaam1 ngaam1",
+    "just (a moment ago)"
+   ],
+   [
+    "起身",
+    "hei2 san1",
+    "to get up"
+   ],
+   [
+    "尋晚",
+    "cam4 maan5",
+    "last night"
+   ],
+   [
+    "先",
+    "sin1",
+    "only then"
+   ],
+   [
+    "到",
+    "dou3",
+    "to arrive"
+   ],
+   [
+    "請",
+    "ceng2",
+    "to treat (someone)"
+   ]
+  ]
+ }
 }

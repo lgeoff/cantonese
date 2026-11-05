@@ -1,0 +1,1197 @@
+{
+  "id": "u25",
+  "level": 1,
+  "title": "Your Everyday Words",
+  "emoji": "🏠",
+  "desc": "More of the words you already know: your day, food and things at home",
+  "words": [
+    {
+      "hk": "而家",
+      "jp": "ji4 gaa1",
+      "en": "now",
+      "fr": "maintenant",
+      "mine": "Iga"
+    },
+    {
+      "hk": "星期",
+      "jp": "sing1 kei4",
+      "en": "week; day of the week (+ number)",
+      "fr": "semaine ; jour (+ chiffre)",
+      "mine": "Sinkay x",
+      "note": "星期一 (sing1 kei4 jat1) Monday … 星期六 (sing1 kei4 luk6) Saturday, 星期日 (sing1 kei4 jat6) Sunday.",
+      "ex": {
+        "en": "I go running on Mondays.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "星期一",
+            "sing1 kei4 jat1"
+          ],
+          [
+            "去",
+            "heoi3"
+          ],
+          [
+            "跑步",
+            "paau2 bou6"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "可以",
+      "jp": "ho2 ji5",
+      "en": "can / may",
+      "fr": "pouvoir",
+      "mine": "Oyi",
+      "note": "Keep the h-: ho2 ji5. Dropping h- is not one of the usual casual sound changes, so 'o2 ji5' sounds off.",
+      "ex": {
+        "en": "Can I go?",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "可唔可以",
+            "ho2 m4 ho2 ji5"
+          ],
+          [
+            "去",
+            "heoi3"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "想要",
+      "jp": "soeng2 jiu3",
+      "en": "want (something)",
+      "fr": "vouloir (quelque chose)",
+      "mine": "Seun yiou",
+      "ex": {
+        "en": "I want beef.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "想要",
+            "soeng2 jiu3"
+          ],
+          [
+            "牛肉",
+            "ngau4 juk6"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "瞓覺",
+      "jp": "fan3 gaau3",
+      "en": "to sleep",
+      "fr": "dormir",
+      "mine": "Fangao"
+    },
+    {
+      "hk": "用",
+      "jp": "jung6",
+      "en": "to use",
+      "fr": "utiliser",
+      "mine": "Yong"
+    },
+    {
+      "hk": "畀",
+      "jp": "bei2",
+      "en": "to give",
+      "fr": "donner",
+      "mine": "Bei",
+      "note": "Also written 俾 (bei2). 'I give' = 我畀 (ngo5 bei2).",
+      "ex": {
+        "en": "Pass me a tissue, would you?",
+        "parts": [
+          [
+            "畀",
+            "bei2"
+          ],
+          [
+            "張",
+            "zoeng1"
+          ],
+          [
+            "紙巾",
+            "zi2 gan1"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "吖",
+            "aa1"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "行",
+      "jp": "haang4",
+      "en": "to walk",
+      "fr": "marcher",
+      "mine": "Han",
+      "note": "Not the same as 鹹 (haam4, salty): -ng vs -m ending.",
+      "ex": {
+        "en": "I really like walking.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "鍾意",
+            "zung1 ji3"
+          ],
+          [
+            "行路",
+            "haang4 lou6"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "跑步",
+      "jp": "paau2 bou6",
+      "en": "to run / go jogging",
+      "fr": "courir",
+      "mine": "Paobo"
+    },
+    {
+      "hk": "買嘢",
+      "jp": "maai5 je5",
+      "en": "to go shopping",
+      "fr": "faire du shopping",
+      "mine": "Maiye",
+      "ex": {
+        "en": "I'm going shopping with my big sister.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "同",
+            "tung4"
+          ],
+          [
+            "家姐",
+            "gaa1 ze1"
+          ],
+          [
+            "去",
+            "heoi3"
+          ],
+          [
+            "買嘢",
+            "maai5 je5"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "同埋",
+      "jp": "tung4 maai4",
+      "en": "and",
+      "fr": "et",
+      "mine": "Tommai",
+      "ex": {
+        "en": "Pork and beef.",
+        "parts": [
+          [
+            "豬肉",
+            "zyu1 juk6"
+          ],
+          [
+            "同埋",
+            "tung4 maai4"
+          ],
+          [
+            "牛肉",
+            "ngau4 juk6"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "同",
+      "jp": "tung4",
+      "en": "with; and",
+      "fr": "avec ; et",
+      "mine": "Tongmai",
+      "note": "同 (tung4) alone = 'with'. 同埋 (tung4 maai4) = 'and / together with'."
+    },
+    {
+      "hk": "甜",
+      "jp": "tim4",
+      "en": "sweet",
+      "fr": "sucré",
+      "mine": "Tim",
+      "note": "Sugar itself is 糖 (tong4).",
+      "ex": {
+        "en": "I don't like sweet things.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "唔",
+            "m4"
+          ],
+          [
+            "鍾意",
+            "zung1 ji3"
+          ],
+          [
+            "食",
+            "sik6"
+          ],
+          [
+            "甜",
+            "tim4"
+          ],
+          [
+            "嘢",
+            "je5"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "鹹",
+      "jp": "haam4",
+      "en": "salty",
+      "fr": "salé",
+      "mine": "Han"
+    },
+    {
+      "hk": "難",
+      "jp": "naan4",
+      "en": "difficult",
+      "fr": "difficile",
+      "mine": "Lan",
+      "note": "Many Hongkongers say 'laan4' (n→l). Both are understood.",
+      "ex": {
+        "en": "Cantonese is very difficult!",
+        "parts": [
+          [
+            "廣東話",
+            "gwong2 dung1 waa2"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "難",
+            "naan4"
+          ],
+          [
+            "！"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "落緊雨",
+      "jp": "lok6 gan2 jyu5",
+      "en": "it's raining",
+      "fr": "il pleut",
+      "mine": "Lo Gan Yu",
+      "note": "落雨 (lok6 jyu5) = to rain; 緊 (gan2) = -ing. There is no 'I' in it.",
+      "ex": {
+        "en": "It's raining — I'm not going.",
+        "parts": [
+          [
+            "落緊雨",
+            "lok6 gan2 jyu5"
+          ],
+          [
+            "，"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "唔",
+            "m4"
+          ],
+          [
+            "去",
+            "heoi3"
+          ],
+          [
+            "喇",
+            "laa3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "車",
+      "jp": "ce1",
+      "en": "car",
+      "fr": "voiture",
+      "mine": "Tche"
+    },
+    {
+      "hk": "單車",
+      "jp": "daan1 ce1",
+      "en": "bicycle",
+      "fr": "vélo",
+      "mine": "Dan tche"
+    },
+    {
+      "hk": "牛肉",
+      "jp": "ngau4 juk6",
+      "en": "beef",
+      "fr": "bœuf",
+      "mine": "Aoyo",
+      "note": "Often said 'au4 juk6' without the ng-."
+    },
+    {
+      "hk": "魚",
+      "jp": "jyu2",
+      "en": "fish",
+      "fr": "poisson",
+      "mine": "Yu",
+      "note": "Alone it's usually jyu2; in compounds jyu4 (e.g. 魚蛋 (jyu4 daan2)).",
+      "ex": {
+        "en": "My little sister doesn't eat fish.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "細妹",
+            "sai3 mui2"
+          ],
+          [
+            "唔",
+            "m4"
+          ],
+          [
+            "食",
+            "sik6"
+          ],
+          [
+            "魚",
+            "jyu2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "羊肉",
+      "jp": "joeng4 juk6",
+      "en": "lamb / mutton",
+      "fr": "mouton / agneau",
+      "mine": "Yeunyou",
+      "ex": {
+        "en": "My little brother doesn't like lamb.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "細佬",
+            "sai3 lou2"
+          ],
+          [
+            "唔",
+            "m4"
+          ],
+          [
+            "鍾意",
+            "zung1 ji3"
+          ],
+          [
+            "食",
+            "sik6"
+          ],
+          [
+            "羊肉",
+            "joeng4 juk6"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "豬肉",
+      "jp": "zyu1 juk6",
+      "en": "pork",
+      "fr": "porc",
+      "mine": "Djuyou"
+    },
+    {
+      "hk": "紙巾",
+      "jp": "zi2 gan1",
+      "en": "napkin / tissue",
+      "fr": "serviette en papier",
+      "mine": "Chizi",
+      "note": "Your 'chizi' sounds like 廁紙 (ci3 zi2) = toilet paper! A napkin is 紙巾 (zi2 gan1)."
+    },
+    {
+      "hk": "電視",
+      "jp": "din6 si6",
+      "en": "TV",
+      "fr": "télévision",
+      "mine": "Dinsi"
+    },
+    {
+      "hk": "電腦",
+      "jp": "din6 nou5",
+      "en": "computer",
+      "fr": "ordinateur",
+      "mine": "Dinlou",
+      "note": "Often said 'din6 lou5'. Compare 電爐 (din6 lou4) — only the tone differs!",
+      "ex": {
+        "en": "Do you have a computer?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "有冇",
+            "jau5 mou5"
+          ],
+          [
+            "電腦",
+            "din6 nou5"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "電爐",
+      "jp": "din6 lou4",
+      "en": "electric stove / hotplate",
+      "fr": "plaque électrique",
+      "mine": "Dinlou"
+    },
+    {
+      "hk": "電器",
+      "jp": "din6 hei3",
+      "en": "electrical appliance",
+      "fr": "appareil électrique",
+      "mine": "Din hey"
+    }
+  ],
+  "sentences": [
+    {
+      "en": "My big brother and big sister are in Hong Kong.",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "哥哥",
+          "go4 go1"
+        ],
+        [
+          "同",
+          "tung4"
+        ],
+        [
+          "家姐",
+          "gaa1 ze1"
+        ],
+        [
+          "喺",
+          "hai2"
+        ],
+        [
+          "香港",
+          "hoeng1 gong2"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "Why are you sleeping now?",
+      "parts": [
+        [
+          "點解",
+          "dim2 gaai2"
+        ],
+        [
+          "你",
+          "nei5"
+        ],
+        [
+          "而家",
+          "ji4 gaa1"
+        ],
+        [
+          "瞓覺",
+          "fan3 gaau3"
+        ],
+        [
+          "？"
+        ]
+      ]
+    },
+    {
+      "en": "I like riding my bike.",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "鍾意",
+          "zung1 ji3"
+        ],
+        [
+          "踩",
+          "caai2"
+        ],
+        [
+          "單車",
+          "daan1 ce1"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "It's raining, I don't want to go running.",
+      "parts": [
+        [
+          "落緊雨",
+          "lok6 gan2 jyu5"
+        ],
+        [
+          "，"
+        ],
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "唔想",
+          "m4 soeng2"
+        ],
+        [
+          "跑步",
+          "paau2 bou6"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "Can I use the computer?",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "可唔可以",
+          "ho2 m4 ho2 ji5"
+        ],
+        [
+          "用",
+          "jung6"
+        ],
+        [
+          "電腦",
+          "din6 nou5"
+        ],
+        [
+          "啊",
+          "aa3"
+        ],
+        [
+          "？"
+        ]
+      ]
+    },
+    {
+      "en": "This fish is very salty.",
+      "parts": [
+        [
+          "呢條",
+          "ni1 tiu4"
+        ],
+        [
+          "魚",
+          "jyu2"
+        ],
+        [
+          "好",
+          "hou2"
+        ],
+        [
+          "鹹",
+          "haam4"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "How do you use this appliance?",
+      "parts": [
+        [
+          "呢部",
+          "ni1 bou6"
+        ],
+        [
+          "電器",
+          "din6 hei3"
+        ],
+        [
+          "點樣",
+          "dim2 joeng2"
+        ],
+        [
+          "用",
+          "jung6"
+        ],
+        [
+          "啊",
+          "aa3"
+        ],
+        [
+          "？"
+        ]
+      ]
+    },
+    {
+      "en": "My big sister likes sweet things.",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "家姐",
+          "gaa1 ze1"
+        ],
+        [
+          "鍾意",
+          "zung1 ji3"
+        ],
+        [
+          "食",
+          "sik6"
+        ],
+        [
+          "甜",
+          "tim4"
+        ],
+        [
+          "嘢",
+          "je5"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "Who wants pork?",
+      "parts": [
+        [
+          "邊個",
+          "bin1 go3"
+        ],
+        [
+          "想要",
+          "soeng2 jiu3"
+        ],
+        [
+          "豬肉",
+          "zyu1 juk6"
+        ],
+        [
+          "？"
+        ]
+      ]
+    },
+    {
+      "en": "Why don't you eat pork?",
+      "parts": [
+        [
+          "點解",
+          "dim2 gaai2"
+        ],
+        [
+          "你",
+          "nei5"
+        ],
+        [
+          "唔",
+          "m4"
+        ],
+        [
+          "食",
+          "sik6"
+        ],
+        [
+          "豬肉",
+          "zyu1 juk6"
+        ],
+        [
+          "啊",
+          "aa3"
+        ],
+        [
+          "？"
+        ]
+      ]
+    },
+    {
+      "en": "Which day are you going shopping?",
+      "parts": [
+        [
+          "你",
+          "nei5"
+        ],
+        [
+          "星期幾",
+          "sing1 kei4 gei2"
+        ],
+        [
+          "去",
+          "heoi3"
+        ],
+        [
+          "買嘢",
+          "maai5 je5"
+        ],
+        [
+          "啊",
+          "aa3"
+        ],
+        [
+          "？"
+        ]
+      ]
+    },
+    {
+      "en": "He has a computer but no TV.",
+      "parts": [
+        [
+          "佢",
+          "keoi5"
+        ],
+        [
+          "有",
+          "jau5"
+        ],
+        [
+          "電腦",
+          "din6 nou5"
+        ],
+        [
+          "，"
+        ],
+        [
+          "冇",
+          "mou5"
+        ],
+        [
+          "電視",
+          "din6 si6"
+        ],
+        [
+          "。"
+        ]
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "title": "想 (soeng2) vs 想要 (soeng2 jiu3)",
+      "explain": "想 (soeng2) + verb = want to do. 想要 (soeng2 jiu3) + thing = want a thing.",
+      "examples": [
+        {
+          "en": "I want to go shopping.",
+          "parts": [
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "想",
+              "soeng2"
+            ],
+            [
+              "去",
+              "heoi3"
+            ],
+            [
+              "買嘢",
+              "maai5 je5"
+            ],
+            [
+              "。"
+            ]
+          ]
+        },
+        {
+          "en": "I want a bicycle.",
+          "parts": [
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "想要",
+              "soeng2 jiu3"
+            ],
+            [
+              "架",
+              "gaa3"
+            ],
+            [
+              "單車",
+              "daan1 ce1"
+            ],
+            [
+              "。"
+            ]
+          ]
+        }
+      ],
+      "after": "想要"
+    },
+    {
+      "title": "緊 (gan2): happening right now",
+      "explain": "Put 緊 (gan2) straight after the verb to say something is going on right now, like English '-ing'.",
+      "examples": [
+        {
+          "en": "He's sleeping.",
+          "parts": [
+            [
+              "佢",
+              "keoi5"
+            ],
+            [
+              "瞓緊覺",
+              "fan3 gan2 gaau3"
+            ],
+            [
+              "。"
+            ]
+          ]
+        },
+        {
+          "en": "It's raining — where are you going?",
+          "parts": [
+            [
+              "落緊雨",
+              "lok6 gan2 jyu5"
+            ],
+            [
+              "，"
+            ],
+            [
+              "你",
+              "nei5"
+            ],
+            [
+              "去",
+              "heoi3"
+            ],
+            [
+              "邊度",
+              "bin1 dou6"
+            ],
+            [
+              "啊",
+              "aa3"
+            ],
+            [
+              "？"
+            ]
+          ]
+        }
+      ],
+      "after": "落緊雨"
+    }
+  ],
+  "dialogue": {
+    "title": "At home on a rainy day",
+    "lines": [
+      {
+        "spk": "A",
+        "en": "What are you doing?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "做緊",
+            "zou6 gan2"
+          ],
+          [
+            "咩",
+            "me1"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      },
+      {
+        "spk": "B",
+        "en": "I'm watching TV.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "睇緊",
+            "tai2 gan2"
+          ],
+          [
+            "電視",
+            "din6 si6"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "A",
+        "en": "Do you want to go running?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "想唔想",
+            "soeng2 m4 soeng2"
+          ],
+          [
+            "去",
+            "heoi3"
+          ],
+          [
+            "跑步",
+            "paau2 bou6"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      },
+      {
+        "spk": "B",
+        "en": "It's raining. I don't want to.",
+        "parts": [
+          [
+            "落緊雨",
+            "lok6 gan2 jyu5"
+          ],
+          [
+            "，"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "唔想",
+            "m4 soeng2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "A",
+        "en": "Then let's go shopping!",
+        "parts": [
+          [
+            "噉",
+            "gam2"
+          ],
+          [
+            "我哋",
+            "ngo5 dei6"
+          ],
+          [
+            "去",
+            "heoi3"
+          ],
+          [
+            "買嘢",
+            "maai5 je5"
+          ],
+          [
+            "啦",
+            "laa1"
+          ],
+          [
+            "！"
+          ]
+        ]
+      },
+      {
+        "spk": "B",
+        "en": "OK! Where to?",
+        "parts": [
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "！"
+          ],
+          [
+            "去",
+            "heoi3"
+          ],
+          [
+            "邊度",
+            "bin1 dou6"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "q": "What is B doing at first?",
+        "options": [
+          "Watching TV",
+          "Sleeping",
+          "Running",
+          "Shopping"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "Why doesn't B want to go running?",
+        "options": [
+          "It's raining",
+          "It's too difficult",
+          "B is sleeping",
+          "B has no bike"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "What do they decide to do?",
+        "options": [
+          "Go shopping",
+          "Ride bikes",
+          "Eat fish",
+          "Sleep"
+        ],
+        "answer": 0
+      }
+    ],
+    "gloss": [
+      [
+        "噉",
+        "gam2",
+        "so / then"
+      ],
+      [
+        "我哋",
+        "ngo5 dei6",
+        "we / us"
+      ]
+    ]
+  }
+}

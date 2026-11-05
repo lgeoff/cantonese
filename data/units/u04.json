@@ -5,117 +5,2226 @@
   "emoji": "🙋",
   "desc": "Say who you are, where you're from, where you live and what languages you speak",
   "words": [
-    {"hk": "我", "jp": "ngo5", "en": "I / me", "fr": "je / moi",
-     "note": "Many Hongkongers drop the ng-: 'o5'. Both are fine.",
-     "ex": {"en": "I'm Mark.", "parts": [["我","ngo5"],["叫","giu3"],["馬克","maa5 hak1"],["。"]]}},
-    {"hk": "你", "jp": "nei5", "en": "you", "fr": "tu / vous",
-     "note": "Often said 'lei5' (n→l). The polite 您 is almost never used in Cantonese.",
-     "ex": {"en": "And you?", "parts": [["你","nei5"],["呢","ne1"],["？"]]}},
-    {"hk": "佢", "jp": "keoi5", "en": "he / she / him / her / it", "fr": "il / elle / lui",
-     "note": "One word for he, she and it — no gender in speech.",
-     "ex": {"en": "She doesn't speak French.", "parts": [["佢","keoi5"],["唔識","m4 sik1"],["講","gong2"],["法文","faat3 man2"],["。"]]}},
-    {"hk": "我哋", "jp": "ngo5 dei6", "en": "we / us", "fr": "nous",
-     "ex": {"en": "We live in Geneva.", "parts": [["我哋","ngo5 dei6"],["住","zyu6"],["喺","hai2"],["日內瓦","jat6 noi6 ngaa5"],["。"]]}},
-    {"hk": "你哋", "jp": "nei5 dei6", "en": "you (plural)", "fr": "vous (pluriel)",
-     "ex": {"en": "Are you (all) French?", "parts": [["你哋","nei5 dei6"],["係唔係","hai6 m4 hai6"],["法國人","faat3 gwok3 jan4"],["啊","aa3"],["？"]]}},
-    {"hk": "佢哋", "jp": "keoi5 dei6", "en": "they / them", "fr": "ils / elles / eux",
-     "ex": {"en": "They aren't Swiss.", "parts": [["佢哋","keoi5 dei6"],["唔係","m4 hai6"],["瑞士人","seoi6 si6 jan4"],["。"]]}},
-    {"hk": "香港", "jp": "hoeng1 gong2", "en": "Hong Kong", "fr": "Hong Kong",
-     "note": "Literally 'fragrant harbour'. 香港人 = a Hongkonger.",
-     "ex": {"en": "I was born in Hong Kong.", "parts": [["我","ngo5"],["喺","hai2"],["香港","hoeng1 gong2"],["出世","ceot1 sai3"],["。"]]}},
-    {"hk": "瑞士", "jp": "seoi6 si6", "en": "Switzerland", "fr": "Suisse",
-     "ex": {"en": "Do you like Switzerland?", "parts": [["你","nei5"],["鍾唔鍾意","zung1 m4 zung1 ji3"],["瑞士","seoi6 si6"],["啊","aa3"],["？"]]}},
-    {"hk": "新西蘭", "jp": "san1 sai1 laan4", "en": "New Zealand", "fr": "Nouvelle-Zélande",
-     "note": "Literally 'new west orchid' — a sound-and-meaning blend of 'New Zealand'.",
-     "ex": {"en": "I'm a New Zealander.", "parts": [["我","ngo5"],["係","hai6"],["新西蘭人","san1 sai1 laan4 jan4"],["。"]]}},
-    {"hk": "法國", "jp": "faat3 gwok3", "en": "France", "fr": "France",
-     "ex": {"en": "My big sister lives in France.", "parts": [["我","ngo5"],["家姐","gaa1 ze1"],["住","zyu6"],["喺","hai2"],["法國","faat3 gwok3"],["。"]]}},
-    {"hk": "中國", "jp": "zung1 gwok3", "en": "China", "fr": "Chine",
-     "note": "英國 jing1 gwok3 = the UK, 美國 mei5 gwok3 = the USA. 國 = country."},
-    {"hk": "日內瓦", "jp": "jat6 noi6 ngaa5", "en": "Geneva", "fr": "Genève",
-     "ex": {"en": "Where in Geneva do you live?", "parts": [["你","nei5"],["住","zyu6"],["喺","hai2"],["日內瓦","jat6 noi6 ngaa5"],["邊度","bin1 dou6"],["啊","aa3"],["？"]]}},
-    {"hk": "住", "jp": "zyu6", "en": "to live (somewhere)", "fr": "habiter",
-     "note": "住喺 + place = live in. 喺 hai2 is 'at / in'.",
-     "ex": {"en": "Where do you live?", "parts": [["你","nei5"],["住","zyu6"],["喺","hai2"],["邊度","bin1 dou6"],["啊","aa3"],["？"]]}},
-    {"hk": "識", "jp": "sik1", "en": "to know how to; to know (a person)", "fr": "savoir (faire) ; connaître",
-     "note": "識講 = can speak. 我識佢 = I know him.",
-     "ex": {"en": "Do you know him?", "parts": [["你","nei5"],["識唔識","sik1 m4 sik1"],["佢","keoi5"],["啊","aa3"],["？"]]}},
-    {"hk": "講", "jp": "gong2", "en": "to speak / to say", "fr": "parler / dire",
-     "ex": {"en": "Please speak slowly.", "parts": [["唔該","m4 goi1"],["講","gong2"],["慢啲","maan6 di1"],["。"]]}},
-    {"hk": "廣東話", "jp": "gwong2 dung1 waa2", "en": "Cantonese (language)", "fr": "cantonais",
-     "note": "話 is waa2 here (tone change). Also 廣東話 = 'the speech of Guangdong'.",
-     "ex": {"en": "Can you speak Cantonese?", "parts": [["你","nei5"],["識唔識","sik1 m4 sik1"],["講","gong2"],["廣東話","gwong2 dung1 waa2"],["啊","aa3"],["？"]]}},
-    {"hk": "英文", "jp": "jing1 man2", "en": "English (language)", "fr": "anglais",
-     "note": "文 man2 with a tone change. For languages, 文 is used for 'written / national' language: 英文, 法文, 中文.",
-     "ex": {"en": "My mum doesn't speak English.", "parts": [["我","ngo5"],["媽媽","maa4 maa1"],["唔識","m4 sik1"],["講","gong2"],["英文","jing1 man2"],["。"]]}},
-    {"hk": "法文", "jp": "faat3 man2", "en": "French (language)", "fr": "français",
-     "ex": {"en": "Is French difficult?", "parts": [["法文","faat3 man2"],["難唔難","naan4 m4 naan4"],["啊","aa3"],["？"]]}},
-    {"hk": "少少", "jp": "siu2 siu2", "en": "a little", "fr": "un peu",
-     "ex": {"en": "I speak a little Cantonese.", "parts": [["我","ngo5"],["識講","sik1 gong2"],["少少","siu2 siu2"],["廣東話","gwong2 dung1 waa2"],["。"]]}},
-    {"hk": "名", "jp": "meng2", "en": "name", "fr": "nom / prénom",
-     "note": "In speech 名 is meng2: 你叫咩名啊？ (What's your name?). The formal word 名字 is ming4 zi6.",
-     "ex": {"en": "What's your name?", "parts": [["你","nei5"],["叫","giu3"],["咩","me1"],["名","meng2"],["啊","aa3"],["？"]]}},
-    {"hk": "歲", "jp": "seoi3", "en": "years old", "fr": "ans (âge)",
-     "note": "幾多歲 = how old? No verb needed: 佢八歲 = he is eight.",
-     "ex": {"en": "How old is your little sister?", "parts": [["你","nei5"],["細妹","sai3 mui2"],["幾多歲","gei2 do1 seoi3"],["啊","aa3"],["？"]]}},
-    {"hk": "結婚", "jp": "git3 fan1", "en": "to marry", "fr": "se marier",
-     "note": "結咗婚 = married. 未結婚 = not married (yet).",
-     "ex": {"en": "Is your big brother married?", "parts": [["你","nei5"],["哥哥","go4 go1"],["結咗婚","git3 zo2 fan1"],["未","mei6"],["啊","aa3"],["？"]]}}
+    {
+      "hk": "我哋",
+      "jp": "ngo5 dei6",
+      "en": "we / us",
+      "fr": "nous",
+      "ex": {
+        "en": "We live in London.",
+        "parts": [
+          [
+            "我哋",
+            "ngo5 dei6"
+          ],
+          [
+            "住",
+            "zyu6"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "倫敦",
+            "leon4 deon1"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "你哋",
+      "jp": "nei5 dei6",
+      "en": "you (plural)",
+      "fr": "vous (pluriel)",
+      "ex": {
+        "en": "Are you (all) French?",
+        "parts": [
+          [
+            "你哋",
+            "nei5 dei6"
+          ],
+          [
+            "係唔係",
+            "hai6 m4 hai6"
+          ],
+          [
+            "法國人",
+            "faat3 gwok3 jan4"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "佢哋",
+      "jp": "keoi5 dei6",
+      "en": "they / them",
+      "fr": "ils / elles / eux",
+      "ex": {
+        "en": "They aren't Swiss.",
+        "parts": [
+          [
+            "佢哋",
+            "keoi5 dei6"
+          ],
+          [
+            "唔係",
+            "m4 hai6"
+          ],
+          [
+            "瑞士人",
+            "seoi6 si6 jan4"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "人",
+      "jp": "jan4",
+      "en": "person / people",
+      "fr": "personne / gens",
+      "note": "Place + 人 (jan4) = someone from there: 香港人 (hoeng1 gong2 jan4) a Hongkonger, 瑞士人 (seoi6 si6 jan4) a Swiss.",
+      "ex": {
+        "en": "I'm a Hongkonger.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "係",
+            "hai6"
+          ],
+          [
+            "香港",
+            "hoeng1 gong2"
+          ],
+          [
+            "人",
+            "jan4"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "叫",
+      "jp": "giu3",
+      "en": "to be called; to call",
+      "fr": "s'appeler ; appeler",
+      "note": "我叫 (ngo5 giu3) + name = My name is… / I'm called…",
+      "ex": {
+        "en": "He's called Ka-ming.",
+        "parts": [
+          [
+            "佢",
+            "keoi5"
+          ],
+          [
+            "叫",
+            "giu3"
+          ],
+          [
+            "家明",
+            "gaa1 ming4"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "名",
+      "jp": "meng2",
+      "en": "name",
+      "fr": "nom / prénom",
+      "note": "Said meng2 in everyday speech: 你叫咩名啊 (nei5 giu3 me1 meng2 aa3)？ (What's your name?). The more formal 名字 (ming4 zi6) keeps ming4.",
+      "ex": {
+        "en": "What's your name?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "叫",
+            "giu3"
+          ],
+          [
+            "咩",
+            "me1"
+          ],
+          [
+            "名",
+            "meng2"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "請問",
+      "jp": "ceng2 man6",
+      "en": "excuse me, may I ask…",
+      "fr": "excusez-moi, puis-je demander…",
+      "note": "Polite opener before a question to a stranger.",
+      "ex": {
+        "en": "Excuse me, what's your name?",
+        "parts": [
+          [
+            "請問",
+            "ceng2 man6"
+          ],
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "叫",
+            "giu3"
+          ],
+          [
+            "咩",
+            "me1"
+          ],
+          [
+            "名",
+            "meng2"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "香港",
+      "jp": "hoeng1 gong2",
+      "en": "Hong Kong",
+      "fr": "Hong Kong",
+      "note": "Literally 'fragrant harbour'.",
+      "ex": {
+        "en": "My family is in Hong Kong.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "屋企",
+            "uk1 kei2"
+          ],
+          [
+            "人",
+            "jan4"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "香港",
+            "hoeng1 gong2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "出世",
+      "jp": "ceot1 sai3",
+      "en": "to be born",
+      "fr": "naître",
+      "note": "Literally 'come out into the world'. 喺 (hai2) + place + 出世 (ceot1 sai3) = be born in…",
+      "ex": {
+        "en": "I was born in Hong Kong.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "香港",
+            "hoeng1 gong2"
+          ],
+          [
+            "出世",
+            "ceot1 sai3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "瑞士",
+      "jp": "seoi6 si6",
+      "en": "Switzerland",
+      "fr": "Suisse",
+      "ex": {
+        "en": "I really like Switzerland.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "鍾意",
+            "zung1 ji3"
+          ],
+          [
+            "瑞士",
+            "seoi6 si6"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "加拿大",
+      "jp": "gaa1 naa4 daai6",
+      "en": "Canada",
+      "fr": "Canada",
+      "note": "A sound transliteration of 'Canada'. Add 人 (jan4) for the people: 加拿大人 (gaa1 naa4 daai6 jan4) = a Canadian.",
+      "ex": {
+        "en": "I'm a Canadian.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "係",
+            "hai6"
+          ],
+          [
+            "加拿大人",
+            "gaa1 naa4 daai6 jan4"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "法國",
+      "jp": "faat3 gwok3",
+      "en": "France",
+      "fr": "France",
+      "ex": {
+        "en": "My big sister lives in France.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "家姐",
+            "gaa1 ze1"
+          ],
+          [
+            "住",
+            "zyu6"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "法國",
+            "faat3 gwok3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      "note": "國 (gwok3) = country: 中國 (zung1 gwok3) China, 英國 (jing1 gwok3) the UK, 美國 (mei5 gwok3) the USA."
+    },
+    {
+      "hk": "倫敦",
+      "jp": "leon4 deon1",
+      "en": "London",
+      "fr": "Londres",
+      "ex": {
+        "en": "Where in London do you live?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "住",
+            "zyu6"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "倫敦",
+            "leon4 deon1"
+          ],
+          [
+            "邊度",
+            "bin1 dou6"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "住",
+      "jp": "zyu6",
+      "en": "to live (somewhere)",
+      "fr": "habiter",
+      "note": "住喺 (zyu6 hai2) + place = live in. 喺 (hai2) is 'at / in'.",
+      "ex": {
+        "en": "Where do you live?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "住",
+            "zyu6"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "邊度",
+            "bin1 dou6"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "識",
+      "jp": "sik1",
+      "en": "to know how to; to know (a person)",
+      "fr": "savoir (faire) ; connaître",
+      "note": "識講 (sik1 gong2) = can speak. 我識佢 (ngo5 sik1 keoi5) = I know him.",
+      "ex": {
+        "en": "Do you know him?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "識唔識",
+            "sik1 m4 sik1"
+          ],
+          [
+            "佢",
+            "keoi5"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "講",
+      "jp": "gong2",
+      "en": "to speak / to say",
+      "fr": "parler / dire",
+      "ex": {
+        "en": "What are you saying?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "講",
+            "gong2"
+          ],
+          [
+            "咩",
+            "me1"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "廣東話",
+      "jp": "gwong2 dung1 waa2",
+      "en": "Cantonese (language)",
+      "fr": "cantonais (langue)",
+      "note": "話 (waa6) is waa2 here (tone change). Literally 'the speech of Guangdong'.",
+      "ex": {
+        "en": "Can you speak Cantonese?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "識唔識",
+            "sik1 m4 sik1"
+          ],
+          [
+            "講",
+            "gong2"
+          ],
+          [
+            "廣東話",
+            "gwong2 dung1 waa2"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "英文",
+      "jp": "jing1 man2",
+      "en": "English (language)",
+      "fr": "anglais",
+      "note": "Most languages end in 文 (man2), a tone change from man4: 英文 (jing1 man2), 法文 (faat3 man2), 中文 (zung1 man2). 講英文 (gong2 jing1 man2) = speak English. Dialects use 話 (waa2 here): 廣東話 (gwong2 dung1 waa2).",
+      "ex": {
+        "en": "My little sister doesn't speak English.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "細妹",
+            "sai3 mui2"
+          ],
+          [
+            "唔識",
+            "m4 sik1"
+          ],
+          [
+            "講",
+            "gong2"
+          ],
+          [
+            "英文",
+            "jing1 man2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "法文",
+      "jp": "faat3 man2",
+      "en": "French (language)",
+      "fr": "français",
+      "ex": {
+        "en": "Is French difficult?",
+        "parts": [
+          [
+            "法文",
+            "faat3 man2"
+          ],
+          [
+            "難唔難",
+            "naan4 m4 naan4"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "少少",
+      "jp": "siu2 siu2",
+      "en": "a little",
+      "fr": "un peu",
+      "ex": {
+        "en": "I speak a little Cantonese.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "識講",
+            "sik1 gong2"
+          ],
+          [
+            "少少",
+            "siu2 siu2"
+          ],
+          [
+            "廣東話",
+            "gwong2 dung1 waa2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "嘅",
+      "jp": "ge3",
+      "en": "'s / of (possession)",
+      "fr": "de (possession)",
+      "note": "我嘅 (ngo5 ge3) = my / mine, 佢嘅 (keoi5 ge3) = his / hers. For family it's usually left out: 我細佬 (ngo5 sai3 lou2) = my little brother.",
+      "ex": {
+        "en": "This computer is mine.",
+        "parts": [
+          [
+            "呢部",
+            "ni1 bou6"
+          ],
+          [
+            "電腦",
+            "din6 nou5"
+          ],
+          [
+            "係",
+            "hai6"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "嘅",
+            "ge3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "都",
+      "jp": "dou1",
+      "en": "also / too; all",
+      "fr": "aussi ; tous",
+      "note": "Goes BEFORE the verb, never at the end: 我都係 (ngo5 dou1 hai6) = me too.",
+      "ex": {
+        "en": "I'm a Canadian too.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "都",
+            "dou1"
+          ],
+          [
+            "係",
+            "hai6"
+          ],
+          [
+            "加拿大",
+            "gaa1 naa4 daai6"
+          ],
+          [
+            "人",
+            "jan4"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "但係",
+      "jp": "daan6 hai6",
+      "en": "but",
+      "fr": "mais",
+      "note": "Starts the second half of a sentence. Very often shortened to 但 (daan6).",
+      "ex": {
+        "en": "I speak English, but not French.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "識",
+            "sik1"
+          ],
+          [
+            "講",
+            "gong2"
+          ],
+          [
+            "英文",
+            "jing1 man2"
+          ],
+          [
+            "，"
+          ],
+          [
+            "但係",
+            "daan6 hai6"
+          ],
+          [
+            "唔識",
+            "m4 sik1"
+          ],
+          [
+            "講",
+            "gong2"
+          ],
+          [
+            "法文",
+            "faat3 man2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "不過",
+      "jp": "bat1 gwo3",
+      "en": "but / however",
+      "fr": "mais / cependant",
+      "note": "Same as 但係 (daan6 hai6), a little softer.",
+      "ex": {
+        "en": "Cantonese is hard, but I love it.",
+        "parts": [
+          [
+            "廣東話",
+            "gwong2 dung1 waa2"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "難",
+            "naan4"
+          ],
+          [
+            "，"
+          ],
+          [
+            "不過",
+            "bat1 gwo3"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "鍾意",
+            "zung1 ji3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "噉",
+      "jp": "gam2",
+      "en": "so / then / in that case",
+      "fr": "alors / donc",
+      "note": "Starts a sentence that follows from what was just said: 噉你係香港人 (gam2 nei5 hai6 hoeng1 gong2 jan4)？ = So you're a Hongkonger?",
+      "ex": {
+        "en": "So where do you live?",
+        "parts": [
+          [
+            "噉",
+            "gam2"
+          ],
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "住",
+            "zyu6"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "邊度",
+            "bin1 dou6"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "結婚",
+      "jp": "git3 fan1",
+      "en": "to marry",
+      "fr": "se marier",
+      "note": "結咗婚 (git3 zo2 fan1) = married. 咗 (zo2) marks something done — more in Days & Time.",
+      "ex": {
+        "en": "Do you want to get married?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "想唔想",
+            "soeng2 m4 soeng2"
+          ],
+          [
+            "結婚",
+            "git3 fan1"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    }
   ],
   "sentences": [
-    {"en": "I'm from Hong Kong. And you?", "parts": [["我","ngo5"],["係","hai6"],["香港人","hoeng1 gong2 jan4"],["，"],["你","nei5"],["呢","ne1"],["？"]]},
-    {"en": "I'm a New Zealander, but I was born in Hong Kong.", "parts": [["我","ngo5"],["係","hai6"],["新西蘭人","san1 sai1 laan4 jan4"],["，"],["不過","bat1 gwo3"],["喺","hai2"],["香港","hoeng1 gong2"],["出世","ceot1 sai3"],["。"]]},
-    {"en": "We now live in Switzerland.", "parts": [["我哋","ngo5 dei6"],["而家","ji4 gaa1"],["住","zyu6"],["喺","hai2"],["瑞士","seoi6 si6"],["。"]]},
-    {"en": "I can speak a little Cantonese.", "parts": [["我","ngo5"],["識","sik1"],["講","gong2"],["少少","siu2 siu2"],["廣東話","gwong2 dung1 waa2"],["。"]]},
-    {"en": "Can she speak English?", "parts": [["佢","keoi5"],["識唔識","sik1 m4 sik1"],["講","gong2"],["英文","jing1 man2"],["啊","aa3"],["？"]]},
-    {"en": "My little brother can't speak French.", "parts": [["我","ngo5"],["細佬","sai3 lou2"],["唔識","m4 sik1"],["講","gong2"],["法文","faat3 man2"],["。"]]},
-    {"en": "Are they Chinese?", "parts": [["佢哋","keoi5 dei6"],["係唔係","hai6 m4 hai6"],["中國人","zung1 gwok3 jan4"],["啊","aa3"],["？"]]},
-    {"en": "No, they're Swiss.", "parts": [["唔係","m4 hai6"],["，"],["佢哋","keoi5 dei6"],["係","hai6"],["瑞士人","seoi6 si6 jan4"],["。"]]},
-    {"en": "What's his name?", "parts": [["佢","keoi5"],["叫","giu3"],["咩","me1"],["名","meng2"],["啊","aa3"],["？"]]},
-    {"en": "How old are you this year?", "parts": [["你","nei5"],["今年","gam1 nin4"],["幾多歲","gei2 do1 seoi3"],["啊","aa3"],["？"]]},
-    {"en": "My big sister is married; my little sister isn't married yet.", "parts": [["我","ngo5"],["家姐","gaa1 ze1"],["結咗婚","git3 zo2 fan1"],["，"],["細妹","sai3 mui2"],["未","mei6"],["結婚","git3 fan1"],["。"]]},
-    {"en": "Cantonese is hard, English isn't.", "parts": [["廣東話","gwong2 dung1 waa2"],["好","hou2"],["難","naan4"],["，"],["英文","jing1 man2"],["唔難","m4 naan4"],["。"]]},
-    {"en": "Do you (all) like living in Geneva?", "parts": [["你哋","nei5 dei6"],["鍾唔鍾意","zung1 m4 zung1 ji3"],["住","zyu6"],["喺","hai2"],["日內瓦","jat6 noi6 ngaa5"],["啊","aa3"],["？"]]}
+    {
+      "en": "I'm from Hong Kong. And you?",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "係",
+          "hai6"
+        ],
+        [
+          "香港",
+          "hoeng1 gong2"
+        ],
+        [
+          "人",
+          "jan4"
+        ],
+        [
+          "，"
+        ],
+        [
+          "你",
+          "nei5"
+        ],
+        [
+          "呢",
+          "ne1"
+        ],
+        [
+          "？"
+        ]
+      ]
+    },
+    {
+      "en": "I'm a Canadian, but I was born in Hong Kong.",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "係",
+          "hai6"
+        ],
+        [
+          "加拿大",
+          "gaa1 naa4 daai6"
+        ],
+        [
+          "人",
+          "jan4"
+        ],
+        [
+          "，"
+        ],
+        [
+          "不過",
+          "bat1 gwo3"
+        ],
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "喺",
+          "hai2"
+        ],
+        [
+          "香港",
+          "hoeng1 gong2"
+        ],
+        [
+          "出世",
+          "ceot1 sai3"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "We now live in Switzerland.",
+      "parts": [
+        [
+          "我哋",
+          "ngo5 dei6"
+        ],
+        [
+          "而家",
+          "ji4 gaa1"
+        ],
+        [
+          "住",
+          "zyu6"
+        ],
+        [
+          "喺",
+          "hai2"
+        ],
+        [
+          "瑞士",
+          "seoi6 si6"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "I can speak a little Cantonese.",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "識",
+          "sik1"
+        ],
+        [
+          "講",
+          "gong2"
+        ],
+        [
+          "少少",
+          "siu2 siu2"
+        ],
+        [
+          "廣東話",
+          "gwong2 dung1 waa2"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "Can she speak English?",
+      "parts": [
+        [
+          "佢",
+          "keoi5"
+        ],
+        [
+          "識唔識",
+          "sik1 m4 sik1"
+        ],
+        [
+          "講",
+          "gong2"
+        ],
+        [
+          "英文",
+          "jing1 man2"
+        ],
+        [
+          "啊",
+          "aa3"
+        ],
+        [
+          "？"
+        ]
+      ]
+    },
+    {
+      "en": "Are they French?",
+      "parts": [
+        [
+          "佢哋",
+          "keoi5 dei6"
+        ],
+        [
+          "係唔係",
+          "hai6 m4 hai6"
+        ],
+        [
+          "法國",
+          "faat3 gwok3"
+        ],
+        [
+          "人",
+          "jan4"
+        ],
+        [
+          "啊",
+          "aa3"
+        ],
+        [
+          "？"
+        ]
+      ]
+    },
+    {
+      "en": "No, they're Swiss.",
+      "parts": [
+        [
+          "唔係",
+          "m4 hai6"
+        ],
+        [
+          "，"
+        ],
+        [
+          "佢哋",
+          "keoi5 dei6"
+        ],
+        [
+          "係",
+          "hai6"
+        ],
+        [
+          "瑞士",
+          "seoi6 si6"
+        ],
+        [
+          "人",
+          "jan4"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "What's his name?",
+      "parts": [
+        [
+          "佢",
+          "keoi5"
+        ],
+        [
+          "叫",
+          "giu3"
+        ],
+        [
+          "咩",
+          "me1"
+        ],
+        [
+          "名",
+          "meng2"
+        ],
+        [
+          "啊",
+          "aa3"
+        ],
+        [
+          "？"
+        ]
+      ]
+    },
+    {
+      "en": "Where were you born?",
+      "parts": [
+        [
+          "你",
+          "nei5"
+        ],
+        [
+          "喺",
+          "hai2"
+        ],
+        [
+          "邊度",
+          "bin1 dou6"
+        ],
+        [
+          "出世",
+          "ceot1 sai3"
+        ],
+        [
+          "啊",
+          "aa3"
+        ],
+        [
+          "？"
+        ]
+      ]
+    },
+    {
+      "en": "They're getting married in London.",
+      "parts": [
+        [
+          "佢哋",
+          "keoi5 dei6"
+        ],
+        [
+          "喺",
+          "hai2"
+        ],
+        [
+          "倫敦",
+          "leon4 deon1"
+        ],
+        [
+          "結婚",
+          "git3 fan1"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "Cantonese is hard, English isn't.",
+      "parts": [
+        [
+          "廣東話",
+          "gwong2 dung1 waa2"
+        ],
+        [
+          "好",
+          "hou2"
+        ],
+        [
+          "難",
+          "naan4"
+        ],
+        [
+          "，"
+        ],
+        [
+          "英文",
+          "jing1 man2"
+        ],
+        [
+          "唔",
+          "m4"
+        ],
+        [
+          "難",
+          "naan4"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "Do you (all) live in London?",
+      "parts": [
+        [
+          "你哋",
+          "nei5 dei6"
+        ],
+        [
+          "係唔係",
+          "hai6 m4 hai6"
+        ],
+        [
+          "住",
+          "zyu6"
+        ],
+        [
+          "喺",
+          "hai2"
+        ],
+        [
+          "倫敦",
+          "leon4 deon1"
+        ],
+        [
+          "啊",
+          "aa3"
+        ],
+        [
+          "？"
+        ]
+      ]
+    },
+    {
+      "en": "My big sister lives in France too.",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "家姐",
+          "gaa1 ze1"
+        ],
+        [
+          "都",
+          "dou1"
+        ],
+        [
+          "住",
+          "zyu6"
+        ],
+        [
+          "喺",
+          "hai2"
+        ],
+        [
+          "法國",
+          "faat3 gwok3"
+        ],
+        [
+          "。"
+        ]
+      ]
+    }
   ],
   "grammar": [
-    {"title": "係 + place + 人 = nationality",
-     "explain": "Add 人 jan4 (person) after a place to say where someone is from: 香港人, 瑞士人, 法國人. To ask, put 邊度 in the place slot: 你係邊度人啊？",
-     "examples": [
-       {"en": "Where are you from?", "parts": [["你","nei5"],["係","hai6"],["邊度人","bin1 dou6 jan4"],["啊","aa3"],["？"]]},
-       {"en": "I'm French.", "parts": [["我","ngo5"],["係","hai6"],["法國人","faat3 gwok3 jan4"],["。"]]}
-     ]},
-    {"title": "哋 makes pronouns plural",
-     "explain": "我 → 我哋 (we), 你 → 你哋 (you all), 佢 → 佢哋 (they). Only pronouns take 哋, not nouns.",
-     "examples": [
-       {"en": "We are New Zealanders.", "parts": [["我哋","ngo5 dei6"],["係","hai6"],["新西蘭人","san1 sai1 laan4 jan4"],["。"]]},
-       {"en": "Do they live in Hong Kong?", "parts": [["佢哋","keoi5 dei6"],["係唔係","hai6 m4 hai6"],["住","zyu6"],["喺","hai2"],["香港","hoeng1 gong2"],["啊","aa3"],["？"]]}
-     ]},
-    {"title": "住喺 = live in",
-     "explain": "喺 hai2 means 'at / in'. Put it between the verb and the place: 住喺日內瓦. Don't confuse it with 係 hai6 (to be).",
-     "examples": [
-       {"en": "He lives in France.", "parts": [["佢","keoi5"],["住","zyu6"],["喺","hai2"],["法國","faat3 gwok3"],["。"]]},
-       {"en": "He is French.", "parts": [["佢","keoi5"],["係","hai6"],["法國人","faat3 gwok3 jan4"],["。"]]}
-     ]}
+    {
+      "title": "係 (hai6) + place + 人 (jan4) = nationality",
+      "explain": "Add 人 (jan4) after a place to say where someone is from: 香港人 (hoeng1 gong2 jan4), 瑞士人 (seoi6 si6 jan4), 法國人 (faat3 gwok3 jan4). To ask, put 邊度 (bin1 dou6) in the place slot: 你係邊度人啊 (nei5 hai6 bin1 dou6 jan4 aa3)？",
+      "examples": [
+        {
+          "en": "Where are you from?",
+          "parts": [
+            [
+              "你",
+              "nei5"
+            ],
+            [
+              "係",
+              "hai6"
+            ],
+            [
+              "邊度",
+              "bin1 dou6"
+            ],
+            [
+              "人",
+              "jan4"
+            ],
+            [
+              "啊",
+              "aa3"
+            ],
+            [
+              "？"
+            ]
+          ]
+        },
+        {
+          "en": "I'm French.",
+          "parts": [
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "係",
+              "hai6"
+            ],
+            [
+              "法國",
+              "faat3 gwok3"
+            ],
+            [
+              "人",
+              "jan4"
+            ],
+            [
+              "。"
+            ]
+          ]
+        }
+      ],
+      "after": "人"
+    },
+    {
+      "title": "哋 (dei6) makes pronouns plural",
+      "explain": "我 (ngo5) → 我哋 (ngo5 dei6) (we), 你 (nei5) → 你哋 (nei5 dei6) (you all), 佢 (keoi5) → 佢哋 (keoi5 dei6) (they). Only pronouns take 哋 (dei6), not nouns.",
+      "examples": [
+        {
+          "en": "We are Canadians.",
+          "parts": [
+            [
+              "我哋",
+              "ngo5 dei6"
+            ],
+            [
+              "係",
+              "hai6"
+            ],
+            [
+              "加拿大",
+              "gaa1 naa4 daai6"
+            ],
+            [
+              "人",
+              "jan4"
+            ],
+            [
+              "。"
+            ]
+          ]
+        },
+        {
+          "en": "Do they live in Hong Kong?",
+          "parts": [
+            [
+              "佢哋",
+              "keoi5 dei6"
+            ],
+            [
+              "係唔係",
+              "hai6 m4 hai6"
+            ],
+            [
+              "住",
+              "zyu6"
+            ],
+            [
+              "喺",
+              "hai2"
+            ],
+            [
+              "香港",
+              "hoeng1 gong2"
+            ],
+            [
+              "啊",
+              "aa3"
+            ],
+            [
+              "？"
+            ]
+          ]
+        }
+      ],
+      "after": "佢哋"
+    },
+    {
+      "title": "係 (hai6) 'is' vs 喺 (hai2) 'at'",
+      "explain": "Two words, two tones: 係 (hai6) is low and flat and links two nouns; 喺 (hai2) rises and gives a place: 住喺倫敦 (zyu6 hai2 leon4 deon1) = live in London.",
+      "examples": [
+        {
+          "en": "He lives in France.",
+          "parts": [
+            [
+              "佢",
+              "keoi5"
+            ],
+            [
+              "住",
+              "zyu6"
+            ],
+            [
+              "喺",
+              "hai2"
+            ],
+            [
+              "法國",
+              "faat3 gwok3"
+            ],
+            [
+              "。"
+            ]
+          ]
+        },
+        {
+          "en": "He is French.",
+          "parts": [
+            [
+              "佢",
+              "keoi5"
+            ],
+            [
+              "係",
+              "hai6"
+            ],
+            [
+              "法國",
+              "faat3 gwok3"
+            ],
+            [
+              "人",
+              "jan4"
+            ],
+            [
+              "。"
+            ]
+          ]
+        }
+      ],
+      "after": "住"
+    },
+    {
+      "title": "嘅 (ge3) = 's",
+      "explain": "Noun or pronoun + 嘅 (ge3) shows who owns something: 我嘅 (ngo5 ge3) mine, 家明嘅 (gaa1 ming4 ge3) Ka-ming's. With family and close friends, leave it out: 我細佬 (ngo5 sai3 lou2).",
+      "examples": [
+        {
+          "en": "This bike is mine.",
+          "parts": [
+            [
+              "呢架",
+              "ni1 gaa3"
+            ],
+            [
+              "單車",
+              "daan1 ce1"
+            ],
+            [
+              "係",
+              "hai6"
+            ],
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "嘅",
+              "ge3"
+            ],
+            [
+              "。"
+            ]
+          ]
+        },
+        {
+          "en": "My little brother's computer is very expensive.",
+          "parts": [
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "細佬",
+              "sai3 lou2"
+            ],
+            [
+              "嘅",
+              "ge3"
+            ],
+            [
+              "電腦",
+              "din6 nou5"
+            ],
+            [
+              "好",
+              "hou2"
+            ],
+            [
+              "貴",
+              "gwai3"
+            ],
+            [
+              "。"
+            ]
+          ]
+        }
+      ],
+      "after": "嘅"
+    },
+    {
+      "title": "都 (dou1) goes before the verb",
+      "explain": "English puts 'too' at the end; Cantonese puts 都 (dou1) right after the subject, before the verb.",
+      "examples": [
+        {
+          "en": "I like running too.",
+          "parts": [
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "都",
+              "dou1"
+            ],
+            [
+              "鍾意",
+              "zung1 ji3"
+            ],
+            [
+              "跑步",
+              "paau2 bou6"
+            ],
+            [
+              "。"
+            ]
+          ]
+        },
+        {
+          "en": "They're Swiss too.",
+          "parts": [
+            [
+              "佢哋",
+              "keoi5 dei6"
+            ],
+            [
+              "都",
+              "dou1"
+            ],
+            [
+              "係",
+              "hai6"
+            ],
+            [
+              "瑞士",
+              "seoi6 si6"
+            ],
+            [
+              "人",
+              "jan4"
+            ],
+            [
+              "。"
+            ]
+          ]
+        }
+      ],
+      "after": "都"
+    },
+    {
+      "title": "But: 但係 (daan6 hai6) / 不過 (bat1 gwo3)",
+      "explain": "Both mean 'but' and start the second half. 不過 (bat1 gwo3) is a touch softer; in quick speech 但係 (daan6 hai6) often becomes just 但 (daan6).",
+      "examples": [
+        {
+          "en": "I'm a Canadian, but I was born in Hong Kong.",
+          "parts": [
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "係",
+              "hai6"
+            ],
+            [
+              "加拿大",
+              "gaa1 naa4 daai6"
+            ],
+            [
+              "人",
+              "jan4"
+            ],
+            [
+              "，"
+            ],
+            [
+              "但係",
+              "daan6 hai6"
+            ],
+            [
+              "喺",
+              "hai2"
+            ],
+            [
+              "香港",
+              "hoeng1 gong2"
+            ],
+            [
+              "出世",
+              "ceot1 sai3"
+            ],
+            [
+              "。"
+            ]
+          ]
+        },
+        {
+          "en": "He doesn't eat pork, but he eats beef.",
+          "parts": [
+            [
+              "佢",
+              "keoi5"
+            ],
+            [
+              "唔",
+              "m4"
+            ],
+            [
+              "食",
+              "sik6"
+            ],
+            [
+              "豬肉",
+              "zyu1 juk6"
+            ],
+            [
+              "，"
+            ],
+            [
+              "不過",
+              "bat1 gwo3"
+            ],
+            [
+              "食",
+              "sik6"
+            ],
+            [
+              "牛肉",
+              "ngau4 juk6"
+            ],
+            [
+              "。"
+            ]
+          ]
+        }
+      ],
+      "after": "不過"
+    }
   ],
   "dialogue": {
-    "title": "A new neighbour in Geneva",
+    "title": "A new neighbour in London",
     "lines": [
-      {"spk": "A", "en": "Hello! Did you just move in?", "parts": [["你好","nei5 hou2"],["！"],["你","nei5"],["新","san1"],["搬嚟","bun1 lai4"],["㗎","gaa3"],["？"]]},
-      {"spk": "B", "en": "Yes, my name's Mark. I live on the third floor.", "parts": [["係","hai6"],["啊","aa3"],["，"],["我","ngo5"],["叫","giu3"],["馬克","maa5 hak1"],["，"],["住","zyu6"],["三樓","saam1 lau2"],["。"]]},
-      {"spk": "A", "en": "I'm Yan, from the fifth floor. Oh, you speak Cantonese?", "parts": [["我","ngo5"],["叫","giu3"],["阿欣","aa3 jan1"],["，"],["住","zyu6"],["五樓","ng5 lau2"],["。"],["咦","ji2"],["，"],["你","nei5"],["識","sik1"],["講","gong2"],["廣東話","gwong2 dung1 waa2"],["㗎","gaa3"],["？"]]},
-      {"spk": "B", "en": "Just a little. I was born in Hong Kong.", "parts": [["少少","siu2 siu2"],["啫","ze1"],["。"],["我","ngo5"],["喺","hai2"],["香港","hoeng1 gong2"],["出世","ceot1 sai3"],["。"]]},
-      {"spk": "A", "en": "So you're a Hongkonger?", "parts": [["噉","gam2"],["你","nei5"],["係","hai6"],["香港人","hoeng1 gong2 jan4"],["？"]]},
-      {"spk": "B", "en": "I'm a New Zealander, but my family are all Hongkongers.", "parts": [["我","ngo5"],["係","hai6"],["新西蘭人","san1 sai1 laan4 jan4"],["，"],["不過","bat1 gwo3"],["我","ngo5"],["屋企人","uk1 kei2 jan4"],["都係","dou1 hai6"],["香港人","hoeng1 gong2 jan4"],["。"]]},
-      {"spk": "A", "en": "Wow, you speak really well!", "parts": [["嘩","waa1"],["，"],["你","nei5"],["講得","gong2 dak1"],["好好","hou2 hou2"],["啊","aa3"],["！"]]},
-      {"spk": "B", "en": "Thanks! Do you speak French?", "parts": [["多謝","do1 ze6"],["！"],["你","nei5"],["識唔識","sik1 m4 sik1"],["講","gong2"],["法文","faat3 man2"],["啊","aa3"],["？"]]},
-      {"spk": "A", "en": "Not a word! Come up for a cup of tea when you're free!", "parts": [["一句","jat1 geoi3"],["都","dou1"],["唔識","m4 sik1"],["！"],["得閒","dak1 haan4"],["上嚟","soeng5 lai4"],["飲杯茶","jam2 bui1 caa4"],["啦","laa1"],["！"]]},
-      {"spk": "B", "en": "Sure, thanks! Bye!", "parts": [["好","hou2"],["啊","aa3"],["，"],["多謝","do1 ze6"],["！"],["拜拜","baai1 baai3"],["！"]]}
+      {
+        "spk": "A",
+        "en": "Hello! Did you just move in?",
+        "parts": [
+          [
+            "你好",
+            "nei5 hou2"
+          ],
+          [
+            "！"
+          ],
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "係",
+            "hai6"
+          ],
+          [
+            "新搬嚟",
+            "san1 bun1 lai4"
+          ],
+          [
+            "㗎",
+            "gaa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      },
+      {
+        "spk": "B",
+        "en": "Yes, I'm Mark. I live next door to you.",
+        "parts": [
+          [
+            "係",
+            "hai6"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "，"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "叫",
+            "giu3"
+          ],
+          [
+            "馬克",
+            "maa5 hak1"
+          ],
+          [
+            "，"
+          ],
+          [
+            "住",
+            "zyu6"
+          ],
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "隔籬",
+            "gaak3 lei4"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "A",
+        "en": "I'm Yan. Wow, you speak Cantonese?",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "叫",
+            "giu3"
+          ],
+          [
+            "阿欣",
+            "aa3 jan1"
+          ],
+          [
+            "。"
+          ],
+          [
+            "嘩",
+            "waa1"
+          ],
+          [
+            "，"
+          ],
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "識",
+            "sik1"
+          ],
+          [
+            "講",
+            "gong2"
+          ],
+          [
+            "廣東話",
+            "gwong2 dung1 waa2"
+          ],
+          [
+            "㗎",
+            "gaa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      },
+      {
+        "spk": "B",
+        "en": "Just a little. I was born in Hong Kong.",
+        "parts": [
+          [
+            "少少",
+            "siu2 siu2"
+          ],
+          [
+            "咋",
+            "zaa3"
+          ],
+          [
+            "。"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "香港",
+            "hoeng1 gong2"
+          ],
+          [
+            "出世",
+            "ceot1 sai3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "A",
+        "en": "So you're a Hongkonger?",
+        "parts": [
+          [
+            "噉",
+            "gam2"
+          ],
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "係",
+            "hai6"
+          ],
+          [
+            "香港",
+            "hoeng1 gong2"
+          ],
+          [
+            "人",
+            "jan4"
+          ],
+          [
+            "？"
+          ]
+        ]
+      },
+      {
+        "spk": "B",
+        "en": "I'm a Canadian, but my family are all Hongkongers.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "係",
+            "hai6"
+          ],
+          [
+            "加拿大",
+            "gaa1 naa4 daai6"
+          ],
+          [
+            "人",
+            "jan4"
+          ],
+          [
+            "，"
+          ],
+          [
+            "不過",
+            "bat1 gwo3"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "屋企",
+            "uk1 kei2"
+          ],
+          [
+            "人",
+            "jan4"
+          ],
+          [
+            "都",
+            "dou1"
+          ],
+          [
+            "係",
+            "hai6"
+          ],
+          [
+            "香港",
+            "hoeng1 gong2"
+          ],
+          [
+            "人",
+            "jan4"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "A",
+        "en": "Your Cantonese is really good!",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "廣東話",
+            "gwong2 dung1 waa2"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "喎",
+            "wo3"
+          ],
+          [
+            "！"
+          ]
+        ]
+      },
+      {
+        "spk": "B",
+        "en": "Thanks! Do you speak French?",
+        "parts": [
+          [
+            "多謝",
+            "do1 ze6"
+          ],
+          [
+            "！"
+          ],
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "識唔識",
+            "sik1 m4 sik1"
+          ],
+          [
+            "講",
+            "gong2"
+          ],
+          [
+            "法文",
+            "faat3 man2"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      },
+      {
+        "spk": "A",
+        "en": "Not a word! You teach me!",
+        "parts": [
+          [
+            "一句",
+            "jat1 geoi3"
+          ],
+          [
+            "都",
+            "dou1"
+          ],
+          [
+            "唔識",
+            "m4 sik1"
+          ],
+          [
+            "！"
+          ],
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "教",
+            "gaau3"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "啦",
+            "laa1"
+          ],
+          [
+            "！"
+          ]
+        ]
+      },
+      {
+        "spk": "B",
+        "en": "Sure, no problem!",
+        "parts": [
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "，"
+          ],
+          [
+            "冇問題",
+            "mou5 man6 tai4"
+          ],
+          [
+            "！"
+          ]
+        ]
+      }
     ],
     "questions": [
-      {"q": "Which floor does Mark live on?", "options": ["The third floor", "The fifth floor", "The first floor", "The tenth floor"], "answer": 0},
-      {"q": "Where was Mark born?", "options": ["Hong Kong", "New Zealand", "Geneva", "France"], "answer": 0},
-      {"q": "What nationality is Mark?", "options": ["New Zealander", "Hongkonger", "Swiss", "French"], "answer": 0},
-      {"q": "Does Yan speak French?", "options": ["No, not at all", "Yes, very well", "A little", "She's learning it"], "answer": 0}
+      {
+        "q": "Where does Mark live?",
+        "options": [
+          "Next door to Yan",
+          "Upstairs",
+          "In Hong Kong",
+          "In France"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "Where was Mark born?",
+        "options": [
+          "Hong Kong",
+          "Canada",
+          "London",
+          "France"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "What nationality is Mark?",
+        "options": [
+          "Canadian",
+          "Hongkonger",
+          "Swiss",
+          "French"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "What does Yan ask Mark to do?",
+        "options": [
+          "Teach her French",
+          "Teach her Cantonese",
+          "Come for tea",
+          "Speak more slowly"
+        ],
+        "answer": 0
+      }
+    ],
+    "gloss": [
+      [
+        "新搬嚟",
+        "san1 bun1 lai4",
+        "newly moved in"
+      ],
+      [
+        "隔籬",
+        "gaak3 lei4",
+        "next door"
+      ],
+      [
+        "一句",
+        "jat1 geoi3",
+        "one sentence / a word"
+      ],
+      [
+        "教",
+        "gaau3",
+        "to teach"
+      ]
     ]
-  }
+  },
+  "toneLesson": {
+    "title": "Rising tones: 2 and 5",
+    "card": {
+      "title": "A big rise and a small rise",
+      "explain": "Both tones go up. Tone 2 starts mid and climbs high, like a surprised 'eh?'. Tone 5 starts low and rises only to the middle, a lazy shrug. You already say tone 5 in 我 (ngo5) and 你 (nei5).",
+      "examples": [
+        {
+          "en": "chair, ear",
+          "parts": [
+            [
+              "椅",
+              "ji2"
+            ],
+            [
+              "耳",
+              "ji5"
+            ]
+          ]
+        },
+        {
+          "en": "history, market",
+          "parts": [
+            [
+              "史",
+              "si2"
+            ],
+            [
+              "市",
+              "si5"
+            ]
+          ]
+        }
+      ]
+    },
+    "items": [
+      {
+        "hk": "椅",
+        "jp": "ji2",
+        "en": "chair",
+        "note": "Tone 2 · big rise, mid to high."
+      },
+      {
+        "hk": "耳",
+        "jp": "ji5",
+        "en": "ear",
+        "note": "Tone 5 · small rise, low to mid."
+      },
+      {
+        "hk": "史",
+        "jp": "si2",
+        "en": "history",
+        "note": "Tone 2 · big rise."
+      },
+      {
+        "hk": "市",
+        "jp": "si5",
+        "en": "market / city",
+        "note": "Tone 5 · small rise."
+      },
+      {
+        "hk": "想",
+        "jp": "soeng2",
+        "en": "to want to",
+        "note": "Tone 2, a word you know: 我想 (ngo5 soeng2)."
+      },
+      {
+        "hk": "買",
+        "jp": "maai5",
+        "en": "to buy",
+        "note": "Tone 5 · small rise. You'll learn it as a word next unit."
+      },
+      {
+        "hk": "賣",
+        "jp": "maai6",
+        "en": "to sell",
+        "note": "Tone 6 · low and flat — not rising! Mix up 買 (maai5) and 賣 (maai6) and you buy instead of sell."
+      }
+    ],
+    "pairs": [
+      [
+        "椅",
+        "耳"
+      ],
+      [
+        "史",
+        "市"
+      ],
+      [
+        "買",
+        "賣"
+      ]
+    ]
+  },
+  "names": [
+    "阿欣"
+  ]
 }

@@ -5,108 +5,2101 @@
   "emoji": "🩺",
   "desc": "Say what hurts, describe a cold or fever, and get through a visit to the doctor",
   "words": [
-    {"hk": "身體", "jp": "san1 tai2", "en": "body; health", "fr": "corps ; santé", "note": "身體好 = in good health. 身體健康 is a common wish.",
-     "ex": {"en": "My grandpa is in very good health.", "parts": [["我","ngo5"],["爺爺","je4 je2"],["身體","san1 tai2"],["好","hou2"],["好","hou2"],["。"]]}},
-    {"hk": "頭", "jp": "tau4", "en": "head", "fr": "tête",
-     "ex": {"en": "My head feels a bit dizzy.", "parts": [["我","ngo5"],["個","go3"],["頭","tau4"],["有啲","jau5 di1"],["暈","wan4"],["。"]]}},
-    {"hk": "肚", "jp": "tou5", "en": "belly, stomach", "fr": "ventre", "note": "肚餓 = hungry; 肚痛 = stomach ache.",
-     "ex": {"en": "I ate too much, my stomach is so full.", "parts": [["我","ngo5"],["食","sik6"],["得","dak1"],["太","taai3"],["多","do1"],["，"],["個","go3"],["肚","tou5"],["好","hou2"],["飽","baau2"],["。"]]}},
-    {"hk": "手", "jp": "sau2", "en": "hand; arm", "fr": "main ; bras",
-     "ex": {"en": "Wash your hands before eating.", "parts": [["食飯","sik6 faan6"],["之前","zi1 cin4"],["要","jiu3"],["洗手","sai2 sau2"],["啊","aa3"],["。"]]}},
-    {"hk": "腳", "jp": "goek3", "en": "foot; leg", "fr": "pied ; jambe",
-     "ex": {"en": "I walked all day, my feet are killing me.", "parts": [["行","haang4"],["咗","zo2"],["成日","seng4 jat6"],["，"],["我","ngo5"],["對","deoi3"],["腳","goek3"],["好","hou2"],["痛","tung3"],["。"]]}},
-    {"hk": "眼", "jp": "ngaan5", "en": "eye", "fr": "œil", "note": "Many people say 'aan5' without ng-.",
-     "ex": {"en": "I've been looking at the computer all day, my eyes are tired.", "parts": [["睇","tai2"],["咗","zo2"],["成日","seng4 jat6"],["電腦","din6 nou5"],["，"],["對","deoi3"],["眼","ngaan5"],["好","hou2"],["攰","gui6"],["。"]]}},
-    {"hk": "喉嚨", "jp": "hau4 lung4", "en": "throat", "fr": "gorge",
-     "ex": {"en": "My throat is a bit sore.", "parts": [["我","ngo5"],["喉嚨","hau4 lung4"],["有啲","jau5 di1"],["痛","tung3"],["。"]]}},
-    {"hk": "痛", "jp": "tung3", "en": "painful; to hurt", "fr": "douloureux ; avoir mal",
-     "ex": {"en": "Where does it hurt?", "parts": [["你","nei5"],["邊度","bin1 dou6"],["痛","tung3"],["啊","aa3"],["？"]]}},
-    {"hk": "頭痛", "jp": "tau4 tung3", "en": "headache; to have a headache", "fr": "mal de tête ; avoir mal à la tête",
-     "ex": {"en": "I've had a headache since this morning.", "parts": [["我","ngo5"],["由","jau4"],["今朝","gam1 ziu1"],["開始","hoi1 ci2"],["就","zau6"],["頭痛","tau4 tung3"],["。"]]}},
-    {"hk": "肚痛", "jp": "tou5 tung3", "en": "stomach ache", "fr": "mal au ventre",
-     "ex": {"en": "I ate seafood last night and now my stomach hurts.", "parts": [["我","ngo5"],["尋晚","cam4 maan5"],["食","sik6"],["咗","zo2"],["海鮮","hoi2 sin1"],["，"],["而家","ji4 gaa1"],["肚痛","tou5 tung3"],["。"]]}},
-    {"hk": "發燒", "jp": "faat3 siu1", "en": "to have a fever", "fr": "avoir de la fièvre",
-     "ex": {"en": "Have you got a fever? Your face is very red.", "parts": [["你","nei5"],["係咪","hai6 mai6"],["發燒","faat3 siu1"],["啊","aa3"],["？"],["塊面","faai3 min6"],["好","hou2"],["紅","hung4"],["。"]]}},
-    {"hk": "咳", "jp": "kat1", "en": "to cough", "fr": "tousser",
-     "ex": {"en": "He's been coughing for a week.", "parts": [["佢","keoi5"],["咳","kat1"],["咗","zo2"],["一個","jat1 go3"],["禮拜","lai5 baai3"],["喇","laa3"],["。"]]}},
-    {"hk": "感冒", "jp": "gam2 mou6", "en": "cold / flu; to catch a cold", "fr": "rhume / grippe ; s'enrhumer", "note": "Also: 傷風 soeng1 fung1 (a common cold). Catching a chill = 凍親.",
-     "ex": {"en": "I've caught a cold, I've got a runny nose.", "parts": [["我","ngo5"],["感冒","gam2 mou6"],["咗","zo2"],["，"],["流鼻水","lau4 bei6 seoi2"],["。"]]}},
-    {"hk": "流鼻水", "jp": "lau4 bei6 seoi2", "en": "to have a runny nose", "fr": "avoir le nez qui coule", "note": "Literally 'flow nose water'."},
-    {"hk": "醫生", "jp": "ji1 sang1", "en": "doctor", "fr": "médecin",
-     "ex": {"en": "The doctor says it's nothing serious.", "parts": [["醫生","ji1 sang1"],["話","waa6"],["冇","mou5"],["乜","mat1"],["事","si6"],["。"]]}},
-    {"hk": "睇醫生", "jp": "tai2 ji1 sang1", "en": "to see a doctor", "fr": "aller chez le médecin",
-     "ex": {"en": "If you're still coughing, go and see a doctor.", "parts": [["你","nei5"],["仲","zung6"],["咳","kat1"],["嘅話","ge3 waa2"],["就","zau6"],["去","heoi3"],["睇醫生","tai2 ji1 sang1"],["啦","laa1"],["。"]]}},
-    {"hk": "診所", "jp": "can2 so2", "en": "clinic", "fr": "cabinet médical, clinique",
-     "ex": {"en": "There's a clinic downstairs from my place.", "parts": [["我","ngo5"],["屋企","uk1 kei2"],["樓下","lau4 haa6"],["有","jau5"],["間","gaan1"],["診所","can2 so2"],["。"]]}},
-    {"hk": "醫院", "jp": "ji1 jyun2", "en": "hospital", "fr": "hôpital", "note": "院 is jyun2 here (rising tone).",
-     "ex": {"en": "My grandma is in hospital.", "parts": [["我","ngo5"],["嫲嫲","maa4 maa4"],["喺","hai2"],["醫院","ji1 jyun2"],["。"]]}},
-    {"hk": "藥", "jp": "joek6", "en": "medicine", "fr": "médicament",
-     "ex": {"en": "The doctor prescribed me two kinds of medicine.", "parts": [["醫生","ji1 sang1"],["開","hoi1"],["咗","zo2"],["兩種","loeng5 zung2"],["藥","joek6"],["畀","bei2"],["我","ngo5"],["。"]]}},
-    {"hk": "食藥", "jp": "sik6 joek6", "en": "to take medicine", "fr": "prendre un médicament", "note": "In Cantonese you 'eat' medicine — even liquid medicine.",
-     "ex": {"en": "Have you taken your medicine yet?", "parts": [["你","nei5"],["食","sik6"],["咗","zo2"],["藥","joek6"],["未","mei6"],["啊","aa3"],["？"]]}},
-    {"hk": "休息", "jp": "jau1 sik1", "en": "to rest", "fr": "se reposer",
-     "ex": {"en": "You should rest for a couple of days.", "parts": [["你","nei5"],["要","jiu3"],["休息","jau1 sik1"],["兩日","loeng5 jat6"],["啊","aa3"],["。"]]}},
-    {"hk": "病假", "jp": "beng6 gaa3", "en": "sick leave", "fr": "congé maladie", "note": "攞病假 lo2 beng6 gaa3 = take sick leave.",
-     "ex": {"en": "I'm taking a day of sick leave today.", "parts": [["我","ngo5"],["今日","gam1 jat6"],["攞","lo2"],["一日","jat1 jat6"],["病假","beng6 gaa3"],["。"]]}},
-    {"hk": "好返", "jp": "hou2 faan1", "en": "to get better, recover", "fr": "guérir, aller mieux", "note": "返 after an adjective = back to a normal state.",
-     "ex": {"en": "Have you got better?", "parts": [["你","nei5"],["好返","hou2 faan1"],["未","mei6"],["啊","aa3"],["？"]]}},
-    {"hk": "小心", "jp": "siu2 sam1", "en": "careful; be careful", "fr": "prudent ; faire attention",
-     "ex": {"en": "The floor is slippery, be careful!", "parts": [["地下","dei6 haa2"],["好","hou2"],["滑","waat6"],["，"],["小心","siu2 sam1"],["啊","aa3"],["！"]]}}
+    {
+      "hk": "身體",
+      "jp": "san1 tai2",
+      "en": "body; health",
+      "fr": "corps ; santé",
+      "note": "身體好 (san1 tai2 hou2) = in good health. 身體健康 (san1 tai2 gin6 hong1) is a common wish.",
+      "ex": {
+        "en": "My grandpa is in very good health.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "爺爺",
+            "je4 je2"
+          ],
+          [
+            "身體",
+            "san1 tai2"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "頭",
+      "jp": "tau4",
+      "en": "head",
+      "fr": "tête",
+      "ex": {
+        "en": "My head feels a bit dizzy.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "個",
+            "go3"
+          ],
+          [
+            "頭",
+            "tau4"
+          ],
+          [
+            "有啲",
+            "jau5 di1"
+          ],
+          [
+            "暈",
+            "wan4"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "肚",
+      "jp": "tou5",
+      "en": "belly, stomach",
+      "fr": "ventre",
+      "note": "肚餓 (tou5 ngo6) = hungry; 肚痛 (tou5 tung3) = stomach ache.",
+      "ex": {
+        "en": "I ate too much, my stomach is so full.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "食",
+            "sik6"
+          ],
+          [
+            "得",
+            "dak1"
+          ],
+          [
+            "太",
+            "taai3"
+          ],
+          [
+            "多",
+            "do1"
+          ],
+          [
+            "，"
+          ],
+          [
+            "個",
+            "go3"
+          ],
+          [
+            "肚",
+            "tou5"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "飽",
+            "baau2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "手",
+      "jp": "sau2",
+      "en": "hand; arm",
+      "fr": "main ; bras",
+      "ex": {
+        "en": "Wash your hands before eating.",
+        "parts": [
+          [
+            "食飯",
+            "sik6 faan6"
+          ],
+          [
+            "之前",
+            "zi1 cin4"
+          ],
+          [
+            "要",
+            "jiu3"
+          ],
+          [
+            "洗手",
+            "sai2 sau2"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "腳",
+      "jp": "goek3",
+      "en": "foot; leg",
+      "fr": "pied ; jambe",
+      "ex": {
+        "en": "I walked all day, my feet are killing me.",
+        "parts": [
+          [
+            "行",
+            "haang4"
+          ],
+          [
+            "咗",
+            "zo2"
+          ],
+          [
+            "成日",
+            "seng4 jat6"
+          ],
+          [
+            "，"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "對",
+            "deoi3"
+          ],
+          [
+            "腳",
+            "goek3"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "痛",
+            "tung3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "眼",
+      "jp": "ngaan5",
+      "en": "eye",
+      "fr": "œil",
+      "note": "Many people say 'aan5' without ng-.",
+      "ex": {
+        "en": "I've been looking at the computer all day, my eyes are tired.",
+        "parts": [
+          [
+            "睇",
+            "tai2"
+          ],
+          [
+            "咗",
+            "zo2"
+          ],
+          [
+            "成日",
+            "seng4 jat6"
+          ],
+          [
+            "電腦",
+            "din6 nou5"
+          ],
+          [
+            "，"
+          ],
+          [
+            "對",
+            "deoi3"
+          ],
+          [
+            "眼",
+            "ngaan5"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "攰",
+            "gui6"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "喉嚨",
+      "jp": "hau4 lung4",
+      "en": "throat",
+      "fr": "gorge",
+      "ex": {
+        "en": "My throat is a bit sore.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "喉嚨",
+            "hau4 lung4"
+          ],
+          [
+            "有啲",
+            "jau5 di1"
+          ],
+          [
+            "痛",
+            "tung3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "痛",
+      "jp": "tung3",
+      "en": "painful; to hurt",
+      "fr": "douloureux ; avoir mal",
+      "ex": {
+        "en": "Where does it hurt?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "邊度",
+            "bin1 dou6"
+          ],
+          [
+            "痛",
+            "tung3"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "頭痛",
+      "jp": "tau4 tung3",
+      "en": "headache; to have a headache",
+      "fr": "mal de tête ; avoir mal à la tête",
+      "ex": {
+        "en": "I've had a headache since I got up this morning.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "今朝",
+            "gam1 ziu1"
+          ],
+          [
+            "起身",
+            "hei2 san1"
+          ],
+          [
+            "就",
+            "zau6"
+          ],
+          [
+            "頭痛",
+            "tau4 tung3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "肚痛",
+      "jp": "tou5 tung3",
+      "en": "stomach ache",
+      "fr": "mal au ventre",
+      "ex": {
+        "en": "I ate seafood last night and now my stomach hurts.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "尋晚",
+            "cam4 maan5"
+          ],
+          [
+            "食",
+            "sik6"
+          ],
+          [
+            "咗",
+            "zo2"
+          ],
+          [
+            "海鮮",
+            "hoi2 sin1"
+          ],
+          [
+            "，"
+          ],
+          [
+            "而家",
+            "ji4 gaa1"
+          ],
+          [
+            "肚痛",
+            "tou5 tung3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "發燒",
+      "jp": "faat3 siu1",
+      "en": "to have a fever",
+      "fr": "avoir de la fièvre",
+      "ex": {
+        "en": "Have you got a fever? Your head is very hot.",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "係唔係",
+            "hai6 m4 hai6"
+          ],
+          [
+            "發燒",
+            "faat3 siu1"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ],
+          [
+            "個",
+            "go3"
+          ],
+          [
+            "頭",
+            "tau4"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "熱",
+            "jit6"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "咳",
+      "jp": "kat1",
+      "en": "to cough",
+      "fr": "tousser",
+      "ex": {
+        "en": "He's been coughing for a week.",
+        "parts": [
+          [
+            "佢",
+            "keoi5"
+          ],
+          [
+            "咳",
+            "kat1"
+          ],
+          [
+            "咗",
+            "zo2"
+          ],
+          [
+            "一個",
+            "jat1 go3"
+          ],
+          [
+            "禮拜",
+            "lai5 baai3"
+          ],
+          [
+            "喇",
+            "laa3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "感冒",
+      "jp": "gam2 mou6",
+      "en": "cold / flu; to catch a cold",
+      "fr": "rhume / grippe ; s'enrhumer",
+      "note": "Also: 傷風 soeng1 fung1 (a common cold). Catching a chill = 凍親 (dung3 can1).",
+      "ex": {
+        "en": "I've caught a cold, I've got a runny nose.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "感冒",
+            "gam2 mou6"
+          ],
+          [
+            "咗",
+            "zo2"
+          ],
+          [
+            "，"
+          ],
+          [
+            "流鼻水",
+            "lau4 bei6 seoi2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "流鼻水",
+      "jp": "lau4 bei6 seoi2",
+      "en": "to have a runny nose",
+      "fr": "avoir le nez qui coule",
+      "note": "Literally 'flow nose water'."
+    },
+    {
+      "hk": "醫生",
+      "jp": "ji1 sang1",
+      "en": "doctor",
+      "fr": "médecin",
+      "ex": {
+        "en": "The doctor says it's nothing serious.",
+        "parts": [
+          [
+            "醫生",
+            "ji1 sang1"
+          ],
+          [
+            "話",
+            "waa6"
+          ],
+          [
+            "冇",
+            "mou5"
+          ],
+          [
+            "乜",
+            "mat1"
+          ],
+          [
+            "事",
+            "si6"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "睇醫生",
+      "jp": "tai2 ji1 sang1",
+      "en": "to see a doctor",
+      "fr": "aller chez le médecin",
+      "ex": {
+        "en": "If you're still coughing, go and see a doctor.",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "仲",
+            "zung6"
+          ],
+          [
+            "咳",
+            "kat1"
+          ],
+          [
+            "嘅話",
+            "ge3 waa2"
+          ],
+          [
+            "就",
+            "zau6"
+          ],
+          [
+            "去",
+            "heoi3"
+          ],
+          [
+            "睇醫生",
+            "tai2 ji1 sang1"
+          ],
+          [
+            "啦",
+            "laa1"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "診所",
+      "jp": "can2 so2",
+      "en": "clinic",
+      "fr": "cabinet médical, clinique",
+      "ex": {
+        "en": "There's a clinic downstairs from my place.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "屋企",
+            "uk1 kei2"
+          ],
+          [
+            "樓下",
+            "lau4 haa6"
+          ],
+          [
+            "有",
+            "jau5"
+          ],
+          [
+            "間",
+            "gaan1"
+          ],
+          [
+            "診所",
+            "can2 so2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "醫院",
+      "jp": "ji1 jyun2",
+      "en": "hospital",
+      "fr": "hôpital",
+      "note": "院 (jyun2) is jyun2 here (rising tone).",
+      "ex": {
+        "en": "My grandma is in hospital.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "嫲嫲",
+            "maa4 maa4"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "醫院",
+            "ji1 jyun2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "藥",
+      "jp": "joek6",
+      "en": "medicine",
+      "fr": "médicament",
+      "ex": {
+        "en": "The doctor prescribed me two kinds of medicine.",
+        "parts": [
+          [
+            "醫生",
+            "ji1 sang1"
+          ],
+          [
+            "開",
+            "hoi1"
+          ],
+          [
+            "咗",
+            "zo2"
+          ],
+          [
+            "兩種",
+            "loeng5 zung2"
+          ],
+          [
+            "藥",
+            "joek6"
+          ],
+          [
+            "畀",
+            "bei2"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "食藥",
+      "jp": "sik6 joek6",
+      "en": "to take medicine",
+      "fr": "prendre un médicament",
+      "note": "In Cantonese you 'eat' medicine — even liquid medicine.",
+      "ex": {
+        "en": "Have you taken your medicine yet?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "食",
+            "sik6"
+          ],
+          [
+            "咗",
+            "zo2"
+          ],
+          [
+            "藥",
+            "joek6"
+          ],
+          [
+            "未",
+            "mei6"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "嚴重",
+      "jp": "jim4 zung6",
+      "en": "serious (illness, problem)",
+      "fr": "grave, sérieux",
+      "note": "係唔係好嚴重 (hai6 m4 hai6 hou2 jim4 zung6)? = Is it serious? 唔嚴重 (m4 jim4 zung6) = not serious.",
+      "ex": {
+        "en": "Don't worry, it's not serious.",
+        "parts": [
+          [
+            "唔使",
+            "m4 sai2"
+          ],
+          [
+            "擔心",
+            "daam1 sam1"
+          ],
+          [
+            "，"
+          ],
+          [
+            "唔",
+            "m4"
+          ],
+          [
+            "嚴重",
+            "jim4 zung6"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "休息",
+      "jp": "jau1 sik1",
+      "en": "to rest",
+      "fr": "se reposer",
+      "ex": {
+        "en": "You should rest for a couple of days.",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "要",
+            "jiu3"
+          ],
+          [
+            "休息",
+            "jau1 sik1"
+          ],
+          [
+            "兩日",
+            "loeng5 jat6"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "病假",
+      "jp": "beng6 gaa3",
+      "en": "sick leave",
+      "fr": "congé maladie",
+      "note": "攞病假 lo2 beng6 gaa3 = take sick leave.",
+      "ex": {
+        "en": "I'm taking a day of sick leave today.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "今日",
+            "gam1 jat6"
+          ],
+          [
+            "攞",
+            "lo2"
+          ],
+          [
+            "一日",
+            "jat1 jat6"
+          ],
+          [
+            "病假",
+            "beng6 gaa3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "好返",
+      "jp": "hou2 faan1",
+      "en": "to get better, recover",
+      "fr": "guérir, aller mieux",
+      "note": "返 (faan1) after an adjective = back to a normal state.",
+      "ex": {
+        "en": "Have you got better?",
+        "parts": [
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "好返",
+            "hou2 faan1"
+          ],
+          [
+            "未",
+            "mei6"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "小心",
+      "jp": "siu2 sam1",
+      "en": "careful; be careful",
+      "fr": "prudent ; faire attention",
+      "ex": {
+        "en": "The floor is slippery, be careful!",
+        "parts": [
+          [
+            "地下",
+            "dei6 haa2"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "滑",
+            "waat6"
+          ],
+          [
+            "，"
+          ],
+          [
+            "小心",
+            "siu2 sam1"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "！"
+          ]
+        ]
+      }
+    }
   ],
   "sentences": [
-    {"en": "I don't feel well today, I don't want to go to work.", "parts": [["我","ngo5"],["今日","gam1 jat6"],["唔舒服","m4 syu1 fuk6"],["，"],["唔想","m4 soeng2"],["返工","faan1 gung1"],["。"]]},
-    {"en": "You have a fever — go and see the doctor quickly.", "parts": [["你","nei5"],["發緊燒","faat3 gan2 siu1"],["，"],["快啲","faai3 di1"],["去","heoi3"],["睇醫生","tai2 ji1 sang1"],["啦","laa1"],["。"]]},
-    {"en": "My throat hurts and I keep coughing.", "parts": [["我","ngo5"],["喉嚨","hau4 lung4"],["痛","tung3"],["，"],["仲","zung6"],["成日","seng4 jat6"],["咳","kat1"],["。"]]},
-    {"en": "Take this medicine three times a day, after meals.", "parts": [["呢啲","ni1 di1"],["藥","joek6"],["一日","jat1 jat6"],["食","sik6"],["三次","saam1 ci3"],["，"],["食完飯","sik6 jyun4 faan6"],["先","sin1"],["食","sik6"],["。"]]},
-    {"en": "I've caught a cold, so I'm not going hiking tomorrow.", "parts": [["我","ngo5"],["感冒","gam2 mou6"],["咗","zo2"],["，"],["聽日","ting1 jat6"],["唔去","m4 heoi3"],["行山","haang4 saan1"],["喇","laa3"],["。"]]},
-    {"en": "Drink more water and rest well.", "parts": [["飲多啲","jam2 do1 di1"],["水","seoi2"],["，"],["好好","hou2 hou2"],["休息","jau1 sik1"],["啦","laa1"],["。"]]},
-    {"en": "Is the hospital far from here?", "parts": [["醫院","ji1 jyun2"],["離","lei4"],["呢度","ni1 dou6"],["遠唔遠","jyun5 m4 jyun5"],["啊","aa3"],["？"]]},
-    {"en": "He fell playing football and hurt his foot.", "parts": [["佢","keoi5"],["踢波","tek3 bo1"],["嘅時候","ge3 si4 hau6"],["跌親","dit3 can1"],["，"],["隻","zek3"],["腳","goek3"],["好","hou2"],["痛","tung3"],["。"]]},
-    {"en": "Mind your hands, the stove is very hot!", "parts": [["小心","siu2 sam1"],["隻","zek3"],["手","sau2"],["啊","aa3"],["，"],["個","go3"],["爐","lou4"],["好","hou2"],["熱","jit6"],["！"]]},
-    {"en": "Are you feeling better? — Much better, thanks.", "parts": [["你","nei5"],["好返","hou2 faan1"],["啲","di1"],["未","mei6"],["啊","aa3"],["？"],["好","hou2"],["好多","hou2 do1"],["喇","laa3"],["，"],["多謝","do1 ze6"],["。"]]},
-    {"en": "I've had a headache all day — maybe I'm too tired.", "parts": [["我","ngo5"],["頭痛","tau4 tung3"],["咗","zo2"],["成日","seng4 jat6"],["，"],["可能","ho2 nang4"],["太","taai3"],["攰","gui6"],["。"]]},
-    {"en": "I rarely take medicine — I usually just sleep and get better.", "parts": [["我","ngo5"],["好少","hou2 siu2"],["食藥","sik6 joek6"],["，"],["通常","tung1 soeng4"],["瞓","fan3"],["一覺","jat1 gaau3"],["就","zau6"],["好返","hou2 faan1"],["。"]]},
-    {"en": "Can I take a day of sick leave tomorrow?", "parts": [["我","ngo5"],["聽日","ting1 jat6"],["可唔可以","ho2 m4 ho2 ji5"],["攞","lo2"],["一日","jat1 jat6"],["病假","beng6 gaa3"],["啊","aa3"],["？"]]}
+    {
+      "en": "I don't feel well today, I don't want to go to work.",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "今日",
+          "gam1 jat6"
+        ],
+        [
+          "唔舒服",
+          "m4 syu1 fuk6"
+        ],
+        [
+          "，"
+        ],
+        [
+          "唔想",
+          "m4 soeng2"
+        ],
+        [
+          "返工",
+          "faan1 gung1"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "You have a fever — go and see the doctor quickly.",
+      "parts": [
+        [
+          "你",
+          "nei5"
+        ],
+        [
+          "發緊燒",
+          "faat3 gan2 siu1"
+        ],
+        [
+          "，"
+        ],
+        [
+          "快啲",
+          "faai3 di1"
+        ],
+        [
+          "去",
+          "heoi3"
+        ],
+        [
+          "睇醫生",
+          "tai2 ji1 sang1"
+        ],
+        [
+          "啦",
+          "laa1"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "My throat hurts and I keep coughing.",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "喉嚨",
+          "hau4 lung4"
+        ],
+        [
+          "痛",
+          "tung3"
+        ],
+        [
+          "，"
+        ],
+        [
+          "仲",
+          "zung6"
+        ],
+        [
+          "成日",
+          "seng4 jat6"
+        ],
+        [
+          "咳",
+          "kat1"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "Take this medicine three times a day, after meals.",
+      "parts": [
+        [
+          "呢啲",
+          "ni1 di1"
+        ],
+        [
+          "藥",
+          "joek6"
+        ],
+        [
+          "一日",
+          "jat1 jat6"
+        ],
+        [
+          "食",
+          "sik6"
+        ],
+        [
+          "三次",
+          "saam1 ci3"
+        ],
+        [
+          "，"
+        ],
+        [
+          "食完飯",
+          "sik6 jyun4 faan6"
+        ],
+        [
+          "先",
+          "sin1"
+        ],
+        [
+          "食",
+          "sik6"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "I've caught a cold, so I'm not going hiking tomorrow.",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "感冒",
+          "gam2 mou6"
+        ],
+        [
+          "咗",
+          "zo2"
+        ],
+        [
+          "，"
+        ],
+        [
+          "聽日",
+          "ting1 jat6"
+        ],
+        [
+          "唔去",
+          "m4 heoi3"
+        ],
+        [
+          "行山",
+          "haang4 saan1"
+        ],
+        [
+          "喇",
+          "laa3"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "Drink more water and rest well.",
+      "parts": [
+        [
+          "飲多啲",
+          "jam2 do1 di1"
+        ],
+        [
+          "水",
+          "seoi2"
+        ],
+        [
+          "，"
+        ],
+        [
+          "好好",
+          "hou2 hou2"
+        ],
+        [
+          "休息",
+          "jau1 sik1"
+        ],
+        [
+          "啦",
+          "laa1"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "Is the hospital far from here?",
+      "parts": [
+        [
+          "醫院",
+          "ji1 jyun2"
+        ],
+        [
+          "離",
+          "lei4"
+        ],
+        [
+          "呢度",
+          "ni1 dou6"
+        ],
+        [
+          "遠唔遠",
+          "jyun5 m4 jyun5"
+        ],
+        [
+          "啊",
+          "aa3"
+        ],
+        [
+          "？"
+        ]
+      ]
+    },
+    {
+      "en": "He fell playing football and hurt his foot.",
+      "parts": [
+        [
+          "佢",
+          "keoi5"
+        ],
+        [
+          "踢波",
+          "tek3 bo1"
+        ],
+        [
+          "嘅時候",
+          "ge3 si4 hau6"
+        ],
+        [
+          "跌親",
+          "dit3 can1"
+        ],
+        [
+          "，"
+        ],
+        [
+          "隻",
+          "zek3"
+        ],
+        [
+          "腳",
+          "goek3"
+        ],
+        [
+          "好",
+          "hou2"
+        ],
+        [
+          "痛",
+          "tung3"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "Mind your hands, the stove is very hot!",
+      "parts": [
+        [
+          "小心",
+          "siu2 sam1"
+        ],
+        [
+          "隻",
+          "zek3"
+        ],
+        [
+          "手",
+          "sau2"
+        ],
+        [
+          "啊",
+          "aa3"
+        ],
+        [
+          "，"
+        ],
+        [
+          "個",
+          "go3"
+        ],
+        [
+          "爐",
+          "lou4"
+        ],
+        [
+          "好",
+          "hou2"
+        ],
+        [
+          "熱",
+          "jit6"
+        ],
+        [
+          "！"
+        ]
+      ]
+    },
+    {
+      "en": "Are you feeling better? — Much better, thanks.",
+      "parts": [
+        [
+          "你",
+          "nei5"
+        ],
+        [
+          "好返",
+          "hou2 faan1"
+        ],
+        [
+          "啲",
+          "di1"
+        ],
+        [
+          "未",
+          "mei6"
+        ],
+        [
+          "啊",
+          "aa3"
+        ],
+        [
+          "？"
+        ],
+        [
+          "好",
+          "hou2"
+        ],
+        [
+          "好多",
+          "hou2 do1"
+        ],
+        [
+          "喇",
+          "laa3"
+        ],
+        [
+          "，"
+        ],
+        [
+          "多謝",
+          "do1 ze6"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "I've got a bad headache today — maybe I'm too tired.",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "今日",
+          "gam1 jat6"
+        ],
+        [
+          "好",
+          "hou2"
+        ],
+        [
+          "頭痛",
+          "tau4 tung3"
+        ],
+        [
+          "，"
+        ],
+        [
+          "可能",
+          "ho2 nang4"
+        ],
+        [
+          "太",
+          "taai3"
+        ],
+        [
+          "攰",
+          "gui6"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "I rarely take medicine — I usually just sleep and get better.",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "好少",
+          "hou2 siu2"
+        ],
+        [
+          "食藥",
+          "sik6 joek6"
+        ],
+        [
+          "，"
+        ],
+        [
+          "通常",
+          "tung1 soeng4"
+        ],
+        [
+          "瞓覺",
+          "fan3 gaau3"
+        ],
+        [
+          "就",
+          "zau6"
+        ],
+        [
+          "好返",
+          "hou2 faan1"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "Can I take a day of sick leave tomorrow?",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "聽日",
+          "ting1 jat6"
+        ],
+        [
+          "可唔可以",
+          "ho2 m4 ho2 ji5"
+        ],
+        [
+          "攞",
+          "lo2"
+        ],
+        [
+          "一日",
+          "jat1 jat6"
+        ],
+        [
+          "病假",
+          "beng6 gaa3"
+        ],
+        [
+          "啊",
+          "aa3"
+        ],
+        [
+          "？"
+        ]
+      ]
+    }
   ],
   "grammar": [
-    {"title": "Body part + 痛",
-     "explain": "To say something hurts, put 痛 after the body part. A classifier like 個 / 隻 / 對 before the body part sounds very natural: 我個頭好痛.",
-     "examples": [
-       {"en": "My head really hurts.", "parts": [["我","ngo5"],["個","go3"],["頭","tau4"],["好","hou2"],["痛","tung3"],["。"]]},
-       {"en": "My left foot hurts a bit.", "parts": [["我","ngo5"],["隻","zek3"],["左腳","zo2 goek3"],["有啲","jau5 di1"],["痛","tung3"],["。"]]}
-     ]},
-    {"title": "有啲 + adjective = a bit (unpleasant)",
-     "explain": "有啲 before an adjective means 'a bit / somewhat', usually for something negative. Compare 啲 after an adjective, which means '-er': 好啲 'better'.",
-     "examples": [
-       {"en": "I feel a bit unwell.", "parts": [["我","ngo5"],["有啲","jau5 di1"],["唔舒服","m4 syu1 fuk6"],["。"]]},
-       {"en": "I'm a bit better today.", "parts": [["我","ngo5"],["今日","gam1 jat6"],["好","hou2"],["咗","zo2"],["啲","di1"],["。"]]}
-     ]},
-    {"title": "Verb + 返 = back to normal",
-     "explain": "返 after an adjective or verb means returning to the normal state: 好返 'get well again', 瞓返 'go back to sleep'.",
-     "examples": [
-       {"en": "Get well soon!", "parts": [["快啲","faai3 di1"],["好返","hou2 faan1"],["啦","laa1"],["！"]]},
-       {"en": "I woke up at three and couldn't get back to sleep.", "parts": [["我","ngo5"],["三點","saam1 dim2"],["醒","seng2"],["咗","zo2"],["，"],["瞓唔返","fan3 m4 faan1"],["。"]]}
-     ]}
+    {
+      "title": "Body part + 痛 (tung3)",
+      "explain": "To say something hurts, put 痛 (tung3) after the body part. A classifier like 個 (go3) / 隻 (zek3) / 對 (deoi3) before the body part sounds very natural: 我個頭好痛 (ngo5 go3 tau4 hou2 tung3).",
+      "examples": [
+        {
+          "en": "My head really hurts.",
+          "parts": [
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "個",
+              "go3"
+            ],
+            [
+              "頭",
+              "tau4"
+            ],
+            [
+              "好",
+              "hou2"
+            ],
+            [
+              "痛",
+              "tung3"
+            ],
+            [
+              "。"
+            ]
+          ]
+        },
+        {
+          "en": "My left foot hurts a bit.",
+          "parts": [
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "隻",
+              "zek3"
+            ],
+            [
+              "左腳",
+              "zo2 goek3"
+            ],
+            [
+              "有啲",
+              "jau5 di1"
+            ],
+            [
+              "痛",
+              "tung3"
+            ],
+            [
+              "。"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "有啲 (jau5 di1) + adjective = a bit (unpleasant)",
+      "explain": "有啲 (jau5 di1) before an adjective means 'a bit / somewhat', usually for something negative. Compare 啲 (di1) after an adjective, which means '-er': 好啲 (hou2 di1) 'better'.",
+      "examples": [
+        {
+          "en": "I feel a bit unwell.",
+          "parts": [
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "有啲",
+              "jau5 di1"
+            ],
+            [
+              "唔舒服",
+              "m4 syu1 fuk6"
+            ],
+            [
+              "。"
+            ]
+          ]
+        },
+        {
+          "en": "I'm a bit better today.",
+          "parts": [
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "今日",
+              "gam1 jat6"
+            ],
+            [
+              "好",
+              "hou2"
+            ],
+            [
+              "咗",
+              "zo2"
+            ],
+            [
+              "啲",
+              "di1"
+            ],
+            [
+              "。"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Verb + 返 (faan1) = back to normal",
+      "explain": "返 (faan1) after an adjective or verb means returning to the normal state: 好返 (hou2 faan1) 'get well again', 瞓返 (fan3 faan1) 'go back to sleep'.",
+      "examples": [
+        {
+          "en": "Get well soon!",
+          "parts": [
+            [
+              "快啲",
+              "faai3 di1"
+            ],
+            [
+              "好返",
+              "hou2 faan1"
+            ],
+            [
+              "啦",
+              "laa1"
+            ],
+            [
+              "！"
+            ]
+          ]
+        },
+        {
+          "en": "I woke up at three and couldn't get back to sleep.",
+          "parts": [
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "三點",
+              "saam1 dim2"
+            ],
+            [
+              "醒",
+              "seng2"
+            ],
+            [
+              "咗",
+              "zo2"
+            ],
+            [
+              "，"
+            ],
+            [
+              "瞓唔返",
+              "fan3 m4 faan1"
+            ],
+            [
+              "。"
+            ]
+          ]
+        }
+      ]
+    }
   ],
   "dialogue": {
     "title": "At the clinic",
     "lines": [
-      {"spk": "A", "en": "Hello, where are you feeling unwell?", "parts": [["你好","nei5 hou2"],["，"],["你","nei5"],["邊度","bin1 dou6"],["唔舒服","m4 syu1 fuk6"],["啊","aa3"],["？"]]},
-      {"spk": "B", "en": "Doctor, my throat has been very sore since yesterday, and I keep coughing.", "parts": [["醫生","ji1 sang1"],["，"],["我","ngo5"],["由","jau4"],["尋日","cam4 jat6"],["開始","hoi1 ci2"],["喉嚨","hau4 lung4"],["好","hou2"],["痛","tung3"],["，"],["仲","zung6"],["成日","seng4 jat6"],["咳","kat1"],["。"]]},
-      {"spk": "A", "en": "Do you have a fever?", "parts": [["有冇","jau5 mou5"],["發燒","faat3 siu1"],["啊","aa3"],["？"]]},
-      {"spk": "B", "en": "A little. Last night it was thirty-eight degrees.", "parts": [["有少少","jau5 siu2 siu2"],["，"],["尋晚","cam4 maan5"],["三十八度","saam1 sap6 baat3 dou6"],["。"]]},
-      {"spk": "A", "en": "Open your mouth and let me have a look... It's a bit inflamed. You've caught a cold.", "parts": [["擘大","maak3 daai6"],["個","go3"],["口","hau2"],["我","ngo5"],["睇下","tai2 haa5"],["……"],["有啲","jau5 di1"],["發炎","faat3 jim4"],["，"],["你","nei5"],["感冒","gam2 mou6"],["咗","zo2"],["。"]]},
-      {"spk": "B", "en": "Is it serious? I have a football match on Saturday.", "parts": [["嚴唔嚴重","jim4 m4 jim4 zung6"],["㗎","gaa3"],["？"],["我","ngo5"],["星期六","sing1 kei4 luk6"],["要","jiu3"],["踢波","tek3 bo1"],["㗎","gaa3"],["。"]]},
-      {"spk": "A", "en": "Not serious. But you'd better rest for two days — no football this week.", "parts": [["唔嚴重","m4 jim4 zung6"],["，"],["不過","bat1 gwo3"],["你","nei5"],["最好","zeoi3 hou2"],["休息","jau1 sik1"],["兩日","loeng5 jat6"],["，"],["今個","gam1 go3"],["禮拜","lai5 baai3"],["唔好","m4 hou2"],["踢波","tek3 bo1"],["喇","laa3"],["。"]]},
-      {"spk": "B", "en": "Oh no... Then can you write me a sick note?", "parts": [["哎呀","aai1 aa4"],["……"],["噉","gam2"],["可唔可以","ho2 m4 ho2 ji5"],["開","hoi1"],["張","zoeng1"],["病假紙","beng6 gaa3 zi2"],["畀","bei2"],["我","ngo5"],["啊","aa3"],["？"]]},
-      {"spk": "A", "en": "Sure. Take this medicine three times a day, after meals, and drink more water.", "parts": [["冇問題","mou5 man6 tai4"],["。"],["呢啲","ni1 di1"],["藥","joek6"],["一日","jat1 jat6"],["食","sik6"],["三次","saam1 ci3"],["，"],["食完飯","sik6 jyun4 faan6"],["先","sin1"],["食","sik6"],["，"],["記得","gei3 dak1"],["飲多啲","jam2 do1 di1"],["水","seoi2"],["。"]]},
-      {"spk": "B", "en": "Thank you, doctor!", "parts": [["唔該晒","m4 goi1 saai3"],["醫生","ji1 sang1"],["！"]]}
+      {
+        "spk": "A",
+        "en": "Hello, where are you feeling unwell?",
+        "parts": [
+          [
+            "你好",
+            "nei5 hou2"
+          ],
+          [
+            "，"
+          ],
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "邊度",
+            "bin1 dou6"
+          ],
+          [
+            "唔舒服",
+            "m4 syu1 fuk6"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      },
+      {
+        "spk": "B",
+        "en": "Doctor, my throat has been very sore since yesterday, and I keep coughing.",
+        "parts": [
+          [
+            "醫生",
+            "ji1 sang1"
+          ],
+          [
+            "，"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "尋日",
+            "cam4 jat6"
+          ],
+          [
+            "開始",
+            "hoi1 ci2"
+          ],
+          [
+            "喉嚨",
+            "hau4 lung4"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "痛",
+            "tung3"
+          ],
+          [
+            "，"
+          ],
+          [
+            "仲",
+            "zung6"
+          ],
+          [
+            "成日",
+            "seng4 jat6"
+          ],
+          [
+            "咳",
+            "kat1"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "A",
+        "en": "Do you have a fever?",
+        "parts": [
+          [
+            "有冇",
+            "jau5 mou5"
+          ],
+          [
+            "發燒",
+            "faat3 siu1"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      },
+      {
+        "spk": "B",
+        "en": "A little. Last night it was thirty-eight degrees.",
+        "parts": [
+          [
+            "有少少",
+            "jau5 siu2 siu2"
+          ],
+          [
+            "，"
+          ],
+          [
+            "尋晚",
+            "cam4 maan5"
+          ],
+          [
+            "三十八度",
+            "saam1 sap6 baat3 dou6"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "A",
+        "en": "Open your mouth wide, let me have a look... It's a bit inflamed. You've caught a cold.",
+        "parts": [
+          [
+            "擘大個口",
+            "maak3 daai6 go3 hau2"
+          ],
+          [
+            "，"
+          ],
+          [
+            "等",
+            "dang2"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "睇睇",
+            "tai2 tai2"
+          ],
+          [
+            "……"
+          ],
+          [
+            "有啲",
+            "jau5 di1"
+          ],
+          [
+            "發炎",
+            "faat3 jim4"
+          ],
+          [
+            "，"
+          ],
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "感冒",
+            "gam2 mou6"
+          ],
+          [
+            "咗",
+            "zo2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "B",
+        "en": "Is it serious? I have a football match on Saturday.",
+        "parts": [
+          [
+            "係唔係",
+            "hai6 m4 hai6"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "嚴重",
+            "jim4 zung6"
+          ],
+          [
+            "㗎",
+            "gaa3"
+          ],
+          [
+            "？"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "星期六",
+            "sing1 kei4 luk6"
+          ],
+          [
+            "要",
+            "jiu3"
+          ],
+          [
+            "踢波",
+            "tek3 bo1"
+          ],
+          [
+            "㗎",
+            "gaa3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "A",
+        "en": "It's not serious. But you need to rest for two days — no football this week.",
+        "parts": [
+          [
+            "唔",
+            "m4"
+          ],
+          [
+            "嚴重",
+            "jim4 zung6"
+          ],
+          [
+            "，"
+          ],
+          [
+            "不過",
+            "bat1 gwo3"
+          ],
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "要",
+            "jiu3"
+          ],
+          [
+            "休息",
+            "jau1 sik1"
+          ],
+          [
+            "兩日",
+            "loeng5 jat6"
+          ],
+          [
+            "，"
+          ],
+          [
+            "呢個",
+            "ni1 go3"
+          ],
+          [
+            "禮拜",
+            "lai5 baai3"
+          ],
+          [
+            "唔好",
+            "m4 hou2"
+          ],
+          [
+            "踢波",
+            "tek3 bo1"
+          ],
+          [
+            "喇",
+            "laa3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "B",
+        "en": "Oh... Then can you write me a sick note?",
+        "parts": [
+          [
+            "噉",
+            "gam2"
+          ],
+          [
+            "……"
+          ],
+          [
+            "可唔可以",
+            "ho2 m4 ho2 ji5"
+          ],
+          [
+            "開",
+            "hoi1"
+          ],
+          [
+            "張",
+            "zoeng1"
+          ],
+          [
+            "病假紙",
+            "beng6 gaa3 zi2"
+          ],
+          [
+            "畀",
+            "bei2"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      },
+      {
+        "spk": "A",
+        "en": "Sure. Take this medicine three times a day, after meals, and drink more water.",
+        "parts": [
+          [
+            "冇問題",
+            "mou5 man6 tai4"
+          ],
+          [
+            "。"
+          ],
+          [
+            "呢啲",
+            "ni1 di1"
+          ],
+          [
+            "藥",
+            "joek6"
+          ],
+          [
+            "一日",
+            "jat1 jat6"
+          ],
+          [
+            "食",
+            "sik6"
+          ],
+          [
+            "三次",
+            "saam1 ci3"
+          ],
+          [
+            "，"
+          ],
+          [
+            "食完飯",
+            "sik6 jyun4 faan6"
+          ],
+          [
+            "先",
+            "sin1"
+          ],
+          [
+            "食",
+            "sik6"
+          ],
+          [
+            "，"
+          ],
+          [
+            "記得",
+            "gei3 dak1"
+          ],
+          [
+            "飲多啲",
+            "jam2 do1 di1"
+          ],
+          [
+            "水",
+            "seoi2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "B",
+        "en": "Thank you, doctor!",
+        "parts": [
+          [
+            "唔該",
+            "m4 goi1"
+          ],
+          [
+            "醫生",
+            "ji1 sang1"
+          ],
+          [
+            "！"
+          ]
+        ]
+      }
     ],
     "questions": [
-      {"q": "What are B's symptoms?", "options": ["Sore throat, cough and a slight fever", "Stomach ache and headache", "A hurt foot", "Sore eyes and a runny nose"], "answer": 0},
-      {"q": "What does the doctor say B has?", "options": ["A cold", "Food poisoning", "A broken foot", "Nothing at all"], "answer": 0},
-      {"q": "Why is B worried?", "options": ["B has a football match on Saturday", "B has an exam tomorrow", "B is going on a trip", "B has a job interview"], "answer": 0},
-      {"q": "How should B take the medicine?", "options": ["Three times a day after meals", "Once a day before bed", "Twice a day before meals", "Only when it hurts"], "answer": 0}
+      {
+        "q": "What are B's symptoms?",
+        "options": [
+          "Sore throat, cough and a slight fever",
+          "Stomach ache and headache",
+          "A hurt foot",
+          "Sore eyes and a runny nose"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "What does the doctor say B has?",
+        "options": [
+          "A cold",
+          "Food poisoning",
+          "A broken foot",
+          "Nothing at all"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "Why is B worried?",
+        "options": [
+          "B has a football match on Saturday",
+          "B has an exam tomorrow",
+          "B is going on a trip",
+          "B has a job interview"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "How should B take the medicine?",
+        "options": [
+          "Three times a day after meals",
+          "Once a day before bed",
+          "Twice a day before meals",
+          "Only when it hurts"
+        ],
+        "answer": 0
+      }
+    ],
+    "gloss": [
+      [
+        "開始",
+        "hoi1 ci2",
+        "to start (尋日開始 = since yesterday)"
+      ],
+      [
+        "尋晚",
+        "cam4 maan5",
+        "last night"
+      ],
+      [
+        "度",
+        "dou6",
+        "degree(s)"
+      ],
+      [
+        "擘大個口",
+        "maak3 daai6 go3 hau2",
+        "open your mouth wide"
+      ],
+      [
+        "發炎",
+        "faat3 jim4",
+        "to be inflamed"
+      ],
+      [
+        "病假紙",
+        "beng6 gaa3 zi2",
+        "sick note"
+      ]
     ]
   }
 }

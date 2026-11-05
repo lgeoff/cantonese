@@ -1,0 +1,2238 @@
+{
+ "id": "u08",
+ "level": 1,
+ "title": "Food & Yum Cha",
+ "emoji": "🥟",
+ "desc": "Order dim sum and cha chaan teng classics, ask for the bill, and say what you like to eat and drink",
+ "words": [
+  {
+   "hk": "飲",
+   "jp": "jam2",
+   "en": "to drink",
+   "fr": "boire",
+   "note": "食 (sik6) = eat, 飲 (jam2) = drink. Soup is drunk too: 飲湯 (jam2 tong1).",
+   "ex": {
+    "en": "What would you like to drink?",
+    "parts": [
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "想",
+      "soeng2"
+     ],
+     [
+      "飲",
+      "jam2"
+     ],
+     [
+      "咩",
+      "me1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "飯",
+   "jp": "faan6",
+   "en": "rice (cooked); a meal",
+   "fr": "riz (cuit) ; repas",
+   "note": "食飯 (sik6 faan6) = have a meal, not only rice. Uncooked rice is 米 (mai5).",
+   "ex": {
+    "en": "He ate two bowls of rice.",
+    "parts": [
+     [
+      "佢",
+      "keoi5"
+     ],
+     [
+      "食咗",
+      "sik6 zo2"
+     ],
+     [
+      "兩碗",
+      "loeng5 wun2"
+     ],
+     [
+      "飯",
+      "faan6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "麵",
+   "jp": "min6",
+   "en": "noodles",
+   "fr": "nouilles",
+   "ex": {
+    "en": "I'm having noodles for lunch.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "晏晝",
+      "aan3 zau3"
+     ],
+     [
+      "食",
+      "sik6"
+     ],
+     [
+      "麵",
+      "min6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "茶",
+   "jp": "caa4",
+   "en": "tea",
+   "fr": "thé",
+   "note": "At yum cha the classic is 普洱 (pou2 lei2), pu'er tea.",
+   "ex": {
+    "en": "My mum loves drinking tea.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "媽媽",
+      "maa4 maa1"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "鍾意",
+      "zung1 ji3"
+     ],
+     [
+      "飲",
+      "jam2"
+     ],
+     [
+      "茶",
+      "caa4"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "飲茶",
+   "jp": "jam2 caa4",
+   "en": "to go for yum cha (dim sum)",
+   "fr": "aller manger des dim sum (yum cha)",
+   "note": "Literally 'drink tea', but it means the whole dim sum meal, usually in a 茶樓 (caa4 lau4).",
+   "ex": {
+    "en": "On Saturday we're going for dim sum together.",
+    "parts": [
+     [
+      "禮拜六",
+      "lai5 baai3 luk6"
+     ],
+     [
+      "我哋",
+      "ngo5 dei6"
+     ],
+     [
+      "一齊",
+      "jat1 cai4"
+     ],
+     [
+      "去",
+      "heoi3"
+     ],
+     [
+      "飲茶",
+      "jam2 caa4"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "咖啡",
+   "jp": "gaa3 fe1",
+   "en": "coffee",
+   "fr": "café",
+   "ex": {
+    "en": "I need a coffee in the morning.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "朝早",
+      "ziu1 zou2"
+     ],
+     [
+      "要",
+      "jiu3"
+     ],
+     [
+      "飲",
+      "jam2"
+     ],
+     [
+      "咖啡",
+      "gaa3 fe1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "水",
+   "jp": "seoi2",
+   "en": "water",
+   "fr": "eau",
+   "ex": {
+    "en": "A glass of water, please.",
+    "parts": [
+     [
+      "唔該",
+      "m4 goi1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "畀",
+      "bei2"
+     ],
+     [
+      "杯",
+      "bui1"
+     ],
+     [
+      "水",
+      "seoi2"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "好食",
+   "jp": "hou2 sik6",
+   "en": "tasty (food)",
+   "fr": "bon (à manger)",
+   "note": "For drinks say 好飲 (hou2 jam2). 'Really tasty' = 好好食 (hou2 hou2 sik6).",
+   "ex": {
+    "en": "The dim sum here is really good!",
+    "parts": [
+     [
+      "呢度",
+      "ni1 dou6"
+     ],
+     [
+      "啲",
+      "di1"
+     ],
+     [
+      "點心",
+      "dim2 sam1"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "好食",
+      "hou2 sik6"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "餐廳",
+   "jp": "caan1 teng1",
+   "en": "restaurant",
+   "fr": "restaurant",
+   "note": "Measure word 間 (gaan1): 呢間餐廳 (ni1 gaan1 caan1 teng1) = this restaurant.",
+   "ex": {
+    "en": "This restaurant is expensive.",
+    "parts": [
+     [
+      "呢間",
+      "ni1 gaan1"
+     ],
+     [
+      "餐廳",
+      "caan1 teng1"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "貴",
+      "gwai3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "點心",
+   "jp": "dim2 sam1",
+   "en": "dim sum",
+   "fr": "dim sum",
+   "ex": {
+    "en": "What dim sum do you like?",
+    "parts": [
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "鍾意",
+      "zung1 ji3"
+     ],
+     [
+      "食",
+      "sik6"
+     ],
+     [
+      "咩",
+      "me1"
+     ],
+     [
+      "點心",
+      "dim2 sam1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   "note": "Classics: 蝦餃 (haa1 gaau2), 燒賣 (siu1 maai2), 叉燒包 (caa1 siu1 baau1) BBQ pork bun."
+  },
+  {
+   "hk": "蝦餃",
+   "jp": "haa1 gaau2",
+   "en": "har gow (shrimp dumpling)",
+   "fr": "har gow (ravioli aux crevettes)",
+   "ex": {
+    "en": "I really like har gow.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "鍾意",
+      "zung1 ji3"
+     ],
+     [
+      "食",
+      "sik6"
+     ],
+     [
+      "蝦餃",
+      "haa1 gaau2"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "燒賣",
+   "jp": "siu1 maai2",
+   "en": "siu mai (pork dumpling)",
+   "fr": "siu mai (bouchée au porc)",
+   "note": "Tone change: 賣 (maai6) 'sell' becomes maai2 in 燒賣 (siu1 maai2).",
+   "ex": {
+    "en": "There's pork in siu mai, you know.",
+    "parts": [
+     [
+      "燒賣",
+      "siu1 maai2"
+     ],
+     [
+      "有",
+      "jau5"
+     ],
+     [
+      "豬肉",
+      "zyu1 juk6"
+     ],
+     [
+      "㗎",
+      "gaa3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "菜",
+   "jp": "coi3",
+   "en": "vegetables; a dish",
+   "fr": "légumes ; un plat",
+   "note": "Green vegetables are often 青菜 (ceng1 coi3); the classic one is 菜心 (coi3 sam1).",
+   "ex": {
+    "en": "You should eat more vegetables.",
+    "parts": [
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "要",
+      "jiu3"
+     ],
+     [
+      "食",
+      "sik6"
+     ],
+     [
+      "多啲",
+      "do1 di1"
+     ],
+     [
+      "菜",
+      "coi3"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "肚餓",
+   "jp": "tou5 ngo6",
+   "en": "hungry",
+   "fr": "avoir faim",
+   "note": "肚 (tou5) = belly. To ask: 你肚唔肚餓啊 (nei5 tou5 m4 tou5 ngo6 aa3)？",
+   "ex": {
+    "en": "Are you hungry?",
+    "parts": [
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "肚唔肚餓",
+      "tou5 m4 tou5 ngo6"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "飽",
+   "jp": "baau2",
+   "en": "full (after eating)",
+   "fr": "rassasié",
+   "note": "食飽 (sik6 baau2) = to have eaten your fill.",
+   "ex": {
+    "en": "I'm really full, I won't eat any more.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "飽",
+      "baau2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "唔",
+      "m4"
+     ],
+     [
+      "食",
+      "sik6"
+     ],
+     [
+      "喇",
+      "laa3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "一齊",
+   "jp": "jat1 cai4",
+   "en": "together",
+   "fr": "ensemble",
+   "note": "Goes before the verb: 一齊食 (jat1 cai4 sik6), 一齊去 (jat1 cai4 heoi3).",
+   "ex": {
+    "en": "Let's eat together!",
+    "parts": [
+     [
+      "我哋",
+      "ngo5 dei6"
+     ],
+     [
+      "一齊",
+      "jat1 cai4"
+     ],
+     [
+      "食飯",
+      "sik6 faan6"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "辣",
+   "jp": "laat6",
+   "en": "spicy (hot)",
+   "fr": "épicé (piquant)",
+   "note": "'I can't eat spicy food' = 我唔食得辣 (ngo5 m4 sik6 dak1 laat6).",
+   "ex": {
+    "en": "This one is really spicy!",
+    "parts": [
+     [
+      "呢個",
+      "ni1 go3"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "辣",
+      "laat6"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "埋單",
+   "jp": "maai4 daan1",
+   "en": "to get the bill",
+   "fr": "demander l'addition",
+   "note": "To get the bill, catch a waiter's eye and say 唔該 (m4 goi1), 埋單 (maai4 daan1)!",
+   "ex": {
+    "en": "We're full — let's get the bill.",
+    "parts": [
+     [
+      "我哋",
+      "ngo5 dei6"
+     ],
+     [
+      "食飽",
+      "sik6 baau2"
+     ],
+     [
+      "喇",
+      "laa3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "埋單",
+      "maai4 daan1"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "嘢",
+   "jp": "je5",
+   "en": "thing / stuff",
+   "fr": "chose / truc",
+   "note": "Fills the 'something' slot: 食嘢 (sik6 je5) eat something, 飲嘢 (jam2 je5) have a drink, 嘢食 (je5 sik6) food.",
+   "ex": {
+    "en": "What would you like to eat?",
+    "parts": [
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "想",
+      "soeng2"
+     ],
+     [
+      "食",
+      "sik6"
+     ],
+     [
+      "咩",
+      "me1"
+     ],
+     [
+      "嘢",
+      "je5"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "未",
+   "jp": "mei6",
+   "en": "not yet; …yet?",
+   "fr": "pas encore ; … déjà ?",
+   "note": "Before a verb: 未食 (mei6 sik6) = haven't eaten yet. At the end of a question it means 'yet?': 食咗未 (sik6 zo2 mei6)？ = have you eaten yet?",
+   "ex": {
+    "en": "I haven't eaten yet.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "未",
+      "mei6"
+     ],
+     [
+      "食",
+      "sik6"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "定係",
+   "jp": "ding6 hai6",
+   "en": "or (in a question)",
+   "fr": "ou (dans une question)",
+   "note": "Only for choices in a question. In statements 'or' is 或者 (waak6 ze2).",
+   "ex": {
+    "en": "Would you like tea or coffee?",
+    "parts": [
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "飲",
+      "jam2"
+     ],
+     [
+      "茶",
+      "caa4"
+     ],
+     [
+      "定係",
+      "ding6 hai6"
+     ],
+     [
+      "飲",
+      "jam2"
+     ],
+     [
+      "咖啡",
+      "gaa3 fe1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "得",
+   "jp": "dak1",
+   "en": "OK / that works; can",
+   "fr": "d'accord / ça marche ; pouvoir",
+   "note": "得唔得 (dak1 m4 dak1)？ = Is that OK? Answer 得 (dak1) (yes) or 唔得 (m4 dak1) (no). After a verb it means 'can': 食得 (sik6 dak1) = can eat.",
+   "ex": {
+    "en": "Can I have it without ice?",
+    "parts": [
+     [
+      "走冰",
+      "zau2 bing1"
+     ],
+     [
+      "得唔得",
+      "dak1 m4 dak1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "茶餐廳",
+   "jp": "caa4 caan1 teng1",
+   "en": "cha chaan teng (HK-style café)",
+   "fr": "café hongkongais (cha chaan teng)",
+   "note": "Cheap, fast and loud: milk tea, macaroni soup, pineapple buns. People often call it 茶記 (caa4 gei3).",
+   "ex": {
+    "en": "I love going to cha chaan tengs.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "鍾意",
+      "zung1 ji3"
+     ],
+     [
+      "去",
+      "heoi3"
+     ],
+     [
+      "茶餐廳",
+      "caa4 caan1 teng1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "奶茶",
+   "jp": "naai5 caa4",
+   "en": "HK milk tea",
+   "fr": "thé au lait hongkongais",
+   "note": "Strong black tea with evaporated milk. Iced: 凍奶茶 (dung3 naai5 caa4); hot: 熱奶茶 (jit6 naai5 caa4).",
+   "ex": {
+    "en": "The milk tea at cha chaan tengs is so good!",
+    "parts": [
+     [
+      "茶餐廳",
+      "caa4 caan1 teng1"
+     ],
+     [
+      "啲",
+      "di1"
+     ],
+     [
+      "奶茶",
+      "naai5 caa4"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "好飲",
+      "hou2 jam2"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "外賣",
+   "jp": "ngoi6 maai6",
+   "en": "takeaway",
+   "fr": "à emporter",
+   "note": "At the counter, 'to take away' is also 拎走 (ling1 zau2); eating in is 堂食 (tong4 sik6).",
+   "ex": {
+    "en": "Takeaway, please.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "要",
+      "jiu3"
+     ],
+     [
+      "外賣",
+      "ngoi6 maai6"
+     ],
+     [
+      "，"
+     ],
+     [
+      "唔該",
+      "m4 goi1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "走冰",
+   "jp": "zau2 bing1",
+   "en": "no ice",
+   "fr": "sans glaçons",
+   "note": "走 (zau2) means 'leave out': 走甜 (zau2 tim4) = no sugar. 凍奶茶走冰 (dung3 naai5 caa4 zau2 bing1) = iced milk tea without ice cubes (chilled, not watered down).",
+   "ex": {
+    "en": "Milk tea, no ice, please.",
+    "parts": [
+     [
+      "唔該",
+      "m4 goi1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "奶茶",
+      "naai5 caa4"
+     ],
+     [
+      "走冰",
+      "zau2 bing1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  }
+ ],
+ "sentences": [
+  {
+   "en": "I'm so hungry! Let's go and eat.",
+   "parts": [
+    [
+     "好",
+     "hou2"
+    ],
+    [
+     "肚餓",
+     "tou5 ngo6"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "！"
+    ],
+    [
+     "我哋",
+     "ngo5 dei6"
+    ],
+    [
+     "去",
+     "heoi3"
+    ],
+    [
+     "食飯",
+     "sik6 faan6"
+    ],
+    [
+     "啦",
+     "laa1"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Shall we go for dim sum together?",
+   "parts": [
+    [
+     "我哋",
+     "ngo5 dei6"
+    ],
+    [
+     "一齊",
+     "jat1 cai4"
+    ],
+    [
+     "去",
+     "heoi3"
+    ],
+    [
+     "飲茶",
+     "jam2 caa4"
+    ],
+    [
+     "，"
+    ],
+    [
+     "好唔好",
+     "hou2 m4 hou2"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  },
+  {
+   "en": "I can't eat spicy food.",
+   "parts": [
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "唔",
+     "m4"
+    ],
+    [
+     "食得",
+     "sik6 dak1"
+    ],
+    [
+     "辣",
+     "laat6"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "A basket of siu mai, please.",
+   "parts": [
+    [
+     "唔該",
+     "m4 goi1"
+    ],
+    [
+     "，"
+    ],
+    [
+     "要",
+     "jiu3"
+    ],
+    [
+     "一籠",
+     "jat1 lung4"
+    ],
+    [
+     "燒賣",
+     "siu1 maai2"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Food at cha chaan tengs is cheap.",
+   "parts": [
+    [
+     "茶餐廳",
+     "caa4 caan1 teng1"
+    ],
+    [
+     "啲",
+     "di1"
+    ],
+    [
+     "嘢食",
+     "je5 sik6"
+    ],
+    [
+     "好",
+     "hou2"
+    ],
+    [
+     "平",
+     "peng4"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "I like noodles, I don't like rice.",
+   "parts": [
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "鍾意",
+     "zung1 ji3"
+    ],
+    [
+     "食",
+     "sik6"
+    ],
+    [
+     "麵",
+     "min6"
+    ],
+    [
+     "，"
+    ],
+    [
+     "唔",
+     "m4"
+    ],
+    [
+     "鍾意",
+     "zung1 ji3"
+    ],
+    [
+     "食",
+     "sik6"
+    ],
+    [
+     "飯",
+     "faan6"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Excuse me, the bill please!",
+   "parts": [
+    [
+     "唔該",
+     "m4 goi1"
+    ],
+    [
+     "，"
+    ],
+    [
+     "埋單",
+     "maai4 daan1"
+    ],
+    [
+     "！"
+    ]
+   ]
+  },
+  {
+   "en": "I don't drink coffee — water's fine for me.",
+   "parts": [
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "唔",
+     "m4"
+    ],
+    [
+     "飲",
+     "jam2"
+    ],
+    [
+     "咖啡",
+     "gaa3 fe1"
+    ],
+    [
+     "，"
+    ],
+    [
+     "飲",
+     "jam2"
+    ],
+    [
+     "水",
+     "seoi2"
+    ],
+    [
+     "就",
+     "zau6"
+    ],
+    [
+     "得",
+     "dak1"
+    ],
+    [
+     "喇",
+     "laa3"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Do you want noodles or rice?",
+   "parts": [
+    [
+     "你",
+     "nei5"
+    ],
+    [
+     "要",
+     "jiu3"
+    ],
+    [
+     "麵",
+     "min6"
+    ],
+    [
+     "定係",
+     "ding6 hai6"
+    ],
+    [
+     "飯",
+     "faan6"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  },
+  {
+   "en": "I still haven't eaten, I'm starving.",
+   "parts": [
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "仲",
+     "zung6"
+    ],
+    [
+     "未",
+     "mei6"
+    ],
+    [
+     "食飯",
+     "sik6 faan6"
+    ],
+    [
+     "，"
+    ],
+    [
+     "好",
+     "hou2"
+    ],
+    [
+     "肚餓",
+     "tou5 ngo6"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "I'm full, thanks!",
+   "parts": [
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "食飽",
+     "sik6 baau2"
+    ],
+    [
+     "喇",
+     "laa3"
+    ],
+    [
+     "，"
+    ],
+    [
+     "多謝",
+     "do1 ze6"
+    ],
+    [
+     "！"
+    ]
+   ]
+  },
+  {
+   "en": "Let's order takeaway tonight.",
+   "parts": [
+    [
+     "我哋",
+     "ngo5 dei6"
+    ],
+    [
+     "今晚",
+     "gam1 maan5"
+    ],
+    [
+     "叫",
+     "giu3"
+    ],
+    [
+     "外賣",
+     "ngoi6 maai6"
+    ],
+    [
+     "啦",
+     "laa1"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "This is too spicy, I'm not eating any more.",
+   "parts": [
+    [
+     "呢個",
+     "ni1 go3"
+    ],
+    [
+     "太",
+     "taai3"
+    ],
+    [
+     "辣",
+     "laat6"
+    ],
+    [
+     "喇",
+     "laa3"
+    ],
+    [
+     "，"
+    ],
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "唔",
+     "m4"
+    ],
+    [
+     "食",
+     "sik6"
+    ],
+    [
+     "喇",
+     "laa3"
+    ],
+    [
+     "。"
+    ]
+   ]
+  }
+ ],
+ "grammar": [
+  {
+   "title": "Ordering: 唔該 (m4 goi1) + 要 (jiu3) …",
+   "explain": "Catch the staff's attention with 唔該 (m4 goi1)!, then say 要 (jiu3) + number + measure word + food. 畀 (bei2) … 我 (ngo5) 'give me …' works too.",
+   "examples": [
+    {
+     "en": "Excuse me, two baskets of har gow please.",
+     "parts": [
+      [
+       "唔該",
+       "m4 goi1"
+      ],
+      [
+       "，"
+      ],
+      [
+       "要",
+       "jiu3"
+      ],
+      [
+       "兩籠",
+       "loeng5 lung4"
+      ],
+      [
+       "蝦餃",
+       "haa1 gaau2"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "I'll have a bowl of noodles.",
+     "parts": [
+      [
+       "我",
+       "ngo5"
+      ],
+      [
+       "要",
+       "jiu3"
+      ],
+      [
+       "一碗",
+       "jat1 wun2"
+      ],
+      [
+       "麵",
+       "min6"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "A coffee for me, please.",
+     "parts": [
+      [
+       "唔該",
+       "m4 goi1"
+      ],
+      [
+       "，"
+      ],
+      [
+       "畀",
+       "bei2"
+      ],
+      [
+       "杯",
+       "bui1"
+      ],
+      [
+       "咖啡",
+       "gaa3 fe1"
+      ],
+      [
+       "我",
+       "ngo5"
+      ],
+      [
+       "。"
+      ]
+     ]
+    }
+   ],
+   "after": "點心"
+  },
+  {
+   "title": "Measure words for food",
+   "explain": "Food is counted by its container: 籠 (lung4) steamer basket, 碗 (wun2) bowl, 杯 (bui1) cup / glass, 碟 (dip6) plate, 壺 (wu4) pot. For 'one', 一 (jat1) is often dropped: 要碗麵 (jiu3 wun2 min6).",
+   "examples": [
+    {
+     "en": "A pot of tea, please.",
+     "parts": [
+      [
+       "一壺",
+       "jat1 wu4"
+      ],
+      [
+       "茶",
+       "caa4"
+      ],
+      [
+       "，"
+      ],
+      [
+       "唔該",
+       "m4 goi1"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "Let's get a plate of greens.",
+     "parts": [
+      [
+       "要",
+       "jiu3"
+      ],
+      [
+       "碟",
+       "dip6"
+      ],
+      [
+       "菜",
+       "coi3"
+      ],
+      [
+       "啦",
+       "laa1"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "Two milk teas.",
+     "parts": [
+      [
+       "兩杯",
+       "loeng5 bui1"
+      ],
+      [
+       "奶茶",
+       "naai5 caa4"
+      ],
+      [
+       "。"
+      ]
+     ]
+    }
+   ],
+   "after": "燒賣"
+  },
+  {
+   "title": "…咗 (zo2) … 未 (mei6)? Have you … yet?",
+   "explain": "Verb + 咗 (zo2) + thing + 未 (mei6) asks 'have you done it yet?'. 食咗飯未啊 (sik6 zo2 faan6 mei6 aa3)？ is also the everyday greeting you met in Family. Answer 食咗喇 (sik6 zo2 laa3) (yes) or 未啊 (mei6 aa3) (not yet).",
+   "examples": [
+    {
+     "en": "Have you eaten yet?",
+     "parts": [
+      [
+       "你",
+       "nei5"
+      ],
+      [
+       "食咗",
+       "sik6 zo2"
+      ],
+      [
+       "飯",
+       "faan6"
+      ],
+      [
+       "未",
+       "mei6"
+      ],
+      [
+       "啊",
+       "aa3"
+      ],
+      [
+       "？"
+      ]
+     ]
+    },
+    {
+     "en": "Yes, I have.",
+     "parts": [
+      [
+       "食咗",
+       "sik6 zo2"
+      ],
+      [
+       "喇",
+       "laa3"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "Not yet — I'm so hungry!",
+     "parts": [
+      [
+       "未",
+       "mei6"
+      ],
+      [
+       "啊",
+       "aa3"
+      ],
+      [
+       "，"
+      ],
+      [
+       "好",
+       "hou2"
+      ],
+      [
+       "肚餓",
+       "tou5 ngo6"
+      ],
+      [
+       "！"
+      ]
+     ]
+    }
+   ],
+   "after": "未"
+  },
+  {
+   "title": "Or: 定係 (ding6 hai6) vs 或者 (waak6 ze2)",
+   "explain": "In a question that offers a choice, 'or' is 定係 (ding6 hai6). In a statement — 'either is fine', 'maybe this or that' — use 或者 (waak6 ze2).",
+   "examples": [
+    {
+     "en": "Do you want tea or coffee?",
+     "parts": [
+      [
+       "你",
+       "nei5"
+      ],
+      [
+       "要",
+       "jiu3"
+      ],
+      [
+       "茶",
+       "caa4"
+      ],
+      [
+       "定係",
+       "ding6 hai6"
+      ],
+      [
+       "咖啡",
+       "gaa3 fe1"
+      ],
+      [
+       "啊",
+       "aa3"
+      ],
+      [
+       "？"
+      ]
+     ]
+    },
+    {
+     "en": "Tea or coffee, either is fine.",
+     "parts": [
+      [
+       "茶",
+       "caa4"
+      ],
+      [
+       "或者",
+       "waak6 ze2"
+      ],
+      [
+       "咖啡",
+       "gaa3 fe1"
+      ],
+      [
+       "都",
+       "dou1"
+      ],
+      [
+       "得",
+       "dak1"
+      ],
+      [
+       "。"
+      ]
+     ]
+    }
+   ],
+   "after": "定係"
+  }
+ ],
+ "dialogue": {
+  "title": "Who ate the har gow?",
+  "lines": [
+   {
+    "spk": "A",
+    "en": "I'm starving! Let's order.",
+    "parts": [
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "肚餓",
+      "tou5 ngo6"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "！"
+     ],
+     [
+      "我哋",
+      "ngo5 dei6"
+     ],
+     [
+      "叫",
+      "giu3"
+     ],
+     [
+      "嘢食",
+      "je5 sik6"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "OK. Excuse me — a pot of pu'er and two baskets of har gow!",
+    "parts": [
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "。"
+     ],
+     [
+      "唔該",
+      "m4 goi1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "要",
+      "jiu3"
+     ],
+     [
+      "一壺",
+      "jat1 wu4"
+     ],
+     [
+      "普洱",
+      "pou2 lei2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "兩籠",
+      "loeng5 lung4"
+     ],
+     [
+      "蝦餃",
+      "haa1 gaau2"
+     ],
+     [
+      "！"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "I want siu mai too! I love siu mai.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "都",
+      "dou1"
+     ],
+     [
+      "要",
+      "jiu3"
+     ],
+     [
+      "燒賣",
+      "siu1 maai2"
+     ],
+     [
+      "！"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "鍾意",
+      "zung1 ji3"
+     ],
+     [
+      "食",
+      "sik6"
+     ],
+     [
+      "燒賣",
+      "siu1 maai2"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Wow, the har gow here is really good!",
+    "parts": [
+     [
+      "嘩",
+      "waa1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "呢度",
+      "ni1 dou6"
+     ],
+     [
+      "啲",
+      "di1"
+     ],
+     [
+      "蝦餃",
+      "haa1 gaau2"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "好食",
+      "hou2 sik6"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "Huh? Where's the har gow? Did you eat it all?",
+    "parts": [
+     [
+      "吓",
+      "haa2"
+     ],
+     [
+      "？"
+     ],
+     [
+      "啲",
+      "di1"
+     ],
+     [
+      "蝦餃",
+      "haa1 gaau2"
+     ],
+     [
+      "呢",
+      "ne1"
+     ],
+     [
+      "？"
+     ],
+     [
+      "係唔係",
+      "hai6 m4 hai6"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "食晒",
+      "sik6 saai3"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Yes, sorry! I was really hungry.",
+    "parts": [
+     [
+      "係",
+      "hai6"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "對唔住",
+      "deoi3 m4 zyu6"
+     ],
+     [
+      "！"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "肚餓",
+      "tou5 ngo6"
+     ],
+     [
+      "嘛",
+      "maa3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "Never mind, let's order another basket.",
+    "parts": [
+     [
+      "唔緊要",
+      "m4 gan2 jiu3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "再",
+      "zoi3"
+     ],
+     [
+      "要",
+      "jiu3"
+     ],
+     [
+      "一籠",
+      "jat1 lung4"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Are you full yet?",
+    "parts": [
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "食飽",
+      "sik6 baau2"
+     ],
+     [
+      "未",
+      "mei6"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "Full! Excuse me, the bill please!",
+    "parts": [
+     [
+      "飽",
+      "baau2"
+     ],
+     [
+      "喇",
+      "laa3"
+     ],
+     [
+      "！"
+     ],
+     [
+      "唔該",
+      "m4 goi1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "埋單",
+      "maai4 daan1"
+     ],
+     [
+      "！"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "It's on me today — I ate your har gow!",
+    "parts": [
+     [
+      "今日",
+      "gam1 jat6"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "請",
+      "ceng2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "食咗",
+      "sik6 zo2"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "啲",
+      "di1"
+     ],
+     [
+      "蝦餃",
+      "haa1 gaau2"
+     ],
+     [
+      "嘛",
+      "maa3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "q": "What do they order first?",
+    "options": [
+     "A pot of pu'er and two baskets of har gow",
+     "Two coffees and a bowl of noodles",
+     "A pot of pu'er and two baskets of siu mai",
+     "Water and a plate of vegetables"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does A love to eat?",
+    "options": [
+     "Siu mai",
+     "Har gow",
+     "Char siu bao",
+     "Noodles"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What happened to the har gow?",
+    "options": [
+     "B ate them all",
+     "They never arrived",
+     "They were too spicy",
+     "A dropped them"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Who pays the bill, and why?",
+    "options": [
+     "B, because B ate A's har gow",
+     "A, because it's A's birthday",
+     "They split it",
+     "B, because A forgot the money"
+    ],
+    "answer": 0
+   }
+  ],
+  "gloss": [
+   [
+    "壺",
+    "wu4",
+    "pot (measure word)"
+   ],
+   [
+    "普洱",
+    "pou2 lei2",
+    "pu'er tea"
+   ],
+   [
+    "籠",
+    "lung4",
+    "steamer basket (measure word)"
+   ],
+   [
+    "呢度",
+    "ni1 dou6",
+    "here"
+   ],
+   [
+    "食晒",
+    "sik6 saai3",
+    "eat it all up"
+   ],
+   [
+    "請",
+    "ceng2",
+    "to treat (someone)"
+   ]
+  ]
+ },
+ "toneLesson": {
+  "title": "Vowels, initials and casual sounds",
+  "card": {
+   "title": "How people really say it",
+   "explain": "Many Hongkongers, especially family at home, change a few sounds: n- becomes l- (你 (nei5) sounds like 'lei5'), ng- is dropped (我 (ngo5) sounds like 'o5'), gw- becomes g- (廣 (gwong2) sounds like 'gong2'). Some words also take a changed tone in speech: 名 (meng2), 錢 (cin2). Understand both; say whichever feels natural.",
+   "examples": [
+    {
+     "en": "Speak Cantonese with me!",
+     "parts": [
+      [
+       "你",
+       "nei5"
+      ],
+      [
+       "同",
+       "tung4"
+      ],
+      [
+       "我",
+       "ngo5"
+      ],
+      [
+       "講",
+       "gong2"
+      ],
+      [
+       "廣東話",
+       "gwong2 dung1 waa2"
+      ],
+      [
+       "啦",
+       "laa1"
+      ],
+      [
+       "！"
+      ]
+     ]
+    },
+    {
+     "en": "name, money",
+     "parts": [
+      [
+       "名",
+       "meng2"
+      ],
+      [
+       "錢",
+       "cin2"
+      ]
+     ]
+    }
+   ]
+  },
+  "items": [
+   {
+    "hk": "雞",
+    "jp": "gai1",
+    "en": "chicken",
+    "note": "Short a — quick and tight. Compare 街 (gaai1)."
+   },
+   {
+    "hk": "街",
+    "jp": "gaai1",
+    "en": "street",
+    "note": "Long aa — open your mouth wide and hold it."
+   },
+   {
+    "hk": "新",
+    "jp": "san1",
+    "en": "new",
+    "note": "Short a, like the u in English 'sun'."
+   },
+   {
+    "hk": "山",
+    "jp": "saan1",
+    "en": "mountain",
+    "note": "Long aa, like 'a' in 'father'."
+   },
+   {
+    "hk": "去",
+    "jp": "heoi3",
+    "en": "to go",
+    "note": "eo ≈ the 'eu' in French 'peur', gliding to a short i."
+   },
+   {
+    "hk": "長",
+    "jp": "coeng4",
+    "en": "long",
+    "note": "oe ≈ French 'eu' in 'heure'. c = 'ts' with a puff of air."
+   },
+   {
+    "hk": "書",
+    "jp": "syu1",
+    "en": "book",
+    "note": "yu ≈ French 'u' in 'tu'."
+   },
+   {
+    "hk": "我",
+    "jp": "ngo5",
+    "en": "I / me",
+    "note": "ng- at the start, like the end of 'sing'. Many people just say 'o5'."
+   }
+  ],
+  "pairs": [
+   [
+    "雞",
+    "街"
+   ],
+   [
+    "新",
+    "山"
+   ],
+   [
+    "鹹",
+    "行"
+   ]
+  ]
+ }
+}

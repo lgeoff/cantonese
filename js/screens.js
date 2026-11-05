@@ -1,17 +1,17 @@
 // Main screens: Path (home), Practice, Words, Speak lab, Me.
-import { h, jpNode, jpHTML, todayStr, toneOf, TONES, sJP, esc } from './util.js';
-import { UNITS, UNIT, LEVELS, ITEMS, unitProgress, nextLesson, buildLesson, buildReview, buildDrill, learnedWords, learnedSentences } from './course.js';
-import { S, dueKeys, strength, streakAlive, todayXP, lessonState, setting, toggleStar, exportJSON, importJSON, resetAll, card, save } from './store.js';
+import { h, R, jpNode, jpHTML, todayStr, toneOf, TONES, sJP, esc, shuffle } from './util.js';
+import { UNITS, UNIT, LEVELS, ITEMS, unitProgress, nextLesson, buildLesson, buildReview, buildDrill, learnedWords, learnedSentences, buildTestOut, audioMode } from './course.js';
+import { S, dueKeys, strength, streakAlive, todayXP, lessonState, lessonDone, markKnown, setting, toggleStar, exportJSON, importJSON, resetAll, card, save, grade } from './store.js';
 import { runSession } from './session.js';
 import { canto, speakerBtn, toneChartSVG, recorderWidget, ICON } from './exercises.js';
 import { speak, speakSlow, hasVoice, cantoVoices, supported as ttsSupported, whenReady } from './tts.js';
 import * as SP from './speak.js';
 
 export const UNIT_ZH = {
-  u01: ['我嘅生字', 'ngo5 ge3 saang1 zi6'], u02: ['聲調', 'sing1 diu6'], u03: ['打招呼', 'daa2 ziu1 fu1'], u04: ['自我介紹', 'zi6 ngo5 gaai3 siu6'],
+  u01: ['我嘅生字', 'ngo5 ge3 saang1 zi6'], u02: ['聲調入門', 'sing1 diu6 jap6 mun4'], u25: ['我嘅日常', 'ngo5 ge3 jat6 soeng4'], u03: ['打招呼', 'daa2 ziu1 fu1'], u04: ['自我介紹', 'zi6 ngo5 gaai3 siu6'],
   u05: ['數字同錢', 'sou3 zi6 tung4 cin2'], u06: ['日子同時間', 'jat6 zi2 tung4 si4 gaan3'], u07: ['屋企人', 'uk1 kei2 jan4'], u08: ['飲茶', 'jam2 caa4'],
   u09: ['搭車', 'daap3 ce1'], u10: ['買嘢', 'maai5 je5'], u11: ['我嘅一日', 'ngo5 ge3 jat1 jat6'], u12: ['屋企電器', 'uk1 kei2 din6 hei3'],
-  u13: ['天氣心情', 'tin1 hei3 sam1 cing4'], u14: ['文法', 'man4 faat3'], u15: ['興趣', 'hing3 ceoi3'], u16: ['健康', 'gin6 hong1'],
+  u13: ['天氣心情', 'tin1 hei3 sam1 cing4'], u14: ['助詞複習', 'zo6 ci4 fuk1 zaap6'], u15: ['興趣', 'hing3 ceoi3'], u16: ['健康', 'gin6 hong1'],
   u17: ['返工讀書', 'faan1 gung1 duk6 syu1'], u18: ['約人', 'joek3 jan4'], u19: ['意見', 'ji3 gin3'], u20: ['講故事', 'gong2 gu3 si6'],
   u21: ['進階句式', 'zeon3 gaai1 geoi3 sik1'], u22: ['香港俗語', 'hoeng1 gong2 zuk6 jyu5'], u23: ['節日祝福', 'zit3 jat6 zuk1 fuk1'], u24: ['新聞社會', 'san1 man4 se5 wui2'],
 };
@@ -21,25 +21,60 @@ let refresh = () => {};
 export function setRefresh(f) { refresh = f; }
 
 export function sheet(content, { title } = {}) {
+  const opener = document.activeElement;
   const back = h('div', { class: 'sheet-back', onclick: (e) => { if (e.target === back) close(); } });
-  const panel = h('div', { class: 'sheet', role: 'dialog', 'aria-label': title || 'Details' },
-    h('div', { class: 'sheet-head' }, h('h2', {}, title || ''), h('button', { class: 'x', type: 'button', 'aria-label': 'Close', onclick: () => close() }, '✕')), content);
+  const xBtn = h('button', { class: 'x', type: 'button', 'aria-label': 'Close', onclick: () => close() }, '✕');
+  const panel = h('div', { class: 'sheet', role: 'dialog', 'aria-modal': 'true', 'aria-label': title || 'Details' },
+    h('div', { class: 'sheet-head' }, h('h2', {}, title || ''), xBtn), content);
   back.append(panel);
   document.body.append(back);
-  requestAnimationFrame(() => back.classList.add('open'));
-  function close() { back.classList.remove('open'); setTimeout(() => back.remove(), 220); }
+  requestAnimationFrame(() => { back.classList.add('open'); xBtn.focus({ preventScroll: true }); });
+  // back gesture closes the sheet; Esc closes; Tab stays inside
+  history.pushState({ sheet: 1 }, '');
+  const onPop = () => close(true);
+  window.addEventListener('popstate', onPop);
+  const onKey = (e) => {
+    if (e.key === 'Escape') { e.stopPropagation(); close(); }
+    if (e.key === 'Tab') {
+      const f = [...panel.querySelectorAll('button, [href], input, select, summary, [tabindex="0"]')].filter((x) => !x.disabled && x.offsetParent !== null);
+      if (!f.length) return;
+      if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus(); }
+      else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
+    }
+  };
+  document.addEventListener('keydown', onKey, true);
+  let closed = false;
+  // then: run after the history entry is gone (so a session opened next doesn't get closed by our popstate)
+  function close(fromPop = false, then = null) {
+    if (closed) return; closed = true;
+    window.removeEventListener('popstate', onPop);
+    document.removeEventListener('keydown', onKey, true);
+    if (fromPop !== true && history.state && history.state.sheet) {
+      if (then) {
+        let ran = false;
+        const go = () => { if (ran) return; ran = true; window.removeEventListener('popstate', go); then(); };
+        window.addEventListener('popstate', go);
+        setTimeout(go, 400);
+      }
+      history.back();
+    } else if (then) then();
+    back.classList.remove('open'); setTimeout(() => back.remove(), 220);
+    if (opener && opener.focus && document.contains(opener)) opener.focus({ preventScroll: true });
+  }
   return close;
 }
 
 function startLesson(l, replay) {
   const u = UNIT.get(l.unit);
-  runSession({ title: u.title, steps: buildLesson(l, { replay }), lessonId: l.id, onExit: refresh });
+  const onNext = () => { const n = nextLesson(); if (n) setTimeout(() => startLesson(n, !!lessonState(n.id)), 50); };
+  runSession({ title: u.title, steps: buildLesson(l, { replay }), lessonId: l.id, onExit: refresh, onNext: replay ? null : onNext });
 }
-export function startReview(mode = 'mixed', n = 12) {
-  runSession({ title: 'Review', steps: buildReview(n, { mode }), onExit: refresh, kind: 'review' });
+export function startReview(mode = 'mixed', n = 12, onlyKeys = null) {
+  runSession({ title: 'Review', steps: buildReview(n, { mode, onlyKeys }), onExit: refresh, kind: 'review' });
 }
 
 // ------------------------------------------------------------------ PATH
+const pathState = { all: false };
 export function renderPath() {
   const v = view(); v.innerHTML = '';
   const st = S(), due = dueKeys().length, streak = streakAlive(), today = todayXP();
@@ -48,8 +83,9 @@ export function renderPath() {
   v.append(h('header', { class: 'top' },
     h('div', { class: 'brand' }, h('span', { class: 'logo', lang: 'zh-HK' }, '識講'), h('span', { class: 'brand-jp', html: jpHTML('sik1 gong2') })),
     h('div', { class: 'top-stats' },
-      h('div', { class: 'tstat', title: 'Day streak' }, h('b', {}, `🔥 ${streak}`)),
-      h('div', { class: 'tstat', title: 'XP today' }, ring))));
+      h('div', { class: 'tstat', title: 'Day streak', 'aria-label': `${streak} day streak` }, h('b', {}, `🔥 ${streak}`)),
+      h('button', { class: 'tstat goal', type: 'button', onclick: () => settingsSheet(), 'aria-label': `${today} of ${st.goal} XP today. Open settings` }, ring, h('small', {}, 'XP today')),
+      h('button', { class: 'gear', type: 'button', onclick: () => settingsSheet(), 'aria-label': 'Settings' }, '⚙︎'))));
 
   const hero = h('section', { class: 'next' });
   if (nl) {
@@ -57,24 +93,33 @@ export function renderPath() {
     hero.append(
       h('div', { class: 'next-label' }, 'Next stop'),
       h('div', { class: 'next-row' }, h('div', { class: 'next-emoji' }, u.emoji),
-        h('div', {}, h('h1', {}, u.title), h('p', {}, nl.kind === 'dialogue' ? `Conversation: ${nl.title}` : `Lesson ${nl.idx + 1} of ${u.lessons.length} · ${nl.title}`))),
+        h('div', {}, h('h1', {}, u.title), h('p', {}, nl.kind === 'dialogue' ? `Conversation: ${nl.title}` : `Lesson ${nl.idx + 1} of ${u.lessons.length} · ${nl.sub || nl.title} · about 4 min`))),
       h('div', { class: 'next-actions' },
         h('button', { class: 'btn primary', type: 'button', onclick: () => startLesson(nl) }, 'Start lesson'),
-        due ? h('button', { class: 'btn', type: 'button', onclick: () => startReview() }, `Review ${due} due`) : null));
+        due ? h('button', { class: 'btn', type: 'button', onclick: () => startReview() }, `Review ${due} due`) : null,
+        !due && nl.idx === 0 && UNIT.get(nl.unit).special !== 'tones' ? h('button', { class: 'btn', type: 'button', onclick: () => testOut(UNIT.get(nl.unit)) }, 'I know these — test out') : null));
   } else hero.append(h('h1', {}, 'You reached the end of the line 🎉'), h('p', {}, 'Keep your reviews going in Practice.'));
   v.append(hero);
 
-  if (due >= 1 || Object.keys(st.items).length) {
+  if (Object.keys(st.items).length) {
     v.append(h('button', { class: 'quick', type: 'button', onclick: () => quickSession() },
-      h('span', { class: 'quick-ico' }, '⚡'), h('span', {}, h('b', {}, '3-minute session'), h('small', {}, due ? `${due} reviews waiting, then new words` : 'Mixed practice of what you know'))));
+      h('span', { class: 'quick-ico' }, '⚡'), h('span', {}, h('b', {}, 'Quick review · about 3 min'), h('small', {}, due ? `${due} item${due > 1 ? 's' : ''} due — the best use of a short break` : 'Nothing due — a light mix of what you know'))));
   }
 
   const map = h('section', { class: 'map', 'aria-label': 'Course map' });
+  const curLevel = nl ? UNIT.get(nl.unit).level : 4;
   for (const L of LEVELS) {
     const units = UNITS.filter((u) => u.level === L.n);
     if (!units.length) continue;
+    if (L.n > curLevel && !pathState.all) {
+      const later = LEVELS.filter((x) => x.n > curLevel);
+      const n = UNITS.filter((u) => u.level > curLevel).length;
+      map.append(h('button', { class: 'later', type: 'button', onclick: () => { pathState.all = true; renderPath(); } },
+        h('span', {}, `Levels ${later[0].n}–${later[later.length - 1].n} · ${n} more units`), h('small', {}, later.map((x) => x.name).join(' → ')), h('b', {}, 'Show ›')));
+      break;
+    }
     const line = h('div', { class: `line line-${L.n}` });
-    line.append(h('div', { class: 'line-head' }, h('span', { class: 'line-badge', lang: 'zh-HK' }, L.zh), h('span', {}, `Level ${L.n} · ${L.name}`)));
+    line.append(h('div', { class: 'line-head' }, h('span', { class: 'line-badge', lang: 'zh-HK' }, L.zh), h('span', {}, jpNode(L.jp), ` · Level ${L.n} · ${L.name}`)));
     for (const u of units) {
       const p = unitProgress(u);
       const isCurrent = nl && nl.unit === u.id;
@@ -83,10 +128,17 @@ export function renderPath() {
       const station = h('button', { class: `station ${stateCls} ${isCurrent ? 'current' : ''}`, type: 'button', onclick: () => unitSheet(u) },
         h('span', { class: 'dot', style: { '--p': p.pct } }),
         h('span', { class: 'st-name' },
-          zh ? h('span', { class: 'st-zh', lang: 'zh-HK' }, zh[0]) : null,
+          zh ? h('span', { class: 'st-zh' }, h('span', { lang: 'zh-HK' }, zh[0]), ' ', jpNode(zh[1])) : null,
           h('span', { class: 'st-en' }, `${u.emoji} ${u.title}`),
           h('span', { class: 'st-meta' }, isCurrent ? 'You are here' : p.done === p.total ? 'Complete' : `${p.done}/${p.total} lessons`)));
       line.append(station);
+      if (isCurrent) {
+        const ul = h('div', { class: 'upnext' });
+        u.lessons.filter((l) => !lessonState(l.id)).slice(0, 3).forEach((l, i) => ul.append(
+          h('button', { class: `upl ${i === 0 ? 'first' : ''}`, type: 'button', onclick: () => startLesson(l) },
+            h('span', {}, l.kind === 'dialogue' ? `💬 ${l.title}` : `Lesson ${l.idx + 1} · ${l.sub}`), h('b', {}, i === 0 ? 'Start' : '›'))));
+        line.append(ul);
+      }
     }
     map.append(line);
   }
@@ -95,8 +147,18 @@ export function renderPath() {
 }
 
 function voiceBanner() {
-  return h('div', { class: 'banner' }, h('b', {}, 'No Cantonese voice found on this device. '),
-    ttsSupported() ? 'iPhone: Settings → Accessibility → Spoken Content → Voices → Chinese → Chinese (Hong Kong), download a voice. Android: Settings → Text-to-speech → Google → install Cantonese (Hong Kong). Then reload.' : 'This browser cannot speak. Try Safari on iPhone or Chrome on Android.');
+  if (setting('voiceBannerHidden')) return document.createComment('');
+  const b = h('div', { class: 'banner', role: 'status' },
+    h('button', { class: 'banner-main', type: 'button', onclick: voiceHelp }, h('b', {}, 'No Cantonese voice on this device'), h('span', {}, ' — listening exercises are off. How to fix ›')),
+    h('button', { class: 'x', type: 'button', 'aria-label': 'Dismiss', onclick: () => { setting('voiceBannerHidden', true); b.remove(); } }, '✕'));
+  return b;
+}
+function voiceHelp() {
+  sheet(h('div', { class: 'guide' },
+    h('p', {}, 'Audio comes from your phone’s own Cantonese voice. Install one, then reload this page.'),
+    h('h3', {}, 'iPhone / iPad'), h('p', {}, 'Settings → Accessibility → Spoken Content → Voices → Chinese → Chinese (Hong Kong) → download a voice (Sinji Enhanced sounds best).'),
+    h('h3', {}, 'Android'), h('p', {}, 'Settings → System → Languages → Text-to-speech → Google → Install voice data → Cantonese (Hong Kong).'),
+    ttsSupported() ? null : h('p', { class: 'note' }, 'This browser cannot speak at all. Use Safari on iPhone or Chrome on Android.')), { title: 'Turn on Cantonese audio' });
 }
 
 function goalRing(xp, goal) {
@@ -106,66 +168,90 @@ function goalRing(xp, goal) {
   return s;
 }
 
+function testOut(u) {
+  runSession({ title: `Test out: ${u.title}`, steps: buildTestOut(u), kind: 'test', onExit: refresh, onDone: (acc) => {
+    if (acc >= 0.9) {
+      markKnown(u.words.filter((w) => w.kind === 'w').map((w) => w.key));
+      u.lessons.filter((l) => l.kind === 'words').forEach((l) => lessonDone(l.id, acc));
+      return `Passed! The word lessons of “${u.title}” are done, and the words will come back for review in a few days. The conversation is still open for you.`;
+    }
+    return `${Math.round(acc * 100)}% — not quite 90%. Take the lessons; they’ll go quickly.`;
+  } });
+}
 function quickSession() {
-  const due = dueKeys().length;
-  const nl = nextLesson();
-  if (due >= 6 || !nl) return startReview('mixed', 10);
-  // a few reviews, then the next lesson
-  const steps = [...buildReview(Math.max(due, 3)).slice(0, 5), ...buildLesson(nl, { replay: !!lessonState(nl.id) })];
-  runSession({ title: 'Quick session', steps, lessonId: nl.id, onExit: refresh });
+  // ~3 minutes: due items first, topped up with the weakest ones
+  startReview('mixed', 10);
 }
 
 function unitSheet(u) {
   const zh = UNIT_ZH[u.id];
   const c = h('div', { class: 'unit-sheet' });
   c.append(h('div', { class: 'us-head' }, h('span', { class: 'us-emoji' }, u.emoji),
-    h('div', {}, zh ? h('div', { class: 'us-zh' }, h('span', { lang: 'zh-HK' }, zh[0]), ' ', jpNode(zh[1])) : null, h('p', {}, u.desc))));
+    h('div', {}, zh ? h('div', { class: 'us-zh' }, h('span', { lang: 'zh-HK' }, zh[0]), ' ', jpNode(zh[1])) : null, h('p', {}, R(u.desc)))));
   const list = h('ol', { class: 'lessons' });
   u.lessons.forEach((l) => {
     const ls = lessonState(l.id);
     list.append(h('li', { class: ls ? 'done' : '' },
-      h('div', {}, h('b', {}, l.kind === 'dialogue' ? `💬 ${l.title}` : l.title),
-        h('small', {}, l.kind === 'dialogue' ? 'Conversation + questions' : `${l.words.length} words · ${l.sentences.length} sentences`)),
-      h('button', { class: `btn ${ls ? '' : 'primary'} sm`, type: 'button', onclick: () => { close(); startLesson(l, !!ls); } }, ls ? 'Practise' : 'Start')));
+      h('div', {}, h('b', {}, l.kind === 'dialogue' ? `💬 ${l.title}` : (l.sub || l.title)),
+        h('small', {}, l.kind === 'dialogue' ? 'Conversation + questions' : [u.special === 'tones' ? l.title : l.title, `${l.words.length} words`, l.sentences.length ? `${l.sentences.length} sentence${l.sentences.length > 1 ? 's' : ''}` : null].filter(Boolean).join(' · '))),
+      h('button', { class: `btn ${ls ? '' : 'primary'} sm`, type: 'button', onclick: () => close(false, () => startLesson(l, !!ls)) }, ls ? 'Practise' : 'Start')));
   });
   c.append(list);
+  const wordLessons = u.lessons.filter((l) => l.kind === 'words');
+  if (u.special !== 'tones' && wordLessons.some((l) => !lessonState(l.id))) {
+    c.append(h('div', { class: 'testout' }, h('div', {}, h('b', {}, 'Already know these words?'), h('small', {}, '12 quick questions. Score 90% or more and the word lessons are marked done; the words join your reviews.')),
+      h('button', { class: 'btn sm', type: 'button', onclick: () => close(false, () => testOut(u)) }, 'Test out')));
+  }
   if (u.grammar?.length) {
     c.append(h('h3', {}, 'Patterns in this unit'));
-    for (const g of u.grammar) c.append(h('details', { class: 'gnote' }, h('summary', {}, g.title), h('p', {}, g.explain),
-      ...(g.examples || []).map((e) => h('div', { class: 'example' }, speakerBtn(e.hk, 'sm'), h('div', {}, canto(e, { size: 'sm', forceJp: true }), h('div', { class: 'en-sm' }, e.en))))));
+    for (const g of u.grammar) c.append(h('details', { class: 'gnote' }, h('summary', {}, R(g.title)), h('p', {}, R(g.explain)),
+      ...(g.examples || []).map((e) => h('div', { class: 'example' }, speakerBtn(e.hk, 'sm'), h('div', {}, canto(e, { size: 'sm', forceJp: true }), h('div', { class: 'en-sm' }, R(e.en)))))));
   }
-  c.append(h('h3', {}, 'Words'), h('div', { class: 'chips' }, ...u.words.map((w) => h('button', { class: `wchip ${card(w.key) ? 'known' : ''}`, type: 'button', onclick: () => speak(w.hk) }, h('span', { lang: 'zh-HK' }, w.hk), h('small', {}, w.en)))));
+  c.append(h('h3', {}, 'Words'), h('div', { class: 'chips' }, ...u.words.map((w) => h('button', { class: `wchip ${card(w.key) ? 'known' : ''}`, type: 'button', onclick: () => speak(w.hk) }, h('span', { lang: 'zh-HK' }, w.hk), h('small', {}, R(w.en))))));
   const close = sheet(c, { title: `${u.title}` });
 }
 
 // ------------------------------------------------------------------ PRACTICE
+const practiceState = { allDlg: false };
 export function renderPractice() {
   const v = view(); v.innerHTML = '';
   const due = dueKeys().length, nw = learnedWords().length, ns = learnedSentences().length;
   v.append(h('header', { class: 'page-head' }, h('h1', {}, 'Practice'), h('p', {}, `${nw} words and ${ns} sentences in your review deck.`)));
-  v.append(h('button', { class: 'review-card', type: 'button', disabled: !nw, onclick: () => startReview('mixed', 20) },
-    h('div', { class: 'rc-num' }, String(due)), h('div', {}, h('b', {}, due ? 'Reviews due now' : 'All caught up'), h('small', {}, due ? 'Spaced repetition: these are about to slip. Clearing them is the best use of 3 minutes.' : 'Nothing is due. Drills below keep things fresh.'))));
+  if (!nw) v.append(h('a', { class: 'review-card', href: '#/path' },
+    h('div', { class: 'rc-num' }, '🚉'), h('div', {}, h('b', {}, 'Start your first lesson'), h('small', {}, 'Every word you learn joins your review deck. Come back here to keep it fresh.'))));
+  else v.append(h('button', { class: 'review-card', type: 'button', onclick: () => startReview('mixed', 20) },
+    h('div', { class: 'rc-num' }, String(due)), h('div', {}, h('b', {}, due ? `Review ${due} due item${due > 1 ? 's' : ''}` : 'All caught up — review anyway'), h('small', {}, due ? 'Spaced repetition: these are about to slip. Clearing them is the best use of 3 minutes.' : 'Nothing is due. Drills below keep things fresh.'))));
+  const mute = audioMode() === 'mute';
   const drills = [
     ['listen', '👂', 'Listening drill', 'Audio only: catch words and whole sentences'],
     ['tones', '🎵', 'Tone gym', 'Hear the pitch, pick the tone'],
     ['build', '🧩', 'Sentence builder', 'Rebuild sentences from tiles'],
     ['match', '⏱️', 'Speed match', 'Four rounds of pairs against the clock'],
     ['speak', '🗣️', 'Shadowing', 'Listen, repeat, check yourself'],
+    ['numbers', '🔢', 'Numbers & prices', 'Catch prices, times and phone digits by ear'],
   ];
   const grid = h('div', { class: 'drills' });
   for (const [mode, ico, t, d] of drills) {
     const need = mode === 'tones' ? 0 : mode === 'build' || mode === 'speak' ? 2 : 5;
-    const ok = mode === 'tones' || (mode === 'build' ? ns >= need : nw >= need);
+    const numsOpen = UNIT.get('u05') && UNIT.get('u05').lessons.some((l) => lessonState(l.id));
+    const unlocked = mode === 'tones' || (mode === 'numbers' ? numsOpen : mode === 'build' ? ns >= need : nw >= need);
+    const needsAudio = mode === 'listen' || mode === 'tones' || mode === 'speak' || mode === 'numbers';
+    const ok = unlocked && !(mute && needsAudio);
+    const why = !unlocked ? (mode === 'numbers' ? 'Unlocks with the Numbers & Money unit' : mode === 'build' ? `Unlocks after ${need} sentences (about 1 lesson)` : `Unlocks after ${need} words (about 1 lesson)`) : 'Needs a Cantonese voice — see the banner on the Path';
     grid.append(h('button', { class: 'drill', type: 'button', disabled: !ok, onclick: () => runSession({ title: t, steps: buildDrill(mode, 10), onExit: refresh, kind: 'drill' }) },
-      h('span', { class: 'd-ico' }, ico), h('b', {}, t), h('small', {}, ok ? d : 'Unlocks after a few lessons')));
+      h('span', { class: 'd-ico' }, ico), h('b', {}, t), h('small', {}, ok ? d : why)));
   }
   v.append(grid);
   v.append(h('h2', { class: 'sec' }, 'Conversations'));
   const dl = h('div', { class: 'dlg-list' });
-  for (const u of UNITS) if (u.dialogue) {
+  const started = (u) => u.lessons.some((x) => lessonState(x.id));
+  const dUnits = UNITS.filter((u) => u.dialogue && (practiceState.allDlg || started(u)));
+  if (!dUnits.length) dl.append(h('p', { class: 'hint' }, 'Each unit ends with a conversation. They appear here once you start a unit.'));
+  if (!practiceState.allDlg) dl.append(h('button', { class: 'link', type: 'button', onclick: () => { practiceState.allDlg = true; renderPractice(); } }, 'Show all conversations'));
+  for (const u of dUnits) {
     const l = u.lessons.find((x) => x.kind === 'dialogue');
     dl.append(h('button', { class: 'dlg-item', type: 'button', onclick: () => runSession({ title: u.dialogue.title, steps: buildLesson(l, { replay: true }), lessonId: l.id, onExit: refresh }) },
-      h('span', {}, u.emoji), h('span', {}, h('b', {}, u.dialogue.title), h('small', {}, `${u.title} · ${u.dialogue.lines.length} lines`)), lessonState(l.id) ? h('span', { class: 'tick' }, '✓') : null));
+      h('span', {}, u.emoji), h('span', {}, h('b', {}, R(u.dialogue.title)), h('small', {}, `${u.title} · ${u.dialogue.lines.length} lines`)), lessonState(l.id) ? h('span', { class: 'tick' }, '✓') : null));
   }
   v.append(dl);
   v.append(h('h2', { class: 'sec' }, 'Reference'));
@@ -198,22 +284,25 @@ function soundGuide() {
 }
 
 // ------------------------------------------------------------------ WORDS
-let wordsState = { tab: 'w', q: '', unit: '', all: false };
+let wordsState = { tab: 'w', q: '', unit: '', all: false, sort: 'recent' };
 export function renderWords() {
   const v = view(); v.innerHTML = '';
   const st = wordsState;
   const head = h('header', { class: 'page-head' }, h('h1', {}, 'My words'));
   const tabs = h('div', { class: 'tabs', role: 'tablist' }, ...[['w', 'Words'], ['s', 'Phrases'], ['star', '★ Starred']].map(([k, l]) =>
     h('button', { class: st.tab === k ? 'on' : '', role: 'tab', type: 'button', onclick: () => { st.tab = k; renderWords(); } }, l)));
-  const search = h('input', { type: 'search', placeholder: 'Search English, 中文 or jyutping', value: st.q, 'aria-label': 'Search words' });
+  const search = h('input', { type: 'search', placeholder: 'Search 中文, jyutping, English', value: st.q, 'aria-label': 'Search words' });
   search.oninput = () => { st.q = search.value; draw(); };
   const unitSel = h('select', { 'aria-label': 'Filter by unit' }, h('option', { value: '' }, 'All units'), ...UNITS.map((u) => h('option', { value: u.id, selected: st.unit === u.id }, `${u.emoji} ${u.title}`)));
   unitSel.onchange = () => { st.unit = unitSel.value; draw(); };
-  const allT = h('label', { class: 'switch' }, h('input', { type: 'checkbox', checked: st.all, onchange: (e) => { st.all = e.target.checked; draw(); } }), h('span', {}, 'Include words not learned yet'));
+  const allT = h('label', { class: 'switch' }, h('input', { type: 'checkbox', checked: st.all, onchange: (e) => { st.all = e.target.checked; draw(); } }), h('span', {}, 'Show unlearned'));
   const list = h('div', { class: 'wlist' });
   const count = h('p', { class: 'count' });
   const flash = h('button', { class: 'btn sm', type: 'button', onclick: () => flashcards(currentItems()) }, '🃏 Flashcards');
-  v.append(head, tabs, h('div', { class: 'filters' }, search, unitSel), h('div', { class: 'row between' }, allT, flash), count, list);
+  const practise = h('button', { class: 'btn sm', type: 'button', onclick: () => { const ks = currentItems().map((x) => x.key).filter((k) => card(k)); if (ks.length) startReview('mixed', 12, ks); } }, '▶ Practise these');
+  const sortSel = h('select', { 'aria-label': 'Sort' }, ...[['recent', 'Recent'], ['weak', 'Weakest'], ['due', 'Due soonest'], ['unit', 'Course order']].map(([k, l]) => h('option', { value: k, selected: st.sort === k }, l)));
+  sortSel.onchange = () => { st.sort = sortSel.value; draw(); };
+  v.append(head, tabs, h('div', { class: 'filters' }, search, unitSel), h('div', { class: 'row between wrap' }, allT, sortSel), h('div', { class: 'row wrap' }, flash, practise), count, list);
   function currentItems() {
     const q = st.q.trim().toLowerCase();
     let items = [...ITEMS.values()];
@@ -222,6 +311,10 @@ export function renderWords() {
     if (!st.all && st.tab !== 'star') items = items.filter((x) => card(x.key));
     if (st.unit) items = items.filter((x) => x.unit === st.unit);
     if (q) items = items.filter((x) => [x.hk, x.en, x.fr, x.jp, x.mine, x.parts && sJP(x.parts)].filter(Boolean).join(' ').toLowerCase().replace(/[1-6]/g, '').includes(q.replace(/[1-6]/g, '')));
+    const c = (x) => card(x.key);
+    if (st.sort === 'recent') items.sort((a, b) => (c(b)?.first || 0) - (c(a)?.first || 0));
+    else if (st.sort === 'weak') items.sort((a, b) => (c(a) ? strength(a.key) : 9) - (c(b) ? strength(b.key) : 9));
+    else if (st.sort === 'due') items.sort((a, b) => (c(a)?.due || Infinity) - (c(b)?.due || Infinity));
     return items;
   }
   function draw() {
@@ -235,16 +328,17 @@ export function renderWords() {
     const frag = document.createDocumentFragment();
     for (const it of items.slice(0, 400)) frag.append(row(it));
     list.append(frag);
+    if (items.length > 400) list.append(h('p', { class: 'hint' }, `Showing 400 of ${items.length} — search or pick a unit to narrow.`));
   }
   function row(it) {
     const known = card(it.key);
     const s = strength(it.key);
     const r = h('div', { class: `wrow ${known ? '' : 'unseen'}` },
-      speakerBtn(it.hk, 'sm'),
+      speakerBtn(it.hk, 'md'),
       h('button', { class: 'wmain', type: 'button', onclick: () => wordSheet(it) },
         h('span', { class: 'whk', lang: 'zh-HK' }, it.hk),
         jpNode(it.jp || sJP(it.parts)),
-        h('span', { class: 'wen' }, it.en, it.mine ? h('em', {}, ` · you wrote “${it.mine}”`) : null)),
+        h('span', { class: 'wen' }, R(it.en))),
       h('span', { class: 'bars', title: `Memory strength ${s}/5`, 'aria-label': `Memory strength ${s} of 5` }, ...[1, 2, 3, 4, 5].map((i) => h('i', { class: i <= s ? 'on' : '' }))));
     return r;
   }
@@ -257,10 +351,10 @@ function wordSheet(it) {
   const c = h('div', { class: 'word-sheet' },
     h('div', { class: 'teach-top' }, speakerBtn(it.hk, 'lg'), speakerBtn(it.hk, 'md', { slow: true })),
     canto(it, { size: it.kind === 'w' ? 'xl' : 'md', forceJp: true }),
-    h('div', { class: 'en' }, it.en, it.fr ? h('span', { class: 'fr' }, ' · ' + it.fr) : null),
+    h('div', { class: 'en' }, R(it.en), it.fr ? h('span', { class: 'fr' }, ' · ' + it.fr) : null),
     it.mine ? h('div', { class: 'mine' }, 'Your spelling: ', h('b', {}, it.mine)) : null,
-    it.note ? h('p', { class: 'note' }, it.note) : null,
-    it.ex ? h('div', { class: 'example' }, speakerBtn(it.ex.hk, 'sm'), h('div', {}, canto(it.ex, { size: 'sm', forceJp: true }), h('div', { class: 'en-sm' }, it.ex.en))) : null,
+    it.note ? h('p', { class: 'note' }, R(it.note)) : null,
+    it.ex ? h('div', { class: 'example' }, speakerBtn(it.ex.hk, 'sm'), h('div', {}, canto(it.ex, { size: 'sm', forceJp: true }), h('div', { class: 'en-sm' }, R(it.ex.en)))) : null,
     h('p', { class: 'meta' }, `From: ${u.emoji} ${u.title}`, card(it.key) ? ` · seen ${card(it.key).seen}× · next review ${fmtDue(card(it.key).due)}` : ' · not learned yet'));
   const sb = h('button', { class: 'btn sm', type: 'button' }, starred ? '★ Starred' : '☆ Star');
   sb.onclick = () => { const on = toggleStar(it.key); sb.textContent = on ? '★ Starred' : '☆ Star'; };
@@ -282,12 +376,16 @@ function flashcards(items) {
   const sideSel = h('div', { class: 'tabs small' }, ...[['hk', '中 first'], ['en', 'EN first'], ['audio', '🔊 first']].map(([k, l]) =>
     h('button', { type: 'button', class: front === k ? 'on' : '', onclick: (e) => { front = k; sideSel.querySelectorAll('button').forEach((b) => b.classList.remove('on')); e.target.classList.add('on'); draw(); } }, l)));
   const cardEl = h('button', { class: 'fcard', type: 'button', onclick: () => { flipped = !flipped; draw(); } });
+  const next = () => { i = (i + 1) % order.length; flipped = false; draw(); };
+  const gradeBtns = h('div', { class: 'row grade-row' },
+    h('button', { class: 'btn', type: 'button', onclick: () => { if (card(order[i].key)) grade(order[i].key, 0); next(); } }, '✕ Again'),
+    h('button', { class: 'btn primary', type: 'button', onclick: () => { if (card(order[i].key)) grade(order[i].key, 2); next(); } }, '✓ Got it'));
   const nav = h('div', { class: 'row between' },
-    h('button', { class: 'btn sm', type: 'button', onclick: () => { i = (i - 1 + items.length) % items.length; flipped = false; draw(); } }, '‹ Prev'),
+    h('button', { class: 'btn sm', type: 'button', onclick: () => { i = (i - 1 + order.length) % order.length; flipped = false; draw(); } }, '‹ Prev'),
     h('span', { class: 'count' }),
-    h('button', { class: 'btn sm primary', type: 'button', onclick: () => { i = (i + 1) % items.length; flipped = false; draw(); } }, 'Next ›'));
-  c.append(sideSel, cardEl, nav);
-  const order = items.slice().sort(() => Math.random() - 0.5);
+    h('button', { class: 'btn sm', type: 'button', onclick: next }, 'Skip ›'));
+  c.append(sideSel, cardEl, gradeBtns, nav);
+  const order = shuffle(items);
   function draw() {
     const it = order[i];
     cardEl.innerHTML = '';
@@ -295,9 +393,10 @@ function flashcards(items) {
     const showCanto = flipped || front === 'hk';
     if (front === 'audio' && !flipped) { cardEl.append(h('div', { class: 'big-ico', html: ICON.speaker })); speak(it.hk); }
     else if (showCanto) cardEl.append(canto(it, { size: it.kind === 'w' ? 'xl' : 'md', forceJp: flipped || front !== 'hk' ? true : false }));
-    if (flipped || front === 'en') cardEl.append(h('div', { class: 'en' }, it.en));
+    if (flipped || front === 'en') cardEl.append(h('div', { class: 'en' }, R(it.en)));
     if (flipped) speak(it.hk);
     if (!flipped) cardEl.append(h('small', { class: 'hint' }, 'Tap to flip'));
+    gradeBtns.style.visibility = flipped ? '' : 'hidden';
   }
   draw();
   sheet(c, { title: `Flashcards (${items.length})` });
@@ -306,7 +405,7 @@ function flashcards(items) {
 // ------------------------------------------------------------------ SPEAK LAB
 export function renderSpeak() {
   const v = view(); v.innerHTML = '';
-  v.append(h('header', { class: 'page-head' }, h('h1', {}, 'Speak lab'), h('p', {}, 'There is no perfect automatic judge for Cantonese pronunciation yet, so the lab combines three honest tools.')));
+  v.append(h('header', { class: 'page-head' }, h('h1', {}, 'Speak lab'), h('p', {}, 'Three ways to check your pronunciation: copy a native voice, see your pitch, and test whether your phone understands you.')));
   const caps = h('ul', { class: 'caps' },
     h('li', { class: hasVoice() ? 'yes' : 'no' }, hasVoice() ? `Cantonese voice: ${cantoVoices()[0]?.name}` : 'No Cantonese voice installed'),
     h('li', { class: SP.recogSupported() ? 'yes' : 'no' }, SP.recogSupported() ? 'Speech recognition available' : 'Speech recognition not available in this browser'),
@@ -318,7 +417,7 @@ export function renderSpeak() {
 
   // tone mirror
   const lab = h('section', { class: 'lab' }, h('h2', {}, '2 · Tone mirror'), h('p', {}, 'Say one syllable and see your pitch drawn over the six tone shapes. Calibrate once so the chart knows your voice range.'));
-  const words = [...UNIT.get('u02').words.filter((w) => w.set === 'si' || w.set === 'ji' || w.set === 'fu'), ...learnedWords().filter((w) => w.hk.length === 1)];
+  const words = [...[...ITEMS.values()].filter((x) => x.kind === 't' && x.hk.length === 1 && /^[a-z]+[1-6]$/.test(x.jp)), ...learnedWords().filter((w) => w.hk.length === 1)].filter((w, i, a) => a.findIndex((x) => x.hk === w.hk) === i);
   let target = words[0];
   const sel = h('select', { 'aria-label': 'Syllable to practise' }, ...words.map((w, i) => h('option', { value: i }, `${w.hk} ${w.jp} — ${w.en}`)));
   sel.onchange = () => { target = words[+sel.value]; chart.innerHTML = toneChartSVG({ active: toneOf(target.jp) }); };
@@ -329,8 +428,9 @@ export function renderSpeak() {
   mirrorBtn.onclick = async () => {
     if (live) { live.stop(); return; }
     try {
+      await new Promise((res) => speak(target.hk, { onend: () => setTimeout(res, 250) }));
       live = await SP.startRecording({ maxMs: 2200, onPitch: (track) => { const pts = SP.toChao(SP.contour(track), setting('pitchLow'), setting('pitchHigh')); chart.innerHTML = toneChartSVG({ active: toneOf(target.jp), user: pts }); } });
-      mirrorBtn.classList.add('live'); mirrorBtn.querySelector('span').textContent = 'Listening… (stop)';
+      mirrorBtn.classList.add('live'); mirrorBtn.querySelector('span').textContent = `Now say ${target.hk} ${target.jp}… (tap to stop)`;
       const r = await live.done; live = null;
       mirrorBtn.classList.remove('live'); mirrorBtn.querySelector('span').textContent = 'Try again';
       const pts = SP.toChao(SP.contour(r.track), setting('pitchLow'), setting('pitchHigh'));
@@ -419,17 +519,37 @@ export function renderMe() {
     h('div', { class: 'lv-info' }, h('b', {}, level.name), h('div', { class: 'goalbar' }, h('i', { style: { width: `${level.pct * 100}%` } })), h('small', {}, `${st.xp} XP · ${level.toNext} XP to level ${level.n + 1}`))));
   v.append(h('div', { class: 'stat-grid' },
     sg(words, 'words learned'), sg(phr, 'phrases'), sg(`${lessons}/${totalLessons}`, 'lessons'), sg(`🔥 ${streakAlive()}`, `streak (best ${st.streak.best})`),
-    sg(answers ? `${Math.round((correct / answers) * 100)}%` : '–', 'accuracy'), sg(`${mins} min`, 'practised'), sg(st.streak.freezes, 'streak freezes'), sg(dueKeys().length, 'due now')));
+    sg(answers ? `${Math.round((correct / answers) * 100)}%` : '–', 'accuracy'), sg(`${mins} min`, 'practised'), sg(`🧊 ${st.streak.freezes}`, 'streak freezes (save a missed day; earn one every 7 days)'), sg(dueKeys().length, 'due now')));
   v.append(h('h2', { class: 'sec' }, 'Last 12 weeks'), heatmap(st.days));
   v.append(h('h2', { class: 'sec' }, 'Course'), h('div', { class: 'unit-bars' }, ...UNITS.map((u) => {
     const p = unitProgress(u);
     return h('div', { class: 'ub' }, h('span', {}, `${u.emoji} ${u.title}`), h('div', { class: `goalbar l${u.level}` }, h('i', { style: { width: `${p.pct * 100}%` } })));
   })));
 
-  // settings
-  const set = h('section', { class: 'settings' }, h('h2', { class: 'sec' }, 'Settings'));
+  v.append(h('button', { class: 'dlg-item', type: 'button', onclick: () => settingsSheet() }, h('span', {}, '⚙︎'), h('span', {}, h('b', {}, 'Settings, backup & reminder'), h('small', {}, 'Daily goal, voice, speed, Jyutping display, theme, export'))));
+  v.append(h('p', { class: 'credits' }, 'Jyutping checked against the rime-cantonese lexicon (CanCLID, CC BY 4.0). Audio: your device’s Cantonese voice.'));
+}
+
+export function applyTheme() {
+  const th = setting('theme') || 'auto';
+  if (th === 'auto') document.documentElement.removeAttribute('data-theme'); else document.documentElement.setAttribute('data-theme', th);
+}
+function seg(key, opts, after) {
+  const box = h('div', { class: 'tabs small seg', role: 'radiogroup' });
+  const cur = setting(key) || opts[0][0];
+  for (const [v, l] of opts) {
+    const b = h('button', { type: 'button', role: 'radio', 'aria-checked': String(cur === v), class: cur === v ? 'on' : '' }, l);
+    b.onclick = () => { setting(key, v); box.querySelectorAll('button').forEach((x) => { x.classList.remove('on'); x.setAttribute('aria-checked', 'false'); }); b.classList.add('on'); b.setAttribute('aria-checked', 'true'); after && after(); };
+    box.append(b);
+  }
+  return box;
+}
+export function settingsSheet() {
+  const st = S();
+  const c = h('div', { class: 'settings-sheet' });
+  const set = h('section', { class: 'settings' });
   const goalSel = h('select', { 'aria-label': 'Daily goal' }, ...[[15, 'Relaxed · 15 XP (~3 min)'], [30, 'Regular · 30 XP (~5 min)'], [50, 'Serious · 50 XP (~10 min)'], [80, 'Intense · 80 XP (~15 min)']].map(([x, l]) => h('option', { value: x, selected: st.goal === x }, l)));
-  goalSel.onchange = () => { st.goal = +goalSel.value; save(); };
+  goalSel.onchange = () => { st.goal = +goalSel.value; save(); refresh(); };
   const rate = h('input', { type: 'range', min: 0.5, max: 1.2, step: 0.05, value: setting('rate'), 'aria-label': 'Speech speed' });
   const rateVal = h('span', {}, `${Math.round(setting('rate') * 100)}%`);
   rate.oninput = () => { setting('rate', +rate.value); rateVal.textContent = `${Math.round(rate.value * 100)}%`; };
@@ -441,39 +561,44 @@ export function renderMe() {
     field('Daily goal', goalSel),
     field('Speech speed', h('div', { class: 'row' }, rate, rateVal)),
     field('Voice', voiceSel),
-    tog('showJp', 'Show Jyutping during exercises (off = tap to reveal)', (x) => x !== 'tap', ['always', 'tap']),
+    field('Jyutping in exercises', seg('showJp', [['always', 'Always'], ['tap', 'Tap to reveal']])),
+    field('Theme', seg('theme', [['auto', 'Auto'], ['light', 'Light'], ['dark', 'Dark']], applyTheme)),
+    tog('autoNext', 'Move on automatically after a correct answer'),
     tog('showFr', 'Show French meanings'),
     tog('autoplay', 'Play audio automatically'),
     tog('sfx', 'Sound effects'),
-    setting('speakOffUntil') > Date.now() ? h('button', { class: 'link', type: 'button', onclick: () => { setting('speakOffUntil', 0); renderMe(); } }, 'Turn speaking exercises back on') : null].filter(Boolean));
-  v.append(set);
+    setting('speakOffUntil') > Date.now() ? h('button', { class: 'link', type: 'button', onclick: () => { setting('speakOffUntil', 0); close(); refresh(); } }, 'Turn speaking exercises back on') : null].filter(Boolean));
+  c.append(set);
 
   const backup = h('section', { class: 'settings' }, h('h2', { class: 'sec' }, 'Backup'),
     h('p', { class: 'hint' }, 'Progress lives only in this browser. Add the app to your home screen so it is kept safely, and export a backup now and then.'),
     h('div', { class: 'row wrap' },
       h('button', { class: 'btn sm', type: 'button', onclick: doExport }, 'Export backup'),
       h('label', { class: 'btn sm' }, 'Import backup', h('input', { type: 'file', accept: 'application/json,.json', hidden: true, onchange: doImport })),
-      h('button', { class: 'btn sm danger', type: 'button', onclick: () => { if (confirm('Erase all progress on this device? This cannot be undone.')) { resetAll(); refresh(); } } }, 'Reset progress')));
-  v.append(backup);
+      h('button', { class: 'btn sm danger', type: 'button', onclick: () => { if (confirm('Erase all progress on this device? This cannot be undone.')) { resetAll(); close(); refresh(); } } }, 'Reset progress')));
+  c.append(backup);
 
   const timeIn = h('input', { type: 'time', value: setting('remindAt') || '08:00', 'aria-label': 'Reminder time' });
-  v.append(h('section', { class: 'settings' }, h('h2', { class: 'sec' }, 'Daily reminder'),
+  c.append(h('section', { class: 'settings' }, h('h2', { class: 'sec' }, 'Daily reminder'),
     h('p', { class: 'hint' }, 'Adds a repeating 5-minute event to your phone calendar with a link back to the app.'),
     h('div', { class: 'row' }, timeIn, h('button', { class: 'btn sm', type: 'button', onclick: () => { setting('remindAt', timeIn.value); downloadICS(timeIn.value); } }, 'Add to calendar'))));
-  v.append(h('p', { class: 'credits' }, 'Jyutping checked against the rime-cantonese lexicon (CanCLID, CC BY 4.0). Audio: your device’s Cantonese voice.'));
+  const close = sheet(c, { title: 'Settings' });
 }
-function field(label, ctl) { return h('label', { class: 'field' }, h('span', {}, label), ctl); }
+function field(label, ctl) { return h(ctl.tagName === 'DIV' ? 'div' : 'label', { class: 'field' }, h('span', {}, label), ctl); }
 function sg(v, l) { return h('div', { class: 'sg' }, h('b', {}, String(v)), h('span', {}, l)); }
 function heatmap(days) {
-  const wrap = h('div', { class: 'heat', role: 'img', 'aria-label': 'Practice calendar' });
-  const end = new Date(); const start = new Date(end); start.setDate(end.getDate() - 83 - ((end.getDay() + 6) % 7 === 6 ? 0 : 0));
+  const wrap = h('div', { class: 'heat', role: 'img', 'aria-label': 'Practice calendar, last 12 weeks' });
+  const today = new Date(); today.setHours(12, 0, 0, 0);
+  const monday = new Date(today); monday.setDate(today.getDate() - ((today.getDay() + 6) % 7));
+  const start = new Date(monday); start.setDate(monday.getDate() - 77);
   for (let i = 0; i < 84; i++) {
     const d = new Date(start); d.setDate(start.getDate() + i);
+    const future = d > today;
     const x = (days[todayStr(d)] || {}).xp || 0;
     const lvl = x === 0 ? 0 : x < 15 ? 1 : x < 30 ? 2 : x < 60 ? 3 : 4;
-    wrap.append(h('i', { class: `h${lvl}`, title: `${todayStr(d)}: ${x} XP` }));
+    wrap.append(h('i', { class: `h${lvl} ${future ? 'fut' : ''}`, title: `${todayStr(d)}: ${x} XP` }));
   }
-  return wrap;
+  return h('div', {}, wrap, h('div', { class: 'heat-legend' }, 'Rows: Monday → Sunday'));
 }
 const LV_NAMES = ['Tourist', 'Newcomer', 'Yum cha regular', 'Minibus rider', 'Market haggler', 'Cha chaan teng regular', 'Local', 'Smooth talker', 'Storyteller', 'Fluent friend'];
 function levelFor(xp) {

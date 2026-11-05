@@ -1,79 +1,2503 @@
 {
-  "id": "u22",
-  "level": 4,
-  "title": "HK Slang & Colloquial",
-  "emoji": "😎",
-  "desc": "Sound like a local with everyday (clean) slang — and know when it fits",
-  "words": [
-    {"hk": "搞掂", "jp": "gaau2 dim6", "en": "get it done; sorted", "fr": "régler ; c'est fait", "note": "Casual but fine at work. 搞唔掂 = can't handle it.", "ex": {"en": "Don't worry, I'll sort this out for you.", "parts": [["放心", "fong3 sam1"], ["，"], ["呢件事", "ni1 gin6 si6"], ["我", "ngo5"], ["幫", "bong1"], ["你", "nei5"], ["搞掂", "gaau2 dim6"], ["。"]]}},
-    {"hk": "掂", "jp": "dim6", "en": "OK; going smoothly", "fr": "ça roule ; ça va", "note": "掂唔掂啊? = Is it going OK? Casual.", "ex": {"en": "How's your new job going — all good?", "parts": [["你", "nei5"], ["份", "fan6"], ["新工", "san1 gung1"], ["掂唔掂", "dim6 m4 dim6"], ["啊", "aa3"], ["？"]]}},
-    {"hk": "正", "jp": "zeng3", "en": "awesome; great (taste, looks)", "fr": "génial ; top", "note": "Slang reading zeng3 (the standard reading zing3 means 'upright'). Casual, very common for food.", "ex": {"en": "The milk tea here is fantastic!", "parts": [["呢間", "ni1 gaan1"], ["嘅", "ge3"], ["奶茶", "naai5 caa4"], ["好", "hou2"], ["正", "zeng3"], ["！"]]}},
-    {"hk": "醒目", "jp": "sing2 muk6", "en": "smart; quick on the uptake", "fr": "futé ; dégourdi", "note": "A warm compliment, often for kids or juniors.", "ex": {"en": "His son is really smart — he knows to help out.", "parts": [["佢", "keoi5"], ["個", "go3"], ["仔", "zai2"], ["好", "hou2"], ["醒目", "sing2 muk6"], ["，"], ["識", "sik1"], ["幫手", "bong1 sau2"], ["做嘢", "zou6 je5"], ["。"]]}},
-    {"hk": "求其", "jp": "kau4 kei4", "en": "sloppy; any old how; whatever", "fr": "n'importe comment", "note": "As an adverb: 求其揀 = just pick any. As criticism: 做嘢好求其 = careless.", "ex": {"en": "Just pick any one, we're in a hurry.", "parts": [["你", "nei5"], ["求其", "kau4 kei4"], ["揀", "gaan2"], ["一個", "jat1 go3"], ["啦", "laa1"], ["，"], ["我哋", "ngo5 dei6"], ["趕時間", "gon2 si4 gaan3"], ["。"]]}},
-    {"hk": "頂唔順", "jp": "ding2 m4 seon6", "en": "can't stand it; can't take it", "fr": "je n'en peux plus", "note": "Venting, informal. 頂得順 = can bear it.", "ex": {"en": "My colleague talks loudly on the phone all day — I can't stand it.", "parts": [["我", "ngo5"], ["隔籬", "gaak3 lei4"], ["個", "go3"], ["同事", "tung4 si6"], ["成日", "seng4 jat6"], ["大聲", "daai6 seng1"], ["講電話", "gong2 din6 waa2"], ["，"], ["我", "ngo5"], ["真係", "zan1 hai6"], ["頂唔順", "ding2 m4 seon6"], ["。"]]}},
-    {"hk": "好嘢", "jp": "hou2 je5", "en": "Yay! Awesome!", "fr": "Super ! Youpi !", "note": "An exclamation of joy. Not 'good things'.", "ex": {"en": "Yay! Tomorrow's a holiday!", "parts": [["好嘢", "hou2 je5"], ["！"], ["聽日", "ting1 jat6"], ["放假", "fong3 gaa3"], ["！"]]}},
-    {"hk": "冇嘢", "jp": "mou5 je5", "en": "I'm fine; nothing (wrong)", "fr": "rien ; ça va", "note": "Reply to 你冇嘢吖嘛? (You OK?). Also 'nothing at all'.", "ex": {"en": "I'm fine, just a bit tired.", "parts": [["我", "ngo5"], ["冇嘢", "mou5 je5"], ["，"], ["只係", "zi2 hai6"], ["有啲", "jau5 di1"], ["攰", "gui6"], ["咋", "zaa3"], ["。"]]}},
-    {"hk": "收工", "jp": "sau1 gung1", "en": "knock off (work); call it a day", "fr": "finir le travail", "note": "More casual than 放工; also said when finishing any task.", "ex": {"en": "What time do you knock off?", "parts": [["你", "nei5"], ["幾點", "gei2 dim2"], ["收工", "sau1 gung1"], ["啊", "aa3"], ["？"]]}},
-    {"hk": "抵", "jp": "dai2", "en": "good value; worth it", "fr": "rentable ; une affaire", "note": "好抵 = great deal. 抵食 = good-value food. 唔抵 = not worth it.", "ex": {"en": "This top is only a hundred dollars after the discount — what a deal!", "parts": [["呢件衫", "ni1 gin6 saam1"], ["減完價", "gaam2 jyun4 gaa3"], ["先至", "sin1 zi3"], ["一百蚊", "jat1 baak3 man1"], ["，"], ["好", "hou2"], ["抵", "dai2"], ["！"]]}},
-    {"hk": "撞板", "jp": "zong6 baan2", "en": "get shot down; hit a wall", "fr": "se prendre un râteau", "note": "Literally 'bump into a board'. When a request is flatly refused.", "ex": {"en": "I asked the boss for leave and got shot down.", "parts": [["我", "ngo5"], ["問", "man6"], ["老闆", "lou5 baan2"], ["請假", "ceng2 gaa3"], ["，"], ["結果", "git3 gwo2"], ["撞板", "zong6 baan2"], ["。"]]}},
-    {"hk": "走雞", "jp": "zau2 gai1", "en": "miss out (on a chance)", "fr": "rater l'occasion", "note": "Literally 'the chicken ran off'.", "ex": {"en": "Buy one get one free today — don't miss out!", "parts": [["今日", "gam1 jat6"], ["買一送一", "maai5 jat1 sung3 jat1"], ["，"], ["唔好", "m4 hou2"], ["走雞", "zau2 gai1"], ["啊", "aa3"], ["！"]]}},
-    {"hk": "講笑", "jp": "gong2 siu3", "en": "to joke; kidding", "fr": "plaisanter", "note": "我講笑咋 = I'm only joking.", "ex": {"en": "Don't be cross, I was only joking with you.", "parts": [["唔好", "m4 hou2"], ["嬲", "nau1"], ["啦", "laa1"], ["，"], ["我", "ngo5"], ["同", "tung4"], ["你", "nei5"], ["講笑", "gong2 siu3"], ["咋", "zaa3"], ["。"]]}},
-    {"hk": "認真", "jp": "jing6 zan1", "en": "serious; conscientious", "fr": "sérieux ; consciencieux", "note": "Opposite of 求其. 講笑定認真? = joking or serious?", "ex": {"en": "She works very conscientiously — she's never sloppy.", "parts": [["佢", "keoi5"], ["做嘢", "zou6 je5"], ["好", "hou2"], ["認真", "jing6 zan1"], ["，"], ["從來", "cung4 loi4"], ["唔會", "m4 wui5"], ["求其", "kau4 kei4"], ["。"]]}},
-    {"hk": "激氣", "jp": "gik1 hei3", "en": "infuriating; maddening", "fr": "énervant", "note": "Describes the situation, not you: 真係激氣! = how infuriating!", "ex": {"en": "I've waited half an hour and the bus still hasn't come — so annoying!", "parts": [["等咗", "dang2 zo2"], ["半個鐘", "bun3 go3 zung1"], ["巴士", "baa1 si2"], ["都", "dou1"], ["未", "mei6"], ["嚟", "lai4"], ["，"], ["真係", "zan1 hai6"], ["激氣", "gik1 hei3"], ["！"]]}},
-    {"hk": "好彩", "jp": "hou2 coi2", "en": "luckily; lucky", "fr": "heureusement", "note": "好彩…唔係嘅話… = luckily…otherwise…", "ex": {"en": "Luckily you reminded me, otherwise I'd definitely have forgotten.", "parts": [["好彩", "hou2 coi2"], ["你", "nei5"], ["提", "tai4"], ["我", "ngo5"], ["，"], ["唔係嘅話", "m4 hai6 ge3 waa2"], ["我", "ngo5"], ["實", "sat6"], ["唔記得", "m4 gei3 dak1"], ["。"]]}},
-    {"hk": "黐線", "jp": "ci1 sin3", "en": "crazy; nuts", "fr": "fou ; dingue", "note": "Mild, teasing; fine with friends but rude to strangers or elders.", "ex": {"en": "Are you nuts? Going hiking in this heavy rain!", "parts": [["你", "nei5"], ["黐線", "ci1 sin3"], ["㗎", "gaa3"], ["？"], ["咁", "gam3"], ["大雨", "daai6 jyu5"], ["仲", "zung6"], ["去", "heoi3"], ["行山", "haang4 saan1"], ["！"]]}},
-    {"hk": "嘩", "jp": "waa1", "en": "wow!", "fr": "waouh !", "note": "Surprise or admiration; can also show shock.", "ex": {"en": "Wow, your home is beautiful!", "parts": [["嘩", "waa1"], ["，"], ["你", "nei5"], ["屋企", "uk1 kei2"], ["好", "hou2"], ["靚", "leng3"], ["啊", "aa3"], ["！"]]}},
-    {"hk": "大鑊", "jp": "daai6 wok6", "en": "big trouble; uh-oh", "fr": "grosse galère", "note": "Literally 'big wok'. 大鑊喇! = We're in trouble!", "ex": {"en": "Uh-oh! I forgot to bring my passport!", "parts": [["大鑊", "daai6 wok6"], ["！"], ["我", "ngo5"], ["唔記得", "m4 gei3 dak1"], ["帶", "daai3"], ["護照", "wu6 ziu3"], ["！"]]}},
-    {"hk": "吹水", "jp": "ceoi1 seoi2", "en": "to chat idly; shoot the breeze", "fr": "papoter ; tchatcher", "note": "Also 'to talk big'. 吹下水 = have a chat.", "ex": {"en": "We chatted all evening and before we knew it, it was midnight.", "parts": [["我哋", "ngo5 dei6"], ["成晚", "seng4 maan5"], ["喺度", "hai2 dou6"], ["吹水", "ceoi1 seoi2"], ["，"], ["唔知唔覺", "m4 zi1 m4 gok3"], ["就", "zau6"], ["十二點", "sap6 ji6 dim2"], ["。"]]}},
-    {"hk": "是但", "jp": "si6 daan6", "en": "whatever; anything (is fine)", "fr": "n'importe ; peu importe", "note": "Easy-going reply when given a choice. Can sound careless in formal settings.", "ex": {"en": "I'm easy, whatever you want to eat is fine.", "parts": [["食", "sik6"], ["咩", "me1"], ["都", "dou1"], ["得", "dak1"], ["，"], ["我", "ngo5"], ["是但", "si6 daan6"], ["。"]]}},
-    {"hk": "甩底", "jp": "lat1 dai2", "en": "to flake; bail on plans", "fr": "poser un lapin", "note": "Said of someone who agreed to come and then didn't.", "ex": {"en": "He always says he'll come, and always bails.", "parts": [["佢", "keoi5"], ["次次", "ci3 ci3"], ["都", "dou1"], ["話", "waa6"], ["嚟", "lai4"], ["，"], ["次次", "ci3 ci3"], ["都", "dou1"], ["甩底", "lat1 dai2"], ["。"]]}},
-    {"hk": "中伏", "jp": "zung3 fuk6", "en": "fall for a trap; get ripped off", "fr": "se faire avoir", "note": "For tourist traps, bad buys, overhyped restaurants.", "ex": {"en": "That restaurant was expensive and awful — we got had.", "parts": [["嗰間", "go2 gaan1"], ["餐廳", "caan1 teng1"], ["又", "jau6"], ["貴", "gwai3"], ["又", "jau6"], ["難食", "naan4 sik6"], ["，"], ["我哋", "ngo5 dei6"], ["中伏", "zung3 fuk6"], ["喇", "laa3"], ["。"]]}},
-    {"hk": "執生", "jp": "zap1 saang1", "en": "to improvise; wing it", "fr": "improviser", "note": "Handling a surprise on the spot. Positive: 識執生 = resourceful.", "ex": {"en": "He wasn't prepared but spoke really well — he knows how to wing it.", "parts": [["佢", "keoi5"], ["冇", "mou5"], ["準備", "zeon2 bei6"], ["都", "dou1"], ["講得", "gong2 dak1"], ["好", "hou2"], ["好", "hou2"], ["，"], ["真係", "zan1 hai6"], ["識", "sik1"], ["執生", "zap1 saang1"], ["。"]]}},
-    {"hk": "一陣見", "jp": "jat1 zan6 gin3", "en": "see you in a bit", "fr": "à tout à l'heure", "note": "For meeting again later the same day.", "ex": {"en": "I'm heading out now, see you soon!", "parts": [["我", "ngo5"], ["而家", "ji4 gaa1"], ["出門口", "ceot1 mun4 hau2"], ["，"], ["一陣見", "jat1 zan6 gin3"], ["！"]]}},
-    {"hk": "有冇搞錯", "jp": "jau5 mou5 gaau2 co3", "en": "are you kidding me?!", "fr": "c'est une blague ?!", "note": "Outraged disbelief. Strong but not vulgar.", "ex": {"en": "Are you kidding me? An hour's wait and still no table!", "parts": [["有冇搞錯", "jau5 mou5 gaau2 co3"], ["啊", "aa3"], ["？"], ["等咗", "dang2 zo2"], ["成個鐘", "sing4 go3 zung1"], ["都", "dou1"], ["未", "mei6"], ["有", "jau5"], ["枱", "toi2"], ["！"]]}}
-  ],
-  "sentences": [
-    {"en": "Everything's sorted — I can finally call it a day!", "parts": [["搞掂晒", "gaau2 dim6 saai3"], ["啲", "di1"], ["嘢", "je5"], ["，"], ["終於", "zung1 jyu1"], ["可以", "ho2 ji5"], ["收工", "sau1 gung1"], ["喇", "laa3"], ["！"]]},
-    {"en": "The set meal at this cha chaan teng is under fifty dollars — real value.", "parts": [["呢間", "ni1 gaan1"], ["茶餐廳", "caa4 caan1 teng1"], ["嘅", "ge3"], ["套餐", "tou3 caan1"], ["五十蚊", "ng5 sap6 man1"], ["有找", "jau5 zaau2"], ["，"], ["真係", "zan1 hai6"], ["好", "hou2"], ["抵食", "dai2 sik6"], ["。"]]},
-    {"en": "The new colleague is sharp — you only have to show him once.", "parts": [["新", "san1"], ["嚟", "lai4"], ["嘅", "ge3"], ["同事", "tung4 si6"], ["好", "hou2"], ["醒目", "sing2 muk6"], ["，"], ["一", "jat1"], ["教", "gaau3"], ["就", "zau6"], ["識", "sik1"], ["。"]]},
-    {"en": "Don't be so sloppy, otherwise you'll have to clean up the mess again.", "parts": [["你", "nei5"], ["做嘢", "zou6 je5"], ["唔好", "m4 hou2"], ["咁", "gam3"], ["求其", "kau4 kei4"], ["啦", "laa1"], ["，"], ["唔係嘅話", "m4 hai6 ge3 waa2"], ["又", "jau6"], ["要", "jiu3"], ["執手尾", "zap1 sau2 mei5"], ["。"]]},
-    {"en": "Wow, you've had a haircut? Looks great!", "parts": [["嘩", "waa1"], ["，"], ["你", "nei5"], ["剪咗", "zin2 zo2"], ["頭髮", "tau4 faat3"], ["啊", "aa3"], ["？"], ["好", "hou2"], ["正", "zeng3"], ["喎", "wo3"], ["！"]]},
-    {"en": "It's unbearably hot today, I really don't want to go out.", "parts": [["今日", "gam1 jat6"], ["熱到", "jit6 dou3"], ["頂唔順", "ding2 m4 seon6"], ["，"], ["我", "ngo5"], ["真係", "zan1 hai6"], ["唔想", "m4 soeng2"], ["出門口", "ceot1 mun4 hau2"], ["。"]]},
-    {"en": "Luckily I brought an umbrella, otherwise I'd be soaked.", "parts": [["好彩", "hou2 coi2"], ["我", "ngo5"], ["帶咗", "daai3 zo2"], ["遮", "ze1"], ["，"], ["唔係嘅話", "m4 hai6 ge3 waa2"], ["就", "zau6"], ["濕晒", "sap1 saai3"], ["喇", "laa3"], ["。"]]},
-    {"en": "He's made plans with me three times and bailed all three — so infuriating!", "parts": [["佢", "keoi5"], ["約咗", "joek3 zo2"], ["我", "ngo5"], ["三次", "saam1 ci3"], ["，"], ["三次", "saam1 ci3"], ["都", "dou1"], ["甩底", "lat1 dai2"], ["，"], ["真係", "zan1 hai6"], ["激氣", "gik1 hei3"], ["！"]]},
-    {"en": "The concert tickets sold out the moment they went on sale — I missed out again.", "parts": [["演唱會", "jin2 coeng3 wui2"], ["門票", "mun4 piu3"], ["一", "jat1"], ["開賣", "hoi1 maai6"], ["就", "zau6"], ["賣晒", "maai6 saai3"], ["，"], ["我", "ngo5"], ["又", "jau6"], ["走雞", "zau2 gai1"], ["喇", "laa3"], ["。"]]},
-    {"en": "I was only joking, but he took it seriously.", "parts": [["我", "ngo5"], ["同", "tung4"], ["佢", "keoi5"], ["講笑", "gong2 siu3"], ["咋", "zaa3"], ["，"], ["點知", "dim2 zi1"], ["佢", "keoi5"], ["當真", "dong3 zan1"], ["。"]]},
-    {"en": "Are you kidding? A bowl of wonton noodles for a whole hundred dollars!", "parts": [["有冇搞錯", "jau5 mou5 gaau2 co3"], ["啊", "aa3"], ["？"], ["一碗", "jat1 wun2"], ["雲吞麵", "wan4 tan1 min6"], ["要", "jiu3"], ["成", "sing4"], ["一百蚊", "jat1 baak3 man1"], ["！"]]},
-    {"en": "After work we went to a cha chaan teng for a chat.", "parts": [["放工", "fong3 gung1"], ["之後", "zi1 hau6"], ["，"], ["我哋", "ngo5 dei6"], ["去咗", "heoi3 zo2"], ["茶餐廳", "caa4 caan1 teng1"], ["吹下水", "ceoi1 haa5 seoi2"], ["。"]]},
-    {"en": "You're OK, right? You look a bit pale.", "parts": [["你", "nei5"], ["冇嘢", "mou5 je5"], ["吖嘛", "aa1 maa3"], ["？"], ["你", "nei5"], ["面色", "min6 sik1"], ["好", "hou2"], ["差", "caa1"], ["喎", "wo3"], ["。"]]}
-  ],
-  "grammar": [
-    {"title": "Can / can't: verb + 得 / 唔 + result", "explain": "Many slang verbs have a result part. Put 得 in the middle for 'can', 唔 for 'can't': 搞得掂 / 搞唔掂, 頂得順 / 頂唔順. Questions use 唔 twice: 頂唔頂得順?", "examples": [{"en": "I can't handle this on my own.", "parts": [["呢件事", "ni1 gin6 si6"], ["我", "ngo5"], ["一個人", "jat1 go3 jan4"], ["搞唔掂", "gaau2 m4 dim6"], ["。"]]}, {"en": "Don't worry, I can handle it.", "parts": [["放心", "fong3 sam1"], ["，"], ["我", "ngo5"], ["搞得掂", "gaau2 dak1 dim6"], ["。"]]}, {"en": "Can you still bear it?", "parts": [["你", "nei5"], ["頂唔頂得順", "ding2 m4 ding2 dak1 seon6"], ["啊", "aa3"], ["？"]]}]},
-    {"title": "Flavour particles: 喎, 咋, 吖嘛", "explain": "Slang lives in the particles. 喎 wo3 = 'hey, I notice…' or passing on what someone said. 咋 zaa3 = 'only, that's all'. 吖嘛 aa1 maa3 = 'right? / you know' (checking or stating the obvious).", "examples": [{"en": "Hey, this is pretty good!", "parts": [["呢個", "ni1 go3"], ["幾", "gei2"], ["正", "zeng3"], ["喎", "wo3"], ["！"]]}, {"en": "It's only a hundred dollars.", "parts": [["一百蚊", "jat1 baak3 man1"], ["咋", "zaa3"], ["。"]]}, {"en": "You're OK, right?", "parts": [["你", "nei5"], ["冇嘢", "mou5 je5"], ["吖嘛", "aa1 maa3"], ["？"]]}]}
-  ],
-  "dialogue": {
-    "title": "Friday, knocking off",
-    "lines": [
-      {"spk": "A", "en": "Hey, finished for the day yet? I just got my report done.", "parts": [["喂", "wai3"], ["，"], ["收工未", "sau1 gung1 mei6"], ["啊", "aa3"], ["？"], ["我", "ngo5"], ["啱啱", "ngaam1 ngaam1"], ["搞掂", "gaau2 dim6"], ["份", "fan6"], ["報告", "bou3 gou3"], ["。"]]},
-      {"spk": "B", "en": "Wow, that fast? I've still got an email to answer — I can't take it any more!", "parts": [["嘩", "waa1"], ["，"], ["咁", "gam3"], ["快", "faai3"], ["？"], ["我", "ngo5"], ["仲", "zung6"], ["有", "jau5"], ["封", "fung1"], ["電郵", "din6 jau4"], ["要", "jiu3"], ["覆", "fuk1"], ["，"], ["頂唔順", "ding2 m4 seon6"], ["喇", "laa3"], ["！"]]},
-      {"spk": "A", "en": "Don't answer it sloppily — last time you sent it to the wrong client and nearly landed in big trouble.", "parts": [["唔好", "m4 hou2"], ["求其", "kau4 kei4"], ["覆", "fuk1"], ["啊", "aa3"], ["，"], ["上次", "soeng6 ci3"], ["你", "nei5"], ["寄錯咗", "gei3 co3 zo2"], ["畀", "bei2"], ["第二個", "dai6 ji6 go3"], ["客", "haak3"], ["，"], ["差啲", "caa1 di1"], ["大鑊", "daai6 wok6"], ["。"]]},
-      {"spk": "B", "en": "I know, I'm being really careful this time. Right — done!", "parts": [["知道", "zi1 dou3"], ["喇", "laa3"], ["，"], ["今次", "gam1 ci3"], ["我", "ngo5"], ["好", "hou2"], ["認真", "jing6 zan1"], ["㗎", "gaa3"], ["。"], ["好", "hou2"], ["，"], ["搞掂", "gaau2 dim6"], ["！"]]},
-      {"spk": "A", "en": "Yay! Shall we go for dinner and have a chat?", "parts": [["好嘢", "hou2 je5"], ["！"], ["不如", "bat1 jyu4"], ["一齊", "jat1 cai4"], ["去", "heoi3"], ["食飯", "sik6 faan6"], ["吹下水", "ceoi1 haa5 seoi2"], ["？"]]},
-      {"spk": "B", "en": "Sure. Ah Ming says he's coming too — he won't bail again this time, I guess.", "parts": [["好", "hou2"], ["啊", "aa3"], ["。"], ["阿明", "aa3 ming4"], ["都", "dou1"], ["話", "waa6"], ["嚟", "lai4"], ["，"], ["今次", "gam1 ci3"], ["應該", "jing1 goi1"], ["唔會", "m4 wui5"], ["再", "zoi3"], ["甩底", "lat1 dai2"], ["啩", "gwaa3"], ["。"]]},
-      {"spk": "A", "en": "You're joking! Last time he said he'd come, and in the end he didn't show.", "parts": [["講笑", "gong2 siu3"], ["咩", "me1"], ["，"], ["上次", "soeng6 ci3"], ["佢", "keoi5"], ["都", "dou1"], ["話", "waa6"], ["嚟", "lai4"], ["，"], ["最後", "zeoi3 hau6"], ["都係", "dou1 hai6"], ["冇", "mou5"], ["嚟", "lai4"], ["。"]]},
-      {"spk": "B", "en": "Where shall we eat? I'm easy, your call.", "parts": [["去", "heoi3"], ["邊度", "bin1 dou6"], ["食", "sik6"], ["好", "hou2"], ["呢", "ne1"], ["？"], ["我", "ngo5"], ["是但", "si6 daan6"], ["，"], ["你", "nei5"], ["話事", "waa6 si6"], ["。"]]},
-      {"spk": "A", "en": "There's a dai pai dong in Wan Chai — cheap and fantastic, great value.", "parts": [["灣仔", "waan1 zai2"], ["有", "jau5"], ["間", "gaan1"], ["大排檔", "daai6 paai4 dong3"], ["，"], ["又", "jau6"], ["平", "peng4"], ["又", "jau6"], ["正", "zeng3"], ["，"], ["好", "hou2"], ["抵食", "dai2 sik6"], ["。"]]},
-      {"spk": "B", "en": "Last time I went somewhere recommended online and got totally ripped off.", "parts": [["上次", "soeng6 ci3"], ["我", "ngo5"], ["去", "heoi3"], ["網上", "mong5 soeng6"], ["推介", "teoi1 gaai3"], ["嗰間", "go2 gaan1"], ["，"], ["結果", "git3 gwo2"], ["中伏", "zung3 fuk6"], ["。"]]},
-      {"spk": "A", "en": "Relax, I've been eating at this one for years — no traps.", "parts": [["放心", "fong3 sam1"], ["，"], ["呢間", "ni1 gaan1"], ["我", "ngo5"], ["食咗", "sik6 zo2"], ["好多年", "hou2 do1 nin4"], ["，"], ["實", "sat6"], ["冇", "mou5"], ["伏", "fuk6"], ["。"]]},
-      {"spk": "B", "en": "Lucky I've got you! Then I'll call Ah Ming too.", "parts": [["好彩", "hou2 coi2"], ["有", "jau5"], ["你", "nei5"], ["啫", "ze1"], ["！"], ["噉", "gam2"], ["我", "ngo5"], ["叫埋", "giu3 maai4"], ["阿明", "aa3 ming4"], ["。"]]},
-      {"spk": "A", "en": "Tell him if he bails again this time, I'll really be cross!", "parts": [["你", "nei5"], ["同", "tung4"], ["佢", "keoi5"], ["講", "gong2"], ["，"], ["今次", "gam1 ci3"], ["再", "zoi3"], ["甩底", "lat1 dai2"], ["，"], ["我", "ngo5"], ["真係", "zan1 hai6"], ["會", "wui5"], ["嬲", "nau1"], ["㗎", "gaa3"], ["！"]]},
-      {"spk": "B", "en": "Ha ha, OK! See you in a bit!", "parts": [["哈哈", "haa1 haa1"], ["，"], ["得", "dak1"], ["喇", "laa3"], ["！"], ["一陣見", "jat1 zan6 gin3"], ["！"]]}
-    ],
-    "questions": [
-      {"q": "What had A just finished when the conversation starts?", "options": ["A report", "An email to a client", "Booking a restaurant", "A phone call with Ah Ming"], "answer": 0},
-      {"q": "Why does A warn B not to be sloppy with the email?", "options": ["B once sent one to the wrong client", "The boss is checking B's emails", "B always writes too slowly", "The client is angry with A"], "answer": 0},
-      {"q": "What can we infer about Ah Ming?", "options": ["He has a habit of not showing up", "He works in Wan Chai", "He recommended the dai pai dong", "He's always late for work"], "answer": 0},
-      {"q": "Why is B happy to let A choose the restaurant?", "options": ["A knows the place well and B got burned last time", "B has never eaten in Wan Chai", "A is paying for dinner", "B doesn't like dai pai dongs"], "answer": 0}
+ "id": "u22",
+ "level": 4,
+ "title": "HK Slang & Colloquial",
+ "emoji": "😎",
+ "desc": "Sound like a local with everyday (clean) slang — and know when it fits",
+ "words": [
+  {
+   "hk": "搞掂",
+   "jp": "gaau2 dim6",
+   "en": "get it done; sorted",
+   "fr": "régler ; c'est fait",
+   "note": "Casual but fine at work. 搞唔掂 (gaau2 m4 dim6) = can't handle it.",
+   "ex": {
+    "en": "Don't worry, I'll sort this out for you.",
+    "parts": [
+     [
+      "放心",
+      "fong3 sam1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "呢件事",
+      "ni1 gin6 si6"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "幫",
+      "bong1"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "搞掂",
+      "gaau2 dim6"
+     ],
+     [
+      "。"
+     ]
     ]
+   }
+  },
+  {
+   "hk": "放心",
+   "jp": "fong3 sam1",
+   "en": "don't worry; rest assured",
+   "fr": "ne t'inquiète pas ; sois tranquille",
+   "note": "放心啦 (fong3 sam1 laa1)! = relax, leave it to me. 唔放心 (m4 fong3 sam1) = to be uneasy.",
+   "ex": {
+    "en": "Don't worry, I'll sort this out for you.",
+    "parts": [
+     [
+      "放心",
+      "fong3 sam1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "幫",
+      "bong1"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "搞掂",
+      "gaau2 dim6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "掂",
+   "jp": "dim6",
+   "en": "OK; going smoothly",
+   "fr": "ça roule ; ça va",
+   "note": "掂唔掂啊 (dim6 m4 dim6 aa3)? = Is it going OK? Casual.",
+   "ex": {
+    "en": "How's your new job going — all good?",
+    "parts": [
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "份",
+      "fan6"
+     ],
+     [
+      "新工",
+      "san1 gung1"
+     ],
+     [
+      "掂唔掂",
+      "dim6 m4 dim6"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "正",
+   "jp": "zeng3",
+   "en": "awesome; great (taste, looks)",
+   "fr": "génial ; top",
+   "note": "Slang reading zeng3 (the standard reading zing3 means 'upright'). Casual, very common for food.",
+   "ex": {
+    "en": "The milk tea here is fantastic!",
+    "parts": [
+     [
+      "呢間",
+      "ni1 gaan1"
+     ],
+     [
+      "嘅",
+      "ge3"
+     ],
+     [
+      "奶茶",
+      "naai5 caa4"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "正",
+      "zeng3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "醒目",
+   "jp": "sing2 muk6",
+   "en": "smart; quick on the uptake",
+   "fr": "futé ; dégourdi",
+   "note": "A warm compliment, often for kids or juniors.",
+   "ex": {
+    "en": "His son is really smart — he knows to help out.",
+    "parts": [
+     [
+      "佢",
+      "keoi5"
+     ],
+     [
+      "個",
+      "go3"
+     ],
+     [
+      "仔",
+      "zai2"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "醒目",
+      "sing2 muk6"
+     ],
+     [
+      "，"
+     ],
+     [
+      "識",
+      "sik1"
+     ],
+     [
+      "幫手",
+      "bong1 sau2"
+     ],
+     [
+      "做嘢",
+      "zou6 je5"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "求其",
+   "jp": "kau4 kei4",
+   "en": "sloppy; any old how; whatever",
+   "fr": "n'importe comment",
+   "note": "As an adverb: 求其揀 (kau4 kei4 gaan2) = just pick any. As criticism: 做嘢好求其 (zou6 je5 hou2 kau4 kei4) = careless.",
+   "ex": {
+    "en": "Just pick any one, we're in a hurry.",
+    "parts": [
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "求其",
+      "kau4 kei4"
+     ],
+     [
+      "揀",
+      "gaan2"
+     ],
+     [
+      "一個",
+      "jat1 go3"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "我哋",
+      "ngo5 dei6"
+     ],
+     [
+      "趕時間",
+      "gon2 si4 gaan3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "實",
+   "jp": "sat6",
+   "en": "definitely, for sure (colloquial)",
+   "fr": "sûrement, à coup sûr (familier)",
+   "note": "Stands before the verb: 實得 (sat6 dak1) = it'll work for sure; 實冇問題 (sat6 mou5 man6 tai4) = no problem at all.",
+   "ex": {
+    "en": "If you don't bring an umbrella, you'll definitely regret it!",
+    "parts": [
+     [
+      "唔",
+      "m4"
+     ],
+     [
+      "帶",
+      "daai3"
+     ],
+     [
+      "遮",
+      "ze1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "實",
+      "sat6"
+     ],
+     [
+      "後悔",
+      "hau6 fui3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "頂唔順",
+   "jp": "ding2 m4 seon6",
+   "en": "can't stand it; can't take it",
+   "fr": "je n'en peux plus",
+   "note": "Venting, informal. 頂得順 (ding2 dak1 seon6) = can bear it.",
+   "ex": {
+    "en": "My colleague talks on the phone all day long — I really can't stand it.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "個",
+      "go3"
+     ],
+     [
+      "同事",
+      "tung4 si6"
+     ],
+     [
+      "成日",
+      "seng4 jat6"
+     ],
+     [
+      "講電話",
+      "gong2 din6 waa2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "真係",
+      "zan1 hai6"
+     ],
+     [
+      "頂唔順",
+      "ding2 m4 seon6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "收工",
+   "jp": "sau1 gung1",
+   "en": "knock off (work); call it a day",
+   "fr": "finir le travail",
+   "note": "More casual than 放工 (fong3 gung1); also said when finishing any task.",
+   "ex": {
+    "en": "What time do you knock off?",
+    "parts": [
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "幾點",
+      "gei2 dim2"
+     ],
+     [
+      "收工",
+      "sau1 gung1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "上次",
+   "jp": "soeng6 ci3",
+   "en": "last time",
+   "fr": "la dernière fois",
+   "note": "今次 (gam1 ci3) = this time; 下次 (haa6 ci3) = next time. 次次 (ci3 ci3) = every time.",
+   "ex": {
+    "en": "Last time you chose — this time it's my turn!",
+    "parts": [
+     [
+      "上次",
+      "soeng6 ci3"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "揀",
+      "gaan2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "今次",
+      "gam1 ci3"
+     ],
+     [
+      "到",
+      "dou3"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "撞板",
+   "jp": "zong6 baan2",
+   "en": "get shot down; hit a wall",
+   "fr": "se prendre un râteau",
+   "note": "Literally 'bump into a board'. When a request is flatly refused.",
+   "ex": {
+    "en": "I asked the boss for leave and got shot down.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "問",
+      "man6"
+     ],
+     [
+      "老闆",
+      "lou5 baan2"
+     ],
+     [
+      "請假",
+      "ceng2 gaa3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "結果",
+      "git3 gwo2"
+     ],
+     [
+      "撞板",
+      "zong6 baan2"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "走雞",
+   "jp": "zau2 gai1",
+   "en": "miss out (on a chance)",
+   "fr": "rater l'occasion",
+   "note": "Literally 'the chicken ran off'.",
+   "ex": {
+    "en": "Buy one get one free today — don't miss out!",
+    "parts": [
+     [
+      "今日",
+      "gam1 jat6"
+     ],
+     [
+      "買一送一",
+      "maai5 jat1 sung3 jat1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "唔好",
+      "m4 hou2"
+     ],
+     [
+      "走雞",
+      "zau2 gai1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "認真",
+   "jp": "jing6 zan1",
+   "en": "serious; conscientious",
+   "fr": "sérieux ; consciencieux",
+   "note": "Opposite of 求其 (kau4 kei4). 講笑定認真 (gong2 siu3 ding6 jing6 zan1)? = joking or serious?",
+   "ex": {
+    "en": "She works very conscientiously — she's never sloppy.",
+    "parts": [
+     [
+      "佢",
+      "keoi5"
+     ],
+     [
+      "做嘢",
+      "zou6 je5"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "認真",
+      "jing6 zan1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "從來",
+      "cung4 loi4"
+     ],
+     [
+      "唔會",
+      "m4 wui5"
+     ],
+     [
+      "求其",
+      "kau4 kei4"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "激氣",
+   "jp": "gik1 hei3",
+   "en": "infuriating; maddening",
+   "fr": "énervant",
+   "note": "Mostly describes the situation: 真係激氣 (zan1 hai6 gik1 hei3)! = how infuriating! 我好激氣 (ngo5 hou2 gik1 hei3) = I'm so fed up.",
+   "ex": {
+    "en": "I've waited half an hour and the bus still hasn't come — so annoying!",
+    "parts": [
+     [
+      "等咗",
+      "dang2 zo2"
+     ],
+     [
+      "半個鐘",
+      "bun3 go3 zung1"
+     ],
+     [
+      "巴士",
+      "baa1 si2"
+     ],
+     [
+      "都",
+      "dou1"
+     ],
+     [
+      "未",
+      "mei6"
+     ],
+     [
+      "嚟",
+      "lai4"
+     ],
+     [
+      "，"
+     ],
+     [
+      "真係",
+      "zan1 hai6"
+     ],
+     [
+      "激氣",
+      "gik1 hei3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "黐線",
+   "jp": "ci1 sin3",
+   "en": "crazy; nuts",
+   "fr": "fou ; dingue",
+   "note": "Mild, teasing; fine with friends but rude to strangers or elders.",
+   "ex": {
+    "en": "Are you nuts? Going hiking in this heavy rain!",
+    "parts": [
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "黐線",
+      "ci1 sin3"
+     ],
+     [
+      "㗎",
+      "gaa3"
+     ],
+     [
+      "？"
+     ],
+     [
+      "咁",
+      "gam3"
+     ],
+     [
+      "大雨",
+      "daai6 jyu5"
+     ],
+     [
+      "仲",
+      "zung6"
+     ],
+     [
+      "去",
+      "heoi3"
+     ],
+     [
+      "行山",
+      "haang4 saan1"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "大鑊",
+   "jp": "daai6 wok6",
+   "en": "big trouble; uh-oh",
+   "fr": "grosse galère",
+   "note": "Literally 'big wok'. 大鑊喇 (daai6 wok6 laa3)! = We're in trouble!",
+   "ex": {
+    "en": "Uh-oh! I forgot to bring my passport!",
+    "parts": [
+     [
+      "大鑊",
+      "daai6 wok6"
+     ],
+     [
+      "！"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "唔記得",
+      "m4 gei3 dak1"
+     ],
+     [
+      "帶",
+      "daai3"
+     ],
+     [
+      "護照",
+      "wu6 ziu3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "吹水",
+   "jp": "ceoi1 seoi2",
+   "en": "to chat idly; shoot the breeze",
+   "fr": "papoter ; tchatcher",
+   "note": "Also 'to talk big'. 吹下水 (ceoi1 haa5 seoi2) = have a chat.",
+   "ex": {
+    "en": "We chatted all evening.",
+    "parts": [
+     [
+      "我哋",
+      "ngo5 dei6"
+     ],
+     [
+      "成晚",
+      "seng4 maan5"
+     ],
+     [
+      "喺度",
+      "hai2 dou6"
+     ],
+     [
+      "吹水",
+      "ceoi1 seoi2"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "是但",
+   "jp": "si6 daan6",
+   "en": "whatever; anything (is fine)",
+   "fr": "n'importe ; peu importe",
+   "note": "Easy-going reply when given a choice. Can sound careless in formal settings.",
+   "ex": {
+    "en": "I'm easy, whatever you want to eat is fine.",
+    "parts": [
+     [
+      "食",
+      "sik6"
+     ],
+     [
+      "咩",
+      "me1"
+     ],
+     [
+      "都",
+      "dou1"
+     ],
+     [
+      "得",
+      "dak1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "是但",
+      "si6 daan6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "甩底",
+   "jp": "lat1 dai2",
+   "en": "to flake; bail on plans",
+   "fr": "poser un lapin",
+   "note": "Said of someone who agreed to come and then didn't.",
+   "ex": {
+    "en": "He always says he'll come, and always bails.",
+    "parts": [
+     [
+      "佢",
+      "keoi5"
+     ],
+     [
+      "次次",
+      "ci3 ci3"
+     ],
+     [
+      "都",
+      "dou1"
+     ],
+     [
+      "話",
+      "waa6"
+     ],
+     [
+      "嚟",
+      "lai4"
+     ],
+     [
+      "，"
+     ],
+     [
+      "次次",
+      "ci3 ci3"
+     ],
+     [
+      "都",
+      "dou1"
+     ],
+     [
+      "甩底",
+      "lat1 dai2"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "中伏",
+   "jp": "zung3 fuk6",
+   "en": "fall for a trap; get ripped off",
+   "fr": "se faire avoir",
+   "note": "For tourist traps, bad buys, overhyped restaurants.",
+   "ex": {
+    "en": "That restaurant was expensive and awful — we got had.",
+    "parts": [
+     [
+      "嗰間",
+      "go2 gaan1"
+     ],
+     [
+      "餐廳",
+      "caan1 teng1"
+     ],
+     [
+      "又",
+      "jau6"
+     ],
+     [
+      "貴",
+      "gwai3"
+     ],
+     [
+      "又",
+      "jau6"
+     ],
+     [
+      "難食",
+      "naan4 sik6"
+     ],
+     [
+      "，"
+     ],
+     [
+      "我哋",
+      "ngo5 dei6"
+     ],
+     [
+      "中伏",
+      "zung3 fuk6"
+     ],
+     [
+      "喇",
+      "laa3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "執生",
+   "jp": "zap1 saang1",
+   "en": "to improvise; wing it",
+   "fr": "improviser",
+   "note": "Handling a surprise on the spot. Positive: 識執生 (sik1 zap1 saang1) = resourceful.",
+   "ex": {
+    "en": "He wasn't prepared but spoke really well — he knows how to wing it.",
+    "parts": [
+     [
+      "佢",
+      "keoi5"
+     ],
+     [
+      "冇",
+      "mou5"
+     ],
+     [
+      "準備",
+      "zeon2 bei6"
+     ],
+     [
+      "都",
+      "dou1"
+     ],
+     [
+      "講得",
+      "gong2 dak1"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "真係",
+      "zan1 hai6"
+     ],
+     [
+      "識",
+      "sik1"
+     ],
+     [
+      "執生",
+      "zap1 saang1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "有冇搞錯",
+   "jp": "jau5 mou5 gaau2 co3",
+   "en": "are you kidding me?!",
+   "fr": "c'est une blague ?!",
+   "note": "Outraged disbelief. Strong but not vulgar.",
+   "ex": {
+    "en": "Are you kidding me? An hour's wait and still no table!",
+    "parts": [
+     [
+      "有冇搞錯",
+      "jau5 mou5 gaau2 co3"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ],
+     [
+      "等咗",
+      "dang2 zo2"
+     ],
+     [
+      "成個鐘",
+      "seng4 go3 zung1"
+     ],
+     [
+      "都",
+      "dou1"
+     ],
+     [
+      "未",
+      "mei6"
+     ],
+     [
+      "有",
+      "jau5"
+     ],
+     [
+      "枱",
+      "toi2"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
   }
+ ],
+ "sentences": [
+  {
+   "en": "Everything's sorted — I can finally call it a day!",
+   "parts": [
+    [
+     "搞掂晒",
+     "gaau2 dim6 saai3"
+    ],
+    [
+     "啲",
+     "di1"
+    ],
+    [
+     "嘢",
+     "je5"
+    ],
+    [
+     "，"
+    ],
+    [
+     "終於",
+     "zung1 jyu1"
+    ],
+    [
+     "可以",
+     "ho2 ji5"
+    ],
+    [
+     "收工",
+     "sau1 gung1"
+    ],
+    [
+     "喇",
+     "laa3"
+    ],
+    [
+     "！"
+    ]
+   ]
+  },
+  {
+   "en": "The set meal at this cha chaan teng is under fifty dollars — and it tastes great.",
+   "parts": [
+    [
+     "呢間",
+     "ni1 gaan1"
+    ],
+    [
+     "茶餐廳",
+     "caa4 caan1 teng1"
+    ],
+    [
+     "嘅",
+     "ge3"
+    ],
+    [
+     "套餐",
+     "tou3 caan1"
+    ],
+    [
+     "五十",
+     "ng5 sap6"
+    ],
+    [
+     "蚊",
+     "man1"
+    ],
+    [
+     "有找",
+     "jau5 zaau2"
+    ],
+    [
+     "，"
+    ],
+    [
+     "又",
+     "jau6"
+    ],
+    [
+     "好",
+     "hou2"
+    ],
+    [
+     "正",
+     "zeng3"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "The new colleague is sharp — you only have to show him once.",
+   "parts": [
+    [
+     "新",
+     "san1"
+    ],
+    [
+     "嚟",
+     "lai4"
+    ],
+    [
+     "嘅",
+     "ge3"
+    ],
+    [
+     "同事",
+     "tung4 si6"
+    ],
+    [
+     "好",
+     "hou2"
+    ],
+    [
+     "醒目",
+     "sing2 muk6"
+    ],
+    [
+     "，"
+    ],
+    [
+     "一",
+     "jat1"
+    ],
+    [
+     "教",
+     "gaau3"
+    ],
+    [
+     "就",
+     "zau6"
+    ],
+    [
+     "識",
+     "sik1"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Don't be so sloppy, otherwise you'll have to clean up the mess again.",
+   "parts": [
+    [
+     "你",
+     "nei5"
+    ],
+    [
+     "做嘢",
+     "zou6 je5"
+    ],
+    [
+     "唔好",
+     "m4 hou2"
+    ],
+    [
+     "咁",
+     "gam3"
+    ],
+    [
+     "求其",
+     "kau4 kei4"
+    ],
+    [
+     "啦",
+     "laa1"
+    ],
+    [
+     "，"
+    ],
+    [
+     "唔係嘅話",
+     "m4 hai6 ge3 waa2"
+    ],
+    [
+     "又",
+     "jau6"
+    ],
+    [
+     "要",
+     "jiu3"
+    ],
+    [
+     "執手尾",
+     "zap1 sau2 mei5"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Wow, you've had a haircut? Looks great!",
+   "parts": [
+    [
+     "嘩",
+     "waa1"
+    ],
+    [
+     "，"
+    ],
+    [
+     "你",
+     "nei5"
+    ],
+    [
+     "剪咗",
+     "zin2 zo2"
+    ],
+    [
+     "頭髮",
+     "tau4 faat3"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ],
+    [
+     "好",
+     "hou2"
+    ],
+    [
+     "正",
+     "zeng3"
+    ],
+    [
+     "喎",
+     "wo3"
+    ],
+    [
+     "！"
+    ]
+   ]
+  },
+  {
+   "en": "It's unbearably hot today, I really don't want to go out.",
+   "parts": [
+    [
+     "今日",
+     "gam1 jat6"
+    ],
+    [
+     "熱到",
+     "jit6 dou3"
+    ],
+    [
+     "頂唔順",
+     "ding2 m4 seon6"
+    ],
+    [
+     "，"
+    ],
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "真係",
+     "zan1 hai6"
+    ],
+    [
+     "唔想",
+     "m4 soeng2"
+    ],
+    [
+     "出門口",
+     "ceot1 mun4 hau2"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Luckily I brought an umbrella, otherwise I'd be soaked.",
+   "parts": [
+    [
+     "好彩",
+     "hou2 coi2"
+    ],
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "帶咗",
+     "daai3 zo2"
+    ],
+    [
+     "遮",
+     "ze1"
+    ],
+    [
+     "，"
+    ],
+    [
+     "唔係嘅話",
+     "m4 hai6 ge3 waa2"
+    ],
+    [
+     "就",
+     "zau6"
+    ],
+    [
+     "濕晒",
+     "sap1 saai3"
+    ],
+    [
+     "喇",
+     "laa3"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "He's made plans with me three times and bailed all three — so infuriating!",
+   "parts": [
+    [
+     "佢",
+     "keoi5"
+    ],
+    [
+     "約咗",
+     "joek3 zo2"
+    ],
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "三次",
+     "saam1 ci3"
+    ],
+    [
+     "，"
+    ],
+    [
+     "三次",
+     "saam1 ci3"
+    ],
+    [
+     "都",
+     "dou1"
+    ],
+    [
+     "甩底",
+     "lat1 dai2"
+    ],
+    [
+     "，"
+    ],
+    [
+     "真係",
+     "zan1 hai6"
+    ],
+    [
+     "激氣",
+     "gik1 hei3"
+    ],
+    [
+     "！"
+    ]
+   ]
+  },
+  {
+   "en": "The tickets sold out in half an hour — I missed out again.",
+   "parts": [
+    [
+     "啲",
+     "di1"
+    ],
+    [
+     "飛",
+     "fei1"
+    ],
+    [
+     "半個鐘",
+     "bun3 go3 zung1"
+    ],
+    [
+     "就",
+     "zau6"
+    ],
+    [
+     "賣晒",
+     "maai6 saai3"
+    ],
+    [
+     "，"
+    ],
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "又",
+     "jau6"
+    ],
+    [
+     "走雞",
+     "zau2 gai1"
+    ],
+    [
+     "喇",
+     "laa3"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "I was only joking, but he took it seriously.",
+   "parts": [
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "同",
+     "tung4"
+    ],
+    [
+     "佢",
+     "keoi5"
+    ],
+    [
+     "講笑",
+     "gong2 siu3"
+    ],
+    [
+     "咋",
+     "zaa3"
+    ],
+    [
+     "，"
+    ],
+    [
+     "點知",
+     "dim2 zi1"
+    ],
+    [
+     "佢",
+     "keoi5"
+    ],
+    [
+     "當真",
+     "dong3 zan1"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Are you kidding? A bowl of noodles for a hundred dollars!",
+   "parts": [
+    [
+     "有冇搞錯",
+     "jau5 mou5 gaau2 co3"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ],
+    [
+     "一碗",
+     "jat1 wun2"
+    ],
+    [
+     "麵",
+     "min6"
+    ],
+    [
+     "要",
+     "jiu3"
+    ],
+    [
+     "一百",
+     "jat1 baak3"
+    ],
+    [
+     "蚊",
+     "man1"
+    ],
+    [
+     "！"
+    ]
+   ]
+  },
+  {
+   "en": "After work we went to a cha chaan teng for a chat.",
+   "parts": [
+    [
+     "放工",
+     "fong3 gung1"
+    ],
+    [
+     "之後",
+     "zi1 hau6"
+    ],
+    [
+     "，"
+    ],
+    [
+     "我哋",
+     "ngo5 dei6"
+    ],
+    [
+     "去咗",
+     "heoi3 zo2"
+    ],
+    [
+     "茶餐廳",
+     "caa4 caan1 teng1"
+    ],
+    [
+     "吹下水",
+     "ceoi1 haa5 seoi2"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "You're OK, right? You look really pale.",
+   "parts": [
+    [
+     "你",
+     "nei5"
+    ],
+    [
+     "冇嘢",
+     "mou5 je5"
+    ],
+    [
+     "吖嘛",
+     "aa1 maa3"
+    ],
+    [
+     "？"
+    ],
+    [
+     "你",
+     "nei5"
+    ],
+    [
+     "面色",
+     "min6 sik1"
+    ],
+    [
+     "好",
+     "hou2"
+    ],
+    [
+     "差",
+     "caa1"
+    ],
+    [
+     "喎",
+     "wo3"
+    ],
+    [
+     "。"
+    ]
+   ]
+  }
+ ],
+ "grammar": [
+  {
+   "title": "Can / can't: verb + 得 (dak1) / 唔 (m4) + result",
+   "explain": "Many slang verbs have a result part. Put 得 (dak1) in the middle for 'can', 唔 (m4) for 'can't': 搞得掂 (gaau2 dak1 dim6) / 搞唔掂 (gaau2 m4 dim6), 頂得順 (ding2 dak1 seon6) / 頂唔順 (ding2 m4 seon6). Questions repeat the verb: 頂唔頂得順 (ding2 m4 ding2 dak1 seon6)?",
+   "examples": [
+    {
+     "en": "I can't handle this on my own.",
+     "parts": [
+      [
+       "呢件事",
+       "ni1 gin6 si6"
+      ],
+      [
+       "我",
+       "ngo5"
+      ],
+      [
+       "一個人",
+       "jat1 go3 jan4"
+      ],
+      [
+       "搞唔掂",
+       "gaau2 m4 dim6"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "Don't worry, I can handle it.",
+     "parts": [
+      [
+       "放心",
+       "fong3 sam1"
+      ],
+      [
+       "，"
+      ],
+      [
+       "我",
+       "ngo5"
+      ],
+      [
+       "搞得掂",
+       "gaau2 dak1 dim6"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "Can you still bear it?",
+     "parts": [
+      [
+       "你",
+       "nei5"
+      ],
+      [
+       "頂唔頂得順",
+       "ding2 m4 ding2 dak1 seon6"
+      ],
+      [
+       "啊",
+       "aa3"
+      ],
+      [
+       "？"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Flavour particles: 喎 (wo3), 咋 (zaa3), 吖嘛 (aa1 maa3)",
+   "explain": "Slang lives in the particles. 喎 wo3 = 'hey, I notice…' or passing on what someone said. 咋 zaa3 = 'only, that's all'. 吖嘛 aa1 maa3 = 'right? / you know' (checking or stating the obvious).",
+   "examples": [
+    {
+     "en": "Hey, this is pretty good!",
+     "parts": [
+      [
+       "呢個",
+       "ni1 go3"
+      ],
+      [
+       "幾",
+       "gei2"
+      ],
+      [
+       "正",
+       "zeng3"
+      ],
+      [
+       "喎",
+       "wo3"
+      ],
+      [
+       "！"
+      ]
+     ]
+    },
+    {
+     "en": "It's only a hundred dollars.",
+     "parts": [
+      [
+       "一百蚊",
+       "jat1 baak3 man1"
+      ],
+      [
+       "咋",
+       "zaa3"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "You're OK, right?",
+     "parts": [
+      [
+       "你",
+       "nei5"
+      ],
+      [
+       "冇嘢",
+       "mou5 je5"
+      ],
+      [
+       "吖嘛",
+       "aa1 maa3"
+      ],
+      [
+       "？"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "dialogue": {
+  "title": "Friday, knocking off",
+  "lines": [
+   {
+    "spk": "A",
+    "en": "Hey, finished for the day yet? I just got my report done.",
+    "parts": [
+     [
+      "喂",
+      "wai3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "收工未",
+      "sau1 gung1 mei6"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "啱啱",
+      "ngaam1 ngaam1"
+     ],
+     [
+      "搞掂",
+      "gaau2 dim6"
+     ],
+     [
+      "份",
+      "fan6"
+     ],
+     [
+      "報告",
+      "bou3 gou3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Wow, that fast? I've still got an email to answer — I can't take it any more!",
+    "parts": [
+     [
+      "嘩",
+      "waa1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "咁",
+      "gam3"
+     ],
+     [
+      "快",
+      "faai3"
+     ],
+     [
+      "？"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "仲",
+      "zung6"
+     ],
+     [
+      "有",
+      "jau5"
+     ],
+     [
+      "個",
+      "go3"
+     ],
+     [
+      "電郵",
+      "din6 jau4"
+     ],
+     [
+      "要",
+      "jiu3"
+     ],
+     [
+      "覆",
+      "fuk1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "頂唔順",
+      "ding2 m4 seon6"
+     ],
+     [
+      "喇",
+      "laa3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "Don't answer it sloppily — last time you sent it to the wrong client and nearly landed in big trouble.",
+    "parts": [
+     [
+      "唔好",
+      "m4 hou2"
+     ],
+     [
+      "求其",
+      "kau4 kei4"
+     ],
+     [
+      "覆",
+      "fuk1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "上次",
+      "soeng6 ci3"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "寄錯",
+      "gei3 co3"
+     ],
+     [
+      "咗",
+      "zo2"
+     ],
+     [
+      "畀",
+      "bei2"
+     ],
+     [
+      "第二個",
+      "dai6 ji6 go3"
+     ],
+     [
+      "客",
+      "haak3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "差啲",
+      "caa1 di1"
+     ],
+     [
+      "大鑊",
+      "daai6 wok6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "I know, I'm being really careful this time. Right — done!",
+    "parts": [
+     [
+      "知",
+      "zi1"
+     ],
+     [
+      "喇",
+      "laa3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "今次",
+      "gam1 ci3"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "認真",
+      "jing6 zan1"
+     ],
+     [
+      "㗎",
+      "gaa3"
+     ],
+     [
+      "。"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "搞掂",
+      "gaau2 dim6"
+     ],
+     [
+      "！"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "Yay! Shall we go for dinner and have a chat?",
+    "parts": [
+     [
+      "好嘢",
+      "hou2 je5"
+     ],
+     [
+      "！"
+     ],
+     [
+      "不如",
+      "bat1 jyu4"
+     ],
+     [
+      "一齊",
+      "jat1 cai4"
+     ],
+     [
+      "去",
+      "heoi3"
+     ],
+     [
+      "食飯",
+      "sik6 faan6"
+     ],
+     [
+      "吹水",
+      "ceoi1 seoi2"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Sure. Ah Ming says he's coming too — he won't bail again this time, I guess.",
+    "parts": [
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "。"
+     ],
+     [
+      "阿明",
+      "aa3 ming4"
+     ],
+     [
+      "都",
+      "dou1"
+     ],
+     [
+      "話",
+      "waa6"
+     ],
+     [
+      "嚟",
+      "lai4"
+     ],
+     [
+      "，"
+     ],
+     [
+      "今次",
+      "gam1 ci3"
+     ],
+     [
+      "應該",
+      "jing1 goi1"
+     ],
+     [
+      "唔會",
+      "m4 wui5"
+     ],
+     [
+      "再",
+      "zoi3"
+     ],
+     [
+      "甩底",
+      "lat1 dai2"
+     ],
+     [
+      "啩",
+      "gwaa3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "You're joking! Last time he said he'd come, and in the end he didn't show.",
+    "parts": [
+     [
+      "講笑",
+      "gong2 siu3"
+     ],
+     [
+      "咩",
+      "me1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "上次",
+      "soeng6 ci3"
+     ],
+     [
+      "佢",
+      "keoi5"
+     ],
+     [
+      "都",
+      "dou1"
+     ],
+     [
+      "話",
+      "waa6"
+     ],
+     [
+      "嚟",
+      "lai4"
+     ],
+     [
+      "，"
+     ],
+     [
+      "最後",
+      "zeoi3 hau6"
+     ],
+     [
+      "都係",
+      "dou1 hai6"
+     ],
+     [
+      "冇",
+      "mou5"
+     ],
+     [
+      "嚟",
+      "lai4"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Where shall we eat? I'm easy, your call.",
+    "parts": [
+     [
+      "去",
+      "heoi3"
+     ],
+     [
+      "邊度",
+      "bin1 dou6"
+     ],
+     [
+      "食",
+      "sik6"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "呢",
+      "ne1"
+     ],
+     [
+      "？"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "是但",
+      "si6 daan6"
+     ],
+     [
+      "，"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "話事",
+      "waa6 si6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "There's a dai pai dong in Wan Chai — cheap and fantastic, great value.",
+    "parts": [
+     [
+      "灣仔",
+      "waan1 zai2"
+     ],
+     [
+      "有",
+      "jau5"
+     ],
+     [
+      "間",
+      "gaan1"
+     ],
+     [
+      "大排檔",
+      "daai6 paai4 dong3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "又",
+      "jau6"
+     ],
+     [
+      "平",
+      "peng4"
+     ],
+     [
+      "又",
+      "jau6"
+     ],
+     [
+      "正",
+      "zeng3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "抵食",
+      "dai2 sik6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Last time I went to a place recommended online, and got totally ripped off.",
+    "parts": [
+     [
+      "上次",
+      "soeng6 ci3"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "去",
+      "heoi3"
+     ],
+     [
+      "間",
+      "gaan1"
+     ],
+     [
+      "網上推介",
+      "mong5 soeng6 teoi1 gaai3"
+     ],
+     [
+      "嘅",
+      "ge3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "結果",
+      "git3 gwo2"
+     ],
+     [
+      "中伏",
+      "zung3 fuk6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "Relax, I've been eating at this one for years — no traps.",
+    "parts": [
+     [
+      "放心",
+      "fong3 sam1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "呢間",
+      "ni1 gaan1"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "食咗",
+      "sik6 zo2"
+     ],
+     [
+      "好多年",
+      "hou2 do1 nin4"
+     ],
+     [
+      "，"
+     ],
+     [
+      "實",
+      "sat6"
+     ],
+     [
+      "冇",
+      "mou5"
+     ],
+     [
+      "伏",
+      "fuk6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Lucky I've got you! Then I'll call Ah Ming too.",
+    "parts": [
+     [
+      "好彩",
+      "hou2 coi2"
+     ],
+     [
+      "有",
+      "jau5"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "！"
+     ],
+     [
+      "噉",
+      "gam2"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "打電話",
+      "daa2 din6 waa2"
+     ],
+     [
+      "畀",
+      "bei2"
+     ],
+     [
+      "阿明",
+      "aa3 ming4"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "Tell him if he bails again this time, I'll really be cross!",
+    "parts": [
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "同",
+      "tung4"
+     ],
+     [
+      "佢",
+      "keoi5"
+     ],
+     [
+      "講",
+      "gong2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "今次",
+      "gam1 ci3"
+     ],
+     [
+      "再",
+      "zoi3"
+     ],
+     [
+      "甩底",
+      "lat1 dai2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "真係",
+      "zan1 hai6"
+     ],
+     [
+      "會",
+      "wui5"
+     ],
+     [
+      "嬲",
+      "nau1"
+     ],
+     [
+      "㗎",
+      "gaa3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "OK, OK! See you in a bit!",
+    "parts": [
+     [
+      "得",
+      "dak1"
+     ],
+     [
+      "喇",
+      "laa3"
+     ],
+     [
+      "得",
+      "dak1"
+     ],
+     [
+      "喇",
+      "laa3"
+     ],
+     [
+      "！"
+     ],
+     [
+      "一陣見",
+      "jat1 zan6 gin3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "q": "What had A just finished when the conversation starts?",
+    "options": [
+     "A report",
+     "An email to a client",
+     "Booking a restaurant",
+     "A phone call with Ah Ming"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Why does A warn B not to be sloppy with the email?",
+    "options": [
+     "B once sent one to the wrong client",
+     "The boss is checking B's emails",
+     "B always writes too slowly",
+     "The client is angry with A"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What can we infer about Ah Ming?",
+    "options": [
+     "He has a habit of not showing up",
+     "He works in Wan Chai",
+     "He recommended the dai pai dong",
+     "He's always late for work"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Why is B happy to let A choose the restaurant?",
+    "options": [
+     "A knows the place well and B got burned last time",
+     "B has never eaten in Wan Chai",
+     "A is paying for dinner",
+     "B doesn't like dai pai dongs"
+    ],
+    "answer": 0
+   }
+  ],
+  "gloss": [
+   [
+    "報告",
+    "bou3 gou3",
+    "report"
+   ],
+   [
+    "寄錯",
+    "gei3 co3",
+    "to send to the wrong person"
+   ],
+   [
+    "客",
+    "haak3",
+    "client, customer"
+   ],
+   [
+    "大排檔",
+    "daai6 paai4 dong3",
+    "dai pai dong (open-air food stall)"
+   ],
+   [
+    "網上推介",
+    "mong5 soeng6 teoi1 gaai3",
+    "recommended online"
+   ],
+   [
+    "伏",
+    "fuk6",
+    "trap (as in 中伏 (zung3 fuk6))"
+   ]
+  ]
+ },
+ "names": [
+  "灣仔"
+ ]
 }

@@ -1,5 +1,5 @@
 // Exercise renderers. Each takes (step, ctx) and returns a DOM node.
-import { h, jpNode, jpHTML, shuffle, sample, toneOf, toneGlyph, TONES, sJP, sHK, wordTokens, esc, vibrate } from './util.js';
+import { h, R, jpNode, jpHTML, shuffle, sample, toneOf, toneGlyph, TONES, sJP, sHK, wordTokens, esc, vibrate } from './util.js';
 import { distractors, distractorTokens, ITEMS, UNIT, learnedWords } from './course.js';
 import { speak, speakSlow, sfx } from './tts.js';
 import { setting, introduce } from './store.js';
@@ -15,7 +15,11 @@ export function canto(item, { size = 'md', jp = item.jp || (item.parts && sJP(it
   box.append(hkEl);
   if (showJp() || forceJp) box.append(jpEl);
   else {
-    const btn = h('button', { class: 'reveal', type: 'button', onclick: () => btn.replaceWith(jpEl) }, 'Show Jyutping');
+    // a span, not a button: it may sit inside an answer button and must not pick that answer
+    const btn = h('span', { class: 'reveal', role: 'button', tabindex: '0', 'aria-label': 'Show Jyutping' }, 'Jyutping');
+    const open = (e) => { e.stopPropagation(); e.preventDefault(); btn.replaceWith(jpEl); };
+    btn.addEventListener('click', open);
+    btn.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') open(e); });
     box.append(btn);
   }
   if (play) box.prepend(speakerBtn(hk, 'sm'));
@@ -43,7 +47,7 @@ function listenBar(text, auto = true) {
 }
 
 function enLine(item) {
-  return h('div', { class: 'en' }, item.en, setting('showFr') && item.fr ? h('span', { class: 'fr' }, ' · ' + item.fr) : null);
+  return h('div', { class: 'en' }, R(item.en), setting('showFr') && item.fr ? h('span', { class: 'fr' }, ' · ' + item.fr) : null);
 }
 
 // ---------------------------------------------------------------- teach
@@ -59,9 +63,9 @@ function teach(step, ctx) {
       h('div', { class: 'tone-strip', html: w.jp.split(' ').map((s) => `<span class="t${toneOf(s)}">${toneGlyph(toneOf(s), 18)}<b>${TONES[toneOf(s)]?.name || ''}</b></span>`).join('') }),
       enLine(w),
       w.mine ? h('div', { class: 'mine' }, 'Your spelling: ', h('b', {}, w.mine)) : null,
-      w.note ? h('p', { class: 'note' }, w.note) : null,
+      w.note ? h('p', { class: 'note' }, R(w.note)) : null,
     ),
-    ex ? h('div', { class: 'example' }, speakerBtn(ex.hk, 'sm'), h('div', {}, canto(ex, { size: 'sm' }), h('div', { class: 'en-sm' }, ex.en))) : null,
+    ex ? h('div', { class: 'example' }, speakerBtn(ex.hk, 'sm'), h('div', {}, canto(ex, { size: 'sm' }), h('div', { class: 'en-sm' }, R(ex.en)))) : null,
   );
   setTimeout(() => speak(w.hk), 250);
   ctx.footer('Got it', () => ctx.next());
@@ -87,7 +91,7 @@ function listenPick(step, ctx) {
   const w = step.item;
   const opts = shuffle([w, ...distractors(w, 3)]);
   const node = h('div', { class: 'ex' }, h('div', { class: 'kicker' }, 'What does this mean?'), listenBar(w.hk));
-  node.append(choiceList(opts, (o) => h('span', {}, o.en), (o, b, wrap) => {
+  node.append(choiceList(opts, (o) => h('span', {}, R(o.en)), (o, b, wrap) => {
     const ok = o === w;
     b.classList.add(ok ? 'ok' : 'bad');
     lockOpts(wrap, (i) => opts[i] === w);
@@ -100,7 +104,7 @@ function seePick(step, ctx) {
   const w = step.item;
   const opts = shuffle([w, ...distractors(w, 3)]);
   const node = h('div', { class: 'ex' }, h('div', { class: 'kicker' }, 'Pick the meaning'), canto(w, { size: 'xl', play: true }));
-  node.append(choiceList(opts, (o) => h('span', {}, o.en), (o, b, wrap) => {
+  node.append(choiceList(opts, (o) => h('span', {}, R(o.en)), (o, b, wrap) => {
     const ok = o === w;
     b.classList.add(ok ? 'ok' : 'bad');
     lockOpts(wrap, (i) => opts[i] === w);
@@ -114,7 +118,7 @@ function enPick(step, ctx) {
   const w = step.item;
   const opts = shuffle([w, ...distractors(w, 3)]);
   let chosen = null;
-  const node = h('div', { class: 'ex' }, h('div', { class: 'kicker' }, 'How do you say…'), h('div', { class: 'prompt-en' }, w.en));
+  const node = h('div', { class: 'ex' }, h('div', { class: 'kicker' }, 'How do you say…'), h('div', { class: 'prompt-en' }, R(w.en)));
   const list = choiceList(opts, (o) => canto(o, { size: 'sm', forceJp: true }), (o, b, wrap) => {
     wrap.querySelectorAll('.opt').forEach((x) => x.classList.remove('sel'));
     b.classList.add('sel'); chosen = o; speak(o.hk);
@@ -162,19 +166,21 @@ function tone(step, ctx) {
 }
 
 function pair(step, ctx) {
-  const items = step.item.map((hk) => ITEMS.get('w:' + hk) || { hk, jp: '', en: '' }).filter((x) => x.jp);
+  const items = step.item.map((hk) => ITEMS.get('t:' + hk) || ITEMS.get('w:' + hk) || [...ITEMS.values()].find((x) => x.hk === hk && x.jp) || { hk, jp: '', en: '' }).filter((x) => x.jp);
   if (items.length < 2) { setTimeout(() => ctx.next(), 0); return h('div'); }
   const target = items[Math.floor(Math.random() * 2)];
   const node = h('div', { class: 'ex' }, h('div', { class: 'kicker' }, 'Which one did you hear?'), listenBar(target.hk));
-  const list = choiceList(items, (o) => h('div', { class: 'pair-opt' }, canto(o, { size: 'md', forceJp: true }), h('div', { class: 'en-sm' }, o.en)), (o, b, wrap) => {
+  const compare = h('div', { class: 'compare' }, ...items.map((it) => { const b = speakerBtn(it.hk, 'md'); b.disabled = true; return h('div', { class: 'cmp' }, b, h('span', { lang: 'zh-HK' }, it.hk)); }));
+  const list = choiceList(items, (o) => h('div', { class: 'pair-opt' }, canto(o, { size: 'md', forceJp: true }), h('div', { class: 'en-sm' }, R(o.en))), (o, b, wrap) => {
     const ok = o === target;
     b.classList.add(ok ? 'ok' : 'bad');
     lockOpts(wrap, (i) => items[i] === target);
+    compare.querySelectorAll('.spk').forEach((x) => { x.disabled = false; });
+    compare.classList.add('on');
     ctx.answer(ok, { item: target, quiet: true });
   });
   list.classList.add('opts-2');
-  node.append(list, h('p', { class: 'hint' }, 'After answering, tap the speakers to compare both.'));
-  list.querySelectorAll('.opt').forEach((b, i) => b.append(speakerBtn(items[i].hk, 'sm')));
+  node.append(list, h('p', { class: 'hint' }, 'After answering, compare both:'), compare);
   return node;
 }
 
@@ -182,13 +188,13 @@ function pair(step, ctx) {
 function tiles(step, ctx, { dictation = false } = {}) {
   const s = step.item;
   const target = wordTokens(s.parts);
-  const extra = distractorTokens(s, target.length > 6 ? 1 : 2);
+  const extra = distractorTokens(s, target.length <= 3 ? 3 : target.length > 6 ? 1 : 2);
   const bank = shuffle([...target, ...extra].map((t, i) => ({ hk: t[0], jp: t[1], id: i })));
   const answer = [];
   const node = h('div', { class: 'ex' });
   node.append(h('div', { class: 'kicker' }, dictation ? 'Listen and build what you hear' : 'Build this sentence'));
   if (dictation) node.append(listenBar(s.hk));
-  else node.append(h('div', { class: 'prompt-en' }, s.en));
+  else node.append(h('div', { class: 'prompt-en' }, R(s.en)));
   const line = h('div', { class: 'answer-line' });
   const bankEl = h('div', { class: 'bank' });
   const tileEl = (t) => {
@@ -242,7 +248,7 @@ function gap(step, ctx) {
     else if (p.length === 1) sent.append(h('span', { class: 'punct' }, p[0]));
     else { const t = h('span', { class: 'gw' }, h('span', { class: 'thk' }, p[0])); if (showJp()) { const j = jpNode(p[1]); j.classList.add('tjp'); t.append(j); } sent.append(t); }
   });
-  const node = h('div', { class: 'ex' }, h('div', { class: 'kicker' }, 'Fill the gap'), h('div', { class: 'prompt-en sm' }, s.en), sent);
+  const node = h('div', { class: 'ex' }, h('div', { class: 'kicker' }, 'Fill the gap'), h('div', { class: 'prompt-en sm' }, R(s.en)), sent);
   const list = choiceList(opts, (o) => canto({ hk: o[0], jp: o[1] }, { size: 'sm' }), (o, b, wrap) => {
     const ok = o === right;
     b.classList.add(ok ? 'ok' : 'bad');
@@ -268,7 +274,7 @@ function match(step, ctx) {
   const colL = h('div', { class: 'col' }), colR = h('div', { class: 'col' });
   const mk = (it, side) => {
     const b = h('button', { class: 'm-card ' + side, type: 'button' });
-    if (side === 'l') b.append(canto(it, { size: 'sm' })); else b.append(h('span', {}, it.en));
+    if (side === 'l') b.append(canto(it, { size: 'sm' })); else b.append(h('span', {}, R(it.en)));
     b.onclick = () => {
       if (b.classList.contains('done')) return;
       if (side === 'l') speak(it.hk);
@@ -304,23 +310,36 @@ function match(step, ctx) {
 }
 
 // ---------------------------------------------------------------- dialogue
+const SPK_NAMES = { A: '🙂 A', B: '🙋 B', C: '🧑 C', N: '📖 Narrator' };
 function dialogue(step, ctx) {
   const d = step.item;
-  const chat = h('div', { class: 'chat' });
+  const mute = setting('mode') === 'mute';
+  // from level 2, the first pass is listening only: text is blurred until tapped
+  const listenFirst = (step.level || 1) >= 2 && !mute;
+  const chat = h('div', { class: `chat ${listenFirst ? 'listen-first' : ''}` });
   let i = 0, playingAll = false;
-  const node = h('div', { class: 'ex dialog' }, h('div', { class: 'kicker' }, 'Listen to the conversation'), h('h2', { class: 'dlg-title' }, d.title), chat);
-  const showEn = h('label', { class: 'switch' }, h('input', { type: 'checkbox', onchange: (e) => chat.classList.toggle('en-on', e.target.checked) }), h('span', {}, 'Show English'));
-  node.append(showEn);
+  const node = h('div', { class: 'ex dialog' }, h('div', { class: 'kicker' }, mute ? 'Read the conversation' : 'Listen to the conversation'), h('h2', { class: 'dlg-title' }, R(d.title)));
+  if (d.gloss && d.gloss.length) {
+    node.append(h('details', { class: 'gloss', open: true }, h('summary', {}, 'Phrases you’ll hear'),
+      h('div', { class: 'gloss-list' }, ...d.gloss.map(([hk, jp, en]) => h('button', { class: 'gl', type: 'button', onclick: () => speak(hk) }, h('span', { lang: 'zh-HK' }, hk), jpNode(jp), h('small', {}, en))))));
+  }
+  const toggles = h('div', { class: 'row wrap' },
+    h('label', { class: 'switch' }, h('input', { type: 'checkbox', onchange: (e) => chat.classList.toggle('en-on', e.target.checked) }), h('span', {}, 'English')),
+    listenFirst ? h('label', { class: 'switch' }, h('input', { type: 'checkbox', onchange: (e) => chat.classList.toggle('listen-first', !e.target.checked) }), h('span', {}, 'Show text')) : null);
+  node.append(toggles, chat);
   const speakers = [...new Set(d.lines.map((l) => l.spk))];
   function addLine() {
     const l = d.lines[i++];
     const side = speakers.indexOf(l.spk) % 2 ? 'r' : 'l';
+    const slow = speakerBtn(l.hk, 'sm', { slow: true });
     const b = h('div', { class: `bubble ${side} spk-${l.spk}` },
-      h('div', { class: 'who' }, l.spk === 'N' ? 'Narrator' : l.spk),
-      canto(l, { size: 'sm' }), h('div', { class: 'en-sm line-en' }, l.en));
-    b.onclick = () => speak(l.hk);
+      h('div', { class: 'who' }, SPK_NAMES[l.spk] || l.spk, slow),
+      canto(l, { size: 'sm', forceJp: true }), h('div', { class: 'en-sm line-en' }, R(l.en)));
+    b.onclick = () => { b.classList.add('shown'); speak(l.hk); };
     chat.append(b);
-    b.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    b.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'nearest' });
+    if (mute) { b.classList.add('shown'); upd(); if (playingAll && i < d.lines.length) setTimeout(addLine, 200); return; }
     speak(l.hk, { onend: () => { if (playingAll && i < d.lines.length) setTimeout(addLine, 450); else upd(); } });
     upd();
   }
@@ -330,21 +349,23 @@ function dialogue(step, ctx) {
   }
   const playAll = h('button', { class: 'chip', type: 'button', onclick: () => { playingAll = true; playAll.remove(); addLine(); } }, '▶ Play whole conversation');
   node.insertBefore(playAll, chat);
-  setTimeout(addLine, 300);
+  ctx.footer('Next line', () => addLine(), true);
+  if (!d.gloss || !d.gloss.length) setTimeout(addLine, 300);
   return node;
 }
 
 function dq(step, ctx) {
   const q = step.item, d = step.dialogue;
   const order = shuffle(q.options.map((o, i) => i));
-  const node = h('div', { class: 'ex' }, h('div', { class: 'kicker' }, 'Comprehension'), h('div', { class: 'prompt-en' }, q.q));
+  const node = h('div', { class: 'ex' }, h('div', { class: 'kicker' }, 'Comprehension'), h('div', { class: 'prompt-en' }, R(q.q)));
   const replay = h('button', { class: 'chip', type: 'button', onclick: () => {
     let k = 0; const nextLine = () => { if (k < d.lines.length) speak(d.lines[k++].hk, { onend: () => setTimeout(nextLine, 350) }); }; nextLine();
   } }, '🔊 Replay conversation');
-  const transcript = h('details', { class: 'transcript' }, h('summary', {}, 'Read the transcript'), ...d.lines.map((l) => h('p', {}, h('b', {}, (l.spk === 'N' ? '' : l.spk + ': ')), h('span', { lang: 'zh-HK' }, l.hk))));
+  const transcript = h('details', { class: 'transcript locked' }, h('summary', {}, 'Transcript (after you answer)'), ...d.lines.map((l) => h('p', {}, h('b', {}, (l.spk === 'N' ? '' : l.spk + ': ')), h('span', { lang: 'zh-HK' }, l.hk), h('br'), jpNode(sJP(l.parts)))));
   node.append(h('div', { class: 'row' }, replay), transcript);
-  node.append(choiceList(order.map((i) => q.options[i]), (o) => h('span', {}, o), (o, b, wrap) => {
+  node.append(choiceList(order.map((i) => q.options[i]), (o) => h('span', {}, R(o)), (o, b, wrap) => {
     const ok = o === q.options[q.answer];
+    transcript.classList.remove('locked'); transcript.querySelector('summary').textContent = 'Read the transcript';
     b.classList.add(ok ? 'ok' : 'bad');
     lockOpts(wrap, (i) => q.options[order[i]] === q.options[q.answer]);
     ctx.answer(ok, { quiet: true, noGrade: true });
@@ -355,15 +376,15 @@ function dq(step, ctx) {
 // ---------------------------------------------------------------- grammar & tone chart
 function grammar(step, ctx) {
   const g = step.item;
-  const node = h('div', { class: 'ex grammar' }, h('div', { class: 'kicker' }, 'Pattern'), h('h2', {}, g.title), h('p', { class: 'explain' }, g.explain),
-    ...(g.examples || []).map((e) => h('div', { class: 'example' }, speakerBtn(e.hk, 'sm'), h('div', {}, canto(e, { size: 'sm', forceJp: true }), h('div', { class: 'en-sm' }, e.en)))));
+  const node = h('div', { class: 'ex grammar' }, h('div', { class: 'kicker' }, 'Pattern'), h('h2', {}, R(g.title)), h('p', { class: 'explain' }, R(g.explain)),
+    ...(g.examples || []).map((e) => h('div', { class: 'example' }, speakerBtn(e.hk, 'sm'), h('div', {}, canto(e, { size: 'sm', forceJp: true }), h('div', { class: 'en-sm' }, R(e.en))))));
   ctx.footer('Continue', () => ctx.next());
   return node;
 }
 
 export function toneChartSVG({ active = 0, user = null, w = 320, hgt = 200 } = {}) {
   const pad = 26, x0 = pad, x1 = w - 10;
-  const y = (c) => 10 + (5 - c) * (hgt - 30) / 4;
+  const y = (c) => 24 + (5 - c) * (hgt - 40) / 4;
   let s = `<svg class="tone-chart" viewBox="0 0 ${w} ${hgt}" role="img" aria-label="Cantonese tone contours">`;
   for (let c = 1; c <= 5; c++) s += `<line x1="${x0}" x2="${x1}" y1="${y(c)}" y2="${y(c)}" class="grid"/><text x="6" y="${y(c) + 4}" class="lab">${c}</text>`;
   for (let t = 1; t <= 6; t++) {
@@ -400,7 +421,7 @@ function speakEx(step, ctx) {
   const text = it.hk;
   const result = h('div', { class: 'speak-result' });
   const node = h('div', { class: 'ex speak' }, h('div', { class: 'kicker' }, 'Say it out loud'),
-    h('div', { class: 'speak-card' }, canto(it, { size: it.hk.length > 6 ? 'md' : 'lg', forceJp: true, jp: it.jp || sJP(it.parts) }), h('div', { class: 'en-sm' }, it.en)),
+    h('div', { class: 'speak-card' }, canto(it, { size: it.hk.length > 6 ? 'md' : 'lg', forceJp: true, jp: it.jp || sJP(it.parts) }), h('div', { class: 'en-sm' }, R(it.en))),
     listenBar(text, true), result);
   const actions = h('div', { class: 'speak-actions' });
   node.append(actions);
@@ -463,5 +484,29 @@ export function recorderWidget(text, { onTrack } = {}) {
   return box;
 }
 
-export const EX = { teach, listenPick, seePick, enPick, tone, pair, tiles, dictation: (s, c) => tiles(s, c, { dictation: true }), gap, match, dialogue, dq, grammar, toneChart, speak: speakEx };
+function num(step, ctx) {
+  const it = step.item;
+  const node = h('div', { class: 'ex' }, h('div', { class: 'kicker' }, step.prompt || 'What did you hear?'), listenBar(it.hk));
+  node.append(choiceList(step.opts, (o) => h('span', { class: 'numopt' }, o), (o, b, wrap) => {
+    const ok = o === it.en;
+    b.classList.add(ok ? 'ok' : 'bad');
+    lockOpts(wrap, (i) => step.opts[i] === it.en);
+    ctx.answer(ok, { item: it, quiet: true, noGrade: true });
+  }));
+  return node;
+}
+
+function jpIntro(step, ctx) {
+  ctx.footer('Got it', () => ctx.next());
+  const demo = h('div', { class: 'canto canto-xl' }, h('div', { class: 'hk', lang: 'zh-HK' }, '你好'), jpNode('nei5 hou2', { glyph: true }));
+  return h('div', { class: 'ex intro' }, h('div', { class: 'kicker' }, 'How to read this app'), demo,
+    h('ul', { class: 'intro-list' },
+      h('li', {}, h('b', {}, 'Characters'), ' are how Cantonese is written. You don’t have to learn to write them — just recognise them over time.'),
+      h('li', {}, h('b', {}, 'Jyutping'), ' (the coloured letters) tells you how to say it: ', jpNode('nei5'), ' sounds like “nay”.'),
+      h('li', {}, h('b', {}, 'The number and colour are the tone'), ' — the pitch of your voice. Cantonese has 6, and they change meaning. Tap any coloured syllable in the app to see and hear its tone.'),
+      h('li', {}, 'Tap 🔊 to listen, 🐢 for slow. Say everything out loud — it helps memory.')),
+    speakerBtn('你好', 'lg'));
+}
+
+export const EX = { jpIntro, num, teach, listenPick, seePick, enPick, tone, pair, tiles, dictation: (s, c) => tiles(s, c, { dictation: true }), gap, match, dialogue, dq, grammar, toneChart, speak: speakEx };
 export { esc };

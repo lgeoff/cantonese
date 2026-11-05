@@ -1,0 +1,9 @@
+{
+  "comment": "Course order and levels. Unit ids stay stable (saved progress uses them); only the order changes.",
+  "levels": [
+    {"level": 1, "units": ["u01", "u02", "u25", "u03", "u04", "u05", "u07", "u06", "u08"]},
+    {"level": 2, "units": ["u09", "u10", "u11", "u18", "u12", "u13", "u14"]},
+    {"level": 3, "units": ["u15", "u16", "u17", "u19", "u23"]},
+    {"level": 4, "units": ["u20", "u21", "u22", "u24"]}
+  ]
+}

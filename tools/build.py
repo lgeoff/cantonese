@@ -5,7 +5,16 @@ ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 units = []
 for p in sorted(glob.glob(os.path.join(ROOT, 'data', 'units', 'u*.json'))):
     units.append(json.load(open(p, encoding='utf-8')))
-units.sort(key=lambda u: u['id'])
+order = json.load(open(os.path.join(ROOT, 'data', 'order.json'), encoding='utf-8'))
+seq = [(uid, L['level']) for L in order['levels'] for uid in L['units']]
+byid = {u['id']: u for u in units}
+missing = [u for u in byid if u not in dict(seq)]
+if missing: raise SystemExit(f'units missing from data/order.json: {missing}')
+units = []
+for uid, level in seq:
+    if uid in byid:
+        byid[uid]['level'] = level
+        units.append(byid[uid])
 out = json.dumps({'units': units}, ensure_ascii=False, separators=(',', ':'))
 open(os.path.join(ROOT, 'data', 'course.json'), 'w', encoding='utf-8').write(out)
 h = hashlib.sha1()

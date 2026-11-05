@@ -91,3 +91,11 @@ Level 4 — Advanced (B2)
 - u22 HK Slang & Colloquial: 搞掂, 掂, 正, 醒目, 求其, 頂唔順, 好嘢, 冇嘢, 唔緊要, 收工, 抵, 好抵, 撞板, 走雞, 一陣見, 講笑, 認真, 激氣, 好彩, 黐線 (mild), 嘩 — no vulgarity.
 - u23 Festivals & Sayings: 新年快樂, 恭喜發財, 身體健康, 萬事如意, 利是, 中秋節, 月餅, 端午節, 生日快樂, 一路順風, 人山人海, 馬馬虎虎, 慢慢嚟, 加油, 早抖, 食咗飯未啊, 好耐冇見
 - u24 News & Society: 新聞, 政府, 經濟, 環境, 交通, 塞車, 天氣報告, 樓價, 租金, 人工, 退休, 社會, 問題, 解決, 影響, 增加, 減少, 報告, 調查 — dialogue: two people discussing a news item (neutral, non-political: housing cost, traffic, weather, environment).
+
+## Progression rules (added after the pedagogy review — see tools/RESTRUCTURE_PLAN.md)
+- Course order is data/order.json, not the unit id.
+- Every sentence/example uses words already taught (this unit or earlier): ≤1 untaught token at L1–L2, ≤2 at L3–L4.
+  Dialogues ≥90 % known; anything else goes in the dialogue `gloss` list `[["字","jyutping","meaning"]]`.
+  Check with `python3 tools/coverage.py uNN`.
+- Grammar cards may carry `"after": "<word>"` to sit in the lesson that teaches that word.
+- Tone practice items live in `toneLesson` (see the plan), never as vocabulary words.

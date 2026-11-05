@@ -39,7 +39,9 @@ def load():
     return chars, words
 
 CHARS, WORDS = load()
-issues = {'ERROR': 0, 'MISMATCH': 0, 'WARN': 0}
+# Common colloquial changed tones (變調) the lexicon lists only inside other words.
+COLLOQ = {('士', 'si2'), ('黃', 'wong2'), ('檸', 'ning2'), ('豉', 'si2')}
+issues = {'ERROR': 0, 'MISMATCH': 0, 'NOJP': 0, 'WARN': 0}
 
 def report(kind, where, msg):
     issues[kind] += 1
@@ -69,10 +71,30 @@ def check_pair(hk, jp, where):
         rd = CHARS.get(c)
         if rd is None:
             report('ERROR', where, f'char {c} not in lexicon')
+        elif (c, s) in COLLOQ:
+            pass
         elif s not in rd:
             report('ERROR', where, f'{c} read "{s}" not attested; lexicon has {sorted(rd)} (in {hk})')
         elif rd[s] <= 3:
             report('WARN', where, f'{c} "{s}" is a rare reading ({rd[s]}%) in {hk}')
+
+HANRUN = re.compile(r'[\u3400-\u9fff\uf900-\ufaff]+')
+JPAFTER = re.compile(r'^[\s(（:=·]*((?:[a-z]+[1-6](?:[\s,]+|$|(?=[^a-z])))+)')
+
+def check_text(text, where):
+    """Every run of Chinese characters in free text must be followed by its Jyutping."""
+    if not text or not isinstance(text, str):
+        return
+    for m in HANRUN.finditer(text):
+        run = m.group(0)
+        after = JPAFTER.match(text[m.end():])
+        sylls = after.group(1).replace(',', ' ').split() if after else []
+        if run in WORDS and any(' '.join(sylls[:len(r.split())]) == r for r in WORDS[run]):
+            continue
+        if len(sylls) < len(run):
+            report('NOJP', where, f'"{run}" has no Jyutping in: {text[:90]}')
+        else:
+            check_pair(run, ' '.join(sylls[:len(run)]), where + '[text]')
 
 def check_sentence(s, where):
     parts = s.get('parts')
@@ -103,17 +125,44 @@ def verify(path):
         seen.add(w.get('hk'))
         check_pair(w.get('hk', ''), w.get('jp', ''), where)
         if w.get('ex'): check_sentence(w['ex'], where + '.ex')
+        for k in ('note', 'en'):
+            check_text(w.get(k), where + '.' + k)
+    for k in ('title', 'desc'):
+        check_text(d.get(k), f'{u}.{k}')
     for i, s in enumerate(d.get('sentences', [])):
         check_sentence(s, f'{u}.s{i}')
+        check_text(s.get('en'), f'{u}.s{i}.en')
+    tl = d.get('toneLesson')
+    if tl:
+        check_text(tl.get('title'), f'{u}.toneLesson.title')
+        for i, t in enumerate(tl.get('items', [])):
+            for k in ('hk', 'jp', 'en'):
+                if not t.get(k): report('ERROR', f'{u}.tone{i}', f'missing {k}')
+            check_pair(t.get('hk', ''), t.get('jp', ''), f'{u}.tone{i}')
+            check_text(t.get('note'), f'{u}.tone{i}.note')
+        c = tl.get('card')
+        if c:
+            check_text(c.get('title'), f'{u}.toneLesson.card'); check_text(c.get('explain'), f'{u}.toneLesson.card')
+            for j, ex in enumerate(c.get('examples', [])): check_sentence(ex, f'{u}.toneLesson.card.ex{j}')
     dl = d.get('dialogue')
     if dl:
+        for i, g in enumerate(dl.get('gloss', [])):
+            if len(g) != 3: report('ERROR', f'{u}.gloss{i}', 'gloss entries are [hk, jp, en]')
+            else: check_pair(g[0], g[1], f'{u}.gloss{i}')
+        check_text(dl.get('title'), f'{u}.dialogue.title')
         for i, line in enumerate(dl.get('lines', [])):
             check_sentence(line, f'{u}.d{i}')
+            check_text(line.get('en'), f'{u}.d{i}.en')
         for i, q in enumerate(dl.get('questions', [])):
+            check_text(q.get('q'), f'{u}.q{i}')
+            for o in q.get('options', []): check_text(o, f'{u}.q{i}.opt')
             if not (0 <= q.get('answer', -1) < len(q.get('options', []))):
                 report('ERROR', f'{u}.q{i}', 'answer index out of range')
     for i, g in enumerate(d.get('grammar', [])):
+        check_text(g.get('title'), f'{u}.g{i}.title')
+        check_text(g.get('explain'), f'{u}.g{i}.explain')
         for j, ex in enumerate(g.get('examples', [])):
+            check_text(ex.get('en'), f'{u}.g{i}.ex{j}.en')
             check_sentence(ex, f'{u}.g{i}.ex{j}')
     return d
 
@@ -125,4 +174,4 @@ if __name__ == '__main__':
         n_sent += len(d.get('sentences', [])) + len((d.get('dialogue') or {}).get('lines', []))
     print(f'\n{len(sys.argv)-1} file(s), {n_words} words, {n_sent} sentences/lines -> '
           + ', '.join(f'{k}: {v}' for k, v in issues.items()))
-    sys.exit(1 if issues['ERROR'] or issues['MISMATCH'] else 0)
+    sys.exit(1 if issues['ERROR'] or issues['MISMATCH'] or issues['NOJP'] else 0)

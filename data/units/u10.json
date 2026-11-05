@@ -1,110 +1,1999 @@
 {
-  "id": "u10",
-  "level": 2,
-  "title": "Shopping",
-  "emoji": "🛍️",
-  "desc": "Point at things, ask for sizes and colours, pay and bargain at the market",
-  "words": [
-    {"hk": "有冇", "jp": "jau5 mou5", "en": "do you have…? / is there…?", "fr": "avez-vous… ? / y a-t-il… ?", "note": "Literally 'have-not-have'. Answer 有 (yes) or 冇 (no).",
-     "ex": {"en": "Do you have a smaller size?", "parts": [["有冇","jau5 mou5"],["細碼","sai3 maa5"],["啊","aa3"],["？"]]}},
-    {"hk": "呢個", "jp": "ni1 go3", "en": "this (one)", "fr": "celui-ci / ceci", "note": "呢 + classifier: 呢件 this (garment), 呢對 this pair.",
-     "ex": {"en": "How much is this?", "parts": [["呢個","ni1 go3"],["幾多錢","gei2 do1 cin2"],["啊","aa3"],["？"]]}},
-    {"hk": "嗰個", "jp": "go2 go3", "en": "that (one)", "fr": "celui-là", "note": "嗰 go2 = that. 嗰件, 嗰對, 嗰度 (there).",
-     "ex": {"en": "I want that one, not this one.", "parts": [["我","ngo5"],["要","jiu3"],["嗰個","go2 go3"],["，"],["唔要","m4 jiu3"],["呢個","ni1 go3"],["。"]]}},
-    {"hk": "呢啲", "jp": "ni1 di1", "en": "these", "fr": "ceux-ci / ces", "note": "Plural: no classifier needed. 'Those' = 嗰啲 go2 di1.",
-     "ex": {"en": "Are these on sale?", "parts": [["呢啲","ni1 di1"],["係唔係","hai6 m4 hai6"],["減價","gaam2 gaa3"],["啊","aa3"],["？"]]}},
-    {"hk": "試", "jp": "si3", "en": "to try (on)", "fr": "essayer", "note": "試吓 si3 haa5 = have a try. Fitting room = 試身室.",
-     "ex": {"en": "Can I try it on?", "parts": [["可唔可以","ho2 m4 ho2 ji5"],["試吓","si3 haa5"],["啊","aa3"],["？"]]}},
-    {"hk": "大", "jp": "daai6", "en": "big", "fr": "grand",
-     "ex": {"en": "These shoes are too big.", "parts": [["呢對","ni1 deoi3"],["鞋","haai4"],["太","taai3"],["大","daai6"],["。"]]}},
-    {"hk": "細", "jp": "sai3", "en": "small", "fr": "petit", "note": "Sizes: 細碼 S, 中碼 M, 大碼 L.",
-     "ex": {"en": "This T-shirt is a bit small.", "parts": [["呢件","nei1 gin6"],["衫","saam1"],["有啲","jau5 di1"],["細","sai3"],["。"]]}},
-    {"hk": "衫", "jp": "saam1", "en": "clothes; a top / shirt", "fr": "vêtement ; haut / chemise", "note": "Classifier 件 gin6: 一件衫. Clothes in general = 衫 too.",
-     "ex": {"en": "I want to buy a few tops.", "parts": [["我","ngo5"],["想","soeng2"],["買","maai5"],["幾件","gei2 gin6"],["衫","saam1"],["。"]]}},
-    {"hk": "褲", "jp": "fu3", "en": "trousers / pants", "fr": "pantalon", "note": "Classifier 條 tiu4: 一條褲. Jeans = 牛仔褲.",
-     "ex": {"en": "These trousers are too long.", "parts": [["呢條","ni1 tiu4"],["褲","fu3"],["太","taai3"],["長","coeng4"],["。"]]}},
-    {"hk": "鞋", "jp": "haai4", "en": "shoes", "fr": "chaussures", "note": "Classifier 對 deoi3 (a pair). Trainers = 波鞋 bo1 haai4.",
-     "ex": {"en": "I like that pair of shoes.", "parts": [["我","ngo5"],["鍾意","zung1 ji3"],["嗰對","go2 deoi3"],["鞋","haai4"],["。"]]}},
-    {"hk": "顏色", "jp": "ngaan4 sik1", "en": "colour", "fr": "couleur",
-     "ex": {"en": "Do you have other colours?", "parts": [["有冇","jau5 mou5"],["其他","kei4 taa1"],["顏色","ngaan4 sik1"],["啊","aa3"],["？"]]}},
-    {"hk": "紅色", "jp": "hung4 sik1", "en": "red", "fr": "rouge", "note": "Red is the lucky colour, especially at Chinese New Year.",
-     "ex": {"en": "My mum likes red.", "parts": [["我","ngo5"],["媽媽","maa4 maa1"],["鍾意","zung1 ji3"],["紅色","hung4 sik1"],["。"]]}},
-    {"hk": "黑色", "jp": "hak1 sik1", "en": "black", "fr": "noir", "note": "Also: 白色 baak6 sik1 white, 藍色 laam4 sik1 blue.",
-     "ex": {"en": "Do you have it in black?", "parts": [["有冇","jau5 mou5"],["黑色","hak1 sik1"],["㗎","gaa3"],["？"]]}},
-    {"hk": "平啲", "jp": "peng4 di1", "en": "cheaper; a bit cheaper", "fr": "moins cher", "note": "平 'cheap' is said peng4 in everyday speech. 平啲啦 = come on, cheaper!",
-     "ex": {"en": "Can you make it cheaper?", "parts": [["平啲","peng4 di1"],["得唔得","dak1 m4 dak1"],["啊","aa3"],["？"]]}},
-    {"hk": "減價", "jp": "gaam2 gaa3", "en": "on sale; to reduce the price", "fr": "en solde ; baisser le prix",
-     "ex": {"en": "The shops are all having sales now.", "parts": [["而家","ji4 gaa1"],["啲","di1"],["舖頭","pou3 tau2"],["全部","cyun4 bou6"],["減價","gaam2 gaa3"],["。"]]}},
-    {"hk": "畀錢", "jp": "bei2 cin2", "en": "to pay", "fr": "payer", "note": "Also written 俾錢. 'I'll pay' = 我畀.",
-     "ex": {"en": "Where do I pay?", "parts": [["喺","hai2"],["邊度","bin1 dou6"],["畀錢","bei2 cin2"],["啊","aa3"],["？"]]}},
-    {"hk": "現金", "jp": "jin6 gam1", "en": "cash", "fr": "espèces", "note": "Many market stalls take cash only: 淨係收現金.",
-     "ex": {"en": "Sorry, we only take cash.", "parts": [["唔好意思","m4 hou2 ji3 si1"],["，"],["我哋","ngo5 dei6"],["淨係","zing6 hai6"],["收","sau1"],["現金","jin6 gam1"],["。"]]}},
-    {"hk": "碌卡", "jp": "luk1 kaat1", "en": "to pay by card (swipe a card)", "fr": "payer par carte", "note": "碌 = to swipe/roll; 卡 is said kaat1 here, from English 'card'.",
-     "ex": {"en": "Can I pay by card?", "parts": [["可唔可以","ho2 m4 ho2 ji5"],["碌卡","luk1 kaat1"],["啊","aa3"],["？"]]}},
-    {"hk": "八達通", "jp": "baat3 daat6 tung1", "en": "Octopus card", "fr": "carte Octopus", "note": "HK's stored-value card for the MTR, buses, shops. Top up = 增值 zang1 zik6.",
-     "ex": {"en": "Do you take Octopus?", "parts": [["收唔收","sau1 m4 sau1"],["八達通","baat3 daat6 tung1"],["啊","aa3"],["？"]]}},
-    {"hk": "超市", "jp": "ciu1 si5", "en": "supermarket", "fr": "supermarché",
-     "ex": {"en": "I go to the supermarket after work.", "parts": [["我","ngo5"],["放工","fong3 gung1"],["去","heoi3"],["超市","ciu1 si5"],["。"]]}},
-    {"hk": "街市", "jp": "gaai1 si5", "en": "wet market", "fr": "marché (alimentaire)", "note": "Grocery shopping for dinner = 買餸 maai5 sung3.",
-     "ex": {"en": "The vegetables at the market are very fresh.", "parts": [["街市","gaai1 si5"],["啲","di1"],["菜","coi3"],["好","hou2"],["新鮮","san1 sin1"],["。"]]}},
-    {"hk": "夠", "jp": "gau3", "en": "enough", "fr": "assez", "note": "唔夠錢 = not enough money. 夠唔夠 = is it enough?",
-     "ex": {"en": "I don't have enough money.", "parts": [["我","ngo5"],["唔夠","m4 gau3"],["錢","cin2"],["。"]]}}
-  ],
-  "sentences": [
-    {"en": "Boss, how much is this top?", "parts": [["老闆","lou5 baan2"],["，"],["呢件","nei1 gin6"],["衫","saam1"],["幾多錢","gei2 do1 cin2"],["啊","aa3"],["？"]]},
-    {"en": "Do you have a bigger one?", "parts": [["有冇","jau5 mou5"],["大啲","daai6 di1"],["嘅","ge3"],["啊","aa3"],["？"]]},
-    {"en": "This one is too expensive, that one is cheaper.", "parts": [["呢個","ni1 go3"],["太","taai3"],["貴","gwai3"],["，"],["嗰個","go2 go3"],["平啲","peng4 di1"],["。"]]},
-    {"en": "Do you have these trousers in black?", "parts": [["呢條","ni1 tiu4"],["褲","fu3"],["有冇","jau5 mou5"],["黑色","hak1 sik1"],["啊","aa3"],["？"]]},
-    {"en": "I'll take two of these.", "parts": [["呢個","ni1 go3"],["我","ngo5"],["要","jiu3"],["兩個","loeng5 go3"],["。"]]},
-    {"en": "Is a hundred dollars enough?", "parts": [["一百蚊","jat1 baak3 man1"],["夠唔夠","gau3 m4 gau3"],["啊","aa3"],["？"]]},
-    {"en": "I forgot to bring cash, can I pay with Octopus?", "parts": [["我","ngo5"],["唔記得","m4 gei3 dak1"],["帶","daai3"],["現金","jin6 gam1"],["，"],["可唔可以","ho2 m4 ho2 ji5"],["用","jung6"],["八達通","baat3 daat6 tung1"],["啊","aa3"],["？"]]},
-    {"en": "This red one is really pretty!", "parts": [["呢件","nei1 gin6"],["紅色","hung4 sik1"],["嘅","ge3"],["好","hou2"],["靚","leng3"],["！"]]},
-    {"en": "The supermarket is having a big sale today.", "parts": [["超市","ciu1 si5"],["今日","gam1 jat6"],["大減價","daai6 gaam2 gaa3"],["。"]]},
-    {"en": "My grandma goes to the wet market every morning.", "parts": [["我","ngo5"],["嫲嫲","maa4 maa4"],["每日","mui5 jat6"],["朝早","ziu1 zou2"],["去","heoi3"],["街市","gaai1 si5"],["買餸","maai5 sung3"],["。"]]},
-    {"en": "I don't want a bag, thanks.", "parts": [["唔該","m4 goi1"],["，"],["我","ngo5"],["唔要","m4 jiu3"],["膠袋","gaau1 doi2"],["。"]]},
-    {"en": "These shoes don't fit, they're too small.", "parts": [["呢對","ni1 deoi3"],["鞋","haai4"],["唔啱","m4 ngaam1"],["，"],["太","taai3"],["細","sai3"],["喇","laa3"],["。"]]},
-    {"en": "Who's paying? — I'll pay!", "parts": [["邊個","bin1 go3"],["畀錢","bei2 cin2"],["啊","aa3"],["？"],["我","ngo5"],["畀","bei2"],["！"]]}
-  ],
-  "grammar": [
-    {"title": "呢 / 嗰 + classifier + noun",
-     "explain": "'This' and 'that' need a classifier between them and the noun: 呢件衫 (this top), 嗰條褲 (those trousers), 呢對鞋 (this pair of shoes). For plurals use 啲: 呢啲衫 (these clothes).",
-     "examples": [
-       {"en": "This top is very pretty.", "parts": [["呢件","nei1 gin6"],["衫","saam1"],["好","hou2"],["靚","leng3"],["。"]]},
-       {"en": "That pair of shoes is cheap.", "parts": [["嗰對","go2 deoi3"],["鞋","haai4"],["好","hou2"],["平","peng4"],["。"]]},
-       {"en": "How much are these?", "parts": [["呢啲","ni1 di1"],["點","dim2"],["賣","maai6"],["啊","aa3"],["？"]]}
-     ]},
-    {"title": "Adjective + 啲 = a bit more",
-     "explain": "Put 啲 after an adjective to mean '-er / a bit more': 平啲 cheaper, 大啲 bigger, 細啲 smaller. Very handy when bargaining.",
-     "examples": [
-       {"en": "Do you have a smaller one?", "parts": [["有冇","jau5 mou5"],["細啲","sai3 di1"],["嘅","ge3"],["啊","aa3"],["？"]]},
-       {"en": "Cheaper, come on!", "parts": [["平啲","peng4 di1"],["啦","laa1"],["！"]]}
-     ]},
-    {"title": "有冇…? and the A-not-A question",
-     "explain": "有冇 + thing asks 'do you have / is there'. Any verb or adjective can be doubled with 唔 to ask yes/no: 收唔收 (do you accept?), 夠唔夠 (enough?).",
-     "examples": [
-       {"en": "Is there a supermarket nearby?", "parts": [["附近","fu6 gan6"],["有冇","jau5 mou5"],["超市","ciu1 si5"],["啊","aa3"],["？"]]},
-       {"en": "Do you take cards?", "parts": [["收唔收","sau1 m4 sau1"],["卡","kaat1"],["啊","aa3"],["？"]]}
-     ]}
-  ],
-  "dialogue": {
-    "title": "Bargaining at the Ladies' Market",
-    "lines": [
-      {"spk": "A", "en": "Boss, how much is this bag?", "parts": [["老闆","lou5 baan2"],["，"],["呢個","ni1 go3"],["手袋","sau2 doi2"],["幾多錢","gei2 do1 cin2"],["啊","aa3"],["？"]]},
-      {"spk": "B", "en": "Three hundred dollars.", "parts": [["三百蚊","saam1 baak3 man1"],["。"]]},
-      {"spk": "A", "en": "Wow, so expensive! Can you go cheaper?", "parts": [["嘩","waa1"],["，"],["咁","gam3"],["貴","gwai3"],["！"],["平啲","peng4 di1"],["得唔得","dak1 m4 dak1"],["啊","aa3"],["？"]]},
-      {"spk": "B", "en": "OK, two hundred and eighty.", "parts": [["好啦","hou2 laa1"],["，"],["兩百八","loeng5 baak3 baat3"],["。"]]},
-      {"spk": "A", "en": "Two hundred, come on. I'll pay cash.", "parts": [["兩百蚊","loeng5 baak3 man1"],["啦","laa1"],["，"],["我","ngo5"],["畀","bei2"],["現金","jin6 gam1"],["。"]]},
-      {"spk": "B", "en": "No way… two fifty, that's the lowest.", "parts": [["唔得","m4 dak1"],["啊","aa3"],["，"],["兩百五","loeng5 baak3 ng5"],["啦","laa1"],["，"],["最","zeoi3"],["平","peng4"],["喇","laa3"],["。"]]},
-      {"spk": "A", "en": "Hmm… do you have it in black?", "parts": [["噉","gam2"],["有冇","jau5 mou5"],["黑色","hak1 sik1"],["㗎","gaa3"],["？"]]},
-      {"spk": "B", "en": "Yes! Here, have a look.", "parts": [["有","jau5"],["啊","aa3"],["！"],["你","nei5"],["睇","tai2"],["。"]]},
-      {"spk": "A", "en": "OK, two fifty. Can I use Octopus?", "parts": [["好啦","hou2 laa1"],["，"],["兩百五","loeng5 baak3 ng5"],["。"],["收唔收","sau1 m4 sau1"],["八達通","baat3 daat6 tung1"],["啊","aa3"],["？"]]},
-      {"spk": "B", "en": "No, cash only!", "parts": [["唔收","m4 sau1"],["，"],["淨係","zing6 hai6"],["收","sau1"],["現金","jin6 gam1"],["！"]]}
-    ],
-    "questions": [
-      {"q": "What was the first price?", "options": ["$300", "$280", "$250", "$200"], "answer": 0},
-      {"q": "What price do they agree on?", "options": ["$250", "$200", "$280", "$300"], "answer": 0},
-      {"q": "Which colour does A ask for?", "options": ["Black", "Red", "White", "Blue"], "answer": 0},
-      {"q": "How does A have to pay?", "options": ["In cash", "With Octopus", "By card", "A doesn't buy it"], "answer": 0}
+ "id": "u10",
+ "level": 2,
+ "title": "Shopping",
+ "emoji": "🛍️",
+ "desc": "Point at things, ask for sizes and colours, pay, bargain at the market and ask for help",
+ "words": [
+  {
+   "hk": "呢個",
+   "jp": "ni1 go3",
+   "en": "this (one)",
+   "fr": "celui-ci / ceci",
+   "note": "呢 (ni1) + classifier: 呢件衫 (ni1 gin6 saam1) this top. Plural: 呢啲 (ni1 di1) these, no classifier needed.",
+   "ex": {
+    "en": "How much is this?",
+    "parts": [
+     [
+      "呢個",
+      "ni1 go3"
+     ],
+     [
+      "幾多錢",
+      "gei2 do1 cin2"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
     ]
+   }
+  },
+  {
+   "hk": "嗰個",
+   "jp": "go2 go3",
+   "en": "that (one)",
+   "fr": "celui-là",
+   "note": "嗰 (go2) = that. 嗰件 (go2 gin6) that top, 嗰啲 (go2 di1) those.",
+   "ex": {
+    "en": "I want that one, not this one.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "要",
+      "jiu3"
+     ],
+     [
+      "嗰個",
+      "go2 go3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "唔要",
+      "m4 jiu3"
+     ],
+     [
+      "呢個",
+      "ni1 go3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "件",
+   "jp": "gin6",
+   "en": "classifier for clothes (tops, jackets)",
+   "fr": "classificateur : vêtements",
+   "note": "一件衫 (jat1 gin6 saam1) a top. Trousers take 條 (tiu4), shoes come in a pair: 對 (deoi3).",
+   "ex": {
+    "en": "How much is this one?",
+    "parts": [
+     [
+      "呢",
+      "ni1"
+     ],
+     [
+      "件",
+      "gin6"
+     ],
+     [
+      "幾多錢",
+      "gei2 do1 cin2"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "衫",
+   "jp": "saam1",
+   "en": "clothes; a top / shirt",
+   "fr": "vêtement ; haut / chemise",
+   "note": "Classifier 件 (gin6): 一件衫 (jat1 gin6 saam1). Clothes in general = 衫 (saam1) too.",
+   "ex": {
+    "en": "I want to buy a top.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "想",
+      "soeng2"
+     ],
+     [
+      "買",
+      "maai5"
+     ],
+     [
+      "件",
+      "gin6"
+     ],
+     [
+      "衫",
+      "saam1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "靚",
+   "jp": "leng3",
+   "en": "pretty, good-looking; nice, good quality",
+   "fr": "joli, beau ; de bonne qualité",
+   "note": "For people, clothes, views, even fish at the market. 靚仔 (leng3 zai2) handsome guy, 靚女 (leng3 neoi2) pretty girl: stallholders call every customer that!",
+   "ex": {
+    "en": "This top is really pretty!",
+    "parts": [
+     [
+      "呢",
+      "ni1"
+     ],
+     [
+      "件",
+      "gin6"
+     ],
+     [
+      "衫",
+      "saam1"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "靚",
+      "leng3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "試",
+   "jp": "si3",
+   "en": "to try (on)",
+   "fr": "essayer",
+   "note": "試下 (si3 haa5) = have a try: 下 (haa5) after a verb means 'a bit, briefly' (睇下 (tai2 haa5) have a look). Fitting room = 試身室 (si3 san1 sat1).",
+   "ex": {
+    "en": "Go on, try it!",
+    "parts": [
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "試",
+      "si3"
+     ],
+     [
+      "下",
+      "haa5"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "大",
+   "jp": "daai6",
+   "en": "big",
+   "fr": "grand",
+   "ex": {
+    "en": "These shoes are too big.",
+    "parts": [
+     [
+      "呢對",
+      "ni1 deoi3"
+     ],
+     [
+      "鞋",
+      "haai4"
+     ],
+     [
+      "太",
+      "taai3"
+     ],
+     [
+      "大",
+      "daai6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "細",
+   "jp": "sai3",
+   "en": "small",
+   "fr": "petit",
+   "note": "Sizes: 細碼 (sai3 maa5) S, 中碼 (zung1 maa5) M, 大碼 (daai6 maa5) L.",
+   "ex": {
+    "en": "This top is a bit small.",
+    "parts": [
+     [
+      "呢",
+      "ni1"
+     ],
+     [
+      "件",
+      "gin6"
+     ],
+     [
+      "衫",
+      "saam1"
+     ],
+     [
+      "有啲",
+      "jau5 di1"
+     ],
+     [
+      "細",
+      "sai3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "褲",
+   "jp": "fu3",
+   "en": "trousers / pants",
+   "fr": "pantalon",
+   "note": "Classifier 條 (tiu4): 一條褲 (jat1 tiu4 fu3). Jeans = 牛仔褲 (ngau4 zai2 fu3).",
+   "ex": {
+    "en": "These trousers are really nice.",
+    "parts": [
+     [
+      "呢條",
+      "ni1 tiu4"
+     ],
+     [
+      "褲",
+      "fu3"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "靚",
+      "leng3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "鞋",
+   "jp": "haai4",
+   "en": "shoes",
+   "fr": "chaussures",
+   "note": "Classifier 對 (deoi3, a pair). Trainers = 波鞋 (bo1 haai4).",
+   "ex": {
+    "en": "I like that pair of shoes.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "鍾意",
+      "zung1 ji3"
+     ],
+     [
+      "嗰對",
+      "go2 deoi3"
+     ],
+     [
+      "鞋",
+      "haai4"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "顏色",
+   "jp": "ngaan4 sik1",
+   "en": "colour",
+   "fr": "couleur",
+   "ex": {
+    "en": "Do you have other colours?",
+    "parts": [
+     [
+      "有冇",
+      "jau5 mou5"
+     ],
+     [
+      "其他",
+      "kei4 taa1"
+     ],
+     [
+      "顏色",
+      "ngaan4 sik1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "紅色",
+   "jp": "hung4 sik1",
+   "en": "red",
+   "fr": "rouge",
+   "note": "Red is the lucky colour, especially at Chinese New Year. Others: 黑色 (hak1 sik1) black, 白色 (baak6 sik1) white, 藍色 (laam4 sik1) blue.",
+   "ex": {
+    "en": "My mum likes red.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "媽媽",
+      "maa4 maa1"
+     ],
+     [
+      "鍾意",
+      "zung1 ji3"
+     ],
+     [
+      "紅色",
+      "hung4 sik1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "平啲",
+   "jp": "peng4 di1",
+   "en": "cheaper; a bit cheaper",
+   "fr": "moins cher",
+   "note": "平啲啦 (peng4 di1 laa1)！ = come on, a bit cheaper! The classic market-stall line.",
+   "ex": {
+    "en": "Can you make it cheaper?",
+    "parts": [
+     [
+      "平啲",
+      "peng4 di1"
+     ],
+     [
+      "得唔得",
+      "dak1 m4 dak1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "多啲",
+   "jp": "do1 di1",
+   "en": "more; a bit more",
+   "fr": "plus ; un peu plus",
+   "note": "After a verb: 食多啲 (sik6 do1 di1) eat more, 買多啲 (maai5 do1 di1) buy more. Opposite: 少啲 (siu2 di1) less.",
+   "ex": {
+    "en": "I want to buy more clothes.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "想",
+      "soeng2"
+     ],
+     [
+      "買",
+      "maai5"
+     ],
+     [
+      "多啲",
+      "do1 di1"
+     ],
+     [
+      "衫",
+      "saam1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "減價",
+   "jp": "gaam2 gaa3",
+   "en": "on sale; to reduce the price",
+   "fr": "en solde ; baisser le prix",
+   "ex": {
+    "en": "These clothes are on sale, really cheap!",
+    "parts": [
+     [
+      "呢啲",
+      "ni1 di1"
+     ],
+     [
+      "衫",
+      "saam1"
+     ],
+     [
+      "減價",
+      "gaam2 gaa3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "平",
+      "peng4"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "畀錢",
+   "jp": "bei2 cin2",
+   "en": "to pay",
+   "fr": "payer",
+   "note": "Also written 俾錢 (bei2 cin2). 'I'll pay' = 我畀 (ngo5 bei2).",
+   "ex": {
+    "en": "Where do I pay?",
+    "parts": [
+     [
+      "喺",
+      "hai2"
+     ],
+     [
+      "邊度",
+      "bin1 dou6"
+     ],
+     [
+      "畀錢",
+      "bei2 cin2"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "現金",
+   "jp": "jin6 gam1",
+   "en": "cash",
+   "fr": "espèces",
+   "note": "Many market stalls take cash only: 淨係收現金 (zing6 hai6 sau1 jin6 gam1).",
+   "ex": {
+    "en": "I don't have any cash.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "冇",
+      "mou5"
+     ],
+     [
+      "現金",
+      "jin6 gam1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "碌卡",
+   "jp": "luk1 kaat1",
+   "en": "to pay by card (swipe a card)",
+   "fr": "payer par carte",
+   "note": "碌 (luk1) = to swipe; 卡 (kaat1) comes from English 'card'. Contactless: 拍卡 (paak3 kaat1) = tap your card.",
+   "ex": {
+    "en": "I'd like to pay by card.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "想",
+      "soeng2"
+     ],
+     [
+      "碌卡",
+      "luk1 kaat1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "八達通",
+   "jp": "baat3 daat6 tung1",
+   "en": "Octopus card",
+   "fr": "carte Octopus",
+   "note": "HK's stored-value card for the MTR, buses, shops. Top up = 增值 (zang1 zik6).",
+   "ex": {
+    "en": "Do you take Octopus?",
+    "parts": [
+     [
+      "收唔收",
+      "sau1 m4 sau1"
+     ],
+     [
+      "八達通",
+      "baat3 daat6 tung1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "銀包",
+   "jp": "ngan4 baau1",
+   "en": "wallet, purse",
+   "fr": "porte-monnaie, portefeuille",
+   "note": "Literally 'money bag'. A handbag is 手袋 (sau2 doi2).",
+   "ex": {
+    "en": "Where's my wallet?",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "個",
+      "go3"
+     ],
+     [
+      "銀包",
+      "ngan4 baau1"
+     ],
+     [
+      "喺",
+      "hai2"
+     ],
+     [
+      "邊度",
+      "bin1 dou6"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "淨係",
+   "jp": "zing6 hai6",
+   "en": "only, just",
+   "fr": "seulement, juste",
+   "note": "Goes before the verb: 淨係睇下 (zing6 hai6 tai2 haa5) just looking. 淨係有 (zing6 hai6 jau5) + amount = only have …",
+   "ex": {
+    "en": "Just looking, thanks.",
+    "parts": [
+     [
+      "淨係",
+      "zing6 hai6"
+     ],
+     [
+      "睇",
+      "tai2"
+     ],
+     [
+      "下",
+      "haa5"
+     ],
+     [
+      "，"
+     ],
+     [
+      "唔該",
+      "m4 goi1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "街市",
+   "jp": "gaai1 si5",
+   "en": "wet market",
+   "fr": "marché (alimentaire)",
+   "note": "Wet market: fresh meat, fish and vegetables. A supermarket is 超市 (ciu1 si5). Grocery shopping for dinner = 買餸 (maai5 sung3).",
+   "ex": {
+    "en": "The vegetables at the market are very fresh.",
+    "parts": [
+     [
+      "街市",
+      "gaai1 si5"
+     ],
+     [
+      "啲",
+      "di1"
+     ],
+     [
+      "菜",
+      "coi3"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "新鮮",
+      "san1 sin1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "夠",
+   "jp": "gau3",
+   "en": "enough",
+   "fr": "assez",
+   "note": "唔夠錢 (m4 gau3 cin2) = not enough money. 夠唔夠 (gau3 m4 gau3) = is it enough?",
+   "ex": {
+    "en": "I don't have enough money.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "唔夠",
+      "m4 gau3"
+     ],
+     [
+      "錢",
+      "cin2"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "可唔可以",
+   "jp": "ho2 m4 ho2 ji5",
+   "en": "can I…? could you…?",
+   "fr": "est-ce que je peux… ? pourriez-vous… ?",
+   "note": "The yes/no form of 可以 (ho2 ji5). The polite way to ask for permission or a favour. Answer 可以 (ho2 ji5) or 唔可以 (m4 ho2 ji5).",
+   "ex": {
+    "en": "Can I try it on?",
+    "parts": [
+     [
+      "可唔可以",
+      "ho2 m4 ho2 ji5"
+     ],
+     [
+      "試",
+      "si3"
+     ],
+     [
+      "下",
+      "haa5"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "幫",
+   "jp": "bong1",
+   "en": "to help; to do something for someone",
+   "fr": "aider ; faire qqch pour qqn",
+   "note": "幫 (bong1) + person + verb = do it for them: 幫我睇下 (bong1 ngo5 tai2 haa5) have a look for me. 'Can you help me?' = 可唔可以幫我啊 (ho2 m4 ho2 ji5 bong1 ngo5 aa3)？",
+   "ex": {
+    "en": "Excuse me, could you help me?",
+    "parts": [
+     [
+      "唔該",
+      "m4 goi1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "可唔可以",
+      "ho2 m4 ho2 ji5"
+     ],
+     [
+      "幫",
+      "bong1"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "救命",
+   "jp": "gau3 meng6",
+   "en": "help! (emergency)",
+   "fr": "au secours !",
+   "note": "Only for real emergencies (literally 'save life'). To ask a favour, use 可唔可以幫我啊 (ho2 m4 ho2 ji5 bong1 ngo5 aa3)？ instead. Emergency number in Hong Kong: 999.",
+   "ex": {
+    "en": "Help!",
+    "parts": [
+     [
+      "救命",
+      "gau3 meng6"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
   }
+ ],
+ "sentences": [
+  {
+   "en": "Boss, how much is this top? (老闆 (lou5 baan2) is how you address any shopkeeper)",
+   "parts": [
+    [
+     "老闆",
+     "lou5 baan2"
+    ],
+    [
+     "，"
+    ],
+    [
+     "呢",
+     "ni1"
+    ],
+    [
+     "件",
+     "gin6"
+    ],
+    [
+     "衫",
+     "saam1"
+    ],
+    [
+     "幾多錢",
+     "gei2 do1 cin2"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  },
+  {
+   "en": "Do you have a bigger one?",
+   "parts": [
+    [
+     "有冇",
+     "jau5 mou5"
+    ],
+    [
+     "大啲",
+     "daai6 di1"
+    ],
+    [
+     "嘅",
+     "ge3"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  },
+  {
+   "en": "This one is too expensive, that one is cheaper.",
+   "parts": [
+    [
+     "呢個",
+     "ni1 go3"
+    ],
+    [
+     "太",
+     "taai3"
+    ],
+    [
+     "貴",
+     "gwai3"
+    ],
+    [
+     "，"
+    ],
+    [
+     "嗰個",
+     "go2 go3"
+    ],
+    [
+     "平啲",
+     "peng4 di1"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Do you have these trousers in red?",
+   "parts": [
+    [
+     "呢條",
+     "ni1 tiu4"
+    ],
+    [
+     "褲",
+     "fu3"
+    ],
+    [
+     "有冇",
+     "jau5 mou5"
+    ],
+    [
+     "紅色",
+     "hung4 sik1"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  },
+  {
+   "en": "I'll take two of these.",
+   "parts": [
+    [
+     "呢個",
+     "ni1 go3"
+    ],
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "要",
+     "jiu3"
+    ],
+    [
+     "兩",
+     "loeng5"
+    ],
+    [
+     "個",
+     "go3"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Is a hundred dollars enough?",
+   "parts": [
+    [
+     "一百",
+     "jat1 baak3"
+    ],
+    [
+     "蚊",
+     "man1"
+    ],
+    [
+     "夠唔夠",
+     "gau3 m4 gau3"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  },
+  {
+   "en": "I don't have cash, can I pay with Octopus?",
+   "parts": [
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "冇",
+     "mou5"
+    ],
+    [
+     "現金",
+     "jin6 gam1"
+    ],
+    [
+     "，"
+    ],
+    [
+     "可唔可以",
+     "ho2 m4 ho2 ji5"
+    ],
+    [
+     "用",
+     "jung6"
+    ],
+    [
+     "八達通",
+     "baat3 daat6 tung1"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  },
+  {
+   "en": "This red one is really pretty!",
+   "parts": [
+    [
+     "呢",
+     "ni1"
+    ],
+    [
+     "件",
+     "gin6"
+    ],
+    [
+     "紅色",
+     "hung4 sik1"
+    ],
+    [
+     "嘅",
+     "ge3"
+    ],
+    [
+     "好",
+     "hou2"
+    ],
+    [
+     "靚",
+     "leng3"
+    ],
+    [
+     "！"
+    ]
+   ]
+  },
+  {
+   "en": "There's a big sale here today.",
+   "parts": [
+    [
+     "呢度",
+     "ni1 dou6"
+    ],
+    [
+     "今日",
+     "gam1 jat6"
+    ],
+    [
+     "大",
+     "daai6"
+    ],
+    [
+     "減價",
+     "gaam2 gaa3"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "My grandma loves going to the wet market to buy vegetables.",
+   "parts": [
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "嫲嫲",
+     "maa4 maa4"
+    ],
+    [
+     "好",
+     "hou2"
+    ],
+    [
+     "鍾意",
+     "zung1 ji3"
+    ],
+    [
+     "去",
+     "heoi3"
+    ],
+    [
+     "街市",
+     "gaai1 si5"
+    ],
+    [
+     "買",
+     "maai5"
+    ],
+    [
+     "菜",
+     "coi3"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "I don't need a bag, thanks.",
+   "parts": [
+    [
+     "唔該",
+     "m4 goi1"
+    ],
+    [
+     "，"
+    ],
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "唔要",
+     "m4 jiu3"
+    ],
+    [
+     "膠袋",
+     "gaau1 doi2"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "These shoes are too small, do you have a bigger size?",
+   "parts": [
+    [
+     "呢對",
+     "ni1 deoi3"
+    ],
+    [
+     "鞋",
+     "haai4"
+    ],
+    [
+     "太",
+     "taai3"
+    ],
+    [
+     "細",
+     "sai3"
+    ],
+    [
+     "喇",
+     "laa3"
+    ],
+    [
+     "，"
+    ],
+    [
+     "有冇",
+     "jau5 mou5"
+    ],
+    [
+     "大啲",
+     "daai6 di1"
+    ],
+    [
+     "嘅",
+     "ge3"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  },
+  {
+   "en": "Who's paying? — I'll pay!",
+   "parts": [
+    [
+     "邊個",
+     "bin1 go3"
+    ],
+    [
+     "畀錢",
+     "bei2 cin2"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ],
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "畀",
+     "bei2"
+    ],
+    [
+     "！"
+    ]
+   ]
+  },
+  {
+   "en": "I only have a hundred dollars.",
+   "parts": [
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "淨係",
+     "zing6 hai6"
+    ],
+    [
+     "有",
+     "jau5"
+    ],
+    [
+     "一百",
+     "jat1 baak3"
+    ],
+    [
+     "蚊",
+     "man1"
+    ],
+    [
+     "。"
+    ]
+   ]
+  }
+ ],
+ "grammar": [
+  {
+   "title": "呢 (ni1) / 嗰 (go2) + classifier + noun",
+   "explain": "'This' and 'that' need a classifier between them and the noun: 呢件衫 (ni1 gin6 saam1) this top, 嗰條褲 (go2 tiu4 fu3) those trousers, 呢對鞋 (ni1 deoi3 haai4) this pair of shoes. For plurals use 啲 (di1): 呢啲衫 (ni1 di1 saam1) these clothes.",
+   "after": "件",
+   "examples": [
+    {
+     "en": "This top is very pretty.",
+     "parts": [
+      [
+       "呢",
+       "ni1"
+      ],
+      [
+       "件",
+       "gin6"
+      ],
+      [
+       "衫",
+       "saam1"
+      ],
+      [
+       "好",
+       "hou2"
+      ],
+      [
+       "靚",
+       "leng3"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "That pair of shoes is cheap.",
+     "parts": [
+      [
+       "嗰對",
+       "go2 deoi3"
+      ],
+      [
+       "鞋",
+       "haai4"
+      ],
+      [
+       "好",
+       "hou2"
+      ],
+      [
+       "平",
+       "peng4"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "How much are these clothes?",
+     "parts": [
+      [
+       "呢啲",
+       "ni1 di1"
+      ],
+      [
+       "衫",
+       "saam1"
+      ],
+      [
+       "幾多錢",
+       "gei2 do1 cin2"
+      ],
+      [
+       "啊",
+       "aa3"
+      ],
+      [
+       "？"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Adjective + 啲 (di1) = a bit more",
+   "explain": "Put 啲 (di1) after an adjective to mean '-er / a bit more': 平啲 (peng4 di1) cheaper, 大啲 (daai6 di1) bigger, 細啲 (sai3 di1) smaller. After a verb, 多啲 (do1 di1) = more: 買多啲 (maai5 do1 di1) buy more.",
+   "after": "多啲",
+   "examples": [
+    {
+     "en": "Do you have a smaller one?",
+     "parts": [
+      [
+       "有冇",
+       "jau5 mou5"
+      ],
+      [
+       "細啲",
+       "sai3 di1"
+      ],
+      [
+       "嘅",
+       "ge3"
+      ],
+      [
+       "啊",
+       "aa3"
+      ],
+      [
+       "？"
+      ]
+     ]
+    },
+    {
+     "en": "Cheaper, come on!",
+     "parts": [
+      [
+       "平啲",
+       "peng4 di1"
+      ],
+      [
+       "啦",
+       "laa1"
+      ],
+      [
+       "！"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "淨係 (zing6 hai6) = only",
+   "explain": "淨係 (zing6 hai6) goes before the verb, never at the end: 我淨係有現金 (ngo5 zing6 hai6 jau5 jin6 gam1) = I only have cash.",
+   "after": "淨係",
+   "examples": [
+    {
+     "en": "I only have cash.",
+     "parts": [
+      [
+       "我",
+       "ngo5"
+      ],
+      [
+       "淨係",
+       "zing6 hai6"
+      ],
+      [
+       "有",
+       "jau5"
+      ],
+      [
+       "現金",
+       "jin6 gam1"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "I only want this one.",
+     "parts": [
+      [
+       "我",
+       "ngo5"
+      ],
+      [
+       "淨係",
+       "zing6 hai6"
+      ],
+      [
+       "要",
+       "jiu3"
+      ],
+      [
+       "呢個",
+       "ni1 go3"
+      ],
+      [
+       "。"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Asking for help: 可唔可以 (ho2 m4 ho2 ji5) + 幫 (bong1)",
+   "explain": "可唔可以 (ho2 m4 ho2 ji5) + verb asks politely: 'can I…?' or 'could you…?'. Add 幫我 (bong1 ngo5) for 'for me'. Start with 唔該 (m4 goi1) to get someone's attention.",
+   "after": "幫",
+   "examples": [
+    {
+     "en": "Can I pay by card?",
+     "parts": [
+      [
+       "可唔可以",
+       "ho2 m4 ho2 ji5"
+      ],
+      [
+       "碌卡",
+       "luk1 kaat1"
+      ],
+      [
+       "啊",
+       "aa3"
+      ],
+      [
+       "？"
+      ]
+     ]
+    },
+    {
+     "en": "Excuse me, could you have a look for me?",
+     "parts": [
+      [
+       "唔該",
+       "m4 goi1"
+      ],
+      [
+       "，"
+      ],
+      [
+       "可唔可以",
+       "ho2 m4 ho2 ji5"
+      ],
+      [
+       "幫",
+       "bong1"
+      ],
+      [
+       "我",
+       "ngo5"
+      ],
+      [
+       "睇",
+       "tai2"
+      ],
+      [
+       "下",
+       "haa5"
+      ],
+      [
+       "？"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "dialogue": {
+  "title": "Bargaining at the Ladies' Market",
+  "gloss": [
+   [
+    "得",
+    "dak1",
+    "OK, can do"
+   ],
+   [
+    "手袋",
+    "sau2 doi2",
+    "handbag"
+   ],
+   [
+    "收",
+    "sau1",
+    "to accept (payment)"
+   ],
+   [
+    "弊",
+    "bai6",
+    "oh no"
+   ]
+  ],
+  "lines": [
+   {
+    "spk": "A",
+    "en": "Boss, how much is this bag?",
+    "parts": [
+     [
+      "老闆",
+      "lou5 baan2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "呢個",
+      "ni1 go3"
+     ],
+     [
+      "手袋",
+      "sau2 doi2"
+     ],
+     [
+      "幾多錢",
+      "gei2 do1 cin2"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Three hundred dollars. It's really nice!",
+    "parts": [
+     [
+      "三百",
+      "saam1 baak3"
+     ],
+     [
+      "蚊",
+      "man1"
+     ],
+     [
+      "。"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "靚",
+      "leng3"
+     ],
+     [
+      "㗎",
+      "gaa3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "Wow, so expensive! Can you go cheaper?",
+    "parts": [
+     [
+      "嘩",
+      "waa1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "咁",
+      "gam3"
+     ],
+     [
+      "貴",
+      "gwai3"
+     ],
+     [
+      "！"
+     ],
+     [
+      "平啲",
+      "peng4 di1"
+     ],
+     [
+      "得唔得",
+      "dak1 m4 dak1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "OK, two hundred and eighty.",
+    "parts": [
+     [
+      "好啦",
+      "hou2 laa1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "兩百八",
+      "loeng5 baak3 baat3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "Two hundred, come on. OK?",
+    "parts": [
+     [
+      "兩百",
+      "loeng5 baak3"
+     ],
+     [
+      "蚊",
+      "man1"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "好唔好",
+      "hou2 m4 hou2"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "No way… two fifty, that's already really cheap.",
+    "parts": [
+     [
+      "唔得",
+      "m4 dak1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "兩百五",
+      "loeng5 baak3 ng5"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "已經",
+      "ji5 ging1"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "平",
+      "peng4"
+     ],
+     [
+      "喇",
+      "laa3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "Hmm… do you have it in red?",
+    "parts": [
+     [
+      "噉",
+      "gam2"
+     ],
+     [
+      "有冇",
+      "jau5 mou5"
+     ],
+     [
+      "紅色",
+      "hung4 sik1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Yes! Here, have a look.",
+    "parts": [
+     [
+      "有",
+      "jau5"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "！"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "睇",
+      "tai2"
+     ],
+     [
+      "下",
+      "haa5"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "OK. Do you take Octopus?",
+    "parts": [
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "。"
+     ],
+     [
+      "收唔收",
+      "sau1 m4 sau1"
+     ],
+     [
+      "八達通",
+      "baat3 daat6 tung1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "No, cash only!",
+    "parts": [
+     [
+      "唔收",
+      "m4 sau1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "淨係",
+      "zing6 hai6"
+     ],
+     [
+      "收",
+      "sau1"
+     ],
+     [
+      "現金",
+      "jin6 gam1"
+     ],
+     [
+      "！"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "Oh no, I only have two hundred dollars in my wallet…",
+    "parts": [
+     [
+      "弊",
+      "bai6"
+     ],
+     [
+      "，"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "個",
+      "go3"
+     ],
+     [
+      "銀包",
+      "ngan4 baau1"
+     ],
+     [
+      "淨係",
+      "zing6 hai6"
+     ],
+     [
+      "有",
+      "jau5"
+     ],
+     [
+      "兩百",
+      "loeng5 baak3"
+     ],
+     [
+      "蚊",
+      "man1"
+     ],
+     [
+      "…"
+     ],
+     [
+      "…"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Fine, fine, two hundred. It's yours!",
+    "parts": [
+     [
+      "好啦",
+      "hou2 laa1"
+     ],
+     [
+      "好啦",
+      "hou2 laa1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "兩百",
+      "loeng5 baak3"
+     ],
+     [
+      "蚊",
+      "man1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "畀",
+      "bei2"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "q": "What was the first price?",
+    "options": [
+     "$300",
+     "$280",
+     "$250",
+     "$200"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Which colour does A ask for?",
+    "options": [
+     "Red",
+     "Black",
+     "White",
+     "Blue"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How does A have to pay?",
+    "options": [
+     "In cash",
+     "With Octopus",
+     "By card",
+     "A doesn't buy it"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What price do they finally agree on, and why?",
+    "options": [
+     "$200, because that's all A has in the wallet",
+     "$250, the lowest price B will accept",
+     "$280, because A pays by card",
+     "$300, because A wants the red one"
+    ],
+    "answer": 0
+   }
+  ]
+ }
 }

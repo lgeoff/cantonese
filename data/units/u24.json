@@ -1,78 +1,2783 @@
 {
-  "id": "u24",
-  "level": 4,
-  "title": "News & Society",
-  "emoji": "📰",
-  "desc": "Talk about everyday news: rents and salaries, traffic, weather warnings and the environment",
-  "words": [
-    {"hk": "新聞", "jp": "san1 man4", "en": "news", "fr": "actualités ; informations", "note": "睇新聞 = watch/read the news. Often san1 man2 in speech.", "ex": {"en": "I usually read the news on my phone on the MTR.", "parts": [["我", "ngo5"], ["通常", "tung1 soeng4"], ["喺", "hai2"], ["地鐵", "dei6 tit3"], ["用", "jung6"], ["手機", "sau2 gei1"], ["睇", "tai2"], ["新聞", "san1 man4"], ["。"]]}},
-    {"hk": "天氣報告", "jp": "tin1 hei3 bou3 gou3", "en": "weather forecast (report)", "fr": "bulletin météo", "note": "Hongkongers check it for rain and typhoon warnings.", "ex": {"en": "The weather forecast says there'll be showers tomorrow afternoon.", "parts": [["天氣報告", "tin1 hei3 bou3 gou3"], ["話", "waa6"], ["聽日", "ting1 jat6"], ["晏晝", "aan3 zau3"], ["有", "jau5"], ["驟雨", "zaau6 jyu5"], ["。"]]}},
-    {"hk": "天文台", "jp": "tin1 man4 toi4", "en": "Hong Kong Observatory", "fr": "l'Observatoire (météo de HK)", "note": "The official weather service; it issues typhoon signals and rain warnings.", "ex": {"en": "The Observatory has issued a very hot weather warning.", "parts": [["天文台", "tin1 man4 toi4"], ["發出", "faat3 ceot1"], ["咗", "zo2"], ["酷熱", "huk6 jit6"], ["天氣", "tin1 hei3"], ["警告", "ging2 gou3"], ["。"]]}},
-    {"hk": "政府", "jp": "zing3 fu2", "en": "government", "fr": "gouvernement", "ex": {"en": "The government has launched a new recycling scheme.", "parts": [["政府", "zing3 fu2"], ["推出", "teoi1 ceot1"], ["咗", "zo2"], ["新", "san1"], ["嘅", "ge3"], ["回收", "wui4 sau1"], ["計劃", "gai3 waak6"], ["。"]]}},
-    {"hk": "經濟", "jp": "ging1 zai3", "en": "economy; economic", "fr": "économie", "note": "Also 'economical'.", "ex": {"en": "The economy isn't great lately, and many shops have closed.", "parts": [["最近", "zeoi3 gan6"], ["經濟", "ging1 zai3"], ["唔係", "m4 hai6"], ["幾", "gei2"], ["好", "hou2"], ["，"], ["好多", "hou2 do1"], ["舖頭", "pou3 tau2"], ["執咗", "zap1 zo2"], ["笠", "lap1"], ["。"]]}},
-    {"hk": "社會", "jp": "se5 wui2", "en": "society", "fr": "société", "ex": {"en": "Population ageing is a big problem for society.", "parts": [["人口老化", "jan4 hau2 lou5 faa3"], ["係", "hai6"], ["社會", "se5 wui2"], ["一個", "jat1 go3"], ["好", "hou2"], ["大", "daai6"], ["嘅", "ge3"], ["問題", "man6 tai4"], ["。"]]}},
-    {"hk": "市民", "jp": "si5 man4", "en": "citizens; members of the public", "fr": "les citoyens ; le public", "note": "The usual word in news reports for 'ordinary people'.", "ex": {"en": "Many members of the public think rents are too high.", "parts": [["好多", "hou2 do1"], ["市民", "si5 man4"], ["覺得", "gok3 dak1"], ["租金", "zou1 gam1"], ["太", "taai3"], ["貴", "gwai3"], ["。"]]}},
-    {"hk": "交通", "jp": "gaau1 tung1", "en": "traffic; transport", "fr": "circulation ; transports", "ex": {"en": "Hong Kong's public transport is very convenient.", "parts": [["香港", "hoeng1 gong2"], ["嘅", "ge3"], ["公共", "gung1 gung6"], ["交通", "gaau1 tung1"], ["好", "hou2"], ["方便", "fong1 bin6"], ["。"]]}},
-    {"hk": "塞車", "jp": "sak1 ce1", "en": "traffic jam; to be jammed", "fr": "embouteillage", "note": "塞到一條龍 = jammed solid.", "ex": {"en": "There was an accident in the tunnel, and now it's totally jammed.", "parts": [["隧道", "seoi6 dou6"], ["有", "jau5"], ["交通", "gaau1 tung1"], ["意外", "ji3 ngoi6"], ["，"], ["而家", "ji4 gaa1"], ["塞車", "sak1 ce1"], ["塞得", "sak1 dak1"], ["好", "hou2"], ["犀利", "sai1 lei6"], ["。"]]}},
-    {"hk": "樓價", "jp": "lau4 gaa3", "en": "property prices", "fr": "prix de l'immobilier", "ex": {"en": "Property prices are so high, young people can't afford a flat.", "parts": [["樓價", "lau4 gaa3"], ["咁", "gam3"], ["高", "gou1"], ["，"], ["後生仔", "hau6 saang1 zai2"], ["根本", "gan1 bun2"], ["買唔起", "maai5 m4 hei2"], ["樓", "lau2"], ["。"]]}},
-    {"hk": "租金", "jp": "zou1 gam1", "en": "rent", "fr": "loyer", "note": "交租 = pay rent; 加租 = raise the rent.", "ex": {"en": "Rent takes up almost half of my salary.", "parts": [["租金", "zou1 gam1"], ["差唔多", "caa1 m4 do1"], ["用咗", "jung6 zo2"], ["我", "ngo5"], ["一半", "jat1 bun3"], ["人工", "jan4 gung1"], ["。"]]}},
-    {"hk": "首期", "jp": "sau2 kei4", "en": "down payment", "fr": "apport (immobilier)", "note": "The biggest hurdle to 買樓.", "ex": {"en": "We've been saving for five years and still don't have enough for a down payment.", "parts": [["我哋", "ngo5 dei6"], ["儲咗", "cyu5 zo2"], ["五年", "ng5 nin4"], ["錢", "cin2"], ["，"], ["都", "dou1"], ["未", "mei6"], ["夠", "gau3"], ["首期", "sau2 kei4"], ["。"]]}},
-    {"hk": "人工", "jp": "jan4 gung1", "en": "salary; wages", "fr": "salaire", "note": "Colloquial. 加人工 = pay rise. Formal: 薪金.", "ex": {"en": "The company is giving everyone a 3% pay rise this year.", "parts": [["公司", "gung1 si1"], ["今年", "gam1 nin4"], ["畀", "bei2"], ["每個人", "mui5 go3 jan4"], ["加", "gaa1"], ["百分之三", "baak3 fan6 zi1 saam1"], ["人工", "jan4 gung1"], ["。"]]}},
-    {"hk": "退休", "jp": "teoi3 jau1", "en": "to retire; retirement", "fr": "prendre sa retraite", "ex": {"en": "After my dad retires, he wants to move back to his hometown.", "parts": [["我", "ngo5"], ["爸爸", "baa4 baa1"], ["退休", "teoi3 jau1"], ["之後", "zi1 hau6"], ["想", "soeng2"], ["搬", "bun1"], ["返", "faan1"], ["鄉下", "hoeng1 haa2"], ["住", "zyu6"], ["。"]]}},
-    {"hk": "壓力", "jp": "aat3 lik6", "en": "pressure; stress", "fr": "pression ; stress", "ex": {"en": "Hong Kong people are under a lot of pressure at work.", "parts": [["香港人", "hoeng1 gong2 jan4"], ["返工", "faan1 gung1"], ["嘅", "ge3"], ["壓力", "aat3 lik6"], ["好", "hou2"], ["大", "daai6"], ["。"]]}},
-    {"hk": "環境", "jp": "waan4 ging2", "en": "environment; surroundings", "fr": "environnement", "ex": {"en": "We should all do our bit to protect the environment.", "parts": [["保護", "bou2 wu6"], ["環境", "waan4 ging2"], ["，"], ["人人", "jan4 jan4"], ["有", "jau5"], ["責", "zaak3"], ["。"]]}},
-    {"hk": "污染", "jp": "wu1 jim5", "en": "pollution; to pollute", "fr": "pollution", "ex": {"en": "Air pollution has been quite bad these past few days.", "parts": [["呢幾日", "ni1 gei2 jat6"], ["空氣", "hung1 hei3"], ["污染", "wu1 jim5"], ["幾", "gei2"], ["嚴重", "jim4 zung6"], ["。"]]}},
-    {"hk": "環保", "jp": "waan4 bou2", "en": "eco-friendly; environmental protection", "fr": "écologique", "note": "Short for 環境保護. 好環保 = very green.", "ex": {"en": "Bringing your own water bottle when you go out is more eco-friendly.", "parts": [["出街", "ceot1 gaai1"], ["自己", "zi6 gei2"], ["帶", "daai3"], ["水樽", "seoi2 zeon1"], ["比較", "bei2 gaau3"], ["環保", "waan4 bou2"], ["。"]]}},
-    {"hk": "回收", "jp": "wui4 sau1", "en": "to recycle; recycling", "fr": "recycler", "ex": {"en": "Remember to put plastic bottles in the recycling bin.", "parts": [["膠樽", "gaau1 zeon1"], ["記得", "gei3 dak1"], ["擺", "baai2"], ["入", "jap6"], ["回收箱", "wui4 sau1 soeng1"], ["。"]]}},
-    {"hk": "影響", "jp": "jing2 hoeng2", "en": "to affect; impact", "fr": "influencer ; impact", "ex": {"en": "Typhoon signal number 8 is up, which affects many flights.", "parts": [["掛", "gwaa3"], ["八號風球", "baat3 hou6 fung1 kau4"], ["，"], ["影響", "jing2 hoeng2"], ["好多", "hou2 do1"], ["航班", "hong4 baan1"], ["。"]]}},
-    {"hk": "增加", "jp": "zang1 gaa1", "en": "to increase", "fr": "augmenter", "ex": {"en": "The number of tourists has increased a lot this year.", "parts": [["今年", "gam1 nin4"], ["遊客", "jau4 haak3"], ["人數", "jan4 sou3"], ["增加", "zang1 gaa1"], ["咗", "zo2"], ["好多", "hou2 do1"], ["。"]]}},
-    {"hk": "減少", "jp": "gaam2 siu2", "en": "to reduce; decrease", "fr": "diminuer ; réduire", "ex": {"en": "We should cut down on plastic bags.", "parts": [["我哋", "ngo5 dei6"], ["應該", "jing1 goi1"], ["減少", "gaam2 siu2"], ["用", "jung6"], ["膠袋", "gaau1 doi2"], ["。"]]}},
-    {"hk": "解決", "jp": "gaai2 kyut3", "en": "to solve", "fr": "résoudre", "ex": {"en": "This problem can't be solved in just a day or two.", "parts": [["呢個", "ni1 go3"], ["問題", "man6 tai4"], ["唔係", "m4 hai6"], ["一兩日", "jat1 loeng5 jat6"], ["就", "zau6"], ["可以", "ho2 ji5"], ["解決", "gaai2 kyut3"], ["嘅", "ge3"], ["。"]]}},
-    {"hk": "報告", "jp": "bou3 gou3", "en": "report", "fr": "rapport", "ex": {"en": "According to the latest report, rents went up again last month.", "parts": [["根據", "gan1 geoi3"], ["最新", "zeoi3 san1"], ["嘅", "ge3"], ["報告", "bou3 gou3"], ["，"], ["上個月", "soeng6 go3 jyut6"], ["租金", "zou1 gam1"], ["又", "jau6"], ["升咗", "sing1 zo2"], ["。"]]}},
-    {"hk": "調查", "jp": "diu6 caa4", "en": "survey; to investigate", "fr": "enquête ; sondage", "note": "Also tiu4 caa4.", "ex": {"en": "A survey found that young people sleep less and less.", "parts": [["有", "jau5"], ["調查", "diu6 caa4"], ["發現", "faat3 jin6"], ["，"], ["年輕人", "nin4 hing1 jan4"], ["瞓覺", "fan3 gaau3"], ["嘅", "ge3"], ["時間", "si4 gaan3"], ["越嚟越", "jyut6 lai4 jyut6"], ["少", "siu2"], ["。"]]}}
-  ],
-  "sentences": [
-    {"en": "Did you see today's news? Rents have gone up again.", "parts": [["你", "nei5"], ["睇咗", "tai2 zo2"], ["今日", "gam1 jat6"], ["嘅", "ge3"], ["新聞", "san1 man4"], ["未", "mei6"], ["啊", "aa3"], ["？"], ["租金", "zou1 gam1"], ["又", "jau6"], ["升咗", "sing1 zo2"], ["喇", "laa3"], ["。"]]},
-    {"en": "The Observatory says there's a typhoon coming this weekend, so better not go out to sea.", "parts": [["天文台", "tin1 man4 toi4"], ["話", "waa6"], ["今個週末", "gam1 go3 zau1 mut6"], ["有", "jau5"], ["颱風", "toi4 fung1"], ["，"], ["最好", "zeoi3 hou2"], ["唔好", "m4 hou2"], ["出海", "ceot1 hoi2"], ["。"]]},
-    {"en": "The traffic is jammed solid at rush hour — the bus barely moved for half an hour.", "parts": [["繁忙時間", "faan4 mong4 si4 gaan3"], ["塞車", "sak1 ce1"], ["塞到", "sak1 dou3"], ["死", "sei2"], ["，"], ["架", "gaa3"], ["巴士", "baa1 si2"], ["半個鐘", "bun3 go3 zung1"], ["都", "dou1"], ["冇", "mou5"], ["點", "dim2"], ["郁", "juk1"], ["。"]]},
-    {"en": "Salary rises can't keep up with prices, so life is getting harder and harder.", "parts": [["人工", "jan4 gung1"], ["加", "gaa1"], ["得", "dak1"], ["慢", "maan6"], ["，"], ["追唔上", "zeoi1 m4 soeng5"], ["物價", "mat6 gaa3"], ["，"], ["生活", "sang1 wut6"], ["越嚟越", "jyut6 lai4 jyut6"], ["難", "naan4"], ["。"]]},
-    {"en": "Many young people still live with their families because they can't afford their own place.", "parts": [["好多", "hou2 do1"], ["後生", "hau6 saang1"], ["仲", "zung6"], ["同", "tung4"], ["屋企人", "uk1 kei2 jan4"], ["住", "zyu6"], ["，"], ["因為", "jan1 wai6"], ["租", "zou1"], ["唔", "m4"], ["起", "hei2"], ["樓", "lau2"], ["。"]]},
-    {"en": "If property prices keep rising, how long will it take to save up a down payment?", "parts": [["如果", "jyu4 gwo2"], ["樓價", "lau4 gaa3"], ["繼續", "gai3 zuk6"], ["升", "sing1"], ["，"], ["要", "jiu3"], ["儲", "cyu5"], ["幾耐", "gei2 noi6"], ["先至", "sin1 zi3"], ["夠", "gau3"], ["首期", "sau2 kei4"], ["啊", "aa3"], ["？"]]},
-    {"en": "The government wants to reduce waste, so it's encouraging people to recycle more.", "parts": [["政府", "zing3 fu2"], ["想", "soeng2"], ["減少", "gaam2 siu2"], ["垃圾", "laap6 saap3"], ["，"], ["所以", "so2 ji5"], ["鼓勵", "gu2 lai6"], ["市民", "si5 man4"], ["多啲", "do1 di1"], ["回收", "wui4 sau1"], ["。"]]},
-    {"en": "The latest report shows that the number of people taking the MTR has increased.", "parts": [["最新", "zeoi3 san1"], ["嘅", "ge3"], ["報告", "bou3 gou3"], ["顯示", "hin2 si6"], ["搭", "daap3"], ["港鐵", "gong2 tit3"], ["嘅", "ge3"], ["人數", "jan4 sou3"], ["增加", "zang1 gaa1"], ["咗", "zo2"], ["。"]]},
-    {"en": "A lot of people are worried they won't have enough money after they retire.", "parts": [["好多人", "hou2 do1 jan4"], ["擔心", "daam1 sam1"], ["退休", "teoi3 jau1"], ["之後", "zi1 hau6"], ["唔夠錢", "m4 gau3 cin2"], ["用", "jung6"], ["。"]]},
-    {"en": "Air pollution affects health, especially for the elderly and children.", "parts": [["空氣", "hung1 hei3"], ["污染", "wu1 jim5"], ["會", "wui5"], ["影響", "jing2 hoeng2"], ["健康", "gin6 hong1"], ["，"], ["尤其係", "jau4 kei4 hai6"], ["老人家", "lou5 jan4 gaa1"], ["同", "tung4"], ["小朋友", "siu2 pang4 jau5"], ["。"]]},
-    {"en": "Is it true that if the black rainstorm signal is up, you don't need to go to work?", "parts": [["係唔係", "hai6 m4 hai6"], ["掛", "gwaa3"], ["黑雨", "hak1 jyu5"], ["就", "zau6"], ["唔使", "m4 sai2"], ["返工", "faan1 gung1"], ["㗎", "gaa3"], ["？"]]},
-    {"en": "With so much work pressure, you should find time to relax.", "parts": [["返工", "faan1 gung1"], ["壓力", "aat3 lik6"], ["咁", "gam3"], ["大", "daai6"], ["，"], ["你", "nei5"], ["要", "jiu3"], ["搵", "wan2"], ["時間", "si4 gaan3"], ["放鬆", "fong3 sung1"], ["下", "haa5"], ["。"]]},
-    {"en": "Parking costs keep going up, so I'd rather take public transport.", "parts": [["泊車", "paak3 ce1"], ["越嚟越", "jyut6 lai4 jyut6"], ["貴", "gwai3"], ["，"], ["我", "ngo5"], ["寧願", "ning4 jyun6"], ["搭", "daap3"], ["公共", "gung1 gung6"], ["交通", "gaau1 tung1"], ["。"]]}
-  ],
-  "grammar": [
-    {"title": "Numbers in the news: 成 and 百分之", "explain": "Percentages are 百分之 + number (百分之五 = 5%). In speech, tenths are often 成: 一成 = 10%, 兩成 = 20%, 三成半 = 35%.", "examples": [{"en": "Rents went up 5% last year.", "parts": [["舊年", "gau6 nin2"], ["租金", "zou1 gam1"], ["升咗", "sing1 zo2"], ["百分之五", "baak3 fan6 zi1 ng5"], ["。"]]}, {"en": "Rent takes up 40% of his salary.", "parts": [["租金", "zou1 gam1"], ["用咗", "jung6 zo2"], ["佢", "keoi5"], ["四成", "sei3 sing4"], ["人工", "jan4 gung1"], ["。"]]}]},
-    {"title": "Reporting what you heard: 話 / 聽講 / 根據", "explain": "To pass on news: X 話… (X says…), 聽講… (I heard that…), 根據… (according to…, more formal). Add 喎 wo3 at the end to signal 'that's what they say'.", "examples": [{"en": "The Observatory says it'll be 34 degrees tomorrow.", "parts": [["天文台", "tin1 man4 toi4"], ["話", "waa6"], ["聽日", "ting1 jat6"], ["有", "jau5"], ["三十四度", "saam1 sap6 sei3 dou6"], ["。"]]}, {"en": "I heard the MTR is raising fares again next month.", "parts": [["聽講", "teng1 gong2"], ["港鐵", "gong2 tit3"], ["下個月", "haa6 go3 jyut6"], ["又", "jau6"], ["加價", "gaa1 gaa3"], ["喎", "wo3"], ["。"]]}, {"en": "According to the survey, most people want shorter working hours.", "parts": [["根據", "gan1 geoi3"], ["調查", "diu6 caa4"], ["，"], ["大部分", "daai6 bou6 fan6"], ["人", "jan4"], ["想", "soeng2"], ["返", "faan1"], ["少啲", "siu2 di1"], ["鐘", "zung1"], ["。"]]}]}
-  ],
-  "dialogue": {
-    "title": "Reading the morning news",
-    "lines": [
-      {"spk": "A", "en": "Have you seen this news item? It says rents rose again last month.", "parts": [["你", "nei5"], ["睇咗", "tai2 zo2"], ["呢段", "ni1 dyun6"], ["新聞", "san1 man4"], ["未", "mei6"], ["啊", "aa3"], ["？"], ["話", "waa6"], ["上個月", "soeng6 go3 jyut6"], ["租金", "zou1 gam1"], ["又", "jau6"], ["升咗", "sing1 zo2"], ["。"]]},
-      {"spk": "B", "en": "No wonder my landlord just told me he's raising the rent by two thousand dollars.", "parts": [["怪唔得", "gwaai3 m4 dak1"], ["我", "ngo5"], ["業主", "jip6 zyu2"], ["啱啱", "ngaam1 ngaam1"], ["話", "waa6"], ["要", "jiu3"], ["加", "gaa1"], ["兩千蚊", "loeng5 cin1 man1"], ["租", "zou1"], ["啦", "laa1"], ["。"]]},
-      {"spk": "A", "en": "Two thousand? That's a lot! Your salary hasn't gone up that much.", "parts": [["兩千蚊", "loeng5 cin1 man1"], ["？"], ["好", "hou2"], ["多", "do1"], ["喎", "wo3"], ["！"], ["你", "nei5"], ["人工", "jan4 gung1"], ["都", "dou1"], ["冇", "mou5"], ["加", "gaa1"], ["咁", "gam3"], ["多", "do1"], ["。"]]},
-      {"spk": "B", "en": "Exactly. Rent already takes up almost half my salary — the pressure's huge.", "parts": [["係", "hai6"], ["囉", "lo1"], ["。"], ["租金", "zou1 gam1"], ["已經", "ji5 ging1"], ["用咗", "jung6 zo2"], ["我", "ngo5"], ["差唔多", "caa1 m4 do1"], ["一半", "jat1 bun3"], ["人工", "jan4 gung1"], ["，"], ["壓力", "aat3 lik6"], ["好", "hou2"], ["大", "daai6"], ["。"]]},
-      {"spk": "A", "en": "Have you thought about moving to the New Territories? Rents there are a bit cheaper.", "parts": [["你", "nei5"], ["有冇", "jau5 mou5"], ["諗過", "nam2 gwo3"], ["搬", "bun1"], ["去", "heoi3"], ["新界", "san1 gaai3"], ["啊", "aa3"], ["？"], ["嗰邊", "go2 bin1"], ["租金", "zou1 gam1"], ["平", "peng4"], ["少少", "siu2 siu2"], ["。"]]},
-      {"spk": "B", "en": "I have, but the traffic's a problem — the commute would be over an hour.", "parts": [["諗過", "nam2 gwo3"], ["，"], ["不過", "bat1 gwo3"], ["交通", "gaau1 tung1"], ["係", "hai6"], ["個", "go3"], ["問題", "man6 tai4"], ["，"], ["返工", "faan1 gung1"], ["要", "jiu3"], ["成個鐘", "sing4 go3 zung1"], ["以上", "ji5 soeng6"], ["。"]]},
-      {"spk": "A", "en": "And at rush hour, if there's a jam, you could be late all the time.", "parts": [["而且", "ji4 ce2"], ["繁忙時間", "faan4 mong4 si4 gaan3"], ["一", "jat1"], ["塞車", "sak1 ce1"], ["，"], ["可能", "ho2 nang4"], ["成日", "seng4 jat6"], ["遲到", "ci4 dou3"], ["。"]]},
-      {"spk": "B", "en": "Right. If you add in the extra transport costs, it might not save much.", "parts": [["係", "hai6"], ["啊", "aa3"], ["。"], ["加埋", "gaa1 maai4"], ["多咗", "do1 zo2"], ["嘅", "ge3"], ["交通費", "gaau1 tung1 fai3"], ["，"], ["未必", "mei6 bit1"], ["慳", "haan1"], ["到", "dou2"], ["好多", "hou2 do1"], ["。"]]},
-      {"spk": "A", "en": "There's also a survey in the news saying many young people want to move out, but can't afford to.", "parts": [["新聞", "san1 man4"], ["仲", "zung6"], ["有", "jau5"], ["個", "go3"], ["調查", "diu6 caa4"], ["話", "waa6"], ["，"], ["好多", "hou2 do1"], ["後生", "hau6 saang1"], ["想", "soeng2"], ["搬", "bun1"], ["出去", "ceot1 heoi3"], ["住", "zyu6"], ["，"], ["但係", "daan6 hai6"], ["負擔", "fu6 daam1"], ["唔", "m4"], ["起", "hei2"], ["。"]]},
-      {"spk": "B", "en": "No surprise. With property prices this high, the down payment alone takes years of saving.", "parts": [["唔", "m4"], ["出奇", "ceot1 kei4"], ["。"], ["樓價", "lau4 gaa3"], ["咁", "gam3"], ["高", "gou1"], ["，"], ["淨係", "zing6 hai6"], ["首期", "sau2 kei4"], ["都", "dou1"], ["要", "jiu3"], ["儲", "cyu5"], ["好多年", "hou2 do1 nin4"], ["。"]]},
-      {"spk": "A", "en": "Has the government said how it'll solve it?", "parts": [["政府", "zing3 fu2"], ["有冇", "jau5 mou5"], ["講", "gong2"], ["點樣", "dim2 joeng2"], ["解決", "gaai2 kyut3"], ["啊", "aa3"], ["？"]]},
-      {"spk": "B", "en": "The report says they'll build more public housing, but it'll take a few years.", "parts": [["報告", "bou3 gou3"], ["話", "waa6"], ["會", "wui5"], ["起", "hei2"], ["多啲", "do1 di1"], ["公屋", "gung1 uk1"], ["，"], ["不過", "bat1 gwo3"], ["要", "jiu3"], ["等", "dang2"], ["幾年", "gei2 nin4"], ["。"]]},
-      {"spk": "A", "en": "Then what will you do? Renew the lease or move?", "parts": [["噉", "gam2"], ["你", "nei5"], ["打算", "daa2 syun3"], ["點", "dim2"], ["啊", "aa3"], ["？"], ["續約", "zuk6 joek3"], ["定係", "ding6 hai6"], ["搬", "bun1"], ["？"]]},
-      {"spk": "B", "en": "I'll stay for now and save money — I'll think again when I'm better off.", "parts": [["我", "ngo5"], ["暫時", "zaam6 si4"], ["住", "zyu6"], ["住", "zyu6"], ["先", "sin1"], ["，"], ["儲", "cyu5"], ["多啲", "do1 di1"], ["錢", "cin2"], ["，"], ["遲啲", "ci4 di1"], ["再", "zoi3"], ["算", "syun3"], ["。"]]}
-    ],
-    "questions": [
-      {"q": "What news did A read?", "options": ["Rents went up again last month", "Property prices fell", "Salaries rose sharply", "A new MTR line opened"], "answer": 0},
-      {"q": "Why is B worried about the rent?", "options": ["The landlord is raising it by $2,000", "B lost their job", "B wants to buy a flat next month", "The flat is too far from work"], "answer": 0},
-      {"q": "Why might moving to the New Territories not help B much?", "options": ["Longer commutes and extra transport costs", "There are no flats available", "Rents there are higher", "B's company is moving too"], "answer": 0},
-      {"q": "What does B decide to do for now?", "options": ["Stay put and save money", "Move in with family", "Buy a flat with a friend", "Move to the New Territories"], "answer": 0}
+ "id": "u24",
+ "level": 4,
+ "title": "News & Society",
+ "emoji": "📰",
+ "desc": "Talk about everyday news: rents and salaries, traffic, weather warnings and the environment",
+ "words": [
+  {
+   "hk": "新聞",
+   "jp": "san1 man4",
+   "en": "news",
+   "fr": "actualités ; informations",
+   "note": "To watch/read the news = 睇 (tai2) 新聞 (san1 man4). In everyday speech 新聞 (san1 man4) is very often said san1 man2, with a rising tone.",
+   "ex": {
+    "en": "I usually read the news on my phone on the MTR.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "通常",
+      "tung1 soeng4"
+     ],
+     [
+      "喺",
+      "hai2"
+     ],
+     [
+      "地鐵",
+      "dei6 tit3"
+     ],
+     [
+      "用",
+      "jung6"
+     ],
+     [
+      "手機",
+      "sau2 gei1"
+     ],
+     [
+      "睇",
+      "tai2"
+     ],
+     [
+      "新聞",
+      "san1 man4"
+     ],
+     [
+      "。"
+     ]
     ]
+   }
+  },
+  {
+   "hk": "天氣報告",
+   "jp": "tin1 hei3 bou3 gou3",
+   "en": "weather forecast (report)",
+   "fr": "bulletin météo",
+   "note": "Hongkongers check it for rain and typhoon warnings.",
+   "ex": {
+    "en": "The weather forecast says there'll be showers tomorrow afternoon.",
+    "parts": [
+     [
+      "天氣報告",
+      "tin1 hei3 bou3 gou3"
+     ],
+     [
+      "話",
+      "waa6"
+     ],
+     [
+      "聽日",
+      "ting1 jat6"
+     ],
+     [
+      "晏晝",
+      "aan3 zau3"
+     ],
+     [
+      "有",
+      "jau5"
+     ],
+     [
+      "驟雨",
+      "zaau6 jyu5"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "政府",
+   "jp": "zing3 fu2",
+   "en": "government",
+   "fr": "gouvernement",
+   "ex": {
+    "en": "The government has launched a new recycling scheme.",
+    "parts": [
+     [
+      "政府",
+      "zing3 fu2"
+     ],
+     [
+      "推出",
+      "teoi1 ceot1"
+     ],
+     [
+      "咗",
+      "zo2"
+     ],
+     [
+      "新",
+      "san1"
+     ],
+     [
+      "嘅",
+      "ge3"
+     ],
+     [
+      "回收",
+      "wui4 sau1"
+     ],
+     [
+      "計劃",
+      "gai3 waak6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "經濟",
+   "jp": "ging1 zai3",
+   "en": "economy; economic",
+   "fr": "économie",
+   "note": "Also 'economical'.",
+   "ex": {
+    "en": "The economy isn't good lately — lots of restaurants have no customers.",
+    "parts": [
+     [
+      "最近",
+      "zeoi3 gan6"
+     ],
+     [
+      "經濟",
+      "ging1 zai3"
+     ],
+     [
+      "唔",
+      "m4"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "好多",
+      "hou2 do1"
+     ],
+     [
+      "餐廳",
+      "caan1 teng1"
+     ],
+     [
+      "都",
+      "dou1"
+     ],
+     [
+      "冇",
+      "mou5"
+     ],
+     [
+      "生意",
+      "saang1 ji3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "社會",
+   "jp": "se5 wui2",
+   "en": "society",
+   "fr": "société",
+   "ex": {
+    "en": "Population ageing is a big problem for society.",
+    "parts": [
+     [
+      "人口老化",
+      "jan4 hau2 lou5 faa3"
+     ],
+     [
+      "係",
+      "hai6"
+     ],
+     [
+      "社會",
+      "se5 wui2"
+     ],
+     [
+      "一個",
+      "jat1 go3"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "大",
+      "daai6"
+     ],
+     [
+      "嘅",
+      "ge3"
+     ],
+     [
+      "問題",
+      "man6 tai4"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "後生",
+   "jp": "hau6 saang1",
+   "en": "young; young people",
+   "fr": "jeune ; les jeunes",
+   "note": "啲後生 (di1 hau6 saang1) = young people. 你好後生 (nei5 hou2 hau6 saang1)! = you look so young!",
+   "ex": {
+    "en": "Young people these days love taking photos.",
+    "parts": [
+     [
+      "而家",
+      "ji4 gaa1"
+     ],
+     [
+      "啲",
+      "di1"
+     ],
+     [
+      "後生",
+      "hau6 saang1"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "鍾意",
+      "zung1 ji3"
+     ],
+     [
+      "影相",
+      "jing2 soeng2"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "市民",
+   "jp": "si5 man4",
+   "en": "citizens; members of the public",
+   "fr": "les citoyens ; le public",
+   "note": "The usual word in news reports for 'ordinary people'.",
+   "ex": {
+    "en": "Many members of the public think rents are too high.",
+    "parts": [
+     [
+      "好多",
+      "hou2 do1"
+     ],
+     [
+      "市民",
+      "si5 man4"
+     ],
+     [
+      "覺得",
+      "gok3 dak1"
+     ],
+     [
+      "租金",
+      "zou1 gam1"
+     ],
+     [
+      "太",
+      "taai3"
+     ],
+     [
+      "貴",
+      "gwai3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "交通",
+   "jp": "gaau1 tung1",
+   "en": "traffic; transport",
+   "fr": "circulation ; transports",
+   "ex": {
+    "en": "Hong Kong's public transport is very convenient.",
+    "parts": [
+     [
+      "香港",
+      "hoeng1 gong2"
+     ],
+     [
+      "嘅",
+      "ge3"
+     ],
+     [
+      "公共",
+      "gung1 gung6"
+     ],
+     [
+      "交通",
+      "gaau1 tung1"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "方便",
+      "fong1 bin6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "塞車",
+   "jp": "sak1 ce1",
+   "en": "traffic jam; to be jammed",
+   "fr": "embouteillage",
+   "note": "塞到死 (sak1 dou3 sei2) = jammed solid. A tailback is 車龍 (ce1 lung4), literally 'car dragon'.",
+   "ex": {
+    "en": "There's been a traffic accident, and now the traffic is terrible.",
+    "parts": [
+     [
+      "有",
+      "jau5"
+     ],
+     [
+      "交通",
+      "gaau1 tung1"
+     ],
+     [
+      "意外",
+      "ji3 ngoi6"
+     ],
+     [
+      "，"
+     ],
+     [
+      "而家",
+      "ji4 gaa1"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "塞車",
+      "sak1 ce1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "樓價",
+   "jp": "lau4 gaa3",
+   "en": "property prices",
+   "fr": "prix de l'immobilier",
+   "ex": {
+    "en": "Property prices are so high, lots of young people can't afford a flat.",
+    "parts": [
+     [
+      "樓價",
+      "lau4 gaa3"
+     ],
+     [
+      "咁",
+      "gam3"
+     ],
+     [
+      "貴",
+      "gwai3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "好多",
+      "hou2 do1"
+     ],
+     [
+      "後生",
+      "hau6 saang1"
+     ],
+     [
+      "都",
+      "dou1"
+     ],
+     [
+      "買唔起",
+      "maai5 m4 hei2"
+     ],
+     [
+      "樓",
+      "lau2"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "升",
+   "jp": "sing1",
+   "en": "to go up, rise (prices)",
+   "fr": "monter, augmenter (prix)",
+   "note": "升咗 (sing1 zo2) = has gone up. The opposite is 跌 (dit3), to fall.",
+   "ex": {
+    "en": "Property prices have gone up again this year.",
+    "parts": [
+     [
+      "今年",
+      "gam1 nin4"
+     ],
+     [
+      "樓價",
+      "lau4 gaa3"
+     ],
+     [
+      "又",
+      "jau6"
+     ],
+     [
+      "升",
+      "sing1"
+     ],
+     [
+      "咗",
+      "zo2"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "租金",
+   "jp": "zou1 gam1",
+   "en": "rent",
+   "fr": "loyer",
+   "note": "交租 (gaau1 zou1) = pay rent; 加租 (gaa1 zou1) = raise the rent.",
+   "ex": {
+    "en": "Rent takes up almost half of my salary.",
+    "parts": [
+     [
+      "租金",
+      "zou1 gam1"
+     ],
+     [
+      "差唔多",
+      "caa1 m4 do1"
+     ],
+     [
+      "用咗",
+      "jung6 zo2"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "一半",
+      "jat1 bun3"
+     ],
+     [
+      "人工",
+      "jan4 gung1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "首期",
+   "jp": "sau2 kei4",
+   "en": "down payment",
+   "fr": "apport (immobilier)",
+   "note": "The biggest hurdle to 買樓 (maai5 lau2).",
+   "ex": {
+    "en": "We've been saving for five years and still don't have enough for a down payment.",
+    "parts": [
+     [
+      "我哋",
+      "ngo5 dei6"
+     ],
+     [
+      "儲",
+      "cyu5"
+     ],
+     [
+      "咗",
+      "zo2"
+     ],
+     [
+      "五年",
+      "ng5 nin4"
+     ],
+     [
+      "錢",
+      "cin2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "都",
+      "dou1"
+     ],
+     [
+      "未",
+      "mei6"
+     ],
+     [
+      "夠",
+      "gau3"
+     ],
+     [
+      "首期",
+      "sau2 kei4"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "儲",
+   "jp": "cyu5",
+   "en": "to save up (money)",
+   "fr": "économiser, mettre de côté",
+   "note": "儲錢 (cou5 cin2) = to save money; in this word many people say cou5 rather than cyu5. 儲咗 (cyu5 zo2) + time + 錢 (cin2) = have been saving for…",
+   "ex": {
+    "en": "I save a bit of money every month.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "每個月",
+      "mui5 go3 jyut6"
+     ],
+     [
+      "都",
+      "dou1"
+     ],
+     [
+      "儲",
+      "cyu5"
+     ],
+     [
+      "啲",
+      "di1"
+     ],
+     [
+      "錢",
+      "cin2"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "退休",
+   "jp": "teoi3 jau1",
+   "en": "to retire; retirement",
+   "fr": "prendre sa retraite",
+   "ex": {
+    "en": "After my dad retires, he wants to move back to his hometown.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "爸爸",
+      "baa4 baa1"
+     ],
+     [
+      "退休",
+      "teoi3 jau1"
+     ],
+     [
+      "之後",
+      "zi1 hau6"
+     ],
+     [
+      "想",
+      "soeng2"
+     ],
+     [
+      "搬",
+      "bun1"
+     ],
+     [
+      "返",
+      "faan1"
+     ],
+     [
+      "鄉下",
+      "hoeng1 haa2"
+     ],
+     [
+      "住",
+      "zyu6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "壓力",
+   "jp": "aat3 lik6",
+   "en": "pressure; stress",
+   "fr": "pression ; stress",
+   "ex": {
+    "en": "Hong Kong people are under a lot of pressure at work.",
+    "parts": [
+     [
+      "香港人",
+      "hoeng1 gong2 jan4"
+     ],
+     [
+      "返工",
+      "faan1 gung1"
+     ],
+     [
+      "嘅",
+      "ge3"
+     ],
+     [
+      "壓力",
+      "aat3 lik6"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "大",
+      "daai6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "環境",
+   "jp": "waan4 ging2",
+   "en": "environment; surroundings",
+   "fr": "environnement",
+   "ex": {
+    "en": "We should all do our bit to protect the environment.",
+    "parts": [
+     [
+      "保護",
+      "bou2 wu6"
+     ],
+     [
+      "環境",
+      "waan4 ging2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "人人",
+      "jan4 jan4"
+     ],
+     [
+      "有",
+      "jau5"
+     ],
+     [
+      "責",
+      "zaak3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "空氣污染",
+   "jp": "hung1 hei3 wu1 jim5",
+   "en": "air pollution",
+   "fr": "pollution de l'air",
+   "ex": {
+    "en": "Air pollution has been very bad lately.",
+    "parts": [
+     [
+      "最近",
+      "zeoi3 gan6"
+     ],
+     [
+      "空氣污染",
+      "hung1 hei3 wu1 jim5"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "嚴重",
+      "jim4 zung6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   "note": "污染 (wu1 jim5) = pollution; 空氣 (hung1 hei3) = air."
+  },
+  {
+   "hk": "環保",
+   "jp": "waan4 bou2",
+   "en": "eco-friendly; environmental protection",
+   "fr": "écologique",
+   "note": "Short for 環境保護 (waan4 ging2 bou2 wu6). 好環保 (hou2 waan4 bou2) = very green.",
+   "ex": {
+    "en": "Take your own water bottle when you go out — it's very eco-friendly.",
+    "parts": [
+     [
+      "去街",
+      "heoi3 gaai1"
+     ],
+     [
+      "帶",
+      "daai3"
+     ],
+     [
+      "自己",
+      "zi6 gei2"
+     ],
+     [
+      "個",
+      "go3"
+     ],
+     [
+      "水樽",
+      "seoi2 zeon1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "環保",
+      "waan4 bou2"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "回收",
+   "jp": "wui4 sau1",
+   "en": "to recycle; recycling",
+   "fr": "recycler",
+   "ex": {
+    "en": "Remember to recycle plastic bottles!",
+    "parts": [
+     [
+      "膠樽",
+      "gaau1 zeon1"
+     ],
+     [
+      "記得",
+      "gei3 dak1"
+     ],
+     [
+      "回收",
+      "wui4 sau1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "影響",
+   "jp": "jing2 hoeng2",
+   "en": "to affect; impact",
+   "fr": "influencer ; impact",
+   "ex": {
+    "en": "Typhoon signal number 8 is up, which affects many flights.",
+    "parts": [
+     [
+      "掛",
+      "gwaa3"
+     ],
+     [
+      "八號風球",
+      "baat3 hou6 fung1 kau4"
+     ],
+     [
+      "，"
+     ],
+     [
+      "影響",
+      "jing2 hoeng2"
+     ],
+     [
+      "好多",
+      "hou2 do1"
+     ],
+     [
+      "航班",
+      "hong4 baan1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "增加",
+   "jp": "zang1 gaa1",
+   "en": "to increase",
+   "fr": "augmenter",
+   "ex": {
+    "en": "The number of tourists has increased a lot this year.",
+    "parts": [
+     [
+      "今年",
+      "gam1 nin4"
+     ],
+     [
+      "遊客",
+      "jau4 haak3"
+     ],
+     [
+      "人數",
+      "jan4 sou3"
+     ],
+     [
+      "增加",
+      "zang1 gaa1"
+     ],
+     [
+      "咗",
+      "zo2"
+     ],
+     [
+      "好多",
+      "hou2 do1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "減少",
+   "jp": "gaam2 siu2",
+   "en": "to reduce; decrease",
+   "fr": "diminuer ; réduire",
+   "ex": {
+    "en": "We should cut down on plastic bags.",
+    "parts": [
+     [
+      "我哋",
+      "ngo5 dei6"
+     ],
+     [
+      "應該",
+      "jing1 goi1"
+     ],
+     [
+      "減少",
+      "gaam2 siu2"
+     ],
+     [
+      "用",
+      "jung6"
+     ],
+     [
+      "膠袋",
+      "gaau1 doi2"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "解決",
+   "jp": "gaai2 kyut3",
+   "en": "to solve",
+   "fr": "résoudre",
+   "ex": {
+    "en": "This problem can't be solved in just a day or two.",
+    "parts": [
+     [
+      "呢個",
+      "ni1 go3"
+     ],
+     [
+      "問題",
+      "man6 tai4"
+     ],
+     [
+      "唔係",
+      "m4 hai6"
+     ],
+     [
+      "一兩日",
+      "jat1 loeng5 jat6"
+     ],
+     [
+      "就",
+      "zau6"
+     ],
+     [
+      "可以",
+      "ho2 ji5"
+     ],
+     [
+      "解決",
+      "gaai2 kyut3"
+     ],
+     [
+      "嘅",
+      "ge3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "報告",
+   "jp": "bou3 gou3",
+   "en": "report",
+   "fr": "rapport",
+   "ex": {
+    "en": "According to the latest report, rents went up again last month.",
+    "parts": [
+     [
+      "根據",
+      "gan1 geoi3"
+     ],
+     [
+      "最新",
+      "zeoi3 san1"
+     ],
+     [
+      "嘅",
+      "ge3"
+     ],
+     [
+      "報告",
+      "bou3 gou3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "上個月",
+      "soeng6 go3 jyut6"
+     ],
+     [
+      "租金",
+      "zou1 gam1"
+     ],
+     [
+      "又",
+      "jau6"
+     ],
+     [
+      "升",
+      "sing1"
+     ],
+     [
+      "咗",
+      "zo2"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "調查",
+   "jp": "diu6 caa4",
+   "en": "survey; to investigate",
+   "fr": "enquête ; sondage",
+   "note": "Also tiu4 caa4.",
+   "ex": {
+    "en": "A survey says young people are sleeping less and less.",
+    "parts": [
+     [
+      "有",
+      "jau5"
+     ],
+     [
+      "調查",
+      "diu6 caa4"
+     ],
+     [
+      "話",
+      "waa6"
+     ],
+     [
+      "，"
+     ],
+     [
+      "後生",
+      "hau6 saang1"
+     ],
+     [
+      "瞓覺",
+      "fan3 gaau3"
+     ],
+     [
+      "嘅",
+      "ge3"
+     ],
+     [
+      "時間",
+      "si4 gaan3"
+     ],
+     [
+      "越嚟越",
+      "jyut6 lai4 jyut6"
+     ],
+     [
+      "少",
+      "siu2"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
   }
+ ],
+ "sentences": [
+  {
+   "en": "Did you see today's news? Rents have gone up again.",
+   "parts": [
+    [
+     "你",
+     "nei5"
+    ],
+    [
+     "睇咗",
+     "tai2 zo2"
+    ],
+    [
+     "今日",
+     "gam1 jat6"
+    ],
+    [
+     "嘅",
+     "ge3"
+    ],
+    [
+     "新聞",
+     "san1 man4"
+    ],
+    [
+     "未",
+     "mei6"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ],
+    [
+     "租金",
+     "zou1 gam1"
+    ],
+    [
+     "又",
+     "jau6"
+    ],
+    [
+     "升咗",
+     "sing1 zo2"
+    ],
+    [
+     "喇",
+     "laa3"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "The Observatory says a typhoon is coming this weekend — better not go out to sea.",
+   "parts": [
+    [
+     "天文台",
+     "tin1 man4 toi4"
+    ],
+    [
+     "話",
+     "waa6"
+    ],
+    [
+     "呢個",
+     "ni1 go3"
+    ],
+    [
+     "週末",
+     "zau1 mut6"
+    ],
+    [
+     "會",
+     "wui5"
+    ],
+    [
+     "打風",
+     "daa2 fung1"
+    ],
+    [
+     "，"
+    ],
+    [
+     "最好",
+     "zeoi3 hou2"
+    ],
+    [
+     "唔好",
+     "m4 hou2"
+    ],
+    [
+     "出海",
+     "ceot1 hoi2"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "At rush hour the traffic is always jammed — the bus barely moved in half an hour.",
+   "parts": [
+    [
+     "繁忙時間",
+     "faan4 mong4 si4 gaan3"
+    ],
+    [
+     "成日",
+     "seng4 jat6"
+    ],
+    [
+     "塞車",
+     "sak1 ce1"
+    ],
+    [
+     "，"
+    ],
+    [
+     "架",
+     "gaa3"
+    ],
+    [
+     "巴士",
+     "baa1 si2"
+    ],
+    [
+     "半個鐘",
+     "bun3 go3 zung1"
+    ],
+    [
+     "都",
+     "dou1"
+    ],
+    [
+     "冇",
+     "mou5"
+    ],
+    [
+     "點",
+     "dim2"
+    ],
+    [
+     "郁",
+     "juk1"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Salaries have barely gone up, but everything keeps getting more expensive.",
+   "parts": [
+    [
+     "人工",
+     "jan4 gung1"
+    ],
+    [
+     "冇",
+     "mou5"
+    ],
+    [
+     "點",
+     "dim2"
+    ],
+    [
+     "加",
+     "gaa1"
+    ],
+    [
+     "，"
+    ],
+    [
+     "但係",
+     "daan6 hai6"
+    ],
+    [
+     "乜嘢",
+     "mat1 je5"
+    ],
+    [
+     "都",
+     "dou1"
+    ],
+    [
+     "越嚟越",
+     "jyut6 lai4 jyut6"
+    ],
+    [
+     "貴",
+     "gwai3"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Many young people still live with their families, because rents are too high.",
+   "parts": [
+    [
+     "好多",
+     "hou2 do1"
+    ],
+    [
+     "後生",
+     "hau6 saang1"
+    ],
+    [
+     "仲",
+     "zung6"
+    ],
+    [
+     "同",
+     "tung4"
+    ],
+    [
+     "屋企人",
+     "uk1 kei2 jan4"
+    ],
+    [
+     "住",
+     "zyu6"
+    ],
+    [
+     "，"
+    ],
+    [
+     "因為",
+     "jan1 wai6"
+    ],
+    [
+     "租金",
+     "zou1 gam1"
+    ],
+    [
+     "太",
+     "taai3"
+    ],
+    [
+     "貴",
+     "gwai3"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "If property prices keep rising, how long will it take to save up a down payment?",
+   "parts": [
+    [
+     "如果",
+     "jyu4 gwo2"
+    ],
+    [
+     "樓價",
+     "lau4 gaa3"
+    ],
+    [
+     "繼續",
+     "gai3 zuk6"
+    ],
+    [
+     "升",
+     "sing1"
+    ],
+    [
+     "，"
+    ],
+    [
+     "要",
+     "jiu3"
+    ],
+    [
+     "儲",
+     "cyu5"
+    ],
+    [
+     "幾耐",
+     "gei2 noi6"
+    ],
+    [
+     "先至",
+     "sin1 zi3"
+    ],
+    [
+     "夠",
+     "gau3"
+    ],
+    [
+     "首期",
+     "sau2 kei4"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  },
+  {
+   "en": "The government wants to reduce waste, so it's encouraging people to recycle more.",
+   "parts": [
+    [
+     "政府",
+     "zing3 fu2"
+    ],
+    [
+     "想",
+     "soeng2"
+    ],
+    [
+     "減少",
+     "gaam2 siu2"
+    ],
+    [
+     "垃圾",
+     "laap6 saap3"
+    ],
+    [
+     "，"
+    ],
+    [
+     "所以",
+     "so2 ji5"
+    ],
+    [
+     "鼓勵",
+     "gu2 lai6"
+    ],
+    [
+     "市民",
+     "si5 man4"
+    ],
+    [
+     "多啲",
+     "do1 di1"
+    ],
+    [
+     "回收",
+     "wui4 sau1"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "The latest report says the number of people taking the MTR has gone up.",
+   "parts": [
+    [
+     "最新",
+     "zeoi3 san1"
+    ],
+    [
+     "嘅",
+     "ge3"
+    ],
+    [
+     "報告",
+     "bou3 gou3"
+    ],
+    [
+     "話",
+     "waa6"
+    ],
+    [
+     "，"
+    ],
+    [
+     "搭",
+     "daap3"
+    ],
+    [
+     "地鐵",
+     "dei6 tit3"
+    ],
+    [
+     "嘅",
+     "ge3"
+    ],
+    [
+     "人",
+     "jan4"
+    ],
+    [
+     "增加",
+     "zang1 gaa1"
+    ],
+    [
+     "咗",
+     "zo2"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "A lot of people are worried they won't have enough money after they retire.",
+   "parts": [
+    [
+     "好多人",
+     "hou2 do1 jan4"
+    ],
+    [
+     "擔心",
+     "daam1 sam1"
+    ],
+    [
+     "退休",
+     "teoi3 jau1"
+    ],
+    [
+     "之後",
+     "zi1 hau6"
+    ],
+    [
+     "唔夠錢",
+     "m4 gau3 cin2"
+    ],
+    [
+     "用",
+     "jung6"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Air pollution affects your health, especially for old people and children.",
+   "parts": [
+    [
+     "空氣污染",
+     "hung1 hei3 wu1 jim5"
+    ],
+    [
+     "會",
+     "wui5"
+    ],
+    [
+     "影響",
+     "jing2 hoeng2"
+    ],
+    [
+     "身體",
+     "san1 tai2"
+    ],
+    [
+     "，"
+    ],
+    [
+     "特別係",
+     "dak6 bit6 hai6"
+    ],
+    [
+     "老人家",
+     "lou5 jan4 gaa1"
+    ],
+    [
+     "同",
+     "tung4"
+    ],
+    [
+     "小朋友",
+     "siu2 pang4 jau5"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Is it true that if the black rainstorm signal is up, you don't need to go to work?",
+   "parts": [
+    [
+     "係唔係",
+     "hai6 m4 hai6"
+    ],
+    [
+     "掛",
+     "gwaa3"
+    ],
+    [
+     "黑雨",
+     "hak1 jyu5"
+    ],
+    [
+     "就",
+     "zau6"
+    ],
+    [
+     "唔使",
+     "m4 sai2"
+    ],
+    [
+     "返工",
+     "faan1 gung1"
+    ],
+    [
+     "㗎",
+     "gaa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  },
+  {
+   "en": "With so much work pressure, you should find time to relax.",
+   "parts": [
+    [
+     "返工",
+     "faan1 gung1"
+    ],
+    [
+     "壓力",
+     "aat3 lik6"
+    ],
+    [
+     "咁",
+     "gam3"
+    ],
+    [
+     "大",
+     "daai6"
+    ],
+    [
+     "，"
+    ],
+    [
+     "你",
+     "nei5"
+    ],
+    [
+     "要",
+     "jiu3"
+    ],
+    [
+     "搵",
+     "wan2"
+    ],
+    [
+     "時間",
+     "si4 gaan3"
+    ],
+    [
+     "放鬆",
+     "fong3 sung1"
+    ],
+    [
+     "下",
+     "haa5"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Parking costs keep going up, so I'd rather take public transport.",
+   "parts": [
+    [
+     "泊車",
+     "paak3 ce1"
+    ],
+    [
+     "越嚟越",
+     "jyut6 lai4 jyut6"
+    ],
+    [
+     "貴",
+     "gwai3"
+    ],
+    [
+     "，"
+    ],
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "寧願",
+     "ning4 jyun6"
+    ],
+    [
+     "搭",
+     "daap3"
+    ],
+    [
+     "公共",
+     "gung1 gung6"
+    ],
+    [
+     "交通",
+     "gaau1 tung1"
+    ],
+    [
+     "。"
+    ]
+   ]
+  }
+ ],
+ "grammar": [
+  {
+   "title": "Numbers in the news: 成 (sing4) and 百分之 (baak3 fan6 zi1)",
+   "explain": "Percentages are 百分之 (baak3 fan6 zi1) + number (百分之五 (baak3 fan6 zi1 ng5) = 5%). In speech, tenths are often 成 (sing4): 一成 (jat1 sing4) = 10%, 兩成 (loeng5 sing4) = 20%, 三成半 (saam1 sing4 bun3) = 35%.",
+   "examples": [
+    {
+     "en": "Rents went up 5% last year.",
+     "parts": [
+      [
+       "舊年",
+       "gau6 nin2"
+      ],
+      [
+       "租金",
+       "zou1 gam1"
+      ],
+      [
+       "升咗",
+       "sing1 zo2"
+      ],
+      [
+       "百分之五",
+       "baak3 fan6 zi1 ng5"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "Rent takes up 40% of his salary.",
+     "parts": [
+      [
+       "租金",
+       "zou1 gam1"
+      ],
+      [
+       "用咗",
+       "jung6 zo2"
+      ],
+      [
+       "佢",
+       "keoi5"
+      ],
+      [
+       "四成",
+       "sei3 sing4"
+      ],
+      [
+       "人工",
+       "jan4 gung1"
+      ],
+      [
+       "。"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Reporting what you heard: 話 (waa6) / 聽講 (teng1 gong2) / 根據 (gan1 geoi3)",
+   "explain": "To pass on news: X 話 (waa6)… (X says…), 聽講 (teng1 gong2)… (I heard that…), 根據 (gan1 geoi3)… (according to…, more formal). Add 喎 wo3 at the end to signal 'that's what they say'.",
+   "examples": [
+    {
+     "en": "The Observatory says it'll be 34 degrees tomorrow.",
+     "parts": [
+      [
+       "天文台",
+       "tin1 man4 toi4"
+      ],
+      [
+       "話",
+       "waa6"
+      ],
+      [
+       "聽日",
+       "ting1 jat6"
+      ],
+      [
+       "有",
+       "jau5"
+      ],
+      [
+       "三十四度",
+       "saam1 sap6 sei3 dou6"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "I heard the MTR is raising fares again next month.",
+     "parts": [
+      [
+       "聽講",
+       "teng1 gong2"
+      ],
+      [
+       "地鐵",
+       "dei6 tit3"
+      ],
+      [
+       "下個月",
+       "haa6 go3 jyut6"
+      ],
+      [
+       "又",
+       "jau6"
+      ],
+      [
+       "加價",
+       "gaa1 gaa3"
+      ],
+      [
+       "喎",
+       "wo3"
+      ],
+      [
+       "。"
+      ]
+     ]
+    },
+    {
+     "en": "According to the survey, most people think rents are too high.",
+     "parts": [
+      [
+       "根據",
+       "gan1 geoi3"
+      ],
+      [
+       "調查",
+       "diu6 caa4"
+      ],
+      [
+       "，"
+      ],
+      [
+       "大部分",
+       "daai6 bou6 fan6"
+      ],
+      [
+       "人",
+       "jan4"
+      ],
+      [
+       "都",
+       "dou1"
+      ],
+      [
+       "覺得",
+       "gok3 dak1"
+      ],
+      [
+       "租金",
+       "zou1 gam1"
+      ],
+      [
+       "太",
+       "taai3"
+      ],
+      [
+       "貴",
+       "gwai3"
+      ],
+      [
+       "。"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "dialogue": {
+  "title": "Reading the morning news",
+  "lines": [
+   {
+    "spk": "A",
+    "en": "Have you seen today's news? It says rents rose again last month.",
+    "parts": [
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "睇",
+      "tai2"
+     ],
+     [
+      "咗",
+      "zo2"
+     ],
+     [
+      "今日",
+      "gam1 jat6"
+     ],
+     [
+      "嘅",
+      "ge3"
+     ],
+     [
+      "新聞",
+      "san1 man4"
+     ],
+     [
+      "未",
+      "mei6"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ],
+     [
+      "話",
+      "waa6"
+     ],
+     [
+      "上個月",
+      "soeng6 go3 jyut6"
+     ],
+     [
+      "租金",
+      "zou1 gam1"
+     ],
+     [
+      "又",
+      "jau6"
+     ],
+     [
+      "升",
+      "sing1"
+     ],
+     [
+      "咗",
+      "zo2"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "No wonder my landlord just told me he's raising the rent by two thousand dollars next month.",
+    "parts": [
+     [
+      "怪唔得",
+      "gwaai3 m4 dak1"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "業主",
+      "jip6 zyu2"
+     ],
+     [
+      "啱啱",
+      "ngaam1 ngaam1"
+     ],
+     [
+      "話",
+      "waa6"
+     ],
+     [
+      "下個月",
+      "haa6 go3 jyut6"
+     ],
+     [
+      "加租",
+      "gaa1 zou1"
+     ],
+     [
+      "兩千",
+      "loeng5 cin1"
+     ],
+     [
+      "蚊",
+      "man1"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "Two thousand? That's a lot! Your salary hasn't gone up that much.",
+    "parts": [
+     [
+      "兩千",
+      "loeng5 cin1"
+     ],
+     [
+      "蚊",
+      "man1"
+     ],
+     [
+      "？"
+     ],
+     [
+      "好多",
+      "hou2 do1"
+     ],
+     [
+      "喎",
+      "wo3"
+     ],
+     [
+      "！"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "人工",
+      "jan4 gung1"
+     ],
+     [
+      "都",
+      "dou1"
+     ],
+     [
+      "冇",
+      "mou5"
+     ],
+     [
+      "加",
+      "gaa1"
+     ],
+     [
+      "咁多",
+      "gam3 do1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Exactly. Rent already takes up almost half my salary — the pressure's huge.",
+    "parts": [
+     [
+      "係",
+      "hai6"
+     ],
+     [
+      "囉",
+      "lo1"
+     ],
+     [
+      "。"
+     ],
+     [
+      "租金",
+      "zou1 gam1"
+     ],
+     [
+      "已經",
+      "ji5 ging1"
+     ],
+     [
+      "用咗",
+      "jung6 zo2"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "差唔多",
+      "caa1 m4 do1"
+     ],
+     [
+      "一半",
+      "jat1 bun3"
+     ],
+     [
+      "人工",
+      "jan4 gung1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "壓力",
+      "aat3 lik6"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "大",
+      "daai6"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "Have you thought about moving to the New Territories? Rents there are a bit cheaper.",
+    "parts": [
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "有冇",
+      "jau5 mou5"
+     ],
+     [
+      "諗",
+      "nam2"
+     ],
+     [
+      "過",
+      "gwo3"
+     ],
+     [
+      "搬",
+      "bun1"
+     ],
+     [
+      "去",
+      "heoi3"
+     ],
+     [
+      "新界",
+      "san1 gaai3"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ],
+     [
+      "嗰度",
+      "go2 dou6"
+     ],
+     [
+      "租金",
+      "zou1 gam1"
+     ],
+     [
+      "平",
+      "peng4"
+     ],
+     [
+      "少少",
+      "siu2 siu2"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "I have, but transport's a problem — getting to work would take at least an hour.",
+    "parts": [
+     [
+      "諗",
+      "nam2"
+     ],
+     [
+      "過",
+      "gwo3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "不過",
+      "bat1 gwo3"
+     ],
+     [
+      "交通",
+      "gaau1 tung1"
+     ],
+     [
+      "係",
+      "hai6"
+     ],
+     [
+      "個",
+      "go3"
+     ],
+     [
+      "問題",
+      "man6 tai4"
+     ],
+     [
+      "，"
+     ],
+     [
+      "返工",
+      "faan1 gung1"
+     ],
+     [
+      "起碼",
+      "hei2 maa5"
+     ],
+     [
+      "要",
+      "jiu3"
+     ],
+     [
+      "一個",
+      "jat1 go3"
+     ],
+     [
+      "鐘頭",
+      "zung1 tau4"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "And at rush hour, if there's a jam, you could be late all the time.",
+    "parts": [
+     [
+      "仲",
+      "zung6"
+     ],
+     [
+      "有",
+      "jau5"
+     ],
+     [
+      "，"
+     ],
+     [
+      "繁忙時間",
+      "faan4 mong4 si4 gaan3"
+     ],
+     [
+      "一",
+      "jat1"
+     ],
+     [
+      "塞車",
+      "sak1 ce1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "可能",
+      "ho2 nang4"
+     ],
+     [
+      "成日",
+      "seng4 jat6"
+     ],
+     [
+      "遲到",
+      "ci4 dou3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Right. And transport costs money too — it might not actually be much cheaper.",
+    "parts": [
+     [
+      "係",
+      "hai6"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "。"
+     ],
+     [
+      "交通",
+      "gaau1 tung1"
+     ],
+     [
+      "又",
+      "jau6"
+     ],
+     [
+      "要",
+      "jiu3"
+     ],
+     [
+      "錢",
+      "cin2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "其實",
+      "kei4 sat6"
+     ],
+     [
+      "未必",
+      "mei6 bit1"
+     ],
+     [
+      "平",
+      "peng4"
+     ],
+     [
+      "好多",
+      "hou2 do1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "There's also a survey in the news saying many young people want to move out, but don't have enough money.",
+    "parts": [
+     [
+      "新聞",
+      "san1 man4"
+     ],
+     [
+      "仲",
+      "zung6"
+     ],
+     [
+      "有",
+      "jau5"
+     ],
+     [
+      "個",
+      "go3"
+     ],
+     [
+      "調查",
+      "diu6 caa4"
+     ],
+     [
+      "話",
+      "waa6"
+     ],
+     [
+      "，"
+     ],
+     [
+      "好多",
+      "hou2 do1"
+     ],
+     [
+      "後生",
+      "hau6 saang1"
+     ],
+     [
+      "想",
+      "soeng2"
+     ],
+     [
+      "搬出去",
+      "bun1 ceot1 heoi3"
+     ],
+     [
+      "住",
+      "zyu6"
+     ],
+     [
+      "，"
+     ],
+     [
+      "但係",
+      "daan6 hai6"
+     ],
+     [
+      "唔",
+      "m4"
+     ],
+     [
+      "夠",
+      "gau3"
+     ],
+     [
+      "錢",
+      "cin2"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "With property prices this high, the down payment alone takes years of saving — how could they move out?",
+    "parts": [
+     [
+      "樓價",
+      "lau4 gaa3"
+     ],
+     [
+      "咁",
+      "gam3"
+     ],
+     [
+      "貴",
+      "gwai3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "淨係",
+      "zing6 hai6"
+     ],
+     [
+      "首期",
+      "sau2 kei4"
+     ],
+     [
+      "都",
+      "dou1"
+     ],
+     [
+      "要",
+      "jiu3"
+     ],
+     [
+      "儲",
+      "cyu5"
+     ],
+     [
+      "好多",
+      "hou2 do1"
+     ],
+     [
+      "年",
+      "nin4"
+     ],
+     [
+      "，"
+     ],
+     [
+      "點",
+      "dim2"
+     ],
+     [
+      "搬",
+      "bun1"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "Has the government said how it'll solve it?",
+    "parts": [
+     [
+      "政府",
+      "zing3 fu2"
+     ],
+     [
+      "有冇",
+      "jau5 mou5"
+     ],
+     [
+      "講",
+      "gong2"
+     ],
+     [
+      "點樣",
+      "dim2 joeng2"
+     ],
+     [
+      "解決",
+      "gaai2 kyut3"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "The report says they'll build more public housing, but you'll have to wait at least three or four years.",
+    "parts": [
+     [
+      "報告",
+      "bou3 gou3"
+     ],
+     [
+      "話",
+      "waa6"
+     ],
+     [
+      "會",
+      "wui5"
+     ],
+     [
+      "起",
+      "hei2"
+     ],
+     [
+      "多啲",
+      "do1 di1"
+     ],
+     [
+      "公屋",
+      "gung1 uk1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "不過",
+      "bat1 gwo3"
+     ],
+     [
+      "起碼",
+      "hei2 maa5"
+     ],
+     [
+      "要",
+      "jiu3"
+     ],
+     [
+      "等",
+      "dang2"
+     ],
+     [
+      "三四",
+      "saam1 sei3"
+     ],
+     [
+      "年",
+      "nin4"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "So what will you do? Renew the lease or move?",
+    "parts": [
+     [
+      "噉",
+      "gam2"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "想",
+      "soeng2"
+     ],
+     [
+      "點",
+      "dim2"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ],
+     [
+      "續約",
+      "zuk6 joek3"
+     ],
+     [
+      "定係",
+      "ding6 hai6"
+     ],
+     [
+      "搬",
+      "bun1"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "I'll stay put for now and save up more — I'll think about it later.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "住",
+      "zyu6"
+     ],
+     [
+      "住",
+      "zyu6"
+     ],
+     [
+      "先",
+      "sin1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "儲",
+      "cyu5"
+     ],
+     [
+      "多啲",
+      "do1 di1"
+     ],
+     [
+      "錢",
+      "cin2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "遲啲",
+      "ci4 di1"
+     ],
+     [
+      "再",
+      "zoi3"
+     ],
+     [
+      "諗",
+      "nam2"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "q": "What news did A read?",
+    "options": [
+     "Rents went up again last month",
+     "Property prices fell",
+     "Salaries rose sharply",
+     "A new MTR line opened"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Why is B worried about the rent?",
+    "options": [
+     "The landlord is raising it by $2,000",
+     "B lost their job",
+     "B wants to buy a flat next month",
+     "The flat is too far from work"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Why might moving to the New Territories not help B much?",
+    "options": [
+     "The commute is long and transport costs money",
+     "There are no flats available",
+     "Rents there are higher",
+     "B's company is moving too"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does B decide to do for now?",
+    "options": [
+     "Stay put and save money",
+     "Move in with family",
+     "Buy a flat with a friend",
+     "Move to the New Territories"
+    ],
+    "answer": 0
+   }
+  ],
+  "gloss": [
+   [
+    "怪唔得",
+    "gwaai3 m4 dak1",
+    "no wonder"
+   ],
+   [
+    "業主",
+    "jip6 zyu2",
+    "landlord"
+   ],
+   [
+    "加租",
+    "gaa1 zou1",
+    "to raise the rent"
+   ],
+   [
+    "繁忙時間",
+    "faan4 mong4 si4 gaan3",
+    "rush hour"
+   ],
+   [
+    "搬出去",
+    "bun1 ceot1 heoi3",
+    "to move out"
+   ],
+   [
+    "起",
+    "hei2",
+    "to build"
+   ],
+   [
+    "公屋",
+    "gung1 uk1",
+    "public housing"
+   ],
+   [
+    "續約",
+    "zuk6 joek3",
+    "to renew the lease"
+   ]
+  ]
+ },
+ "names": [
+  "新界"
+ ]
 }

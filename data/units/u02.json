@@ -1,61 +1,225 @@
 {
-  "id": "u02",
-  "level": 1,
-  "special": "tones",
-  "title": "Sounds & Tones",
-  "emoji": "🎵",
-  "desc": "Hear and tell apart the 6 tones, and read Jyutping",
-  "words": [
-    {"hk": "詩", "jp": "si1", "en": "poem", "fr": "poème", "set": "si", "note": "Tone 1 · high and flat, like holding a high note."},
-    {"hk": "史", "jp": "si2", "en": "history", "fr": "histoire", "set": "si", "note": "Tone 2 · starts low-mid and rises, like a surprised 'eh?'."},
-    {"hk": "試", "jp": "si3", "en": "to try", "fr": "essayer", "set": "si", "note": "Tone 3 · mid and flat, your normal speaking pitch."},
-    {"hk": "時", "jp": "si4", "en": "time", "fr": "temps", "set": "si", "note": "Tone 4 · low and falling, the bottom of your voice."},
-    {"hk": "市", "jp": "si5", "en": "market / city", "fr": "marché / ville", "set": "si", "note": "Tone 5 · low with a small rise."},
-    {"hk": "事", "jp": "si6", "en": "matter / thing", "fr": "affaire", "set": "si", "note": "Tone 6 · low and flat, just under tone 3."},
-    {"hk": "夫", "jp": "fu1", "en": "husband (formal)", "fr": "mari (formel)", "set": "fu"},
-    {"hk": "苦", "jp": "fu2", "en": "bitter", "fr": "amer", "set": "fu"},
-    {"hk": "富", "jp": "fu3", "en": "rich", "fr": "riche", "set": "fu"},
-    {"hk": "符", "jp": "fu4", "en": "symbol / charm", "fr": "symbole", "set": "fu"},
-    {"hk": "婦", "jp": "fu5", "en": "woman (formal)", "fr": "femme (formel)", "set": "fu"},
-    {"hk": "父", "jp": "fu6", "en": "father (formal)", "fr": "père (formel)", "set": "fu"},
-    {"hk": "衣", "jp": "ji1", "en": "clothing", "fr": "vêtement", "set": "ji"},
-    {"hk": "椅", "jp": "ji2", "en": "chair", "fr": "chaise", "set": "ji"},
-    {"hk": "意", "jp": "ji3", "en": "meaning / idea", "fr": "sens / idée", "set": "ji"},
-    {"hk": "兒", "jp": "ji4", "en": "child (formal)", "fr": "enfant (formel)", "set": "ji"},
-    {"hk": "耳", "jp": "ji5", "en": "ear", "fr": "oreille", "set": "ji"},
-    {"hk": "二", "jp": "ji6", "en": "two (counting)", "fr": "deux", "set": "ji"},
-    {"hk": "一", "jp": "jat1", "en": "one", "fr": "un", "set": "stop", "note": "Ends in -t: short and clipped. Tone 1 height."},
-    {"hk": "八", "jp": "baat3", "en": "eight", "fr": "huit", "set": "stop", "note": "Ends in -t, tone 3 height."},
-    {"hk": "六", "jp": "luk6", "en": "six", "fr": "six", "set": "stop", "note": "Ends in -k, tone 6 height."},
-    {"hk": "食", "jp": "sik6", "en": "to eat", "fr": "manger", "set": "stop"},
-    {"hk": "識", "jp": "sik1", "en": "to know (how to)", "fr": "savoir", "set": "stop", "note": "Same syllable as 食 sik6 but high — tones change meaning!"},
-    {"hk": "十", "jp": "sap6", "en": "ten", "fr": "dix", "set": "stop", "note": "Ends in -p: close your lips without releasing."},
-    {"hk": "雞", "jp": "gai1", "en": "chicken", "fr": "poulet", "set": "vowel", "note": "Short a. Compare 街 gaai1."},
-    {"hk": "街", "jp": "gaai1", "en": "street", "fr": "rue", "set": "vowel", "note": "Long aa. Compare 雞 gai1."},
-    {"hk": "新", "jp": "san1", "en": "new", "fr": "nouveau", "set": "vowel"},
-    {"hk": "山", "jp": "saan1", "en": "mountain", "fr": "montagne", "set": "vowel"},
-    {"hk": "去", "jp": "heoi3", "en": "to go", "fr": "aller", "set": "vowel", "note": "eo ≈ the 'eu' in French 'peur', then a short i."},
-    {"hk": "長", "jp": "coeng4", "en": "long", "fr": "long", "set": "vowel", "note": "oe ≈ French 'eu' in 'heure'. c = 'ts'."},
-    {"hk": "我", "jp": "ngo5", "en": "I / me", "fr": "je / moi", "set": "vowel", "note": "ng- at the start, like the end of 'sing'. Many say 'o5'."},
-    {"hk": "書", "jp": "syu1", "en": "book", "fr": "livre", "set": "vowel", "note": "yu ≈ French 'u' in 'tu'."}
+ "id": "u02",
+ "level": 1,
+ "special": "tones",
+ "title": "Tone Primer",
+ "emoji": "🎵",
+ "desc": "Hear the six tones, read Jyutping, and hear tones in words you already know",
+ "lessonTitles": [
+  "Meet the six tones",
+  "Tones in words you know"
+ ],
+ "words": [
+  {
+   "hk": "詩",
+   "jp": "si1",
+   "en": "poem",
+   "fr": "poème",
+   "note": "Tone 1 · high and flat, like holding a high note.",
+   "lesson": 0
+  },
+  {
+   "hk": "史",
+   "jp": "si2",
+   "en": "history",
+   "fr": "histoire",
+   "note": "Tone 2 · starts mid and rises high, like a surprised 'eh?'.",
+   "lesson": 0
+  },
+  {
+   "hk": "試",
+   "jp": "si3",
+   "en": "to try",
+   "fr": "essayer",
+   "note": "Tone 3 · mid and flat, your normal speaking pitch.",
+   "lesson": 0
+  },
+  {
+   "hk": "時",
+   "jp": "si4",
+   "en": "time",
+   "fr": "temps",
+   "note": "Tone 4 · low and falling, the bottom of your voice.",
+   "lesson": 0
+  },
+  {
+   "hk": "市",
+   "jp": "si5",
+   "en": "market / city",
+   "fr": "marché / ville",
+   "note": "Tone 5 · starts low and rises only to mid — a smaller rise than tone 2.",
+   "lesson": 0
+  },
+  {
+   "hk": "事",
+   "jp": "si6",
+   "en": "matter / thing",
+   "fr": "affaire",
+   "note": "Tone 6 · low and flat, just under tone 3.",
+   "lesson": 0
+  },
+  {
+   "hk": "單車",
+   "jp": "daan1 ce1",
+   "en": "bicycle",
+   "fr": "vélo",
+   "note": "Tone 1 + tone 1: both syllables high and level. Keep the pitch up for the whole word.",
+   "lesson": 1
+  },
+  {
+   "hk": "紙巾",
+   "jp": "zi2 gan1",
+   "en": "tissue, napkin",
+   "fr": "mouchoir en papier",
+   "note": "Tone 2 rises from mid to high, then tone 1 stays high and level.",
+   "lesson": 1
+  },
+  {
+   "hk": "想",
+   "jp": "soeng2",
+   "en": "to want to; to think",
+   "fr": "vouloir ; penser",
+   "note": "Tone 2: rises from mid to high, like a surprised \"eh?\". oe ≈ French \"eu\".",
+   "lesson": 1
+  },
+  {
+   "hk": "鍾意",
+   "jp": "zung1 ji3",
+   "en": "to like",
+   "fr": "aimer",
+   "note": "Tone 1 then tone 3: high, then your normal mid pitch.",
+   "lesson": 1
+  },
+  {
+   "hk": "而家",
+   "jp": "ji4 gaa1",
+   "en": "now",
+   "fr": "maintenant",
+   "note": "Tone 4 then tone 1: start at the bottom of your voice, jump to the top.",
+   "lesson": 1
+  },
+  {
+   "hk": "電視",
+   "jp": "din6 si6",
+   "en": "television",
+   "fr": "télévision",
+   "note": "Tone 6 + tone 6: low and level, just under your normal pitch.",
+   "lesson": 1
+  },
+  {
+   "hk": "甜",
+   "jp": "tim4",
+   "en": "sweet",
+   "fr": "sucré",
+   "note": "Tone 4: low and falling. Compare 點 (dim2), which rises.",
+   "lesson": 1
+  },
+  {
+   "hk": "鹹",
+   "jp": "haam4",
+   "en": "salty",
+   "fr": "salé",
+   "note": "Tone 4, long aa. Compare 行 (haang4) \"to walk\": same tone, but it ends in -ng.",
+   "lesson": 1
+  }
+ ],
+ "pairs": [
+  [
+   "詩",
+   "時",
+   0
   ],
-  "pairs": [["食","識"],["雞","街"],["新","山"],["詩","時"],["試","事"],["史","市"],["電腦","電爐"],["鹹","行"]],
-  "sentences": [
-    {"en": "Ten, eight, six, one.", "parts": [["十","sap6"],["，"],["八","baat3"],["，"],["六","luk6"],["，"],["一","jat1"],["。"]]},
-    {"en": "I want to try.", "parts": [["我","ngo5"],["想","soeng2"],["試","si3"],["。"]]},
-    {"en": "I know how to eat with chopsticks.", "parts": [["我","ngo5"],["識","sik1"],["用","jung6"],["筷子","faai3 zi2"],["食","sik6"],["飯","faan6"],["。"]]}
+  [
+   "試",
+   "事",
+   0
   ],
-  "grammar": [
-    {"title": "Six tones, one chart",
-     "explain": "Pitch is part of the word. Imagine your voice range as 5 steps: tone 1 sits at the top (5), tone 3 in the middle (3), tone 6 just below (2), tone 4 drops to the bottom (1). Tones 2 and 5 rise. Every Jyutping syllable ends with its tone number.",
-     "examples": [
-       {"en": "poem, history, try, time, market, matter", "parts": [["詩","si1"],["史","si2"],["試","si3"],["時","si4"],["市","si5"],["事","si6"]]}
-     ]},
-    {"title": "Reading Jyutping",
-     "explain": "j = English y · z ≈ dz · c ≈ ts · yu = French u · eo / oe ≈ French eu · aa is long, a is short · syllables ending -p, -t, -k are cut short.",
-     "examples": [
-       {"en": "chicken / street", "parts": [["雞","gai1"],["街","gaai1"]]},
-       {"en": "fish / go", "parts": [["魚","jyu2"],["去","heoi3"]]}
-     ]}
+  [
+   "史",
+   "市",
+   0
+  ],
+  [
+   "電腦",
+   "電爐",
+   1
+  ],
+  [
+   "鹹",
+   "行",
+   1
   ]
+ ],
+ "sentences": [],
+ "grammar": [
+  {
+   "title": "Six tones, one chart",
+   "explain": "Pitch is part of the word. Imagine your voice range as 5 steps: tone 1 sits at the top (5), tone 3 in the middle (3), tone 6 just below (2), tone 4 drops to the bottom (1). Tone 2 rises from the middle to the top (3→5); tone 5 rises only a little, from low to mid (2→3). Every Jyutping syllable ends with its tone number.",
+   "examples": [
+    {
+     "en": "poem, history, try, time, market, matter",
+     "parts": [
+      [
+       "詩",
+       "si1"
+      ],
+      [
+       "史",
+       "si2"
+      ],
+      [
+       "試",
+       "si3"
+      ],
+      [
+       "時",
+       "si4"
+      ],
+      [
+       "市",
+       "si5"
+      ],
+      [
+       "事",
+       "si6"
+      ]
+     ]
+    }
+   ],
+   "lesson": 0
+  },
+  {
+   "title": "Reading Jyutping",
+   "explain": "j = English y · z ≈ ts without a puff of air (close to 'dz') · c ≈ ts with a puff of air · yu = French u · eo / oe ≈ French eu · aa is long, a is short · final -p, -t, -k are not released: the syllable is just cut short.",
+   "examples": [
+    {
+     "en": "bicycle / now",
+     "parts": [
+      [
+       "單車",
+       "daan1 ce1"
+      ],
+      [
+       "而家",
+       "ji4 gaa1"
+      ]
+     ]
+    },
+    {
+     "en": "to like / fish",
+     "parts": [
+      [
+       "鍾意",
+       "zung1 ji3"
+      ],
+      [
+       "魚",
+       "jyu2"
+      ]
+     ]
+    }
+   ],
+   "lesson": 1
+  }
+ ]
 }

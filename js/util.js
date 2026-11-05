@@ -41,7 +41,7 @@ export function dayDiff(a, b) {
 // Tone helpers -------------------------------------------------------------
 export const TONES = {
   1: { name: 'high level', chao: [5, 5], ex: '詩 si1' },
-  2: { name: 'high rising', chao: [2, 5], ex: '史 si2' },
+  2: { name: 'high rising', chao: [3, 5], ex: '史 si2' },
   3: { name: 'mid level', chao: [3, 3], ex: '試 si3' },
   4: { name: 'low falling', chao: [2, 1], ex: '時 si4' },
   5: { name: 'low rising', chao: [2, 3], ex: '市 si5' },
@@ -87,3 +87,22 @@ export function sJP(parts) {
 export const wordTokens = (parts) => parts.filter((p) => p.length === 2);
 
 export function vibrate(ms) { try { navigator.vibrate && navigator.vibrate(ms); } catch (e) { /* ignore */ } }
+
+// Free text with inline Chinese + Jyutping, e.g. "落雨 (lok6 jyu5) = to rain" -> styled HTML.
+const RICH = /([㐀-鿿豈-﫿][㐀-鿿豈-﫿，。？！…、]*)(\s*)(\(?)((?:[a-z]+[1-6](?:\s+|(?=[^a-z0-9])|$))+)(\)?)/g;
+export function richHTML(text) {
+  if (!text) return '';
+  const t = esc(text);
+  return t.replace(RICH, (m, hk, sp, o, jp, c) => {
+    const n = [...hk].filter((ch) => /[㐀-鿿豈-﫿]/.test(ch)).length;
+    const sy = jp.trim().split(/\s+/);
+    const paren = o && c;
+    if (sy.length < n && !paren) return m;
+    const k = paren ? sy.length : n;
+    const used = sy.slice(0, k).join(' '), rest = sy.slice(k).join(' ');
+    const tail = /\s$/.test(jp) && !c ? ' ' : '';
+    return `<span class="rk" lang="zh-HK">${hk}</span> <span class="jp rjp">${jpHTML(used)}</span>${rest ? ' ' + rest : ''}${tail}`;
+  }).replace(/([㐀-鿿豈-﫿]+)(?![^<]*<\/span>)/g, '<span class="rk" lang="zh-HK">$1</span>');
+}
+export function richNode(tag, cls, text) { const e = h(tag, { class: cls }); e.innerHTML = richHTML(text); return e; }
+export function R(text) { const s = document.createElement('span'); s.innerHTML = richHTML(text); return s; }

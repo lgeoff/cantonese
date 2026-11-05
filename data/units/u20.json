@@ -5,75 +5,2806 @@
   "emoji": "📖",
   "desc": "Tell what happened: set the scene, move the story on, and deliver the twist",
   "words": [
-    {"hk": "以前", "jp": "ji5 cin4", "en": "before; in the past", "fr": "avant ; autrefois", "note": "Used for general past habits: 我以前… 'I used to…'.", "ex": {"en": "I used to work in Hong Kong.", "parts": [["我", "ngo5"], ["以前", "ji5 cin4"], ["喺", "hai2"], ["香港", "hoeng1 gong2"], ["做嘢", "zou6 je5"], ["。"]]}},
-    {"hk": "之前", "jp": "zi1 cin4", "en": "before (an event); ago", "fr": "avant (un événement)", "note": "Goes AFTER the event: 食飯之前 = before eating. 三年之前 = three years ago.", "ex": {"en": "Wash your hands before eating.", "parts": [["食飯", "sik6 faan6"], ["之前", "zi1 cin4"], ["要", "jiu3"], ["洗手", "sai2 sau2"], ["。"]]}},
-    {"hk": "跟住", "jp": "gan1 zyu6", "en": "then; next; after that", "fr": "ensuite ; puis", "note": "Very common in spoken storytelling, more colloquial than 然後.", "ex": {"en": "I'll go to the bank first, then go grocery shopping.", "parts": [["我", "ngo5"], ["先", "sin1"], ["去", "heoi3"], ["銀行", "ngan4 hong4"], ["，"], ["跟住", "gan1 zyu6"], ["去", "heoi3"], ["買餸", "maai5 sung3"], ["。"]]}},
-    {"hk": "最後", "jp": "zeoi3 hau6", "en": "in the end; finally; last", "fr": "finalement ; à la fin", "ex": {"en": "In the end he still didn't come.", "parts": [["最後", "zeoi3 hau6"], ["佢", "keoi5"], ["都係", "dou1 hai6"], ["冇", "mou5"], ["嚟", "lai4"], ["。"]]}},
-    {"hk": "終於", "jp": "zung1 jyu1", "en": "at last (after waiting)", "fr": "enfin (après attente)", "note": "Carries relief: something you waited for finally happened.", "ex": {"en": "I've finally found a job!", "parts": [["我", "ngo5"], ["終於", "zung1 jyu1"], ["搵到", "wan2 dou2"], ["工", "gung1"], ["喇", "laa3"], ["！"]]}},
-    {"hk": "原來", "jp": "jyun4 loi4", "en": "so it turns out; actually", "fr": "en fait ; il s'avère que", "note": "Marks a discovery: 'oh, so that's how it is'.", "ex": {"en": "So you can speak Cantonese!", "parts": [["原來", "jyun4 loi4"], ["你", "nei5"], ["識講", "sik1 gong2"], ["廣東話", "gwong2 dung1 waa2"], ["㗎", "gaa3"], ["！"]]}},
-    {"hk": "突然", "jp": "dat6 jin4", "en": "suddenly", "fr": "soudain", "ex": {"en": "Suddenly the power went out and everything went dark.", "parts": [["突然", "dat6 jin4"], ["停電", "ting4 din6"], ["，"], ["周圍", "zau1 wai4"], ["黑晒", "hak1 saai3"], ["。"]]}},
-    {"hk": "啱啱", "jp": "ngaam1 ngaam1", "en": "just (a moment ago)", "fr": "venir de", "note": "啱啱 + verb = just did. Alone, 啱啱好 = just right.", "ex": {"en": "He just left — you missed him by a step.", "parts": [["佢", "keoi5"], ["啱啱", "ngaam1 ngaam1"], ["走咗", "zau2 zo2"], ["，"], ["你", "nei5"], ["遲咗", "ci4 zo2"], ["一步", "jat1 bou6"], ["。"]]}},
-    {"hk": "一路", "jp": "jat1 lou6", "en": "all along; the whole time; while", "fr": "depuis toujours ; tout le long", "note": "一路 A 一路 B = doing A while doing B.", "ex": {"en": "He listens to music while he drives.", "parts": [["佢", "keoi5"], ["一路", "jat1 lou6"], ["揸車", "zaa1 ce1"], ["一路", "jat1 lou6"], ["聽歌", "teng1 go1"], ["。"]]}},
-    {"hk": "當時", "jp": "dong1 si4", "en": "at that time", "fr": "à ce moment-là", "note": "A bit more formal than 嗰陣.", "ex": {"en": "At the time I didn't know he was the boss.", "parts": [["當時", "dong1 si4"], ["我", "ngo5"], ["唔", "m4"], ["知道", "zi1 dou3"], ["佢", "keoi5"], ["係", "hai6"], ["老闆", "lou5 baan2"], ["。"]]}},
-    {"hk": "嗰陣", "jp": "go2 zan6", "en": "back then; (clause +) when", "fr": "à l'époque ; quand", "note": "Also 嗰陣時. Put it after a clause: 我讀書嗰陣 = when I was studying.", "ex": {"en": "When I was a student I loved playing ball.", "parts": [["我", "ngo5"], ["讀書", "duk6 syu1"], ["嗰陣", "go2 zan6"], ["好", "hou2"], ["鍾意", "zung1 ji3"], ["打波", "daa2 bo1"], ["。"]]}},
-    {"hk": "發生", "jp": "faat3 sang1", "en": "to happen", "fr": "se passer ; arriver", "ex": {"en": "What happened just now? Why are there so many police?", "parts": [["頭先", "tau4 sin1"], ["發生", "faat3 sang1"], ["咩事", "me1 si6"], ["啊", "aa3"], ["？"], ["點解", "dim2 gaai2"], ["咁", "gam3"], ["多", "do1"], ["警察", "ging2 caat3"], ["嘅", "ge3"], ["？"]]}},
-    {"hk": "經歷", "jp": "ging1 lik6", "en": "experience (lived through)", "fr": "expérience vécue", "note": "An event you went through, not work experience (that's 經驗).", "ex": {"en": "This is the most unforgettable experience of my life.", "parts": [["呢個", "ni1 go3"], ["係", "hai6"], ["我", "ngo5"], ["人生", "jan4 sang1"], ["最", "zeoi3"], ["難忘", "naan4 mong4"], ["嘅", "ge3"], ["經歷", "ging1 lik6"], ["。"]]}},
-    {"hk": "故事", "jp": "gu3 si6", "en": "story", "fr": "histoire", "ex": {"en": "Grandma often tells me stories about the old days.", "parts": [["婆婆", "po4 po2"], ["成日", "seng4 jat6"], ["講", "gong2"], ["以前", "ji5 cin4"], ["嘅", "ge3"], ["故事", "gu3 si6"], ["畀", "bei2"], ["我", "ngo5"], ["聽", "teng1"], ["。"]]}},
-    {"hk": "結果", "jp": "git3 gwo2", "en": "as a result; in the end", "fr": "résultat ; du coup", "note": "Introduces the (often bad) outcome.", "ex": {"en": "He didn't revise, so in the end he failed the exam.", "parts": [["佢", "keoi5"], ["冇", "mou5"], ["溫書", "wan1 syu1"], ["，"], ["結果", "git3 gwo2"], ["考試", "haau2 si5"], ["唔", "m4"], ["合格", "hap6 gaak3"], ["。"]]}},
-    {"hk": "本來", "jp": "bun2 loi4", "en": "originally; was going to", "fr": "au départ ; normalement", "note": "Sets up a plan that then changed.", "ex": {"en": "I was originally going to go, but something came up.", "parts": [["我", "ngo5"], ["本來", "bun2 loi4"], ["想", "soeng2"], ["去", "heoi3"], ["，"], ["但係", "daan6 hai6"], ["臨時", "lam4 si4"], ["有事", "jau5 si6"], ["。"]]}},
-    {"hk": "後來", "jp": "hau6 loi4", "en": "later on; afterwards", "fr": "plus tard ; par la suite", "note": "Only for the past. For the future say 遲啲.", "ex": {"en": "Later on they got married.", "parts": [["後來", "hau6 loi4"], ["佢哋", "keoi5 dei6"], ["結咗婚", "git3 zo2 fan1"], ["。"]]}},
-    {"hk": "點知", "jp": "dim2 zi1", "en": "who'd have thought; but then", "fr": "mais voilà que", "note": "The twist word: 'I expected X, but then…'.", "ex": {"en": "I thought it would be sunny, but then it rained all day.", "parts": [["我", "ngo5"], ["以為", "ji5 wai4"], ["會", "wui5"], ["出太陽", "ceot1 taai3 joeng4"], ["，"], ["點知", "dim2 zi1"], ["落咗", "lok6 zo2"], ["成日", "seng4 jat6"], ["雨", "jyu5"], ["。"]]}},
-    {"hk": "竟然", "jp": "ging2 jin4", "en": "actually (to my surprise)", "fr": "contre toute attente", "note": "Shows surprise or disbelief.", "ex": {"en": "He actually forgot his own birthday!", "parts": [["佢", "keoi5"], ["竟然", "ging2 jin4"], ["唔記得", "m4 gei3 dak1"], ["自己", "zi6 gei2"], ["生日", "saang1 jat6"], ["！"]]}},
-    {"hk": "有一次", "jp": "jau5 jat1 ci3", "en": "once; one time", "fr": "une fois", "note": "Classic story opener.", "ex": {"en": "Once I fell asleep on the MTR and missed my stop.", "parts": [["有一次", "jau5 jat1 ci3"], ["我", "ngo5"], ["喺", "hai2"], ["地鐵", "dei6 tit3"], ["瞓著咗", "fan3 zoek6 zo2"], ["，"], ["坐過龍", "co5 gwo3 lung4"], ["。"]]}},
-    {"hk": "即刻", "jp": "zik1 hak1", "en": "immediately", "fr": "tout de suite", "ex": {"en": "When he got the news he rushed over immediately.", "parts": [["佢", "keoi5"], ["收到", "sau1 dou2"], ["消息", "siu1 sik1"], ["，"], ["即刻", "zik1 hak1"], ["趕", "gon2"], ["過嚟", "gwo3 lai4"], ["。"]]}},
-    {"hk": "差啲", "jp": "caa1 di1", "en": "almost; nearly", "fr": "presque ; faillir", "note": "差啲 + bad thing = it almost happened (but didn't).", "ex": {"en": "I overslept this morning and was almost late.", "parts": [["我", "ngo5"], ["今朝", "gam1 ziu1"], ["瞓過龍", "fan3 gwo3 lung4"], ["，"], ["差啲", "caa1 di1"], ["遲到", "ci4 dou3"], ["。"]]}}
+    {
+      "hk": "以前",
+      "jp": "ji5 cin4",
+      "en": "before; in the past",
+      "fr": "avant ; autrefois",
+      "note": "Used for general past habits: 我以前 (ngo5 ji5 cin4)… 'I used to…'.",
+      "ex": {
+        "en": "I used to work in Hong Kong.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "以前",
+            "ji5 cin4"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "香港",
+            "hoeng1 gong2"
+          ],
+          [
+            "做嘢",
+            "zou6 je5"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "之前",
+      "jp": "zi1 cin4",
+      "en": "before (an event); ago",
+      "fr": "avant (un événement)",
+      "note": "Goes AFTER the event: 食飯之前 (sik6 faan6 zi1 cin4) = before eating. 三年之前 (saam1 nin4 zi1 cin4) = three years ago.",
+      "ex": {
+        "en": "Wash your hands before eating.",
+        "parts": [
+          [
+            "食飯",
+            "sik6 faan6"
+          ],
+          [
+            "之前",
+            "zi1 cin4"
+          ],
+          [
+            "要",
+            "jiu3"
+          ],
+          [
+            "洗手",
+            "sai2 sau2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "跟住",
+      "jp": "gan1 zyu6",
+      "en": "then; next; after that",
+      "fr": "ensuite ; puis",
+      "note": "Very common in spoken storytelling, more colloquial than 然後 (jin4 hau6).",
+      "ex": {
+        "en": "I'll go to the bank first, then go grocery shopping.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "先",
+            "sin1"
+          ],
+          [
+            "去",
+            "heoi3"
+          ],
+          [
+            "銀行",
+            "ngan4 hong4"
+          ],
+          [
+            "，"
+          ],
+          [
+            "跟住",
+            "gan1 zyu6"
+          ],
+          [
+            "去",
+            "heoi3"
+          ],
+          [
+            "買餸",
+            "maai5 sung3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "最後",
+      "jp": "zeoi3 hau6",
+      "en": "in the end; finally; last",
+      "fr": "finalement ; à la fin",
+      "ex": {
+        "en": "In the end he still didn't come.",
+        "parts": [
+          [
+            "最後",
+            "zeoi3 hau6"
+          ],
+          [
+            "佢",
+            "keoi5"
+          ],
+          [
+            "都係",
+            "dou1 hai6"
+          ],
+          [
+            "冇",
+            "mou5"
+          ],
+          [
+            "嚟",
+            "lai4"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "終於",
+      "jp": "zung1 jyu1",
+      "en": "at last (after waiting)",
+      "fr": "enfin (après attente)",
+      "note": "Carries relief: something you waited for finally happened.",
+      "ex": {
+        "en": "I've finally found a job!",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "終於",
+            "zung1 jyu1"
+          ],
+          [
+            "搵到",
+            "wan2 dou2"
+          ],
+          [
+            "工",
+            "gung1"
+          ],
+          [
+            "喇",
+            "laa3"
+          ],
+          [
+            "！"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "原來",
+      "jp": "jyun4 loi4",
+      "en": "so it turns out; actually",
+      "fr": "en fait ; il s'avère que",
+      "note": "Marks a discovery: 'oh, so that's how it is'.",
+      "ex": {
+        "en": "So you can speak Cantonese!",
+        "parts": [
+          [
+            "原來",
+            "jyun4 loi4"
+          ],
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "識講",
+            "sik1 gong2"
+          ],
+          [
+            "廣東話",
+            "gwong2 dung1 waa2"
+          ],
+          [
+            "㗎",
+            "gaa3"
+          ],
+          [
+            "！"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "突然",
+      "jp": "dat6 jin4",
+      "en": "suddenly",
+      "fr": "soudain",
+      "ex": {
+        "en": "Suddenly the power went out — it was so dark!",
+        "parts": [
+          [
+            "突然",
+            "dat6 jin4"
+          ],
+          [
+            "停電",
+            "ting4 din6"
+          ],
+          [
+            "，"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "黑",
+            "hak1"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "！"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "啱啱",
+      "jp": "ngaam1 ngaam1",
+      "en": "just (a moment ago)",
+      "fr": "venir de",
+      "note": "啱啱 (ngaam1 ngaam1) + verb = just did. Alone, 啱啱好 (ngaam1 ngaam1 hou2) = just right.",
+      "ex": {
+        "en": "He just left — you missed him by a step.",
+        "parts": [
+          [
+            "佢",
+            "keoi5"
+          ],
+          [
+            "啱啱",
+            "ngaam1 ngaam1"
+          ],
+          [
+            "走咗",
+            "zau2 zo2"
+          ],
+          [
+            "，"
+          ],
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "遲咗",
+            "ci4 zo2"
+          ],
+          [
+            "一步",
+            "jat1 bou6"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "一路",
+      "jp": "jat1 lou6",
+      "en": "all along; the whole time; while",
+      "fr": "depuis toujours ; tout le long",
+      "note": "一路 (jat1 lou6) A 一路 (jat1 lou6) B = doing A while doing B.",
+      "ex": {
+        "en": "He listens to music while he drives.",
+        "parts": [
+          [
+            "佢",
+            "keoi5"
+          ],
+          [
+            "一路",
+            "jat1 lou6"
+          ],
+          [
+            "揸車",
+            "zaa1 ce1"
+          ],
+          [
+            "一路",
+            "jat1 lou6"
+          ],
+          [
+            "聽歌",
+            "teng1 go1"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "當時",
+      "jp": "dong1 si4",
+      "en": "at that time",
+      "fr": "à ce moment-là",
+      "note": "A bit more formal than 嗰陣 (go2 zan6).",
+      "ex": {
+        "en": "At the time I didn't know he was the boss.",
+        "parts": [
+          [
+            "當時",
+            "dong1 si4"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "唔",
+            "m4"
+          ],
+          [
+            "知道",
+            "zi1 dou3"
+          ],
+          [
+            "佢",
+            "keoi5"
+          ],
+          [
+            "係",
+            "hai6"
+          ],
+          [
+            "老闆",
+            "lou5 baan2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "嗰陣",
+      "jp": "go2 zan6",
+      "en": "back then; (clause +) when",
+      "fr": "à l'époque ; quand",
+      "note": "Also 嗰陣時 (go2 zan6 si4). Put it after a clause: 我讀書嗰陣 (ngo5 duk6 syu1 go2 zan6) = when I was studying.",
+      "ex": {
+        "en": "When I was a student I loved playing ball.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "讀書",
+            "duk6 syu1"
+          ],
+          [
+            "嗰陣",
+            "go2 zan6"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "鍾意",
+            "zung1 ji3"
+          ],
+          [
+            "打波",
+            "daa2 bo1"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "發生",
+      "jp": "faat3 sang1",
+      "en": "to happen",
+      "fr": "se passer ; arriver",
+      "ex": {
+        "en": "What happened just now? Why are there so many police?",
+        "parts": [
+          [
+            "頭先",
+            "tau4 sin1"
+          ],
+          [
+            "發生",
+            "faat3 sang1"
+          ],
+          [
+            "咩事",
+            "me1 si6"
+          ],
+          [
+            "啊",
+            "aa3"
+          ],
+          [
+            "？"
+          ],
+          [
+            "點解",
+            "dim2 gaai2"
+          ],
+          [
+            "咁",
+            "gam3"
+          ],
+          [
+            "多",
+            "do1"
+          ],
+          [
+            "警察",
+            "ging2 caat3"
+          ],
+          [
+            "嘅",
+            "ge3"
+          ],
+          [
+            "？"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "經歷",
+      "jp": "ging1 lik6",
+      "en": "experience (lived through)",
+      "fr": "expérience vécue",
+      "note": "An event you went through, not work experience (that's 經驗 (ging1 jim6)).",
+      "ex": {
+        "en": "This is the most unforgettable experience of my life.",
+        "parts": [
+          [
+            "呢個",
+            "ni1 go3"
+          ],
+          [
+            "係",
+            "hai6"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "人生",
+            "jan4 sang1"
+          ],
+          [
+            "最",
+            "zeoi3"
+          ],
+          [
+            "難忘",
+            "naan4 mong4"
+          ],
+          [
+            "嘅",
+            "ge3"
+          ],
+          [
+            "經歷",
+            "ging1 lik6"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "故事",
+      "jp": "gu3 si6",
+      "en": "story",
+      "fr": "histoire",
+      "ex": {
+        "en": "Grandma often tells me stories about the old days.",
+        "parts": [
+          [
+            "婆婆",
+            "po4 po2"
+          ],
+          [
+            "成日",
+            "seng4 jat6"
+          ],
+          [
+            "講",
+            "gong2"
+          ],
+          [
+            "以前",
+            "ji5 cin4"
+          ],
+          [
+            "嘅",
+            "ge3"
+          ],
+          [
+            "故事",
+            "gu3 si6"
+          ],
+          [
+            "畀",
+            "bei2"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "聽",
+            "teng1"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "結果",
+      "jp": "git3 gwo2",
+      "en": "as a result; in the end",
+      "fr": "résultat ; du coup",
+      "note": "Introduces the (often bad) outcome.",
+      "ex": {
+        "en": "He didn't revise, so in the end he failed the exam.",
+        "parts": [
+          [
+            "佢",
+            "keoi5"
+          ],
+          [
+            "冇",
+            "mou5"
+          ],
+          [
+            "溫書",
+            "wan1 syu1"
+          ],
+          [
+            "，"
+          ],
+          [
+            "結果",
+            "git3 gwo2"
+          ],
+          [
+            "考試",
+            "haau2 si3"
+          ],
+          [
+            "唔",
+            "m4"
+          ],
+          [
+            "合格",
+            "hap6 gaak3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "唯有",
+      "jp": "wai4 jau5",
+      "en": "had no choice but to; the only thing to do",
+      "fr": "n'avoir d'autre choix que",
+      "note": "唯有 (wai4 jau5) + verb: the only option left. Very common when telling what went wrong.",
+      "ex": {
+        "en": "There were no taxis, so I had no choice but to walk.",
+        "parts": [
+          [
+            "冇",
+            "mou5"
+          ],
+          [
+            "的士",
+            "dik1 si2"
+          ],
+          [
+            "，"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "唯有",
+            "wai4 jau5"
+          ],
+          [
+            "行",
+            "haang4"
+          ],
+          [
+            "路",
+            "lou6"
+          ],
+          [
+            "返",
+            "faan1"
+          ],
+          [
+            "屋企",
+            "uk1 kei2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "本來",
+      "jp": "bun2 loi4",
+      "en": "originally; was going to",
+      "fr": "au départ ; normalement",
+      "note": "Sets up a plan that then changed.",
+      "ex": {
+        "en": "I was originally going to go, but something came up.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "本來",
+            "bun2 loi4"
+          ],
+          [
+            "想",
+            "soeng2"
+          ],
+          [
+            "去",
+            "heoi3"
+          ],
+          [
+            "，"
+          ],
+          [
+            "但係",
+            "daan6 hai6"
+          ],
+          [
+            "臨時",
+            "lam4 si4"
+          ],
+          [
+            "有事",
+            "jau5 si6"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "後來",
+      "jp": "hau6 loi4",
+      "en": "later on; afterwards",
+      "fr": "plus tard ; par la suite",
+      "note": "Only for the past. For the future say 遲啲 (ci4 di1).",
+      "ex": {
+        "en": "Later on they got married.",
+        "parts": [
+          [
+            "後來",
+            "hau6 loi4"
+          ],
+          [
+            "佢哋",
+            "keoi5 dei6"
+          ],
+          [
+            "結咗婚",
+            "git3 zo2 fan1"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "點知",
+      "jp": "dim2 zi1",
+      "en": "who'd have thought; but then",
+      "fr": "mais voilà que",
+      "note": "The twist word: 'I expected X, but then…'.",
+      "ex": {
+        "en": "I thought it would be sunny, but then it rained.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "以為",
+            "ji5 wai4"
+          ],
+          [
+            "會",
+            "wui5"
+          ],
+          [
+            "出太陽",
+            "ceot1 taai3 joeng4"
+          ],
+          [
+            "，"
+          ],
+          [
+            "點知",
+            "dim2 zi1"
+          ],
+          [
+            "落雨",
+            "lok6 jyu5"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "以為",
+      "jp": "ji5 wai4",
+      "en": "to think (wrongly), to assume",
+      "fr": "croire (à tort)",
+      "note": "以為 (ji5 wai4) = what you thought, which turned out to be wrong. Compare 覺得 (gok3 dak1) = your opinion.",
+      "ex": {
+        "en": "I thought you'd gone home!",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "以為",
+            "ji5 wai4"
+          ],
+          [
+            "你",
+            "nei5"
+          ],
+          [
+            "返",
+            "faan1"
+          ],
+          [
+            "咗",
+            "zo2"
+          ],
+          [
+            "屋企",
+            "uk1 kei2"
+          ],
+          [
+            "！"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "竟然",
+      "jp": "ging2 jin4",
+      "en": "actually (to my surprise)",
+      "fr": "contre toute attente",
+      "note": "Shows surprise or disbelief.",
+      "ex": {
+        "en": "He actually forgot his own birthday!",
+        "parts": [
+          [
+            "佢",
+            "keoi5"
+          ],
+          [
+            "竟然",
+            "ging2 jin4"
+          ],
+          [
+            "唔記得",
+            "m4 gei3 dak1"
+          ],
+          [
+            "自己",
+            "zi6 gei2"
+          ],
+          [
+            "生日",
+            "saang1 jat6"
+          ],
+          [
+            "！"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "有一次",
+      "jp": "jau5 jat1 ci3",
+      "en": "once; one time",
+      "fr": "une fois",
+      "note": "Classic story opener.",
+      "ex": {
+        "en": "Once I fell asleep on the MTR and missed my stop.",
+        "parts": [
+          [
+            "有一次",
+            "jau5 jat1 ci3"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "地鐵",
+            "dei6 tit3"
+          ],
+          [
+            "瞓著咗",
+            "fan3 zoek6 zo2"
+          ],
+          [
+            "，"
+          ],
+          [
+            "坐過龍",
+            "co5 gwo3 lung4"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "即刻",
+      "jp": "zik1 hak1",
+      "en": "immediately",
+      "fr": "tout de suite",
+      "ex": {
+        "en": "When he got the news he rushed over immediately.",
+        "parts": [
+          [
+            "佢",
+            "keoi5"
+          ],
+          [
+            "收到",
+            "sau1 dou2"
+          ],
+          [
+            "消息",
+            "siu1 sik1"
+          ],
+          [
+            "，"
+          ],
+          [
+            "即刻",
+            "zik1 hak1"
+          ],
+          [
+            "趕",
+            "gon2"
+          ],
+          [
+            "過嚟",
+            "gwo3 lai4"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "冇耐",
+      "jp": "mou5 noi2",
+      "en": "soon (after), before long",
+      "fr": "peu de temps après",
+      "note": "Verb + 冇耐 (mou5 noi2) = not long after…, e.g. 落車 (lok6 ce1) 冇耐 (mou5 noi2) = soon after getting off.",
+      "ex": {
+        "en": "Not long after I got home, it started raining.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "返",
+            "faan1"
+          ],
+          [
+            "到",
+            "dou3"
+          ],
+          [
+            "屋企",
+            "uk1 kei2"
+          ],
+          [
+            "冇耐",
+            "mou5 noi2"
+          ],
+          [
+            "，"
+          ],
+          [
+            "就",
+            "zau6"
+          ],
+          [
+            "落雨",
+            "lok6 jyu5"
+          ],
+          [
+            "喇",
+            "laa3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    },
+    {
+      "hk": "差啲",
+      "jp": "caa1 di1",
+      "en": "almost; nearly",
+      "fr": "presque ; faillir",
+      "note": "差啲 (caa1 di1) + bad thing = it almost happened (but didn't).",
+      "ex": {
+        "en": "I overslept this morning and was almost late.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "今朝",
+            "gam1 ziu1"
+          ],
+          [
+            "瞓過龍",
+            "fan3 gwo3 lung4"
+          ],
+          [
+            "，"
+          ],
+          [
+            "差啲",
+            "caa1 di1"
+          ],
+          [
+            "遲到",
+            "ci4 dou3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
+    }
   ],
   "sentences": [
-    {"en": "I used to live in Kowloon; later I moved to Hong Kong Island.", "parts": [["以前", "ji5 cin4"], ["我", "ngo5"], ["住", "zyu6"], ["喺", "hai2"], ["九龍", "gau2 lung4"], ["，"], ["後來", "hau6 loi4"], ["搬咗", "bun1 zo2"], ["去", "heoi3"], ["港島", "gong2 dou2"], ["。"]]},
-    {"en": "Do you remember what happened when we first met?", "parts": [["你", "nei5"], ["記唔記得", "gei3 m4 gei3 dak1"], ["我哋", "ngo5 dei6"], ["第一次", "dai6 jat1 ci3"], ["見面", "gin3 min6"], ["嗰陣", "go2 zan6"], ["發生", "faat3 sang1"], ["咗", "zo2"], ["咩事", "me1 si6"], ["？"]]},
-    {"en": "I had just stepped out the door when it suddenly started pouring.", "parts": [["我", "ngo5"], ["啱啱", "ngaam1 ngaam1"], ["出門口", "ceot1 mun4 hau2"], ["，"], ["突然", "dat6 jin4"], ["落起", "lok6 hei2"], ["大雨", "daai6 jyu5"], ["嚟", "lai4"], ["。"]]},
-    {"en": "We'd planned to go hiking, but a typhoon came, so we had to cancel.", "parts": [["本來", "bun2 loi4"], ["我哋", "ngo5 dei6"], ["約好", "joek3 hou2"], ["去", "heoi3"], ["行山", "haang4 saan1"], ["，"], ["點知", "dim2 zi1"], ["打風", "daa2 fung1"], ["，"], ["唯有", "wai4 jau5"], ["取消", "ceoi2 siu1"], ["。"]]},
-    {"en": "I always thought she was Japanese — turns out she's Korean.", "parts": [["我", "ngo5"], ["一路", "jat1 lou6"], ["以為", "ji5 wai4"], ["佢", "keoi5"], ["係", "hai6"], ["日本人", "jat6 bun2 jan4"], ["，"], ["原來", "jyun4 loi4"], ["佢", "keoi5"], ["係", "hai6"], ["韓國人", "hon4 gwok3 jan4"], ["。"]]},
-    {"en": "I was so nervous at the time that I nearly failed the exam.", "parts": [["當時", "dong1 si4"], ["我", "ngo5"], ["太", "taai3"], ["緊張", "gan2 zoeng1"], ["，"], ["結果", "git3 gwo2"], ["考試", "haau2 si5"], ["差啲", "caa1 di1"], ["唔", "m4"], ["合格", "hap6 gaak3"], ["。"]]},
-    {"en": "We waited half an hour and the bus finally came.", "parts": [["我哋", "ngo5 dei6"], ["等咗", "dang2 zo2"], ["半個鐘", "bun3 go3 zung1"], ["，"], ["架", "gaa3"], ["巴士", "baa1 si2"], ["終於", "zung1 jyu1"], ["嚟", "lai4"], ["喇", "laa3"], ["。"]]},
-    {"en": "After hearing the news, he immediately phoned his family.", "parts": [["佢", "keoi5"], ["聽到", "teng1 dou2"], ["呢個", "ni1 go3"], ["消息", "siu1 sik1"], ["之後", "zi1 hau6"], ["，"], ["即刻", "zik1 hak1"], ["打電話", "daa2 din6 waa2"], ["畀", "bei2"], ["屋企人", "uk1 kei2 jan4"], ["。"]]},
-    {"en": "Back then I'd just graduated and didn't know a thing.", "parts": [["嗰陣", "go2 zan6"], ["我", "ngo5"], ["啱啱", "ngaam1 ngaam1"], ["畢業", "bat1 jip6"], ["，"], ["乜都", "mat1 dou1"], ["唔", "m4"], ["識", "sik1"], ["。"]]},
-    {"en": "And then what happened? Hurry up and finish the story!", "parts": [["跟住", "gan1 zyu6"], ["發生", "faat3 sang1"], ["咩事", "me1 si6"], ["啊", "aa3"], ["？"], ["快啲", "faai3 di1"], ["講", "gong2"], ["埋", "maai4"], ["個", "go3"], ["故事", "gu3 si6"], ["啦", "laa1"], ["！"]]},
-    {"en": "That experience made me realise that health matters more than money.", "parts": [["呢個", "ni1 go3"], ["經歷", "ging1 lik6"], ["令", "ling6"], ["我", "ngo5"], ["明白", "ming4 baak6"], ["，"], ["健康", "gin6 hong1"], ["比", "bei2"], ["錢", "cin2"], ["重要", "zung6 jiu3"], ["。"]]},
-    {"en": "In the end we decided not to go and had hotpot at home.", "parts": [["最後", "zeoi3 hau6"], ["我哋", "ngo5 dei6"], ["決定", "kyut3 ding6"], ["唔", "m4"], ["去", "heoi3"], ["，"], ["留", "lau4"], ["喺", "hai2"], ["屋企", "uk1 kei2"], ["打邊爐", "daa2 bin1 lou4"], ["。"]]},
-    {"en": "When I was little I was afraid of the dark and had to sleep with the light on.", "parts": [["我", "ngo5"], ["細個", "sai3 go3"], ["嗰陣", "go2 zan6"], ["好", "hou2"], ["怕黑", "paa3 hak1"], ["，"], ["晚晚", "maan5 maan5"], ["都", "dou1"], ["要", "jiu3"], ["開燈", "hoi1 dang1"], ["先", "sin1"], ["瞓得著", "fan3 dak1 zoek6"], ["。"]]},
-    {"en": "I actually bumped into my primary-school classmate in Geneva — who'd have guessed!", "parts": [["我", "ngo5"], ["竟然", "ging2 jin4"], ["喺", "hai2"], ["日內瓦", "jat6 noi6 ngaa5"], ["撞到", "zong6 dou2"], ["小學", "siu2 hok6"], ["同學", "tung4 hok6"], ["，"], ["真係", "zan1 hai6"], ["估唔到", "gu2 m4 dou3"], ["！"]]}
+    {
+      "en": "I used to live in Kowloon; later I moved to Hong Kong Island.",
+      "parts": [
+        [
+          "以前",
+          "ji5 cin4"
+        ],
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "住",
+          "zyu6"
+        ],
+        [
+          "喺",
+          "hai2"
+        ],
+        [
+          "九龍",
+          "gau2 lung4"
+        ],
+        [
+          "，"
+        ],
+        [
+          "後來",
+          "hau6 loi4"
+        ],
+        [
+          "搬",
+          "bun1"
+        ],
+        [
+          "咗",
+          "zo2"
+        ],
+        [
+          "去",
+          "heoi3"
+        ],
+        [
+          "港島",
+          "gong2 dou2"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "Do you remember what happened when we first met?",
+      "parts": [
+        [
+          "你",
+          "nei5"
+        ],
+        [
+          "記唔記得",
+          "gei3 m4 gei3 dak1"
+        ],
+        [
+          "我哋",
+          "ngo5 dei6"
+        ],
+        [
+          "第一次",
+          "dai6 jat1 ci3"
+        ],
+        [
+          "見面",
+          "gin3 min6"
+        ],
+        [
+          "嗰陣",
+          "go2 zan6"
+        ],
+        [
+          "發生",
+          "faat3 sang1"
+        ],
+        [
+          "咗",
+          "zo2"
+        ],
+        [
+          "咩事",
+          "me1 si6"
+        ],
+        [
+          "？"
+        ]
+      ]
+    },
+    {
+      "en": "I'd just left home when it suddenly started raining — and I had no umbrella!",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "啱啱",
+          "ngaam1 ngaam1"
+        ],
+        [
+          "出門",
+          "ceot1 mun4"
+        ],
+        [
+          "，"
+        ],
+        [
+          "突然",
+          "dat6 jin4"
+        ],
+        [
+          "落雨",
+          "lok6 jyu5"
+        ],
+        [
+          "，"
+        ],
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "又",
+          "jau6"
+        ],
+        [
+          "冇",
+          "mou5"
+        ],
+        [
+          "帶",
+          "daai3"
+        ],
+        [
+          "遮",
+          "ze1"
+        ],
+        [
+          "！"
+        ]
+      ]
+    },
+    {
+      "en": "We'd planned to go hiking, but a typhoon came, so we had to cancel.",
+      "parts": [
+        [
+          "本來",
+          "bun2 loi4"
+        ],
+        [
+          "我哋",
+          "ngo5 dei6"
+        ],
+        [
+          "約好",
+          "joek3 hou2"
+        ],
+        [
+          "去",
+          "heoi3"
+        ],
+        [
+          "行山",
+          "haang4 saan1"
+        ],
+        [
+          "，"
+        ],
+        [
+          "點知",
+          "dim2 zi1"
+        ],
+        [
+          "打風",
+          "daa2 fung1"
+        ],
+        [
+          "，"
+        ],
+        [
+          "唯有",
+          "wai4 jau5"
+        ],
+        [
+          "取消",
+          "ceoi2 siu1"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "I always thought he was a student — turns out he's the teacher!",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "一路",
+          "jat1 lou6"
+        ],
+        [
+          "以為",
+          "ji5 wai4"
+        ],
+        [
+          "佢",
+          "keoi5"
+        ],
+        [
+          "係",
+          "hai6"
+        ],
+        [
+          "學生",
+          "hok6 saang1"
+        ],
+        [
+          "，"
+        ],
+        [
+          "原來",
+          "jyun4 loi4"
+        ],
+        [
+          "佢",
+          "keoi5"
+        ],
+        [
+          "係",
+          "hai6"
+        ],
+        [
+          "老師",
+          "lou5 si1"
+        ],
+        [
+          "！"
+        ]
+      ]
+    },
+    {
+      "en": "I was so nervous at the time that I nearly failed the exam.",
+      "parts": [
+        [
+          "當時",
+          "dong1 si4"
+        ],
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "太",
+          "taai3"
+        ],
+        [
+          "緊張",
+          "gan2 zoeng1"
+        ],
+        [
+          "，"
+        ],
+        [
+          "結果",
+          "git3 gwo2"
+        ],
+        [
+          "考試",
+          "haau2 si3"
+        ],
+        [
+          "差啲",
+          "caa1 di1"
+        ],
+        [
+          "唔",
+          "m4"
+        ],
+        [
+          "合格",
+          "hap6 gaak3"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "We waited half an hour and the bus finally came.",
+      "parts": [
+        [
+          "我哋",
+          "ngo5 dei6"
+        ],
+        [
+          "等咗",
+          "dang2 zo2"
+        ],
+        [
+          "半個鐘",
+          "bun3 go3 zung1"
+        ],
+        [
+          "，"
+        ],
+        [
+          "架",
+          "gaa3"
+        ],
+        [
+          "巴士",
+          "baa1 si2"
+        ],
+        [
+          "終於",
+          "zung1 jyu1"
+        ],
+        [
+          "嚟",
+          "lai4"
+        ],
+        [
+          "喇",
+          "laa3"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "After hearing the news, he immediately phoned his family.",
+      "parts": [
+        [
+          "佢",
+          "keoi5"
+        ],
+        [
+          "聽到",
+          "teng1 dou2"
+        ],
+        [
+          "呢個",
+          "ni1 go3"
+        ],
+        [
+          "消息",
+          "siu1 sik1"
+        ],
+        [
+          "之後",
+          "zi1 hau6"
+        ],
+        [
+          "，"
+        ],
+        [
+          "即刻",
+          "zik1 hak1"
+        ],
+        [
+          "打電話",
+          "daa2 din6 waa2"
+        ],
+        [
+          "畀",
+          "bei2"
+        ],
+        [
+          "屋企人",
+          "uk1 kei2 jan4"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "Back then I'd just graduated and didn't know a thing.",
+      "parts": [
+        [
+          "嗰陣",
+          "go2 zan6"
+        ],
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "啱啱",
+          "ngaam1 ngaam1"
+        ],
+        [
+          "畢業",
+          "bat1 jip6"
+        ],
+        [
+          "，"
+        ],
+        [
+          "乜都",
+          "mat1 dou1"
+        ],
+        [
+          "唔",
+          "m4"
+        ],
+        [
+          "識",
+          "sik1"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "And then what happened? Hurry up and finish the story!",
+      "parts": [
+        [
+          "跟住",
+          "gan1 zyu6"
+        ],
+        [
+          "發生",
+          "faat3 sang1"
+        ],
+        [
+          "咩事",
+          "me1 si6"
+        ],
+        [
+          "啊",
+          "aa3"
+        ],
+        [
+          "？"
+        ],
+        [
+          "快啲",
+          "faai3 di1"
+        ],
+        [
+          "講",
+          "gong2"
+        ],
+        [
+          "埋",
+          "maai4"
+        ],
+        [
+          "個",
+          "go3"
+        ],
+        [
+          "故事",
+          "gu3 si6"
+        ],
+        [
+          "啦",
+          "laa1"
+        ],
+        [
+          "！"
+        ]
+      ]
+    },
+    {
+      "en": "After that experience, I feel health matters more than money.",
+      "parts": [
+        [
+          "呢次",
+          "ni1 ci3"
+        ],
+        [
+          "經歷",
+          "ging1 lik6"
+        ],
+        [
+          "之後",
+          "zi1 hau6"
+        ],
+        [
+          "，"
+        ],
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "覺得",
+          "gok3 dak1"
+        ],
+        [
+          "身體",
+          "san1 tai2"
+        ],
+        [
+          "比",
+          "bei2"
+        ],
+        [
+          "錢",
+          "cin2"
+        ],
+        [
+          "重要",
+          "zung6 jiu3"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "In the end we didn't go, and had hotpot at home instead.",
+      "parts": [
+        [
+          "最後",
+          "zeoi3 hau6"
+        ],
+        [
+          "我哋",
+          "ngo5 dei6"
+        ],
+        [
+          "冇",
+          "mou5"
+        ],
+        [
+          "去",
+          "heoi3"
+        ],
+        [
+          "，"
+        ],
+        [
+          "喺",
+          "hai2"
+        ],
+        [
+          "屋企",
+          "uk1 kei2"
+        ],
+        [
+          "打邊爐",
+          "daa2 bin1 lou4"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "When I was little I was scared of the dark — I had to sleep with the light on.",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "細個",
+          "sai3 go3"
+        ],
+        [
+          "嗰陣",
+          "go2 zan6"
+        ],
+        [
+          "好",
+          "hou2"
+        ],
+        [
+          "驚",
+          "geng1"
+        ],
+        [
+          "黑",
+          "hak1"
+        ],
+        [
+          "，"
+        ],
+        [
+          "要",
+          "jiu3"
+        ],
+        [
+          "開燈",
+          "hoi1 dang1"
+        ],
+        [
+          "瞓覺",
+          "fan3 gaau3"
+        ],
+        [
+          "。"
+        ]
+      ]
+    },
+    {
+      "en": "I actually bumped into my primary-school teacher in London!",
+      "parts": [
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "竟然",
+          "ging2 jin4"
+        ],
+        [
+          "喺",
+          "hai2"
+        ],
+        [
+          "倫敦",
+          "leon4 deon1"
+        ],
+        [
+          "撞到",
+          "zong6 dou2"
+        ],
+        [
+          "我",
+          "ngo5"
+        ],
+        [
+          "小學",
+          "siu2 hok6"
+        ],
+        [
+          "老師",
+          "lou5 si1"
+        ],
+        [
+          "！"
+        ]
+      ]
+    }
   ],
   "grammar": [
-    {"title": "本來… 點知… — the plan and the twist", "explain": "本來 sets up what was supposed to happen; 點知 ('who knew') brings in what actually happened. It's the backbone of most Cantonese anecdotes.", "examples": [{"en": "I was going to go hiking, but then it rained.", "parts": [["本來", "bun2 loi4"], ["想", "soeng2"], ["去", "heoi3"], ["行山", "haang4 saan1"], ["，"], ["點知", "dim2 zi1"], ["落雨", "lok6 jyu5"], ["。"]]}, {"en": "I thought he wouldn't come — turns out he was first to arrive.", "parts": [["我", "ngo5"], ["本來", "bun2 loi4"], ["以為", "ji5 wai4"], ["佢", "keoi5"], ["唔會", "m4 wui5"], ["嚟", "lai4"], ["，"], ["點知", "dim2 zi1"], ["佢", "keoi5"], ["第一個", "dai6 jat1 go3"], ["到", "dou3"], ["。"]]}]},
-    {"title": "Clause + 嗰陣 = 'when …'", "explain": "To say 'when X happened', put the whole clause first and end it with 嗰陣 (or 嗰陣時). There's no word at the front like English 'when'.", "examples": [{"en": "When I was little I lived in New Zealand.", "parts": [["我", "ngo5"], ["細個", "sai3 go3"], ["嗰陣", "go2 zan6"], ["住", "zyu6"], ["喺", "hai2"], ["新西蘭", "san1 sai1 laan4"], ["。"]]}, {"en": "When I got home, he was already asleep.", "parts": [["我", "ngo5"], ["返到", "faan1 dou3"], ["屋企", "uk1 kei2"], ["嗰陣", "go2 zan6"], ["，"], ["佢", "keoi5"], ["已經", "ji5 ging1"], ["瞓咗", "fan3 zo2"], ["。"]]}]},
-    {"title": "一路 A 一路 B — doing two things at once", "explain": "Repeat 一路 before each verb: 一路行一路食 = eat while walking. On its own, 一路 means 'all along' (我一路以為…).", "examples": [{"en": "He eats while walking.", "parts": [["佢", "keoi5"], ["一路", "jat1 lou6"], ["行", "haang4"], ["一路", "jat1 lou6"], ["食", "sik6"], ["。"]]}, {"en": "We chatted over our tea.", "parts": [["我哋", "ngo5 dei6"], ["一路", "jat1 lou6"], ["飲茶", "jam2 caa4"], ["一路", "jat1 lou6"], ["傾偈", "king1 gai2"], ["。"]]}]}
+    {
+      "title": "本來 (bun2 loi4)… 點知 (dim2 zi1)… — the plan and the twist",
+      "explain": "本來 (bun2 loi4) sets up what was supposed to happen; 點知 (dim2 zi1) ('who knew') brings in what actually happened. It's the backbone of most Cantonese anecdotes.",
+      "examples": [
+        {
+          "en": "I was going to go hiking, but then it rained.",
+          "parts": [
+            [
+              "本來",
+              "bun2 loi4"
+            ],
+            [
+              "想",
+              "soeng2"
+            ],
+            [
+              "去",
+              "heoi3"
+            ],
+            [
+              "行山",
+              "haang4 saan1"
+            ],
+            [
+              "，"
+            ],
+            [
+              "點知",
+              "dim2 zi1"
+            ],
+            [
+              "落雨",
+              "lok6 jyu5"
+            ],
+            [
+              "。"
+            ]
+          ]
+        },
+        {
+          "en": "I thought he wouldn't come — turns out he was first to arrive.",
+          "parts": [
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "本來",
+              "bun2 loi4"
+            ],
+            [
+              "以為",
+              "ji5 wai4"
+            ],
+            [
+              "佢",
+              "keoi5"
+            ],
+            [
+              "唔會",
+              "m4 wui5"
+            ],
+            [
+              "嚟",
+              "lai4"
+            ],
+            [
+              "，"
+            ],
+            [
+              "點知",
+              "dim2 zi1"
+            ],
+            [
+              "佢",
+              "keoi5"
+            ],
+            [
+              "第一個",
+              "dai6 jat1 go3"
+            ],
+            [
+              "到",
+              "dou3"
+            ],
+            [
+              "。"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Clause + 嗰陣 (go2 zan6) = 'when …'",
+      "explain": "To say 'when X happened', put the whole clause first and end it with 嗰陣 (go2 zan6) (or 嗰陣時 (go2 zan6 si4)). There's no word at the front like English 'when'.",
+      "examples": [
+        {
+          "en": "When I was little I lived in Canada.",
+          "parts": [
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "細個",
+              "sai3 go3"
+            ],
+            [
+              "嗰陣",
+              "go2 zan6"
+            ],
+            [
+              "住",
+              "zyu6"
+            ],
+            [
+              "喺",
+              "hai2"
+            ],
+            [
+              "加拿大",
+              "gaa1 naa4 daai6"
+            ],
+            [
+              "。"
+            ]
+          ]
+        },
+        {
+          "en": "When I got home, he was already asleep.",
+          "parts": [
+            [
+              "我",
+              "ngo5"
+            ],
+            [
+              "返到",
+              "faan1 dou3"
+            ],
+            [
+              "屋企",
+              "uk1 kei2"
+            ],
+            [
+              "嗰陣",
+              "go2 zan6"
+            ],
+            [
+              "，"
+            ],
+            [
+              "佢",
+              "keoi5"
+            ],
+            [
+              "已經",
+              "ji5 ging1"
+            ],
+            [
+              "瞓咗",
+              "fan3 zo2"
+            ],
+            [
+              "。"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "一路 (jat1 lou6) A 一路 (jat1 lou6) B — doing two things at once",
+      "explain": "Repeat 一路 (jat1 lou6) before each verb: 一路行一路食 (jat1 lou6 haang4 jat1 lou6 sik6) = eat while walking. On its own, 一路 (jat1 lou6) means 'all along' (我一路以為 (ngo5 jat1 lou6 ji5 wai4)…).",
+      "examples": [
+        {
+          "en": "He eats while walking.",
+          "parts": [
+            [
+              "佢",
+              "keoi5"
+            ],
+            [
+              "一路",
+              "jat1 lou6"
+            ],
+            [
+              "行",
+              "haang4"
+            ],
+            [
+              "一路",
+              "jat1 lou6"
+            ],
+            [
+              "食",
+              "sik6"
+            ],
+            [
+              "。"
+            ]
+          ]
+        },
+        {
+          "en": "We chatted over our tea.",
+          "parts": [
+            [
+              "我哋",
+              "ngo5 dei6"
+            ],
+            [
+              "一路",
+              "jat1 lou6"
+            ],
+            [
+              "飲茶",
+              "jam2 caa4"
+            ],
+            [
+              "一路",
+              "jat1 lou6"
+            ],
+            [
+              "傾偈",
+              "king1 gai2"
+            ],
+            [
+              "。"
+            ]
+          ]
+        }
+      ]
+    }
   ],
   "dialogue": {
     "title": "The wallet on the minibus",
     "lines": [
-      {"spk": "N", "en": "Once, I took a minibus home from Mong Kok after work.", "parts": [["有一次", "jau5 jat1 ci3"], ["，"], ["我", "ngo5"], ["放咗工", "fong3 zo2 gung1"], ["喺", "hai2"], ["旺角", "wong6 gok3"], ["搭", "daap3"], ["小巴", "siu2 baa1"], ["返", "faan1"], ["屋企", "uk1 kei2"], ["。"]]},
-      {"spk": "N", "en": "I was really tired then, and soon after sitting down I fell asleep.", "parts": [["嗰陣", "go2 zan6"], ["我", "ngo5"], ["好", "hou2"], ["攰", "gui6"], ["，"], ["坐低", "co5 dai1"], ["冇耐", "mou5 noi2"], ["就", "zau6"], ["瞓著咗", "fan3 zoek6 zo2"], ["。"]]},
-      {"spk": "N", "en": "Suddenly the driver shouted that we'd reached the terminus, and I jumped up and got off.", "parts": [["突然", "dat6 jin4"], ["司機", "si1 gei1"], ["大聲", "daai6 seng1"], ["話", "waa6"], ["到咗", "dou3 zo2"], ["總站", "zung2 zaam6"], ["，"], ["我", "ngo5"], ["即刻", "zik1 hak1"], ["跳起身", "tiu3 hei2 san1"], ["落車", "lok6 ce1"], ["。"]]},
-      {"spk": "N", "en": "Not long after getting off, I realised my wallet was gone!", "parts": [["落咗車", "lok6 zo2 ce1"], ["冇耐", "mou5 noi2"], ["，"], ["我", "ngo5"], ["發覺", "faat3 gok3"], ["個", "go3"], ["銀包", "ngan4 baau1"], ["唔見咗", "m4 gin3 zo2"], ["！"]]},
-      {"spk": "N", "en": "Inside were my ID card and a few hundred dollars in cash.", "parts": [["入面", "jap6 min6"], ["有", "jau5"], ["身份證", "san1 fan2 zing3"], ["同埋", "tung4 maai4"], ["幾百蚊", "gei2 baak3 man1"], ["現金", "jin6 gam1"], ["。"]]},
-      {"spk": "N", "en": "I ran straight back to the terminus, but the minibus had already left.", "parts": [["我", "ngo5"], ["即刻", "zik1 hak1"], ["跑返去", "paau2 faan1 heoi3"], ["總站", "zung2 zaam6"], ["，"], ["但係", "daan6 hai6"], ["架", "gaa3"], ["小巴", "siu2 baa1"], ["已經", "ji5 ging1"], ["開走咗", "hoi1 zau2 zo2"], ["。"]]},
-      {"spk": "N", "en": "At the time I really didn't know what to do, so I just went to the police station to report it.", "parts": [["當時", "dong1 si4"], ["我", "ngo5"], ["真係", "zan1 hai6"], ["唔知", "m4 zi1"], ["點算", "dim2 syun3"], ["，"], ["唯有", "wai4 jau5"], ["去", "heoi3"], ["警署", "ging2 cyu5"], ["報失", "bou3 sat1"], ["。"]]},
-      {"spk": "N", "en": "I'd assumed I'd never get the wallet back.", "parts": [["本來", "bun2 loi4"], ["我", "ngo5"], ["以為", "ji5 wai4"], ["個", "go3"], ["銀包", "ngan4 baau1"], ["一定", "jat1 ding6"], ["搵唔返", "wan2 m4 faan1"], ["喇", "laa3"], ["。"]]},
-      {"spk": "N", "en": "But then the next morning, an old man phoned me.", "parts": [["點知", "dim2 zi1"], ["第二朝", "dai6 ji6 ziu1"], ["，"], ["有", "jau5"], ["個", "go3"], ["伯伯", "baak3 baak3"], ["打電話", "daa2 din6 waa2"], ["畀", "bei2"], ["我", "ngo5"], ["。"]]},
-      {"spk": "N", "en": "It turned out he'd picked up my wallet on the minibus.", "parts": [["原來", "jyun4 loi4"], ["佢", "keoi5"], ["喺", "hai2"], ["小巴", "siu2 baa1"], ["上面", "soeng6 min6"], ["執到", "zap1 dou2"], ["我", "ngo5"], ["個", "go3"], ["銀包", "ngan4 baau1"], ["。"]]},
-      {"spk": "N", "en": "He found my business card inside, so he knew whom to call.", "parts": [["佢", "keoi5"], ["喺", "hai2"], ["入面", "jap6 min6"], ["搵到", "wan2 dou2"], ["我", "ngo5"], ["張", "zoeng1"], ["卡片", "kaat1 pin2"], ["，"], ["所以", "so2 ji5"], ["識", "sik1"], ["打", "daa2"], ["嚟", "lai4"], ["。"]]},
-      {"spk": "N", "en": "He even came all the way out from Tuen Mun just to give it back to me.", "parts": [["佢", "keoi5"], ["仲", "zung6"], ["特登", "dak6 dang1"], ["由", "jau4"], ["屯門", "tyun4 mun4"], ["出嚟", "ceot1 lai4"], ["，"], ["交返", "gaau1 faan1"], ["個", "go3"], ["銀包", "ngan4 baau1"], ["畀", "bei2"], ["我", "ngo5"], ["。"]]},
-      {"spk": "N", "en": "I opened it and — amazingly — not a single dollar was missing!", "parts": [["我", "ngo5"], ["打開", "daa2 hoi1"], ["睇", "tai2"], ["，"], ["竟然", "ging2 jin4"], ["一蚊", "jat1 man1"], ["都", "dou1"], ["冇", "mou5"], ["少", "siu2"], ["！"]]},
-      {"spk": "N", "en": "I wanted to give him some money to say thanks, but he just smiled and said there was no need.", "parts": [["我", "ngo5"], ["想", "soeng2"], ["畀", "bei2"], ["啲", "di1"], ["錢", "cin2"], ["佢", "keoi5"], ["多謝", "do1 ze6"], ["佢", "keoi5"], ["，"], ["但係", "daan6 hai6"], ["佢", "keoi5"], ["笑笑口", "siu3 siu3 hau2"], ["話", "waa6"], ["唔使", "m4 sai2"], ["。"]]},
-      {"spk": "N", "en": "In the end I treated him to a milk tea, and we chatted while we drank.", "parts": [["最後", "zeoi3 hau6"], ["我", "ngo5"], ["請", "ceng2"], ["佢", "keoi5"], ["飲", "jam2"], ["杯", "bui1"], ["奶茶", "naai5 caa4"], ["，"], ["一路", "jat1 lou6"], ["飲", "jam2"], ["一路", "jat1 lou6"], ["傾偈", "king1 gai2"], ["。"]]},
-      {"spk": "N", "en": "That experience made me feel Hong Kong really is full of human warmth.", "parts": [["呢次", "ni1 ci3"], ["經歷", "ging1 lik6"], ["令", "ling6"], ["我", "ngo5"], ["覺得", "gok3 dak1"], ["香港", "hoeng1 gong2"], ["真係", "zan1 hai6"], ["好", "hou2"], ["有", "jau5"], ["人情味", "jan4 cing4 mei6"], ["。"]]}
+      {
+        "spk": "N",
+        "en": "Once, I took a minibus home from Mong Kok after work.",
+        "parts": [
+          [
+            "有一次",
+            "jau5 jat1 ci3"
+          ],
+          [
+            "，"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "放工",
+            "fong3 gung1"
+          ],
+          [
+            "之後",
+            "zi1 hau6"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "旺角",
+            "wong6 gok3"
+          ],
+          [
+            "搭",
+            "daap3"
+          ],
+          [
+            "小巴",
+            "siu2 baa1"
+          ],
+          [
+            "返",
+            "faan1"
+          ],
+          [
+            "屋企",
+            "uk1 kei2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "N",
+        "en": "I was really tired then, and before long I fell asleep.",
+        "parts": [
+          [
+            "嗰陣",
+            "go2 zan6"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "攰",
+            "gui6"
+          ],
+          [
+            "，"
+          ],
+          [
+            "冇耐",
+            "mou5 noi2"
+          ],
+          [
+            "就",
+            "zau6"
+          ],
+          [
+            "瞓著",
+            "fan3 zoek6"
+          ],
+          [
+            "咗",
+            "zo2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "N",
+        "en": "Suddenly the driver shouted that we had reached the last stop — I jumped up and got off.",
+        "parts": [
+          [
+            "突然",
+            "dat6 jin4"
+          ],
+          [
+            "司機",
+            "si1 gei1"
+          ],
+          [
+            "大聲",
+            "daai6 seng1"
+          ],
+          [
+            "話",
+            "waa6"
+          ],
+          [
+            "到",
+            "dou3"
+          ],
+          [
+            "咗",
+            "zo2"
+          ],
+          [
+            "總站",
+            "zung2 zaam6"
+          ],
+          [
+            "，"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "即刻",
+            "zik1 hak1"
+          ],
+          [
+            "起身",
+            "hei2 san1"
+          ],
+          [
+            "落車",
+            "lok6 ce1"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "N",
+        "en": "Not long after getting off, I realised my wallet was gone!",
+        "parts": [
+          [
+            "落車",
+            "lok6 ce1"
+          ],
+          [
+            "冇耐",
+            "mou5 noi2"
+          ],
+          [
+            "，"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "先",
+            "sin1"
+          ],
+          [
+            "知",
+            "zi1"
+          ],
+          [
+            "個",
+            "go3"
+          ],
+          [
+            "銀包",
+            "ngan4 baau1"
+          ],
+          [
+            "唔見咗",
+            "m4 gin3 zo2"
+          ],
+          [
+            "！"
+          ]
+        ]
+      },
+      {
+        "spk": "N",
+        "en": "Inside were my ID card and five hundred dollars in cash.",
+        "parts": [
+          [
+            "銀包",
+            "ngan4 baau1"
+          ],
+          [
+            "入面",
+            "jap6 min6"
+          ],
+          [
+            "有",
+            "jau5"
+          ],
+          [
+            "身份證",
+            "san1 fan2 zing3"
+          ],
+          [
+            "，"
+          ],
+          [
+            "仲",
+            "zung6"
+          ],
+          [
+            "有",
+            "jau5"
+          ],
+          [
+            "五百",
+            "ng5 baak3"
+          ],
+          [
+            "蚊",
+            "man1"
+          ],
+          [
+            "現金",
+            "jin6 gam1"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "N",
+        "en": "I went straight back to the terminus, but the minibus had already left.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "即刻",
+            "zik1 hak1"
+          ],
+          [
+            "返去",
+            "faan1 heoi3"
+          ],
+          [
+            "總站",
+            "zung2 zaam6"
+          ],
+          [
+            "，"
+          ],
+          [
+            "但係",
+            "daan6 hai6"
+          ],
+          [
+            "架",
+            "gaa3"
+          ],
+          [
+            "小巴",
+            "siu2 baa1"
+          ],
+          [
+            "已經",
+            "ji5 ging1"
+          ],
+          [
+            "走",
+            "zau2"
+          ],
+          [
+            "咗",
+            "zo2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "N",
+        "en": "At the time I really didn't know what to do, so I had no choice but to call the police.",
+        "parts": [
+          [
+            "當時",
+            "dong1 si4"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "真係",
+            "zan1 hai6"
+          ],
+          [
+            "唔知",
+            "m4 zi1"
+          ],
+          [
+            "點算",
+            "dim2 syun3"
+          ],
+          [
+            "，"
+          ],
+          [
+            "唯有",
+            "wai4 jau5"
+          ],
+          [
+            "報警",
+            "bou3 ging2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "N",
+        "en": "I'd assumed I'd never get the wallet back.",
+        "parts": [
+          [
+            "本來",
+            "bun2 loi4"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "以為",
+            "ji5 wai4"
+          ],
+          [
+            "個",
+            "go3"
+          ],
+          [
+            "銀包",
+            "ngan4 baau1"
+          ],
+          [
+            "一定",
+            "jat1 ding6"
+          ],
+          [
+            "搵唔返",
+            "wan2 m4 faan1"
+          ],
+          [
+            "喇",
+            "laa3"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "N",
+        "en": "But then the next day, a man phoned me.",
+        "parts": [
+          [
+            "點知",
+            "dim2 zi1"
+          ],
+          [
+            "第二日",
+            "dai6 ji6 jat6"
+          ],
+          [
+            "，"
+          ],
+          [
+            "有",
+            "jau5"
+          ],
+          [
+            "個",
+            "go3"
+          ],
+          [
+            "阿叔",
+            "aa3 suk1"
+          ],
+          [
+            "打電話",
+            "daa2 din6 waa2"
+          ],
+          [
+            "畀",
+            "bei2"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "N",
+        "en": "It turned out he'd found my wallet on the minibus.",
+        "parts": [
+          [
+            "原來",
+            "jyun4 loi4"
+          ],
+          [
+            "佢",
+            "keoi5"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "小巴",
+            "siu2 baa1"
+          ],
+          [
+            "執到",
+            "zap1 dou2"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "個",
+            "go3"
+          ],
+          [
+            "銀包",
+            "ngan4 baau1"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "N",
+        "en": "He found my business card inside, so he knew how to reach me.",
+        "parts": [
+          [
+            "佢",
+            "keoi5"
+          ],
+          [
+            "喺",
+            "hai2"
+          ],
+          [
+            "銀包",
+            "ngan4 baau1"
+          ],
+          [
+            "入面",
+            "jap6 min6"
+          ],
+          [
+            "搵到",
+            "wan2 dou2"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "張",
+            "zoeng1"
+          ],
+          [
+            "卡片",
+            "kaat1 pin2"
+          ],
+          [
+            "，"
+          ],
+          [
+            "所以",
+            "so2 ji5"
+          ],
+          [
+            "知",
+            "zi1"
+          ],
+          [
+            "點",
+            "dim2"
+          ],
+          [
+            "搵",
+            "wan2"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "N",
+        "en": "He even came all the way from Tuen Mun to Mong Kok just to give it back to me.",
+        "parts": [
+          [
+            "佢",
+            "keoi5"
+          ],
+          [
+            "仲",
+            "zung6"
+          ],
+          [
+            "特登",
+            "dak6 dang1"
+          ],
+          [
+            "由",
+            "jau4"
+          ],
+          [
+            "屯門",
+            "tyun4 mun4"
+          ],
+          [
+            "嚟",
+            "lai4"
+          ],
+          [
+            "旺角",
+            "wong6 gok3"
+          ],
+          [
+            "，"
+          ],
+          [
+            "畀",
+            "bei2"
+          ],
+          [
+            "返",
+            "faan1"
+          ],
+          [
+            "個",
+            "go3"
+          ],
+          [
+            "銀包",
+            "ngan4 baau1"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "N",
+        "en": "I opened it and — amazingly — not a single dollar was missing!",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "打開",
+            "daa2 hoi1"
+          ],
+          [
+            "嚟",
+            "lai4"
+          ],
+          [
+            "睇",
+            "tai2"
+          ],
+          [
+            "，"
+          ],
+          [
+            "竟然",
+            "ging2 jin4"
+          ],
+          [
+            "一",
+            "jat1"
+          ],
+          [
+            "蚊",
+            "man1"
+          ],
+          [
+            "都",
+            "dou1"
+          ],
+          [
+            "冇",
+            "mou5"
+          ],
+          [
+            "少",
+            "siu2"
+          ],
+          [
+            "！"
+          ]
+        ]
+      },
+      {
+        "spk": "N",
+        "en": "I wanted to give him some money to say thanks, but he just smiled and said there was no need.",
+        "parts": [
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "想",
+            "soeng2"
+          ],
+          [
+            "畀",
+            "bei2"
+          ],
+          [
+            "啲",
+            "di1"
+          ],
+          [
+            "錢",
+            "cin2"
+          ],
+          [
+            "佢",
+            "keoi5"
+          ],
+          [
+            "多謝",
+            "do1 ze6"
+          ],
+          [
+            "佢",
+            "keoi5"
+          ],
+          [
+            "，"
+          ],
+          [
+            "但係",
+            "daan6 hai6"
+          ],
+          [
+            "佢",
+            "keoi5"
+          ],
+          [
+            "笑笑口",
+            "siu3 siu3 hau2"
+          ],
+          [
+            "話",
+            "waa6"
+          ],
+          [
+            "唔使",
+            "m4 sai2"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "N",
+        "en": "In the end I treated him to a milk tea, and we chatted while we drank.",
+        "parts": [
+          [
+            "最後",
+            "zeoi3 hau6"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "請",
+            "ceng2"
+          ],
+          [
+            "佢",
+            "keoi5"
+          ],
+          [
+            "飲",
+            "jam2"
+          ],
+          [
+            "奶茶",
+            "naai5 caa4"
+          ],
+          [
+            "，"
+          ],
+          [
+            "一路",
+            "jat1 lou6"
+          ],
+          [
+            "飲",
+            "jam2"
+          ],
+          [
+            "一路",
+            "jat1 lou6"
+          ],
+          [
+            "傾",
+            "king1"
+          ],
+          [
+            "。"
+          ]
+        ]
+      },
+      {
+        "spk": "N",
+        "en": "That experience made me feel Hong Kong really is full of human warmth.",
+        "parts": [
+          [
+            "呢次",
+            "ni1 ci3"
+          ],
+          [
+            "經歷",
+            "ging1 lik6"
+          ],
+          [
+            "令",
+            "ling6"
+          ],
+          [
+            "我",
+            "ngo5"
+          ],
+          [
+            "覺得",
+            "gok3 dak1"
+          ],
+          [
+            "香港",
+            "hoeng1 gong2"
+          ],
+          [
+            "真係",
+            "zan1 hai6"
+          ],
+          [
+            "好",
+            "hou2"
+          ],
+          [
+            "有",
+            "jau5"
+          ],
+          [
+            "人情味",
+            "jan4 cing4 mei6"
+          ],
+          [
+            "。"
+          ]
+        ]
+      }
     ],
     "questions": [
-      {"q": "Where did the narrator most likely lose the wallet?", "options": ["On the minibus, while asleep", "At the police station", "In a tea restaurant", "On the MTR"], "answer": 0},
-      {"q": "How did the old man know whom to contact?", "options": ["He found a business card in the wallet", "He saw the narrator's name on the ID card", "The police gave him the number", "The minibus driver told him"], "answer": 0},
-      {"q": "What did the narrator expect after reporting the loss?", "options": ["That the wallet would never come back", "That the police would call the next day", "That the driver would keep it", "That only the cash would be missing"], "answer": 0},
-      {"q": "Why does the story end with the narrator praising Hong Kong?", "options": ["A stranger went out of his way and refused a reward", "The police found the wallet quickly", "The minibus company paid compensation", "The narrator found extra money in the wallet"], "answer": 0}
+      {
+        "q": "Where did the narrator most likely lose the wallet?",
+        "options": [
+          "On the minibus, while asleep",
+          "At the police station",
+          "In a tea restaurant",
+          "On the MTR"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "How did the old man know whom to contact?",
+        "options": [
+          "He found a business card in the wallet",
+          "He saw the narrator's name on the ID card",
+          "The police gave him the number",
+          "The minibus driver told him"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "What did the narrator expect after reporting the loss?",
+        "options": [
+          "That the wallet would never come back",
+          "That the police would call the next day",
+          "That the driver would keep it",
+          "That only the cash would be missing"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "Why does the story end with the narrator praising Hong Kong?",
+        "options": [
+          "A stranger went out of his way and refused a reward",
+          "The police found the wallet quickly",
+          "The minibus company paid compensation",
+          "The narrator found extra money in the wallet"
+        ],
+        "answer": 0
+      }
+    ],
+    "gloss": [
+      [
+        "瞓著",
+        "fan3 zoek6",
+        "to fall asleep"
+      ],
+      [
+        "司機",
+        "si1 gei1",
+        "driver"
+      ],
+      [
+        "總站",
+        "zung2 zaam6",
+        "terminus, last stop"
+      ],
+      [
+        "身份證",
+        "san1 fan2 zing3",
+        "ID card"
+      ],
+      [
+        "執到",
+        "zap1 dou2",
+        "to pick up, find (something lost)"
+      ],
+      [
+        "特登",
+        "dak6 dang1",
+        "specially, on purpose"
+      ],
+      [
+        "笑笑口",
+        "siu3 siu3 hau2",
+        "smiling"
+      ],
+      [
+        "人情味",
+        "jan4 cing4 mei6",
+        "human warmth, kindness"
+      ]
     ]
-  }
+  },
+  "names": [
+    "旺角",
+    "屯門",
+    "九龍",
+    "港島"
+  ]
 }

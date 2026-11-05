@@ -47,39 +47,53 @@ export function card(key) { return state.items[key]; }
 
 export function introduce(key) {
   if (!state.items[key]) {
-    state.items[key] = { due: Date.now() + 10 * MIN, ivl: 0, ease: 2.4, reps: 0, lapses: 0, seen: 0, ok: 0, bad: 0, first: Date.now() };
+    state.items[key] = { due: Date.now() + 10 * MIN, ivl: 0, ease: 2.5, reps: 0, lapses: 0, seen: 0, ok: 0, bad: 0, first: Date.now() };
     save();
   }
   return state.items[key];
 }
 
-// grade: 0 = wrong, 1 = hard (right after a mistake), 2 = good, 3 = easy
+// grade: 0 = wrong, 1 = hard (right after a mistake), 2 = good, 3 = easy (fast, first try)
 export function grade(key, g) {
   const c = introduce(key);
   const now = Date.now();
   c.seen++;
   if (g === 0) {
-    c.bad++; c.lapses += c.reps > 1 ? 1 : 0;
-    c.reps = 0; c.ivl = 0;
-    c.ease = Math.max(1.3, c.ease - 0.2);
-    c.due = now + 5 * MIN;
+    c.bad++;
+    if (c.reps >= 2) {
+      // a slip on a mature card: shrink the interval instead of starting over
+      c.lapses++;
+      c.reps = 1; c.ivl = Math.max(0.5, c.ivl * 0.3);
+    } else { c.reps = 0; c.ivl = 0; }
+    c.ease = Math.max(1.5, c.ease - 0.2);
+    c.due = now + 10 * MIN;
   } else {
     c.ok++;
-    // only count a step when the card was actually due (avoid inflating in one session)
+    // only step forward when the card was actually due (no inflation within one session)
     const wasDue = c.due <= now + 2 * MIN;
     if (wasDue || c.reps === 0) {
       c.reps++;
-      if (c.reps === 1) c.ivl = g === 3 ? 1 : 0.5;
+      if (c.reps === 1) c.ivl = 0.5;
       else if (c.reps === 2) c.ivl = g === 3 ? 4 : 2;
-      else c.ivl = Math.min(365, c.ivl * (g === 1 ? 1.2 : c.ease * (g === 3 ? 1.3 : 1)));
-      if (g === 1) c.ease = Math.max(1.3, c.ease - 0.1);
-      if (g === 3) c.ease = Math.min(3.2, c.ease + 0.05);
+      else c.ivl = Math.min(180, c.ivl * (g === 1 ? 1.2 : c.ease * (g === 3 ? 1.3 : 1)));
+      if (g === 1) c.ease = Math.max(1.5, c.ease - 0.15);
+      if (g === 3) c.ease = Math.min(3.2, c.ease + 0.1);
       const fuzz = 1 + (Math.random() * 0.1 - 0.05);
       c.due = now + c.ivl * DAY * fuzz;
     }
   }
   save();
   return c;
+}
+
+// Mark a set of items as already known (test-out): first review in ~3 days.
+export function markKnown(keys) {
+  const now = Date.now();
+  for (const k of keys) {
+    const c = introduce(k);
+    if (c.reps < 2) { c.reps = 2; c.ivl = 3; c.due = now + 3 * DAY; }
+  }
+  save();
 }
 
 // 0..5 strength used for visuals

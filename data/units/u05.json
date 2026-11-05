@@ -1,126 +1,1804 @@
 {
-  "id": "u05",
-  "level": 1,
-  "title": "Numbers & Money",
-  "emoji": "💰",
-  "desc": "Count, give phone numbers, ask prices and haggle at a market stall",
-  "words": [
-    {"hk": "零", "jp": "ling4", "en": "zero", "fr": "zéro",
-     "note": "Inside a number, 零 fills an empty place: 一百零五 = 105.",
-     "ex": {"en": "It's 105 dollars.", "parts": [["一百","jat1 baak3"],["零","ling4"],["五","ng5"],["蚊","man1"],["。"]]}},
-    {"hk": "一", "jp": "jat1", "en": "one", "fr": "un",
-     "ex": {"en": "One char siu bao, please!", "parts": [["唔該","m4 goi1"],["，"],["一個","jat1 go3"],["叉燒包","caa1 siu1 baau1"],["！"]]}},
-    {"hk": "二", "jp": "ji6", "en": "two (counting)", "fr": "deux (en comptant)",
-     "note": "Use 二 when counting and in bigger numbers (十二, 二十). Before a measure word, 'two' is 兩.",
-     "ex": {"en": "Two plus two is four.", "parts": [["二","ji6"],["加","gaa1"],["二","ji6"],["等於","dang2 jyu1"],["四","sei3"],["。"]]}},
-    {"hk": "三", "jp": "saam1", "en": "three", "fr": "trois",
-     "ex": {"en": "My little brother is three.", "parts": [["我","ngo5"],["細佬","sai3 lou2"],["三歲","saam1 seoi3"],["。"]]}},
-    {"hk": "四", "jp": "sei3", "en": "four", "fr": "quatre",
-     "note": "Sounds like 死 sei2 (to die), so 4 is unlucky — many HK buildings skip the 4th floor.",
-     "ex": {"en": "There are four of us.", "parts": [["我哋","ngo5 dei6"],["四個","sei3 go3"],["人","jan4"],["。"]]}},
-    {"hk": "五", "jp": "ng5", "en": "five", "fr": "cinq",
-     "note": "A syllable with no vowel: just hum 'ng' with a low rising tone.",
-     "ex": {"en": "This one is five dollars.", "parts": [["呢個","ni1 go3"],["五蚊","ng5 man1"],["。"]]}},
-    {"hk": "六", "jp": "luk6", "en": "six", "fr": "six",
-     "ex": {"en": "My big sister is sixteen.", "parts": [["我","ngo5"],["家姐","gaa1 ze1"],["十六歲","sap6 luk6 seoi3"],["。"]]}},
-    {"hk": "七", "jp": "cat1", "en": "seven", "fr": "sept",
-     "ex": {"en": "A week has seven days.", "parts": [["一個","jat1 go3"],["星期","sing1 kei4"],["有","jau5"],["七日","cat1 jat6"],["。"]]}},
-    {"hk": "八", "jp": "baat3", "en": "eight", "fr": "huit",
-     "note": "Lucky! It rhymes with 發 faat3 (to get rich).",
-     "ex": {"en": "This car is 880,000 dollars.", "parts": [["呢架","ni1 gaa3"],["車","ce1"],["八十八萬","baat3 sap6 baat3 maan6"],["。"]]}},
-    {"hk": "九", "jp": "gau2", "en": "nine", "fr": "neuf",
-     "note": "九 also sounds like 久 (long-lasting) — another lucky number.",
-     "ex": {"en": "It's ninety-nine dollars, not expensive.", "parts": [["九十九","gau2 sap6 gau2"],["蚊","man1"],["，"],["唔貴","m4 gwai3"],["。"]]}},
-    {"hk": "十", "jp": "sap6", "en": "ten", "fr": "dix",
-     "note": "Careful: 十 sap6 (ten) vs 四 sei3 (four). Keep the -p closed at the end of sap6.",
-     "ex": {"en": "Three for ten dollars!", "parts": [["十蚊","sap6 man1"],["三個","saam1 go3"],["！"]]}},
-    {"hk": "百", "jp": "baak3", "en": "hundred", "fr": "cent",
-     "note": "一百五 or just 百五 = 150 (the last zero is dropped).",
-     "ex": {"en": "This one is 150 dollars.", "parts": [["呢個","ni1 go3"],["百五","baak3 ng5"],["蚊","man1"],["。"]]}},
-    {"hk": "千", "jp": "cin1", "en": "thousand", "fr": "mille",
-     "ex": {"en": "This computer is 8,000 dollars.", "parts": [["呢部","ni1 bou6"],["電腦","din6 nou5"],["八千","baat3 cin1"],["蚊","man1"],["。"]]}},
-    {"hk": "萬", "jp": "maan6", "en": "ten thousand", "fr": "dix mille",
-     "note": "Chinese counts in 萬 (10,000): 10,000 = 一萬, 100,000 = 十萬, 1,000,000 = 一百萬.",
-     "ex": {"en": "Ten thousand dollars? I don't want it!", "parts": [["一萬","jat1 maan6"],["蚊","man1"],["？"],["我","ngo5"],["唔想要","m4 soeng2 jiu3"],["喇","laa3"],["！"]]}},
-    {"hk": "兩", "jp": "loeng5", "en": "two (of something)", "fr": "deux (+ classificateur)",
-     "note": "兩 + measure word: 兩個, 兩張, 兩蚊. Never 二個.",
-     "ex": {"en": "Two napkins, please.", "parts": [["唔該","m4 goi1"],["畀","bei2"],["兩張","loeng5 zoeng1"],["紙巾","zi2 gan1"],["我","ngo5"],["。"]]}},
-    {"hk": "個", "jp": "go3", "en": "(general measure word)", "fr": "(classificateur général)",
-     "note": "Numbers and 呢/嗰 need a measure word before a noun. 個 is the default one: 一個人, 呢個.",
-     "ex": {"en": "I want that one.", "parts": [["我","ngo5"],["想要","soeng2 jiu3"],["嗰個","go2 go3"],["。"]]}},
-    {"hk": "幾多", "jp": "gei2 do1", "en": "how many / how much", "fr": "combien",
-     "ex": {"en": "How many do you want?", "parts": [["你","nei5"],["想要","soeng2 jiu3"],["幾多個","gei2 do1 go3"],["啊","aa3"],["？"]]}},
-    {"hk": "幾多錢", "jp": "gei2 do1 cin2", "en": "how much (money)", "fr": "combien (prix)",
-     "note": "錢 is cin2 in speech. Shorter: 幾錢 gei2 cin2.",
-     "ex": {"en": "How much is this?", "parts": [["呢個","ni1 go3"],["幾多錢","gei2 do1 cin2"],["啊","aa3"],["？"]]}},
-    {"hk": "蚊", "jp": "man1", "en": "dollar (spoken)", "fr": "dollar (à l'oral)",
-     "note": "The spoken word for dollar. Written price tags say 元, but nobody says it.",
-     "ex": {"en": "A cup of milk tea is twenty dollars.", "parts": [["一杯","jat1 bui1"],["奶茶","naai5 caa4"],["二十蚊","ji6 sap6 man1"],["。"]]}},
-    {"hk": "毫", "jp": "hou4", "en": "ten cents", "fr": "dix centimes",
-     "note": "五毫子 = 50 cents. With dollars, people just say 個: 兩個半 = $2.50, 三個二 = $3.20.",
-     "ex": {"en": "Fifty cents? So cheap!", "parts": [["五毫子","ng5 hou4 zi2"],["？"],["好","hou2"],["平","peng4"],["啊","aa3"],["！"]]}},
-    {"hk": "平", "jp": "peng4", "en": "cheap", "fr": "bon marché",
-     "note": "In the sense 'cheap', 平 is peng4. (ping4 is 'flat / peaceful', as in 和平.)",
-     "ex": {"en": "The oranges aren't cheap.", "parts": [["啲","di1"],["橙","caang2"],["唔平","m4 peng4"],["。"]]}},
-    {"hk": "貴", "jp": "gwai3", "en": "expensive", "fr": "cher",
-     "ex": {"en": "Is it expensive?", "parts": [["貴唔貴","gwai3 m4 gwai3"],["啊","aa3"],["？"]]}}
-  ],
-  "sentences": [
-    {"en": "How much is the bicycle?", "parts": [["架","gaa3"],["單車","daan1 ce1"],["幾多錢","gei2 do1 cin2"],["啊","aa3"],["？"]]},
-    {"en": "Three hundred dollars? So expensive!", "parts": [["三百","saam1 baak3"],["蚊","man1"],["？"],["好","hou2"],["貴","gwai3"],["啊","aa3"],["！"]]},
-    {"en": "It's not expensive, it's really cheap!", "parts": [["唔貴","m4 gwai3"],["，"],["好","hou2"],["平","peng4"],["㗎","gaa3"],["！"]]},
-    {"en": "Two char siu bao, please.", "parts": [["唔該","m4 goi1"],["，"],["我","ngo5"],["想要","soeng2 jiu3"],["兩個","loeng5 go3"],["叉燒包","caa1 siu1 baau1"],["。"]]},
-    {"en": "My big brother is twenty-five.", "parts": [["我","ngo5"],["哥哥","go4 go1"],["廿五歲","jaa6 ng5 seoi3"],["。"]]},
-    {"en": "My phone number is 9123 4567.", "parts": [["我","ngo5"],["電話","din6 waa2"],["係","hai6"],["九一二三","gau2 jat1 ji6 saam1"],["四五六七","sei3 ng5 luk6 cat1"],["。"]]},
-    {"en": "This pack of tissues is $2.50.", "parts": [["呢包","ni1 baau1"],["紙巾","zi2 gan1"],["兩個半","loeng5 go3 bun3"],["。"]]},
-    {"en": "How much is beef per catty?", "parts": [["牛肉","ngau4 juk6"],["幾多錢","gei2 do1 cin2"],["一斤","jat1 gan1"],["啊","aa3"],["？"]]},
-    {"en": "My little sister came first in the race.", "parts": [["我","ngo5"],["細妹","sai3 mui2"],["跑步","paau2 bou6"],["跑","paau2"],["第一","dai6 jat1"],["。"]]},
-    {"en": "Is this your first time in Switzerland?", "parts": [["你","nei5"],["係唔係","hai6 m4 hai6"],["第一次","dai6 jat1 ci3"],["嚟","lai4"],["瑞士","seoi6 si6"],["啊","aa3"],["？"]]},
-    {"en": "Give me two, please.", "parts": [["唔該","m4 goi1"],["畀","bei2"],["兩個","loeng5 go3"],["我","ngo5"],["。"]]},
-    {"en": "Switzerland is so expensive — a coffee costs fifty (HK) dollars!", "parts": [["瑞士","seoi6 si6"],["好","hou2"],["貴","gwai3"],["啊","aa3"],["，"],["一杯","jat1 bui1"],["咖啡","gaa3 fe1"],["要","jiu3"],["五十蚊","ng5 sap6 man1"],["！"]]},
-    {"en": "How many computers do you have at home?", "parts": [["你","nei5"],["屋企","uk1 kei2"],["有","jau5"],["幾多部","gei2 do1 bou6"],["電腦","din6 nou5"],["啊","aa3"],["？"]]}
-  ],
-  "grammar": [
-    {"title": "Building numbers 11–99",
-     "explain": "Just stack them: 十一 = 10+1, 二十 = 2×10, 二十五 = 25. In speech, 二十 + digit is usually shortened to 廿 jaa6: 廿五 = 25.",
-     "examples": [
-       {"en": "Eleven", "parts": [["十一","sap6 jat1"]]},
-       {"en": "Thirty-eight dollars", "parts": [["三十八","saam1 sap6 baat3"],["蚊","man1"]]},
-       {"en": "Twenty-five dollars (spoken)", "parts": [["廿五","jaa6 ng5"],["蚊","man1"]]}
-     ]},
-    {"title": "兩 vs 二",
-     "explain": "'Two' of something (before a measure word like 個, 張, 蚊) is 兩. Inside bigger numbers and when counting, use 二: 十二個, 二十蚊.",
-     "examples": [
-       {"en": "Two people", "parts": [["兩個","loeng5 go3"],["人","jan4"]]},
-       {"en": "Twelve people", "parts": [["十二個","sap6 ji6 go3"],["人","jan4"]]}
-     ]},
-    {"title": "Saying prices the HK way",
-     "explain": "With cents, drop 蚊 and say 個: 個半 = $1.50, 三個二 = $3.20. With hundreds, drop the last zero: 百五 = 150, 三百二 = 320.",
-     "examples": [
-       {"en": "$1.50", "parts": [["個半","go3 bun3"]]},
-       {"en": "$3.20", "parts": [["三個二","saam1 go3 ji6"]]},
-       {"en": "$320", "parts": [["三百二","saam1 baak3 ji6"],["蚊","man1"]]}
-     ]}
-  ],
-  "dialogue": {
-    "title": "Buying fruit at a market stall",
-    "lines": [
-      {"spk": "A", "en": "Boss, how much are the oranges?", "parts": [["老闆","lou5 baan2"],["，"],["啲","di1"],["橙","caang2"],["點賣","dim2 maai6"],["啊","aa3"],["？"]]},
-      {"spk": "B", "en": "Three for ten dollars.", "parts": [["十蚊","sap6 man1"],["三個","saam1 go3"],["。"]]},
-      {"spk": "A", "en": "That cheap? I'll take six.", "parts": [["咁","gam3"],["平","peng4"],["？"],["我","ngo5"],["要","jiu3"],["六個","luk6 go3"],["。"]]},
-      {"spk": "B", "en": "Six, that's twenty. Want some apples too?", "parts": [["六個","luk6 go3"],["，"],["二十蚊","ji6 sap6 man1"],["。"],["要唔要","jiu3 m4 jiu3"],["蘋果","ping4 gwo2"],["啊","aa3"],["？"]]},
-      {"spk": "A", "en": "How much is an apple?", "parts": [["蘋果","ping4 gwo2"],["幾多錢","gei2 do1 cin2"],["一個","jat1 go3"],["啊","aa3"],["？"]]},
-      {"spk": "B", "en": "Eight dollars each.", "parts": [["八蚊","baat3 man1"],["一個","jat1 go3"],["。"]]},
-      {"spk": "A", "en": "Eight dollars? That's expensive! No thanks.", "parts": [["八蚊","baat3 man1"],["？"],["好","hou2"],["貴","gwai3"],["喎","wo3"],["！"],["唔要","m4 jiu3"],["喇","laa3"],["。"]]},
-      {"spk": "B", "en": "OK then, five for thirty. Deal?", "parts": [["噉啦","gam2 laa1"],["，"],["三十蚊","saam1 sap6 man1"],["五個","ng5 go3"],["，"],["得唔得","dak1 m4 dak1"],["啊","aa3"],["？"]]},
-      {"spk": "A", "en": "Deal! Fifty dollars altogether — here you go.", "parts": [["得","dak1"],["！"],["一共","jat1 gung6"],["五十蚊","ng5 sap6 man1"],["，"],["畀","bei2"],["你","nei5"],["。"]]},
-      {"spk": "B", "en": "Thanks a lot!", "parts": [["唔該晒","m4 goi1 saai3"],["！"]]}
-    ],
-    "questions": [
-      {"q": "How much are the oranges?", "options": ["Three for $10", "Six for $10", "$8 each", "Five for $30"], "answer": 0},
-      {"q": "How many oranges does A buy?", "options": ["Six", "Three", "Five", "Eight"], "answer": 0},
-      {"q": "Why does A first say no to the apples?", "options": ["They're too expensive", "A doesn't like apples", "They're sold out", "A has no money"], "answer": 0},
-      {"q": "How much does A pay in total?", "options": ["$50", "$20", "$30", "$80"], "answer": 0}
+ "id": "u05",
+ "level": 1,
+ "title": "Numbers & Money",
+ "emoji": "💰",
+ "desc": "Count, give phone numbers, ask prices and haggle at a market stall",
+ "words": [
+  {
+   "hk": "一",
+   "jp": "jat1",
+   "en": "one",
+   "fr": "un",
+   "ex": {
+    "en": "Boss, I'll take one.",
+    "parts": [
+     [
+      "老闆",
+      "lou5 baan2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "要",
+      "jiu3"
+     ],
+     [
+      "一個",
+      "jat1 go3"
+     ],
+     [
+      "。"
+     ]
     ]
+   }
+  },
+  {
+   "hk": "二",
+   "jp": "ji6",
+   "en": "two (counting)",
+   "fr": "deux (en comptant)",
+   "note": "Use 二 (ji6) when counting and in bigger numbers (十二 (sap6 ji6), 二十 (ji6 sap6)). Before a measure word, 'two' is 兩 (loeng5).",
+   "ex": {
+    "en": "One, two, three!",
+    "parts": [
+     [
+      "一",
+      "jat1"
+     ],
+     [
+      "、"
+     ],
+     [
+      "二",
+      "ji6"
+     ],
+     [
+      "、"
+     ],
+     [
+      "三",
+      "saam1"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "三",
+   "jp": "saam1",
+   "en": "three",
+   "fr": "trois",
+   "ex": {
+    "en": "I have three little sisters.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "有",
+      "jau5"
+     ],
+     [
+      "三個",
+      "saam1 go3"
+     ],
+     [
+      "細妹",
+      "sai3 mui2"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "四",
+   "jp": "sei3",
+   "en": "four",
+   "fr": "quatre",
+   "note": "Sounds like 死 (sei2, to die), so 4 is unlucky — many HK buildings skip the 4th floor.",
+   "ex": {
+    "en": "There are four of us.",
+    "parts": [
+     [
+      "我哋",
+      "ngo5 dei6"
+     ],
+     [
+      "四個",
+      "sei3 go3"
+     ],
+     [
+      "人",
+      "jan4"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "五",
+   "jp": "ng5",
+   "en": "five",
+   "fr": "cinq",
+   "note": "A syllable with no vowel: just hum 'ng' with a low rising tone.",
+   "ex": {
+    "en": "This one is five dollars.",
+    "parts": [
+     [
+      "呢個",
+      "ni1 go3"
+     ],
+     [
+      "五蚊",
+      "ng5 man1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "六",
+   "jp": "luk6",
+   "en": "six",
+   "fr": "six",
+   "ex": {
+    "en": "There are six people in my family.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "屋企",
+      "uk1 kei2"
+     ],
+     [
+      "有",
+      "jau5"
+     ],
+     [
+      "六個",
+      "luk6 go3"
+     ],
+     [
+      "人",
+      "jan4"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "七",
+   "jp": "cat1",
+   "en": "seven",
+   "fr": "sept",
+   "ex": {
+    "en": "Seven dollars each.",
+    "parts": [
+     [
+      "七蚊",
+      "cat1 man1"
+     ],
+     [
+      "一個",
+      "jat1 go3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "八",
+   "jp": "baat3",
+   "en": "eight",
+   "fr": "huit",
+   "note": "Lucky! It rhymes with 發 (faat3, to get rich).",
+   "ex": {
+    "en": "Eighty-eight dollars? That's cheap!",
+    "parts": [
+     [
+      "八十八蚊",
+      "baat3 sap6 baat3 man1"
+     ],
+     [
+      "？"
+     ],
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "平",
+      "peng4"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "九",
+   "jp": "gau2",
+   "en": "nine",
+   "fr": "neuf",
+   "note": "九 (gau2) also sounds like 久 (gau2) (long-lasting) — another lucky number.",
+   "ex": {
+    "en": "It's ninety-nine dollars, not expensive.",
+    "parts": [
+     [
+      "九十九",
+      "gau2 sap6 gau2"
+     ],
+     [
+      "蚊",
+      "man1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "唔貴",
+      "m4 gwai3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "十",
+   "jp": "sap6",
+   "en": "ten",
+   "fr": "dix",
+   "note": "Careful: 十 (sap6, ten) vs 四 (sei3, four). Keep the -p closed at the end of sap6.",
+   "ex": {
+    "en": "Three for ten dollars!",
+    "parts": [
+     [
+      "十蚊",
+      "sap6 man1"
+     ],
+     [
+      "三個",
+      "saam1 go3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "百",
+   "jp": "baak3",
+   "en": "hundred",
+   "fr": "cent",
+   "note": "一百五 (jat1 baak3 ng5) or just 百五 (baak3 ng5) = 150. A gap inside a number is filled with 零 (ling4) 'zero': 一百零五 (jat1 baak3 ling4 ng5) = 105.",
+   "ex": {
+    "en": "This one is 150 dollars.",
+    "parts": [
+     [
+      "呢個",
+      "ni1 go3"
+     ],
+     [
+      "百五",
+      "baak3 ng5"
+     ],
+     [
+      "蚊",
+      "man1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "千",
+   "jp": "cin1",
+   "en": "thousand",
+   "fr": "mille",
+   "ex": {
+    "en": "Three thousand dollars? That's too expensive!",
+    "parts": [
+     [
+      "三千蚊",
+      "saam1 cin1 man1"
+     ],
+     [
+      "？"
+     ],
+     [
+      "太",
+      "taai3"
+     ],
+     [
+      "貴",
+      "gwai3"
+     ],
+     [
+      "喇",
+      "laa3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "萬",
+   "jp": "maan6",
+   "en": "ten thousand",
+   "fr": "dix mille",
+   "note": "Chinese counts in 萬 (maan6) (10,000): 10,000 = 一萬 (jat1 maan6), 100,000 = 十萬 (sap6 maan6), 1,000,000 = 一百萬 (jat1 baak3 maan6).",
+   "ex": {
+    "en": "Ten thousand dollars? I don't want it!",
+    "parts": [
+     [
+      "一萬",
+      "jat1 maan6"
+     ],
+     [
+      "蚊",
+      "man1"
+     ],
+     [
+      "？"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "唔想要",
+      "m4 soeng2 jiu3"
+     ],
+     [
+      "喇",
+      "laa3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "兩",
+   "jp": "loeng5",
+   "en": "two (of something)",
+   "fr": "deux (+ classificateur)",
+   "note": "兩 (loeng5) + measure word: 兩個 (loeng5 go3), 兩張 (loeng5 zoeng1), 兩蚊 (loeng5 man1). Never 二個 (ji6 go3).",
+   "ex": {
+    "en": "I have two big sisters.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "有",
+      "jau5"
+     ],
+     [
+      "兩個",
+      "loeng5 go3"
+     ],
+     [
+      "家姐",
+      "gaa1 ze1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "個",
+   "jp": "go3",
+   "en": "(general measure word)",
+   "fr": "(classificateur général)",
+   "note": "Numbers and 呢 (ni1)/嗰 (go2) need a measure word before a noun. 個 (go3) is the default one: 一個人 (jat1 go3 jan4), 呢個 (ni1 go3).",
+   "ex": {
+    "en": "I'll take this one.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "要",
+      "jiu3"
+     ],
+     [
+      "呢個",
+      "ni1 go3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "幾多",
+   "jp": "gei2 do1",
+   "en": "how many / how much",
+   "fr": "combien",
+   "ex": {
+    "en": "How many do you want?",
+    "parts": [
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "想要",
+      "soeng2 jiu3"
+     ],
+     [
+      "幾多個",
+      "gei2 do1 go3"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "錢",
+   "jp": "cin2",
+   "en": "money",
+   "fr": "argent",
+   "note": "In speech it's cin2 (changed tone); the reading-aloud form is cin4. 幾多錢 (gei2 do1 cin2)？ = How much (money)? Shorter: 幾錢 (gei2 cin2).",
+   "ex": {
+    "en": "How much is this?",
+    "parts": [
+     [
+      "呢個",
+      "ni1 go3"
+     ],
+     [
+      "幾多",
+      "gei2 do1"
+     ],
+     [
+      "錢",
+      "cin2"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "蚊",
+   "jp": "man1",
+   "en": "dollar (spoken)",
+   "fr": "dollar (à l'oral)",
+   "note": "The spoken word for dollar. Written price tags say 元 (jyun4), but nobody says it.",
+   "ex": {
+    "en": "This one is twenty dollars.",
+    "parts": [
+     [
+      "呢個",
+      "ni1 go3"
+     ],
+     [
+      "二十蚊",
+      "ji6 sap6 man1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "平",
+   "jp": "peng4",
+   "en": "cheap",
+   "fr": "bon marché",
+   "note": "Meaning 'cheap', it's always peng4 in speech. The reading ping4 means 'flat / peaceful', as in 和平 (wo4 ping4).",
+   "ex": {
+    "en": "This one isn't cheap, you know.",
+    "parts": [
+     [
+      "呢個",
+      "ni1 go3"
+     ],
+     [
+      "唔",
+      "m4"
+     ],
+     [
+      "平",
+      "peng4"
+     ],
+     [
+      "喎",
+      "wo3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "貴",
+   "jp": "gwai3",
+   "en": "expensive",
+   "fr": "cher",
+   "ex": {
+    "en": "Is it expensive?",
+    "parts": [
+     [
+      "貴唔貴",
+      "gwai3 m4 gwai3"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "咁",
+   "jp": "gam3",
+   "en": "so (+ adjective)",
+   "fr": "si / tellement",
+   "note": "咁平 (gam3 peng4)？ = That cheap?! Shows surprise. Don't confuse with 噉 (gam2) 'so / then'.",
+   "ex": {
+    "en": "That expensive?!",
+    "parts": [
+     [
+      "咁",
+      "gam3"
+     ],
+     [
+      "貴",
+      "gwai3"
+     ],
+     [
+      "㗎",
+      "gaa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "太",
+   "jp": "taai3",
+   "en": "too (much)",
+   "fr": "trop",
+   "note": "好貴 (hou2 gwai3) = very expensive; 太貴 (taai3 gwai3) = too expensive. Usually ends with 喇 (laa3) or 啦 (laa1).",
+   "ex": {
+    "en": "That's too expensive!",
+    "parts": [
+     [
+      "太",
+      "taai3"
+     ],
+     [
+      "貴",
+      "gwai3"
+     ],
+     [
+      "喇",
+      "laa3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "啲",
+   "jp": "di1",
+   "en": "some; the (plural); a bit more",
+   "fr": "des ; les ; un peu plus",
+   "note": "Before a noun: 'the… / some…' (啲錢 (di1 cin2) = the money). After an adjective: 'a bit more' — 平啲 (peng4 di1) = a bit cheaper.",
+   "ex": {
+    "en": "Make it a bit cheaper, boss!",
+    "parts": [
+     [
+      "平",
+      "peng4"
+     ],
+     [
+      "啲",
+      "di1"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "老闆",
+      "lou5 baan2"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "買",
+   "jp": "maai5",
+   "en": "to buy",
+   "fr": "acheter",
+   "note": "You know 買嘢 (maai5 je5) 'go shopping'. Careful: 賣 (maai6) with a low flat tone means 'to sell'!",
+   "ex": {
+    "en": "I want to buy a bike.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "想",
+      "soeng2"
+     ],
+     [
+      "買",
+      "maai5"
+     ],
+     [
+      "單車",
+      "daan1 ce1"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "要",
+   "jp": "jiu3",
+   "en": "to want; to take (when buying); need to",
+   "fr": "vouloir ; prendre ; devoir",
+   "note": "要 (jiu3) + thing: 'I'll take…' when buying or ordering. 要 (jiu3) + verb = need to. 唔要 (m4 jiu3) = I don't want it.",
+   "ex": {
+    "en": "I'll take three.",
+    "parts": [
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "要",
+      "jiu3"
+     ],
+     [
+      "三個",
+      "saam1 go3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   }
+  },
+  {
+   "hk": "老闆",
+   "jp": "lou5 baan2",
+   "en": "boss; shop owner",
+   "fr": "patron ; commerçant",
+   "note": "The friendly way to call a stallholder or shopkeeper, whatever their age. A woman owner is often 老闆娘 (lou5 baan2 noeng4).",
+   "ex": {
+    "en": "Boss, how much is this?",
+    "parts": [
+     [
+      "老闆",
+      "lou5 baan2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "呢個",
+      "ni1 go3"
+     ],
+     [
+      "幾多",
+      "gei2 do1"
+     ],
+     [
+      "錢",
+      "cin2"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   }
   }
+ ],
+ "sentences": [
+  {
+   "en": "How much is this bicycle?",
+   "parts": [
+    [
+     "呢架",
+     "ni1 gaa3"
+    ],
+    [
+     "單車",
+     "daan1 ce1"
+    ],
+    [
+     "幾多",
+     "gei2 do1"
+    ],
+    [
+     "錢",
+     "cin2"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  },
+  {
+   "en": "Three hundred dollars? So expensive!",
+   "parts": [
+    [
+     "三百蚊",
+     "saam1 baak3 man1"
+    ],
+    [
+     "？"
+    ],
+    [
+     "好",
+     "hou2"
+    ],
+    [
+     "貴",
+     "gwai3"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "！"
+    ]
+   ]
+  },
+  {
+   "en": "It's not expensive, it's really cheap!",
+   "parts": [
+    [
+     "唔",
+     "m4"
+    ],
+    [
+     "貴",
+     "gwai3"
+    ],
+    [
+     "，"
+    ],
+    [
+     "好",
+     "hou2"
+    ],
+    [
+     "平",
+     "peng4"
+    ],
+    [
+     "㗎",
+     "gaa3"
+    ],
+    [
+     "！"
+    ]
+   ]
+  },
+  {
+   "en": "Boss, I'll take two.",
+   "parts": [
+    [
+     "老闆",
+     "lou5 baan2"
+    ],
+    [
+     "，"
+    ],
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "要",
+     "jiu3"
+    ],
+    [
+     "兩個",
+     "loeng5 go3"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "There are four of us in my family.",
+   "parts": [
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "屋企",
+     "uk1 kei2"
+    ],
+    [
+     "有",
+     "jau5"
+    ],
+    [
+     "四個",
+     "sei3 go3"
+    ],
+    [
+     "人",
+     "jan4"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "My phone number is 9123 4567.",
+   "parts": [
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "電話",
+     "din6 waa2"
+    ],
+    [
+     "係",
+     "hai6"
+    ],
+    [
+     "九一二三",
+     "gau2 jat1 ji6 saam1"
+    ],
+    [
+     "四五六七",
+     "sei3 ng5 luk6 cat1"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "This one is $2.50.",
+   "parts": [
+    [
+     "呢個",
+     "ni1 go3"
+    ],
+    [
+     "兩個半",
+     "loeng5 go3 bun3"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "How much is beef per catty?",
+   "parts": [
+    [
+     "牛肉",
+     "ngau4 juk6"
+    ],
+    [
+     "幾多",
+     "gei2 do1"
+    ],
+    [
+     "錢",
+     "cin2"
+    ],
+    [
+     "一斤",
+     "jat1 gan1"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  },
+  {
+   "en": "Too expensive — make it a bit cheaper!",
+   "parts": [
+    [
+     "太",
+     "taai3"
+    ],
+    [
+     "貴",
+     "gwai3"
+    ],
+    [
+     "喇",
+     "laa3"
+    ],
+    [
+     "，"
+    ],
+    [
+     "平",
+     "peng4"
+    ],
+    [
+     "啲",
+     "di1"
+    ],
+    [
+     "啦",
+     "laa1"
+    ],
+    [
+     "！"
+    ]
+   ]
+  },
+  {
+   "en": "How many do you want to buy?",
+   "parts": [
+    [
+     "你",
+     "nei5"
+    ],
+    [
+     "想",
+     "soeng2"
+    ],
+    [
+     "買",
+     "maai5"
+    ],
+    [
+     "幾多個",
+     "gei2 do1 go3"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  },
+  {
+   "en": "Two for me, please.",
+   "parts": [
+    [
+     "唔該",
+     "m4 goi1"
+    ],
+    [
+     "畀",
+     "bei2"
+    ],
+    [
+     "兩個",
+     "loeng5 go3"
+    ],
+    [
+     "我",
+     "ngo5"
+    ],
+    [
+     "。"
+    ]
+   ]
+  },
+  {
+   "en": "Things in Switzerland are so expensive!",
+   "parts": [
+    [
+     "瑞士",
+     "seoi6 si6"
+    ],
+    [
+     "啲",
+     "di1"
+    ],
+    [
+     "嘢",
+     "je5"
+    ],
+    [
+     "好",
+     "hou2"
+    ],
+    [
+     "貴",
+     "gwai3"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "！"
+    ]
+   ]
+  },
+  {
+   "en": "How many computers do you have at home?",
+   "parts": [
+    [
+     "你",
+     "nei5"
+    ],
+    [
+     "屋企",
+     "uk1 kei2"
+    ],
+    [
+     "有",
+     "jau5"
+    ],
+    [
+     "幾多部",
+     "gei2 do1 bou6"
+    ],
+    [
+     "電腦",
+     "din6 nou5"
+    ],
+    [
+     "啊",
+     "aa3"
+    ],
+    [
+     "？"
+    ]
+   ]
+  }
+ ],
+ "grammar": [
+  {
+   "title": "Building numbers 11–99",
+   "explain": "Just stack them: 十一 (sap6 jat1) = 10+1, 二十 (ji6 sap6) = 2×10, 二十五 (ji6 sap6 ng5) = 25. In speech, 二十 (ji6 sap6) + digit is usually shortened to 廿 (jaa6): 廿五 (jaa6 ng5) = 25.",
+   "examples": [
+    {
+     "en": "Eleven",
+     "parts": [
+      [
+       "十一",
+       "sap6 jat1"
+      ]
+     ]
+    },
+    {
+     "en": "Thirty-eight dollars",
+     "parts": [
+      [
+       "三十八",
+       "saam1 sap6 baat3"
+      ],
+      [
+       "蚊",
+       "man1"
+      ]
+     ]
+    },
+    {
+     "en": "Twenty-five dollars (spoken)",
+     "parts": [
+      [
+       "廿五",
+       "jaa6 ng5"
+      ],
+      [
+       "蚊",
+       "man1"
+      ]
+     ]
+    }
+   ],
+   "after": "十"
+  },
+  {
+   "title": "兩 (loeng5) vs 二 (ji6)",
+   "explain": "'Two' of something (before a measure word like 個 (go3), 張 (zoeng1), 蚊 (man1)) is 兩 (loeng5). Inside bigger numbers and when counting, use 二 (ji6): 十二個 (sap6 ji6 go3), 二十蚊 (ji6 sap6 man1).",
+   "examples": [
+    {
+     "en": "Two people",
+     "parts": [
+      [
+       "兩個",
+       "loeng5 go3"
+      ],
+      [
+       "人",
+       "jan4"
+      ]
+     ]
+    },
+    {
+     "en": "Twelve people",
+     "parts": [
+      [
+       "十二個",
+       "sap6 ji6 go3"
+      ],
+      [
+       "人",
+       "jan4"
+      ]
+     ]
+    }
+   ],
+   "after": "兩"
+  },
+  {
+   "title": "Saying prices the HK way",
+   "explain": "With cents, drop 蚊 (man1) and say 個 (go3): 個半 (go3 bun3) = $1.50 (半 (bun3) = half), 三個二 (saam1 go3 ji6) = $3.20. With hundreds, drop the last zero: 百五 (baak3 ng5) = 150, 三百二 (saam1 baak3 ji6) = 320.",
+   "examples": [
+    {
+     "en": "$1.50",
+     "parts": [
+      [
+       "個半",
+       "go3 bun3"
+      ]
+     ]
+    },
+    {
+     "en": "$3.20",
+     "parts": [
+      [
+       "三個二",
+       "saam1 go3 ji6"
+      ]
+     ]
+    },
+    {
+     "en": "$320",
+     "parts": [
+      [
+       "三百二",
+       "saam1 baak3 ji6"
+      ],
+      [
+       "蚊",
+       "man1"
+      ]
+     ]
+    }
+   ],
+   "after": "蚊"
+  },
+  {
+   "title": "Very, too, a bit more: 好 (hou2) · 太 (taai3) · 啲 (di1)",
+   "explain": "好貴 (hou2 gwai3) = very expensive. 太貴 (taai3 gwai3) = too expensive. Adjective + 啲 (di1) = a bit more: 平啲 (peng4 di1) = a bit cheaper — the magic word at a market.",
+   "examples": [
+    {
+     "en": "So expensive!",
+     "parts": [
+      [
+       "好",
+       "hou2"
+      ],
+      [
+       "貴",
+       "gwai3"
+      ],
+      [
+       "啊",
+       "aa3"
+      ],
+      [
+       "！"
+      ]
+     ]
+    },
+    {
+     "en": "Too expensive!",
+     "parts": [
+      [
+       "太",
+       "taai3"
+      ],
+      [
+       "貴",
+       "gwai3"
+      ],
+      [
+       "喇",
+       "laa3"
+      ],
+      [
+       "！"
+      ]
+     ]
+    },
+    {
+     "en": "Make it a bit cheaper!",
+     "parts": [
+      [
+       "平",
+       "peng4"
+      ],
+      [
+       "啲",
+       "di1"
+      ],
+      [
+       "啦",
+       "laa1"
+      ],
+      [
+       "！"
+      ]
+     ]
+    }
+   ],
+   "after": "啲"
+  }
+ ],
+ "dialogue": {
+  "title": "Buying fruit at a market stall",
+  "lines": [
+   {
+    "spk": "A",
+    "en": "Boss, how much are the oranges?",
+    "parts": [
+     [
+      "老闆",
+      "lou5 baan2"
+     ],
+     [
+      "，"
+     ],
+     [
+      "啲",
+      "di1"
+     ],
+     [
+      "橙",
+      "caang2"
+     ],
+     [
+      "點賣",
+      "dim2 maai6"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Three for ten dollars.",
+    "parts": [
+     [
+      "十蚊",
+      "sap6 man1"
+     ],
+     [
+      "三個",
+      "saam1 go3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "That cheap? I'll take six.",
+    "parts": [
+     [
+      "咁",
+      "gam3"
+     ],
+     [
+      "平",
+      "peng4"
+     ],
+     [
+      "？"
+     ],
+     [
+      "我",
+      "ngo5"
+     ],
+     [
+      "要",
+      "jiu3"
+     ],
+     [
+      "六個",
+      "luk6 go3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Six, that's twenty. Want some apples too?",
+    "parts": [
+     [
+      "六個",
+      "luk6 go3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "二十蚊",
+      "ji6 sap6 man1"
+     ],
+     [
+      "。"
+     ],
+     [
+      "要唔要",
+      "jiu3 m4 jiu3"
+     ],
+     [
+      "蘋果",
+      "ping4 gwo2"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "How much is an apple?",
+    "parts": [
+     [
+      "蘋果",
+      "ping4 gwo2"
+     ],
+     [
+      "幾多",
+      "gei2 do1"
+     ],
+     [
+      "錢",
+      "cin2"
+     ],
+     [
+      "一個",
+      "jat1 go3"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Eight dollars each.",
+    "parts": [
+     [
+      "八蚊",
+      "baat3 man1"
+     ],
+     [
+      "一個",
+      "jat1 go3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "Eight dollars? Too expensive! No thanks.",
+    "parts": [
+     [
+      "八蚊",
+      "baat3 man1"
+     ],
+     [
+      "？"
+     ],
+     [
+      "太",
+      "taai3"
+     ],
+     [
+      "貴",
+      "gwai3"
+     ],
+     [
+      "喇",
+      "laa3"
+     ],
+     [
+      "！"
+     ],
+     [
+      "唔要",
+      "m4 jiu3"
+     ],
+     [
+      "喇",
+      "laa3"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "OK then, five for thirty. How's that?",
+    "parts": [
+     [
+      "噉",
+      "gam2"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "三十蚊",
+      "saam1 sap6 man1"
+     ],
+     [
+      "五個",
+      "ng5 go3"
+     ],
+     [
+      "，"
+     ],
+     [
+      "好唔好",
+      "hou2 m4 hou2"
+     ],
+     [
+      "啊",
+      "aa3"
+     ],
+     [
+      "？"
+     ]
+    ]
+   },
+   {
+    "spk": "A",
+    "en": "OK! Fifty dollars altogether — here you go.",
+    "parts": [
+     [
+      "好",
+      "hou2"
+     ],
+     [
+      "啦",
+      "laa1"
+     ],
+     [
+      "！"
+     ],
+     [
+      "一共",
+      "jat1 gung6"
+     ],
+     [
+      "五十蚊",
+      "ng5 sap6 man1"
+     ],
+     [
+      "，"
+     ],
+     [
+      "畀",
+      "bei2"
+     ],
+     [
+      "你",
+      "nei5"
+     ],
+     [
+      "。"
+     ]
+    ]
+   },
+   {
+    "spk": "B",
+    "en": "Thanks a lot!",
+    "parts": [
+     [
+      "唔該晒",
+      "m4 goi1 saai3"
+     ],
+     [
+      "！"
+     ]
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "q": "How much are the oranges?",
+    "options": [
+     "Three for $10",
+     "Six for $10",
+     "$8 each",
+     "Five for $30"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How many oranges does A buy?",
+    "options": [
+     "Six",
+     "Three",
+     "Five",
+     "Eight"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Why does A first say no to the apples?",
+    "options": [
+     "They're too expensive",
+     "A doesn't like apples",
+     "They're sold out",
+     "A has no money"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How much does A pay in total?",
+    "options": [
+     "$50",
+     "$20",
+     "$30",
+     "$80"
+    ],
+    "answer": 0
+   }
+  ],
+  "gloss": [
+   [
+    "橙",
+    "caang2",
+    "orange"
+   ],
+   [
+    "點賣",
+    "dim2 maai6",
+    "how much (is it sold for)?"
+   ],
+   [
+    "蘋果",
+    "ping4 gwo2",
+    "apple"
+   ],
+   [
+    "一共",
+    "jat1 gung6",
+    "altogether"
+   ],
+   [
+    "唔該晒",
+    "m4 goi1 saai3",
+    "thanks a lot"
+   ]
+  ]
+ },
+ "toneLesson": {
+  "title": "Short syllables: -p, -t, -k",
+  "card": {
+   "title": "Stopped syllables",
+   "explain": "Syllables ending in -p, -t or -k are cut short: close your lips (-p), touch your tongue to your teeth (-t) or the back of your mouth (-k), but don't release a sound. They still have a tone: high (1), mid (3) or low (6).",
+   "examples": [
+    {
+     "en": "one, seven, eight, six, ten",
+     "parts": [
+      [
+       "一",
+       "jat1"
+      ],
+      [
+       "七",
+       "cat1"
+      ],
+      [
+       "八",
+       "baat3"
+      ],
+      [
+       "六",
+       "luk6"
+      ],
+      [
+       "十",
+       "sap6"
+      ]
+     ]
+    },
+    {
+     "en": "wet, ten",
+     "parts": [
+      [
+       "濕",
+       "sap1"
+      ],
+      [
+       "十",
+       "sap6"
+      ]
+     ]
+    }
+   ]
+  },
+  "items": [
+   {
+    "hk": "一",
+    "jp": "jat1",
+    "en": "one",
+    "note": "High, cut short by -t."
+   },
+   {
+    "hk": "七",
+    "jp": "cat1",
+    "en": "seven",
+    "note": "High, cut short by -t. c ≈ 'ts'."
+   },
+   {
+    "hk": "八",
+    "jp": "baat3",
+    "en": "eight",
+    "note": "Mid, long aa, then -t."
+   },
+   {
+    "hk": "六",
+    "jp": "luk6",
+    "en": "six",
+    "note": "Low, cut short by -k."
+   },
+   {
+    "hk": "十",
+    "jp": "sap6",
+    "en": "ten",
+    "note": "Low, lips close for -p. Don't let it slide into 四 (sei3)!"
+   },
+   {
+    "hk": "濕",
+    "jp": "sap1",
+    "en": "wet",
+    "note": "High version of 十 (sap6)."
+   },
+   {
+    "hk": "百",
+    "jp": "baak3",
+    "en": "hundred",
+    "note": "Mid, long aa, then -k."
+   },
+   {
+    "hk": "白",
+    "jp": "baak6",
+    "en": "white",
+    "note": "Low version of 百 (baak3)."
+   }
+  ],
+  "pairs": [
+   [
+    "十",
+    "濕"
+   ],
+   [
+    "百",
+    "白"
+   ],
+   [
+    "一",
+    "七"
+   ],
+   [
+    "識",
+    "食"
+   ]
+  ]
+ }
 }

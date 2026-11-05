@@ -38,7 +38,7 @@ function chooseVoice() {
 
 let current = null;
 export function speak(text, { rate, onend } = {}) {
-  if (!supported() || !text) { onend && onend(); return; }
+  if (!supported() || !text || setting('mode') === 'mute') { onend && onend(); return; }
   try {
     speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text.replace(/[，、]/g, '，'));
