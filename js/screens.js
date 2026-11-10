@@ -1,7 +1,8 @@
 // Main screens: Path (home), Practice, Words, Speak lab, Me.
 import { h, R, jpNode, jpHTML, todayStr, toneOf, TONES, sJP, esc, shuffle } from './util.js';
-import { UNITS, UNIT, LEVELS, ITEMS, unitProgress, nextLesson, buildLesson, buildReview, buildDrill, learnedWords, learnedSentences, buildTestOut, audioMode } from './course.js';
-import { S, dueKeys, strength, streakAlive, todayXP, lessonState, lessonDone, markKnown, setting, toggleStar, exportJSON, importJSON, resetAll, card, save, grade } from './store.js';
+import { UNITS, UNIT, LEVELS, ITEMS, MINE, registerCustom, unitProgress, nextLesson, buildLesson, buildReview, buildDrill, learnedWords, learnedSentences, buildTestOut, audioMode } from './course.js';
+import { S, dueKeys, strength, streakAlive, todayXP, lessonState, lessonDone, markKnown, setting, toggleStar, exportJSON, importJSON, resetAll, card, save, grade, removeCustom } from './store.js';
+import { addWordsSheet } from './addwords.js';
 import { runSession } from './session.js';
 import { canto, speakerBtn, toneChartSVG, recorderWidget, ICON } from './exercises.js';
 import { speak, speakSlow, hasVoice, cantoVoices, supported as ttsSupported, whenReady } from './tts.js';
@@ -292,12 +293,13 @@ let wordsState = { tab: 'w', q: '', unit: '', all: false, sort: 'recent' };
 export function renderWords() {
   const v = view(); v.innerHTML = '';
   const st = wordsState;
-  const head = h('header', { class: 'page-head' }, h('h1', {}, 'My words'));
+  const head = h('header', { class: 'page-head row between' }, h('h1', {}, 'My words'),
+    h('button', { class: 'btn primary sm', type: 'button', onclick: () => openAddWords() }, '＋ Add words'));
   const tabs = h('div', { class: 'tabs', role: 'tablist' }, ...[['w', 'Words'], ['s', 'Phrases'], ['star', '★ Starred']].map(([k, l]) =>
     h('button', { class: st.tab === k ? 'on' : '', role: 'tab', type: 'button', onclick: () => { st.tab = k; renderWords(); } }, l)));
   const search = h('input', { type: 'search', placeholder: 'Search 中文, jyutping, English', value: st.q, 'aria-label': 'Search words' });
   search.oninput = () => { st.q = search.value; draw(); };
-  const unitSel = h('select', { 'aria-label': 'Filter by unit' }, h('option', { value: '' }, 'All units'), ...UNITS.map((u) => h('option', { value: u.id, selected: st.unit === u.id }, `${u.emoji} ${u.title}`)));
+  const unitSel = h('select', { 'aria-label': 'Filter by unit' }, h('option', { value: '' }, 'All units'), MINE.words.length ? h('option', { value: 'mine', selected: st.unit === 'mine' }, '⭐ Added by you') : null, ...UNITS.map((u) => h('option', { value: u.id, selected: st.unit === u.id }, `${u.emoji} ${u.title}`)));
   unitSel.onchange = () => { st.unit = unitSel.value; draw(); };
   const allT = h('label', { class: 'switch' }, h('input', { type: 'checkbox', checked: st.all, onchange: (e) => { st.all = e.target.checked; draw(); } }), h('span', {}, 'Show unlearned'));
   const list = h('div', { class: 'wlist' });
@@ -326,7 +328,7 @@ export function renderWords() {
     list.innerHTML = '';
     count.textContent = `${items.length} ${st.tab === 's' ? 'phrases' : 'items'}${!st.all && st.tab !== 'star' ? ' learned' : ''}`;
     if (!items.length) {
-      list.append(h('div', { class: 'empty' }, st.all || st.q ? 'No matches.' : 'Words appear here as soon as you meet them in a lesson.'));
+      list.append(h('div', { class: 'empty' }, st.all || st.q ? 'No matches.' : 'Words appear here as soon as you meet them in a lesson, or tap “Add words” to add ones you learnt elsewhere.'));
       return;
     }
     const frag = document.createDocumentFragment();
@@ -340,7 +342,7 @@ export function renderWords() {
     const r = h('div', { class: `wrow ${known ? '' : 'unseen'}` },
       speakerBtn(it.hk, 'md'),
       h('button', { class: 'wmain', type: 'button', onclick: () => wordSheet(it) },
-        h('span', { class: 'whk', lang: 'zh-HK' }, it.hk),
+        h('span', { class: 'whk', lang: 'zh-HK' }, it.hk, it.custom ? h('span', { class: 'mine-badge', title: 'Added by you' }, '⭐') : null),
         jpNode(it.jp || sJP(it.parts)),
         h('span', { class: 'wen' }, R(it.en))),
       h('span', { class: 'bars', title: `Memory strength ${s}/5`, 'aria-label': `Memory strength ${s} of 5` }, ...[1, 2, 3, 4, 5].map((i) => h('i', { class: i <= s ? 'on' : '' }))));
@@ -356,14 +358,19 @@ function wordSheet(it) {
     h('div', { class: 'teach-top' }, speakerBtn(it.hk, 'lg'), speakerBtn(it.hk, 'md', { slow: true })),
     canto(it, { size: it.kind === 'w' ? 'xl' : 'md', forceJp: true }),
     h('div', { class: 'en' }, R(it.en), it.fr ? h('span', { class: 'fr' }, ' · ' + it.fr) : null),
-    it.mine ? h('div', { class: 'mine' }, 'Your spelling: ', h('b', {}, it.mine)) : null,
+    it.mine ? h('div', { class: 'mine' }, it.custom ? 'You typed: ' : 'Your spelling: ', h('b', {}, it.mine)) : null,
     it.note ? h('p', { class: 'note' }, R(it.note)) : null,
     it.ex ? h('div', { class: 'example' }, speakerBtn(it.ex.hk, 'sm'), h('div', {}, canto(it.ex, { size: 'sm', forceJp: true }), h('div', { class: 'en-sm' }, R(it.ex.en)))) : null,
     h('p', { class: 'meta' }, `From: ${u.emoji} ${u.title}`, card(it.key) ? ` · seen ${card(it.key).seen}× · next review ${fmtDue(card(it.key).due)}` : ' · not learned yet'));
   const sb = h('button', { class: 'btn sm', type: 'button' }, starred ? '★ Starred' : '☆ Star');
   sb.onclick = () => { const on = toggleStar(it.key); sb.textContent = on ? '★ Starred' : '☆ Star'; };
   c.append(sb);
-  sheet(c, { title: it.kind === 'w' ? 'Word' : 'Phrase' });
+  let close = null;
+  if (it.custom) c.append(h('button', { class: 'btn sm danger', type: 'button', onclick: () => {
+    if (!confirm(`Remove ${it.hk} from your words? Its review history will be deleted.`)) return;
+    removeCustom(it.hk); registerCustom(); close && close(); refresh();
+  } }, 'Remove'));
+  close = sheet(c, { title: it.kind === 'w' ? 'Word' : 'Phrase' });
 }
 function fmtDue(t) {
   const d = t - Date.now();
@@ -583,7 +590,7 @@ export function settingsSheet() {
     h('div', { class: 'row wrap' },
       h('button', { class: 'btn sm', type: 'button', onclick: doExport }, 'Export backup'),
       h('label', { class: 'btn sm' }, 'Import backup', h('input', { type: 'file', accept: 'application/json,.json', hidden: true, onchange: doImport })),
-      h('button', { class: 'btn sm danger', type: 'button', onclick: () => { if (confirm('Erase all progress on this device? This cannot be undone.')) { resetAll(); close(); refresh(); } } }, 'Reset progress')));
+      h('button', { class: 'btn sm danger', type: 'button', onclick: () => { if (confirm('Erase all progress on this device? This cannot be undone.')) { resetAll(); registerCustom(); close(); refresh(); } } }, 'Reset progress')));
   c.append(backup);
 
   const timeIn = h('input', { type: 'time', value: setting('remindAt') || '08:00', 'aria-label': 'Reminder time' });
@@ -622,7 +629,7 @@ function doExport() {
 }
 function doImport(e) {
   const f = e.target.files[0]; if (!f) return;
-  f.text().then((t) => { try { importJSON(t); alert('Backup restored.'); refresh(); } catch (err) { alert(err.message); } });
+  f.text().then((t) => { try { importJSON(t); registerCustom(); alert('Backup restored.'); refresh(); } catch (err) { alert(err.message); } });
 }
 
 function downloadICS(hhmm) {
@@ -692,3 +699,5 @@ function aiSetupSheet() {
   close = sheet(c, { title: 'Set up your AI partner' });
 }
 setAiSetupOpener(aiSetupSheet);
+
+function openAddWords() { addWordsSheet({ sheet, startReview, refresh: () => refresh(), openAiSetup: aiSetupSheet }); }

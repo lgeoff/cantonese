@@ -15,6 +15,7 @@ const DEFAULTS = () => ({
   lessons: {},         // 'u03:2' -> { done: n, best: accuracy }
   settings: { rate: 0.85, showJp: 'always', showFr: true, voice: '', autoplay: true, sfx: true, pitchLow: 0, pitchHigh: 0 },
   stars: [],           // starred item keys
+  custom: [],          // words the learner added themselves: { hk, jp, en, fr, note, mine, ex, added }
 });
 
 let state = load();
@@ -163,6 +164,20 @@ export function toggleStar(key) {
   if (i >= 0) state.stars.splice(i, 1); else state.stars.push(key);
   save();
   return i < 0;
+}
+
+export function addCustom(w) {
+  if (!state.custom) state.custom = [];
+  const i = state.custom.findIndex((x) => x.hk === w.hk);
+  if (i >= 0) state.custom[i] = { ...state.custom[i], ...w }; else state.custom.push({ ...w, added: Date.now() });
+  save();
+}
+export function removeCustom(hk) {
+  state.custom = (state.custom || []).filter((x) => x.hk !== hk);
+  const key = 'w:' + hk;
+  delete state.items[key];
+  state.stars = state.stars.filter((k) => k !== key);
+  save();
 }
 
 export function setting(k, v) {

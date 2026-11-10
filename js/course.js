@@ -53,7 +53,24 @@ export async function loadCourse() {
     }
     u.lessons = planLessons(u);
   }
+  registerCustom();
   return UNITS;
+}
+
+// Words the learner added themselves live in a virtual unit that is not on the course path.
+export const MINE = { id: 'mine', title: 'Added by you', emoji: '⭐', level: 1, words: [], lessons: [], custom: true };
+UNIT.set('mine', MINE);
+export function registerCustom() {
+  for (const w of MINE.words) if (ITEMS.get(w.key) === w) ITEMS.delete(w.key);
+  MINE.words = [];
+  for (const c of S().custom || []) {
+    const key = 'w:' + c.hk;
+    if (ITEMS.has(key)) continue; // already a course word
+    const w = { ...c, key, unit: 'mine', kind: 'w', custom: true };
+    if (c.ex && c.ex.parts) w.ex = { ...c.ex, hk: sHK(c.ex.parts), unit: 'mine', kind: 's', key: 's:' + sHK(c.ex.parts) };
+    ITEMS.set(key, w);
+    MINE.words.push(w);
+  }
 }
 
 // Split n items into k groups as evenly as possible.

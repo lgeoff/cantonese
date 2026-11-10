@@ -30,6 +30,10 @@ Speak → Conversation opens a chat with an AI partner who plays a role (neighbo
 - Jyutping from the AI is checked against the course and the rime-cantonese readings (`data/jyutping.json`, CC BY 4.0) and corrected where needed.
 - Offline alternative: role-play a course conversation; your line is checked by sound, so homophones, missing tones and informal spellings are forgiven.
 
+## Adding your own words
+
+My words → Add words: type words you learnt elsewhere the way you remember them (any spelling, the English or French meaning, or both). Course words are matched by sound and meaning; with the AI partner set up, any other word is looked up too. You confirm the right word (with audio, Jyutping and a note on what you may have misheard) before it is added. Added words join reviews, drills and conversations, and are saved in your backup.
+
 ## Audio
 The app uses your device's Cantonese text-to-speech voice:
 - **iPhone/iPad:** Settings → Accessibility → Spoken Content → Voices → Chinese → *Chinese (Hong Kong)*, download a voice.

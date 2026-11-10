@@ -53,10 +53,18 @@ const SCHEMA = {
 };
 
 // history: [{ role: 'user'|'model', text }]; audio: { mime, b64 } for the latest user turn (optional)
+const CHAT_KEYS = 'heard, meant, verdict, better {hk,jp,en} or null, tip, reply {hk,jp,en}, new_words [{hk,jp,en}], hints [{hk,jp,en}], end';
 export async function chatTurn({ system, history, audio = null, signal }) {
+  return askJSON({ system, history, audio, signal, schema: SCHEMA, keysHint: CHAT_KEYS, temperature: 0.8 });
+}
+
+// Generic structured request: the answer must be one JSON object matching `schema` (Gemini) or
+// described by `keysHint` (Claude).
+export async function askJSON({ system, history, audio = null, signal, schema, keysHint, temperature = 0.4 }) {
   const c = aiConfig();
   if (!c.key) throw new AIError('nokey', 'Add an API key in Settings first.');
-  const raw = c.provider === 'claude' ? await callClaude(c, system, history, signal) : await callGemini(c, system, history, audio, signal);
+  const opts = { schema, keysHint, temperature };
+  const raw = c.provider === 'claude' ? await callClaude(c, system, history, signal, opts) : await callGemini(c, system, history, audio, signal, opts);
   return parseJSON(raw);
 }
 
@@ -67,7 +75,7 @@ let sticky = null; // a model that worked after the chosen one failed, kept for 
 export let lastModel = '';
 const wait = (ms, signal) => new Promise((res, rej) => { const t = setTimeout(res, ms); signal && signal.addEventListener('abort', () => { clearTimeout(t); rej(new AIError('abort', 'Cancelled.')); }, { once: true }); });
 
-async function callGemini(c, system, history, audio, signal) {
+async function callGemini(c, system, history, audio, signal, { schema, temperature }) {
   const contents = history.map((m, i) => {
     const parts = [{ text: m.text }];
     if (audio && i === history.length - 1) parts.unshift({ inline_data: { mime_type: audio.mime, data: audio.b64 } });
@@ -81,7 +89,7 @@ async function callGemini(c, system, history, audio, signal) {
       const body = {
         systemInstruction: { parts: [{ text: system }] },
         contents,
-        generationConfig: { temperature: 0.8, responseMimeType: 'application/json', responseSchema: SCHEMA, maxOutputTokens: 4096 },
+        generationConfig: { temperature, responseMimeType: 'application/json', responseSchema: schema, maxOutputTokens: 4096 },
       };
       // keep the model's thinking short so replies come quickly; older models reject the option
       if (!noThinkCfg.has(model)) body.generationConfig.thinkingConfig = { thinkingLevel: 'low' };
@@ -107,7 +115,7 @@ async function callGemini(c, system, history, audio, signal) {
   throw lastErr || new AIError('busy', 'The AI service is busy. Try again in a moment.');
 }
 
-async function callClaude(c, system, history, signal) {
+async function callClaude(c, system, history, signal, { keysHint, temperature }) {
   // Claude has no audio input here; merge consecutive turns so roles alternate
   const messages = [];
   for (const m of history) {
@@ -116,7 +124,7 @@ async function callClaude(c, system, history, signal) {
     else messages.push({ role, content: m.text });
   }
   if (messages[0] && messages[0].role !== 'user') messages.unshift({ role: 'user', content: '(start)' });
-  const body = { model: modelOf(c), max_tokens: 1500, temperature: 0.8, system: system + '\n\nAnswer with one JSON object only (no prose, no code fences), with exactly these keys: heard, meant, verdict, better {hk,jp,en} or null, tip, reply {hk,jp,en}, new_words [{hk,jp,en}], hints [{hk,jp,en}], end.', messages };
+  const body = { model: modelOf(c), max_tokens: 2500, temperature, system: `${system}\n\nAnswer with one JSON object only (no prose, no code fences), with exactly these keys: ${keysHint}.`, messages };
   const r = await post('https://api.anthropic.com/v1/messages', {
     'content-type': 'application/json', 'x-api-key': c.key, 'anthropic-version': '2023-06-01', 'anthropic-dangerous-direct-browser-access': 'true',
   }, body, signal);
