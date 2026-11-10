@@ -180,6 +180,13 @@ export function removeCustom(hk) {
   save();
 }
 
+// Take a word out of the learner's words (course words come back when a lesson teaches them again).
+export function forgetItem(key) {
+  delete state.items[key];
+  state.stars = state.stars.filter((k) => k !== key);
+  save();
+}
+
 export function setting(k, v) {
   if (v === undefined) return state.settings[k];
   state.settings[k] = v; save();

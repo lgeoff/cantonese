@@ -1,7 +1,7 @@
 // Main screens: Path (home), Practice, Words, Speak lab, Me.
 import { h, R, jpNode, jpHTML, todayStr, toneOf, TONES, sJP, esc, shuffle } from './util.js';
 import { UNITS, UNIT, LEVELS, ITEMS, MINE, registerCustom, unitProgress, nextLesson, buildLesson, buildReview, buildDrill, learnedWords, learnedSentences, buildTestOut, audioMode } from './course.js';
-import { S, dueKeys, strength, streakAlive, todayXP, lessonState, lessonDone, markKnown, setting, toggleStar, exportJSON, importJSON, resetAll, card, save, grade, removeCustom } from './store.js';
+import { S, dueKeys, strength, streakAlive, todayXP, lessonState, lessonDone, markKnown, setting, toggleStar, exportJSON, importJSON, resetAll, card, save, grade, removeCustom, forgetItem } from './store.js';
 import { addWordsSheet } from './addwords.js';
 import { runSession } from './session.js';
 import { canto, speakerBtn, toneChartSVG, recorderWidget, ICON } from './exercises.js';
@@ -366,10 +366,14 @@ function wordSheet(it) {
   sb.onclick = () => { const on = toggleStar(it.key); sb.textContent = on ? '★ Starred' : '☆ Star'; };
   c.append(sb);
   let close = null;
-  if (it.custom) c.append(h('button', { class: 'btn sm danger', type: 'button', onclick: () => {
-    if (!confirm(`Remove ${it.hk} from your words? Its review history will be deleted.`)) return;
-    removeCustom(it.hk); registerCustom(); close && close(); refresh();
-  } }, 'Remove'));
+  if (it.custom || (it.kind === 'w' && card(it.key))) c.append(h('button', { class: 'btn sm danger', type: 'button', onclick: () => {
+    const msg = it.custom
+      ? `Remove ${it.hk} from your words? Its review history will be deleted.`
+      : `Remove ${it.hk} from your words? Its review history will be deleted. It will come back when a lesson teaches it.`;
+    if (!confirm(msg)) return;
+    if (it.custom) removeCustom(it.hk); else forgetItem(it.key);
+    registerCustom(); close && close(); refresh();
+  } }, '🗑 Remove from my words'));
   close = sheet(c, { title: it.kind === 'w' ? 'Word' : 'Phrase' });
 }
 function fmtDue(t) {

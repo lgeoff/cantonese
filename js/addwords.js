@@ -3,7 +3,7 @@
 // the real Cantonese word when it isn't in the course. Nothing is added until the learner confirms.
 import { h, R, jpNode } from './util.js';
 import { ITEMS, UNIT, glosses, registerCustom } from './course.js';
-import { card, introduce, addCustom } from './store.js';
+import { card, introduce, addCustom, removeCustom, forgetItem } from './store.js';
 import { speakerBtn, canto } from './exercises.js';
 import { speak } from './tts.js';
 import { loadJyut, fixJp, soundMatch } from './jyut.js';
@@ -202,12 +202,34 @@ export function addWordsSheet({ sheet, startReview, refresh, openAiSetup }) {
     }
     registerCustom();
     for (const k of keys) introduce(k);
+    const typed = ta.value;
     results.innerHTML = ''; foot.innerHTML = ''; ta.value = ''; status.textContent = '';
-    results.append(h('div', { class: 'addw-done' },
-      h('p', {}, h('b', {}, `Added ${keys.length} word${keys.length > 1 ? 's' : ''}.`), ' They’ll come up in your reviews, practice drills and conversations.'),
-      h('div', { class: 'row wrap' },
-        h('button', { class: 'btn primary', type: 'button', onclick: () => close(false, () => startReview('mixed', Math.max(6, keys.length * 2), keys)) }, 'Practise them now'),
-        h('button', { class: 'btn', type: 'button', onclick: () => { results.innerHTML = ''; ta.focus(); } }, 'Add more'))));
+    const done = h('div', { class: 'addw-done' });
+    const draw = (list) => {
+      done.innerHTML = '';
+      if (!list.length) { done.append(h('p', {}, 'Nothing added.')); return; }
+      done.append(
+        h('p', {}, h('b', {}, `Added ${list.length} word${list.length > 1 ? 's' : ''}.`), ' They’ll come up in your reviews, practice drills and conversations. Tap ✕ to take one back out.'),
+        h('div', { class: 'added-list' }, ...list.map((k) => {
+          const it = ITEMS.get(k);
+          return h('div', { class: 'added-row' }, h('span', { lang: 'zh-HK', class: 'hk' }, it.hk), jpNode(it.jp), h('span', { class: 'en' }, R(it.en)),
+            h('button', { class: 'x', type: 'button', 'aria-label': `Remove ${it.hk}`, onclick: () => { undo([k]); draw(list.filter((x) => x !== k)); } }, '✕'));
+        })),
+        h('div', { class: 'row wrap' },
+          h('button', { class: 'btn primary', type: 'button', onclick: () => close(false, () => startReview('mixed', Math.max(6, list.length * 2), list)) }, 'Practise them now'),
+          h('button', { class: 'btn', type: 'button', onclick: () => { results.innerHTML = ''; ta.focus(); } }, 'Add more'),
+          h('button', { class: 'btn danger', type: 'button', onclick: () => { undo(list); results.innerHTML = ''; ta.value = typed; ta.focus(); status.textContent = 'Undone: nothing was added. Edit your words and tap Find again.'; } }, 'Undo all')));
+    };
+    function undo(list) {
+      for (const k of list) {
+        const it = ITEMS.get(k);
+        if (it && it.custom) removeCustom(it.hk); else forgetItem(k);
+      }
+      registerCustom();
+      refresh && refresh();
+    }
+    draw(keys);
+    results.append(done);
     refresh && refresh();
   }
 }

@@ -617,3 +617,8 @@ a.review-card { text-decoration: none; }
 .addw-cand .top { justify-content: flex-start; }
 .addw-cand .en { text-align: left; }
 .addw-cand .cnote { font-size: 13px; color: var(--ink-2); line-height: 1.35; }
+.added-list { display: flex; flex-direction: column; gap: 4px; margin: 4px 0 10px; }
+.added-row { display: flex; align-items: center; gap: 8px; background: var(--tile); border-radius: var(--r-sm); padding: 4px 4px 4px 10px; }
+.added-row .hk { font-size: 18px; } .added-row .en { flex: 1; min-width: 0; font-size: 14px; color: var(--ink-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.added-row .x { flex: none; width: 44px; height: 44px; border: 0; background: none; color: var(--ink-3); font-size: 18px; }
+.added-row .en { text-align: left; margin: 0; }
