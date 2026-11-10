@@ -115,7 +115,8 @@ async function callGemini(c, system, history, audio, signal, { schema, temperatu
   throw lastErr || new AIError('busy', 'The AI service is busy. Try again in a moment.');
 }
 
-async function callClaude(c, system, history, signal, { keysHint, temperature }) {
+async function callClaude(c, system, history, signal, { keysHint }) {
+  // current Claude models choose their own sampling; sending temperature is rejected
   // Claude has no audio input here; merge consecutive turns so roles alternate
   const messages = [];
   for (const m of history) {
@@ -124,7 +125,7 @@ async function callClaude(c, system, history, signal, { keysHint, temperature })
     else messages.push({ role, content: m.text });
   }
   if (messages[0] && messages[0].role !== 'user') messages.unshift({ role: 'user', content: '(start)' });
-  const body = { model: modelOf(c), max_tokens: 2500, temperature, system: `${system}\n\nAnswer with one JSON object only (no prose, no code fences), with exactly these keys: ${keysHint}.`, messages };
+  const body = { model: modelOf(c), max_tokens: 2500, system: `${system}\n\nAnswer with one JSON object only (no prose, no code fences), with exactly these keys: ${keysHint}.`, messages };
   const r = await post('https://api.anthropic.com/v1/messages', {
     'content-type': 'application/json', 'x-api-key': c.key, 'anthropic-version': '2023-06-01', 'anthropic-dangerous-direct-browser-access': 'true',
   }, body, signal);
